@@ -801,17 +801,15 @@ window.addEventListener('DOMContentLoaded', async () => {
         console.error('Počáteční synchronizace selhala:', e);
         notice('Synchronizace se nezdařila; místní data zůstala zachována.', true);
     }
-    // Při novém otevření nabídnout aktuální týden, ale nikdy nepřepsat
-    // rozpracovaný jídelníček bez výslovného souhlasu.
-    if(state.week.week!==monday(iso(new Date()))){
-        const current=monday(iso(new Date()));
-        if(confirm('Pracovní jídelníček je pro týden '+format(dateAt(state.week.week,0))+'.\n\nPřejít na aktuální týden od '+format(dateAt(current,0))+'?\n\nOK = založit prázdný aktuální týden.\nZrušit = zachovat rozpracovaný jídelníček.')){
-            snapshot();
-            state.week=freshWeek(current);
-            render();
-            save();
-            notice('Založen aktuální týden. Předchozí pracovní stav lze vrátit tlačítkem Zpět.');
-        }
+    // Po dokončení synchronizace zobrazit aktuální týden bez dotazu.
+    // Uložená historie se nemění; předchozí pracovní stav je v relaci
+    // dostupný přes tlačítko Zpět.
+    const current = monday(iso(new Date()));
+    if (state.week.week !== current) {
+        snapshot();
+        state.week = freshWeek(current);
+        render();
+        save();
     }
 });
 })();
