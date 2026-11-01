@@ -345,7 +345,7 @@
       "week": "2026-11-02",
       "days": [
         {
-          "closed": true,
+          "closed": false,
           "soup": "",
           "main": "",
           "category": "",
