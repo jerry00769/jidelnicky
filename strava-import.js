@@ -123,7 +123,7 @@ dlg.addEventListener('click',event=>{
 });
 function previewFooter(){
  const buttons=[];
- buttons.push({text:enabled?'Automatika: zapnuto ✓':'Automatika: vypnuto',action:()=>{enabled=!enabled;try{localStorage.setItem(PREF_KEY,String(enabled))}catch(_e){}refreshToggle();previewFooter();report('Strava.cz: automatická kontrola '+(enabled?'zapnuta.':'vypnuta.'));}});
+ // Automatika se ovládá pouze hlavním přepínačem Strava.cz mimo dialog.
  buttons.push({text:'Zavřít',action:close});setFooter(buttons);
 }
 function correctionKey(w,e){return w.week+'|'+e.day+'|'+e.field}
