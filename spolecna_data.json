@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-10-26",
+      "week": "2026-11-02",
       "days": [
         {
           "closed": false,
-          "soup": "zeleninová s těstovinovou",
-          "main": "Těstoviny penne s tuňákem a chery rajčaty",
-          "category": "RYBY",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninový vývar s ovesnými vločkami",
-          "main": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
-          "category": "HOVĚZÍ A TELECÍ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s celozrnnými nudlemi",
-          "main": "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "kmínová s vejcem",
-          "main": "Kapustové karbanátky, Bramborová kaše - příloha",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s ovesnými vločkami",
-          "main": "Nudle s mákem",
-          "category": "SLADKÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         }
