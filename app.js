@@ -62,6 +62,8 @@ function auditCatalogHistory(){
  for(const week of state.history||[])for(const day of week.days||[]){
   for(const [kind,field,catField] of [['soup','soup',null],['main','main','category'],['main','main2','category2']]){
    const name=String(day[field]||'').trim();if(!name)continue;
+   // Uzavrene dny a textove oznaceni prazdnin nejsou jidla v katalogu.
+   if(day.closed || (kind==='soup' && /^p\s*r\s*a\s*z\s*d\s*n\s*i\s*n\s*y$/i.test(key(name))))continue;
    const k=key(name);used[kind].add(k);
    if(!known[kind].has(k)&&!missing[kind].has(k))missing[kind].set(k,{name,cat:catField?String(day[catField]||'').trim():''});
   }
