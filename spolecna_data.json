@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-10-26",
+      "week": "2026-10-12",
       "days": [
         {
           "closed": false,
-          "soup": "brokolicová",
-          "main": "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha",
+          "soup": "čočková",
+          "main": "Rybí filé obalované, Bramborová kaše - příloha",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zelenin. s pohankou",
-          "main": "Horňácký guláš (maso, fazole), Chléb",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "frankfurtská s bramborem",
+          "main": "Rizoto s kuřecím masem",
+          "category": "DRŮBEŽ A KRÁLÍK",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s drožďovými knedlíčky",
-          "main": "Zeleninové placičky se sýrem, Brambory",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "hovězí s jáhly",
+          "main": "Masové koule v rajčatové omáčce, Těstoviny",
+          "category": "MLETÉ MASO A ZAPÉKANÉ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "rajčatová s tarhoňou",
-          "main": "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "fazolová",
+          "main": "Bramborové šišky s mákem (strouhankou)",
+          "category": "SLADKÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "hovězí s česnekovými krutony",
-          "main": "Hovězí pečeně znojemská, Rýže dušená",
-          "category": "HOVĚZÍ A TELECÍ",
+          "soup": "zelenin. s fridátovými nudlemi",
+          "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
+          "category": "VEPŘOVÉ A UZENÉ",
           "main2": "",
           "category2": ""
         }
