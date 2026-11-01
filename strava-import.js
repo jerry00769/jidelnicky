@@ -32,7 +32,8 @@ const $=id=>document.getElementById(id);
 const toggle=document.createElement('button');toggle.id='stravaToggle';toggle.type='button';toggle.title='Zapnout nebo vypnout automatickou kontrolu nových jídelníčků ze Strava.cz';
 function refreshToggle(){toggle.textContent=enabled?'Strava.cz: zapnuto ✓':'Strava.cz: vypnuto';toggle.dataset.off=String(!enabled);toggle.setAttribute('aria-pressed',String(enabled))}
 refreshToggle();document.body.append(toggle);
-toggle.addEventListener('click',()=>{enabled=!enabled;try{localStorage.setItem(PREF_KEY,String(enabled))}catch(_e){}refreshToggle();if(!enabled){controller?.abort();if(dlg.open)close();report('Strava.cz: automatická kontrola vypnuta.')}else{report('Strava.cz: automatická kontrola zapnuta.');check()}});
+toggle.title='Otevřít přehled Strava.cz a nastavení automatické kontroly';
+toggle.addEventListener('click',()=>check(true));
 let weeks=[],catalog=null,sourceStamp='',stage='choice',skipped=0,checking=false,controller=null;
 const report=(text,error=false)=>window.dispatchEvent(new CustomEvent('jidelnicky:strava-status',{detail:{text,kind:error?'error':/probíhá/i.test(text)?'info':'ok'}}));
 function items(kind){return Object.entries(catalog[kind]).flatMap(([category,names])=>names.map(name=>({name,category,key:norm(name)})))}
@@ -82,6 +83,8 @@ function suggestCategory(raw,kind){
 }
 function setFooter(buttons){$('ssFoot').replaceChildren();for(const b of buttons){const el=document.createElement('button');el.type='button';el.textContent=b.text;el.className=b.primary?'ss-primary':'';el.disabled=!!b.disabled;el.onclick=b.action;$('ssFoot').append(el)}}
 function close(){dlg.close();weeks=[];previewOnly=false}
+function previewFooter(){setFooter([{text:enabled?'Automatika: zapnuto ✓':'Automatika: vypnuto',action:()=>{enabled=!enabled;try{localStorage.setItem(PREF_KEY,String(enabled))}catch(_e){}refreshToggle();previewFooter();report('Strava.cz: automatická kontrola '+(enabled?'zapnuta.':'vypnuta.'));}},{text:'Zavřít',primary:true,action:close}])}
+function showPreview(message){previewOnly=true;$('ssInfo').textContent=message;review();previewFooter();if(!dlg.open)dlg.showModal()}
 function choice(){stage='choice';$('ssInfo').textContent=`Nalezeno ${weeks.length} nových týdnů. Co chceš udělat?`;const body=$('ssBody');body.replaceChildren();const p=document.createElement('p');p.textContent='Program už porovnal všechna jídla s katalogem. Převzetí ze Strava.cz vyžaduje jen kontrolu případných nejasností.';body.append(p);for(const w of weeks){const p=document.createElement('p');const auto=w.entries.filter(e=>e.mode==='auto').length,all=w.entries.length;p.textContent=`Týden ${w.week}: automaticky rozpoznáno ${auto} z ${all} jídel.`;body.append(p)}if(test){const p=document.createElement('p');p.className='ss-muted';p.textContent='TEST NANEČISTO – ukládání je vypnuté.';body.append(p)}setFooter([{text:'Použít Strava.cz',primary:true,action:review},{text:'Vytvořit vlastní',action:()=>{close();report('Strava.cz: zvolena vlastní tvorba; nic nebylo změněno.')}},{text:'Připomenout později',action:close}])}
 function decisionLabel(e){return e.kind==='soup'?'Polévka':e.field==='main2'?'Oběd 2':'Oběd 1'}
 function buildIssue(e){
@@ -121,8 +124,8 @@ function parseWeeks(data){const state=window.JidelnickyApp.getState();catalog=st
   continue
  }seen.add(week);const entries=[],days=[];for(let i=0;i<5;i++){const day=w.days[i];if(!day||typeof day!=='object')throw Error('Neplatný den');const closed=!!day.closed;const result={closed,soup:'',main:'',category:'',main2:'',category2:''};for(const [field,kind,cat] of [['soup','soup',null],['main','main','category'],['main2','main','category2']]){const raw=String(day[field]||'').trim();if(!raw)continue;const matched=match(raw,kind);const suggestion=matched?{category:matched.category,confident:true}:suggestCategory(raw,kind);entries.push({day:i,field,kind,cat,raw,matched,mode:matched?'auto':'review',choice:null,categorySuggestion:suggestion.category,categoryConfident:suggestion.confident});}if(!closed&&(!day.soup||!day.main))throw Error(`Týden ${week}, ${dayNames[i]}: chybí polévka nebo oběd 1. Import byl bezpečně zastaven.`);days.push(result)}weeks.push({week,days,entries})}}
 function commit(){if(test||previewOnly)return;try{const state=structuredClone(window.JidelnickyApp.getState());const existing=new Set(state.history.map(x=>x.week));if(weeks.some(w=>existing.has(w.week)))throw Error('Historie se mezitím změnila. Obnov stránku a zkus to znovu.');for(const w of weeks){const days=w.days.map(x=>({...x}));for(const e of w.entries){let chosen=e.matched;if(e.mode!=='auto'){if(!e.choice)throw Error('Některá jídla nejsou schválená');if(e.choice==='__new'){const category=e.categorySuggestion;if(!state.catalog[e.kind][category])throw Error('Neplatná kategorie');const collisions=Object.entries(state.catalog[e.kind]).flatMap(([c,names])=>names.filter(n=>norm(n)===norm(e.raw)).map(name=>({name,category:c})));if(collisions.length){if(collisions.length!==1||collisions[0].category!==category)throw Error('Jídlo již existuje v jiné kategorii: '+e.raw);chosen=collisions[0]}else{state.catalog[e.kind][category].push(e.raw);chosen={name:e.raw,category}}}else{chosen=JSON.parse(e.choice);if(!state.catalog[e.kind][chosen.category]?.includes(chosen.name))throw Error('Vybrané jídlo už není v katalogu: '+chosen.name)}}days[e.day][e.field]=chosen.name;if(e.cat)days[e.day][e.cat]=chosen.category}state.history.push({week:w.week,days})}window.JidelnickyApp.applyState(state);window.GitHubSync?.changed?.();const n=weeks.length;close();report('Strava.cz: '+n+' týdnů doplněno; synchronizace čeká na GitHub.')}catch(err){window.alert('Import nebyl dokončen: '+err.message)}}
-async function check(){
- if(checking||dlg.open||!enabled)return;
+async function check(manual=false){
+ if(checking||dlg.open||(!enabled&&!manual))return;
  checking=true;controller=new AbortController();
  const timeout=setTimeout(()=>controller.abort(),12000);
  report('Strava.cz 5948: probíhá kontrola…');
@@ -165,6 +168,6 @@ async function check(){
   report('Strava.cz 5948: kontrola se nezdařila ('+(err.name==='AbortError'?'časový limit 12 s':err.message)+'). Data beze změny.',true);
  }finally{clearTimeout(timeout);checking=false;controller=null}
 }
-window.addEventListener('load',()=>setTimeout(()=>{if(enabled)check()},1800));
+window.addEventListener('load',()=>setTimeout(()=>{if(enabled)check(false)},1800));
 })();
 // Kontrolni nasazeni GitHub Pages 2026-11-01
