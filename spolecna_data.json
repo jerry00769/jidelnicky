@@ -346,15 +346,15 @@
       "days": [
         {
           "closed": false,
-          "soup": "krupicová maďarská",
-          "main": "Rybí filé obalované, Bramborová kaše",
+          "soup": "zelenin. s pohankou",
+          "main": "těstoviny s lososem ve smetanové omáčce",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s celozrnnými nudlemi",
+          "soup": "česneková s bramborem a vejcem",
           "main": "Nákyp rýžový se švestkami",
           "category": "SLADKÁ",
           "main2": "",
@@ -362,25 +362,25 @@
         },
         {
           "closed": false,
-          "soup": "luštěninová",
-          "main": "Zeleninové placičky se sýrem, Brambory",
+          "soup": "hrachová",
+          "main": "Brokolicová poezie (květák, niva)",
           "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s hrachovými nudlemi",
-          "main": "Žebrácké maso, Brambory opékané",
-          "category": "VEPŘOVÉ A UZENÉ",
+          "soup": "hovězí se sýrovým kapáním",
+          "main": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
+          "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "česneková s osmaženou hostičkou",
-          "main": "Horňácký guláš (maso, fazole), Chléb",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "zeleninová s ovesnými vločkami",
+          "main": "bulgur se zeleninou a kuřecím masem",
+          "category": "DRŮBEŽ A KRÁLÍK",
           "main2": "",
           "category2": ""
         }
