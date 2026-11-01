@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-10-12",
+      "week": "2026-10-26",
       "days": [
         {
           "closed": false,
-          "soup": "čočková",
-          "main": "Rybí filé obalované, Bramborová kaše - příloha",
-          "category": "RYBY",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "frankfurtská s bramborem",
-          "main": "Rizoto s kuřecím masem",
-          "category": "DRŮBEŽ A KRÁLÍK",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "hovězí s jáhly",
-          "main": "Masové koule v rajčatové omáčce, Těstoviny",
-          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "fazolová",
-          "main": "Bramborové šišky s mákem (strouhankou)",
-          "category": "SLADKÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zelenin. s fridátovými nudlemi",
-          "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
-          "category": "VEPŘOVÉ A UZENÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         }
