@@ -346,40 +346,40 @@
       "days": [
         {
           "closed": false,
-          "soup": "květáková",
-          "main": "Rybí file pečené na másle, Bramborová kaše - příloha",
+          "soup": "selská ii.",
+          "main": "Rybí filé obalované, Brambory",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "koprová (kulajda)",
-          "main": "Nudle s mákem",
-          "category": "SLADKÁ",
+          "soup": "špenátová",
+          "main": "Kapustové karbanátky, Bramborová kaše",
+          "category": "MLETÉ MASO A ZAPÉKANÉ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "pórková",
-          "main": "Hovězí pečeně na houbách, Těstoviny",
-          "category": "HOVĚZÍ A TELECÍ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "hovězí s kuskusem",
-          "main": "Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha",
+          "soup": "hovězí rychlá s vejcem",
+          "main": "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
           "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s tarhoňou",
-          "main": "Omáčka koprová, Vejce vařené, Brambory",
+          "soup": "hrachová",
+          "main": "Zeleninové placičky se sýrem, Brambory",
+          "category": "BEZMASÁ SLANÁ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "zeleninová s hrachovými nudlemi",
+          "main": "Těstoviny s brokolicí",
           "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
