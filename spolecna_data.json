@@ -4,33 +4,33 @@
     "catalog": {
       "soup": {
         "VÝVARY": [
-          "hovězí s česnekovými krutony",
+          "hovězí rychlá s vejcem",
           "hovězí s jáhly",
           "hovězí s játrovými knedlíčky",
           "hovězí s játrovými noky",
-          "hovězí s kapáním",
           "hovězí s kapustou a rýží",
+          "hovězí s kapáním",
           "hovězí s kuskusem",
           "hovězí s masem a vejcem",
           "hovězí s těstovinami",
           "hovězí s těstovinou",
           "hovězí s vaječnou jíškou",
+          "hovězí s česnekovými krutony",
           "hovězí se strouháním",
           "kuřecí s nudlemi",
           "ovarová",
+          "hovězí se sýrovým kapáním",
           "vývar s drobením",
           "z rybího filé",
-          "zel. vývar s dýňovým kapáním",
-          "Polévka hovězí se sýrovým kapáním"
+          "zel. vývar s dýňovým kapáním"
         ],
         "ZELENINOVÉ A KRÉMOVÉ": [
+          " zeleninová s ovesnými vločkami",
           "bramboračka nezahuštěná",
           "bramborová",
           "brokolicová",
           "celerová se smaženým hráškem",
           "cibulová se sýrem",
-          "česneková s bramborem a vejcem",
-          "česneková s osmaženou hostičkou",
           "drožďová",
           "drůbková s nudlemi",
           "dýňový krém",
@@ -50,8 +50,6 @@
           "rajčatová s těstovinou",
           "rychlá s vejcem",
           "selská ii.",
-          "špenátová",
-          "Špenátová s vajíčkem",
           "z batátových brambor",
           "z kysaného zelí",
           "z kysaného zelí s klobásou",
@@ -74,96 +72,143 @@
           "zeleninová s těstovinovou",
           "zeleninová s těstovinovou rýží",
           "zeleninová se sýrovým kapáním",
-          "zimní zeleninová s ovesnými vločkami"
+          "zeleninový vývar s ovesnými vločkami",
+          "zimní zeleninová s ovesnými vločkami",
+          "česneková s bramborem a vejcem",
+          "česneková s osmaženou hostičkou",
+          "špenátová",
+          "Špenátová s vajíčkem",
+          "špenátová s vajíčkem"
         ],
         "LUŠTĚNINOVÉ A MASOVÉ": [
           "cizrnová",
           "cizrnová krémová s rajčaty",
-          "čočková",
-          "čočková se zeleninou",
           "fazolová",
           "fazolová se zeleninou",
           "frankfurtská s bramborem",
           "gulášová",
           "hrachová",
           "hrachová s hrachovými krutony",
+          "hrachová s opečenou houskou",
           "hrachová se smaženým hráškem",
           "květáková s červenou čočkou",
           "luštěninová",
           "z fazolových lusků",
           "z míchaných luštěnin",
           "zeleninová s hrachovými nudlemi",
-          "zeleninová zahuštěná červenou čočkou"
-        ]
+          "zeleninová zahuštěná červenou čočkou",
+          "čočková",
+          "čočková se zeleninou"
+        ],
+        "K OVĚŘENÍ": []
       },
       "main": {
         "HOVĚZÍ A TELECÍ": [
+          "Guláš maďarský, Houskové knedlíky (kynuté)",
+          "Guláš maďarský, Rýže dušená",
           "Hovězí guláš, Rýže dušená",
+          "hovězí maso stroganoff, dušená rýže",
           "Hovězí pečeně frankfurtská, Těstoviny",
           "Hovězí pečeně na houbách, Těstoviny",
           "Hovězí pečeně na paprice, Vícezrnný knedlík (směs)",
           "Hovězí pečeně pražská, Rýže dušená",
-          "Hovězí pečeně štěpánská, Rýže dušená",
           "Hovězí pečeně znojemská, Rýže dušená",
+          "Hovězí pečeně štěpánská, Rýže dušená",
           "Omáčka rajčatová, Hovězí maso vařené, Houskové knedlíky (kynuté)",
           "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
           "Svíčková na smetaně, Houskové knedlíky (kynuté)",
+          "Znojemský guláš, Rýže dušená",
           "Španělský plátek, Rýže dušená",
           "Španělský ptáček rozházený, Rýže dušená",
-          "Znojemský guláš, Rýže dušená"
+          "španělský ptáček, rýže",
+          "štěpánská hovězí pečeně, houskové knedlíky, čistá voda"
         ],
         "VEPŘOVÉ A UZENÉ": [
           "Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané",
           "Bratislavské vepřové plecko, Těstoviny",
           "Debrecínský guláš, Těstoviny",
+          "domažlické vepřové ragů, těstoviny",
+          "Italský guláš (zbruf se sýrem), Špagety",
+          "Masová směs \"lamendr\", Rýže dušená",
+          "Mexická pánev (vepř.maso, fazole)) se sýrem",
+          "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
           "Moravský vrabec, Bramborové knedlíky (směs), Zelí kysané",
+          "Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)",
+          "Rizoto srbské",
           "Rizoto z vepřového masa",
+          "Rizoto z vepřového masa, Okurka sterilovaná - příloha",
           "Rožnovské halušky (střapačky) s uzeným masem",
           "Segedínský guláš, Houskové knedlíky (kynuté)",
           "Vepřová kotleta na houbách, Těstoviny",
           "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
           "Vepřová kýta po cikánsku, Rýže dušená",
+          "vepřová pečeně selská, bramborové knedlíky",
           "Vepřová pečeně selská, Bramborové knedlíky (směs)",
           "Vepřová pečeně selská, Bramborové knedlíky (směs), Červené zelí",
+          "Vepřová pečeně selská, Bramborové knedlíky (směs), Špenát dušený",
           "Vepřová pečeně selská, Karlovarský knedlík",
           "Vepřová pečeně selská, Nastavovaná kaše s cibulkou",
+          "Vepřová pečeně selská, Nastavovaná kaše s cibulkou, Okurka sterilovaná - příloha",
+          "Vepřová pečeně selská, Špenát dušený, Karlovarský knedlík",
           "Vepřová roláda (karlovarský kotouč), Bramborová kaše",
+          "Vepřová roláda (karlovarský kotouč), Bramborová kaše - příloha",
+          "Vepřová roláda (karlovarský kotouč), Kaše bramborová",
           "Vepřové na houbách se smetanou, Houskové knedlíky (kynuté)",
           "Vepřové na houbách, Brambory",
           "Vepřové na houbách, Těstoviny",
           "Vepřové na paprice, Těstoviny",
           "Vepřové v kapustě, Brambory",
+          "vepřové v mrkvi, brambor",
           "Vepřové v mrkvi, Brambory",
+          "Vepřové v mrkvi, Brambory m.m.",
           "Vepřový guláš, Rýže dušená",
+          "vepřový guláš, vřetena, čistá voda",
           "Vepřový řízek přírodní, Brambory",
+          "Vepřový řízek přírodní, Brambory m.m.",
           "Vepřový řízek přírodní, Kuskus - příloha",
           "Vinná klobása smažená přírodní, Bramborová kaše - příloha",
           "Šoulet, Vepřová pečeně",
-          "Špagety po uhlířsku (vejce, sýr)",
-          "Špagety s vepřovým masem a rajčaty"
+          "Šoulet, Vepřová pečeně, Okurka sterilovaná - příloha",
+          "Špagety s vepřovým masem a rajčaty",
+          "Žebrácké maso, Brambory",
+          "Žebrácké maso, Brambory opékané"
         ],
         "DRŮBEŽ A KRÁLÍK": [
           "Bulgur s kuřecím masem a zeleninou",
+          "bulgur se zeleninou a kuřecím masem",
           "Gnocchi s kuřecím masem, smetanou a špenátem",
           "Králík pečený, Bramborové knedlíky (směs)",
+          "Králík pečený, Bramborové knedlíky (směs), Špenát dušený",
           "Králík pečený, Brambory",
+          "Králík pečený, Brambory m.m.",
+          "krůtí maso na pórku, rýže",
           "Krůtí nudličky s pórkem, Rýže dušená",
+          "krůtí sekaná se sýrem, brambory, zeleninový salát míchaný, čistá voda",
+          "Kuskus s kuřecím masem",
+          "Kuskus s kuřecím masem, brokolicí a suš.rajčaty",
+          "Kuskus s kuřecím masem, Míchaná zelenina grilovaná",
           "Kuře na paprice, Houskové knedlíky (kynuté)",
           "Kuře na paprice, Těstoviny",
           "Kuře pečené, Brambory",
+          "Kuře pečené, Brambory m.m.",
           "Kuře pečené, Bulgur",
           "Kuře pečené, Šťouchané brambory s cibulkou",
           "Kuře Šanghaj s jasmínovou rýží",
           "Kuře Šanghaj s rýží",
-          "Kuřecí čína, Rýže dušená",
+          "kuřecí maso po provensálsku, farfalle",
+          "kuřecí maso po čínsku, dušená rýže, ovoce",
           "Kuřecí nudličky se sýrovou omáčkou, Těstoviny",
+          "kuřecí paličky na medu, bramborová kaše, čistá voda",
+          "Kuřecí prsa  na kari koření, Rýže dušená",
           "Kuřecí prsa na kari koření, Rýže dušená",
           "Kuřecí rizoto",
+          "Kuřecí rizoto, Salát z červené řepy - příloha",
           "Kuřecí roláda, Rýže dušená",
-          "Kuřecí řízek smažený, Bramborová kaše",
           "Kuřecí stripsy, Brambory",
-          "Kuskus s kuřecím masem",
-          "Kuskus s kuřecím masem, brokolicí a suš.rajčaty",
+          "Kuřecí čína, Rýže dušená",
+          "Kuřecí řízek smažený, Bramborová kaše",
+          "Kuřecí řízek smažený, Bramborová kaše - příloha",
+          "Pekingská směs, Rýže dušená",
           "Perkelt z kuřecího masa, Těstoviny",
           "Rizoto s kuřecím masem",
           "Těstovinový salát s kuřecím masem",
@@ -171,95 +216,131 @@
           "Zeleninový salát, Kuřecí stripsy"
         ],
         "MLETÉ MASO A ZAPÉKANÉ": [
+          "Džuveč, Chléb",
           "Francouzské brambory",
+          "Francouzské brambory, Okurka sterilovaná - příloha",
           "Holandský řízek, Bramborová kaše",
+          "Holandský řízek, Bramborová kaše - příloha",
+          "Italský guláš (zbruf se sýrem), Těstoviny",
           "Kapustové karbanátky s masem, Brambory",
           "Kapustové karbanátky, Bramborová kaše",
           "Karbanátky pečené, Bramborová kaše",
+          "Karbanátky pečené, Bramborová kaše - příloha",
           "Masové koule v rajčatové omáčce, Těstoviny",
           "Pizza se šunkou",
+          "Rizoto srbské, Okurka sterilovaná - příloha",
           "Sekaná pečeně, Bramborová kaše",
+          "Sekaná pečeně, Bramborová kaše - příloha",
+          "Sekaná pečeně, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
           "Sekaná pečeně, Brambory",
+          "Sekaná pečeně, Brambory, Okurka sterilovaná - příloha",
           "Sekaná zahradnická, Brambory",
+          "Sekaná zahradnická, Brambory m.m.",
           "Sicilské špagety (boloňské)",
+          "Těstoviny po Lotrinsku",
           "Zapečené těstoviny s uzeninou",
-          "Zapečené těstoviny s uzeným masem"
+          "Zapečené těstoviny s uzeninou, Salát z červené řepy - příloha",
+          "Zapečené těstoviny s uzeným masem",
+          "Zapečené těstoviny s uzeným masem, Okurka sterilovaná - příloha",
+          "Zapečené těstoviny s uzeným masem, Zelný salát  - příloha",
+          "Zapečené těstoviny s uzeným masem, Zelný salát - příloha"
         ],
         "RYBY": [
           "Hejk pečený na bylinkovém másle, Brambory",
           "Karbanátek z rybího file - pečený, Brambory",
+          "Karbanátek z rybího file - pečený, Brambory m.m.",
+          "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha",
           "Losos přírodní, Brambory",
+          "Losos přírodní, Brambory m.m.",
           "Obalované filé s brokolicí a sýrem, Brambory",
-          "Rybí filé obalované, Bramborová kaše",
-          "Rybí filé obalované, Brambory",
+          "Obalované filé s brokolicí a sýrem, Brambory m.m.",
           "Rybí file pečené na másle, Bramborová kaše",
+          "Rybí file pečené na másle, Bramborová kaše - příloha",
+          "Rybí filé obalované, Bramborová kaše",
+          "Rybí filé obalované, Bramborová kaše - příloha",
+          "Rybí filé obalované, Brambory",
+          "Rybí filé obalované, Brambory m.m.",
+          "Rybí filé pečené na másle, Bramborová kaše - příloha",
           "Rybí filé pečené na másle, Brambory",
           "Rybí filé po mlynářsku, Brambory",
+          "Rybí filé po mlynářsku, Brambory m.m.",
+          "rybí filé s rajčaty, bazalkou, brambory",
           "Rybí filé smažené, Bramborová kaše",
+          "Rybí filé smažené, Bramborová kaše - příloha",
           "Rybí filé zapečené se špenátem, Brambory",
           "Rybí stripsy, Brambory",
+          "Rybí stripsy, Brambory m.m.",
           "Smažené rybí prsty, Brambory m.m.",
+          "Tilápie s rajčaty a sýrem, Brambory",
+          "Tilápie s rajčaty a sýrem, Brambory m.m.",
           "Těstoviny penne s tuňákem a chery rajčaty",
-          "Tilápie s rajčaty a sýrem, Brambory"
+          "těstoviny s lososem ve smetanové omáčce"
         ],
         "LUŠTĚNINOVÁ": [
           "Fazole a la Katův šleh, Chléb",
           "Horňácký guláš (maso, fazole), Chléb",
           "Hrachová kaše s cibulkou, Párky",
+          "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
           "Hrachová kaše s cibulkou, Vejce vařené",
+          "Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha",
+          "Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
           "Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha",
+          "Kovbojská pánev, Chléb",
           "Kuřecí stehna pečená se zel.fazolkami a kroupami",
           "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
           "Srbská čočka, Chléb",
           "Těstovinový salát s cizrnou a sušenými rajčaty",
           "Vepřová pečeně, Fazolové lusky na slanině, Brambory",
           "Čočka na kyselo, Vejce vařené",
+          "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
           "Čočkový kotlík, Chléb",
           "Španělská čočka s mletým masem, Chléb"
         ],
         "BEZMASÁ SLANÁ": [
-          "Bramborák",
-          "Bramborové šišky s mákem (strouhankou)",
           "Bramborový guláš, Rohlík",
+          "Bramborák",
           "Brokolicová poezie (květák, niva)",
-          "Domácí buchty plněné mákem, povidly, tvarohem",
-          "Džuveč, Chléb",
-          "Guláš maďarský, Houskové knedlíky (kynuté)",
-          "Guláš maďarský, Rýže dušená",
-          "Italský guláš (zbruf se sýrem), Těstoviny",
-          "Kovbojská pánev, Chléb",
+          "Kapustové karbanátky, Bramborová kaše - příloha",
           "Lotrinské tagliatelle se sýrem",
-          "Masová směs \"lamendr\", Rýže dušená",
-          "Nákyp rýžový s meruňkami",
-          "Nákyp rýžový se švestkami",
-          "Nudle s mákom",
           "Omáčka koprová, Brambory, Vejce vařené",
           "Omáčka koprová, Vejce vařené, Brambory",
-          "Pekingská směs, Rýže dušená",
-          "Rizoto srbské",
-          "Špekové knedlíky, Zelí kysané",
           "Těstovinový salát s marinovaným tofu",
           "Těstovinový salát se zeleninou a šunkou",
-          "Těstoviny po Lotrinsku",
+          "Těstoviny  po Lotrinsku",
           "Těstoviny s brokolicí",
           "Těstoviny s brokolicí a sýrovou omáčkou",
           "Těstoviny se sýrovou omáčkou",
           "Zeleninové placičky se sýrem, Brambory",
+          "Zeleninové placičky se sýrem, Brambory m.m.",
           "Zeleninové rizoto",
-          "Žebrácké maso, Brambory",
-          "Žebrácké maso, Brambory opékané"
+          "zeleninové rizoto sypané sýrem a parmazánem, ovocný sirup, čistá voda",
+          "řecký salát, vícezrnný rohlík",
+          "Špagety po uhlířsku (vejce, sýr)",
+          "Špekové knedlíky, Zelí kysané"
         ],
         "SLADKÁ": [
+          "Bramborové šišky s mákem (strouhankou)",
+          "Domácí buchty plněné mákem, povidly, tvarohem",
           "Dukátové buchtičky s krémem",
           "Dukátové buchtičky s krémem, Kakao",
+          "Dukátové buchtičky s krémem, Mléko",
+          "dukátové buchtičky se šódo",
           "Kaše krupicová",
           "Knedlíky švestkové (bramborové) s mákem",
           "Kuskus s ovocem",
           "Livance",
+          "Lívance, Káva bílá",
           "Nudle s mákem",
+          "Nudle s mákom",
+          "Nákyp rýžový s meruňkami",
+          "Nákyp rýžový se švestkami",
           "Smažené točenky s rozinkami",
           "Žemlovka s jablky a tvarohem"
-        ]
+        ],
+        "K ZAŘAZENÍ": [
+          "Masová směs \"flamendr\", Rýže dušená"
+        ],
+        "K OVĚŘENÍ": []
       }
     },
     "week": {
@@ -315,7 +396,7 @@
             "closed": false,
             "soup": "kuřecí s nudlemi",
             "main": "Kovbojská pánev, Chléb",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "LUŠTĚNINOVÁ",
             "main2": "",
             "category2": ""
           },
@@ -325,11 +406,11 @@
             "main": "Holandský řízek, Bramborová kaše",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "Špagety po uhlířsku (vejce, sýr)",
-            "category2": "VEPŘOVÉ A UZENÉ"
+            "category2": "BEZMASÁ SLANÁ"
           },
           {
             "closed": false,
-            "soup": "Zelenin. s drožďovými knedlíčky",
+            "soup": "zelenin. s drožďovými knedlíčky",
             "main": "Lotrinské tagliatelle se sýrem",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -337,7 +418,7 @@
           },
           {
             "closed": false,
-            "soup": "Z rybího filé",
+            "soup": "z rybího filé",
             "main": "Kuře pečené, Brambory",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "Kuskus s ovocem",
@@ -345,7 +426,7 @@
           },
           {
             "closed": false,
-            "soup": "Zelenin. s fridátovými nudlemi",
+            "soup": "zelenin. s fridátovými nudlemi",
             "main": "Svíčková na smetaně, Houskové knedlíky (kynuté)",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -358,7 +439,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Zeleninová s quinoou",
+            "soup": "zeleninová s quinoou",
             "main": "Debrecínský guláš, Těstoviny",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -366,15 +447,15 @@
           },
           {
             "closed": false,
-            "soup": "Gulášová",
-            "main": "Karbanátek z rybího file - pečený, Brambory",
+            "soup": "gulášová",
+            "main": "Karbanátek z rybího file - pečený, Brambory m.m.",
             "category": "RYBY",
             "main2": "Kuskus s kuřecím masem",
             "category2": "DRŮBEŽ A KRÁLÍK"
           },
           {
             "closed": false,
-            "soup": "Hovězí se strouháním",
+            "soup": "hovězí se strouháním",
             "main": "Kuřecí čína, Rýže dušená",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "Brokolicová poezie (květák, niva)",
@@ -382,7 +463,7 @@
           },
           {
             "closed": false,
-            "soup": "Květáková s červenou čočkou",
+            "soup": "květáková s červenou čočkou",
             "main": "Knedlíky švestkové (bramborové) s mákem",
             "category": "SLADKÁ",
             "main2": "Pizza se šunkou",
@@ -390,8 +471,8 @@
           },
           {
             "closed": false,
-            "soup": "Z kysaného zelí",
-            "main": "Vepřová roláda (karlovarský kotouč), Bramborová kaše",
+            "soup": "z kysaného zelí",
+            "main": "Vepřová roláda (karlovarský kotouč), Kaše bramborová",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
@@ -403,31 +484,31 @@
         "days": [
           {
             "closed": false,
-            "soup": "Špenátová s vajíčkem",
+            "soup": "špenátová s vajíčkem",
             "main": "Džuveč, Chléb",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zelenin. s bulgurem",
+            "soup": "zelenin. s bulgurem",
             "main": "Kuře na paprice, Těstoviny",
             "category": "DRŮBEŽ A KRÁLÍK",
-            "main2": "Zeleninové placičky se sýrem, Brambory",
+            "main2": "Zeleninové placičky se sýrem, Brambory m.m.",
             "category2": "BEZMASÁ SLANÁ"
           },
           {
             "closed": false,
-            "soup": "Celerová se smaženým hráškem",
-            "main": "Šoulet, Vepřová pečeně",
+            "soup": "celerová se smaženým hráškem",
+            "main": "Šoulet, Vepřová pečeně, Okurka sterilovaná - příloha",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "Kaše krupicová",
             "category2": "SLADKÁ"
           },
           {
             "closed": false,
-            "soup": "Rychlá s vejcem",
+            "soup": "rychlá s vejcem",
             "main": "Vepřové v mrkvi, Brambory",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "Těstovinový salát s cizrnou a sušenými rajčaty",
@@ -435,8 +516,8 @@
           },
           {
             "closed": false,
-            "soup": "Selská ii.",
-            "main": "Kuřecí řízek smažený, Bramborová kaše",
+            "soup": "selská ii.",
+            "main": "Kuřecí řízek smažený, Bramborová kaše - příloha",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
             "category2": ""
@@ -448,7 +529,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Rajčatová s těstovinou",
+            "soup": "rajčatová s těstovinou",
             "main": "Fazole a la Katův šleh, Chléb",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
@@ -456,7 +537,7 @@
           },
           {
             "closed": false,
-            "soup": "Zeleninová s celozrnnými knedlíčky",
+            "soup": "zeleninová s celozrnnými knedlíčky",
             "main": "Hovězí pečeně štěpánská, Rýže dušená",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -464,7 +545,7 @@
           },
           {
             "closed": false,
-            "soup": "Zeleninová s ovesnými vločkami",
+            "soup": " zeleninová s ovesnými vločkami",
             "main": "Žemlovka s jablky a tvarohem",
             "category": "SLADKÁ",
             "main2": "",
@@ -472,7 +553,7 @@
           },
           {
             "closed": false,
-            "soup": "Zeleninová s tarhoňou",
+            "soup": "zeleninová s tarhoňou",
             "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -480,11 +561,41 @@
           },
           {
             "closed": false,
-            "soup": "Čočková",
+            "soup": "čočková",
             "main": "Zapečené těstoviny s kuřecím masem a zeleninou",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
             "category2": ""
+          }
+        ]
+      },
+      {
+        "week": "2025-10-27",
+        "days": [
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
           }
         ]
       },
@@ -494,14 +605,14 @@
           {
             "closed": false,
             "soup": "brokolicová",
-            "main": "Čočka na kyselo, Vejce vařené",
+            "main": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zeleninová s kuskusem",
+            "soup": "zeleninová s kuskusem",
             "main": "Sicilské špagety (boloňské)",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
@@ -517,15 +628,15 @@
           },
           {
             "closed": false,
-            "soup": "Hrachová se smaženým hráškem",
-            "main": "Sekaná pečeně, Bramborová kaše",
+            "soup": "hrachová se smaženým hráškem",
+            "main": "Sekaná pečeně, Bramborová kaše - příloha",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Hovězí s vaječnou jíškou",
+            "soup": "hovězí s vaječnou jíškou",
             "main": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -538,15 +649,15 @@
         "days": [
           {
             "closed": false,
-            "soup": "Zeleninová zahuštěná červenou čočkou",
-            "main": "Rybí filé obalované, Brambory",
+            "soup": "zeleninová zahuštěná červenou čočkou",
+            "main": "Rybí filé obalované, Brambory m.m.",
             "category": "RYBY",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Hovězí s kapáním",
+            "soup": "hovězí s kapáním",
             "main": "Vepřový guláš, Rýže dušená",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -554,7 +665,7 @@
           },
           {
             "closed": false,
-            "soup": "Česneková s bramborem a vejcem",
+            "soup": "česneková s bramborem a vejcem",
             "main": "Nudle s mákem",
             "category": "SLADKÁ",
             "main2": "",
@@ -562,7 +673,7 @@
           },
           {
             "closed": false,
-            "soup": "Květáková",
+            "soup": "květáková",
             "main": "Hovězí pečeně frankfurtská, Těstoviny",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -570,7 +681,7 @@
           },
           {
             "closed": false,
-            "soup": "Fazolová se zeleninou",
+            "soup": "fazolová se zeleninou",
             "main": "Gnocchi s kuřecím masem, smetanou a špenátem",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -591,7 +702,7 @@
           },
           {
             "closed": false,
-            "soup": "Hovězí s játrovými noky",
+            "soup": "hovězí s játrovými noky",
             "main": "Omáčka koprová, Vejce vařené, Brambory",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -608,14 +719,14 @@
           {
             "closed": false,
             "soup": "rajčatová s těstovinami",
-            "main": "Kuskus s kuřecím masem",
+            "main": "Kuskus s kuřecím masem, Míchaná zelenina grilovaná",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zelenin. s kroupami",
+            "soup": "zelenin. s kroupami",
             "main": "Hovězí pečeně pražská, Rýže dušená",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -628,8 +739,8 @@
         "days": [
           {
             "closed": false,
-            "soup": "Gulášová",
-            "main": "Rybí file pečené na másle, Bramborová kaše",
+            "soup": "gulášová",
+            "main": "Rybí file pečené na másle, Bramborová kaše - příloha",
             "category": "RYBY",
             "main2": "",
             "category2": ""
@@ -637,14 +748,14 @@
           {
             "closed": false,
             "soup": "zelenin. s fridátovými nudlemi",
-            "main": "Kuřecí rizoto",
+            "main": "Kuřecí rizoto, Salát z červené řepy - příloha",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zeleninová s drožďovými knedlíčky",
+            "soup": "zeleninová s drožďovými knedlíčky",
             "main": "Vepřová kotleta na houbách, Těstoviny",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -653,14 +764,14 @@
           {
             "closed": false,
             "soup": "krupicová maďarská",
-            "main": "Francouzské brambory",
+            "main": "Francouzské brambory, Okurka sterilovaná - příloha",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Čočková se zeleninou",
+            "soup": "čočková se zeleninou",
             "main": "Španělský ptáček rozházený, Rýže dušená",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -673,15 +784,15 @@
         "days": [
           {
             "closed": false,
-            "soup": "Zelenin. s pohankou",
+            "soup": "zelenin. s pohankou",
             "main": "Kovbojská pánev, Chléb",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "LUŠTĚNINOVÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zeleninová se sýrovým kapáním",
+            "soup": "zeleninová se sýrovým kapáním",
             "main": "Kuře Šanghaj s rýží",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -689,15 +800,15 @@
           },
           {
             "closed": false,
-            "soup": "Hrachová s hrachovými krutony",
+            "soup": "hrachová s hrachovými krutony",
             "main": "Nákyp rýžový se švestkami",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "SLADKÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Z fazolových lusků",
+            "soup": "z fazolových lusků",
             "main": "Omáčka rajčatová, Hovězí maso vařené, Houskové knedlíky (kynuté)",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -705,9 +816,9 @@
           },
           {
             "closed": false,
-            "soup": "Krupicová s vejcem",
-            "main": "Kapustové karbanátky, Bramborová kaše",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
+            "soup": "krupicová s vejcem",
+            "main": "Kapustové karbanátky, Bramborová kaše - příloha",
+            "category": "BEZMASÁ SLANÁ",
             "main2": "",
             "category2": ""
           }
@@ -718,17 +829,17 @@
         "days": [
           {
             "closed": false,
-            "soup": "Špenátová",
-            "main": "Rybí filé po mlynářsku, Brambory",
+            "soup": "špenátová",
+            "main": "Rybí filé po mlynářsku, Brambory m.m.",
             "category": "RYBY",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Cizrnová krémová s rajčaty",
+            "soup": "cizrnová krémová s rajčaty",
             "main": "Pekingská směs, Rýže dušená",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
             "category2": ""
           },
@@ -742,7 +853,7 @@
           },
           {
             "closed": false,
-            "soup": "Luštěninová",
+            "soup": "luštěninová",
             "main": "Perkelt z kuřecího masa, Těstoviny",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -750,7 +861,7 @@
           },
           {
             "closed": false,
-            "soup": "Kapustová s rýží",
+            "soup": "kapustová s rýží",
             "main": "Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -763,23 +874,23 @@
         "days": [
           {
             "closed": false,
-            "soup": "kapustová s rýží",
-            "main": "Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané",
+            "soup": "zel. vývar s dýňovým kapáním",
+            "main": "Italský guláš (zbruf se sýrem), Špagety",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Z kysaného zelí",
-            "main": "Vepřový řízek přírodní, Brambory",
+            "soup": "z kysaného zelí",
+            "main": "Vepřový řízek přírodní, Brambory m.m.",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Ovarová",
+            "soup": "ovarová",
             "main": "Dukátové buchtičky s krémem",
             "category": "SLADKÁ",
             "main2": "",
@@ -787,7 +898,7 @@
           },
           {
             "closed": false,
-            "soup": "Z míchaných luštěnin",
+            "soup": "z míchaných luštěnin",
             "main": "Kuřecí roláda, Rýže dušená",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -796,10 +907,40 @@
           {
             "closed": false,
             "soup": "hovězí s těstovinami",
-            "main": "Zapečené těstoviny s uzeným masem",
+            "main": "Zapečené těstoviny s uzeným masem, Okurka sterilovaná - příloha",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
+          }
+        ]
+      },
+      {
+        "week": "2025-12-29",
+        "days": [
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
           }
         ]
       },
@@ -808,7 +949,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "rajčatová s těstovinami",
+            "soup": "rajčatová s těstovinou",
             "main": "Srbská čočka, Chléb",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
@@ -818,13 +959,13 @@
             "closed": false,
             "soup": "hovězí s vaječnou jíškou",
             "main": "Guláš maďarský, Rýže dušená",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Květáková",
+            "soup": "květáková",
             "main": "Rožnovské halušky (střapačky) s uzeným masem",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -840,8 +981,8 @@
           },
           {
             "closed": false,
-            "soup": "Koprová (kulajda)",
-            "main": "Holandský řízek, Bramborová kaše",
+            "soup": "koprová (kulajda)",
+            "main": "Holandský řízek, Bramborová kaše - příloha",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
@@ -853,15 +994,15 @@
         "days": [
           {
             "closed": false,
-            "soup": "Celerová se smaženým hráškem",
-            "main": "Losos přírodní, Brambory",
+            "soup": "celerová se smaženým hráškem",
+            "main": "Losos přírodní, Brambory m.m.",
             "category": "RYBY",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zelenin. s fridátovými nudlemi",
+            "soup": "zelenin. s fridátovými nudlemi",
             "main": "Kuřecí nudličky se sýrovou omáčkou, Těstoviny",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -869,7 +1010,7 @@
           },
           {
             "closed": false,
-            "soup": "Brokolicová",
+            "soup": "brokolicová",
             "main": "Španělský ptáček rozházený, Rýže dušená",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -877,7 +1018,7 @@
           },
           {
             "closed": false,
-            "soup": "Fazolová",
+            "soup": "fazolová",
             "main": "Lotrinské tagliatelle se sýrem",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -886,7 +1027,7 @@
           {
             "closed": false,
             "soup": "zeleninová s těstovinami",
-            "main": "Vepřová pečeně selská, Bramborové knedlíky (směs)",
+            "main": "Vepřová pečeně selská, Bramborové knedlíky (směs), Špenát dušený",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
@@ -899,14 +1040,14 @@
           {
             "closed": false,
             "soup": "bramborová",
-            "main": "Hrachová kaše s cibulkou, Vejce vařené",
+            "main": "Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Gulášová",
+            "soup": "gulášová",
             "main": "Zeleninový salát, Kuřecí stripsy",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -914,15 +1055,15 @@
           },
           {
             "closed": false,
-            "soup": "Špenátová s vajíčkem",
+            "soup": "špenátová s vajíčkem",
             "main": "Bramborové šišky s mákem (strouhankou)",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "SLADKÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zeleninová s celozrnnými knedlíčky",
+            "soup": "zeleninová s celozrnnými knedlíčky",
             "main": "Vepřové na houbách, Brambory",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -930,7 +1071,7 @@
           },
           {
             "closed": false,
-            "soup": "Hovězí s masem a vejcem",
+            "soup": "hovězí s masem a vejcem",
             "main": "Kuře Šanghaj s jasmínovou rýží",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -943,15 +1084,15 @@
         "days": [
           {
             "closed": false,
-            "soup": "Rajčatová s ovesnými vločkami",
-            "main": "Tilápie s rajčaty a sýrem, Brambory",
+            "soup": "rajčatová s ovesnými vločkami",
+            "main": "Tilápie s rajčaty a sýrem, Brambory m.m.",
             "category": "RYBY",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zeleninová s těstovinovou rýží",
+            "soup": "zeleninová s těstovinovou rýží",
             "main": "Hovězí pečeně štěpánská, Rýže dušená",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -960,22 +1101,22 @@
           {
             "closed": false,
             "soup": "květáková s červenou čočkou",
-            "main": "Králík pečený, Bramborové knedlíky (směs)",
+            "main": "Králík pečený, Brambory m.m.",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zelenin. s bulgurem",
+            "soup": "zelenin. s bulgurem",
             "main": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           },
           {
-            "closed": true,
-            "soup": "",
+            "closed": false,
+            "soup": "P R Á Z D N I N Y",
             "main": "",
             "category": "",
             "main2": "",
@@ -988,7 +1129,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Zelenin. s drožďovými knedlíčky",
+            "soup": "zelenin. s drožďovými knedlíčky",
             "main": "Španělská čočka s mletým masem, Chléb",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
@@ -996,15 +1137,15 @@
           },
           {
             "closed": false,
-            "soup": "Česneková s osmaženou hostičkou",
-            "main": "Vepřové v mrkvi, Brambory",
+            "soup": "česneková s osmaženou hostičkou",
+            "main": "Vepřové v mrkvi, Brambory m.m.",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Drůbková s nudlemi",
+            "soup": "drůbková s nudlemi",
             "main": "Těstovinový salát s marinovaným tofu",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -1020,7 +1161,7 @@
           },
           {
             "closed": false,
-            "soup": "Hovězí s kuskusem",
+            "soup": "hovězí s kuskusem",
             "main": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
@@ -1034,14 +1175,14 @@
           {
             "closed": false,
             "soup": "dýňový krém",
-            "main": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
-            "category": "LUŠTĚNINOVÁ",
+            "main": "Rybí filé po mlynářsku, Brambory",
+            "category": "RYBY",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Hráškový krém",
+            "soup": "hráškový krém",
             "main": "Sicilské špagety (boloňské)",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
@@ -1049,15 +1190,15 @@
           },
           {
             "closed": false,
-            "soup": "Zelenin. s pohankou",
+            "soup": "zelenin. s pohankou",
             "main": "Domácí buchty plněné mákem, povidly, tvarohem",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "SLADKÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Hovězí s těstovinou",
+            "soup": "hovězí s těstovinou",
             "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -1065,8 +1206,8 @@
           },
           {
             "closed": false,
-            "soup": "Pórková",
-            "main": "Sekaná zahradnická, Brambory",
+            "soup": "pórková",
+            "main": "Sekaná zahradnická, Brambory m.m.",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
@@ -1078,15 +1219,15 @@
         "days": [
           {
             "closed": false,
-            "soup": "Zeleninová s tarhoňou",
-            "main": "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
-            "category": "LUŠTĚNINOVÁ",
+            "soup": "zeleninová s tarhoňou",
+            "main": "Mexická pánev (vepř.maso, fazole)) se sýrem",
+            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zimní zeleninová s ovesnými vločkami",
+            "soup": "zimní zeleninová s ovesnými vločkami",
             "main": "Omáčka koprová, Brambory, Vejce vařené",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -1095,14 +1236,14 @@
           {
             "closed": false,
             "soup": "selská ii.",
-            "main": "Rizoto z vepřového masa",
+            "main": "Rizoto z vepřového masa, Okurka sterilovaná - příloha",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Bramboračka nezahuštěná",
+            "soup": "bramboračka nezahuštěná",
             "main": "Kapustové karbanátky s masem, Brambory",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
@@ -1110,7 +1251,7 @@
           },
           {
             "closed": false,
-            "soup": "Krupicová s vejcem",
+            "soup": "krupicová s vejcem",
             "main": "Zapečené těstoviny s kuřecím masem a zeleninou",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -1123,15 +1264,15 @@
         "days": [
           {
             "closed": false,
-            "soup": "Hovězí s játrovými noky",
-            "main": "Rybí stripsy, Brambory",
+            "soup": "hovězí s játrovými noky",
+            "main": "Rybí stripsy, Brambory m.m.",
             "category": "RYBY",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Frankfurtská s bramborem",
+            "soup": "frankfurtská s bramborem",
             "main": "Žemlovka s jablky a tvarohem",
             "category": "SLADKÁ",
             "main2": "",
@@ -1139,7 +1280,7 @@
           },
           {
             "closed": false,
-            "soup": "Zeleninová s quinoou",
+            "soup": "zeleninová s quinoou",
             "main": "Kuře pečené, Brambory",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -1147,7 +1288,7 @@
           },
           {
             "closed": false,
-            "soup": "Hovězí s vaječnou jíškou",
+            "soup": "hovězí s vaječnou jíškou",
             "main": "Masové koule v rajčatové omáčce, Těstoviny",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
@@ -1156,7 +1297,7 @@
           {
             "closed": false,
             "soup": "kmínová s vejcem",
-            "main": "Vepřová pečeně selská, Karlovarský knedlík",
+            "main": "Vepřová pečeně selská, Špenát dušený, Karlovarský knedlík",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
@@ -1170,21 +1311,21 @@
             "closed": false,
             "soup": "zelenin. s bulgurem",
             "main": "Kovbojská pánev, Chléb",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "LUŠTĚNINOVÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Květáková",
-            "main": "Karbanátky pečené, Bramborová kaše",
+            "soup": "květáková",
+            "main": "Karbanátky pečené, Bramborová kaše - příloha",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Hovězí s česnekovými krutony",
+            "soup": "hovězí s česnekovými krutony",
             "main": "Těstoviny se sýrovou omáčkou",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -1193,14 +1334,14 @@
           {
             "closed": false,
             "soup": "čočková",
-            "main": "Rizoto srbské",
-            "category": "BEZMASÁ SLANÁ",
+            "main": "Rizoto srbské, Okurka sterilovaná - příloha",
+            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zelenin. s ovesnými vločkami",
+            "soup": "zelenin. s ovesnými vločkami",
             "main": "Svíčková na smetaně, Houskové knedlíky (kynuté)",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -1213,7 +1354,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Gulášová",
+            "soup": "gulášová",
             "main": "Hejk pečený na bylinkovém másle, Brambory",
             "category": "RYBY",
             "main2": "",
@@ -1221,7 +1362,7 @@
           },
           {
             "closed": false,
-            "soup": "Hovězí s jáhly",
+            "soup": "hovězí s jáhly",
             "main": "Bramborák",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -1237,7 +1378,7 @@
           },
           {
             "closed": false,
-            "soup": "Zeleninová se sýrovým kapáním",
+            "soup": "zeleninová se sýrovým kapáním",
             "main": "Hovězí pečeně na paprice, Vícezrnný knedlík (směs)",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -1245,8 +1386,8 @@
           },
           {
             "closed": false,
-            "soup": "Cizrnová",
-            "main": "Kuřecí řízek smažený, Bramborová kaše",
+            "soup": "cizrnová",
+            "main": "Kuřecí řízek smažený, Bramborová kaše - příloha",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
             "category2": ""
@@ -1258,7 +1399,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Ovarová",
+            "soup": "ovarová",
             "main": "Čočkový kotlík, Chléb",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
@@ -1266,15 +1407,15 @@
           },
           {
             "closed": false,
-            "soup": "Drožďová",
-            "main": "Vepřová roláda (karlovarský kotouč), Bramborová kaše",
+            "soup": "drožďová",
+            "main": "Vepřová roláda (karlovarský kotouč), Bramborová kaše - příloha",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zelenin. s fridátovými nudlemi",
+            "soup": "zelenin. s fridátovými nudlemi",
             "main": "Kuřecí čína, Rýže dušená",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -1282,7 +1423,7 @@
           },
           {
             "closed": false,
-            "soup": "Hrachová",
+            "soup": "hrachová",
             "main": "Smažené točenky s rozinkami",
             "category": "SLADKÁ",
             "main2": "",
@@ -1292,7 +1433,7 @@
             "closed": false,
             "soup": "hovězí se strouháním",
             "main": "Italský guláš (zbruf se sýrem), Těstoviny",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
           }
@@ -1303,7 +1444,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Zelenin. s rýží",
+            "soup": "zelenin. s rýží",
             "main": "Bramborový guláš, Rohlík",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -1312,14 +1453,14 @@
           {
             "closed": false,
             "soup": "rajčatová s těstovinou",
-            "main": "Karbanátek z rybího file - pečený, Brambory",
+            "main": "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha",
             "category": "RYBY",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Špenátová s vajíčkem",
+            "soup": "špenátová s vajíčkem",
             "main": "Španělský plátek, Rýže dušená",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -1357,7 +1498,7 @@
           {
             "closed": false,
             "soup": "zeleninová s těstovinami",
-            "main": "Hrachová kaše s cibulkou, Párky",
+            "main": "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
             "category2": ""
@@ -1380,9 +1521,9 @@
           },
           {
             "closed": false,
-            "soup": "Hovězí s játrovými knedlíčky",
+            "soup": "hovězí s játrovými knedlíčky",
             "main": "Guláš maďarský, Houskové knedlíky (kynuté)",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
             "category2": ""
           }
@@ -1394,22 +1535,22 @@
           {
             "closed": false,
             "soup": "bramborová",
-            "main": "Rybí filé smažené, Bramborová kaše",
+            "main": "Rybí filé smažené, Bramborová kaše - příloha",
             "category": "RYBY",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Frankfurtská s bramborem",
+            "soup": "frankfurtská s bramborem",
             "main": "Nákyp rýžový s meruňkami",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "SLADKÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Fazolová se zeleninou",
+            "soup": "fazolová se zeleninou",
             "main": "Kuře pečené, Šťouchané brambory s cibulkou",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -1417,7 +1558,7 @@
           },
           {
             "closed": false,
-            "soup": "Hovězí s vaječnou jíškou",
+            "soup": "hovězí s vaječnou jíškou",
             "main": "Hovězí pečeně na houbách, Těstoviny",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -1425,7 +1566,7 @@
           },
           {
             "closed": false,
-            "soup": "Zeleninová s hrachovými nudlemi",
+            "soup": "zeleninová s hrachovými nudlemi",
             "main": "Moravský vrabec, Bramborové knedlíky (směs), Zelí kysané",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -1438,15 +1579,15 @@
         "days": [
           {
             "closed": false,
-            "soup": "Rychlá s vejcem",
-            "main": "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
-            "category": "LUŠTĚNINOVÁ",
+            "soup": "rychlá s vejcem",
+            "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
+            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Koprová (kulajda)",
+            "soup": "koprová (kulajda)",
             "main": "Zapečené těstoviny s kuřecím masem a zeleninou",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -1456,21 +1597,21 @@
             "closed": false,
             "soup": "čočková",
             "main": "Žebrácké maso, Brambory opékané",
-            "category": "BEZMASÁ SLANÁ",
-            "main2": "",
-            "category2": ""
-          },
-          {
-            "closed": false,
-            "soup": "z batátových brambor",
-            "main": "Rizoto z vepřového masa",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zeleninová s kuskusem",
+            "soup": "z batátových brambor",
+            "main": "Rizoto z vepřového masa, Okurka sterilovaná - příloha",
+            "category": "VEPŘOVÉ A UZENÉ",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "zeleninová s kuskusem",
             "main": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -1483,7 +1624,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Z kysaného zelí s klobásou",
+            "soup": "z kysaného zelí s klobásou",
             "main": "Rybí filé pečené na másle, Brambory",
             "category": "RYBY",
             "main2": "",
@@ -1491,7 +1632,7 @@
           },
           {
             "closed": false,
-            "soup": "Zeleninová zahuštěná červenou čočkou",
+            "soup": "zeleninová zahuštěná červenou čočkou",
             "main": "Špagety s vepřovým masem a rajčaty",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -1500,7 +1641,7 @@
           {
             "closed": false,
             "soup": "hráškový krém",
-            "main": "Sekaná pečeně, Bramborová kaše",
+            "main": "Sekaná pečeně, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
@@ -1528,7 +1669,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Kuřecí s nudlemi",
+            "soup": "kuřecí s nudlemi",
             "main": "Hrachová kaše s cibulkou, Vejce vařené",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
@@ -1536,7 +1677,7 @@
           },
           {
             "closed": false,
-            "soup": "Zelenin. s ovesnými vločkami",
+            "soup": "zelenin. s ovesnými vločkami",
             "main": "Vepřové v kapustě, Brambory",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -1544,15 +1685,15 @@
           },
           {
             "closed": false,
-            "soup": "Z míchaných luštěnin",
-            "main": "Dukátové buchtičky s krémem",
+            "soup": "z míchaných luštěnin",
+            "main": "Dukátové buchtičky s krémem, Mléko",
             "category": "SLADKÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Česneková s osmaženou hostičkou",
+            "soup": "česneková s osmaženou hostičkou",
             "main": "Vepřová kýta po cikánsku, Rýže dušená",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -1573,7 +1714,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Z batátových brambor",
+            "soup": "z batátových brambor",
             "main": "Rybí filé po mlynářsku, Brambory",
             "category": "RYBY",
             "main2": "",
@@ -1581,7 +1722,7 @@
           },
           {
             "closed": false,
-            "soup": "zeleninová s drožďovými knedlíčky",
+            "soup": "zelenin. s drožďovými knedlíčky",
             "main": "Hovězí guláš, Rýže dušená",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -1589,7 +1730,7 @@
           },
           {
             "closed": false,
-            "soup": "Květáková s červenou čočkou",
+            "soup": "květáková s červenou čočkou",
             "main": "Těstoviny penne s tuňákem a chery rajčaty",
             "category": "RYBY",
             "main2": "",
@@ -1597,7 +1738,7 @@
           },
           {
             "closed": false,
-            "soup": "Hovězí s kapáním",
+            "soup": "hovězí s kapáním",
             "main": "Vepřová pečeně, Fazolové lusky na slanině, Brambory",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
@@ -1605,7 +1746,7 @@
           },
           {
             "closed": false,
-            "soup": "Brokolicová",
+            "soup": "brokolicová",
             "main": "Špekové knedlíky, Zelí kysané",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -1618,7 +1759,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Zeleninová s těstovinovou rýží",
+            "soup": "zeleninová s těstovinovou rýží",
             "main": "Srbská čočka, Chléb",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
@@ -1627,14 +1768,14 @@
           {
             "closed": false,
             "soup": "celerová se smaženým hráškem",
-            "main": "Vepřová pečeně selská, Nastavovaná kaše s cibulkou",
+            "main": "Vepřová pečeně selská, Nastavovaná kaše s cibulkou, Okurka sterilovaná - příloha",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Hrachová",
+            "soup": "hrachová",
             "main": "Kuřecí čína, Rýže dušená",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -1651,7 +1792,7 @@
           {
             "closed": false,
             "soup": "špenátová",
-            "main": "Zapečené těstoviny s uzeným masem",
+            "main": "Zapečené těstoviny s uzeným masem, Zelný salát  - příloha",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
@@ -1663,7 +1804,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Rajčatová s ovesnými vločkami",
+            "soup": "rajčatová s ovesnými vločkami",
             "main": "Rybí filé zapečené se špenátem, Brambory",
             "category": "RYBY",
             "main2": "",
@@ -1671,7 +1812,7 @@
           },
           {
             "closed": false,
-            "soup": "Zeleninová s tarhoňou",
+            "soup": "zeleninová s tarhoňou",
             "main": "Hovězí pečeně znojemská, Rýže dušená",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -1679,7 +1820,7 @@
           },
           {
             "closed": false,
-            "soup": "Gulášová",
+            "soup": "gulášová",
             "main": "Těstoviny s brokolicí",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -1695,7 +1836,7 @@
           },
           {
             "closed": false,
-            "soup": "Zelenin. s rýží",
+            "soup": "zelenin. s rýží",
             "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -1708,39 +1849,39 @@
         "days": [
           {
             "closed": false,
-            "soup": "Kuřecí s nudlemi",
-            "main": "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
-            "category": "LUŠTĚNINOVÁ",
+            "soup": "kuřecí s nudlemi",
+            "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
+            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "",
-            "main": "",
-            "category": "",
+            "soup": "zeleninová se sýrovým kapáním",
+            "main": "Kuřecí nudličky se sýrovou omáčkou, Těstoviny",
+            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Cibulová se sýrem",
-            "main": "Masová směs \"lamendr\", Rýže dušená",
-            "category": "BEZMASÁ SLANÁ",
+            "soup": "cibulová se sýrem",
+            "main": "Masová směs \"flamendr\", Rýže dušená",
+            "category": "K ZAŘAZENÍ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "",
-            "main": "",
-            "category": "",
+            "soup": "čočková se zeleninou",
+            "main": "Bramborové šišky s mákem (strouhankou)",
+            "category": "SLADKÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Pórková s vejci",
+            "soup": "pórková s vejci",
             "main": "Kuřecí stripsy, Brambory",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -1761,7 +1902,7 @@
           },
           {
             "closed": false,
-            "soup": "Zeleninová s celozrnnými knedlíčky",
+            "soup": "zeleninová s celozrnnými knedlíčky",
             "main": "Španělský ptáček rozházený, Rýže dušená",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -1769,15 +1910,15 @@
           },
           {
             "closed": false,
-            "soup": "Ze zahradních jahod",
-            "main": "Obalované filé s brokolicí a sýrem, Brambory",
+            "soup": "ze zahradních jahod",
+            "main": "Obalované filé s brokolicí a sýrem, Brambory m.m.",
             "category": "RYBY",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Mrkvová",
+            "soup": "mrkvová",
             "main": "Těstovinový salát se zeleninou a šunkou",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -1786,7 +1927,7 @@
           {
             "closed": false,
             "soup": "hovězí s těstovinami",
-            "main": "Králík pečený, Bramborové knedlíky (směs)",
+            "main": "Králík pečený, Bramborové knedlíky (směs), Špenát dušený",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
             "category2": ""
@@ -1798,7 +1939,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Bramboračka nezahuštěná",
+            "soup": "bramboračka nezahuštěná",
             "main": "Horňácký guláš (maso, fazole), Chléb",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
@@ -1807,7 +1948,7 @@
           {
             "closed": false,
             "soup": "ovarová",
-            "main": "Livance",
+            "main": "Lívance, Káva bílá",
             "category": "SLADKÁ",
             "main2": "",
             "category2": ""
@@ -1822,15 +1963,15 @@
           },
           {
             "closed": false,
-            "soup": "Cizrnová krémová s rajčaty",
-            "main": "Kuře pečené, Brambory",
+            "soup": "cizrnová krémová s rajčaty",
+            "main": "Kuře pečené, Brambory m.m.",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zeleninová zahuštěná červenou čočkou",
+            "soup": "zeleninová zahuštěná červenou čočkou",
             "main": "Vepřové na houbách se smetanou, Houskové knedlíky (kynuté)",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -1843,7 +1984,7 @@
         "days": [
           {
             "closed": false,
-            "soup": "Drožďová",
+            "soup": "drožďová",
             "main": "Zeleninové rizoto",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -1851,7 +1992,7 @@
           },
           {
             "closed": false,
-            "soup": "Hovězí s kapustou a rýží",
+            "soup": "hovězí s kapustou a rýží",
             "main": "Vepřové na paprice, Těstoviny",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -1859,7 +2000,7 @@
           },
           {
             "closed": false,
-            "soup": "Fazolová se zeleninou",
+            "soup": "fazolová se zeleninou",
             "main": "Nudle s mákem",
             "category": "SLADKÁ",
             "main2": "",
@@ -1867,7 +2008,7 @@
           },
           {
             "closed": false,
-            "soup": "Špenátová s vajíčkem",
+            "soup": "špenátová s vajíčkem",
             "main": "Francouzské brambory",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
@@ -1884,6 +2025,66 @@
         ]
       },
       {
+        "week": "2026-07-06",
+        "days": [
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          }
+        ]
+      },
+      {
+        "week": "2026-07-20",
+        "days": [
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          },
+          {
+            "soup": "",
+            "main": "",
+            "category": ""
+          }
+        ]
+      },
+      {
         "week": "2026-08-31",
         "days": [
           {
@@ -1896,7 +2097,7 @@
           },
           {
             "closed": false,
-            "soup": "Květáková",
+            "soup": "květáková",
             "main": "Nudle s mákem",
             "category": "SLADKÁ",
             "main2": "",
@@ -1905,14 +2106,14 @@
           {
             "closed": false,
             "soup": "celerová se smaženým hráškem",
-            "main": "Sekaná pečeně, Brambory",
+            "main": "Sekaná pečeně, Brambory, Okurka sterilovaná - příloha",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zeleninová s těstovinami",
+            "soup": "zeleninová s těstovinami",
             "main": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -1920,9 +2121,9 @@
           },
           {
             "closed": false,
-            "soup": "Špenátová s vajíčkem",
+            "soup": "špenátová s vajíčkem",
             "main": "Rizoto srbské",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           }
@@ -1934,7 +2135,7 @@
           {
             "closed": false,
             "soup": "zeleninová se sýrovým kapáním",
-            "main": "Čočka na kyselo, Vejce vařené",
+            "main": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
             "category2": ""
@@ -1950,14 +2151,14 @@
           {
             "closed": false,
             "soup": "bramborová",
-            "main": "Zapečené těstoviny s uzeninou",
+            "main": "Zapečené těstoviny s uzeninou, Salát z červené řepy - příloha",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Kapustová s rýží",
+            "soup": "kapustová s rýží",
             "main": "Kuře pečené, Brambory",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -1965,7 +2166,7 @@
           },
           {
             "closed": false,
-            "soup": "Zelenin. s pohankou",
+            "soup": "zelenin. s pohankou",
             "main": "Sicilské špagety (boloňské)",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
@@ -1978,15 +2179,15 @@
         "days": [
           {
             "closed": false,
-            "soup": "Rajčatová s těstovinou",
-            "main": "Rybí file pečené na másle, Bramborová kaše",
+            "soup": "rajčatová s těstovinou",
+            "main": "Rybí filé pečené na másle, Bramborová kaše - příloha",
             "category": "RYBY",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zeleninová zahuštěná červenou čočkou",
+            "soup": "zeleninová zahuštěná červenou čočkou",
             "main": "Kuřecí čína, Rýže dušená",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -1994,7 +2195,7 @@
           },
           {
             "closed": false,
-            "soup": "Krupicová s vejcem",
+            "soup": "krupicová s vejcem",
             "main": "Vepřové na houbách, Těstoviny",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -2010,7 +2211,7 @@
           },
           {
             "closed": false,
-            "soup": "Zeleninová s kuskusem",
+            "soup": "zeleninová s kuskusem",
             "main": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -2023,15 +2224,15 @@
         "days": [
           {
             "closed": false,
-            "soup": "Hovězí s vaječnou jíškou",
+            "soup": "hovězí s vaječnou jíškou",
             "main": "Kovbojská pánev, Chléb",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "LUŠTĚNINOVÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Dýňový krém",
+            "soup": "dýňový krém",
             "main": "Hovězí pečeně štěpánská, Rýže dušená",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -2040,14 +2241,14 @@
           {
             "closed": false,
             "soup": "hrachová",
-            "main": "Francouzské brambory",
+            "main": "Francouzské brambory, Okurka sterilovaná - příloha",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Z rybího filé",
+            "soup": "z rybího filé",
             "main": "Kuře na paprice, Těstoviny",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
@@ -2055,8 +2256,8 @@
           },
           {
             "closed": false,
-            "soup": "zeleninová s tarhoňou",
-            "main": "Moravský vrabec, Bramborové knedlíky (směs), Zelí kysané",
+            "soup": "pórková s vejci",
+            "main": "Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
@@ -2076,31 +2277,31 @@
           },
           {
             "closed": false,
-            "soup": "",
-            "main": "",
-            "category": "",
+            "soup": "zeleninová s tarhoňou",
+            "main": "Omáčka koprová, Brambory, Vejce vařené",
+            "category": "BEZMASÁ SLANÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Hovězí s játrovými noky",
-            "main": "Kuřecí prsa na kari koření, Rýže dušená",
+            "soup": "hovězí s játrovými noky",
+            "main": "Kuřecí prsa  na kari koření, Rýže dušená",
             "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Hovězí se strouháním",
-            "main": "Karbanátek z rybího file - pečený, Brambory",
+            "soup": "hovězí se strouháním",
+            "main": "Karbanátek z rybího file - pečený, Brambory m.m.",
             "category": "RYBY",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Mrkvová",
+            "soup": "mrkvová",
             "main": "Rožnovské halušky (střapačky) s uzeným masem",
             "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
@@ -2114,22 +2315,22 @@
           {
             "closed": false,
             "soup": "kuřecí s nudlemi",
-            "main": "Hrachová kaše s cibulkou, Vejce vařené",
+            "main": "Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha",
             "category": "LUŠTĚNINOVÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Zelenin. s drožďovými knedlíčky",
-            "main": "Těstoviny po Lotrinsku",
+            "soup": "zelenin. s drožďovými knedlíčky",
+            "main": "Těstoviny  po Lotrinsku",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "Z míchaných luštěnin",
+            "soup": "z míchaných luštěnin",
             "main": "Znojemský guláš, Rýže dušená",
             "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
@@ -2137,7 +2338,7 @@
           },
           {
             "closed": false,
-            "soup": "Zelenin. s bulgurem",
+            "soup": "zelenin. s bulgurem",
             "main": "Těstoviny s brokolicí a sýrovou omáčkou",
             "category": "BEZMASÁ SLANÁ",
             "main2": "",
@@ -2145,9 +2346,54 @@
           },
           {
             "closed": false,
-            "soup": "Zeleninová s ovesnými vločkami",
+            "soup": " zeleninová s ovesnými vločkami",
             "main": "Žebrácké maso, Brambory",
-            "category": "BEZMASÁ SLANÁ",
+            "category": "VEPŘOVÉ A UZENÉ",
+            "main2": "",
+            "category2": ""
+          }
+        ]
+      },
+      {
+        "week": "2026-10-12",
+        "days": [
+          {
+            "closed": false,
+            "soup": "čočková",
+            "main": "Rybí filé obalované, Bramborová kaše - příloha",
+            "category": "RYBY",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "frankfurtská s bramborem",
+            "main": "Rizoto s kuřecím masem",
+            "category": "DRŮBEŽ A KRÁLÍK",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "hovězí s jáhly",
+            "main": "Masové koule v rajčatové omáčce, Těstoviny",
+            "category": "MLETÉ MASO A ZAPÉKANÉ",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "fazolová",
+            "main": "Bramborové šišky s mákem (strouhankou)",
+            "category": "SLADKÁ",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "zelenin. s fridátovými nudlemi",
+            "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
+            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
             "category2": ""
           }
@@ -2199,92 +2445,77 @@
         ]
       },
       {
-        "week": "2026-11-02",
+        "week": "2026-10-26",
         "days": [
           {
-            "closed": false,
-            "soup": "rajčatová s tarhoňou",
-            "main": "Smažené rybí prsty, Brambory m.m.",
-            "category": "RYBY",
-            "main2": "",
-            "category2": ""
+            "soup": "",
+            "main": "",
+            "category": ""
           },
           {
-            "closed": false,
-            "soup": "zeleninová s celozrnnými nudlemi",
-            "main": "Krůtí nudličky s pórkem, Rýže dušená",
-            "category": "DRŮBEŽ A KRÁLÍK",
-            "main2": "",
-            "category2": ""
+            "soup": "",
+            "main": "",
+            "category": ""
           },
           {
-            "closed": false,
-            "soup": "zelenin. s fridátovými nudlemi",
-            "main": "Bulgur s kuřecím masem a zeleninou",
-            "category": "DRŮBEŽ A KRÁLÍK",
-            "main2": "",
-            "category2": ""
+            "soup": "",
+            "main": "",
+            "category": ""
           },
           {
-            "closed": false,
-            "soup": "ovarová",
-            "main": "Dukátové buchtičky s krémem, Kakao",
-            "category": "SLADKÁ",
-            "main2": "",
-            "category2": ""
+            "soup": "",
+            "main": "",
+            "category": ""
           },
           {
-            "closed": false,
-            "soup": "hovězí s kapáním",
-            "main": "Bratislavské vepřové plecko, Těstoviny",
-            "category": "VEPŘOVÉ A UZENÉ",
-            "main2": "",
-            "category2": ""
+            "soup": "",
+            "main": "",
+            "category": ""
           }
         ]
       },
       {
-        "week": "2026-10-12",
+        "week": "2026-11-02",
         "days": [
           {
             "closed": false,
-            "soup": "Čočková",
-            "main": "Rybí filé obalované, Bramborová kaše",
-            "category": "RYBY",
-            "main2": "",
-            "category2": ""
-          },
-          {
-            "closed": false,
-            "soup": "frankfurtská s bramborem",
-            "main": "Rizoto s kuřecím masem",
-            "category": "DRŮBEŽ A KRÁLÍK",
-            "main2": "",
-            "category2": ""
-          },
-          {
-            "closed": false,
-            "soup": "Hovězí s jáhly",
-            "main": "Masové koule v rajčatové omáčce, Těstoviny",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
-            "main2": "",
-            "category2": ""
-          },
-          {
-            "closed": false,
-            "soup": "fazolová",
-            "main": "Bramborové šišky s mákem (strouhankou)",
+            "soup": "gulášová",
+            "main": "zeleninové rizoto sypané sýrem a parmazánem, ovocný sirup, čistá voda",
             "category": "BEZMASÁ SLANÁ",
-            "main2": "",
-            "category2": ""
+            "main2": "kuřecí maso po provensálsku, farfalle",
+            "category2": "DRŮBEŽ A KRÁLÍK"
           },
           {
             "closed": false,
-            "soup": "Zelenin. s fridátovými nudlemi",
-            "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
+            "soup": "špenátová",
+            "main": "kuřecí paličky na medu, bramborová kaše, čistá voda",
+            "category": "DRŮBEŽ A KRÁLÍK",
+            "main2": "hovězí maso stroganoff, dušená rýže",
+            "category2": "HOVĚZÍ A TELECÍ"
+          },
+          {
+            "closed": false,
+            "soup": "zeleninový vývar s ovesnými vločkami",
+            "main": "štěpánská hovězí pečeně, houskové knedlíky, čistá voda",
+            "category": "HOVĚZÍ A TELECÍ",
+            "main2": "těstoviny s lososem ve smetanové omáčce",
+            "category2": "RYBY"
+          },
+          {
+            "closed": false,
+            "soup": "hrachová s opečenou houskou",
+            "main": "krůtí sekaná se sýrem, brambory, zeleninový salát míchaný, čistá voda",
+            "category": "DRŮBEŽ A KRÁLÍK",
+            "main2": "kuřecí maso po čínsku, dušená rýže, ovoce",
+            "category2": "DRŮBEŽ A KRÁLÍK"
+          },
+          {
+            "closed": false,
+            "soup": "hovězí rychlá s vejcem",
+            "main": "vepřový guláš, vřetena, čistá voda",
             "category": "VEPŘOVÉ A UZENÉ",
-            "main2": "",
-            "category2": ""
+            "main2": "řecký salát, vícezrnný rohlík",
+            "category2": "BEZMASÁ SLANÁ"
           }
         ]
       }
