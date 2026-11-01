@@ -123,7 +123,7 @@ dlg.addEventListener('click',event=>{
 });
 function previewFooter(){
  const buttons=[];
- buttons.push({text:'Uložit opravy ('+corrections.size+')',primary:true,disabled:corrections.size===0,action:saveCorrections});
+ buttons.push({text:'Uložit do katalogu ('+corrections.size+')',primary:true,disabled:corrections.size===0,action:saveCorrections});
  buttons.push({text:enabled?'Automatika: zapnuto ✓':'Automatika: vypnuto',action:()=>{enabled=!enabled;try{localStorage.setItem(PREF_KEY,String(enabled))}catch(_e){}refreshToggle();previewFooter();report('Strava.cz: automatická kontrola '+(enabled?'zapnuta.':'vypnuta.'));}});
  buttons.push({text:'Zavřít',action:close});setFooter(buttons);
 }
@@ -133,14 +133,20 @@ function saveCorrections(){
  try{
   const state=structuredClone(window.JidelnickyApp.getState());
   let count=0;
+  const planned=new Map();
+  for(const entry of corrections.values()){const k=entry.kind+'|'+norm(entry.raw);if(planned.has(k)&&planned.get(k)!==entry.category)throw Error('Stejné jídlo má dvě různé kategorie: '+entry.raw);planned.set(k,entry.category);}
+  const processed=new Set();
   for(const {week,day,field,kind,raw,category} of corrections.values()){
    if(!state.catalog?.[kind]?.[category])throw Error('Kategorie v katalogu již neexistuje: '+category);
    const nameKey=norm(raw);
+   const uniqueKey=kind+'|'+nameKey;
+   if(processed.has(uniqueKey))continue;
+   processed.add(uniqueKey);
    // Přesunout pouze toto konkrétní jídlo, ne podobné názvy.
    for(const names of Object.values(state.catalog[kind])){
     for(let i=names.length-1;i>=0;i--)if(norm(names[i])===nameKey)names.splice(i,1);
    }
-   state.catalog[kind][category].push(raw);
+   if(!state.catalog[kind][category].some(n=>norm(n)===nameKey))state.catalog[kind][category].push(raw);
    // U již uloženého týdne měnit jen kategorii, pokud je v daném poli přesně stejné jídlo.
    const saved=state.history.find(h=>h.week===week);
    if(saved?.days?.[day]&&norm(saved.days[day][field])===nameKey){
@@ -150,7 +156,12 @@ function saveCorrections(){
    count++;
   }
   window.JidelnickyApp.applyState(state);window.GitHubSync?.changed?.();
-  corrections.clear();close();report('Strava.cz: '+count+' ručních oprav uloženo do katalogu; synchronizace na GitHub čeká na dokončení.');
+  corrections.clear();
+  // Přepočítat rozpoznávání z právě uloženého katalogu a ihned ukázat zelený stav.
+  catalog=window.JidelnickyApp.getState().catalog;
+  for(const w of weeks)for(const e of w.entries){const found=match(e.raw,e.kind);if(found){e.matched=found;e.mode='auto';e.categorySuggestion=found.category;e.categoryConfident=true;}}
+  review();previewFooter();
+  report('Strava.cz: '+count+' položek potvrzeno/opraveno v katalogu; synchronizace na GitHub čeká na dokončení.');
  }catch(err){window.alert('Opravy se nepodařilo uložit: '+err.message)}
 }
 
@@ -169,17 +180,20 @@ function buildIssue(e,w){
   p.textContent='Kategorie automaticky: '+e.categorySuggestion;
   section.append(p);
   if(previewOnly&&!test){
+   const key=correctionKey(w,e);
+   const confirm=document.createElement('button');confirm.type='button';confirm.textContent='✓ Potvrdit kategorii '+e.categorySuggestion;
+   confirm.className='ss-primary';confirm.style.marginTop='7px';confirm.style.marginRight='7px';section.append(confirm);
+   confirm.onclick=()=>{corrections.set(key,{week:w.week,day:e.day,field:e.field,kind:e.kind,raw:e.raw,category:e.categorySuggestion});previewFooter();confirm.textContent='✓ Připraveno k uložení';};
    const edit=document.createElement('button');edit.type='button';edit.textContent='✎ Opravit kategorii';
    edit.style.marginTop='7px';section.append(edit);
    const area=document.createElement('div');area.hidden=true;area.style.marginTop='8px';
    const select=document.createElement('select');select.setAttribute('aria-label','Opravit kategorii jídla');
    for(const name of Object.keys(catalog[e.kind]))select.add(new Option(name,name));
    select.value=e.categorySuggestion;area.append(select);section.append(area);
-   const key=correctionKey(w,e);
    edit.onclick=()=>{area.hidden=!area.hidden;edit.textContent=area.hidden?'✎ Opravit kategorii':'Skrýt opravu'};
    select.onchange=()=>{
-    if(select.value===e.categorySuggestion)corrections.delete(key);
-    else corrections.set(key,{week:w.week,day:e.day,field:e.field,kind:e.kind,raw:e.raw,category:select.value});
+    corrections.set(key,{week:w.week,day:e.day,field:e.field,kind:e.kind,raw:e.raw,category:select.value});
+    confirm.textContent=select.value===e.categorySuggestion?'✓ Připraveno k uložení':'✓ Kategorie upravena';
     previewFooter();
    };
   }
