@@ -346,40 +346,40 @@
       "days": [
         {
           "closed": false,
-          "soup": "česneková s osmaženou hostičkou",
-          "main": "Rybí filé po mlynářsku, Brambory",
+          "soup": "zeleninová s celozrnnými knedlíčky",
+          "main": "Rybí filé pečené na másle, Brambory",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s těstovinovou rýží",
-          "main": "Bramborák",
+          "soup": "čočková",
+          "main": "Zapečené těstoviny s uzeným masem",
+          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "Špenátová s vajíčkem",
+          "main": "Brokolicová poezie (květák, niva)",
           "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "kmínová s vejcem",
-          "main": "Čočkový kotlík, Chléb",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "hrachová se smaženým hráškem",
+          "main": "Sekaná pečeně, Brambory",
+          "category": "MLETÉ MASO A ZAPÉKANÉ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zelenin. s bulgurem",
-          "main": "Zeleninové rizoto",
-          "category": "BEZMASÁ SLANÁ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "z batátových brambor",
-          "main": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
+          "soup": "zelenin. s rýží",
+          "main": "Čočka na kyselo, Vejce vařené",
           "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
