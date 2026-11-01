@@ -66,7 +66,7 @@ function auditCatalogHistory(){
   const n=key(name),c=key(cat),id=kind+'|'+n+'|'+c;
   if(flagged.has(id))return;let reason='';
   if(kind==='main'&&c.includes('bezmasa')&&/\b(sunk|uzen|maso|kurec|veprov|hovez|kruti|slanina|spekov|parek|klobas)/.test(n))reason='Obsahuje masovou surovinu, ale je zařazeno jako bezmasé';
-  if(kind==='soup'&&c.includes('zeleninove')&&/drubkov|hovezi|kureci|masov/.test(n))reason='Název naznačuje masový základ, ale je mezi zeleninovými';
+  if(kind==='soup'&&c.includes('zeleninove')&&n!=='drubkova s nudlemi'&&/drubkov|hovezi|kureci|masov/.test(n))reason='Název naznačuje masový základ, ale je mezi zeleninovými';
   if(c.includes('k zarazeni')||c.includes('k overeni'))reason='Nevyřešená kategorie';
   if(reason){flagged.add(id);review.push({kind,name,cat,reason})}
  }
@@ -93,7 +93,10 @@ async function runCatalogAudit(){
  (audit.review.length?'K POSOUZENÍ (HEURISTIKA, NE POTVRZENÁ CHYBA):\n'+audit.review.map(x=>`${x.kind==='soup'?'Polévka':'Oběd'}: ${x.name} [${x.cat}] – ${x.reason}`).join('\n')+'\n\n':'')+
  (s.length||m.length?'CHYBÍ:\n'+[...s.map(x=>'Polévka: '+x.name),...m.map(x=>'Oběd: '+x.name)].join('\n')+'\n\n':'')+
  (audit.extras.soup.length||audit.extras.main.length?'POUZE V KATALOGU (NEBUDOU SMAZÁNY):\n'+[...audit.extras.soup.map(x=>'Polévka: '+x.name),...audit.extras.main.map(x=>'Oběd: '+x.name)].join('\n'):'');
- if(!s.length&&!m.length){alert(report+'\n\nŽádný zápis nebyl proveden.');return}
+ if(!s.length&&!m.length){
+  if(!audit.conflicts.length&&!audit.review.length){notice('Kontrola databáze: vše v pořádku. Žádná chybějící jídla ani nesoulady kategorií.');return;}
+  alert(report+'\n\nŽádný zápis nebyl proveden.');return;
+ }
  if(!confirm(report+'\n\nChceš doplnit chybějící položky? Nejdřív se stáhne úplná záloha JSON. Změna se následně synchronizuje podle stávajících pravidel GitHubu.'))return;
  const choices=[];
  for(const [kind,items] of [['soup',s],['main',m]])for(const item of items){
@@ -119,7 +122,7 @@ async function runCatalogAudit(){
 }
 $('auditCatalog')?.addEventListener('click',()=>runCatalogAudit().catch(e=>notice('Kontrola databáze selhala: '+e.message,true)));
 
-let statusTimer;function notice(message,error=false){const el=$('status');if(!el)return;clearTimeout(statusTimer);if(!error){el.style.display='none';return;}el.textContent=message;el.className='error';el.style.display='block';statusTimer=setTimeout(()=>el.style.display='none',6500)}
+let statusTimer;function notice(message,error=false){const el=$('status');if(!el)return;clearTimeout(statusTimer);el.textContent=message;el.className=error?'error':'success';el.style.display='block';statusTimer=setTimeout(()=>el.style.display='none',6500)}
 const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const starts=(cat,p)=>cat.startsWith(p);
 const all=(kind)=>Object.entries(state.catalog[kind]||{}).flatMap(([cat,items])=>items.map(name=>({cat,name})));
