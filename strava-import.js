@@ -123,13 +123,12 @@ dlg.addEventListener('click',event=>{
 });
 function previewFooter(){
  const buttons=[];
- buttons.push({text:'Uložit do katalogu ('+corrections.size+')',primary:true,disabled:corrections.size===0,action:saveCorrections});
  buttons.push({text:enabled?'Automatika: zapnuto ✓':'Automatika: vypnuto',action:()=>{enabled=!enabled;try{localStorage.setItem(PREF_KEY,String(enabled))}catch(_e){}refreshToggle();previewFooter();report('Strava.cz: automatická kontrola '+(enabled?'zapnuta.':'vypnuta.'));}});
  buttons.push({text:'Zavřít',action:close});setFooter(buttons);
 }
 function correctionKey(w,e){return w.week+'|'+e.day+'|'+e.field}
 function saveCorrections(){
- if(!previewOnly||test||!corrections.size)return;
+ if(!previewOnly||test){window.alert('Ukládání je dostupné pouze v běžném přehledu, nikoli v testu.');return;}if(!corrections.size)return;
  try{
   const state=structuredClone(window.JidelnickyApp.getState());
   let count=0;
@@ -181,21 +180,19 @@ function buildIssue(e,w){
   section.append(p);
   if(previewOnly&&!test){
    const key=correctionKey(w,e);
-   const confirm=document.createElement('button');confirm.type='button';confirm.textContent='✓ Potvrdit kategorii '+e.categorySuggestion;
-   confirm.className='ss-primary';confirm.style.marginTop='7px';confirm.style.marginRight='7px';section.append(confirm);
-   confirm.onclick=()=>{corrections.set(key,{week:w.week,day:e.day,field:e.field,kind:e.kind,raw:e.raw,category:e.categorySuggestion});previewFooter();confirm.textContent='✓ Připraveno k uložení';};
    const edit=document.createElement('button');edit.type='button';edit.textContent='✎ Opravit kategorii';
    edit.style.marginTop='7px';section.append(edit);
    const area=document.createElement('div');area.hidden=true;area.style.marginTop='8px';
-   const select=document.createElement('select');select.setAttribute('aria-label','Opravit kategorii jídla');
+   const select=document.createElement('select');select.setAttribute('aria-label','Kategorie jídla');
    for(const name of Object.keys(catalog[e.kind]))select.add(new Option(name,name));
-   select.value=e.categorySuggestion;area.append(select);section.append(area);
+   select.value=e.categorySuggestion;area.append(select);
+   const save=document.createElement('button');save.type='button';save.textContent='Uložit';save.className='ss-primary';
+   save.style.marginLeft='8px';save.style.marginTop='7px';
+   // Uložit lze i beze změny předvybrané kategorie.
+   save.onclick=()=>{corrections.set(key,{week:w.week,day:e.day,field:e.field,kind:e.kind,raw:e.raw,category:select.value});saveCorrections();};
+   area.append(save);section.append(area);
    edit.onclick=()=>{area.hidden=!area.hidden;edit.textContent=area.hidden?'✎ Opravit kategorii':'Skrýt opravu'};
-   select.onchange=()=>{
-    corrections.set(key,{week:w.week,day:e.day,field:e.field,kind:e.kind,raw:e.raw,category:select.value});
-    confirm.textContent=select.value===e.categorySuggestion?'✓ Připraveno k uložení':'✓ Kategorie upravena';
-    previewFooter();
-   };
+
   }
  }else{
   const cat=document.createElement('div');cat.style.marginTop='8px';
