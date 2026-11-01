@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-11-02",
+      "week": "2026-10-19",
       "days": [
         {
           "closed": false,
-          "soup": "zelenin. s drožďovými knedlíčky",
-          "main": "Tilápie s rajčaty a sýrem, Brambory",
-          "category": "RYBY",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "rajčatová s těstovinou",
-          "main": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
+          "soup": "hovězí s masem a vejcem",
+          "main": "Srbská čočka, Chléb",
           "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "cizrnová krémová s rajčaty",
-          "main": "Těstovinový salát s marinovaným tofu",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "bramboračka nezahuštěná",
+          "main": "Španělský ptáček rozházený, Rýže dušená",
+          "category": "HOVĚZÍ A TELECÍ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "rychlá s vejcem",
-          "main": "Vepřová pečeně, Fazolové lusky na slanině, Brambory",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "celerová se smaženým hráškem",
+          "main": "Těstovinový salát s kuřecím masem",
+          "category": "DRŮBEŽ A KRÁLÍK",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "kmínová s vejcem",
-          "main": "Francouzské brambory",
-          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "soup": "z kysaného zelí",
+          "main": "Vepřové v mrkvi, Brambory",
+          "category": "VEPŘOVÉ A UZENÉ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "zeleninová s kuskusem",
+          "main": "Vepřová pečeně selská, Bramborové knedlíky (směs), Červené zelí",
+          "category": "VEPŘOVÉ A UZENÉ",
           "main2": "",
           "category2": ""
         }
