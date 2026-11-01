@@ -266,41 +266,41 @@
       "days": [
         {
           "closed": false,
-          "soup": "pórková",
-          "main": "Smažené rybí prsty, Brambory m.m.",
+          "soup": "hovězí s jáhly",
+          "main": "Rybí filé smažené, Bramborová kaše",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s celozrnnými knedlíčky",
-          "main": "Bramborový guláš, Rohlík",
-          "category": "BEZMASÁ SLANÁ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "hovězí s játrovými noky",
-          "main": "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
+          "soup": "zeleninová s quinoou",
+          "main": "Horňácký guláš (maso, fazole), Chléb",
           "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "",
-          "main": "",
-          "category": "",
+          "soup": "zimní zeleninová s ovesnými vločkami",
+          "main": "Bramborák",
+          "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "rajčatová s ovesnými vločkami",
-          "main": "Knedlíky švestkové (bramborové) s mákem",
-          "category": "SLADKÁ",
+          "soup": "zeleninová s těstovinovou rýží",
+          "main": "Rizoto srbské",
+          "category": "BEZMASÁ SLANÁ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "hovězí s kuskusem",
+          "main": "Kuřecí stripsy, Brambory",
+          "category": "DRŮBEŽ A KRÁLÍK",
           "main2": "",
           "category2": ""
         }
