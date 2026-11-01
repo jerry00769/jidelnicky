@@ -5,6 +5,8 @@ const weekdays=['Pondělí','Úterý','Středa','Čtvrtek','Pátek'];
 const today=new Date(),iso=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 const parseDate=s=>{let [y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d,12)};
 const monday=s=>{let d=parseDate(s);if(Number.isNaN(d.getTime()))throw Error('Neplatné datum');d.setDate(d.getDate()-(d.getDay()+6)%7);return iso(d)};
+// Nejbližší pondělí striktně po dnešku: v neděli zítra, v pondělí za 7 dní.
+const preparationWeek=(date=new Date())=>{const d=new Date(date.getFullYear(),date.getMonth(),date.getDate(),12);const days=(8-d.getDay())%7||7;d.setDate(d.getDate()+days);return iso(d)};
 const dateAt=(s,i)=>{let d=parseDate(s);d.setDate(d.getDate()+i);return d};
 const format=d=>d.toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year:'numeric'});
 const freshDay=()=>({closed:false,soup:'',main:'',category:'',main2:'',category2:''});
@@ -12,7 +14,7 @@ const freshWeek=s=>({week:monday(s),days:Array.from({length:5},freshDay)});
 
 let state;try{state=JSON.parse(localStorage.getItem(storeKey)||'null')}catch{};
 const hasSavedState=!!(state?.catalog?.main&&state?.catalog?.soup&&state?.week?.days?.length===5);
-if(!state||!state.catalog||!state.week||!Array.isArray(state.week.days)||state.week.days.length!==5)state={catalog:clone(window.INITIAL_CATALOG),week:freshWeek(iso(today)),history:[],rules:clone(defaults),txt:'',count:1,lockMain:8,lockSoup:3};
+if(!state||!state.catalog||!state.week||!Array.isArray(state.week.days)||state.week.days.length!==5)state={catalog:clone(window.INITIAL_CATALOG),week:freshWeek(preparationWeek(today)),history:[],rules:clone(defaults),txt:'',count:1,lockMain:8,lockSoup:3};
 state.history??=[];state.learning=cleanLearning(state.learning);state.rules={...defaults,...state.rules};state.txt??='';state.count=[1,2].includes(+state.count)?+state.count:1;
 
 // Preference z ručních úprav; omezené skóre zabraňuje zacyklení výběru.
@@ -801,10 +803,10 @@ window.addEventListener('DOMContentLoaded', async () => {
         console.error('Počáteční synchronizace selhala:', e);
         notice('Synchronizace se nezdařila; místní data zůstala zachována.', true);
     }
-    // Po dokončení synchronizace zobrazit aktuální týden bez dotazu.
+    // Po dokončení synchronizace nabídnout nejbližší budoucí pondělí bez dotazu.
     // Uložená historie se nemění; předchozí pracovní stav je v relaci
     // dostupný přes tlačítko Zpět.
-    const current = monday(iso(new Date()));
+    const current = preparationWeek();
     if (state.week.week !== current) {
         snapshot();
         state.week = freshWeek(current);
