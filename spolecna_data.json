@@ -342,44 +342,44 @@
       }
     },
     "week": {
-      "week": "2026-10-26",
+      "week": "2026-11-02",
       "days": [
         {
           "closed": false,
-          "soup": "hovězí rychlá s vejcem",
-          "main": "Rybí filé po mlynářsku, Brambory",
+          "soup": "rajčatová s tarhoňou",
+          "main": "Smažené rybí prsty, Brambory m.m.",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zimní zeleninová s ovesnými vločkami",
-          "main": "Kapustové karbanátky, Bramborová kaše - příloha",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "zeleninová s celozrnnými nudlemi",
+          "main": "Krůtí nudličky s pórkem, Rýže dušená",
+          "category": "DRŮBEŽ A KRÁLÍK",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "zelenin. s fridátovými nudlemi",
+          "main": "Bulgur s kuřecím masem a zeleninou",
+          "category": "DRŮBEŽ A KRÁLÍK",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "ovarová",
+          "main": "Dukátové buchtičky s krémem, Kakao",
+          "category": "SLADKÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
           "soup": "hovězí se sýrovým kapáním",
-          "main": "Holandský řízek, Bramborová kaše - příloha",
-          "category": "MLETÉ MASO A ZAPÉKANÉ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "zeleninová s těstovinovou",
-          "main": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
-          "category": "LUŠTĚNINOVÁ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "hrachová",
-          "main": "Vinná klobása smažená přírodní, Bramborová kaše - příloha",
+          "main": "Bratislavské vepřové plecko, Těstoviny",
           "category": "VEPŘOVÉ A UZENÉ",
           "main2": "",
           "category2": ""
