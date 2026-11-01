@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-11-16",
+      "week": "2026-11-02",
       "days": [
         {
           "closed": false,
-          "soup": "hovězí s vaječnou jíškou",
-          "main": "Kovbojská pánev, Chléb",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "dýňový krém",
-          "main": "Hovězí pečeně štěpánská, Rýže dušená",
-          "category": "HOVĚZÍ A TELECÍ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "hrachová",
-          "main": "Francouzské brambory, Okurka sterilovaná - příloha",
-          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "z rybího filé",
-          "main": "Kuře na paprice, Těstoviny",
-          "category": "DRŮBEŽ A KRÁLÍK",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "pórková s vejci",
-          "main": "Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)",
-          "category": "VEPŘOVÉ A UZENÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         }
