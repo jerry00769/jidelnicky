@@ -266,25 +266,25 @@
       "days": [
         {
           "closed": false,
-          "soup": "z míchaných luštěnin",
-          "main": "Tilápie s rajčaty a sýrem, Brambory",
+          "soup": "květáková",
+          "main": "Rybí filé smažené, Bramborová kaše",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "hrachová se smaženým hráškem",
-          "main": "Pekingská směs, Rýže dušená",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "hovězí s česnekovými krutony",
+          "main": "Španělská čočka s mletým masem, Chléb",
+          "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s těstovinovou",
-          "main": "Těstovinový salát s cizrnou a sušenými rajčaty",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "zeleninová zahuštěná červenou čočkou",
+          "main": "Nákyp rýžový se švestkami",
+          "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
         },
@@ -298,9 +298,9 @@
         },
         {
           "closed": false,
-          "soup": "hovězí se strouháním",
-          "main": "Nudle s mákem",
-          "category": "SLADKÁ",
+          "soup": "zeleninová s těstovinovou rýží",
+          "main": "Šoulet, Vepřová pečeně",
+          "category": "VEPŘOVÉ A UZENÉ",
           "main2": "",
           "category2": ""
         }
