@@ -342,10 +342,10 @@
       }
     },
     "week": {
-      "week": "2026-08-31",
+      "week": "2026-11-02",
       "days": [
         {
-          "closed": true,
+          "closed": false,
           "soup": "",
           "main": "",
           "category": "",
@@ -354,33 +354,33 @@
         },
         {
           "closed": false,
-          "soup": "květáková",
-          "main": "Nudle s mákem",
-          "category": "SLADKÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "celerová se smaženým hráškem",
-          "main": "Sekaná pečeně, Brambory, Okurka sterilovaná - příloha",
-          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s těstovinami",
-          "main": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
-          "category": "HOVĚZÍ A TELECÍ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "špenátová s vajíčkem",
-          "main": "Rizoto srbské",
-          "category": "VEPŘOVÉ A UZENÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         }
