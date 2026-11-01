@@ -266,25 +266,25 @@
       "days": [
         {
           "closed": false,
-          "soup": "hovězí s játrovými knedlíčky",
-          "main": "Rybí filé smažené, Bramborová kaše",
+          "soup": "pórková",
+          "main": "Smažené rybí prsty, Brambory m.m.",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "květáková s červenou čočkou",
-          "main": "Guláš maďarský, Rýže dušená",
+          "soup": "zeleninová s celozrnnými knedlíčky",
+          "main": "Bramborový guláš, Rohlík",
           "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "česneková s osmaženou hostičkou",
-          "main": "Kaše krupicová",
-          "category": "SLADKÁ",
+          "soup": "hovězí s játrovými noky",
+          "main": "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
+          "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         },
@@ -298,9 +298,9 @@
         },
         {
           "closed": false,
-          "soup": "hráškový krém",
-          "main": "Španělská čočka s mletým masem, Chléb",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "rajčatová s ovesnými vločkami",
+          "main": "Knedlíky švestkové (bramborové) s mákem",
+          "category": "SLADKÁ",
           "main2": "",
           "category2": ""
         }
