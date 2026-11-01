@@ -342,44 +342,44 @@
       }
     },
     "week": {
-      "week": "2026-11-02",
+      "week": "2026-10-05",
       "days": [
         {
           "closed": false,
-          "soup": "rajčatová s tarhoňou",
-          "main": "Smažené rybí prsty, Brambory m.m.",
-          "category": "RYBY",
+          "soup": "kuřecí s nudlemi",
+          "main": "Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha",
+          "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s celozrnnými nudlemi",
-          "main": "Krůtí nudličky s pórkem, Rýže dušená",
-          "category": "DRŮBEŽ A KRÁLÍK",
+          "soup": "zelenin. s drožďovými knedlíčky",
+          "main": "Těstoviny po Lotrinsku",
+          "category": "MLETÉ MASO A ZAPÉKANÉ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zelenin. s fridátovými nudlemi",
-          "main": "Bulgur s kuřecím masem a zeleninou",
-          "category": "DRŮBEŽ A KRÁLÍK",
+          "soup": "z míchaných luštěnin",
+          "main": "Znojemský guláš, Rýže dušená",
+          "category": "HOVĚZÍ A TELECÍ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "ovarová",
-          "main": "Dukátové buchtičky s krémem, Kakao",
-          "category": "SLADKÁ",
+          "soup": "zelenin. s bulgurem",
+          "main": "Těstoviny s brokolicí a sýrovou omáčkou",
+          "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "hovězí se sýrovým kapáním",
-          "main": "Bratislavské vepřové plecko, Těstoviny",
+          "soup": " zeleninová s ovesnými vločkami",
+          "main": "Žebrácké maso, Brambory",
           "category": "VEPŘOVÉ A UZENÉ",
           "main2": "",
           "category2": ""
