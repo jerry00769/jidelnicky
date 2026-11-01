@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-11-23",
+      "week": "2026-10-26",
       "days": [
         {
           "closed": false,
-          "soup": "kuřecí s nudlemi",
-          "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
-          "category": "VEPŘOVÉ A UZENÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová se sýrovým kapáním",
-          "main": "Kuřecí nudličky se sýrovou omáčkou, Těstoviny",
-          "category": "DRŮBEŽ A KRÁLÍK",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "cibulová se sýrem",
-          "main": "Masová směs \"flamendr\", Rýže dušená",
-          "category": "VEPŘOVÉ A UZENÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "čočková se zeleninou",
-          "main": "Bramborové šišky s mákem (strouhankou)",
-          "category": "SLADKÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "pórková s vejci",
-          "main": "Kuřecí stripsy, Brambory",
-          "category": "DRŮBEŽ A KRÁLÍK",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         }
