@@ -32,8 +32,14 @@ const $=id=>document.getElementById(id);
 const toggle=document.createElement('button');toggle.id='stravaToggle';toggle.type='button';toggle.title='Zapnout nebo vypnout automatickou kontrolu nových jídelníčků ze Strava.cz';
 function refreshToggle(){toggle.textContent=enabled?'Strava.cz: zapnuto ✓':'Strava.cz: vypnuto';toggle.dataset.off=String(!enabled);toggle.setAttribute('aria-pressed',String(enabled))}
 refreshToggle();document.body.append(toggle);
-toggle.title='Otevřít přehled Strava.cz a nastavení automatické kontroly';
-toggle.addEventListener('click',()=>check(true));
+toggle.title='Kliknutím zapnout/vypnout Strava.cz; při zapnutí zobrazit přehled';
+toggle.addEventListener('click',()=>{
+ enabled=!enabled;
+ try{localStorage.setItem(PREF_KEY,String(enabled))}catch(_e){}
+ refreshToggle();
+ if(!enabled){controller?.abort();if(dlg.open)close();report('Strava.cz: automatická kontrola vypnuta.');return}
+ check(true);
+});
 let weeks=[],catalog=null,sourceStamp='',stage='choice',skipped=0,checking=false,controller=null;
 const report=(text,error=false)=>window.dispatchEvent(new CustomEvent('jidelnicky:strava-status',{detail:{text,kind:error?'error':/probíhá/i.test(text)?'info':'ok'}}));
 function items(kind){return Object.entries(catalog[kind]).flatMap(([category,names])=>names.map(name=>({name,category,key:norm(name)})))}
@@ -126,7 +132,7 @@ function parseWeeks(data){const state=window.JidelnickyApp.getState();catalog=st
 function commit(){if(test||previewOnly)return;try{const state=structuredClone(window.JidelnickyApp.getState());const existing=new Set(state.history.map(x=>x.week));if(weeks.some(w=>existing.has(w.week)))throw Error('Historie se mezitím změnila. Obnov stránku a zkus to znovu.');for(const w of weeks){const days=w.days.map(x=>({...x}));for(const e of w.entries){let chosen=e.matched;if(e.mode!=='auto'){if(!e.choice)throw Error('Některá jídla nejsou schválená');if(e.choice==='__new'){const category=e.categorySuggestion;if(!state.catalog[e.kind][category])throw Error('Neplatná kategorie');const collisions=Object.entries(state.catalog[e.kind]).flatMap(([c,names])=>names.filter(n=>norm(n)===norm(e.raw)).map(name=>({name,category:c})));if(collisions.length){if(collisions.length!==1||collisions[0].category!==category)throw Error('Jídlo již existuje v jiné kategorii: '+e.raw);chosen=collisions[0]}else{state.catalog[e.kind][category].push(e.raw);chosen={name:e.raw,category}}}else{chosen=JSON.parse(e.choice);if(!state.catalog[e.kind][chosen.category]?.includes(chosen.name))throw Error('Vybrané jídlo už není v katalogu: '+chosen.name)}}days[e.day][e.field]=chosen.name;if(e.cat)days[e.day][e.cat]=chosen.category}state.history.push({week:w.week,days})}window.JidelnickyApp.applyState(state);window.GitHubSync?.changed?.();const n=weeks.length;close();report('Strava.cz: '+n+' týdnů doplněno; synchronizace čeká na GitHub.')}catch(err){window.alert('Import nebyl dokončen: '+err.message)}}
 async function check(manual=false){
  if(checking||dlg.open||(!enabled&&!manual))return;
- checking=true;controller=new AbortController();
+ checking=true;previewOnly=false;controller=new AbortController();
  const timeout=setTimeout(()=>controller.abort(),12000);
  report('Strava.cz 5948: probíhá kontrola…');
  try{
@@ -135,17 +141,18 @@ async function check(manual=false){
   const data=await r.json();
   if(data.cafeteria!=='5948'||data.status!=='received'||!Array.isArray(data.weeks))throw Error('Neplatná odpověď');
   if(!window.JidelnickyApp?.getState)throw Error('Generátor ještě není připraven');
-  if(!enabled)return;
+  if(!enabled&&!manual)return;
   sourceStamp=data.checked_at_utc||'';
-  previewOnly=false;
+  previewOnly=manual&&!test;
   parseWeeks(data);
   if(!weeks.length){
+   if(manual){showPreview('Strava.cz: dostupný přehled je prázdný.');return}
    report(changedWeeks.length?'Strava.cz: změny v již uložených týdnech '+changedWeeks.join(', ')+' – automaticky nepřepsáno.':'Strava.cz 5948: aktuální, žádné nové týdny.');
    return;
   }
-  if(test){
-   report('Strava.cz: testovací náhled – žádné ukládání.');
-   review();if(!dlg.open)dlg.showModal();
+  if(test||manual){
+   report('Strava.cz: náhled bez ukládání.');
+   showPreview('Strava.cz: přehled dostupných jídel, bez ukládání.');
   }else{
    const ready=weeks.filter(w=>w.entries.every(e=>e.mode==='auto'||e.categoryConfident));
    const pending=weeks.filter(w=>w.entries.some(e=>e.mode!=='auto'&&!e.categoryConfident));
