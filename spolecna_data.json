@@ -346,41 +346,41 @@
       "days": [
         {
           "closed": false,
-          "soup": "fazolová se zeleninou",
-          "main": "Obalované filé s brokolicí a sýrem, Brambory m.m.",
+          "soup": "česneková s osmaženou hostičkou",
+          "main": "Rybí filé po mlynářsku, Brambory",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zelenin. s drožďovými knedlíčky",
-          "main": "Lotrinské tagliatelle se sýrem",
+          "soup": "zeleninová s těstovinovou rýží",
+          "main": "Bramborák",
           "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "selská ii.",
-          "main": "Hrachová kaše s cibulkou, Párky",
+          "soup": "kmínová s vejcem",
+          "main": "Čočkový kotlík, Chléb",
           "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zimní zeleninová s ovesnými vločkami",
-          "main": "Horňácký guláš (maso, fazole), Chléb",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "zelenin. s bulgurem",
+          "main": "Zeleninové rizoto",
+          "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "hrachová s opečenou houskou",
-          "main": "Rybí filé smažené, Bramborová kaše",
-          "category": "RYBY",
+          "soup": "z batátových brambor",
+          "main": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
+          "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         }
