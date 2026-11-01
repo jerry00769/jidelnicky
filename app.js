@@ -94,7 +94,7 @@ async function runCatalogAudit(){
  (s.length||m.length?'CHYBÍ:\n'+[...s.map(x=>'Polévka: '+x.name),...m.map(x=>'Oběd: '+x.name)].join('\n')+'\n\n':'')+
  (audit.extras.soup.length||audit.extras.main.length?'POUZE V KATALOGU (NEBUDOU SMAZÁNY):\n'+[...audit.extras.soup.map(x=>'Polévka: '+x.name),...audit.extras.main.map(x=>'Oběd: '+x.name)].join('\n'):'');
  if(!s.length&&!m.length){
-  if(!audit.conflicts.length&&!audit.review.length){notice('Kontrola databáze: vše v pořádku. Žádná chybějící jídla ani nesoulady kategorií.');return;}
+  if(!audit.conflicts.length&&!audit.review.length){alert(report+'\n\nKontrola dokončena. Žádný zápis nebyl proveden.');return;}
   alert(report+'\n\nŽádný zápis nebyl proveden.');return;
  }
  if(!confirm(report+'\n\nChceš doplnit chybějící položky? Nejdřív se stáhne úplná záloha JSON. Změna se následně synchronizuje podle stávajících pravidel GitHubu.'))return;
@@ -126,6 +126,8 @@ let statusTimer;function notice(message,error=false){const el=$('status');if(!el
 const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const starts=(cat,p)=>cat.startsWith(p);
 const all=(kind)=>Object.entries(state.catalog[kind]||{}).flatMap(([cat,items])=>items.map(name=>({cat,name})));
+// Pomocné kategorie zůstávají v datech pro automatický import, nikoli v ručním výběru.
+const isInternalCategory=cat=>/^(K ZAŘAZENÍ|K OVĚŘENÍ)$/i.test(String(cat||'').trim());
 
 function txtRules(){
     const t={ban_main:[],ban_soup:[],ban_pair:[],require_main:[],require_soup:[],require_pair:[]};
@@ -478,11 +480,11 @@ function centerPickerSelection(){
 
 function renderChoices(){
     const kind=picking.kind,q=norm($('search').value.trim()),catFilter=$('pickerCategory').value,el=$('choices');el.replaceChildren();
-    const cats=Object.keys(state.catalog[kind]||{});const categorySelect=$('pickerCategory');
+    const cats=Object.keys(state.catalog[kind]||{}).filter(c=>!isInternalCategory(c));const categorySelect=$('pickerCategory');
     if(categorySelect.options.length!==cats.length+1||cats.some((c,i)=>categorySelect.options[i+1]?.value!==c)){categorySelect.replaceChildren();categorySelect.add(new Option('VŠECHNY',''));for(const cat of cats)categorySelect.add(new Option(cat,cat));categorySelect.value=cats.includes(catFilter)?catFilter:'';}
     const current=picking.day===null?null:(picking.historyWeek?state.history.find(h=>h.week===picking.historyWeek)?.days[picking.day]:state.week.days[picking.day]);
     // Presny podretezec nazvu NEBO kategorie, bez diakritiky; bez fuzzy shod a aliasu.
-    const options=all(kind).filter(x=>(!categorySelect.value||x.cat===categorySelect.value)&&(contains(x.name,q)||contains(x.cat,q))).filter(x=>!current||picking.key==='soup'||(picking.key==='main'?norm(x.name)!==norm(current.main2):norm(x.name)!==norm(current.main)));
+    const options=all(kind).filter(x=>!isInternalCategory(x.cat)).filter(x=>(!categorySelect.value||x.cat===categorySelect.value)&&(contains(x.name,q)||contains(x.cat,q))).filter(x=>!current||picking.key==='soup'||(picking.key==='main'?norm(x.name)!==norm(current.main2):norm(x.name)!==norm(current.main)));
     options.sort((a,b)=>a.name.localeCompare(b.name,'cs')||a.cat.localeCompare(b.cat,'cs'));
     const duplicateNames=new Map();
     for(const item of options){const key=norm(item.name);duplicateNames.set(key,(duplicateNames.get(key)||0)+1)}
