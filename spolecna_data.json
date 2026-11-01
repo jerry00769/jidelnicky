@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-10-26",
+      "week": "2026-10-12",
       "days": [
         {
           "closed": false,
-          "soup": "zelenin. s pohankou",
-          "main": "Rybí filé zapečené se špenátem, Brambory",
+          "soup": "čočková",
+          "main": "Rybí filé obalované, Bramborová kaše - příloha",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s quinoou",
-          "main": "Těstovinový salát s marinovaným tofu",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "frankfurtská s bramborem",
+          "main": "Rizoto s kuřecím masem",
+          "category": "DRŮBEŽ A KRÁLÍK",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "fazolová se zeleninou",
-          "main": "Mexická pánev (vepř.maso, fazole)) se sýrem",
+          "soup": "hovězí s jáhly",
+          "main": "Masové koule v rajčatové omáčce, Těstoviny",
+          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "fazolová",
+          "main": "Bramborové šišky s mákem (strouhankou)",
+          "category": "SLADKÁ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "zelenin. s fridátovými nudlemi",
+          "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
           "category": "VEPŘOVÉ A UZENÉ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "květáková",
-          "main": "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
-          "category": "LUŠTĚNINOVÁ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "hovězí s vaječnou jíškou",
-          "main": "Rybí filé po mlynářsku, Brambory m.m.",
-          "category": "RYBY",
           "main2": "",
           "category2": ""
         }
