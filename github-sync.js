@@ -15,7 +15,16 @@ const status=(msg,err=false)=>{
   const pending=/čeká|načítám|odesíl|změny uloženy místně|kontrol|připojov/i.test(message);
   const failed=err||/nepřipojeno|odpojeno|konflikt|chybí|chyba|nelze|rozdílné|nevyřešen/i.test(message);
   const kind=failed?'error':pending?'info':'ok';
-  window.dispatchEvent(new CustomEvent('jidelnicky:github-status',{detail:{text:'GitHub: '+message,kind}}));
+  const label='GitHub: '+message;
+  // Aktualizovat přímo indikátor: nevyžaduje externí listener v index.html.
+  if(b){
+   b.textContent=(kind==='error'?'⚠ ':kind==='ok'?'✓ ':'◷ ')+label;
+   b.classList.toggle('error',kind==='error');
+   b.classList.toggle('synced',kind==='ok');
+   b.classList.toggle('local-change',kind==='info');
+   b.dataset.syncKind=kind;
+  }
+  window.dispatchEvent(new CustomEvent('jidelnicky:github-status',{detail:{text:label,kind}}));
  }
  if(err)app?.notice(msg,true);
 };
@@ -162,7 +171,7 @@ function manualRefreshConfirmed(){
  manualMessageUntil=Date.now()+3500;
  const b=$('githubIndicator');
  if(b){
-  window.dispatchEvent(new CustomEvent('jidelnicky:github-status',{detail:{text:'GitHub: společná data znovu načtena',kind:'info'}}));
+  b.textContent='◷ GitHub: společná data znovu načtena'; b.classList.remove('error','synced');b.classList.add('local-change');window.dispatchEvent(new CustomEvent('jidelnicky:github-status',{detail:{text:'GitHub: společná data znovu načtena',kind:'info'}}));
  }
  manualMessageTimer=setTimeout(()=>{
   manualMessageUntil=0;
