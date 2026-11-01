@@ -3,6 +3,7 @@
 const test=new URLSearchParams(location.search).get('strava_test')==='1';
 let previewOnly=false;
 let changedWeeks=[];
+let changedDetails=[];
 const PREF_KEY='jidelnicky:strava-auto-check-enabled';
 // Import nesmí vycházet z místního katalogu před prvním dokončeným GitHub syncem.
 let githubReady=false;
@@ -36,10 +37,11 @@ function sameMeal(saved,incoming,kind){
  if(!String(saved||'').trim()||!String(incoming||'').trim())return false;
  const a=match(saved,kind),b=match(incoming,kind);
  if(a&&b&&norm(a.name)===norm(b.name))return true;
- // Běžné rozšíření názvu vývaru o upřesnění kapání.
+ // Jen výslovně ověřená varianta z historie 2. 11. 2026.
+ // Nepovažovat obecně jídla stejné kategorie za totožná.
  if(kind==='soup'){
-  const simplify=x=>norm(x).replace(/\\b(syrovym|syrove)\\b/g,'').replace(/\\bse\\b/g,'s').replace(/\\s+/g,' ').trim();
-  if(simplify(saved)===simplify(incoming))return true;
+  const variants=new Set(['hovezi s kapanim','hovezi se syrovym kapanim']);
+  if(variants.has(norm(saved))&&variants.has(norm(incoming)))return true;
  }
  return false;
 }
@@ -179,7 +181,7 @@ function saveCorrections(){
  }catch(err){window.alert('Opravy se nepodařilo uložit: '+err.message)}
 }
 
-function showPreview(message){previewOnly=true;corrections.clear();review();$('ssInfo').textContent=message;if(changedWeeks.length){const p=document.createElement('p');p.className='ss-issue';p.textContent='Změny v již uložených týdnech: '+changedWeeks.join(', ')+'. Existující záznamy nebyly přepsány. Podrobnosti lze zkontrolovat na Strava.cz.';$('ssBody').prepend(p)}previewFooter();if(!dlg.open)dlg.showModal()}
+function showPreview(message){previewOnly=true;corrections.clear();review();$('ssInfo').textContent=message;if(changedWeeks.length){const p=document.createElement('p');p.className='ss-issue';p.textContent='Skutečné rozdíly v uložených týdnech (nic nebylo přepsáno): '+changedDetails.join(' | ');$('ssBody').prepend(p)}previewFooter();if(!dlg.open)dlg.showModal()}
 function choice(){stage='choice';$('ssInfo').textContent=`Nalezeno ${weeks.length} nových týdnů. Co chceš udělat?`;const body=$('ssBody');body.replaceChildren();const p=document.createElement('p');p.textContent='Program už porovnal všechna jídla s katalogem. Převzetí ze Strava.cz vyžaduje jen kontrolu případných nejasností.';body.append(p);for(const w of weeks){const p=document.createElement('p');const auto=w.entries.filter(e=>e.mode==='auto').length,all=w.entries.length;p.textContent=`Týden ${w.week}: automaticky rozpoznáno ${auto} z ${all} jídel.`;body.append(p)}if(test){const p=document.createElement('p');p.className='ss-muted';p.textContent='TEST NANEČISTO – ukládání je vypnuté.';body.append(p)}setFooter([{text:'Použít Strava.cz',primary:true,action:review},{text:'Vytvořit vlastní',action:()=>{close();report('Strava.cz: zvolena vlastní tvorba; nic nebylo změněno.')}},{text:'Připomenout později',action:close}])}
 function decisionLabel(e){return e.kind==='soup'?'Polévka':e.field==='main2'?'Oběd 2':'Oběd 1'}
 function buildIssue(e,w){
@@ -223,13 +225,21 @@ function buildIssue(e,w){
 }
 function review(){stage='review';const issues=weeks.flatMap(w=>w.entries.filter(e=>e.mode!=='auto'));const auto=weeks.flatMap(w=>w.entries).length-issues.length;$('ssInfo').textContent=`${auto} jídel rozpoznáno z katalogu · ${issues.length} nových položek`;if(issues.length>=5&&auto<issues.length){$('ssInfo').textContent+=' · Pozor: ověř synchronizaci katalogu na tomto zařízení';}const body=$('ssBody');body.replaceChildren();for(const w of weeks){const sec=document.createElement('section');sec.className='ss-week';sec.innerHTML='<h3>Týden '+escape(w.week)+'</h3>';for(let i=0;i<5;i++){const d=document.createElement('div');d.className='ss-day';const head=document.createElement('strong');head.textContent=dayNames[i];d.append(head);const entries=w.entries.filter(e=>e.day===i);if(!entries.length){const p=document.createElement('p');p.textContent='Bez jídel';d.append(p)}for(const e of entries){const line=document.createElement('div');line.className='ss-line';const label=document.createElement('span');label.textContent=decisionLabel(e);const name=document.createElement('strong');name.textContent=e.mode==='auto'?e.matched.name:e.raw;const pill=document.createElement('span');pill.className='ss-pill'+(e.mode==='auto'?'':' ss-warn');pill.textContent=e.mode==='auto'?'Rozpoznáno':e.categoryConfident?'Nové · kategorie určena':'Vyžaduje kategorii';line.append(label,name,pill);d.append(line);if(e.mode!=='auto')d.append(buildIssue(e,w))}sec.append(d)}body.append(sec)}if(!issues.length){const p=document.createElement('p');p.textContent='Všechna jídla jsou jednoznačně přiřazena.';body.prepend(p)}if(test||previewOnly){const p=document.createElement('p');p.className='ss-muted';p.textContent=test?'TEST NANEČISTO – žádná data se neuloží.':'NÁHLED – nic se neuloží, pokud výslovně nepotvrdíš ruční opravu.';body.prepend(p)}updateReady()}
 function updateReady(){if(stage!=='review')return;const missing=weeks.flatMap(w=>w.entries).filter(e=>e.mode!=='auto'&&(!e.choice||!e.categorySuggestion)).length;if(previewOnly&&!test){previewFooter();return;}setFooter(test?[{text:'Zavřít',primary:true,action:close}]:[{text:'Schválit a uložit',primary:true,disabled:missing>0,action:commit},{text:'Zavřít',action:close}]);}
-function parseWeeks(data){const state=window.JidelnickyApp.getState();catalog=state.catalog;const existing=new Set(test||previewOnly?[]:state.history.map(x=>x.week));changedWeeks=[];const seen=new Set();skipped=0;weeks=[];for(const w of data.weeks){if(!w||typeof w.week!=='string'||!Array.isArray(w.days)||w.days.length!==5)throw Error('Neplatný formát týdne');const week=monday(w.week);if(week<currentMonday())continue;if(existing.has(week)||seen.has(week)){
+function parseWeeks(data){const state=window.JidelnickyApp.getState();catalog=state.catalog;const existing=new Set(test||previewOnly?[]:state.history.map(x=>x.week));changedWeeks=[];changedDetails=[];const seen=new Set();skipped=0;weeks=[];for(const w of data.weeks){if(!w||typeof w.week!=='string'||!Array.isArray(w.days)||w.days.length!==5)throw Error('Neplatný formát týdne');const week=monday(w.week);if(week<currentMonday())continue;if(existing.has(week)||seen.has(week)){
   skipped++;
   if(existing.has(week)){
    const saved=state.history.find(x=>x.week===week);
    if(saved?.days?.length===5){
-    const differs=w.days.some((d,i)=>!d.closed&&['soup','main','main2'].some(f=>!sameMeal(saved.days[i]?.[f]||'',d[f]||'',f==='soup'?'soup':'main')));
-    if(differs)changedWeeks.push(week);
+    const differences=[];
+    w.days.forEach((d,i)=>{
+     if(d.closed)return;
+     for(const f of ['soup','main','main2']){
+      const before=saved.days[i]?.[f]||'',after=d[f]||'';
+      if(!sameMeal(before,after,f==='soup'?'soup':'main'))
+       differences.push(dayNames[i]+' / '+(f==='soup'?'Polévka':f==='main'?'Oběd 1':'Oběd 2')+': „'+before+'“ → „'+after+'“');
+     }
+    });
+    if(differences.length){changedWeeks.push(week);changedDetails.push(...differences.map(t=>week+' – '+t));}
    }
   }
   continue
