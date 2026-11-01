@@ -1808,3 +1808,16 @@ html.tablet-landscape-picker #picker .picker-management-actions button {padding:
   }
   #status {bottom:52px!important;}
 }
+
+/* GitHub: stejny svetly vzhled jako Strava.cz, zachovani stavovych barev textu. */
+#githubIndicator.github-indicator,
+#githubIndicator.github-indicator.synced,
+#githubIndicator.github-indicator.local-change,
+#githubIndicator.github-indicator.error {
+  background:#fff!important;
+  border:1px solid #c8d4e0!important;
+  box-shadow:0 2px 8px #0004!important;
+  color:#173d60!important;
+}
+#githubIndicator.github-indicator.synced {color:#21613f!important;}
+#githubIndicator.github-indicator.error {color:#a12b2b!important;}
