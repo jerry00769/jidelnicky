@@ -345,10 +345,10 @@
       "week": "2026-11-02",
       "days": [
         {
-          "closed": false,
-          "soup": "zeleninová se sýrovým kapáním",
-          "main": "Rybí filé obalované, Brambory",
-          "category": "RYBY",
+          "closed": true,
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
