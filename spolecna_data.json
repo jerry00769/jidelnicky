@@ -1467,7 +1467,7 @@
             "category2": ""
           },
           {
-            "closed": false,
+            "closed": true,
             "soup": "",
             "main": "",
             "category": "",
