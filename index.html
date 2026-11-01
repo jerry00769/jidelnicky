@@ -170,4 +170,51 @@ document.addEventListener('pointerdown',e=>{if(active&&!e.target.closest('.toolb
   settings.querySelectorAll('.github-controls button').forEach(button=>button.addEventListener('click',()=>{settings.open=false}));
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&settings.open)settings.open=false});
   window.addEventListener('resize',()=>{if(settings.open)update()});
-})();</script></body></html>
+})();</script><script id="shared-status-rotator">(function(){
+ 'use strict';
+ const el=document.getElementById('githubIndicator');
+ if(!el)return;
+ const states={github:{text:'GitHub: nepřipojeno',detail:'GitHub: nepřipojeno',kind:'error'},strava:null};
+ let active='github',returnTimer=null;
+ function compact(source,detail,kind){
+  if(source==='strava'){
+   let text=/probíhá|kontroluji/i.test(detail)?'Strava.cz: kontroluji…':
+    /nalezeno\s+(\d+)/i.test(detail)?'Strava.cz: nová data ('+detail.match(/nalezeno\s+(\d+)/i)[1]+' týdnů)':
+    kind==='error'?'Strava.cz: nedostupná':'Strava.cz: aktuální';
+   return {text,detail,kind};
+  }
+  let raw=detail.replace(/^GitHub:\s*/i,'');
+  let text=/nepřipojeno|odpojeno/i.test(raw)?'GitHub: nepřipojeno':
+   /konflikt/i.test(raw)?'GitHub: konflikt dat':
+   /chyba|nelze|offline|chybí/i.test(raw)?'GitHub: chyba připojení':
+   /čeká|načítám|odesíl|kontrol|připojov|změny uloženy/i.test(raw)?'GitHub: synchronizuji…':
+   'GitHub: připojeno';
+  return {text,detail,kind};
+ }
+ function show(){
+  const state=states[active]||states.github;
+  el.textContent=(state.kind==='ok'?'✓ ':state.kind==='error'?'⚠ ':'↻ ')+state.text;
+  el.classList.toggle('synced',state.kind==='ok');
+  el.classList.toggle('local-change',state.kind==='info');
+  el.classList.toggle('error',state.kind==='error');
+  el.title=state.detail+' | Kliknutím přepneš GitHub / Strava.cz';
+ }
+ window.addEventListener('jidelnicky:github-status',event=>{
+  const d=event.detail;states.github=compact('github',d.text,d.kind);
+  if(active==='github')show();
+ });
+ window.addEventListener('jidelnicky:strava-status',event=>{
+  const d=event.detail;states.strava=compact('strava',d.text,d.kind);
+  active='strava';show();
+  if(returnTimer!==null)clearTimeout(returnTimer);
+  returnTimer=setTimeout(()=>{active='github';show();returnTimer=null;},4500);
+ });
+ el.addEventListener('click',()=>{
+  if(!states.strava)return;
+  active=active==='github'?'strava':'github';show();
+  if(returnTimer!==null)clearTimeout(returnTimer);
+  returnTimer=setTimeout(()=>{active='github';show();returnTimer=null;},4500);
+ });
+ el.style.setProperty('pointer-events','auto','important');
+ el.style.cursor='pointer';show();
+})();</script><script src="strava-import.js?v=4"></script></body></html>
