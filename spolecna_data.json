@@ -346,41 +346,41 @@
       "days": [
         {
           "closed": false,
-          "soup": "česneková s bramborem a vejcem",
-          "main": "Rybí filé po mlynářsku, Brambory",
+          "soup": "květáková",
+          "main": "Rybí file pečené na másle, Bramborová kaše - příloha",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "pórková s vejci",
-          "main": "Brokolicová poezie (květák, niva)",
+          "soup": "koprová (kulajda)",
+          "main": "Nudle s mákem",
+          "category": "SLADKÁ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "pórková",
+          "main": "Hovězí pečeně na houbách, Těstoviny",
+          "category": "HOVĚZÍ A TELECÍ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "hovězí s kuskusem",
+          "main": "Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha",
+          "category": "LUŠTĚNINOVÁ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "zeleninová s tarhoňou",
+          "main": "Omáčka koprová, Vejce vařené, Brambory",
           "category": "BEZMASÁ SLANÁ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "hovězí se sýrovým kapáním",
-          "main": "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
-          "category": "LUŠTĚNINOVÁ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "zeleninová zahuštěná červenou čočkou",
-          "main": "kuřecí maso po čínsku, dušená rýže, ovoce",
-          "category": "DRŮBEŽ A KRÁLÍK",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "selská ii.",
-          "main": "Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
-          "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         }
