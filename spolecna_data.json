@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-11-16",
+      "week": "2026-11-30",
       "days": [
         {
           "closed": false,
-          "soup": "Špenátová s vajíčkem",
-          "main": "Hrachová kaše s cibulkou, Vejce vařené",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "česneková s bramborem a vejcem",
-          "main": "zeleninové rizoto sypané sýrem a parmazánem, ovocný sirup, čistá voda",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zimní zeleninová s ovesnými vločkami",
-          "main": "Zapečené těstoviny s uzeninou",
-          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s těstovinovou",
-          "main": "Žemlovka s jablky a tvarohem",
-          "category": "SLADKÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "vývar s drobením",
-          "main": "Rybí filé po mlynářsku, Brambory m.m.",
-          "category": "RYBY",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         }
