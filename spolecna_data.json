@@ -599,7 +599,8 @@
           {
             "soup": "",
             "main": "",
-            "category": ""
+            "category": "",
+            "closed": true
           }
         ]
       },
