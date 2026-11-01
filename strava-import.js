@@ -92,6 +92,13 @@ function suggestCategory(raw,kind){
 }
 function setFooter(buttons){$('ssFoot').replaceChildren();for(const b of buttons){const el=document.createElement('button');el.type='button';el.textContent=b.text;el.className=b.primary?'ss-primary':'';el.disabled=!!b.disabled;el.onclick=b.action;$('ssFoot').append(el)}}
 function close(){dlg.close();weeks=[];previewOnly=false;corrections.clear()}
+// Kliknutí na ztmavené pozadí zavře přehled stejně jako tlačítko Zavřít.
+// Kontrolujeme skutečné souřadnice, aby kliknutí uvnitř dialogu nic nezavíralo.
+dlg.addEventListener('click',event=>{
+ if(!dlg.open||event.target!==dlg)return;
+ const r=dlg.getBoundingClientRect();
+ if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)close();
+});
 function previewFooter(){
  const buttons=[];
  if(corrections.size)buttons.push({text:'Uložit opravy ('+corrections.size+')',primary:true,action:saveCorrections});
