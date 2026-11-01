@@ -59,22 +59,38 @@ function auditCatalogHistory(){
  const extras={soup:[],main:[]};
  for(const kind of ['soup','main'])for(const [cat,items] of Object.entries(state.catalog[kind]||{}))for(const name of items){known[kind].add(key(name));extras[kind].push({name,cat})}
  const used={soup:new Set(),main:new Set()},missing={soup:new Map(),main:new Map()};
+ const categoryMap=new Map(),conflicts=[],review=[];
+ for(const [cat,items] of Object.entries(state.catalog.main||{}))for(const name of items){const k=key(name);if(categoryMap.has(k)&&categoryMap.get(k)!==cat)conflicts.push(`${name}: ${categoryMap.get(k)} / ${cat}`);else categoryMap.set(k,cat)}
+ const flagged=new Set();
+ function semanticCheck(kind,name,cat){
+  const n=key(name),c=key(cat),id=kind+'|'+n+'|'+c;
+  if(flagged.has(id))return;let reason='';
+  if(kind==='main'&&c.includes('bezmasa')&&/\b(sunk|uzen|maso|kurec|veprov|hovez|kruti|slanina|spekov|parek|klobas)/.test(n))reason='Obsahuje masovou surovinu, ale je zařazeno jako bezmasé';
+  if(kind==='soup'&&c.includes('zeleninove')&&/drubkov|hovezi|kureci|masov/.test(n))reason='Název naznačuje masový základ, ale je mezi zeleninovými';
+  if(c.includes('k zarazeni')||c.includes('k overeni'))reason='Nevyřešená kategorie';
+  if(reason){flagged.add(id);review.push({kind,name,cat,reason})}
+ }
+ for(const kind of ['soup','main'])for(const [cat,items] of Object.entries(state.catalog[kind]||{}))for(const name of items)semanticCheck(kind,name,cat);
  for(const week of state.history||[])for(const day of week.days||[]){
   for(const [kind,field,catField] of [['soup','soup',null],['main','main','category'],['main','main2','category2']]){
    const name=String(day[field]||'').trim();if(!name)continue;
    // Uzavrene dny a textove oznaceni prazdnin nejsou jidla v katalogu.
    if(day.closed || (kind==='soup' && /^p\s*r\s*a\s*z\s*d\s*n\s*i\s*n\s*y$/i.test(key(name))))continue;
    const k=key(name);used[kind].add(k);
+   if(kind==='main'&&categoryMap.has(k)&&key(categoryMap.get(k))!==key(day[catField]||''))conflicts.push(`${week.week}: ${name} – historie: ${day[catField]||'(prázdná)'}, katalog: ${categoryMap.get(k)}`);
    if(!known[kind].has(k)&&!missing[kind].has(k))missing[kind].set(k,{name,cat:catField?String(day[catField]||'').trim():''});
   }
  }
- return {missing,extras:{soup:extras.soup.filter(x=>!used.soup.has(key(x.name))),main:extras.main.filter(x=>!used.main.has(key(x.name)))},counts:{soup:known.soup.size,main:known.main.size,usedSoup:used.soup.size,usedMain:used.main.size}};
+ return {missing,conflicts:[...new Set(conflicts)],review,extras:{soup:extras.soup.filter(x=>!used.soup.has(key(x.name))),main:extras.main.filter(x=>!used.main.has(key(x.name)))},counts:{soup:known.soup.size,main:known.main.size,usedSoup:used.soup.size,usedMain:used.main.size}};
 }
 async function runCatalogAudit(){
  const audit=auditCatalogHistory(),s=[...audit.missing.soup.values()],m=[...audit.missing.main.values()];
  const report=`Kontrola aktuální WEB databáze vůči ${state.history.length} týdnům historie:\n\n`+
  `Polévky: ${audit.counts.soup} v katalogu, ${audit.counts.usedSoup} v historii, chybí ${s.length}, navíc ${audit.extras.soup.length}.\n`+
- `Hlavní jídla: ${audit.counts.main} v katalogu, ${audit.counts.usedMain} v historii, chybí ${m.length}, navíc ${audit.extras.main.length}.\n\n`+
+ `Hlavní jídla: ${audit.counts.main} v katalogu, ${audit.counts.usedMain} v historii, chybí ${m.length}, navíc ${audit.extras.main.length}.\n`+
+ `Nesoulad kategorií historie/katalog: ${audit.conflicts.length}.\nVěcné zařazení k posouzení: ${audit.review.length}.\n\n`+
+ (audit.conflicts.length?'NESOULAD KATEGORIÍ (BEZ AUTOMATICKÉ ZMĚNY):\n'+audit.conflicts.join('\n')+'\n\n':'')+
+ (audit.review.length?'K POSOUZENÍ (HEURISTIKA, NE POTVRZENÁ CHYBA):\n'+audit.review.map(x=>`${x.kind==='soup'?'Polévka':'Oběd'}: ${x.name} [${x.cat}] – ${x.reason}`).join('\n')+'\n\n':'')+
  (s.length||m.length?'CHYBÍ:\n'+[...s.map(x=>'Polévka: '+x.name),...m.map(x=>'Oběd: '+x.name)].join('\n')+'\n\n':'')+
  (audit.extras.soup.length||audit.extras.main.length?'POUZE V KATALOGU (NEBUDOU SMAZÁNY):\n'+[...audit.extras.soup.map(x=>'Polévka: '+x.name),...audit.extras.main.map(x=>'Oběd: '+x.name)].join('\n'):'');
  if(!s.length&&!m.length){alert(report+'\n\nŽádný zápis nebyl proveden.');return}
