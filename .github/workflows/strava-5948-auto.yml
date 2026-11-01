@@ -1,4 +1,3 @@
-
 name: Automaticke nacteni Strava.cz 5948
 on:
   workflow_dispatch:
