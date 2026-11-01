@@ -297,7 +297,7 @@ function historyDetail(){
   const d=h.days[i]||{},day=document.createElement('section');day.className='history-day';
   const header=document.createElement('div');header.className='history-day-head';
   const name=document.createElement('strong');name.textContent=`${weekdays[i]} ${format(dateAt(h.week,i))}`;
-  const closed=document.createElement('button');closed.type='button';closed.className='history-closed-toggle alt';closed.textContent=d.closed?'Nevaří se':'Vaří se';
+  const closed=document.createElement('button');closed.type='button';closed.className='history-closed-toggle alt';closed.textContent=d.closed?(dateAt(h.week,i)<parseDate(iso(new Date()))?'Nevařilo se':'Nevaří se'):(dateAt(h.week,i)<parseDate(iso(new Date()))?'Vařilo se':'Vaří se');
   closed.onclick=()=>{snapshot();d.closed=!d.closed;render();historyDetail();notice('Stav vaření uložen do historie.');};
   header.append(name,closed);day.append(header);
   // Stejně jako v Pythonu: při Nevaří se skrýt VŠECHNA jídla,
@@ -387,12 +387,29 @@ $('copyConfirm').onclick=()=>safe(()=>{
  const target=monday(iso(copyDate));
  if(calendarMode==='main'){
   if(target===state.week.week){copyDlg.close();return}
-  snapshot();state.week=freshWeek(target);copyDlg.close();render();notice('Nastaven týden '+format(parseDate(target))+'. Předchozí návrh lze vrátit tlačítkem Zpět.');return;
+  // Změna data nesmí bez dotazu zahodit načtený nebo rozepsaný pracovní jídelníček.
+  pendingWeekTarget=target;
+  $('changeWeekMessage').textContent='Přechod z týdne '+format(parseDate(state.week.week))+' na '+format(parseDate(target))+'. Co se má stát s aktuálně zobrazenými jídly?';
+  copyDlg.close();$('changeWeekDialog').showModal();return;
  }
  const h=state.history.find(x=>x.week===copySource);if(!h)throw Error('Původní týden už není v historii.');
  snapshot();state.week=clone(h);state.week.week=target;state.count=h.days.some(d=>d.main2)?2:1;
  copyDlg.close();$('historyDialog').close();render();notice('Týden zkopírován jako pracovní návrh. Historie se nezměnila.');
 });
+let pendingWeekTarget=null;
+function finishWeekChange(keepMeals){
+ const target=pendingWeekTarget;pendingWeekTarget=null;
+ $('changeWeekDialog').close();
+ if(!target||target===state.week.week)return;
+ snapshot();
+ if(keepMeals){state.week=clone(state.week);state.week.week=target;}
+ else state.week=freshWeek(target);
+ render();notice(keepMeals?'Jídla zachována a převedena na týden '+format(parseDate(target))+'.':'Nastaven prázdný týden '+format(parseDate(target))+'.');
+}
+$('changeWeekKeep').onclick=()=>safe(()=>finishWeekChange(true));
+$('changeWeekEmpty').onclick=()=>safe(()=>finishWeekChange(false));
+$('changeWeekCancel').onclick=()=>{pendingWeekTarget=null;$('changeWeekDialog').close()};
+$('changeWeekDialog').addEventListener('close',()=>{pendingWeekTarget=null});
 $('historyCopy').onclick=()=>safe(()=>{
  const h=chosenHistory();if(!h)return;calendarMode='history';copySource=h.week;copyDate=new Date();copyMonth=new Date(copyDate.getFullYear(),copyDate.getMonth(),1);$('copyWeekTitle').textContent='Kopírovat do jiného týdne';$('copyConfirm').textContent='Kopírovat';
  drawCopyCalendar();copyDlg.showModal();
