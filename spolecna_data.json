@@ -344,47 +344,47 @@
       }
     },
     "week": {
-      "week": "2026-10-26",
+      "week": "2026-11-02",
       "days": [
         {
           "closed": false,
-          "soup": "hovězí s jáhly",
-          "main": "Rybí filé smažené, Bramborová kaše",
+          "soup": "rajčatová s tarhoňou",
+          "main": "Smažené rybí prsty, Brambory m.m.",
           "category": "RYBY",
-          "main2": "",
-          "category2": ""
+          "main2": "kuřecí maso po provensálsku, farfalle",
+          "category2": "DRŮBEŽ A KRÁLÍK"
         },
         {
           "closed": false,
-          "soup": "zeleninová s quinoou",
-          "main": "Horňácký guláš (maso, fazole), Chléb",
-          "category": "LUŠTĚNINOVÁ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "zimní zeleninová s ovesnými vločkami",
-          "main": "Bramborák",
-          "category": "BEZMASÁ SLANÁ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "zeleninová s těstovinovou rýží",
-          "main": "Rizoto srbské",
-          "category": "BEZMASÁ SLANÁ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "hovězí s kuskusem",
-          "main": "Kuřecí stripsy, Brambory",
+          "soup": "zeleninová s celozrnnými nudlemi",
+          "main": "Krůtí nudličky s pórkem, Rýže dušená",
           "category": "DRŮBEŽ A KRÁLÍK",
-          "main2": "",
-          "category2": ""
+          "main2": "hovězí maso stroganoff, dušená rýže",
+          "category2": "HOVĚZÍ A TELECÍ"
+        },
+        {
+          "closed": false,
+          "soup": "zelenin. s fridátovými nudlemi",
+          "main": "Bulgur s kuřecím masem a zeleninou",
+          "category": "DRŮBEŽ A KRÁLÍK",
+          "main2": "těstoviny s lososem ve smetanové omáčce",
+          "category2": "RYBY"
+        },
+        {
+          "closed": false,
+          "soup": "ovarová",
+          "main": "Dukátové buchtičky s krémem, Kakao",
+          "category": "SLADKÁ",
+          "main2": "kuřecí maso po čínsku, dušená rýže, ovoce",
+          "category2": "DRŮBEŽ A KRÁLÍK"
+        },
+        {
+          "closed": false,
+          "soup": "hovězí se sýrovým kapáním",
+          "main": "Bratislavské vepřové plecko, Těstoviny",
+          "category": "VEPŘOVÉ A UZENÉ",
+          "main2": "řecký salát, vícezrnný rohlík",
+          "category2": "BEZMASÁ SLANÁ"
         }
       ]
     },
@@ -2554,7 +2554,7 @@
       "avoidFishPair": true
     },
     "txt": "",
-    "count": 1,
+    "count": 2,
     "lockMain": 8,
     "lockSoup": 3,
     "learning": {
