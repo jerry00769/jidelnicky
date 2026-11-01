@@ -346,40 +346,40 @@
       "days": [
         {
           "closed": false,
-          "soup": "cizrnová krémová s rajčaty",
-          "main": "Rybí filé zapečené se špenátem, Brambory",
+          "soup": "hovězí rychlá s vejcem",
+          "main": "Rybí filé po mlynářsku, Brambory",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "drožďová",
-          "main": "Vepřové v mrkvi, Brambory m.m.",
-          "category": "VEPŘOVÉ A UZENÉ",
+          "soup": "zimní zeleninová s ovesnými vločkami",
+          "main": "Kapustové karbanátky, Bramborová kaše - příloha",
+          "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
           "soup": "hovězí se sýrovým kapáním",
-          "main": "Vepřová pečeně, Fazolové lusky na slanině, Brambory",
+          "main": "Holandský řízek, Bramborová kaše - příloha",
+          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "zeleninová s těstovinovou",
+          "main": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
           "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s těstovinami",
-          "main": "Hovězí pečeně na paprice, Vícezrnný knedlík (směs)",
-          "category": "HOVĚZÍ A TELECÍ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "kuřecí s nudlemi",
-          "main": "Špekové knedlíky, Zelí kysané",
+          "soup": "hrachová",
+          "main": "Vinná klobása smažená přírodní, Bramborová kaše - příloha",
           "category": "VEPŘOVÉ A UZENÉ",
           "main2": "",
           "category2": ""
