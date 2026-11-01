@@ -22,8 +22,8 @@ def shape(value, depth=0):
 
 
 def main():
-    from strava_cz_api import Public
     try:
+        from strava_cz_api import Public
         data = Public.getJidelnicek('5948')
         if not isinstance(data, (dict, list)):
             raise ValueError(f'Unexpected response type: {type(data).__name__}')
