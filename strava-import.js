@@ -55,7 +55,7 @@ function suggestCategory(raw,kind){
   }
  }
  const ranked=[...scores].sort((a,b)=>b[1].score-a[1].score);
- const inferred=ranked.length&&ranked[0][1].score>=1.15&&
+ const inferred=ranked.length&&ranked[0][1].score>=2.0&&ranked[0][1].count>=3&&
    (!ranked[1]||ranked[0][1].score>=ranked[1][1].score*2)
    ?ranked[0][0]:'';
  // Vývary mají přednost před obecnými slovy jako zelenina nebo kapání.
@@ -140,14 +140,24 @@ async function check(){
    report(changedWeeks.length?'Strava.cz: změny v již uložených týdnech '+changedWeeks.join(', ')+' – automaticky nepřepsáno.':'Strava.cz 5948: aktuální, žádné nové týdny.');
    return;
   }
-  const uncertain=weeks.some(w=>w.entries.some(e=>e.mode!=='auto'&&!e.categoryConfident));
-  if(!test&&!uncertain){
-   for(const w of weeks)for(const e of w.entries)if(e.mode!=='auto')e.choice='__new';
-   commit();
-   if(changedWeeks.length)report('Strava.cz: nové týdny doplněny; změny starších týdnů '+changedWeeks.join(', ')+' nepřepsány.');
-  }else{
-   report('Strava.cz: '+weeks.length+' nových týdnů'+(uncertain?' – je potřeba určit kategorii.':' – test bez ukládání.'));
+  if(test){
+   report('Strava.cz: testovací náhled – žádné ukládání.');
    review();if(!dlg.open)dlg.showModal();
+  }else{
+   const ready=weeks.filter(w=>w.entries.every(e=>e.mode==='auto'||e.categoryConfident));
+   const pending=weeks.filter(w=>w.entries.some(e=>e.mode!=='auto'&&!e.categoryConfident));
+   // Odložené týdny zůstávají v aktuálním strava_5948.json a při další kontrole
+   // se znovu vyhodnotí. Nikdy je nezapisujeme s vymyšlenou kategorií.
+   weeks=ready;
+   if(ready.length){
+    for(const w of ready)for(const e of w.entries)if(e.mode!=='auto')e.choice='__new';
+    commit();
+   }
+   const notes=[];
+   if(ready.length)notes.push(ready.length+' nových týdnů automaticky převzato');
+   if(pending.length)notes.push(pending.length+' týdnů čeká na jednoznačné zařazení (bez přepsání dat)');
+   if(changedWeeks.length)notes.push('změny uložených týdnů '+changedWeeks.join(', ')+' nepřepsány');
+   report('Strava.cz: '+(notes.join('; ')||'aktuální, žádné nové týdny')+'.',pending.length>0);
   }
  }catch(err){
   if(err.name==='AbortError'&&!enabled)return;
