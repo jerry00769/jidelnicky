@@ -266,7 +266,7 @@
       "days": [
         {
           "closed": false,
-          "soup": "květáková",
+          "soup": "hovězí s játrovými knedlíčky",
           "main": "Rybí filé smažené, Bramborová kaše",
           "category": "RYBY",
           "main2": "",
@@ -274,17 +274,17 @@
         },
         {
           "closed": false,
-          "soup": "hovězí s česnekovými krutony",
-          "main": "Španělská čočka s mletým masem, Chléb",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "květáková s červenou čočkou",
+          "main": "Guláš maďarský, Rýže dušená",
+          "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová zahuštěná červenou čočkou",
-          "main": "Nákyp rýžový se švestkami",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "česneková s osmaženou hostičkou",
+          "main": "Kaše krupicová",
+          "category": "SLADKÁ",
           "main2": "",
           "category2": ""
         },
@@ -298,9 +298,9 @@
         },
         {
           "closed": false,
-          "soup": "zeleninová s těstovinovou rýží",
-          "main": "Šoulet, Vepřová pečeně",
-          "category": "VEPŘOVÉ A UZENÉ",
+          "soup": "hráškový krém",
+          "main": "Španělská čočka s mletým masem, Chléb",
+          "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         }
