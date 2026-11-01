@@ -342,47 +342,37 @@
       }
     },
     "week": {
-      "week": "2026-11-02",
+      "week": "2026-10-26",
       "days": [
         {
-          "closed": false,
           "soup": "",
           "main": "",
           "category": "",
-          "main2": "",
-          "category2": ""
+          "closed": true
         },
         {
-          "closed": false,
           "soup": "",
           "main": "",
           "category": "",
-          "main2": "",
-          "category2": ""
+          "closed": true
         },
         {
-          "closed": false,
           "soup": "",
           "main": "",
           "category": "",
-          "main2": "",
-          "category2": ""
+          "closed": true
         },
         {
-          "closed": false,
           "soup": "",
           "main": "",
           "category": "",
-          "main2": "",
-          "category2": ""
+          "closed": true
         },
         {
-          "closed": false,
           "soup": "",
           "main": "",
           "category": "",
-          "main2": "",
-          "category2": ""
+          "closed": true
         }
       ]
     },
