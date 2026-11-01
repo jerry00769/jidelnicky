@@ -345,34 +345,44 @@
       "week": "2026-11-02",
       "days": [
         {
-          "soup": "",
-          "main": "",
-          "category": "",
-          "closed": true
+          "closed": false,
+          "soup": "zelenin. s ovesnými vločkami",
+          "main": "Rybí filé obalované, Brambory m.m.",
+          "category": "RYBY",
+          "main2": "",
+          "category2": ""
         },
         {
-          "soup": "",
-          "main": "",
-          "category": "",
-          "closed": true
+          "closed": false,
+          "soup": "pórková",
+          "main": "Šoulet, Vepřová pečeně, Okurka sterilovaná - příloha",
+          "category": "VEPŘOVÉ A UZENÉ",
+          "main2": "",
+          "category2": ""
         },
         {
-          "soup": "",
-          "main": "",
-          "category": "",
-          "closed": true
+          "closed": false,
+          "soup": "zeleninová zahuštěná červenou čočkou",
+          "main": "Těstoviny s brokolicí",
+          "category": "BEZMASÁ SLANÁ",
+          "main2": "",
+          "category2": ""
         },
         {
-          "soup": "",
-          "main": "",
-          "category": "",
-          "closed": true
+          "closed": false,
+          "soup": "květáková",
+          "main": "Holandský řízek, Bramborová kaše",
+          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "main2": "",
+          "category2": ""
         },
         {
-          "soup": "",
-          "main": "",
-          "category": "",
-          "closed": true
+          "closed": false,
+          "soup": "ze zahradních jahod",
+          "main": "Španělská čočka s mletým masem, Chléb",
+          "category": "LUŠTĚNINOVÁ",
+          "main2": "",
+          "category2": ""
         }
       ]
     },
