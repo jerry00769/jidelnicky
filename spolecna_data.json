@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-10-26",
+      "week": "2026-11-02",
       "days": [
         {
           "closed": false,
-          "soup": "kuřecí s nudlemi",
-          "main": "Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zelenin. s drožďovými knedlíčky",
-          "main": "Těstoviny po Lotrinsku",
-          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "z míchaných luštěnin",
-          "main": "Znojemský guláš, Rýže dušená",
-          "category": "HOVĚZÍ A TELECÍ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zelenin. s bulgurem",
-          "main": "Těstoviny s brokolicí a sýrovou omáčkou",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": " zeleninová s ovesnými vločkami",
-          "main": "Žebrácké maso, Brambory",
-          "category": "VEPŘOVÉ A UZENÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         }
