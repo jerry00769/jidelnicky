@@ -29,6 +29,20 @@ function waitForGithub(ms=16000){
 let enabled=true;
 try{enabled=localStorage.getItem(PREF_KEY)!=='false'}catch(_e){}
 const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('cs').replace(/\bpol[eé]vka\b/g,'').replace(/\bm\.m\.\b/g,'').replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');
+// Shoda uloženého jídla a Strava.cz: nejprve text, pak jednoznačná
+// katalogová identita. Pouhá stejná kategorie NENÍ důkazem shody.
+function sameMeal(saved,incoming,kind){
+ if(norm(saved)===norm(incoming))return true;
+ if(!String(saved||'').trim()||!String(incoming||'').trim())return false;
+ const a=match(saved,kind),b=match(incoming,kind);
+ if(a&&b&&norm(a.name)===norm(b.name))return true;
+ // Běžné rozšíření názvu vývaru o upřesnění kapání.
+ if(kind==='soup'){
+  const simplify=x=>norm(x).replace(/\\b(syrovym|syrove)\\b/g,'').replace(/\\bse\\b/g,'s').replace(/\\s+/g,' ').trim();
+  if(simplify(saved)===simplify(incoming))return true;
+ }
+ return false;
+}
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const monday=s=>{if(!/^\d{4}-\d{2}-\d{2}$/.test(s))throw Error('Neplatné datum týdne');const d=new Date(s+'T12:00:00');if(isNaN(d)||d.toISOString().slice(0,10)!==s)throw Error('Neplatné datum týdne');d.setDate(d.getDate()-(d.getDay()+6)%7);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
 const currentMonday=()=>{const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()-(d.getDay()+6)%7);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
@@ -207,14 +221,14 @@ function buildIssue(e,w){
  }
  e.choice='__new';return section;
 }
-function review(){stage='review';const issues=weeks.flatMap(w=>w.entries.filter(e=>e.mode!=='auto'));const auto=weeks.flatMap(w=>w.entries).length-issues.length;$('ssInfo').textContent=`${auto} jídel rozpoznáno z katalogu · ${issues.length} nových položek`;if(issues.length>=5&&auto<issues.length){$('ssInfo').textContent+=' · Pozor: ověř synchronizaci katalogu na tomto zařízení';}const body=$('ssBody');body.replaceChildren();for(const w of weeks){const sec=document.createElement('section');sec.className='ss-week';sec.innerHTML='<h3>Týden '+escape(w.week)+'</h3>';for(let i=0;i<5;i++){const d=document.createElement('div');d.className='ss-day';const head=document.createElement('strong');head.textContent=dayNames[i];d.append(head);const entries=w.entries.filter(e=>e.day===i);if(!entries.length){const p=document.createElement('p');p.textContent='Bez jídel';d.append(p)}for(const e of entries){const line=document.createElement('div');line.className='ss-line';const label=document.createElement('span');label.textContent=decisionLabel(e);const name=document.createElement('strong');name.textContent=e.mode==='auto'?e.matched.name:e.raw;const pill=document.createElement('span');pill.className='ss-pill'+(e.mode==='auto'?'':' ss-warn');pill.textContent=e.mode==='auto'?'Rozpoznáno':e.categoryConfident?'Nové · kategorie určena':'Vyžaduje kategorii';line.append(label,name,pill);d.append(line);if(e.mode!=='auto')d.append(buildIssue(e,w))}sec.append(d)}body.append(sec)}if(!issues.length){const p=document.createElement('p');p.textContent='Všechna jídla jsou jednoznačně přiřazena. Stačí schválit celý týden.';body.prepend(p)}if(test||previewOnly){const p=document.createElement('p');p.className='ss-muted';p.textContent=test?'TEST NANEČISTO – žádná data se neuloží.':'NÁHLED – nic se neuloží, pokud výslovně nepotvrdíš ruční opravu.';body.prepend(p)}updateReady()}
+function review(){stage='review';const issues=weeks.flatMap(w=>w.entries.filter(e=>e.mode!=='auto'));const auto=weeks.flatMap(w=>w.entries).length-issues.length;$('ssInfo').textContent=`${auto} jídel rozpoznáno z katalogu · ${issues.length} nových položek`;if(issues.length>=5&&auto<issues.length){$('ssInfo').textContent+=' · Pozor: ověř synchronizaci katalogu na tomto zařízení';}const body=$('ssBody');body.replaceChildren();for(const w of weeks){const sec=document.createElement('section');sec.className='ss-week';sec.innerHTML='<h3>Týden '+escape(w.week)+'</h3>';for(let i=0;i<5;i++){const d=document.createElement('div');d.className='ss-day';const head=document.createElement('strong');head.textContent=dayNames[i];d.append(head);const entries=w.entries.filter(e=>e.day===i);if(!entries.length){const p=document.createElement('p');p.textContent='Bez jídel';d.append(p)}for(const e of entries){const line=document.createElement('div');line.className='ss-line';const label=document.createElement('span');label.textContent=decisionLabel(e);const name=document.createElement('strong');name.textContent=e.mode==='auto'?e.matched.name:e.raw;const pill=document.createElement('span');pill.className='ss-pill'+(e.mode==='auto'?'':' ss-warn');pill.textContent=e.mode==='auto'?'Rozpoznáno':e.categoryConfident?'Nové · kategorie určena':'Vyžaduje kategorii';line.append(label,name,pill);d.append(line);if(e.mode!=='auto')d.append(buildIssue(e,w))}sec.append(d)}body.append(sec)}if(!issues.length){const p=document.createElement('p');p.textContent='Všechna jídla jsou jednoznačně přiřazena.';body.prepend(p)}if(test||previewOnly){const p=document.createElement('p');p.className='ss-muted';p.textContent=test?'TEST NANEČISTO – žádná data se neuloží.':'NÁHLED – nic se neuloží, pokud výslovně nepotvrdíš ruční opravu.';body.prepend(p)}updateReady()}
 function updateReady(){if(stage!=='review')return;const missing=weeks.flatMap(w=>w.entries).filter(e=>e.mode!=='auto'&&(!e.choice||!e.categorySuggestion)).length;if(previewOnly&&!test){previewFooter();return;}setFooter(test?[{text:'Zavřít',primary:true,action:close}]:[{text:'Schválit a uložit',primary:true,disabled:missing>0,action:commit},{text:'Zavřít',action:close}]);}
 function parseWeeks(data){const state=window.JidelnickyApp.getState();catalog=state.catalog;const existing=new Set(test||previewOnly?[]:state.history.map(x=>x.week));changedWeeks=[];const seen=new Set();skipped=0;weeks=[];for(const w of data.weeks){if(!w||typeof w.week!=='string'||!Array.isArray(w.days)||w.days.length!==5)throw Error('Neplatný formát týdne');const week=monday(w.week);if(week<currentMonday())continue;if(existing.has(week)||seen.has(week)){
   skipped++;
   if(existing.has(week)){
    const saved=state.history.find(x=>x.week===week);
    if(saved?.days?.length===5){
-    const differs=w.days.some((d,i)=>!d.closed&&['soup','main','main2'].some(f=>norm(d[f]||'')!==norm(saved.days[i]?.[f]||'')));
+    const differs=w.days.some((d,i)=>!d.closed&&['soup','main','main2'].some(f=>!sameMeal(saved.days[i]?.[f]||'',d[f]||'',f==='soup'?'soup':'main')));
     if(differs)changedWeeks.push(week);
    }
   }
