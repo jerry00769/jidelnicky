@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-11-02",
+      "week": "2026-10-26",
       "days": [
         {
           "closed": false,
-          "soup": "z batátových brambor",
-          "main": "Rybí filé obalované, Brambory m.m.",
-          "category": "RYBY",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "vývar s drobením",
-          "main": "Guláš maďarský, Rýže dušená",
-          "category": "HOVĚZÍ A TELECÍ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "kuřecí s nudlemi",
-          "main": "Hrachová kaše s cibulkou, Párky",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zelenin. s pohankou",
-          "main": "Omáčka koprová, Vejce vařené, Brambory",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s celozrnnými knedlíčky",
-          "main": "Kuskus s ovocem",
-          "category": "SLADKÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         }
