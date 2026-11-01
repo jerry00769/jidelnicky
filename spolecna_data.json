@@ -346,23 +346,23 @@
       "days": [
         {
           "closed": false,
-          "soup": "selská ii.",
-          "main": "Rybí filé obalované, Brambory",
+          "soup": "květáková",
+          "main": "rybí filé s rajčaty, bazalkou, brambory",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "špenátová",
-          "main": "Kapustové karbanátky, Bramborová kaše",
-          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "soup": "drůbková s nudlemi",
+          "main": "bulgur se zeleninou a kuřecím masem",
+          "category": "DRŮBEŽ A KRÁLÍK",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "hovězí rychlá s vejcem",
+          "soup": "drožďová",
           "main": "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
           "category": "LUŠTĚNINOVÁ",
           "main2": "",
@@ -370,16 +370,16 @@
         },
         {
           "closed": false,
-          "soup": "hrachová",
-          "main": "Zeleninové placičky se sýrem, Brambory",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "krupicová s vejcem",
+          "main": "Kuskus s ovocem",
+          "category": "SLADKÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s hrachovými nudlemi",
-          "main": "Těstoviny s brokolicí",
+          "soup": "selská ii.",
+          "main": "Kapustové karbanátky, Bramborová kaše - příloha",
           "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
