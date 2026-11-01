@@ -4,6 +4,28 @@ const test=new URLSearchParams(location.search).get('strava_test')==='1';
 let previewOnly=false;
 let changedWeeks=[];
 const PREF_KEY='jidelnicky:strava-auto-check-enabled';
+// Import nesmí vycházet z místního katalogu před prvním dokončeným GitHub syncem.
+let githubReady=false;
+let githubWaiters=[];
+function notifyGithubReady(){
+ githubReady=true;
+ for(const resolve of githubWaiters.splice(0))resolve(true);
+}
+window.addEventListener('jidelnicky:github-status',event=>{
+ const detail=event.detail||{};
+ if(detail.kind==='ok'&&/data synchronizov[aá]na|spole[cč]n[aá] data vytvo[rř]ena/i.test(detail.text||''))notifyGithubReady();
+});
+function waitForGithub(ms=16000){
+ if(githubReady)return Promise.resolve(true);
+ // Důležitá pojistka: místní katalog se bez synchronizace nepovažuje za aktuální.
+ return new Promise(resolve=>{
+  let finished=false;
+  const done=value=>{if(finished)return;finished=true;resolve(value)};
+  githubWaiters.push(done);
+  setTimeout(()=>done(false),ms);
+ });
+}
+
 let enabled=true;
 try{enabled=localStorage.getItem(PREF_KEY)!=='false'}catch(_e){}
 const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('cs').replace(/\bpol[eé]vka\b/g,'').replace(/\bm\.m\.\b/g,'').replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');
@@ -201,6 +223,13 @@ async function check(manual=false){
   if(!enabled&&!manual)return;
   sourceStamp=data.checked_at_utc||'';
   previewOnly=manual&&!test;
+  // Vyčkej na skutečné převzetí společných dat; badge se může zobrazit později.
+  const synced=await waitForGithub();
+  if(!synced){
+   report('Strava.cz: společný katalog z GitHubu ještě není synchronizovaný. Import pozastaven, nic se neuložilo.',true);
+   return;
+  }
+  if(!enabled&&!manual)return;
   parseWeeks(data);
   if(!weeks.length){
    if(manual){showPreview('Strava.cz: dostupný přehled je prázdný.');return}
@@ -230,7 +259,7 @@ async function check(manual=false){
    if(catalogMismatch)notes.push('automatický zápis pozastaven: katalog na tomto zařízení rozpoznal jen '+exact+' z '+total+' jídel; zkontroluj synchronizaci GitHub');
    if(pending.length)notes.push(pending.length+' týdnů čeká na jednoznačné zařazení (bez přepsání dat)');
    if(changedWeeks.length)notes.push('změny uložených týdnů '+changedWeeks.join(', ')+' nepřepsány');
-   report('Strava.cz: '+(notes.join('; ')||'aktuální, žádné nové týdny')+'.',pending.length>0);
+   report('Strava.cz: '+(notes.join('; ')||'aktuální, žádné nové týdny')+'.',catalogMismatch||pending.length>0);
   }
  }catch(err){
   if(err.name==='AbortError'&&!enabled)return;
