@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-10-19",
+      "week": "2026-11-16",
       "days": [
         {
           "closed": false,
-          "soup": "hovězí s masem a vejcem",
-          "main": "Srbská čočka, Chléb",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "bramboračka nezahuštěná",
-          "main": "Španělský ptáček rozházený, Rýže dušená",
-          "category": "HOVĚZÍ A TELECÍ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "celerová se smaženým hráškem",
-          "main": "Těstovinový salát s kuřecím masem",
-          "category": "DRŮBEŽ A KRÁLÍK",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "z kysaného zelí",
-          "main": "Vepřové v mrkvi, Brambory",
-          "category": "VEPŘOVÉ A UZENÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s kuskusem",
-          "main": "Vepřová pečeně selská, Bramborové knedlíky (směs), Červené zelí",
-          "category": "VEPŘOVÉ A UZENÉ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         }
