@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-11-30",
+      "week": "2026-10-26",
       "days": [
         {
           "closed": false,
-          "soup": "hovězí se sýrovým kapáním",
-          "main": "Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "selská ii.",
-          "main": "Špagety po uhlířsku (vejce, sýr)",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "z batátových brambor",
-          "main": "Kuskus s ovocem",
-          "category": "SLADKÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s hrachovými nudlemi",
-          "main": "Obalované filé s brokolicí a sýrem, Brambory m.m.",
-          "category": "RYBY",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "hovězí se strouháním",
-          "main": "Horňácký guláš (maso, fazole), Chléb",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         }
