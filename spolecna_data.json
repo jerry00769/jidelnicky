@@ -306,7 +306,6 @@
           "Omáčka koprová, Vejce vařené, Brambory",
           "Těstovinový salát s marinovaným tofu",
           "Těstovinový salát se zeleninou a šunkou",
-          "Těstoviny  po Lotrinsku",
           "Těstoviny s brokolicí",
           "Těstoviny s brokolicí a sýrovou omáčkou",
           "Těstoviny se sýrovou omáčkou",
@@ -2343,8 +2342,8 @@
           {
             "closed": false,
             "soup": "zelenin. s drožďovými knedlíčky",
-            "main": "Těstoviny  po Lotrinsku",
-            "category": "BEZMASÁ SLANÁ",
+            "main": "Těstoviny po Lotrinsku",
+            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
             "category2": ""
           },
