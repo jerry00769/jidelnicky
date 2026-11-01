@@ -346,41 +346,41 @@
       "days": [
         {
           "closed": false,
-          "soup": "",
-          "main": "",
-          "category": "",
+          "soup": "česneková s osmaženou hostičkou",
+          "main": "Rybí file pečené na másle, Bramborová kaše",
+          "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s tarhoňou",
-          "main": "Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
-          "category": "LUŠTĚNINOVÁ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "rychlá s vejcem",
-          "main": "Zeleninové rizoto",
-          "category": "BEZMASÁ SLANÁ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "hovězí s kapáním",
-          "main": "Lívance, Káva bílá",
+          "soup": "z rybího filé",
+          "main": "Dukátové buchtičky s krémem, Mléko",
           "category": "SLADKÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "česneková s bramborem a vejcem",
-          "main": "Obalované filé s brokolicí a sýrem, Brambory m.m.",
-          "category": "RYBY",
+          "soup": "drožďová",
+          "main": "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
+          "category": "LUŠTĚNINOVÁ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "bramborová",
+          "main": "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
+          "category": "LUŠTĚNINOVÁ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "rajčatová s těstovinou",
+          "main": "Kapustové karbanátky, Bramborová kaše - příloha",
+          "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
         }
