@@ -346,41 +346,41 @@
       "days": [
         {
           "closed": false,
-          "soup": "zeleninová s celozrnnými knedlíčky",
-          "main": "Rybí filé pečené na másle, Brambory",
+          "soup": "špenátová",
+          "main": "Tilápie s rajčaty a sýrem, Brambory m.m.",
           "category": "RYBY",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "čočková",
-          "main": "Zapečené těstoviny s uzeným masem",
-          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "soup": "hovězí s kapáním",
+          "main": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
+          "category": "LUŠTĚNINOVÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Špenátová s vajíčkem",
-          "main": "Brokolicová poezie (květák, niva)",
+          "soup": "hovězí s kuskusem",
+          "main": "Vepřová pečeně selská, Nastavovaná kaše s cibulkou",
+          "category": "VEPŘOVÉ A UZENÉ",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "kmínová s vejcem",
+          "main": "Bramborový guláš, Rohlík",
           "category": "BEZMASÁ SLANÁ",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "hrachová se smaženým hráškem",
-          "main": "Sekaná pečeně, Brambory",
-          "category": "MLETÉ MASO A ZAPÉKANÉ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "zelenin. s rýží",
-          "main": "Čočka na kyselo, Vejce vařené",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "z batátových brambor",
+          "main": "Lívance, Káva bílá",
+          "category": "SLADKÁ",
           "main2": "",
           "category2": ""
         }
