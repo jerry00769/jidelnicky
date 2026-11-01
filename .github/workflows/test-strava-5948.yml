@@ -1,1 +1,26 @@
 
+name: Test nacitani Strava.cz 5948
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install public Strava.cz API client
+        run: python -m pip install 'strava-cz-api==2.5.7'
+      - name: Read public menu (no changes to repo)
+        run: python scripts/test_strava_5948.py
+      - name: Upload diagnostic result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: strava-5948-diagnostika
+          path: strava_5948_diagnostika.json
+          if-no-files-found: warn
