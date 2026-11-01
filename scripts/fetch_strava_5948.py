@@ -51,9 +51,23 @@ def main():
             weeks[monday.isoformat()][day.weekday()] = values
     candidates = [{'week': week, 'days': days} for week, days in sorted(weeks.items()) if all(days)]
     skipped = [{'week': week, 'complete_days': sum(bool(d) for d in days)} for week, days in sorted(weeks.items()) if not all(days)]
+    # Zachovej kompletní týdny z předchozích běhů pro návrat po dovolené.
+    # Již archivovaný týden nikdy automaticky nepřepisuj novější verzí.
+    archived = {}
+    if OUT.exists():
+        try:
+            old = json.loads(OUT.read_text(encoding='utf-8'))
+            if old.get('cafeteria') == '5948':
+                archived = {w['week']: w for w in old.get('weeks', []) if isinstance(w, dict) and isinstance(w.get('week'), str) and isinstance(w.get('days'), list) and len(w['days']) == 5}
+        except (ValueError, OSError, TypeError, KeyError):
+            archived = {}
+    # Aktuální zveřejněné týdny aktualizuj, historické ponech v archivu.
+    for w in candidates:
+        archived[w['week']] = w
+    candidates = [archived[key] for key in sorted(archived)]
     report = {'cafeteria': '5948', 'checked_at_utc': datetime.now(timezone.utc).isoformat(),
               'status': 'received', 'weeks': candidates, 'skipped_incomplete_weeks': skipped,
-              'note': 'Pouze kandidáti. Žádný zápis do historie; vyžaduje schválení v aplikaci.'}
+              'note': 'Archiv úplných zveřejněných týdnů. Historii mění až WEB po kontrole kategorií.'}
     if not candidates:
         raise ValueError('Zdroj neobsahuje žádný úplný zveřejněný týden. Původní soubor zůstává beze změny.')
     # Nezapisovat timestamp: jinak by se commitovalo při každé kontrole.
