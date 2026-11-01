@@ -2088,7 +2088,7 @@
         "week": "2026-08-31",
         "days": [
           {
-            "closed": true,
+            "closed": false,
             "soup": "",
             "main": "",
             "category": "",
