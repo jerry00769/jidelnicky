@@ -1498,7 +1498,7 @@
         "week": "2026-04-06",
         "days": [
           {
-            "closed": false,
+            "closed": true,
             "soup": "",
             "main": "",
             "category": "",
