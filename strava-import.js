@@ -21,38 +21,22 @@ for(const w of pending){const sec=document.createElement('section');sec.style.cs
 function ready(){return pending.length>0&&pending.every(w=>w.days.every(d=>!d._incomplete&&['soup','main','main2'].every(field=>!d['_'+field+'Pending']||(d['_'+field+'Decision']&&(d['_'+field+'Decision']!=='__new'||d['_'+field+'Category'])))))}
 function refreshButton(){$('stravaCommit').disabled=!ready()}
 
-$('stravaCommit').onclick=()=>{try{if(!ready())throw Error('Některé položky nejsou schválené');const state=window.JidelnickyApp.getState(),existing=new Set(state.history.map(x=>x.week));for(const w of pending){if(existing.has(w.week))throw Error('Historie se mezitím změnila; načti import znovu.');const days=w.days.map(d=>{const out={closed:d.closed,soup:'',main:'',category:'',main2:'',category2:''};for(const [field,kind,cat] of [['soup','soup',null],['main','main','category'],['main2','main','category2']]){let name=d[field];if(d['_'+field+'Pending']){const decision=d['_'+field+'Decision'];if(decision==='__new'){const category=d['_'+field+'Category'];const exists=Object.values(state.catalog[kind]).flat().some(x=>norm(x)===norm(name));if(exists)throw Error('Nové jídlo již existuje: '+name);state.catalog[kind][category].push(name);if(cat)out[cat]=category}else{const chosen=JSON.parse(decision);name=chosen.name;if(cat)out[cat]=chosen.category}}else if(cat)out[cat]=d[cat];out[field]=name}return out});state.history.push({week:w.week,days})}window.JidelnickyApp.applyState(state);window.GitHubSync?.changed?.();const n=pending.length;pending=[];$('stravaResult').textContent=`Uloženo ${n} týdnů. Zkontroluj stav synchronizace GitHub.`;$('stravaCommit').disabled=true;$('stravaDialog').close()}catch(err){alert('Import se nezapsal: '+err.message)}};
-// Veřejný XML výstup Strava.cz; prohlížeč jej může blokovat kvůli CORS.
-function parseXml(xml){
- const doc=new DOMParser().parseFromString(xml,'application/xml');
- if(doc.querySelector('parsererror'))throw Error('Zdroj nevrátil platné XML');
- const nodes=[...doc.getElementsByTagName('*')].filter(el=>[...el.children].some(c=>c.localName.toLowerCase()==='datum')&&[...el.children].some(c=>c.localName.toLowerCase()==='nazev'));
- if(!nodes.length)throw Error('XML neobsahuje rozpoznané záznamy jídelníčku');
- const byWeek=new Map();
- const field=(el,n)=>[...el.children].find(c=>c.localName.toLowerCase()===n)?.textContent?.trim()||'';
- for(const node of nodes){
-  let date=field(node,'datum');const m=date.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);if(m)date=`${m[3]}-${m[2].padStart(2,'0')}-${m[1].padStart(2,'0')}`;
-  if(!/^\d{4}-\d{2}-\d{2}$/.test(date))continue;
-  const day=new Date(date+'T12:00:00').getDay();if(day===0||day===6)continue;
-  const week=mon(date);if(!byWeek.has(week))byWeek.set(week,{week,days:Array.from({length:5},()=>({soup:'',main:'',main2:''}))});
-  const item=byWeek.get(week).days[day-1],name=field(node,'nazev'),kind=field(node,'druh_popis').toLowerCase();
-  if(/pol[eé]vk/.test(kind))item.soup=name;
-  else if(/ob[eě]d.*2|j[ií]dlo.*2|menu.*2/.test(kind))item.main2=name;
-  else if(/ob[eě]d|j[ií]dlo|menu/.test(kind)&&!item.main)item.main=name;
- }
- return [...byWeek.values()].filter(w=>w.days.some(d=>d.soup||d.main));
-}
+$('stravaCommit').onclick=()=>{try{if(!ready())throw Error('Některé položky nejsou schválené');const state=window.JidelnickyApp.getState(),existing=new Set(state.history.map(x=>x.week));for(const w of pending){if(existing.has(w.week))throw Error('Historie se mezitím změnila; načti import znovu.');const days=w.days.map(d=>{const out={closed:d.closed,soup:'',main:'',category:'',main2:'',category2:''};for(const [field,kind,cat] of [['soup','soup',null],['main','main','category'],['main2','main','category2']]){let name=d[field];if(d['_'+field+'Pending']){const decision=d['_'+field+'Decision'];if(decision==='__new'){const category=d['_'+field+'Category'];const exists=Object.values(state.catalog[kind]).flat().some(x=>norm(x)===norm(name));if(exists){const same=state.catalog[kind][category].find(x=>norm(x)===norm(name));if(!same)throw Error('Jídlo již existuje v jiné kategorii: '+name);name=same;}else state.catalog[kind][category].push(name);if(cat)out[cat]=category}else{const chosen=JSON.parse(decision);name=chosen.name;if(cat)out[cat]=chosen.category}}else if(cat)out[cat]=d[cat];out[field]=name}return out});state.history.push({week:w.week,days})}window.JidelnickyApp.applyState(state);window.GitHubSync?.changed?.();const n=pending.length;pending=[];$('stravaResult').textContent=`Uloženo ${n} týdnů. Zkontroluj stav synchronizace GitHub.`;$('stravaCommit').disabled=true;$('stravaDialog').close()}catch(err){alert('Import se nezapsal: '+err.message)}};
+// Veřejný JSON generovaný na GitHub Actions; nikdy nevolat Strava.cz přímo z prohlížeče.
 async function checkStrava(){
  reportCheck('Strava.cz 5948: probíhá kontrola jídelníčků…');
- const url='https://www.strava.cz/foxisapi/foxisapi.dll/istravne.istravne.process?xmljidelnickyA&zarizeni=5948';
  try{
-  const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);
-  const weeks=parseXml(await r.text());prepare(weeks);
+  const r=await fetch('./strava_5948.json?ts='+Date.now(),{cache:'no-store'});
+  if(!r.ok)throw Error('Soubor strava_5948.json zatím není dostupný (HTTP '+r.status+').');
+  const data=await r.json();
+  if(data.cafeteria!=='5948'||data.status!=='received'||!Array.isArray(data.weeks))throw Error('Neplatná nebo neúplná odpověď.');
+  if(!window.JidelnickyApp?.getState)throw Error('Generátor není připraven.');
+  prepare(data);
   if(!pending.length){reportCheck('Strava.cz 5948: kontrola dokončena, žádné nové celé týdny nebyly nalezeny.');return;}
   $('stravaMessage').textContent=`Strava.cz: nalezeno ${pending.length} dosud neuložených týdnů. Chcete je doplnit? Nejasná jídla je nutné nejprve schválit.`;
   reportCheck('Strava.cz 5948: nalezeno '+pending.length+' nových týdnů.');
   $('stravaDialog').showModal();
- }catch(err){console.warn('Automatická kontrola Strava.cz není dostupná:',err);reportCheck('Strava.cz 5948: kontrola se nezdařila ('+(location.protocol==='file:'?'stránka otevřená ze souboru; ': '')+err.message+'). Historie zůstala beze změny.',true);}
+ }catch(err){console.warn('Kontrola Strava.cz:',err);reportCheck('Strava.cz 5948: kontrola se nezdařila ('+err.message+'). Historie zůstala beze změny.',true);}
 }
-window.addEventListener('load',()=>setTimeout(checkStrava,900));
+window.addEventListener('load',()=>setTimeout(checkStrava,1100));
 })();
