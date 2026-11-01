@@ -1776,3 +1776,14 @@ html.tablet-landscape-picker #picker .picker-management-actions button {padding:
    font-size:11px !important; line-height:1.35 !important; margin:4px 0 0 !important;
  }
 }
+
+/* 01.11.2026: stavové hlášky na mobilu nad indikátory, bez překryvu. */
+@media (max-width:650px) {
+  #githubIndicator.github-indicator {left:10px!important;right:auto!important;bottom:10px!important;max-width:calc(100vw - 20px)!important;}
+  #stravaToggle {left:10px!important;right:auto!important;bottom:46px!important;max-width:calc(100vw - 20px)!important;}
+  #status {left:50%!important;right:auto!important;bottom:83px!important;max-width:calc(100vw - 20px)!important;width:max-content!important;box-sizing:border-box!important;padding:9px 12px!important;font-size:12px!important;line-height:1.35!important;text-align:center!important;z-index:1950!important;}
+}
+/* Tři rozhodovací tlačítka zůstávají na jedné řádce i na úzkém mobilu. */
+#changeWeekDialog .copy-cal-actions {display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important;align-items:stretch!important;width:100%!important;}
+#changeWeekDialog .copy-cal-actions > button {box-sizing:border-box!important;width:100%!important;min-width:0!important;max-width:100%!important;margin:0!important;padding:9px 4px!important;white-space:normal!important;overflow-wrap:normal!important;text-align:center!important;line-height:1.2!important;font-size:clamp(10px,2.6vw,12px)!important;}
+@media(max-width:400px){#changeWeekDialog.copy-week-dialog {box-sizing:border-box!important;width:calc(100vw - 28px)!important;max-width:calc(100vw - 28px)!important;padding:14px 12px!important;}}
