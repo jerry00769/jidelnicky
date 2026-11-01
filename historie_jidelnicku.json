@@ -183,29 +183,44 @@
     "week": "2025-10-27",
     "days": [
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       }
     ]
   },
@@ -528,29 +543,44 @@
     "week": "2025-12-29",
     "days": [
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       }
     ]
   },
@@ -725,7 +755,7 @@
         "category2": ""
       },
       {
-        "closed": false,
+        "closed": true,
         "soup": "P R Á Z D N I N Y",
         "main": "",
         "category": "",
@@ -1098,7 +1128,7 @@
     "week": "2026-04-06",
     "days": [
       {
-        "closed": false,
+        "closed": true,
         "soup": "",
         "main": "",
         "category": "",
@@ -1638,29 +1668,44 @@
     "week": "2026-07-06",
     "days": [
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       }
     ]
   },
@@ -1668,29 +1713,44 @@
     "week": "2026-07-20",
     "days": [
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       }
     ]
   },
@@ -2058,29 +2118,44 @@
     "week": "2026-10-26",
     "days": [
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       },
       {
+        "closed": true,
         "soup": "",
         "main": "",
-        "category": ""
+        "category": "",
+        "main2": "",
+        "category2": ""
       }
     ]
   },
@@ -2089,43 +2164,43 @@
     "days": [
       {
         "closed": false,
-        "soup": "gulášová",
-        "main": "zeleninové rizoto sypané sýrem a parmazánem, ovocný sirup, čistá voda",
-        "category": "BEZMASÁ SLANÁ",
-        "main2": "kuřecí maso po provensálsku, farfalle",
-        "category2": "DRŮBEŽ A KRÁLÍK"
+        "soup": "rajčatová s tarhoňou",
+        "main": "Smažené rybí prsty, Brambory m.m.",
+        "category": "RYBY",
+        "main2": "",
+        "category2": ""
       },
       {
         "closed": false,
-        "soup": "špenátová",
-        "main": "kuřecí paličky na medu, bramborová kaše, čistá voda",
+        "soup": "zeleninová s celozrnnými nudlemi",
+        "main": "Krůtí nudličky s pórkem, Rýže dušená",
         "category": "DRŮBEŽ A KRÁLÍK",
-        "main2": "hovězí maso stroganoff, dušená rýže",
-        "category2": "HOVĚZÍ A TELECÍ"
+        "main2": "",
+        "category2": ""
       },
       {
         "closed": false,
-        "soup": "zeleninový vývar s ovesnými vločkami",
-        "main": "štěpánská hovězí pečeně, houskové knedlíky, čistá voda",
-        "category": "HOVĚZÍ A TELECÍ",
-        "main2": "těstoviny s lososem ve smetanové omáčce",
-        "category2": "RYBY"
-      },
-      {
-        "closed": false,
-        "soup": "hrachová s opečenou houskou",
-        "main": "krůtí sekaná se sýrem, brambory, zeleninový salát míchaný, čistá voda",
+        "soup": "zelenin. s fridátovými nudlemi",
+        "main": "Bulgur s kuřecím masem a zeleninou",
         "category": "DRŮBEŽ A KRÁLÍK",
-        "main2": "kuřecí maso po čínsku, dušená rýže, ovoce",
-        "category2": "DRŮBEŽ A KRÁLÍK"
+        "main2": "",
+        "category2": ""
       },
       {
         "closed": false,
-        "soup": "hovězí rychlá s vejcem",
-        "main": "vepřový guláš, vřetena, čistá voda",
+        "soup": "ovarová",
+        "main": "Dukátové buchtičky s krémem, Kakao",
+        "category": "SLADKÁ",
+        "main2": "",
+        "category2": ""
+      },
+      {
+        "closed": false,
+        "soup": "hovězí se sýrovým kapáním",
+        "main": "Bratislavské vepřové plecko, Těstoviny",
         "category": "VEPŘOVÉ A UZENÉ",
-        "main2": "řecký salát, vícezrnný rohlík",
-        "category2": "BEZMASÁ SLANÁ"
+        "main2": "",
+        "category2": ""
       }
     ]
   }

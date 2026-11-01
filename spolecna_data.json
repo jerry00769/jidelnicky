@@ -351,40 +351,40 @@
           "soup": "rajčatová s tarhoňou",
           "main": "Smažené rybí prsty, Brambory m.m.",
           "category": "RYBY",
-          "main2": "kuřecí maso po provensálsku, farfalle",
-          "category2": "DRŮBEŽ A KRÁLÍK"
+          "main2": "",
+          "category2": ""
         },
         {
           "closed": false,
           "soup": "zeleninová s celozrnnými nudlemi",
           "main": "Krůtí nudličky s pórkem, Rýže dušená",
           "category": "DRŮBEŽ A KRÁLÍK",
-          "main2": "hovězí maso stroganoff, dušená rýže",
-          "category2": "HOVĚZÍ A TELECÍ"
+          "main2": "",
+          "category2": ""
         },
         {
           "closed": false,
           "soup": "zelenin. s fridátovými nudlemi",
           "main": "Bulgur s kuřecím masem a zeleninou",
           "category": "DRŮBEŽ A KRÁLÍK",
-          "main2": "těstoviny s lososem ve smetanové omáčce",
-          "category2": "RYBY"
+          "main2": "",
+          "category2": ""
         },
         {
           "closed": false,
           "soup": "ovarová",
           "main": "Dukátové buchtičky s krémem, Kakao",
           "category": "SLADKÁ",
-          "main2": "kuřecí maso po čínsku, dušená rýže, ovoce",
-          "category2": "DRŮBEŽ A KRÁLÍK"
+          "main2": "",
+          "category2": ""
         },
         {
           "closed": false,
           "soup": "hovězí se sýrovým kapáním",
           "main": "Bratislavské vepřové plecko, Těstoviny",
           "category": "VEPŘOVÉ A UZENÉ",
-          "main2": "řecký salát, vícezrnný rohlík",
-          "category2": "BEZMASÁ SLANÁ"
+          "main2": "",
+          "category2": ""
         }
       ]
     },
@@ -2507,40 +2507,40 @@
             "soup": "rajčatová s tarhoňou",
             "main": "Smažené rybí prsty, Brambory m.m.",
             "category": "RYBY",
-            "main2": "kuřecí maso po provensálsku, farfalle",
-            "category2": "DRŮBEŽ A KRÁLÍK"
+            "main2": "",
+            "category2": ""
           },
           {
             "closed": false,
             "soup": "zeleninová s celozrnnými nudlemi",
             "main": "Krůtí nudličky s pórkem, Rýže dušená",
             "category": "DRŮBEŽ A KRÁLÍK",
-            "main2": "hovězí maso stroganoff, dušená rýže",
-            "category2": "HOVĚZÍ A TELECÍ"
+            "main2": "",
+            "category2": ""
           },
           {
             "closed": false,
             "soup": "zelenin. s fridátovými nudlemi",
             "main": "Bulgur s kuřecím masem a zeleninou",
             "category": "DRŮBEŽ A KRÁLÍK",
-            "main2": "těstoviny s lososem ve smetanové omáčce",
-            "category2": "RYBY"
+            "main2": "",
+            "category2": ""
           },
           {
             "closed": false,
             "soup": "ovarová",
             "main": "Dukátové buchtičky s krémem, Kakao",
             "category": "SLADKÁ",
-            "main2": "kuřecí maso po čínsku, dušená rýže, ovoce",
-            "category2": "DRŮBEŽ A KRÁLÍK"
+            "main2": "",
+            "category2": ""
           },
           {
             "closed": false,
             "soup": "hovězí se sýrovým kapáním",
             "main": "Bratislavské vepřové plecko, Těstoviny",
             "category": "VEPŘOVÉ A UZENÉ",
-            "main2": "řecký salát, vícezrnný rohlík",
-            "category2": "BEZMASÁ SLANÁ"
+            "main2": "",
+            "category2": ""
           }
         ]
       }
