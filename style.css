@@ -1787,3 +1787,24 @@ html.tablet-landscape-picker #picker .picker-management-actions button {padding:
 #changeWeekDialog .copy-cal-actions {display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important;align-items:stretch!important;width:100%!important;}
 #changeWeekDialog .copy-cal-actions > button {box-sizing:border-box!important;width:100%!important;min-width:0!important;max-width:100%!important;margin:0!important;padding:9px 4px!important;white-space:normal!important;overflow-wrap:normal!important;text-align:center!important;line-height:1.2!important;font-size:clamp(10px,2.6vw,12px)!important;}
 @media(max-width:400px){#changeWeekDialog.copy-week-dialog {box-sizing:border-box!important;width:calc(100vw - 28px)!important;max-width:calc(100vw - 28px)!important;padding:14px 12px!important;}}
+
+/* Mobil: GitHub vlevo a Strava.cz vpravo, oba na stejne spodni radce. */
+@media screen and (max-width:650px) {
+  #githubIndicator.github-indicator {
+    left:8px!important;right:auto!important;bottom:8px!important;
+    width:auto!important;max-width:calc(50vw - 14px)!important;
+    box-sizing:border-box!important;padding:7px 8px!important;
+    font-size:clamp(9px,2.4vw,11px)!important;line-height:1.2!important;
+    white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
+    overflow-wrap:normal!important;
+  }
+  #stravaToggle {
+    left:auto!important;right:8px!important;bottom:8px!important;
+    width:auto!important;max-width:calc(50vw - 14px)!important;
+    box-sizing:border-box!important;padding:7px 8px!important;
+    font-size:clamp(9px,2.4vw,11px)!important;line-height:1.2!important;
+    white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
+    overflow-wrap:normal!important;
+  }
+  #status {bottom:52px!important;}
+}
