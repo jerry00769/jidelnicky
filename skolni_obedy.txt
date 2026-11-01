@@ -121,7 +121,7 @@ HLAVNÍ JÍDLA – HOVĚZÍ A TELECÍ (18)
 - španělský ptáček, rýže
 - štěpánská hovězí pečeně, houskové knedlíky, čistá voda
 
-HLAVNÍ JÍDLA – VEPŘOVÉ A UZENÉ (48)
+HLAVNÍ JÍDLA – VEPŘOVÉ A UZENÉ (51)
 - Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané
 - Bratislavské vepřové plecko, Těstoviny
 - Debrecínský guláš, Těstoviny
@@ -171,6 +171,9 @@ HLAVNÍ JÍDLA – VEPŘOVÉ A UZENÉ (48)
 - Žebrácké maso, Brambory
 - Žebrácké maso, Brambory opékané
 
+- Těstovinový salát se zeleninou a šunkou
+- Špekové knedlíky, Zelí kysané
+- Masová směs "flamendr", Rýže dušená
 HLAVNÍ JÍDLA – DRŮBEŽ A KRÁLÍK (40)
 - Bulgur s kuřecím masem a zeleninou
 - bulgur se zeleninou a kuřecím masem
@@ -294,7 +297,7 @@ HLAVNÍ JÍDLA – LUŠTĚNINOVÁ (18)
 - Čočkový kotlík, Chléb
 - Španělská čočka s mletým masem, Chléb
 
-HLAVNÍ JÍDLA – BEZMASÁ SLANÁ (20)
+HLAVNÍ JÍDLA – BEZMASÁ SLANÁ (17)
 - Bramborový guláš, Rohlík
 - Bramborák
 - Brokolicová poezie (květák, niva)
@@ -303,7 +306,6 @@ HLAVNÍ JÍDLA – BEZMASÁ SLANÁ (20)
 - Omáčka koprová, Brambory, Vejce vařené
 - Omáčka koprová, Vejce vařené, Brambory
 - Těstovinový salát s marinovaným tofu
-- Těstovinový salát se zeleninou a šunkou
 - Těstoviny s brokolicí
 - Těstoviny s brokolicí a sýrovou omáčkou
 - Těstoviny se sýrovou omáčkou
@@ -313,7 +315,6 @@ HLAVNÍ JÍDLA – BEZMASÁ SLANÁ (20)
 - zeleninové rizoto sypané sýrem a parmazánem, ovocný sirup, čistá voda
 - řecký salát, vícezrnný rohlík
 - Špagety po uhlířsku (vejce, sýr)
-- Špekové knedlíky, Zelí kysané
 
 HLAVNÍ JÍDLA – SLADKÁ (17)
 - Bramborové šišky s mákem (strouhankou)
@@ -334,7 +335,6 @@ HLAVNÍ JÍDLA – SLADKÁ (17)
 - Smažené točenky s rozinkami
 - Žemlovka s jablky a tvarohem
 
-HLAVNÍ JÍDLA – K ZAŘAZENÍ (1)
-- Masová směs "flamendr", Rýže dušená
+HLAVNÍ JÍDLA – K ZAŘAZENÍ (0)
 
 HLAVNÍ JÍDLA – K OVĚŘENÍ (0)
