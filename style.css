@@ -1838,3 +1838,30 @@ html.tablet-landscape-picker #picker .picker-management-actions button {padding:
     max-width:calc(50vw - 12px) !important;
   }
 }
+
+/* Oprava specificity: stavy GitHubu nesmeji prepsat tmavomodry ramecek. */
+@media screen {
+  #githubIndicator.github-indicator,
+  #githubIndicator.github-indicator.synced,
+  #githubIndicator.github-indicator.local-change,
+  #githubIndicator.github-indicator.error,
+  #stravaToggle {
+    border:1px solid #16345c !important;
+  }
+}
+
+/* 02.11.2026: dalsich +5 % oproti predchozi verzi (celkem +10,25 %). */
+@media screen {
+  #githubIndicator.github-indicator, #stravaToggle {
+    padding:7.7175px 11.025px !important;
+    font-size:12.1275px !important;
+    border:1px solid #16345c !important;
+  }
+}
+@media screen and (max-width:650px) {
+  #githubIndicator.github-indicator, #stravaToggle {
+    padding:7.7175px 8.82px !important;
+    font-size:clamp(9.9225px,2.646vw,12.1275px) !important;
+    max-width:calc(50vw - 12px) !important;
+  }
+}
