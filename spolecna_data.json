@@ -346,41 +346,41 @@
       "days": [
         {
           "closed": false,
-          "soup": "mrkvová",
-          "main": "Čočkový kotlík, Chléb",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "celerová se smaženým hráškem",
+          "main": "Hrachová kaše s cibulkou, Vejce vařené",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "hovězí s vaječnou jíškou",
-          "main": "kuřecí maso po čínsku, dušená rýže, ovoce",
-          "category": "DRŮBEŽ A KRÁLÍK",
+          "soup": "kapustová s rýží",
+          "main": "Rybí file pečené na másle, Bramborová kaše",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "bramborová",
-          "main": "Těstoviny penne s tuňákem a chery rajčaty",
-          "category": "RYBY",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "krupicová maďarská",
-          "main": "Bramborový guláš, Rohlík",
-          "category": "BEZMASÁ SLANÁ",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "rajčatová s ovesnými vločkami",
+          "soup": "z batátových brambor",
           "main": "Rizoto srbské, Okurka sterilovaná - příloha",
-          "category": "MLETÉ MASO A ZAPÉKANÉ",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "hovězí s česnekovými krutony",
+          "main": "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "zelenin. s ovesnými vločkami",
+          "main": "Sekaná pečeně, Brambory, Okurka sterilovaná - příloha",
+          "category": "",
           "main2": "",
           "category2": ""
         }
