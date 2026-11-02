@@ -342,45 +342,45 @@
       }
     },
     "week": {
-      "week": "2026-11-02",
+      "week": "2026-11-09",
       "days": [
         {
           "closed": false,
-          "soup": "česneková s osmaženou hostičkou",
-          "main": "Rybí file pečené na másle, Bramborová kaše",
-          "category": "RYBY",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "z rybího filé",
-          "main": "Dukátové buchtičky s krémem, Mléko",
-          "category": "SLADKÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "drožďová",
-          "main": "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "bramborová",
-          "main": "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
-          "category": "LUŠTĚNINOVÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "rajčatová s těstovinou",
-          "main": "Kapustové karbanátky, Bramborová kaše - příloha",
-          "category": "BEZMASÁ SLANÁ",
+          "soup": "",
+          "main": "",
+          "category": "",
           "main2": "",
           "category2": ""
         }
