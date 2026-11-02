@@ -1821,3 +1821,20 @@ html.tablet-landscape-picker #picker .picker-management-actions button {padding:
 }
 #githubIndicator.github-indicator.synced {color:#21613f!important;}
 #githubIndicator.github-indicator.error {color:#a12b2b!important;}
+
+/* 02.11.2026: GitHub + Strava.cz o 5 % vetsi, tmavomodra kontura; pozadi beze zmeny. */
+@media screen {
+  #githubIndicator.github-indicator, #stravaToggle {
+    border:1px solid #16345c !important;
+    padding:7.35px 10.5px !important;
+    font-size:11.55px !important;
+    box-sizing:border-box !important;
+  }
+}
+@media screen and (max-width:650px) {
+  #githubIndicator.github-indicator, #stravaToggle {
+    padding:7.35px 8.4px !important;
+    font-size:clamp(9.45px,2.52vw,11.55px) !important;
+    max-width:calc(50vw - 12px) !important;
+  }
+}
