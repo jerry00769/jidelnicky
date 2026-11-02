@@ -1,0 +1,339 @@
+KATALOG JÍDEL – JÍDELNÍČKY 2
+Polévky a hlavní jídla. Staré skupiny jsou jen kompatibilní formát souboru.
+
+POLÉVKY – VÝVARY (19)
+- hovězí rychlá s vejcem
+- hovězí s jáhly
+- hovězí s játrovými knedlíčky
+- hovězí s játrovými noky
+- hovězí s kapustou a rýží
+- hovězí s kapáním
+- hovězí s kuskusem
+- hovězí s masem a vejcem
+- hovězí s těstovinami
+- hovězí s těstovinou
+- hovězí s vaječnou jíškou
+- hovězí s česnekovými krutony
+- hovězí se strouháním
+- kuřecí s nudlemi
+- ovarová
+- hovězí se sýrovým kapáním
+- vývar s drobením
+- z rybího filé
+- zel. vývar s dýňovým kapáním
+
+POLÉVKY – ZELENINOVÉ A KRÉMOVÉ (54)
+-  zeleninová s ovesnými vločkami
+- bramboračka nezahuštěná
+- bramborová
+- brokolicová
+- celerová se smaženým hráškem
+- cibulová se sýrem
+- drožďová
+- drůbková s nudlemi
+- dýňový krém
+- hráškový krém
+- kapustová s rýží
+- kmínová s vejcem
+- koprová (kulajda)
+- krupicová maďarská
+- krupicová s vejcem
+- květáková
+- mrkvová
+- pórková
+- pórková s vejci
+- rajčatová s ovesnými vločkami
+- rajčatová s tarhoňou
+- rajčatová s těstovinami
+- rajčatová s těstovinou
+- rychlá s vejcem
+- selská ii.
+- z batátových brambor
+- z kysaného zelí
+- z kysaného zelí s klobásou
+- ze zahradních jahod
+- zelenin. s bulgurem
+- zelenin. s drožďovými knedlíčky
+- zelenin. s fridátovými nudlemi
+- zelenin. s kroupami
+- zelenin. s ovesnými vločkami
+- zelenin. s pohankou
+- zelenin. s rýží
+- zeleninová s celozrnnými knedlíčky
+- zeleninová s celozrnnými nudlemi
+- zeleninová s drožďovými knedlíčky
+- zeleninová s kuskusem
+- zeleninová s ovesnými vločkami
+- zeleninová s quinoou
+- zeleninová s tarhoňou
+- zeleninová s těstovinami
+- zeleninová s těstovinovou
+- zeleninová s těstovinovou rýží
+- zeleninová se sýrovým kapáním
+- zeleninový vývar s ovesnými vločkami
+- zimní zeleninová s ovesnými vločkami
+- česneková s bramborem a vejcem
+- česneková s osmaženou hostičkou
+- špenátová
+- Špenátová s vajíčkem
+- špenátová s vajíčkem
+
+POLÉVKY – LUŠTĚNINOVÉ A MASOVÉ (18)
+- cizrnová
+- cizrnová krémová s rajčaty
+- fazolová
+- fazolová se zeleninou
+- frankfurtská s bramborem
+- gulášová
+- hrachová
+- hrachová s hrachovými krutony
+- hrachová s opečenou houskou
+- hrachová se smaženým hráškem
+- květáková s červenou čočkou
+- luštěninová
+- z fazolových lusků
+- z míchaných luštěnin
+- zeleninová s hrachovými nudlemi
+- zeleninová zahuštěná červenou čočkou
+- čočková
+- čočková se zeleninou
+
+POLÉVKY – K OVĚŘENÍ (0)
+
+HLAVNÍ JÍDLA – HOVĚZÍ A TELECÍ (18)
+- Guláš maďarský, Houskové knedlíky (kynuté)
+- Guláš maďarský, Rýže dušená
+- Hovězí guláš, Rýže dušená
+- hovězí maso stroganoff, dušená rýže
+- Hovězí pečeně frankfurtská, Těstoviny
+- Hovězí pečeně na houbách, Těstoviny
+- Hovězí pečeně na paprice, Vícezrnný knedlík (směs)
+- Hovězí pečeně pražská, Rýže dušená
+- Hovězí pečeně znojemská, Rýže dušená
+- Hovězí pečeně štěpánská, Rýže dušená
+- Omáčka rajčatová, Hovězí maso vařené, Houskové knedlíky (kynuté)
+- Omáčka rajčatová, Hovězí maso vařené, Těstoviny
+- Svíčková na smetaně, Houskové knedlíky (kynuté)
+- Znojemský guláš, Rýže dušená
+- Španělský plátek, Rýže dušená
+- Španělský ptáček rozházený, Rýže dušená
+- španělský ptáček, rýže
+- štěpánská hovězí pečeně, houskové knedlíky, čistá voda
+
+HLAVNÍ JÍDLA – VEPŘOVÉ A UZENÉ (51)
+- Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané
+- Bratislavské vepřové plecko, Těstoviny
+- Debrecínský guláš, Těstoviny
+- domažlické vepřové ragů, těstoviny
+- Italský guláš (zbruf se sýrem), Špagety
+- Masová směs "lamendr", Rýže dušená
+- Mexická pánev (vepř.maso, fazole)) se sýrem
+- Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb
+- Moravský vrabec, Bramborové knedlíky (směs), Zelí kysané
+- Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)
+- Rizoto srbské
+- Rizoto z vepřového masa
+- Rizoto z vepřového masa, Okurka sterilovaná - příloha
+- Rožnovské halušky (střapačky) s uzeným masem
+- Segedínský guláš, Houskové knedlíky (kynuté)
+- Vepřová kotleta na houbách, Těstoviny
+- Vepřová kýta hamburská, Houskové knedlíky (kynuté)
+- Vepřová kýta po cikánsku, Rýže dušená
+- vepřová pečeně selská, bramborové knedlíky
+- Vepřová pečeně selská, Bramborové knedlíky (směs)
+- Vepřová pečeně selská, Bramborové knedlíky (směs), Červené zelí
+- Vepřová pečeně selská, Bramborové knedlíky (směs), Špenát dušený
+- Vepřová pečeně selská, Karlovarský knedlík
+- Vepřová pečeně selská, Nastavovaná kaše s cibulkou
+- Vepřová pečeně selská, Nastavovaná kaše s cibulkou, Okurka sterilovaná - příloha
+- Vepřová pečeně selská, Špenát dušený, Karlovarský knedlík
+- Vepřová roláda (karlovarský kotouč), Bramborová kaše
+- Vepřová roláda (karlovarský kotouč), Bramborová kaše - příloha
+- Vepřová roláda (karlovarský kotouč), Kaše bramborová
+- Vepřové na houbách se smetanou, Houskové knedlíky (kynuté)
+- Vepřové na houbách, Brambory
+- Vepřové na houbách, Těstoviny
+- Vepřové na paprice, Těstoviny
+- Vepřové v kapustě, Brambory
+- vepřové v mrkvi, brambor
+- Vepřové v mrkvi, Brambory
+- Vepřové v mrkvi, Brambory m.m.
+- Vepřový guláš, Rýže dušená
+- vepřový guláš, vřetena, čistá voda
+- Vepřový řízek přírodní, Brambory
+- Vepřový řízek přírodní, Brambory m.m.
+- Vepřový řízek přírodní, Kuskus - příloha
+- Vinná klobása smažená přírodní, Bramborová kaše - příloha
+- Šoulet, Vepřová pečeně
+- Šoulet, Vepřová pečeně, Okurka sterilovaná - příloha
+- Špagety s vepřovým masem a rajčaty
+- Žebrácké maso, Brambory
+- Žebrácké maso, Brambory opékané
+- Těstovinový salát se zeleninou a šunkou
+- Špekové knedlíky, Zelí kysané
+- Masová směs "flamendr", Rýže dušená
+
+HLAVNÍ JÍDLA – DRŮBEŽ A KRÁLÍK (40)
+- Bulgur s kuřecím masem a zeleninou
+- bulgur se zeleninou a kuřecím masem
+- Gnocchi s kuřecím masem, smetanou a špenátem
+- Králík pečený, Bramborové knedlíky (směs)
+- Králík pečený, Bramborové knedlíky (směs), Špenát dušený
+- Králík pečený, Brambory
+- Králík pečený, Brambory m.m.
+- krůtí maso na pórku, rýže
+- Krůtí nudličky s pórkem, Rýže dušená
+- krůtí sekaná se sýrem, brambory, zeleninový salát míchaný, čistá voda
+- Kuskus s kuřecím masem
+- Kuskus s kuřecím masem, brokolicí a suš.rajčaty
+- Kuskus s kuřecím masem, Míchaná zelenina grilovaná
+- Kuře na paprice, Houskové knedlíky (kynuté)
+- Kuře na paprice, Těstoviny
+- Kuře pečené, Brambory
+- Kuře pečené, Brambory m.m.
+- Kuře pečené, Bulgur
+- Kuře pečené, Šťouchané brambory s cibulkou
+- Kuře Šanghaj s jasmínovou rýží
+- Kuře Šanghaj s rýží
+- kuřecí maso po provensálsku, farfalle
+- kuřecí maso po čínsku, dušená rýže, ovoce
+- Kuřecí nudličky se sýrovou omáčkou, Těstoviny
+- kuřecí paličky na medu, bramborová kaše, čistá voda
+- Kuřecí prsa  na kari koření, Rýže dušená
+- Kuřecí prsa na kari koření, Rýže dušená
+- Kuřecí rizoto
+- Kuřecí rizoto, Salát z červené řepy - příloha
+- Kuřecí roláda, Rýže dušená
+- Kuřecí stripsy, Brambory
+- Kuřecí čína, Rýže dušená
+- Kuřecí řízek smažený, Bramborová kaše
+- Kuřecí řízek smažený, Bramborová kaše - příloha
+- Pekingská směs, Rýže dušená
+- Perkelt z kuřecího masa, Těstoviny
+- Rizoto s kuřecím masem
+- Těstovinový salát s kuřecím masem
+- Zapečené těstoviny s kuřecím masem a zeleninou
+- Zeleninový salát, Kuřecí stripsy
+
+HLAVNÍ JÍDLA – MLETÉ MASO A ZAPÉKANÉ (28)
+- Džuveč, Chléb
+- Francouzské brambory
+- Francouzské brambory, Okurka sterilovaná - příloha
+- Holandský řízek, Bramborová kaše
+- Holandský řízek, Bramborová kaše - příloha
+- Italský guláš (zbruf se sýrem), Těstoviny
+- Kapustové karbanátky s masem, Brambory
+- Kapustové karbanátky, Bramborová kaše
+- Karbanátky pečené, Bramborová kaše
+- Karbanátky pečené, Bramborová kaše - příloha
+- Masové koule v rajčatové omáčce, Těstoviny
+- Pizza se šunkou
+- Rizoto srbské, Okurka sterilovaná - příloha
+- Sekaná pečeně, Bramborová kaše
+- Sekaná pečeně, Bramborová kaše - příloha
+- Sekaná pečeně, Bramborová kaše - příloha, Okurka sterilovaná - příloha
+- Sekaná pečeně, Brambory
+- Sekaná pečeně, Brambory, Okurka sterilovaná - příloha
+- Sekaná zahradnická, Brambory
+- Sekaná zahradnická, Brambory m.m.
+- Sicilské špagety (boloňské)
+- Těstoviny po Lotrinsku
+- Zapečené těstoviny s uzeninou
+- Zapečené těstoviny s uzeninou, Salát z červené řepy - příloha
+- Zapečené těstoviny s uzeným masem
+- Zapečené těstoviny s uzeným masem, Okurka sterilovaná - příloha
+- Zapečené těstoviny s uzeným masem, Zelný salát  - příloha
+- Zapečené těstoviny s uzeným masem, Zelný salát - příloha
+
+HLAVNÍ JÍDLA – RYBY (29)
+- Hejk pečený na bylinkovém másle, Brambory
+- Karbanátek z rybího file - pečený, Brambory
+- Karbanátek z rybího file - pečený, Brambory m.m.
+- Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha
+- Losos přírodní, Brambory
+- Losos přírodní, Brambory m.m.
+- Obalované filé s brokolicí a sýrem, Brambory
+- Obalované filé s brokolicí a sýrem, Brambory m.m.
+- Rybí file pečené na másle, Bramborová kaše
+- Rybí file pečené na másle, Bramborová kaše - příloha
+- Rybí filé obalované, Bramborová kaše
+- Rybí filé obalované, Bramborová kaše - příloha
+- Rybí filé obalované, Brambory
+- Rybí filé obalované, Brambory m.m.
+- Rybí filé pečené na másle, Bramborová kaše - příloha
+- Rybí filé pečené na másle, Brambory
+- Rybí filé po mlynářsku, Brambory
+- Rybí filé po mlynářsku, Brambory m.m.
+- rybí filé s rajčaty, bazalkou, brambory
+- Rybí filé smažené, Bramborová kaše
+- Rybí filé smažené, Bramborová kaše - příloha
+- Rybí filé zapečené se špenátem, Brambory
+- Rybí stripsy, Brambory
+- Rybí stripsy, Brambory m.m.
+- Smažené rybí prsty, Brambory m.m.
+- Tilápie s rajčaty a sýrem, Brambory
+- Tilápie s rajčaty a sýrem, Brambory m.m.
+- Těstoviny penne s tuňákem a chery rajčaty
+- těstoviny s lososem ve smetanové omáčce
+
+HLAVNÍ JÍDLA – LUŠTĚNINOVÁ (18)
+- Fazole a la Katův šleh, Chléb
+- Horňácký guláš (maso, fazole), Chléb
+- Hrachová kaše s cibulkou, Párky
+- Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha
+- Hrachová kaše s cibulkou, Vejce vařené
+- Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha
+- Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha
+- Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha
+- Kovbojská pánev, Chléb
+- Kuřecí stehna pečená se zel.fazolkami a kroupami
+- Mexická pánev (vepř.maso, fazole) se sýrem, Chléb
+- Srbská čočka, Chléb
+- Těstovinový salát s cizrnou a sušenými rajčaty
+- Vepřová pečeně, Fazolové lusky na slanině, Brambory
+- Čočka na kyselo, Vejce vařené
+- Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha
+- Čočkový kotlík, Chléb
+- Španělská čočka s mletým masem, Chléb
+
+HLAVNÍ JÍDLA – BEZMASÁ SLANÁ (17)
+- Bramborový guláš, Rohlík
+- Bramborák
+- Brokolicová poezie (květák, niva)
+- Kapustové karbanátky, Bramborová kaše - příloha
+- Lotrinské tagliatelle se sýrem
+- Omáčka koprová, Brambory, Vejce vařené
+- Omáčka koprová, Vejce vařené, Brambory
+- Těstovinový salát s marinovaným tofu
+- Těstoviny s brokolicí
+- Těstoviny s brokolicí a sýrovou omáčkou
+- Těstoviny se sýrovou omáčkou
+- Zeleninové placičky se sýrem, Brambory
+- Zeleninové placičky se sýrem, Brambory m.m.
+- Zeleninové rizoto
+- zeleninové rizoto sypané sýrem a parmazánem, ovocný sirup, čistá voda
+- řecký salát, vícezrnný rohlík
+- Špagety po uhlířsku (vejce, sýr)
+
+HLAVNÍ JÍDLA – SLADKÁ (17)
+- Bramborové šišky s mákem (strouhankou)
+- Domácí buchty plněné mákem, povidly, tvarohem
+- Dukátové buchtičky s krémem
+- Dukátové buchtičky s krémem, Kakao
+- Dukátové buchtičky s krémem, Mléko
+- dukátové buchtičky se šódo
+- Kaše krupicová
+- Knedlíky švestkové (bramborové) s mákem
+- Kuskus s ovocem
+- Livance
+- Lívance, Káva bílá
+- Nudle s mákem
+- Nudle s mákom
+- Nákyp rýžový s meruňkami
+- Nákyp rýžový se švestkami
+- Smažené točenky s rozinkami
+- Žemlovka s jablky a tvarohem
+
+HLAVNÍ JÍDLA – K ZAŘAZENÍ (0)
+
+HLAVNÍ JÍDLA – K OVĚŘENÍ (0)
