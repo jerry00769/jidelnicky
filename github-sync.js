@@ -1,7 +1,7 @@
 /* GitHub-only synchronizace. Token je uložen pouze v tomto prohlížeči. */
 window.GitHubSync=(()=>{
 'use strict';
-const owner='jerry00769',repo='jidelnicky2',file='spolecna_data.json';
+const owner='jerry00769',repo='jidelnicky',file='spolecna_data.json';
 const tokenKey='jidelnicky2_github_token_v1',pendingKey='jidelnicky2_github_pending_v3',baselineKey='jidelnicky2_github_baseline_v3';
 let token=localStorage.getItem(tokenKey)||'',sha=null,baseline=null,app=null,busy=false,dirty=localStorage.getItem(pendingKey)==='1',timer=null,connected=false,conflicted=false;
 const $=id=>document.getElementById(id);
