@@ -1,182 +1,61 @@
-<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Generátor školních jídelníčků</title><link rel="icon" href="favicon.ico?v=1" sizes="any"><link rel="apple-touch-icon" href="icon-192.png"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#ffb43d"><link rel="stylesheet" href="style.css?v=j2-20261102-indicators-plus5-again"><style id="tablet-picker-stable-height">
-/* Tablet: vyska dialogu nezavisi na poctu vysledku vyhledavani. */
-@media (min-width: 601px) and (max-width: 1100px) {
-  dialog#picker[open] {
-    box-sizing: border-box !important;
-    height: calc(100dvh - 12px) !important;
-    max-height: calc(100dvh - 12px) !important;
-    display: flex !important;
-    flex-direction: column !important;
-    overflow: hidden !important;
-    margin-block: auto !important;
-  }
-  dialog#picker #choices {
-    flex: 1 1 0 !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow-y: auto !important;
-    overscroll-behavior: contain;
-  }
-  dialog#picker .dialogtop,
-  dialog#picker #pickerKindLabel,
-  dialog#picker #search,
-  dialog#picker .picker-category-label,
-  dialog#picker .picker-management {
-    flex-shrink: 0 !important;
-  }
+<!DOCTYPE html>
+
+<html lang="cs"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Nápověda – Generátor jídelníčků WEB</title><style>body{margin:0;background:#f0f4fa;color:#203451;font:16px/1.65 Segoe UI,Arial,sans-serif}main{max-width:930px;margin:24px auto;background:#fff;padding:30px;border-radius:14px}header{position:sticky;top:0;background:#fff;padding:10px 0;border-bottom:1px solid #dbe5f2}h1{margin:0;color:#193f77}h2{color:#285da3;margin-top:28px}nav{display:flex;gap:8px;flex-wrap:wrap}nav a{padding:5px 9px;background:#eaf1fa;border-radius:7px;color:#194a84;text-decoration:none}section{scroll-margin-top:95px}aside{background:#fff5df;padding:12px;border-radius:7px}code{background:#edf1f6;padding:2px 4px}@media(max-width:650px){main{margin:0;padding:16px;border-radius:0}}
+.help-menu summary{display:none;cursor:pointer;font-weight:700;color:#194a84;padding:9px 10px;background:#eaf1fa;border-radius:8px}
+@media(max-width:650px){
+ body{font-size:15px;line-height:1.55}
+ main{padding:12px}
+ header{padding:7px 0;position:sticky;top:0;z-index:5;background:#fff}
+ header h1{font-size:1.13rem;line-height:1.2}
+ header p{display:none}
+ .help-menu summary{display:block;font-size:14px}
+ .help-menu:not([open]) nav{display:none}
+ .help-menu[open] nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;padding:7px 0;max-height:45dvh;overflow:auto}
+ nav a{font-size:13px;padding:7px 8px}
+ section{scroll-margin-top:95px}
+ h2{font-size:1.2rem;margin-top:20px}
 }
-</style><style id="lenovo-picker-keyboard-fix">
-/* Older Android WebView: visual viewport height is supplied by JS in pixels. */
-@media (max-width: 1100px) {
- dialog#picker[open] {
-  box-sizing:border-box!important;
-  position:fixed!important;
-  top:var(--picker-viewport-top, 0px)!important;
-  bottom:auto!important;
-  left:8px!important;right:8px!important;
-  width:calc(100% - 16px)!important;
-  max-width:none!important;
-  height:var(--picker-viewport-height, calc(100vh - 16px))!important;
-  max-height:var(--picker-viewport-height, calc(100vh - 16px))!important;
-  margin:0 auto!important;
-  padding:12px!important;
-  display:flex!important;flex-direction:column!important;
-  overflow:hidden!important;
- }
- dialog#picker #choices {flex:1 1 0!important;min-height:0!important;max-height:none!important;overflow-y:auto!important;overscroll-behavior:contain;}
- dialog#picker .dialogtop,dialog#picker #pickerKindLabel,dialog#picker #search,dialog#picker .picker-category-label,dialog#picker .picker-management {flex-shrink:0!important;}
- dialog#picker .picker-management {margin-top:auto!important;}
-}
-</style></head><body>
-<header><div><h1>Generátor jídelníčků <small style="font-size:10px;font-weight:400;opacity:.7;white-space:nowrap;vertical-align:middle">v29102026.11</small></h1></div><div class="sync-area"><details class="github-settings"><summary>⚙ Nastavení</summary><div class="github-controls"><button id="ghConnect" type="button" class="alt">Připojit GitHub</button><button id="ghRefresh" type="button" class="alt" hidden>Načíst společná data</button><button id="ghResolve" type="button" class="alt" hidden>Vyřešit konflikt</button><button id="ghDisconnect" type="button" class="alt" hidden>Odpojit</button><p class="sync-hint">Změny se ukládají automaticky. Nová data se kontrolují při návratu do aplikace a průběžně. Při konfliktu se nic tiše nepřepíše.</p></div></details></div></header>
-<main><section class="panel toolbar"><div class="toolbar-fields"><label>Týden od <span class="main-date-wrap"><input type="date" id="date" tabindex="-1" aria-hidden="true"><button type="button" id="openMainCalendar" class="main-date-overlay" aria-label="Vybrat týden v kalendáři" title="Vybrat týden v kalendáři"></button></span></label><label>Počet obědů <select id="count"><option value="1">1</option><option value="2">2</option></select></label><label>Neopakovat hlavní <input id="lockMain" type="number" min="0" max="20" value="8"><select id="lockMainMobile" class="mobile-lock-select" aria-label="Neopakovat hlavní"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8" selected>8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option></select></label><label>Neopakovat polévky <input id="lockSoup" type="number" min="0" max="20" value="3"><select id="lockSoupMobile" class="mobile-lock-select" aria-label="Neopakovat polévky"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option></select></label></div><div class="toolbar-actions"><button id="generate">Generovat</button><button id="approve">Schválit a uložit</button><button id="validate" class="alt">Kontrola pravidel</button><button id="auditCatalog" class="alt">Kontrola databáze</button><button id="print" class="alt">Tisk / PDF</button><button id="csv" class="alt">Export CSV</button><button id="openHistory" class="alt">Historie</button><a class="help-link" href="napoveda.html?v=22" target="_blank" rel="noopener">Nápověda</a><button id="undo" class="alt">Zpět</button><button id="redo" class="alt">Znovu</button><details class="mobile-more" id="mobileMore"><summary>☰ Další</summary><div class="mobile-more-items"><button type="button" data-original="validate">Kontrola pravidel</button><button type="button" data-original="auditCatalog">Kontrola databáze</button><button type="button" data-original="csv">Export CSV</button><button type="button" data-original="print">Tisk / PDF</button><button type="button" data-original="openHistory">Historie</button><a href="napoveda.html?v=22" target="_blank" rel="noopener">Nápověda</a></div></details></div></section>
-<section class="panel daybar"><strong>Vaří se:</strong><label><input type="checkbox" data-day="0" checked> Po</label><label><input type="checkbox" data-day="1" checked> Út</label><label><input type="checkbox" data-day="2" checked> St</label><label><input type="checkbox" data-day="3" checked> Čt</label><label><input type="checkbox" data-day="4" checked> Pá</label></section>
-<div class="layout"><section class="panel"><div class="heading"><h2>JÍDELNÍ LÍSTEK</h2><strong id="range"></strong></div><div id="days"></div><p class="muted">Klikni na polévku nebo oběd pro změnu. Nevařící dny zůstávají v jídelníčku označené.</p></section>
-<aside><section class="panel"><h2>Pravidla jídelny</h2><div id="rules"></div><label class="block">Vlastní pravidla TXT <textarea id="txtRules" rows="7" placeholder="ZAKAZ_HLAVNI = smažený sýr"></textarea></label><button id="saveRules" class="alt">Uložit pravidla</button><details><summary>Syntaxe vlastních pravidel</summary><p class="muted">ZAKAZ_HLAVNI, ZAKAZ_POLEVKA, ZAKAZ_KOMBINACE, VYZADUJ_HLAVNI, VYZADUJ_POLEVKA, VYZADUJ_KOMBINACE. Každý požadavek na samostatný řádek; kombinace ve tvaru polévka | hlavní jídlo.</p></details></section><section class="panel"><h2>Záloha a přenos</h2><div class="actions"><button id="backup" class="alt">Export JSON</button><label class="upload">Import JSON<input id="restore" type="file" accept=".json,application/json" hidden></label></div><p class="muted">Po připojení se společná data ukládají na GitHub. Záloha JSON zůstává dostupná. Pokud ukládání na GitHub selže, změny zůstanou jen v tomto prohlížeči.</p></section></aside></div>
-<div id="status" role="status" aria-live="polite"></div></main>
-<dialog id="picker"><div class="dialogtop"><h2 id="pickerTitle">Vybrat jídlo</h2><button id="closePicker" class="alt">Zavřít</button></div><label id="pickerKindLabel" class="picker-category-label" hidden>Druh <select id="pickerKind"><option value="main">Hlavní jídlo</option><option value="soup">Polévka</option></select></label><input id="search" placeholder="Hledat jídlo…" autocomplete="off"><label class="picker-category-label" hidden> <select id="pickerCategory"><option value="">VŠECHNY</option></select></label><div id="choices"></div><div class="picker-management"><label for="pickerMealName">Název vybraného nebo nového jídla</label><input id="pickerMealName" placeholder="Název pokrmu"><div class="picker-management-actions"><button type="button" id="pickerAdd" class="alt">Přidat</button><button type="button" id="pickerRename" class="alt">Přejmenovat</button><button type="button" id="pickerRemove" class="danger">Smazat</button><button type="button" id="pickerChoose">Vybrat ✓</button></div></div></dialog>
-<dialog id="historyDialog" class="history-dialog"><div class="dialogtop"><h2>Historie jídelníčků</h2><button id="closeHistory" class="alt">Zavřít</button></div><div class="history-layout"><div class="history-list"><div id="historyList"></div></div><div class="history-detail"><h3 id="historyTitle">Vyber uložený týden</h3><div id="historyPreview"></div><div class="history-actions"><button id="historyLoad">Načíst jídelníček</button><button id="historyCopy" class="alt">Kopírovat do jiného týdne</button><button id="historyDelete" class="danger">Smazat z historie</button><label class="upload history-import-button">Import historie<input id="importHistory" type="file" accept=".json,application/json" hidden></label><button id="exportHistory" class="alt">Export historie</button><button id="historyPrint" class="alt">Tisk / PDF</button></div></div></div></dialog><dialog id="copyWeekDialog" class="copy-week-dialog" aria-labelledby="copyWeekTitle">
-<div class="dialogtop"><h2 id="copyWeekTitle">Kopírovat do jiného týdne</h2><button type="button" id="copyCancel" class="alt">Zavřít</button></div>
-<p>Vyber datum. Aplikace automaticky nastaví týden začínající příslušným pondělím.</p>
-<div class="copy-cal-nav"><button type="button" id="copyPrevMonth" class="alt" aria-label="Předchozí měsíc">‹</button><strong id="copyMonthLabel"></strong><button type="button" id="copyNextMonth" class="alt" aria-label="Následující měsíc">›</button></div>
-<div class="copy-cal-days"><span>Po</span><span>Út</span><span>St</span><span>Čt</span><span>Pá</span><span>So</span><span>Ne</span></div><div id="copyCalendar" class="copy-cal-grid"></div>
-<div class="copy-cal-legend"><span>🟩 Dnes</span><span>🟦 Vybraný den</span><span>▫️ Cílový týden</span></div>
-<p id="copyWeekRange" aria-live="polite"></p><p id="copyWeekWarning" class="copy-cal-warning" aria-live="polite"></p>
-<div class="copy-cal-actions"><button type="button" id="copyToday" class="alt">Dnes</button><button type="button" id="copyConfirm">Kopírovat</button></div></dialog>
-<dialog id="changeWeekDialog" class="copy-week-dialog" aria-labelledby="changeWeekTitle">
-<h2 id="changeWeekTitle">Změna týdne jídelníčku</h2>
-<p id="changeWeekMessage"></p>
-<p>Schválená historie se nezmění. Volba se týká pouze pracovního jídelníčku.</p>
-<div class="copy-cal-actions" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end">
-<button type="button" id="changeWeekCancel" class="alt">Zrušit změnu</button>
-<button type="button" id="changeWeekEmpty" class="alt">Prázdný týden</button>
-<button type="button" id="changeWeekKeep">Zachovat jídla</button>
-</div></dialog>
-<script src="catalog-data.js?v=jidelnicky2-soulad1"></script><script src="catalog.js?v=jidelnicky2-soulad1"></script><script src="github-sync.js?v=24"></script><script src="app.js?v=jidelnicky2-soulad1"></script><script>(function(){const menu=document.getElementById('mobileMore');if(!menu)return;menu.querySelectorAll('[data-original]').forEach(button=>button.addEventListener('click',()=>{menu.open=false;document.getElementById(button.dataset.original)?.click()}));menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.open=false}));document.addEventListener('pointerdown',e=>{if(menu.open&&!menu.contains(e.target))menu.open=false});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.open)menu.open=false});})();</script><script>/* Presne barvy jednotlivych polozek bez systemoveho sedeho hoveru. */
-(()=>{const ids=['count','lockMainMobile','lockSoupMobile'];let active=null;
-function close(){if(active){active.hidden=true;active=null}}
-for(const id of ids){const sel=document.getElementById(id);if(!sel)continue;
-const shell=document.createElement('span');shell.className='toolbar-select-shell';sel.parentNode.insertBefore(shell,sel);shell.append(sel);
-const trigger=document.createElement('button');trigger.type='button';trigger.className='toolbar-select-trigger';trigger.setAttribute('aria-label',sel.getAttribute('aria-label')||sel.closest('label')?.textContent.trim()||id);shell.append(trigger);
-const menu=document.createElement('div');menu.className='toolbar-select-list';menu.hidden=true;shell.append(menu);
-function refresh(){trigger.textContent=sel.selectedOptions[0]?.textContent||sel.value;menu.replaceChildren();for(const opt of sel.options){const b=document.createElement('button');b.type='button';b.className='toolbar-select-item';b.textContent=opt.textContent;b.addEventListener('click',()=>{sel.value=opt.value;sel.dispatchEvent(new Event('change',{bubbles:true}));refresh();close();trigger.focus()});menu.append(b)}}
-trigger.addEventListener('click',()=>{const was=!menu.hidden;close();if(!was){refresh();menu.hidden=false;active=menu}});
-sel.addEventListener('change',refresh);const obs=new MutationObserver(refresh);obs.observe(sel,{attributes:true,attributeFilter:['value']});
-refresh();const oldValue=Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype,'value');if(oldValue){Object.defineProperty(sel,'value',{get(){return oldValue.get.call(this)},set(v){oldValue.set.call(this,v);refresh()},configurable:true})}
-}
-document.addEventListener('pointerdown',e=>{if(active&&!e.target.closest('.toolbar-select-shell'))close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
-})();</script><script id="lenovo-picker-keyboard-js">
-(function(){
- const picker=document.getElementById('picker');if(!picker)return;
- function setLandscape(){
-  var touch=window.matchMedia ? window.matchMedia('(pointer: coarse)').matches : ('ontouchstart' in window);
-  var wide=window.innerWidth>=681 && window.innerWidth<=1800 && window.innerWidth>window.innerHeight;
-  document.documentElement.classList.toggle('tablet-landscape-picker',!!(touch&&wide));
- }
- setLandscape();
- function fit(){
-  setLandscape();
-  if(!picker.open)return;
-  const vv=window.visualViewport;
-  const h=vv?vv.height:window.innerHeight;
-  const top=vv?vv.offsetTop:0;
-  picker.style.setProperty('--picker-viewport-height',Math.max(120,Math.floor(h-12))+'px');
-  picker.style.setProperty('--picker-viewport-top',Math.round(top+6)+'px');
-  picker.style.setProperty('--picker-viewport-left',Math.round(vv?vv.offsetLeft:0)+'px');
-  picker.style.setProperty('--picker-viewport-width',Math.floor(vv?vv.width:window.innerWidth)+'px');
- }
- if(window.visualViewport){visualViewport.addEventListener('resize',fit);visualViewport.addEventListener('scroll',fit)}
- window.addEventListener('resize',fit);
- picker.addEventListener('focusin',()=>{fit();setTimeout(fit,100);setTimeout(fit,350)});
- new MutationObserver(fit).observe(picker,{attributes:true,attributeFilter:['open']});
- document.getElementById('search')?.addEventListener('input',fit);
+.back-button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:8px 20px;box-sizing:border-box;background:#e7edf6;border:1px solid #d5e0ef;border-radius:8px;color:#203f70;text-decoration:none;font:600 14px Segoe UI,Arial,sans-serif;cursor:pointer}.back-button:hover{background:#d8e5f5}.back-button:focus-visible{outline:2px solid #3264ac;outline-offset:2px}
+html{scroll-behavior:smooth}
+.to-top{position:fixed;right:22px;bottom:24px;z-index:30;width:46px;height:46px;border-radius:50%;border:1px solid #c4d5e9;background:rgba(255,255,255,.94);color:#194a84;font:700 25px Segoe UI,Arial,sans-serif;box-shadow:0 3px 12px #0002;cursor:pointer;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s,visibility .2s,background .2s}
+.to-top.visible{opacity:.85;visibility:visible;pointer-events:auto}
+.to-top:hover,.to-top:focus-visible{opacity:1;background:#eaf1fa}
+@media(max-width:650px){.to-top{right:12px;bottom:16px;width:44px;height:44px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body><main><header><h1>Generátor jídelníčků</h1><p>Uživatelská nápověda pro webovou verzi HTML / CSS / JavaScript</p><details class="help-menu" open=""><summary>☰ Obsah nápovědy</summary><nav><a href="#start">Začínáme</a><a href="#history">Historie</a><a href="#import">Import / export</a><a href="#edit">Úpravy</a><a href="#rules">Pravidla</a><a href="#audit">Kontrola databáze</a><a href="#strava">Strava.cz</a><a href="#learning">Učení</a><a href="#backup">Zálohy</a><a href="#print">Tisk</a><a href="#sync">GitHub</a><a href="#mobile">Mobil a tablet</a></nav></details></header><section id="start"><h2>1. Začínáme</h2><p>Po otevření WEBu a dokončení počáteční synchronizace se <strong>bez potvrzovacího okna</strong> nastaví prázdný pracovní jídelníček pro nejbližší budoucí pondělí. Například v neděli 1. 11. 2026 se nabídne 2.–6. 11.; v pondělí 2. 11. se nabídne 9.–13. 11. Takto se připravuje jídelníček pro následující týden, ne pro právě probíhající vaření. Dříve rozpracovaný pracovní týden můžeš v aktuální relaci vrátit tlačítkem <strong>Zpět</strong>; schválená historie se samotným spuštěním nemění.</p><p>Chceš-li plánovat ještě dále dopředu nebo otevřít starší týden, vyber datum ručně v kalendáři. Program použije <strong>přesně vybraný kalendářní týden</strong> a sám ho během práce nepřepne. Zeleně je označen dnešek, modře vybraný den a světle modře pracovní týden. Při změně data se zobrazí tři volby: <strong>Zrušit změnu</strong> (ponechá původní týden), <strong>Prázdný týden</strong> (nový prázdný návrh) a <strong>Zachovat jídla</strong> (přenese současná jídla na vybraný týden). Žádná z těchto voleb sama nepřepíše schválenou historii.</p><p>Nastav <strong>Počet obědů</strong> (1 nebo 2), dny vaření a případně ochranné doby opakování. Tlačítko <strong>Generovat</strong> připraví návrh; kliknutím na polévku nebo oběd pokrm změníš. <strong>Schválit a uložit</strong> uloží pracovní jídelníček do historie; při přepisu existujícího týdne je vyžadováno potvrzení. Pondělní Oběd 1 se podle předchozí schválené historie střídá mezi rybou a luštěninami, přičemž pondělí bez vaření nebo s jiným druhem jídla se přeskakují. Výjimku při ruční změně či schvalování lze vědomě potvrdit.</p></section><section id="history"><h2>2. Historie – uložené týdny</h2><p>Otevři <strong>Historie</strong> v horní liště nebo v pravém panelu. Vlevo vyber uložený týden, vpravo uvidíš jeho polévky, Oběd 1, případný Oběd 2 a stav jednotlivých dnů. Označení se řídí datem <strong>konkrétního dne</strong>: pro minulost <strong>Vařilo se / Nevařilo se</strong>, pro dnešek a budoucnost <strong>Vaří se / Nevaří se</strong>. Přepnutí stavu dne v historii je úprava, kterou je třeba brát jako změnu uložených dat.</p><p><strong>Načíst jídelníček</strong> otevře vybraný týden jako pracovní jídelníček. <strong>Kopírovat do jiného týdne</strong> vytvoří pracovní kopii pro datum zvolené v kalendáři. <strong>Tisk / PDF</strong> vytiskne zvolený týden. <strong>Smazat z historie</strong> odstraní týden po potvrzení; v běžící relaci lze změny vracet tlačítkem Zpět. Kopírování ani pouhé načtení nepřepisuje schválenou historii.</p><p>Ochrana proti opakování jídel používá nastavení <strong>Neopakovat hlavní</strong> a <strong>Neopakovat polévky</strong> (výchozí hodnoty 8 a 3 týdny). Obě hlavní jídla se při kontrole opakování posuzují společně.</p></section><section id="import"><h2>3. Import a export historie mezi Pythonem a WEBem</h2><p>V okně <strong>Historie</strong> jsou tlačítka <strong>Import historie</strong> a <strong>Export historie</strong>. Import přijímá vhodný soubor JSON s uloženými týdny, například export z Pythonu. <strong>Aktuální import historie ve WEBu nenabízí slučování:</strong> po načtení se zobrazí potvrzení <strong>ANO = zálohovat původní historii a NAHRADIT všechny týdny; NE = nic neměnit</strong>. Před nahrazením WEB uloží místní zálohu do prohlížeče a nabídne stažení souboru se starou historií. Katalog, pravidla a pracovní týden zůstanou zachované.</p><p><strong>Export historie</strong> vytvoří JSON pouze s uloženými týdny, vhodný také pro přenos do Pythonu. Nezaměňuj ho s úplným <strong>Export JSON / Import JSON</strong>, který pracuje s celými WEB daty. Pokud chceš zachovat týdny z obou verzí, před nahrazením historie nejprve porovnej a zálohuj oba soubory; prostý import historie ve WEBu je nesloučí.</p></section><section id="edit"><h2>4. Úpravy jídel a dnů</h2><p>V hlavním náhledu klikni na název polévky nebo hlavního jídla. Výchozí filtr <strong>VŠECHNY</strong> zobrazuje všechna jídla; vyhledávání funguje i bez diakritiky. Jídlo lze v katalogu přidat, přejmenovat nebo smazat. Přidání jídla nevyžaduje žádnou kategorii. Změny pracovního jídelníčku lze vracet tlačítky <strong>Zpět / Znovu</strong>.</p><p>V hlavním jídelníčku zaškrtávací políčka Po–Pá určují, zda se daný den vaří. Vypnutý den zůstává zobrazený, ale bez pokrmů. Přejmenování jídla v katalogu může ovlivnit pracovní návrh. Pozor: při přejmenování jídla z okna historie může program změnit odpovídající názvy také v dalších uložených týdnech, nejen v aktuálním návrhu.</p></section><section id="rules"><h2>5. Pravidla jídelny</h2><p>V pravém panelu nastav minimální počty ryb, luštěnin a bezmasých jídel, maximální počet sladkých jídel a zakázané kombinace. Vlastní pravidla se zapisují po řádcích, například <code>ZAKAZ_HLAVNI = smažený sýr</code> nebo <code>ZAKAZ_KOMBINACE = hrachová | čočka</code>. Ulož je příslušným tlačítkem. <strong>Kontrola pravidel</strong> prověří aktuální pracovní návrh; sama ho neschvaluje ani neukládá.</p><p><strong>Oběd 1 a Oběd 2:</strong> při dvou obědech se minima ryb, luštěnin a bezmasých jídel i maximum sladkých jídel počítají společně za oba obědy. Polévka je jedna pro oba; zakázané kombinace se kontrolují proti každému obědu. Pondělní střídání se vztahuje na Oběd 1. Druh jídla se odvozuje z názvu, nikoliv z technické sekce katalogu.</p></section><section id="audit"><h2>6. Kontrola databáze</h2><p>Tlačítko <strong>Kontrola databáze</strong> porovná historii s katalogem a <strong>automaticky doplní chybějící názvy jídel z historie do katalogu</strong>. Teprve potom vypíše výsledek, počet doplněných názvů a případné zbývající chybějící položky. Nevyžaduje předchozí potvrzení jednotlivých doplnění. Historie se při této kontrole nepřepisuje. Zařazení do interních sekcí je technické, nikoliv uživatelská kategorizace.</p><p>Jídla, která jsou pouze v katalogu a dosud nejsou v historii, nejsou chybou. Před většími úpravami doporučujeme <strong>Export JSON</strong>.</p></section><section id="strava"><h2>7. Strava.cz – jídelna 5948</h2><p>WEB používá soubor <code>strava_5948.json</code> připravovaný v repozitáři; nečte přímo webovou stránku Strava.cz. Přepínač <strong>Strava.cz: zapnuto / vypnuto</strong> řídí automatickou kontrolu. Ta po načtení společných dat z GitHubu <strong>automaticky doplňuje dosud neexistující týdny a chybějící názvy jídel</strong> do interních sekcí katalogu, bez ruční kategorizace. Původní týdny nepřepisuje.</p><p><strong>Ruční kontrola</strong> slouží jako náhled bez ukládání; je možné si prohlédnout dostupná jídla. Při určitých interaktivních scénářích se může objevit nabídka <strong>Použít Strava.cz / Vytvořit vlastní / Připomenout později</strong>, není však povinným krokem automatického importu. Pokud se již uložený aktuální či budoucí týden liší, program rozdíly může zobrazit, ale týden automaticky nepřepíše.</p><p><strong>Rozsah archivu je zásadní:</strong> soubor <code>strava_5948.json</code> v dodaném <code>WEB(5).zip</code> obsahuje právě <strong>jeden týden: 2.–6. 11. 2026</strong>. Z tohoto souboru tedy nelze zpětně doplnit jiné chybějící týdny. Pokud automatická synchronizace GitHubu není připravená, import se pozastaví. Před větším doplněním vytvoř <strong>Export JSON</strong>.</p></section><section id="learning"><h2>8. Učení preferencí jídel</h2><p>WEB při ruční výměně zvyšuje preferenci nového jídla a mírně snižuje preferenci nahrazeného. Sleduje také dvojice polévka + hlavní jídlo. Při generování oblíbené pokrmy zvýhodňuje pravděpodobnostně, ale pravidla jídelny a ochrana proti opakování mají přednost. Učení se může sdílet v rámci společných dat na GitHubu; s Pythonem se preference automaticky nesynchronizují.</p></section><section id="backup"><h2>9. Ukládání a zálohy</h2><aside><strong>Důležité:</strong> WEB ukládá data lokálně do prohlížeče a při připojení může synchronizovat společná data přes GitHub. Při souběžných změnách na více zařízeních může nastat konflikt. Před jeho řešením, importem nebo obnovením dat vytvoř <strong>Export JSON</strong>.</aside><p><strong>Export JSON</strong> zálohuje celé WEB údaje včetně katalogu, historie, nastavení a pracovního týdne. <strong>Import JSON</strong> takovou zálohu obnovuje. Naproti tomu <strong>Import historie</strong> v okně Historie pracuje jen s uloženými týdny a v aktuální verzi po potvrzení <strong>nahrazuje celou historii</strong> (s nabídkou zálohy). Pouhé vložení souboru <code>historie_jidelnicku.json</code> do složky WEBu není totéž co ruční import do již používaného prohlížeče.</p></section><section id="sync"><h2>10. GitHub a synchronizace mezi zařízeními</h2><p>WEB synchronizuje soubor <code>spolecna_data.json</code> v repozitáři <code>jerry00769/jidelnicky</code> přes GitHub API. Pro zápis je potřeba přístupový token uložený v prohlížeči. První převzetí vzdálených dat na novém zařízení může vyžadovat potvrzení; při startu se program pokouší dokončit počáteční synchronizaci před nastavením výchozího pracovního týdne.</p><p>Změny se nejprve ukládají lokálně. Při připojení se odesílají, kontrolují při návratu do okna, při obnovení internetu a periodicky během aktivní stránky. Při rozdílných změnách se program pokouší <strong>automaticky sloučit jen bezpečně rozpoznaná nezávislá přidání jídel do katalogu</strong>. Mazání, přejmenování, úpravy historie, pravidel a pracovního týdne nelze obecně automaticky slučovat; může nastat konflikt vyžadující rozhodnutí. Před převzetím vzdáleného stavu při řešení konfliktu se stahuje záloha místních dat.</p><aside><strong>Známá nesrovnalost programu:</strong> dialog pro vložení tokenu v dodaném <code>github-sync.js</code> stále říká „testovací repozitář jerry00769/jidelnicky2“. Skutečný API endpoint je ale správně <code>jerry00769/jidelnicky</code>. Tato nápověda popisuje skutečné cílové úložiště; text dialogu je potřeba opravit v kódu.</aside><p>Offline otevření přes <code>file://</code> a online WEB mohou mít oddělená místní úložiště. Při konfliktu nebo před importem použij <strong>Export JSON</strong>.</p></section><section id="mobile"><h2>11. Mobilní a tabletové ovládání</h2><p>Na menších displejích se část akcí nachází pod nabídkou <strong>☰ Další</strong>. Ochranné doby opakování se na mobilu a tabletu vybírají z rozbalovacích seznamů; na počítači se zadávají číslem. Datum vybereš v kalendáři a potvrzením změny týdne se otevřou tři možnosti <strong>Zrušit změnu / Prázdný týden / Zachovat jídla</strong>. Stav GitHubu, Strava.cz a informační hlášky se na úzké obrazovce zobrazují v mobilním rozložení.</p></section><section id="print"><h2>12. Tisk, PDF a CSV</h2><p><strong>Tisk / PDF</strong> otevře tiskový dialog prohlížeče. Ve Windows lze vybrat například <strong>Microsoft Print to PDF</strong> nebo <strong>Uložit jako PDF</strong>. <strong>Export CSV</strong> vytvoří tabulkový soubor pro Excel. V historii lze samostatně tisknout vybraný uložený týden. Export CSV není export historie pro přenos mezi Pythonem a WEBem.</p></section><p><a class="back-button" href="index.html">Zpět do generátoru</a></p></main><button aria-label="Posun na začátek nápovědy" class="to-top" id="toTop" title="Zpět nahoru" type="button">↑</button><script>
+// Desktop: navigace trvale viditelna. Mobil: nabidka po otevreni stranky sbalena.
+(function () {
+  const menu = document.querySelector('.help-menu');
+  const header = document.querySelector('header');
+  if (!menu || !header) return;
+  const mobile = window.matchMedia('(max-width: 650px)');
+  const syncMode = () => { menu.open = !mobile.matches; };
+  syncMode();
+  window.addEventListener('pageshow', syncMode);
+  mobile.addEventListener('change', syncMode);
+
+  menu.querySelectorAll('nav a[href^="#"]').forEach(link => {
+    link.addEventListener('click', event => {
+      const target = document.getElementById(link.hash.slice(1));
+      if (!target) return;
+      event.preventDefault();
+      if (mobile.matches) menu.open = false;
+      // Nejdříve zmensit zahlavi, az potom vypocitat cilovou polohu.
+      requestAnimationFrame(() => {
+        const offset = header.getBoundingClientRect().height + 12;
+        const top = window.scrollY + target.getBoundingClientRect().top - offset;
+        window.scrollTo({top: Math.max(0, top), behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+        history.replaceState(null, '', link.hash);
+      });
+    });
+  });
+  const topButton = document.getElementById('toTop');
+  const updateTopButton = () => topButton.classList.toggle('visible', window.scrollY > 260);
+  window.addEventListener('scroll', updateTopButton, {passive:true});
+  topButton.addEventListener('click', () => {
+    window.scrollTo({top:0, behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+  });
+  updateTopButton();
+  // Nabídku nezavírat při scrollování: jinak se může zavřít hned po otevření.
 })();
-</script><script id="mobile-picker-compact-v09">(function(){
- var picker=document.getElementById('picker'),kind=document.getElementById('pickerKind'),search=document.getElementById('search');
- if(!picker||!kind||!search)return;
- function update(){picker.classList.toggle('picker-fixed-kind',kind.disabled);}
- new MutationObserver(update).observe(picker,{attributes:true,attributeFilter:['open']});
- update();
-})();</script><script id="mobile-picker-keyboard-v11">(function(){
- var picker=document.getElementById('picker');
- var search=document.getElementById('search');
- if(!picker||!search)return;
- var baseline=0;
- function mobile(){return window.matchMedia('(max-width:600px)').matches;}
- function height(){return window.visualViewport?window.visualViewport.height:window.innerHeight;}
- function update(){
-  if(!picker.open||!mobile()){
-   picker.classList.remove('mobile-keyboard-open');
-   if(!picker.open)baseline=0;
-   return;
-  }
-  var current=height();
-  if(!baseline||current>baseline)baseline=current;
-  // Focus alone is insufficient: hardware keyboards and desktop emulation.
-  var typing=document.activeElement===search;
-  var reduced=baseline-current>Math.max(110,baseline*.19);
-  picker.classList.toggle('mobile-keyboard-open',typing&&reduced);
- }
- function checkLater(){update();setTimeout(update,100);setTimeout(update,300);setTimeout(update,600);}
- picker.addEventListener('focusin',checkLater);
- picker.addEventListener('focusout',function(){setTimeout(update,80);});
- picker.addEventListener('click',function(e){
-  if(e.target.closest('#choices')&&document.activeElement===search){search.blur();}
- });
- new MutationObserver(checkLater).observe(picker,{attributes:true,attributeFilter:['open']});
- if(window.visualViewport){visualViewport.addEventListener('resize',checkLater);visualViewport.addEventListener('scroll',update);}
- window.addEventListener('resize',checkLater);
- window.addEventListener('orientationchange',function(){baseline=0;checkLater();});
-})();</script><div id="githubIndicator" class="github-indicator" role="status" aria-live="polite">⚠ GitHub: nepřipojeno</div><script id="github-indicator-keyboard-visibility">(function(){
-  'use strict';
-  var indicator=document.getElementById('githubIndicator');
-  if(!indicator)return;
-  var baseline=0;
-  function mobile(){return window.matchMedia('(max-width:600px)').matches;}
-  function viewportHeight(){return window.visualViewport?window.visualViewport.height:window.innerHeight;}
-  function editing(){var e=document.activeElement;return !!(e&&(e.matches('input:not([type=checkbox]):not([type=radio]):not([type=button]):not([type=submit]),textarea,[contenteditable="true"]')));}
-  function update(){
-    if(!mobile()){indicator.classList.remove('keyboard-hidden');baseline=0;return;}
-    var h=viewportHeight();
-    if(!baseline||h>baseline)baseline=h;
-    var keyboard=editing()&&baseline-h>Math.max(110,baseline*0.19);
-    indicator.classList.toggle('keyboard-hidden',keyboard);
-    if(!editing()&&!keyboard&&h>=baseline-50)baseline=h;
-  }
-  function deferred(){update();setTimeout(update,100);setTimeout(update,300);}
-  document.addEventListener('focusin',deferred);
-  document.addEventListener('focusout',deferred);
-  if(window.visualViewport){window.visualViewport.addEventListener('resize',deferred);window.visualViewport.addEventListener('scroll',update);}
-  window.addEventListener('resize',deferred);
-  window.addEventListener('orientationchange',function(){baseline=0;deferred();});
-  deferred();
-})();</script><script id="github-settings-close-fix">(function(){
-  const settings=document.querySelector('header .github-settings');
-  if(!settings)return;
-  const update=()=>{const header=document.querySelector('body > header');if(header)document.documentElement.style.setProperty('--github-settings-bottom',Math.ceil(header.getBoundingClientRect().bottom)+'px')};
-  settings.addEventListener('toggle',()=>{if(settings.open)update()});
-  document.addEventListener('pointerdown',e=>{if(settings.open&&!settings.contains(e.target))settings.open=false});
-  settings.querySelectorAll('.github-controls button').forEach(button=>button.addEventListener('click',()=>{settings.open=false}));
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&settings.open)settings.open=false});
-  window.addEventListener('resize',()=>{if(settings.open)update()});
-})();</script><script src="strava-import.js?v=20261101-indicators2"></script></body></html>
+</script></body></html>
