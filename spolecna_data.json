@@ -346,32 +346,8 @@
       "days": [
         {
           "closed": false,
-          "soup": "hovězí s játrovými knedlíčky",
-          "main": "Hrachová kaše s cibulkou, Vejce vařené",
-          "category": "",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "kuřecí s nudlemi",
-          "main": "Těstoviny penne s tuňákem a chery rajčaty",
-          "category": "",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "mrkvová",
-          "main": "Omáčka koprová, Vejce vařené, Brambory",
-          "category": "",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "brokolicová",
-          "main": "Vepřový řízek přírodní, Brambory m.m.",
+          "soup": "hovězí s kapáním",
+          "main": "Horňácký guláš (maso, fazole), Chléb",
           "category": "",
           "main2": "",
           "category2": ""
@@ -379,7 +355,31 @@
         {
           "closed": false,
           "soup": "hovězí s těstovinou",
-          "main": "Špekové knedlíky, Zelí kysané",
+          "main": "Rybí filé obalované, Brambory",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "hovězí s kapustou a rýží",
+          "main": "Špagety po uhlířsku (vejce, sýr)",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "z batátových brambor",
+          "main": "Hovězí pečeně na paprice, Vícezrnný knedlík (směs)",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "zelenin. s ovesnými vločkami",
+          "main": "Vepřová pečeně selská, Karlovarský knedlík",
           "category": "",
           "main2": "",
           "category2": ""
