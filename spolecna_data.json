@@ -346,8 +346,16 @@
       "days": [
         {
           "closed": false,
-          "soup": "z batátových brambor",
-          "main": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
+          "soup": "zeleninová se sýrovým kapáním",
+          "main": "Čočkový kotlík, Chléb",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "hovězí rychlá s vejcem",
+          "main": "Rybí filé pečené na másle, Bramborová kaše - příloha",
           "category": "",
           "main2": "",
           "category2": ""
@@ -355,7 +363,7 @@
         {
           "closed": false,
           "soup": "zelenin. s drožďovými knedlíčky",
-          "main": "Rybí filé smažené, Bramborová kaše - příloha",
+          "main": "Bramborák",
           "category": "",
           "main2": "",
           "category2": ""
@@ -363,23 +371,15 @@
         {
           "closed": false,
           "soup": "z kysaného zelí",
-          "main": "Králík pečený, Bramborové knedlíky (směs), Špenát dušený",
+          "main": "Vepřové na houbách se smetanou, Houskové knedlíky (kynuté)",
           "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "cizrnová krémová s rajčaty",
-          "main": "Těstoviny s brokolicí",
-          "category": "",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "hovězí s těstovinou",
-          "main": "Hovězí pečeně na paprice, Vícezrnný knedlík (směs)",
+          "soup": "krupicová s vejcem",
+          "main": "Obalované filé s brokolicí a sýrem, Brambory",
           "category": "",
           "main2": "",
           "category2": ""
