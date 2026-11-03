@@ -346,32 +346,16 @@
       "days": [
         {
           "closed": false,
-          "soup": "krupicová maďarská",
-          "main": "Vepřová pečeně, Fazolové lusky na slanině, Brambory",
+          "soup": "pórková s vejci",
+          "main": "Hrachová kaše s cibulkou, Párky",
           "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "květáková s červenou čočkou",
-          "main": "rybí filé s rajčaty, bazalkou, brambory",
-          "category": "",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "cizrnová krémová s rajčaty",
-          "main": "Špagety po uhlířsku (vejce, sýr)",
-          "category": "",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "zeleninová s těstovinovou",
-          "main": "Losos přírodní, Brambory",
+          "soup": "kapustová s rýží",
+          "main": "Obalované filé s brokolicí a sýrem, Brambory",
           "category": "",
           "main2": "",
           "category2": ""
@@ -379,7 +363,23 @@
         {
           "closed": false,
           "soup": "špenátová s vajíčkem",
+          "main": "Tilápie s rajčaty a sýrem, Brambory m.m.",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "z batátových brambor",
           "main": "Hejk pečený na bylinkovém másle, Brambory",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "kmínová s vejcem",
+          "main": "Horňácký guláš (maso, fazole), Chléb",
           "category": "",
           "main2": "",
           "category2": ""
