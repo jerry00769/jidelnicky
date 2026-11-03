@@ -346,40 +346,40 @@
       "days": [
         {
           "closed": false,
-          "soup": "pórková s vejci",
-          "main": "Hrachová kaše s cibulkou, Párky",
-          "category": "",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "kapustová s rýží",
-          "main": "Obalované filé s brokolicí a sýrem, Brambory",
-          "category": "",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "špenátová s vajíčkem",
-          "main": "Tilápie s rajčaty a sýrem, Brambory m.m.",
-          "category": "",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "z batátových brambor",
-          "main": "Hejk pečený na bylinkovém másle, Brambory",
-          "category": "",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "kmínová s vejcem",
+          "soup": "hovězí s jáhly",
           "main": "Horňácký guláš (maso, fazole), Chléb",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "zimní zeleninová s ovesnými vločkami",
+          "main": "Obalované filé s brokolicí a sýrem, Brambory m.m.",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "zeleninová s drožďovými knedlíčky",
+          "main": "Těstoviny s brokolicí",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "hrachová s hrachovými krutony",
+          "main": "Vepřový řízek přírodní, Brambory",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": " zeleninová s ovesnými vločkami",
+          "main": "Nudle s mákom",
           "category": "",
           "main2": "",
           "category2": ""
