@@ -346,24 +346,16 @@
       "days": [
         {
           "closed": false,
-          "soup": "zeleninová s těstovinovou rýží",
-          "main": "Hrachová kaše s cibulkou, Vejce vařené",
+          "soup": "zeleninová s těstovinami",
+          "main": "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
           "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "hovězí s kuskusem",
-          "main": "Rybí stripsy, Brambory",
-          "category": "",
-          "main2": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "zelenin. s bulgurem",
-          "main": "zeleninové rizoto sypané sýrem a parmazánem, ovocný sirup, čistá voda",
+          "soup": "česneková s bramborem a vejcem",
+          "main": "Rybí filé pečené na másle, Bramborová kaše - příloha",
           "category": "",
           "main2": "",
           "category2": ""
@@ -371,15 +363,23 @@
         {
           "closed": false,
           "soup": "hrachová s opečenou houskou",
-          "main": "Dukátové buchtičky s krémem",
+          "main": "Zeleninové rizoto",
           "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "čočková",
-          "main": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
+          "soup": "rychlá s vejcem",
+          "main": "Nákyp rýžový s meruňkami",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "brokolicová",
+          "main": "Debrecínský guláš, Těstoviny",
           "category": "",
           "main2": "",
           "category2": ""
