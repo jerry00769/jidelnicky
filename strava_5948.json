@@ -31,6 +31,36 @@
           "main2": ""
         }
       ]
+    },
+    {
+      "week": "2026-11-09",
+      "days": [
+        {
+          "soup": "Polévka zeleninová s quinoou",
+          "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka krupicová s vejcem",
+          "main": "Těstoviny se zeleninou, zapečené",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka cibulová",
+          "main": "Hovězí pečeně pražská, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka květáková s červenou čočkou",
+          "main": "Špagety celozrnné s boloňskou omáčkou",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s krupkami",
+          "main": "Vepřový řízek smažený, Brambory",
+          "main2": ""
+        }
+      ]
     }
   ],
   "skipped_incomplete_weeks": [
