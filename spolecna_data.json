@@ -100,7 +100,11 @@
           "čočková",
           "čočková se zeleninou"
         ],
-        "K OVĚŘENÍ": []
+        "K OVĚŘENÍ": [],
+        "__POLEVKY__": [
+          "Polévka cibulová",
+          "Polévka hovězí s krupkami"
+        ]
       },
       "main": {
         "HOVĚZÍ A TELECÍ": [
@@ -338,7 +342,12 @@
           "Žemlovka s jablky a tvarohem"
         ],
         "K ZAŘAZENÍ": [],
-        "K OVĚŘENÍ": []
+        "K OVĚŘENÍ": [],
+        "__HLAVNI__": [
+          "Těstoviny se zeleninou, zapečené",
+          "Špagety celozrnné s boloňskou omáčkou",
+          "Vepřový řízek smažený, Brambory"
+        ]
       }
     },
     "week": {
@@ -2537,6 +2546,51 @@
             "soup": "hovězí se sýrovým kapáním",
             "main": "Bratislavské vepřové plecko, Těstoviny",
             "category": "VEPŘOVÉ A UZENÉ",
+            "main2": "",
+            "category2": ""
+          }
+        ]
+      },
+      {
+        "week": "2026-11-09",
+        "days": [
+          {
+            "closed": false,
+            "soup": "zeleninová s quinoou",
+            "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
+            "category": "",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "krupicová s vejcem",
+            "main": "Těstoviny se zeleninou, zapečené",
+            "category": "",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka cibulová",
+            "main": "Hovězí pečeně pražská, Rýže dušená",
+            "category": "",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "květáková s červenou čočkou",
+            "main": "Špagety celozrnné s boloňskou omáčkou",
+            "category": "",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka hovězí s krupkami",
+            "main": "Vepřový řízek smažený, Brambory",
+            "category": "",
             "main2": "",
             "category2": ""
           }
