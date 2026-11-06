@@ -1,0 +1,73 @@
+{
+  "cafeteria": "5948",
+  "status": "received",
+  "weeks": [
+    {
+      "week": "2026-11-02",
+      "days": [
+        {
+          "soup": "Polévka rajčatová s tarhoňou",
+          "main": "Smažené rybí prsty, Brambory m.m.",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s celozrnnými nudlemi",
+          "main": "Krůtí nudličky s pórkem, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s fridátovými nudlemi",
+          "main": "Bulgur s kuřecím masem a zeleninou",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka ovarová",
+          "main": "Dukátové buchtičky s krémem, Kakao",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí se sýrovým kapáním",
+          "main": "Bratislavské vepřové plecko, Těstoviny",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-11-09",
+      "days": [
+        {
+          "soup": "Polévka zeleninová s quinoou",
+          "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka krupicová s vejcem",
+          "main": "Těstoviny se zeleninou, zapečené",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka cibulová",
+          "main": "Hovězí pečeně pražská, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka květáková s červenou čočkou",
+          "main": "Špagety celozrnné s boloňskou omáčkou",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s krupkami",
+          "main": "Vepřový řízek smažený, Brambory",
+          "main2": ""
+        }
+      ]
+    }
+  ],
+  "skipped_incomplete_weeks": [
+    {
+      "week": "2026-11-02",
+      "complete_days": 1
+    }
+  ],
+  "note": "Archiv úplných zveřejněných týdnů. Historii mění až WEB po kontrole kategorií."
+}

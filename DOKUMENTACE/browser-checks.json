@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-06",
+  "environment": "managed Chrome, local private Worker preview",
+  "checks": {
+    "auditHeader": "audit 3.1",
+    "historyCounts": {
+      "complete": 38,
+      "mealsVerified": 7,
+      "noPublishedMenu": 5,
+      "unchecked": 0
+    },
+    "catalog": {
+      "soup": 87,
+      "main": 168
+    },
+    "partialWeek": "2025-11-17: published meals disabled, no-menu day editable, delete disabled",
+    "newDraft": "2026-11-16, 2 lunches generated; rule check passed; saved and preserved after reload",
+    "productionTokenRead": false,
+    "physicalEdgeOrMobileTested": false
+  },
+  "publicReleasePreview": {
+    "badge": "WEB · audit 3.1",
+    "historyCounts": {
+      "complete": 38,
+      "mealsVerified": 7,
+      "noPublishedMenu": 5,
+      "unchecked": 0
+    },
+    "catalog": {
+      "soup": 87,
+      "main": 168
+    },
+    "withoutGithubToken": "local source audit completes and status clearly says not connected"
+  }
+}

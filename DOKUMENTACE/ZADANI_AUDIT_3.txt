@@ -1,0 +1,800 @@
+# JÍDELNÍČKY – ZÁVAZNÉ TECHNICKÉ ZADÁNÍ ZMĚN PRO WEB A PYTHON
+
+**Datum zadání:** 5. 11. 2026  
+**Projekt:** Generátor školních jídelníčků – ZŠ a MŠ Březová Děčín  
+**Strava.cz – číslo jídelny:** 5948  
+**Produkční GitHub:** https://github.com/jerry00769/jidelnicky  
+**WEB:** https://jerry00769.github.io/jidelnicky/  
+**Výchozí podklad WEB:** `jidelnicky-main(5).zip`
+
+**Stav dokumentu:** Závazné zadání pro budoucí úpravy. Není potvrzením, že požadované změny byly naprogramovány.
+
+---
+
+## 1. HLAVNÍ FILOZOFIE PROGRAMU
+
+Program WEB i Python slouží především k tvorbě návrhů školních jídelníčků.
+
+Paní kuchařka může sestavit jídelníček ručně nebo jej nechat automaticky vygenerovat. Výsledek je pracovní návrh, který slouží jako inspirace pro vedoucí školní jídelny.
+
+Vedoucí může navržená jídla převzít, změnit, doplnit nebo zcela nahradit. Definitivní jídelníček následně zveřejní na Strava.cz.
+
+**ZÁVAZNÉ PRAVIDLO: STRAVA.CZ JE DOGMA.**
+
+To znamená:
+
+- Definitivní jídelníček zveřejněný na Strava.cz má přednost před jakýmkoli ručně vytvořeným nebo vygenerovaným návrhem.
+- Pokud se návrh a Strava.cz liší, platí Strava.cz.
+- Program nesmí vyžadovat potvrzení běžného přepsání návrhu definitivním jídelníčkem.
+- Po převzetí Strava.cz musí být historie i katalog uvedeny do vzájemného souladu.
+- Program se nemá učit z návrhů, které nakonec nebyly použity, ale z reálně zveřejněných jídelníčků.
+
+Generátor tedy není zbytečný: umožňuje plánování před zveřejněním jídelníčku a využívá skutečnou historii jako základ pro další návrhy.
+
+---
+
+## 2. ROZDÍL MEZI PRACOVNÍM NÁVRHEM A DEFINITIVNÍ HISTORIÍ
+
+Je nutné logicky rozlišovat dva stavy dat.
+
+### A. Pracovní návrh
+
+- Vytvořen ručně nebo generátorem.
+- Může být průběžně upravován.
+- Nemusí odpovídat pozdějšímu zveřejnění.
+- Musí zůstat zachován, dokud není k dispozici úplná definitivní verze příslušného týdne.
+- Nesmí být považován za definitivní historický záznam.
+- Nesmí trvale rozšiřovat definitivní katalog o jídla, která se nikdy neobjevila v historii.
+
+### B. Definitivní jídelníček
+
+- Pochází ze Strava.cz pro jídelnu 5948.
+- Má přednost před pracovním návrhem.
+- Je součástí závazné historie.
+- Slouží jako podklad pro vytvoření katalogu skutečně použitých jídel.
+- Může být aktualizován, pokud Strava.cz později změní zveřejněný obsah.
+
+**Technický požadavek:** Rozlišování návrhu a definitivního záznamu musí být spolehlivé i po restartu programu a při synchronizaci mezi zařízeními. Není přípustné odvozovat tento stav pouze z toho, zda týden už existuje v historii.
+
+U starších dat, kde původ záznamu není doložen, je nutné provést audit. Nesmí se automaticky tvrdit, že všech 50 uložených týdnů bylo nezávisle ověřeno proti Strava.cz.
+
+---
+
+## 3. AUTOMATICKÁ KONTROLA STRAVA.CZ
+
+### WEB
+
+Po otevření programu:
+
+1. Načíst dostupná uložená data.
+2. Dokončit potřebnou synchronizaci společných dat z GitHubu.
+3. Pokud je automatická kontrola Strava.cz zapnutá, získat dostupná data jídelny 5948.
+4. Zkontrolovat nové a změněné týdny.
+5. Automaticky převzít úplné a důvěryhodné definitivní jídelníčky.
+6. Uvést historii a katalog do souladu.
+7. Uložit změny a bezpečně je synchronizovat.
+
+Zachovat existující přepínač automatické kontroly.
+
+Výchozí stav: zapnuto.
+
+Pokud nejsou změny, nezobrazovat zbytečná hlášení ani dialogy.
+
+### Python
+
+Po spuštění provádět obdobnou kontrolu, pokud je dostupný internet.
+
+Zachovat možnost plnohodnotného offline provozu. Nedostupnost internetu nesmí blokovat generování ani přístup k uloženým datům.
+
+Zachovat dosavadní jednosměrný princip přebírání společných WEB dat, pokud nebude výslovně rozhodnuto o jiné architektuře.
+
+---
+
+## 4. PŘEVZETÍ JÍDELNÍČKU ZE STRAVA.CZ
+
+### Situace 1 – týden v historii neexistuje
+
+Pokud je na Strava.cz dostupný úplný týden:
+
+- Automaticky jej přidat do definitivní historie.
+- Zachovat přesné názvy jídel.
+- Správně zapsat polévku, Oběd 1 a Oběd 2.
+- Aktualizovat katalog podle nové definitivní historie.
+- Bez potvrzovacího dialogu.
+
+### Situace 2 – týden existuje a odpovídá Strava.cz
+
+- Nepřepisovat zbytečně identická data.
+- Nevytvářet duplicitní týdny.
+- Nezobrazovat dialog.
+- Zachovat stabilní stav synchronizace.
+
+### Situace 3 – týden existuje, ale liší se od Strava.cz
+
+- Automaticky převzít definitivní obsah Strava.cz.
+- Přepsat pouze odpovídající týden.
+- Nahradit změněné polévky i hlavní jídla.
+- Aktualizovat katalog.
+- Nepožadovat volbu „Ponechat vlastní“ nebo „Převzít Strava.cz“.
+- Před destruktivní změnou vytvořit obnovitelnou zálohu.
+
+**Příklad:**
+
+Pracovní návrh na úterý:
+- Polévka: Hovězí vývar
+- Oběd 1: Kuřecí řízek, brambory
+- Oběd 2: Těstoviny se sýrem
+
+Definitivní Strava.cz:
+- Polévka: Zeleninová s nudlemi
+- Oběd 1: Vepřové na kmíně, rýže
+- Oběd 2: Těstovinový salát
+
+Výsledek:
+- V definitivní historii zůstane verze Strava.cz.
+- Katalog se přepočítá podle definitivní historie.
+- Původní návrhová jídla nezůstávají v katalogu, pokud se nevyskytují v žádném jiném definitivním historickém záznamu.
+
+### Situace 4 – Strava.cz později opraví už zveřejněný týden
+
+- Změnu rozpoznat.
+- Převzít novější definitivní obsah.
+- Znovu uvést katalog do souladu.
+- Zachovat možnost obnovy předchozího stavu ze zálohy.
+
+### Situace 5 – Strava.cz není dostupná
+
+- Nic nemazat.
+- Nic nepřepisovat na základě domněnky.
+- Zachovat dosavadní data.
+- Při další příležitosti kontrolu zopakovat.
+
+### Situace 6 – neúplný týden
+
+Neúplnost nesmí být zaměňována s tím, že se v některý den nevaří.
+
+Program musí rozlišovat:
+
+- Platný den bez vaření.
+- Školní prázdniny.
+- Skutečně nevyplněné nebo dosud nezveřejněné údaje.
+- Chybějící část dat kvůli technické chybě.
+- Neúplně načtený archiv.
+
+Neověřeným částečným záznamem se nesmí zničit kompletní týden.
+
+---
+
+## 5. NEJDŮLEŽITĚJŠÍ PRAVIDLO: HISTORIE A KATALOG MUSÍ ODPOVÍDAT
+
+Katalog nemá být samostatným skladištěm všech jídel, která kdy někdo navrhl.
+
+**Katalog má být odvozen ze skutečných jídel v definitivní historii.**
+
+Požadovaný vztah:
+
+`KATALOG POLÉVEK = všechny jedinečné skutečné polévky z definitivní historie`
+
+`KATALOG HLAVNÍCH JÍDEL = všechna jedinečná skutečná hlavní jídla z definitivní historie`
+
+Do tohoto vztahu se nezapočítávají organizační označení, například PRÁZDNINY.
+
+### Pravidla katalogu
+
+1. Každé skutečné jídlo z definitivní historie musí existovat v odpovídajícím katalogu.
+2. Pokud v katalogu chybí, automaticky ho doplnit.
+3. Pokud je v katalogu jídlo, které se nevyskytuje v žádném definitivním historickém záznamu, odstranit ho.
+4. Toto pravidlo platí také pro ručně přidaná jídla a neuskutečněné návrhy.
+5. Přesné duplicity v katalogu odstranit.
+6. Odlišné skutečné názvy zachovat.
+7. Polévky a hlavní jídla nepomíchat.
+8. Nesmí být nutná ruční kategorizace.
+9. Katalog po opakované synchronizaci nesmí znovu získat dříve odstraněná nepoužívaná jídla ze staré kopie dat.
+10. Výsledkem musí být konzistentní katalog, nikoli pouhé přidávání nových položek.
+
+### Důležité: nesmazat jídlo, které je použito jinde
+
+Pokud Strava.cz nahradí jeden návrh, ale původní navržené jídlo se vyskytuje v jiném definitivním týdnu, musí v katalogu zůstat.
+
+Příklad:
+
+- Kuřecí řízek byl odstraněn z návrhu aktuálního týdne.
+- Kuřecí řízek se ale nachází v definitivní historii předchozího měsíce.
+- V katalogu proto zůstává.
+
+Naopak jídlo, které existovalo pouze v nepoužitém návrhu, se z definitivního katalogu odstraní.
+
+---
+
+## 6. ZACHOVÁNÍ PŘESNÝCH NÁZVŮ JÍDEL
+
+Historie musí věrně zachovávat původní texty zveřejněné na Strava.cz.
+
+Nesmí se svévolně slučovat:
+
+- Různé přílohy.
+- Jídla s přílohou a bez přílohy.
+- Různé druhy masa.
+- Různé omáčky.
+- Různé skutečně použité názvy.
+- Pravopisné a pojmenovací varianty, pokud představují odlišné texty zdroje.
+
+Příklady:
+
+- `Kuřecí řízek, brambory`
+- `Kuřecí řízek, bramborová kaše`
+- `Kuřecí řízek`
+
+To jsou tři odlišné historické názvy a nemají být bez souhlasu sjednoceny.
+
+### Technická normalizace
+
+Pro porovnání lze používat pomocné normalizované klíče, ale původní text musí zůstat zachován.
+
+Je nutné oddělit:
+
+- Přesný uložený text ze Strava.cz.
+- Pomocný klíč pro rozpoznání duplicit nebo formálních rozdílů.
+
+Předpona `Polévka` se může při porovnání chápat jako formální označení druhu jídla, ale nesmí se tím bezdůvodně měnit originální text v historii.
+
+---
+
+## 7. PRÁZDNINY A JINÉ ORGANIZAČNÍ OZNAČENÍ
+
+**ZVLÁŠTNÍ ZÁVAZNÉ PRAVIDLO: PRÁZDNINY NEJSOU POLÉVKA.**
+
+Vedoucí jídelny může na Strava.cz zapsat například:
+
+`P R Á Z D N I N Y`
+
+A to i do pole, které je technicky určeno pro polévku.
+
+Program musí:
+
+- Zachovat tento zápis v historii.
+- Nepovažovat ho za polévku.
+- Nepřidávat ho do katalogu.
+- Pokud už v katalogu je, při rekonstrukci katalogu ho odstranit.
+- Nerozhodovat o typu položky pouze podle názvu databázového pole.
+
+Obdobně se mají posuzovat jednoznačná organizační označení, například:
+
+- `PRÁZDNINY`
+- `ŘEDITELSKÉ VOLNO`
+- `NEVAŘÍ SE`
+
+Přesný seznam a způsob rozpoznávání je nutné prověřit proti reálným datům.
+
+**Pozor:** Neprovádět plošné mazání textů jen na základě výskytu slov, která by mohla být součástí skutečného názvu pokrmu.
+
+Organizační značky patří do historie, nikoli do katalogu jídel.
+
+---
+
+## 8. PRACOVNÍ NÁVRHY A ČIŠTĚNÍ KATALOGU
+
+Tady je důležitá technická podmínka.
+
+Pokud paní právě vytváří návrh na budoucí týden, program jí nesmí rozepsaný návrh zničit jen proto, že ještě není na Strava.cz.
+
+Zároveň však platí, že neuskutečněný návrh nemá trvale znečišťovat definitivní katalog.
+
+Proto je nutné oddělit:
+
+- Definitivní historická data.
+- Pracovní návrhová data.
+- Definitivní katalog odvozený z historie.
+
+Pokud současná datová struktura WEBu nebo Pythonu tyto stavy nerozlišuje, je třeba navrhnout bezpečnou kompatibilní úpravu.
+
+Nesmí se bez analýzy pouze zapnout plošné mazání katalogu, pokud by tím program ztratil schopnost dokončit právě připravovaný návrh.
+
+**Cílový stav:** Po definitivním zveřejnění týdne už žádná nepoužitá návrhová jídla nesmějí zůstávat v katalogu skutečně použitých jídel.
+
+---
+
+## 9. AUDIT EXISTUJÍCÍ HISTORIE
+
+Před úpravou dat je nutné prověřit skutečnou historii.
+
+Požadovaný rozsah:
+
+**Od října 2025 do aktuálního dostupného období, následně průběžně dál.**
+
+Kontrola musí zjistit:
+
+1. Jaké týdny jsou uloženy.
+2. Které týdny pocházejí prokazatelně ze Strava.cz.
+3. Které týdny jsou pouze pracovní nebo historicky neověřené.
+4. Kde chybí dny.
+5. Kde chybí Oběd 1 nebo Oběd 2.
+6. Kde je uvedena společná polévka.
+7. Kde jsou prázdniny a dny bez vaření.
+8. Kde se opakují totožné záznamy.
+9. Kde se liší WEB a Python.
+10. Zda lze ověřit původní texty vůči dostupnému archivu Strava.cz.
+
+### Dřívější zjištění z dodaného WEB ZIPu
+
+Při předchozí kontrole souboru `spolecna_data.json` byly uvedeny tyto výsledky:
+
+- 50 týdnů historie.
+- 88 různých názvů polévek v historii.
+- 91 názvů polévek v katalogu.
+- 4 katalogové polévky nepoužité v historii.
+- 168 různých hlavních jídel v historii.
+- 221 hlavních jídel v katalogu.
+- 53 hlavních jídel v katalogu nepoužitých v historii.
+- Žádné chybějící hlavní jídlo z historie v katalogu.
+- V historii se vyskytuje organizační text `P R Á Z D N I N Y`.
+
+**Tato čísla jsou výchozí kontrolní údaje z předchozího auditu, nikoli definitivní seznam položek určených ke smazání.** Před zásahem se musí výpočet zopakovat nad konkrétní verzí dat, vypsat názvy a ověřit jejich původ.
+
+Dříve byl v přiloženém archivu `strava_5948.json` zjištěn pouze omezený počet týdnů. Nesmí se tedy zaměňovat počet týdnů v tomto souboru s úplným historickým rozsahem Strava.cz.
+
+### Cíl auditu
+
+Získat co nejúplnější a ověřenou definitivní historii, která bude závazným zdrojem pro rekonstrukci katalogu.
+
+Pokud se některé starší období nepodaří nezávisle ověřit, uvést ho v protokolu jako neověřené. Nedoplňovat ani nemazat jeho obsah na základě odhadu.
+
+---
+
+## 10. REKONSTRUKCE KATALOGU Z HISTORIE
+
+Po auditu provést bezpečnou rekonstrukci.
+
+### Algoritmus
+
+1. Načíst kompletní uloženou historii.
+2. Rozlišit definitivní a pracovní záznamy.
+3. Vybrat definitivní historické záznamy.
+4. Projít všechny dny.
+5. Získat skutečné názvy polévek.
+6. Získat skutečné názvy hlavních jídel z Oběda 1 i Oběda 2.
+7. Ignorovat prázdné položky a organizační označení.
+8. Odstranit pouze přesné duplicity podle předem stanoveného pravidla.
+9. Zachovat odlišné názvy a varianty.
+10. Sestavit výsledný katalog polévek.
+11. Sestavit výsledný katalog hlavních jídel.
+12. Porovnat výsledný katalog s původním.
+13. Vypočítat přidané, odebrané a zachované položky.
+14. Vytvořit zálohu.
+15. Uložit změny konzistentně.
+16. Provést následnou kontrolu.
+
+### Povinný kontrolní výsledek
+
+Po rekonstrukci musí platit:
+
+- Každá skutečná polévka z definitivní historie je v katalogu polévek.
+- Každé skutečné hlavní jídlo z definitivní historie je v katalogu hlavních jídel.
+- Žádná katalogová položka není bez odpovídajícího výskytu v definitivní historii.
+- V katalogu nejsou přesné duplicity.
+- V katalogu nejsou organizační označení.
+- Historie se rekonstrukcí katalogu nezměnila.
+
+**Neprovádět pouze doplnění chybějících položek. Požadováno je obousměrné sjednocení: přidat chybějící a odstranit nepoužívané.**
+
+---
+
+## 11. WEB – KONKRÉTNÍ TECHNICKÉ OBLASTI
+
+Při úpravě vycházet z aktuálního ZIPu repozitáře, nikoli ze staré verze.
+
+Prověřit zejména:
+
+- `app.js`
+- `strava-import.js`
+- `github-sync.js`
+- `spolecna_data.json`
+- `strava_5948.json`
+- `catalog.js`
+- `catalog-data.js`
+- `index.html`
+- `napoveda.html`
+- `scripts/fetch_strava_5948.py`
+- `.github/workflows/strava-5948-auto.yml`
+
+### Požadované změny
+
+**A. Import Strava.cz**
+
+Změnit dosavadní princip, kdy se existující odlišné týdny pouze rozpoznají nebo přeskočí.
+
+Nově mají být úplné definitivní týdny automaticky převzaty i přes existující ruční návrh.
+
+**B. Katalog**
+
+Doplnit automatické přepočítání katalogu podle definitivní historie, včetně odstraňování nepoužívaných položek.
+
+**C. Rozpracované návrhy**
+
+Zajistit, aby se návrhy daly připravovat před zveřejněním na Strava.cz, aniž by se jejich neuskutečněná jídla trvale zapisovala do definitivního katalogu.
+
+**D. GitHub synchronizace**
+
+Ověřit, že:
+
+- Starší zařízení neobnoví již odstraněná katalogová jídla.
+- Starší ruční návrh nepřepíše definitivní týden.
+- Současné změny na více zařízeních nezpůsobí ztrátu definitivních dat.
+- Po synchronizaci zůstává katalog konzistentní s historií.
+- Při chybě ukládání nevznikne poloviční změna.
+
+**E. Offline režim**
+
+Zachovat fungování WEBu z lokálního `index.html`, pokud to dovolují stávající technické možnosti prohlížeče a dostupnost externích služeb.
+
+Při výpadku internetu zachovat poslední platná data.
+
+**F. Uživatelské prostředí**
+
+Zachovat současný vzhled a ovládání.
+
+Nezavádět další zbytečná tlačítka ani potvrzovací dialogy.
+
+Zobrazovat jen důležité chyby nebo situace, které skutečně vyžadují zásah.
+
+---
+
+## 12. PYTHON – KONKRÉTNÍ POŽADAVKY
+
+Po dokončení WEBu provést obdobnou úpravu Python verze.
+
+Python musí používat stejná pravidla pro:
+
+- Autoritu Strava.cz.
+- Rozlišení návrhu a definitivní historie.
+- Převzetí změněného týdne.
+- Zachování přesných názvů.
+- Organizační označení.
+- Rekonstrukci katalogu.
+- Odstranění nepoužitých jídel.
+- Zálohování.
+- Kontrolu konzistence.
+
+### Zachovat
+
+- Stávající grafické rozhraní.
+- Automatickou kontrolu po spuštění.
+- Možnost ručního otevření přehledu Strava.cz.
+- Offline fungování.
+- Lokální historii.
+- Existující plánovací pravidla.
+- Jednosměrné čtení společných WEB dat, pokud nebude schválena změna architektury.
+
+### Pozor na lokální data
+
+Python může obsahovat vlastní historii nebo návrhy, které ještě nejsou v GitHubu.
+
+Před synchronizací je nutné rozpoznat jejich stav, nikoli je bez kontroly sloučit s definitivní historií.
+
+Definitivní Strava.cz má přednost, ale nezveřejněné pracovní návrhy musí zůstat použitelné do doby zveřejnění příslušného týdne.
+
+---
+
+## 13. PRAVIDLA GENEROVÁNÍ, KTERÁ SE NESMĚJÍ ROZBÍT
+
+Nová synchronizace nesmí změnit stávající pravidla generátoru.
+
+Zachovat zejména:
+
+- Oběd 1 a Oběd 2 jsou dvě různá hlavní jídla.
+- Pro oba obědy je jedna společná polévka.
+- Obě hlavní jídla mohou patřit do stejné technické katalogové skupiny.
+- Ryby, luštěniny, bezmasá a sladká jídla se rozpoznávají podle názvů, nikoli ručně přiřazených kategorií.
+- Při počítání plánovacích pravidel se zohledňují oba obědy.
+- Ochrana proti opakování se uplatňuje napříč oběma obědy.
+- Pondělní střídání ryby a luštěnin se týká Oběda 1.
+- Není požadováno ruční třídění jídel do kategorií.
+
+Technické katalogové skupiny lze zachovat kvůli kompatibilitě, ale nesmějí být zdrojem zbytečných rozhodovacích dialogů.
+
+---
+
+## 14. BEZPEČNOST A ZÁLOHY
+
+Před každou destruktivní úpravou skutečných dat:
+
+1. Zálohovat původní historii.
+2. Zálohovat původní katalog.
+3. Zachovat informaci o původu a verzi dat.
+4. Připravit nový stav nejprve odděleně.
+5. Ověřit úplnost a konzistenci.
+6. Teprve poté provést zápis.
+7. Umožnit obnovu předchozího stavu.
+
+Při chybě nesmí zůstat:
+
+- Nová historie se starým katalogem.
+- Nový katalog se starou historií.
+- Polovina přepsaného týdne.
+- Ztracený pracovní návrh.
+- Duplicitní týdny.
+- Ztracená nebo poškozená společná GitHub data.
+
+Záloha nesmí být jedinou kopií uloženou do stejného nestabilního mezistavu, který se právě přepisuje.
+
+---
+
+## 15. SYNCHRONIZACE A KONFLIKTY MEZI ZAŘÍZENÍMI
+
+Je nutné prověřit chování při současném používání více zařízení.
+
+### Příklad
+
+Zařízení A:
+- Má starší ruční návrh týdne.
+
+Zařízení B:
+- Už převzalo definitivní jídelníček Strava.cz.
+
+Po synchronizaci:
+
+- Definitivní Strava.cz musí zvítězit.
+- Starší návrh se nesmí vrátit jako platný jídelníček.
+- Katalog se nesmí znovu rozšířit o odstraněná nepoužitá jídla.
+
+### Technický princip
+
+Pro každý týden evidovat dostatek informací k určení:
+
+- O jaký týden jde.
+- Zda jde o návrh nebo definitivní data.
+- Z jakého zdroje pochází.
+- Jaká verze obsahu byla převzata.
+- Zda se od poslední synchronizace skutečně změnil.
+
+Opakované spuštění synchronizace nad stejnými daty nesmí vytvářet další změny.
+
+---
+
+## 16. POVINNÉ TESTOVACÍ SCÉNÁŘE
+
+Před předáním opravené verze skutečně otestovat následující situace.
+
+| Test | Očekávaný výsledek |
+|---|---|
+| Nový úplný týden ze Strava.cz | Automaticky přidán |
+| Existující shodný týden | Bez změny |
+| Existující odlišný ruční návrh | Automaticky nahrazen |
+| Dodatečná oprava týdne na Strava.cz | Převzata |
+| Neúplný zdrojový týden | Bez destruktivního přepsání |
+| Nedostupná Strava.cz | Zachování dat |
+| Nová polévka v historii | Doplněna do katalogu |
+| Nové hlavní jídlo v historii | Doplněno do katalogu |
+| Nepoužitá ručně přidaná polévka | Odstraněna z definitivního katalogu |
+| Nepoužité ručně přidané hlavní jídlo | Odstraněno z definitivního katalogu |
+| Jídlo použité v jiném definitivním týdnu | Zachováno v katalogu |
+| Text PRÁZDNINY v poli polévky | Zachován v historii, ignorován v katalogu |
+| Různé přílohy stejného pokrmu | Zachovány jako různé názvy |
+| Přesné duplicity katalogu | Odstraněny |
+| Oběd 1 a Oběd 2 | Oba správně převzaty |
+| Opakované spuštění synchronizace | Bez dalších změn |
+| Starší data na druhém zařízení | Neobnoví odstraněný návrh |
+| Výpadek GitHubu | Bez ztráty lokálních dat |
+| Výpadek internetu v Pythonu | Program funguje offline |
+| Obnova zálohy | Obnoví konzistentní stav |
+| Rozpracovaný budoucí návrh | Zachován do zveřejnění definitivního týdne |
+| Kontrola Strava.cz s mnoha týdny | Podrobně zobrazeny pouze dva nejnovější týdny |
+| Neověřená starší období | Nezobrazovat nepodložené potvrzení souladu |
+| Oprava staršího týdne mimo přehled | Synchronizace ji přesto převezme |
+
+Testy provádět na kopiích dat. Neprovádět destruktivní pokusy nad produkčním repozitářem.
+
+---
+
+## 17. KONTROLNÍ PROTOKOL PŘED A PO ÚPRAVĚ
+
+Před úpravou i po ní vytvořit porovnání obsahující:
+
+- Počet týdnů historie.
+- Rozsah historie od–do.
+- Počet ověřených definitivních týdnů.
+- Počet neověřených historických týdnů.
+- Počet pracovních návrhů.
+- Počet jedinečných skutečných polévek.
+- Počet jedinečných skutečných hlavních jídel.
+- Počet položek katalogu.
+- Seznam jídel přidaných do katalogu.
+- Seznam jídel odstraněných z katalogu.
+- Seznam odstraněných duplicit.
+- Seznam organizačních označení v historii.
+- Seznam týdnů změněných podle Strava.cz.
+- Seznam případných nevyřešených problémů.
+- Výsledek testu konzistence historie a katalogu.
+
+**Důležité:** Uvést konkrétní názvy odstraněných jídel, nejen jejich počet.
+
+---
+
+## 18. AKTUALIZACE NÁPOVĚDY
+
+Po implementaci aktualizovat nápovědu WEBu a následně Pythonu.
+
+Vysvětlit:
+
+- K čemu generátor slouží.
+- Že ruční jídelníček je pracovní návrh.
+- Že Strava.cz je definitivní zdroj.
+- Že zveřejněný jídelníček automaticky nahradí návrh.
+- Že katalog obsahuje pouze skutečná jídla z definitivní historie.
+- Že nepoužitá návrhová jídla se z definitivního katalogu odstraní.
+- Že PRÁZDNINY a podobné značky nejsou pokrmy.
+- Co se děje při nedostupnosti internetu.
+- Jak funguje záloha a obnova.
+- Že okno „Kontrola Strava.cz“ ukazuje podrobně jen dva nejnovější dostupné týdny, ostatní jsou v Historii.
+- Že souhrn „v souladu“ platí jen pro skutečně ověřená dostupná období, nikoli automaticky pro celou historii.
+
+Nápověda musí odpovídat skutečně implementovanému chování, nikoli pouze plánovaným funkcím.
+
+---
+
+## 18A. KONTROLA STRAVA.CZ – POSLEDNÍ DVA TÝDNY A STAV OSTATNÍ HISTORIE
+
+### Účel a rozsah okna
+
+Okno „Kontrola Strava.cz“ slouží jako čitelný přehled pro uživatele, nikoli jako omezení automatické kontroly nebo úplnosti historie. Ve WEBu i Pythonu zachovat současný způsob zobrazení jednotlivých dnů, přesných textů polévek, Oběda 1 a Oběda 2, včetně případných organizačních označení (například P R Á Z D N I N Y). Neměnit zbytečně vzhled ani ovládání.
+
+Standardně zobrazit **pouze dva nejnovější týdny dostupné ve zdrojových datech Strava.cz**, seřazené od novějšího ke staršímu. Výběr podle data týdne, nikoli podle posledních 14 kalendářních dnů; prázdniny nebo přestávka ve zveřejňování proto nesmějí způsobit prázdný přehled, pokud jsou starší dostupné týdny. Pokud je dostupný jeden týden, zobrazit jeden; pokud žádný, oznámit nedostupnost dat bez vymýšlení záznamů. Dva nejnovější týdny mohou být i budoucí, pokud již byly zveřejněny.
+
+### Souhrnná informace pod dvěma týdny
+
+Pod podrobným zobrazením uvést krátký, pravdivý souhrn o ostatních týdnech. Rozlišovat minimálně tyto stavy:
+
+**A. Všechny ostatní dostupné týdny byly úspěšně ověřeny a jsou shodné:**
+
+„Ostatní dostupné týdny jsou v souladu se Strava.cz. Starší jídelníčky si můžete prohlédnout v Historii.“
+
+Tuto větu zobrazit pouze tehdy, pokud program skutečně porovnal všechny týdny, na které se tvrzení vztahuje, a ověřil shodu po dokončení synchronizace. Slovo „dostupné“ znamená týdny, které lze ze zdroje prokazatelně ověřit; netvrdit tím, že jsou nezávisle ověřeny všechny týdny od října 2025.
+
+**B. Některá starší období nebylo možné ověřit:**
+
+„Ostatní týdny jsou uloženy v Historii. Některá starší období nebylo možné ověřit proti Strava.cz.“
+
+**C. Synchronizace ještě probíhá:**
+
+„Probíhá kontrola dostupných týdnů Strava.cz…“; nevydávat předčasně zelené potvrzení souladu.
+
+**D. Zdroj je nedostupný nebo kontrola selhala:**
+
+„Kontrolu Strava.cz se nyní nepodařilo dokončit. Uložené jídelníčky najdete v Historii.“; neprezentovat starý stav jako právě ověřený.
+
+**E. Byly nalezeny rozdíly:**
+
+Nejprve automaticky a bezpečně převzít úplné definitivní týdny, aktualizovat historii a katalog, poté znovu vyhodnotit soulad. Pokud zůstane nevyřešený konflikt či neúplný zdroj, uvést stručně, že některé týdny vyžadují kontrolu, a neoznačit je za shodné. Užitečné je uvést počet ověřených, aktualizovaných a neověřených týdnů, jen pokud je program skutečně zná.
+
+### Důsledné oddělení zobrazení a synchronizace
+
+**Omezení na dva týdny platí výhradně pro okno „Kontrola Strava.cz“.** Automatická synchronizace musí nadále zpracovávat všechny relevantní týdny, které jsou skutečně dostupné v použitém zdroji, včetně starších oprav, a sjednocovat definitivní historii s katalogem. Historie musí zachovat všechny uložené týdny; nic se nesmí mazat jen proto, že se v přehledu nezobrazuje.
+
+V okně nezavádět dlouhý seznam desítek týdnů. Pro prohlížení ostatních týdnů použít stávající Historii. Pokud je technicky možné přejít přímo do Historie, lze použít nenápadný odkaz; není nutné přidávat další tlačítko.
+
+### Chování automatického a ručního spuštění
+
+Automatická kontrola po spuštění aplikace zůstává tichá, pokud vše proběhne bez problému a nic nevyžaduje zásah. Pouhé úspěšné porovnání není důvodem pro automatické otevření okna. Při ručním vyvolání „Kontrola Strava.cz“ se však přehled dvou týdnů a souhrnný stav zobrazí vždy, pokud jsou dostupné údaje.
+
+### Shoda WEB a Python
+
+Stejná pravidla výběru dvou týdnů, stavových zpráv, ověření a oddělení přehledu od synchronizace implementovat ve WEBu i Pythonu. V Pythonu zachovat přehled nad hlavním oknem a offline provoz. Při offline provozu lze zobrazit poslední uložené údaje, ale musí být zřejmé, že nejde o právě provedenou kontrolu Strava.cz.
+
+### Povinné doplňkové testy
+
+- Archiv obsahuje desítky týdnů: okno zobrazí přesně dva nejnovější, Historie zůstane úplná.
+- Archiv obsahuje jeden nebo žádný týden: přehled je správně omezen a nic si nevymýšlí.
+- Prázdniny a mezera v datech: výběr podle dvou posledních dostupných týdnů, nikoli 14 dnů.
+- Nejnovější týden leží v budoucnu: zobrazí se podle data jako nejnovější.
+- Starší týden se na Strava.cz změnil: synchronizace ho opraví, i když není mezi dvěma zobrazenými týdny.
+- Některé historické týdny nejsou ve zdroji: žádné nepodložené tvrzení o souladu celé historie.
+- Nedostupný internet: uložená data zůstávají a stav není falešně zelený.
+- Ruční otevření přehledu: polévky a oba obědy jsou viditelné jako doposud.
+- Automatické spuštění bez změn: žádné zbytečné vyskakovací okno.
+
+---
+
+## 19. CO SE NESMÍ MĚNIT BEZ DŮVODU
+
+- Vzhled a rozložení WEBu.
+- Stávající ovládání generátoru.
+- Plánovací pravidla.
+- Struktura společných dat bez kompatibilní migrace.
+- Připojení na správný GitHub repozitář.
+- Číslo jídelny 5948.
+- Funkčnost Pythonu offline.
+- Dosavadní uživatelská nastavení.
+- Ověřené historické texty Strava.cz.
+- Funkční části importu, exportu a synchronizace, pokud jejich změna není nezbytná.
+
+Nedělat plošné přepisování projektu. Změny mají být cílené, otestované a zdokumentované.
+
+---
+
+## 20. POŘADÍ REALIZACE
+
+**FÁZE 1 – AUDIT BEZ ZÁSAHU**
+
+- Projít aktuální WEB zdrojové soubory.
+- Zjistit skutečnou strukturu historie a katalogu.
+- Prověřit dostupná data Strava.cz.
+- Zjistit možnosti rozlišení návrhů a definitivních týdnů.
+- Vypsat konkrétní nesoulady.
+- Připravit zálohy.
+
+**FÁZE 2 – OPRAVA WEB LOGIKY**
+
+- Automatické převzetí změněných definitivních týdnů.
+- Bezpečné rozlišení pracovních návrhů.
+- Rekonstrukce katalogu z definitivní historie.
+- Ignorování organizačních označení.
+- Bezpečná synchronizace s GitHubem.
+
+**FÁZE 3 – OPRAVA WEB DAT**
+
+- Provést audit historie.
+- Sjednotit katalog podle ověřených dat.
+- Odstranit nepoužité katalogové položky.
+- Zachovat přesné historické texty.
+- Předložit kontrolní protokol.
+
+**FÁZE 4 – TESTY A PŘEDÁNÍ WEBU**
+
+- Provést testovací scénáře.
+- Ověřit funkčnost na kopii skutečných dat.
+- Aktualizovat nápovědu.
+- Předat opravený ZIP a seznam změn.
+
+**FÁZE 5 – PYTHON**
+
+- Vzít toto zadání jako závazný vzor.
+- Prověřit aktuální Python balíček.
+- Implementovat stejnou logiku autoritativní Strava.cz.
+- Sjednotit historii a katalog.
+- Zachovat offline provoz.
+- Otestovat a předat opravený Python balíček.
+
+---
+
+## 21. DEFINICE HOTOVÉHO ŘEŠENÍ
+
+Úprava je hotová pouze tehdy, když platí všechny následující podmínky:
+
+1. Paní může dál vytvářet návrhy jídelníčků.
+2. Zveřejněný úplný týden Strava.cz automaticky nahradí odpovídající návrh.
+3. Program nepotřebuje potvrzení běžného převzetí.
+4. Definitivní historie odpovídá ověřeným údajům Strava.cz.
+5. Definitivní katalog obsahuje všechna skutečná jídla historie.
+6. Katalog neobsahuje nepoužitá návrhová jídla.
+7. Katalog neobsahuje organizační značky typu PRÁZDNINY.
+8. Skutečné odlišné názvy jídel zůstávají zachovány.
+9. Opakovaná synchronizace nevytváří duplicity.
+10. Starší zařízení nevrací neplatná data.
+11. Rozpracovaná práce se neztrácí před zveřejněním definitivního týdne.
+12. Existuje použitelná záloha a možnost obnovy.
+13. WEB i Python dodržují stejný datový princip.
+14. Vše je doloženo skutečnými testy a kontrolním protokolem.
+15. Kontrola Strava.cz zobrazuje podrobně jen dva nejnovější dostupné týdny a pravdivý souhrn ostatních období.
+16. Omezení přehledu neomezuje automatickou synchronizaci ani Historii.
+
+---
+
+# KONEČNÉ ZÁVAZNÉ SHRNUTÍ
+
+**GENERÁTOR = NÁVRH.**
+
+**STRAVA.CZ = DEFINITIVNÍ PRAVDA.**
+
+**HISTORIE = DEFINITIVNÍ JÍDELNÍČKY PODLE STRAVA.CZ.**
+
+**KATALOG = POUZE SKUTEČNÁ JÍDLA DOLOŽENÁ DEFINITIVNÍ HISTORIÍ.**
+
+**NEPOUŽITÉ NÁVRHY = NEPATŘÍ DO DEFINITIVNÍHO KATALOGU.**
+
+**PRÁZDNINY = ZACHOVAT V HISTORII, NIKDY NEZAŘAZOVAT MEZI JÍDLA.**
+
+**SYNCHRONIZACE = AUTOMATICKÁ, BEZ ZBYTEČNÝCH DIALOGŮ, BEZ ZTRÁTY DAT.**
+
+**KONTROLA STRAVA.CZ = DVA NEJNOVĚJŠÍ TÝDNY PODROBNĚ + PRAVDIVÝ SOUHRN OSTATNÍCH, HISTORIE ZŮSTÁVÁ ÚPLNÁ.**
+
+Toto zadání platí nejprve pro WEB a následně pro Python. Před jakoukoli úpravou skutečných dat provést audit a zálohu.

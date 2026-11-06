@@ -1,0 +1,3945 @@
+{
+  "date": "2026-11-06",
+  "specification": "AUDIT(3).txt",
+  "inputArchive": "jidelnicky-main(7).zip",
+  "inputArchiveSha256": "111c0e9983735af419fd6eec2a0d144e0d56dccfb6be786299a99d5e0d7be5de",
+  "before": {
+    "weeks": 50,
+    "statuses": {
+      "definitive": 0,
+      "meals-verified": 0,
+      "no-published-menu": 0,
+      "unverified": 50
+    },
+    "servedDays": 216,
+    "verifiedMealDays": 0,
+    "uniqueMeals": {
+      "soup": 87,
+      "main": 168
+    },
+    "catalog": {
+      "soup": 93,
+      "main": 221
+    },
+    "legacyCatalog": {
+      "soup": 0,
+      "main": 0
+    }
+  },
+  "after": {
+    "weeks": 50,
+    "statuses": {
+      "definitive": 38,
+      "meals-verified": 7,
+      "no-published-menu": 5,
+      "unverified": 0
+    },
+    "servedDays": 216,
+    "verifiedMealDays": 216,
+    "uniqueMeals": {
+      "soup": 87,
+      "main": 168
+    },
+    "catalog": {
+      "soup": 87,
+      "main": 168
+    },
+    "legacyCatalog": {
+      "soup": 0,
+      "main": 0
+    }
+  },
+  "scope": "All 50 stored historical weeks inspected against retrieved source; full week proof is kept distinct from published-meal proof and source absence. No public production data writes.",
+  "sourceDocuments": [
+    {
+      "month": "202509",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202509",
+      "status": 200,
+      "chyba": false,
+      "sha256": "174ac3083c6bc9f36a17a7a70614c0f922e6d9db3f3419072190a665dcd708ac",
+      "retrievedAt": "2026-11-06T15:52:18.994444+00:00",
+      "bytes": 114712
+    },
+    {
+      "month": "202510",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+      "status": 200,
+      "chyba": false,
+      "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+      "retrievedAt": "2026-11-06T15:52:18.981686+00:00",
+      "bytes": 103717
+    },
+    {
+      "month": "202511",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202511",
+      "status": 200,
+      "chyba": false,
+      "sha256": "c75ba42284da90bb5b959fba610fa35dca5481d1d6b53c8e84333ac864a443ce",
+      "retrievedAt": "2026-11-06T15:52:18.989442+00:00",
+      "bytes": 95485
+    },
+    {
+      "month": "202512",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+      "status": 200,
+      "chyba": false,
+      "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+      "retrievedAt": "2026-11-06T15:52:24.457888+00:00",
+      "bytes": 75225
+    },
+    {
+      "month": "202601",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+      "status": 200,
+      "chyba": false,
+      "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+      "retrievedAt": "2026-11-06T15:52:24.465181+00:00",
+      "bytes": 140159
+    },
+    {
+      "month": "202602",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202602",
+      "status": 200,
+      "chyba": false,
+      "sha256": "8eb80d907b4f7de4294fa39b9268c61db508ab495ed138158ec6ff07cb40cf02",
+      "retrievedAt": "2026-11-06T15:52:24.415948+00:00",
+      "bytes": 98265
+    },
+    {
+      "month": "202603",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+      "status": 200,
+      "chyba": false,
+      "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+      "retrievedAt": "2026-11-06T15:52:30.084678+00:00",
+      "bytes": 143651
+    },
+    {
+      "month": "202604",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+      "status": 200,
+      "chyba": false,
+      "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+      "retrievedAt": "2026-11-06T15:52:29.939414+00:00",
+      "bytes": 124922
+    },
+    {
+      "month": "202605",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+      "status": 200,
+      "chyba": false,
+      "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+      "retrievedAt": "2026-11-06T15:52:29.896585+00:00",
+      "bytes": 122822
+    },
+    {
+      "month": "202606",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202606",
+      "status": 200,
+      "chyba": false,
+      "sha256": "e2ed8a58240bbe7965f621a8122f8074e3addff29237f2a530168b05a1b6ad71",
+      "retrievedAt": "2026-11-06T15:52:35.612157+00:00",
+      "bytes": 129575
+    },
+    {
+      "month": "202607",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+      "status": 200,
+      "chyba": false,
+      "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+      "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+      "bytes": 41738
+    },
+    {
+      "month": "202608",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202608",
+      "status": 200,
+      "chyba": false,
+      "sha256": "4abebddb32d6dbaa3e086bccb958f51841534c9197e2a65230393c55f8e0edfa",
+      "retrievedAt": "2026-11-06T15:52:35.384703+00:00",
+      "bytes": 25
+    },
+    {
+      "month": "202609",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+      "status": 200,
+      "chyba": false,
+      "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+      "retrievedAt": "2026-11-06T15:52:41.002020+00:00",
+      "bytes": 137425
+    },
+    {
+      "month": "202610",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+      "status": 200,
+      "chyba": false,
+      "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+      "retrievedAt": "2026-11-06T15:52:40.999598+00:00",
+      "bytes": 108553
+    },
+    {
+      "month": "202611",
+      "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202611",
+      "status": 200,
+      "chyba": false,
+      "sha256": "3dbb15c2da40e0c0c5ec6175bb9e45f25e7343f309169e2225752f84a76a18f8",
+      "retrievedAt": "2026-11-06T15:52:40.971481+00:00",
+      "bytes": 21566
+    }
+  ],
+  "weekStatus": [
+    {
+      "week": "2025-09-29",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202509",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202509",
+          "sha256": "174ac3083c6bc9f36a17a7a70614c0f922e6d9db3f3419072190a665dcd708ac",
+          "retrievedAt": "2026-11-06T15:52:18.994444+00:00"
+        },
+        {
+          "month": "202510",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+          "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+          "retrievedAt": "2026-11-06T15:52:18.981686+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2025-10-06",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202510",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+          "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+          "retrievedAt": "2026-11-06T15:52:18.981686+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2025-10-13",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202510",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+          "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+          "retrievedAt": "2026-11-06T15:52:18.981686+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2025-10-20",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202510",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+          "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+          "retrievedAt": "2026-11-06T15:52:18.981686+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2025-10-27",
+      "status": "no-published-menu",
+      "verifiedMealDays": 0,
+      "noMenuDates": [
+        "2025-10-27",
+        "2025-10-28",
+        "2025-10-29",
+        "2025-10-30",
+        "2025-10-31"
+      ],
+      "documents": [
+        {
+          "month": "202510",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+          "status": 200,
+          "chyba": false,
+          "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+          "retrievedAt": "2026-11-06T15:52:18.981686+00:00",
+          "bytes": 103717
+        }
+      ]
+    },
+    {
+      "week": "2025-11-03",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202511",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202511",
+          "sha256": "c75ba42284da90bb5b959fba610fa35dca5481d1d6b53c8e84333ac864a443ce",
+          "retrievedAt": "2026-11-06T15:52:18.989442+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2025-11-10",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202511",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202511",
+          "sha256": "c75ba42284da90bb5b959fba610fa35dca5481d1d6b53c8e84333ac864a443ce",
+          "retrievedAt": "2026-11-06T15:52:18.989442+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2025-11-17",
+      "status": "meals-verified",
+      "verifiedMealDays": 4,
+      "noMenuDates": [
+        "2025-11-17"
+      ],
+      "documents": [
+        {
+          "month": "202511",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202511",
+          "status": 200,
+          "chyba": false,
+          "sha256": "c75ba42284da90bb5b959fba610fa35dca5481d1d6b53c8e84333ac864a443ce",
+          "retrievedAt": "2026-11-06T15:52:18.989442+00:00",
+          "bytes": 95485
+        }
+      ]
+    },
+    {
+      "week": "2025-11-24",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202511",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202511",
+          "sha256": "c75ba42284da90bb5b959fba610fa35dca5481d1d6b53c8e84333ac864a443ce",
+          "retrievedAt": "2026-11-06T15:52:18.989442+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2025-12-01",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202512",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+          "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+          "retrievedAt": "2026-11-06T15:52:24.457888+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2025-12-08",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202512",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+          "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+          "retrievedAt": "2026-11-06T15:52:24.457888+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2025-12-15",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202512",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+          "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+          "retrievedAt": "2026-11-06T15:52:24.457888+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2025-12-29",
+      "status": "no-published-menu",
+      "verifiedMealDays": 0,
+      "noMenuDates": [
+        "2025-12-29",
+        "2025-12-30",
+        "2025-12-31",
+        "2026-01-01",
+        "2026-01-02"
+      ],
+      "documents": [
+        {
+          "month": "202512",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+          "status": 200,
+          "chyba": false,
+          "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+          "retrievedAt": "2026-11-06T15:52:24.457888+00:00",
+          "bytes": 75225
+        },
+        {
+          "month": "202601",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+          "status": 200,
+          "chyba": false,
+          "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+          "retrievedAt": "2026-11-06T15:52:24.465181+00:00",
+          "bytes": 140159
+        }
+      ]
+    },
+    {
+      "week": "2026-01-05",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202601",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+          "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+          "retrievedAt": "2026-11-06T15:52:24.465181+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-01-12",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202601",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+          "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+          "retrievedAt": "2026-11-06T15:52:24.465181+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-01-19",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202601",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+          "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+          "retrievedAt": "2026-11-06T15:52:24.465181+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-01-26",
+      "status": "definitive",
+      "verifiedMealDays": 4,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202601",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+          "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+          "retrievedAt": "2026-11-06T15:52:24.465181+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-02-02",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202602",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202602",
+          "sha256": "8eb80d907b4f7de4294fa39b9268c61db508ab495ed138158ec6ff07cb40cf02",
+          "retrievedAt": "2026-11-06T15:52:24.415948+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-02-09",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202602",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202602",
+          "sha256": "8eb80d907b4f7de4294fa39b9268c61db508ab495ed138158ec6ff07cb40cf02",
+          "retrievedAt": "2026-11-06T15:52:24.415948+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-02-16",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202602",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202602",
+          "sha256": "8eb80d907b4f7de4294fa39b9268c61db508ab495ed138158ec6ff07cb40cf02",
+          "retrievedAt": "2026-11-06T15:52:24.415948+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-03-02",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202603",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+          "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+          "retrievedAt": "2026-11-06T15:52:30.084678+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-03-09",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202603",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+          "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+          "retrievedAt": "2026-11-06T15:52:30.084678+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-03-16",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202603",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+          "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+          "retrievedAt": "2026-11-06T15:52:30.084678+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-03-23",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202603",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+          "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+          "retrievedAt": "2026-11-06T15:52:30.084678+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-03-30",
+      "status": "meals-verified",
+      "verifiedMealDays": 3,
+      "noMenuDates": [
+        "2026-04-02",
+        "2026-04-03"
+      ],
+      "documents": [
+        {
+          "month": "202603",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+          "status": 200,
+          "chyba": false,
+          "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+          "retrievedAt": "2026-11-06T15:52:30.084678+00:00",
+          "bytes": 143651
+        },
+        {
+          "month": "202604",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+          "status": 200,
+          "chyba": false,
+          "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+          "retrievedAt": "2026-11-06T15:52:29.939414+00:00",
+          "bytes": 124922
+        }
+      ]
+    },
+    {
+      "week": "2026-04-06",
+      "status": "meals-verified",
+      "verifiedMealDays": 4,
+      "noMenuDates": [
+        "2026-04-06"
+      ],
+      "documents": [
+        {
+          "month": "202604",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+          "status": 200,
+          "chyba": false,
+          "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+          "retrievedAt": "2026-11-06T15:52:29.939414+00:00",
+          "bytes": 124922
+        }
+      ]
+    },
+    {
+      "week": "2026-04-13",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202604",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+          "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+          "retrievedAt": "2026-11-06T15:52:29.939414+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-04-20",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202604",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+          "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+          "retrievedAt": "2026-11-06T15:52:29.939414+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-04-27",
+      "status": "meals-verified",
+      "verifiedMealDays": 4,
+      "noMenuDates": [
+        "2026-05-01"
+      ],
+      "documents": [
+        {
+          "month": "202604",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+          "status": 200,
+          "chyba": false,
+          "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+          "retrievedAt": "2026-11-06T15:52:29.939414+00:00",
+          "bytes": 124922
+        },
+        {
+          "month": "202605",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+          "status": 200,
+          "chyba": false,
+          "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+          "retrievedAt": "2026-11-06T15:52:29.896585+00:00",
+          "bytes": 122822
+        }
+      ]
+    },
+    {
+      "week": "2026-05-04",
+      "status": "meals-verified",
+      "verifiedMealDays": 4,
+      "noMenuDates": [
+        "2026-05-08"
+      ],
+      "documents": [
+        {
+          "month": "202605",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+          "status": 200,
+          "chyba": false,
+          "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+          "retrievedAt": "2026-11-06T15:52:29.896585+00:00",
+          "bytes": 122822
+        }
+      ]
+    },
+    {
+      "week": "2026-05-11",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202605",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+          "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+          "retrievedAt": "2026-11-06T15:52:29.896585+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-05-18",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202605",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+          "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+          "retrievedAt": "2026-11-06T15:52:29.896585+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-05-25",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202605",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+          "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+          "retrievedAt": "2026-11-06T15:52:29.896585+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-06-01",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202606",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202606",
+          "sha256": "e2ed8a58240bbe7965f621a8122f8074e3addff29237f2a530168b05a1b6ad71",
+          "retrievedAt": "2026-11-06T15:52:35.612157+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-06-08",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202606",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202606",
+          "sha256": "e2ed8a58240bbe7965f621a8122f8074e3addff29237f2a530168b05a1b6ad71",
+          "retrievedAt": "2026-11-06T15:52:35.612157+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-06-15",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202606",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202606",
+          "sha256": "e2ed8a58240bbe7965f621a8122f8074e3addff29237f2a530168b05a1b6ad71",
+          "retrievedAt": "2026-11-06T15:52:35.612157+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-06-22",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202606",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202606",
+          "sha256": "e2ed8a58240bbe7965f621a8122f8074e3addff29237f2a530168b05a1b6ad71",
+          "retrievedAt": "2026-11-06T15:52:35.612157+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-07-06",
+      "status": "no-published-menu",
+      "verifiedMealDays": 0,
+      "noMenuDates": [
+        "2026-07-06",
+        "2026-07-07",
+        "2026-07-08",
+        "2026-07-09",
+        "2026-07-10"
+      ],
+      "documents": [
+        {
+          "month": "202607",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+          "status": 200,
+          "chyba": false,
+          "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+          "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+          "bytes": 41738
+        }
+      ]
+    },
+    {
+      "week": "2026-07-20",
+      "status": "no-published-menu",
+      "verifiedMealDays": 0,
+      "noMenuDates": [
+        "2026-07-20",
+        "2026-07-21",
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24"
+      ],
+      "documents": [
+        {
+          "month": "202607",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+          "status": 200,
+          "chyba": false,
+          "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+          "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+          "bytes": 41738
+        }
+      ]
+    },
+    {
+      "week": "2026-08-31",
+      "status": "meals-verified",
+      "verifiedMealDays": 4,
+      "noMenuDates": [
+        "2026-08-31"
+      ],
+      "documents": [
+        {
+          "month": "202608",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202608",
+          "status": 200,
+          "chyba": false,
+          "sha256": "4abebddb32d6dbaa3e086bccb958f51841534c9197e2a65230393c55f8e0edfa",
+          "retrievedAt": "2026-11-06T15:52:35.384703+00:00",
+          "bytes": 25
+        },
+        {
+          "month": "202609",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+          "status": 200,
+          "chyba": false,
+          "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+          "retrievedAt": "2026-11-06T15:52:41.002020+00:00",
+          "bytes": 137425
+        }
+      ]
+    },
+    {
+      "week": "2026-09-07",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202609",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+          "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+          "retrievedAt": "2026-11-06T15:52:41.002020+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-09-14",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202609",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+          "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+          "retrievedAt": "2026-11-06T15:52:41.002020+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-09-21",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202609",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+          "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+          "retrievedAt": "2026-11-06T15:52:41.002020+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-09-28",
+      "status": "meals-verified",
+      "verifiedMealDays": 4,
+      "noMenuDates": [
+        "2026-09-28"
+      ],
+      "documents": [
+        {
+          "month": "202609",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+          "status": 200,
+          "chyba": false,
+          "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+          "retrievedAt": "2026-11-06T15:52:41.002020+00:00",
+          "bytes": 137425
+        },
+        {
+          "month": "202610",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+          "status": 200,
+          "chyba": false,
+          "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+          "retrievedAt": "2026-11-06T15:52:40.999598+00:00",
+          "bytes": 108553
+        }
+      ]
+    },
+    {
+      "week": "2026-10-05",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202610",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+          "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+          "retrievedAt": "2026-11-06T15:52:40.999598+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-10-12",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202610",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+          "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+          "retrievedAt": "2026-11-06T15:52:40.999598+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-10-19",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202610",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+          "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+          "retrievedAt": "2026-11-06T15:52:40.999598+00:00"
+        }
+      ]
+    },
+    {
+      "week": "2026-10-26",
+      "status": "no-published-menu",
+      "verifiedMealDays": 0,
+      "noMenuDates": [
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29",
+        "2026-10-30"
+      ],
+      "documents": [
+        {
+          "month": "202610",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+          "status": 200,
+          "chyba": false,
+          "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+          "retrievedAt": "2026-11-06T15:52:40.999598+00:00",
+          "bytes": 108553
+        }
+      ]
+    },
+    {
+      "week": "2026-11-02",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202611",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202611",
+          "sha256": "3dbb15c2da40e0c0c5ec6175bb9e45f25e7343f309169e2225752f84a76a18f8",
+          "retrievedAt": "2026-11-06T15:52:40.971481+00:00"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jerry00769/jidelnicky/main/strava_5948.json",
+          "sha256": "011502dbee2cf320d990fef651a940b16b1103c3315edba0e00d552543d76b49",
+          "note": "Previously archived complete public weeks; visible current Strava.cz meals 6–13 November checked separately."
+        }
+      ]
+    },
+    {
+      "week": "2026-11-09",
+      "status": "definitive",
+      "verifiedMealDays": 5,
+      "noMenuDates": [],
+      "documents": [
+        {
+          "month": "202611",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202611",
+          "sha256": "3dbb15c2da40e0c0c5ec6175bb9e45f25e7343f309169e2225752f84a76a18f8",
+          "retrievedAt": "2026-11-06T15:52:40.971481+00:00"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jerry00769/jidelnicky/main/strava_5948.json",
+          "sha256": "011502dbee2cf320d990fef651a940b16b1103c3315edba0e00d552543d76b49",
+          "note": "Previously archived complete public weeks; visible current Strava.cz meals 6–13 November checked separately."
+        }
+      ]
+    }
+  ],
+  "noMenuDates": [
+    {
+      "week": "2025-10-27",
+      "date": "2025-10-27",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202510",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+          "status": 200,
+          "chyba": false,
+          "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+          "retrievedAt": "2026-11-06T15:52:18.981686+00:00",
+          "bytes": 103717
+        }
+      ]
+    },
+    {
+      "week": "2025-10-27",
+      "date": "2025-10-28",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202510",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+          "status": 200,
+          "chyba": false,
+          "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+          "retrievedAt": "2026-11-06T15:52:18.981686+00:00",
+          "bytes": 103717
+        }
+      ]
+    },
+    {
+      "week": "2025-10-27",
+      "date": "2025-10-29",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202510",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+          "status": 200,
+          "chyba": false,
+          "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+          "retrievedAt": "2026-11-06T15:52:18.981686+00:00",
+          "bytes": 103717
+        }
+      ]
+    },
+    {
+      "week": "2025-10-27",
+      "date": "2025-10-30",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202510",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+          "status": 200,
+          "chyba": false,
+          "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+          "retrievedAt": "2026-11-06T15:52:18.981686+00:00",
+          "bytes": 103717
+        }
+      ]
+    },
+    {
+      "week": "2025-10-27",
+      "date": "2025-10-31",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202510",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+          "status": 200,
+          "chyba": false,
+          "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+          "retrievedAt": "2026-11-06T15:52:18.981686+00:00",
+          "bytes": 103717
+        }
+      ]
+    },
+    {
+      "week": "2025-11-17",
+      "date": "2025-11-17",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202511",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202511",
+          "status": 200,
+          "chyba": false,
+          "sha256": "c75ba42284da90bb5b959fba610fa35dca5481d1d6b53c8e84333ac864a443ce",
+          "retrievedAt": "2026-11-06T15:52:18.989442+00:00",
+          "bytes": 95485
+        }
+      ]
+    },
+    {
+      "week": "2025-12-29",
+      "date": "2025-12-29",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202512",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+          "status": 200,
+          "chyba": false,
+          "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+          "retrievedAt": "2026-11-06T15:52:24.457888+00:00",
+          "bytes": 75225
+        },
+        {
+          "month": "202601",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+          "status": 200,
+          "chyba": false,
+          "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+          "retrievedAt": "2026-11-06T15:52:24.465181+00:00",
+          "bytes": 140159
+        }
+      ]
+    },
+    {
+      "week": "2025-12-29",
+      "date": "2025-12-30",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202512",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+          "status": 200,
+          "chyba": false,
+          "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+          "retrievedAt": "2026-11-06T15:52:24.457888+00:00",
+          "bytes": 75225
+        },
+        {
+          "month": "202601",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+          "status": 200,
+          "chyba": false,
+          "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+          "retrievedAt": "2026-11-06T15:52:24.465181+00:00",
+          "bytes": 140159
+        }
+      ]
+    },
+    {
+      "week": "2025-12-29",
+      "date": "2025-12-31",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202512",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+          "status": 200,
+          "chyba": false,
+          "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+          "retrievedAt": "2026-11-06T15:52:24.457888+00:00",
+          "bytes": 75225
+        },
+        {
+          "month": "202601",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+          "status": 200,
+          "chyba": false,
+          "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+          "retrievedAt": "2026-11-06T15:52:24.465181+00:00",
+          "bytes": 140159
+        }
+      ]
+    },
+    {
+      "week": "2025-12-29",
+      "date": "2026-01-01",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202512",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+          "status": 200,
+          "chyba": false,
+          "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+          "retrievedAt": "2026-11-06T15:52:24.457888+00:00",
+          "bytes": 75225
+        },
+        {
+          "month": "202601",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+          "status": 200,
+          "chyba": false,
+          "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+          "retrievedAt": "2026-11-06T15:52:24.465181+00:00",
+          "bytes": 140159
+        }
+      ]
+    },
+    {
+      "week": "2025-12-29",
+      "date": "2026-01-02",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202512",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+          "status": 200,
+          "chyba": false,
+          "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+          "retrievedAt": "2026-11-06T15:52:24.457888+00:00",
+          "bytes": 75225
+        },
+        {
+          "month": "202601",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+          "status": 200,
+          "chyba": false,
+          "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+          "retrievedAt": "2026-11-06T15:52:24.465181+00:00",
+          "bytes": 140159
+        }
+      ]
+    },
+    {
+      "week": "2026-03-30",
+      "date": "2026-04-02",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202603",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+          "status": 200,
+          "chyba": false,
+          "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+          "retrievedAt": "2026-11-06T15:52:30.084678+00:00",
+          "bytes": 143651
+        },
+        {
+          "month": "202604",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+          "status": 200,
+          "chyba": false,
+          "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+          "retrievedAt": "2026-11-06T15:52:29.939414+00:00",
+          "bytes": 124922
+        }
+      ]
+    },
+    {
+      "week": "2026-03-30",
+      "date": "2026-04-03",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202603",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+          "status": 200,
+          "chyba": false,
+          "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+          "retrievedAt": "2026-11-06T15:52:30.084678+00:00",
+          "bytes": 143651
+        },
+        {
+          "month": "202604",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+          "status": 200,
+          "chyba": false,
+          "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+          "retrievedAt": "2026-11-06T15:52:29.939414+00:00",
+          "bytes": 124922
+        }
+      ]
+    },
+    {
+      "week": "2026-04-06",
+      "date": "2026-04-06",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202604",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+          "status": 200,
+          "chyba": false,
+          "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+          "retrievedAt": "2026-11-06T15:52:29.939414+00:00",
+          "bytes": 124922
+        }
+      ]
+    },
+    {
+      "week": "2026-04-27",
+      "date": "2026-05-01",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202604",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+          "status": 200,
+          "chyba": false,
+          "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+          "retrievedAt": "2026-11-06T15:52:29.939414+00:00",
+          "bytes": 124922
+        },
+        {
+          "month": "202605",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+          "status": 200,
+          "chyba": false,
+          "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+          "retrievedAt": "2026-11-06T15:52:29.896585+00:00",
+          "bytes": 122822
+        }
+      ]
+    },
+    {
+      "week": "2026-05-04",
+      "date": "2026-05-08",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202605",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+          "status": 200,
+          "chyba": false,
+          "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+          "retrievedAt": "2026-11-06T15:52:29.896585+00:00",
+          "bytes": 122822
+        }
+      ]
+    },
+    {
+      "week": "2026-07-06",
+      "date": "2026-07-06",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202607",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+          "status": 200,
+          "chyba": false,
+          "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+          "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+          "bytes": 41738
+        }
+      ]
+    },
+    {
+      "week": "2026-07-06",
+      "date": "2026-07-07",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202607",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+          "status": 200,
+          "chyba": false,
+          "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+          "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+          "bytes": 41738
+        }
+      ]
+    },
+    {
+      "week": "2026-07-06",
+      "date": "2026-07-08",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202607",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+          "status": 200,
+          "chyba": false,
+          "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+          "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+          "bytes": 41738
+        }
+      ]
+    },
+    {
+      "week": "2026-07-06",
+      "date": "2026-07-09",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202607",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+          "status": 200,
+          "chyba": false,
+          "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+          "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+          "bytes": 41738
+        }
+      ]
+    },
+    {
+      "week": "2026-07-06",
+      "date": "2026-07-10",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202607",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+          "status": 200,
+          "chyba": false,
+          "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+          "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+          "bytes": 41738
+        }
+      ]
+    },
+    {
+      "week": "2026-07-20",
+      "date": "2026-07-20",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202607",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+          "status": 200,
+          "chyba": false,
+          "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+          "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+          "bytes": 41738
+        }
+      ]
+    },
+    {
+      "week": "2026-07-20",
+      "date": "2026-07-21",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202607",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+          "status": 200,
+          "chyba": false,
+          "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+          "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+          "bytes": 41738
+        }
+      ]
+    },
+    {
+      "week": "2026-07-20",
+      "date": "2026-07-22",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202607",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+          "status": 200,
+          "chyba": false,
+          "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+          "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+          "bytes": 41738
+        }
+      ]
+    },
+    {
+      "week": "2026-07-20",
+      "date": "2026-07-23",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202607",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+          "status": 200,
+          "chyba": false,
+          "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+          "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+          "bytes": 41738
+        }
+      ]
+    },
+    {
+      "week": "2026-07-20",
+      "date": "2026-07-24",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202607",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+          "status": 200,
+          "chyba": false,
+          "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+          "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+          "bytes": 41738
+        }
+      ]
+    },
+    {
+      "week": "2026-08-31",
+      "date": "2026-08-31",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202608",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202608",
+          "status": 200,
+          "chyba": false,
+          "sha256": "4abebddb32d6dbaa3e086bccb958f51841534c9197e2a65230393c55f8e0edfa",
+          "retrievedAt": "2026-11-06T15:52:35.384703+00:00",
+          "bytes": 25
+        },
+        {
+          "month": "202609",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+          "status": 200,
+          "chyba": false,
+          "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+          "retrievedAt": "2026-11-06T15:52:41.002020+00:00",
+          "bytes": 137425
+        }
+      ]
+    },
+    {
+      "week": "2026-09-28",
+      "date": "2026-09-28",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202609",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+          "status": 200,
+          "chyba": false,
+          "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+          "retrievedAt": "2026-11-06T15:52:41.002020+00:00",
+          "bytes": 137425
+        },
+        {
+          "month": "202610",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+          "status": 200,
+          "chyba": false,
+          "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+          "retrievedAt": "2026-11-06T15:52:40.999598+00:00",
+          "bytes": 108553
+        }
+      ]
+    },
+    {
+      "week": "2026-10-26",
+      "date": "2026-10-26",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202610",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+          "status": 200,
+          "chyba": false,
+          "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+          "retrievedAt": "2026-11-06T15:52:40.999598+00:00",
+          "bytes": 108553
+        }
+      ]
+    },
+    {
+      "week": "2026-10-26",
+      "date": "2026-10-27",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202610",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+          "status": 200,
+          "chyba": false,
+          "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+          "retrievedAt": "2026-11-06T15:52:40.999598+00:00",
+          "bytes": 108553
+        }
+      ]
+    },
+    {
+      "week": "2026-10-26",
+      "date": "2026-10-28",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202610",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+          "status": 200,
+          "chyba": false,
+          "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+          "retrievedAt": "2026-11-06T15:52:40.999598+00:00",
+          "bytes": 108553
+        }
+      ]
+    },
+    {
+      "week": "2026-10-26",
+      "date": "2026-10-29",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202610",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+          "status": 200,
+          "chyba": false,
+          "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+          "retrievedAt": "2026-11-06T15:52:40.999598+00:00",
+          "bytes": 108553
+        }
+      ]
+    },
+    {
+      "week": "2026-10-26",
+      "date": "2026-10-30",
+      "meaning": "No menu in retrieved monthly source. Original closed flag retained, not independently verified.",
+      "documents": [
+        {
+          "month": "202610",
+          "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+          "status": 200,
+          "chyba": false,
+          "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+          "retrievedAt": "2026-11-06T15:52:40.999598+00:00",
+          "bytes": 108553
+        }
+      ]
+    }
+  ],
+  "changedDetails": [
+    {
+      "week": "2025-09-29",
+      "day": 1,
+      "field": "soup",
+      "before": "kuřecí s nudlemi",
+      "after": "Polévka kuřecí s nudlemi"
+    },
+    {
+      "week": "2025-09-29",
+      "day": 2,
+      "field": "soup",
+      "before": "koprová (kulajda)",
+      "after": "Polévka koprová (kulajda)"
+    },
+    {
+      "week": "2025-09-29",
+      "day": 2,
+      "field": "main",
+      "before": "Holandský řízek, Bramborová kaše",
+      "after": "Holandský řízek, Bramborová kaše - příloha, Okurka sterilovaná - příloha"
+    },
+    {
+      "week": "2025-09-29",
+      "day": 3,
+      "field": "soup",
+      "before": "zelenin. s drožďovými knedlíčky",
+      "after": "Polévka zelenin. s drožďovými knedlíčky"
+    },
+    {
+      "week": "2025-09-29",
+      "day": 4,
+      "field": "soup",
+      "before": "z rybího filé",
+      "after": "Polévka z rybího filé"
+    },
+    {
+      "week": "2025-09-29",
+      "day": 5,
+      "field": "soup",
+      "before": "zelenin. s fridátovými nudlemi",
+      "after": "Polévka zelenin. s fridátovými nudlemi"
+    },
+    {
+      "week": "2025-10-06",
+      "day": 1,
+      "field": "soup",
+      "before": "zeleninová s quinoou",
+      "after": "Polévka zeleninová s quinoou"
+    },
+    {
+      "week": "2025-10-06",
+      "day": 2,
+      "field": "soup",
+      "before": "gulášová",
+      "after": "Polévka gulášová"
+    },
+    {
+      "week": "2025-10-06",
+      "day": 3,
+      "field": "soup",
+      "before": "hovězí se strouháním",
+      "after": "Polévka hovězí se strouháním"
+    },
+    {
+      "week": "2025-10-06",
+      "day": 4,
+      "field": "soup",
+      "before": "květáková s červenou čočkou",
+      "after": "Polévka květáková s červenou čočkou"
+    },
+    {
+      "week": "2025-10-06",
+      "day": 5,
+      "field": "soup",
+      "before": "z kysaného zelí",
+      "after": "Polévka z kysaného zelí"
+    },
+    {
+      "week": "2025-10-13",
+      "day": 1,
+      "field": "soup",
+      "before": "špenátová s vajíčkem",
+      "after": "Polévka špenátová s vajíčkem"
+    },
+    {
+      "week": "2025-10-13",
+      "day": 2,
+      "field": "soup",
+      "before": "zelenin. s bulgurem",
+      "after": "Polévka zelenin. s bulgurem"
+    },
+    {
+      "week": "2025-10-13",
+      "day": 3,
+      "field": "soup",
+      "before": "celerová se smaženým hráškem",
+      "after": "Polévka celerová se smaženým hráškem"
+    },
+    {
+      "week": "2025-10-13",
+      "day": 4,
+      "field": "soup",
+      "before": "rychlá s vejcem",
+      "after": "Polévka rychlá s vejcem"
+    },
+    {
+      "week": "2025-10-13",
+      "day": 5,
+      "field": "soup",
+      "before": "selská ii.",
+      "after": "Polévka selská ii."
+    },
+    {
+      "week": "2025-10-20",
+      "day": 1,
+      "field": "soup",
+      "before": "rajčatová s těstovinou",
+      "after": "Polévka rajčatová s těstovinou"
+    },
+    {
+      "week": "2025-10-20",
+      "day": 2,
+      "field": "soup",
+      "before": "zeleninová s celozrnnými knedlíčky",
+      "after": "Polévka zeleninová s celozrnnými knedlíčky"
+    },
+    {
+      "week": "2025-10-20",
+      "day": 3,
+      "field": "soup",
+      "before": " zeleninová s ovesnými vločkami",
+      "after": "Polévka  zeleninová s ovesnými vločkami"
+    },
+    {
+      "week": "2025-10-20",
+      "day": 4,
+      "field": "soup",
+      "before": "zeleninová s tarhoňou",
+      "after": "Polévka zeleninová s tarhoňou"
+    },
+    {
+      "week": "2025-10-20",
+      "day": 5,
+      "field": "soup",
+      "before": "čočková",
+      "after": "Polévka čočková"
+    },
+    {
+      "week": "2025-11-03",
+      "day": 1,
+      "field": "soup",
+      "before": "brokolicová",
+      "after": "Polévka brokolicová"
+    },
+    {
+      "week": "2025-11-03",
+      "day": 2,
+      "field": "soup",
+      "before": "zeleninová s kuskusem",
+      "after": "Polévka zeleninová s kuskusem"
+    },
+    {
+      "week": "2025-11-03",
+      "day": 3,
+      "field": "soup",
+      "before": "bramborová",
+      "after": "Polévka bramborová"
+    },
+    {
+      "week": "2025-11-03",
+      "day": 4,
+      "field": "soup",
+      "before": "hrachová se smaženým hráškem",
+      "after": "Polévka hrachová se smaženým hráškem"
+    },
+    {
+      "week": "2025-11-03",
+      "day": 5,
+      "field": "soup",
+      "before": "hovězí s vaječnou jíškou",
+      "after": "Polévka hovězí s vaječnou jíškou"
+    },
+    {
+      "week": "2025-11-10",
+      "day": 1,
+      "field": "soup",
+      "before": "zeleninová zahuštěná červenou čočkou",
+      "after": "Polévka zeleninová zahuštěná červenou čočkou"
+    },
+    {
+      "week": "2025-11-10",
+      "day": 2,
+      "field": "soup",
+      "before": "hovězí s kapáním",
+      "after": "Polévka hovězí s kapáním"
+    },
+    {
+      "week": "2025-11-10",
+      "day": 3,
+      "field": "soup",
+      "before": "česneková s bramborem a vejcem",
+      "after": "Polévka česneková s bramborem a vejcem"
+    },
+    {
+      "week": "2025-11-10",
+      "day": 4,
+      "field": "soup",
+      "before": "květáková",
+      "after": "Polévka květáková"
+    },
+    {
+      "week": "2025-11-10",
+      "day": 5,
+      "field": "soup",
+      "before": "fazolová se zeleninou",
+      "after": "Polévka fazolová se zeleninou"
+    },
+    {
+      "week": "2025-11-17",
+      "day": 2,
+      "field": "soup",
+      "before": "hovězí s játrovými noky",
+      "after": "Polévka hovězí s játrovými noky"
+    },
+    {
+      "week": "2025-11-17",
+      "day": 3,
+      "field": "soup",
+      "before": "vývar s drobením",
+      "after": "Polévka vývar s drobením"
+    },
+    {
+      "week": "2025-11-17",
+      "day": 4,
+      "field": "soup",
+      "before": "rajčatová s těstovinami",
+      "after": "Polévka rajčatová s těstovinami"
+    },
+    {
+      "week": "2025-11-17",
+      "day": 5,
+      "field": "soup",
+      "before": "zelenin. s kroupami",
+      "after": "Polévka zelenin. s kroupami"
+    },
+    {
+      "week": "2025-11-24",
+      "day": 1,
+      "field": "soup",
+      "before": "gulášová",
+      "after": "Polévka gulášová"
+    },
+    {
+      "week": "2025-11-24",
+      "day": 2,
+      "field": "soup",
+      "before": "zelenin. s fridátovými nudlemi",
+      "after": "Polévka zelenin. s fridátovými nudlemi"
+    },
+    {
+      "week": "2025-11-24",
+      "day": 3,
+      "field": "soup",
+      "before": "zeleninová s drožďovými knedlíčky",
+      "after": "Polévka zeleninová s drožďovými knedlíčky"
+    },
+    {
+      "week": "2025-11-24",
+      "day": 4,
+      "field": "soup",
+      "before": "krupicová maďarská",
+      "after": "Polévka krupicová maďarská"
+    },
+    {
+      "week": "2025-11-24",
+      "day": 5,
+      "field": "soup",
+      "before": "čočková se zeleninou",
+      "after": "Polévka čočková se zeleninou"
+    },
+    {
+      "week": "2025-12-01",
+      "day": 1,
+      "field": "soup",
+      "before": "zelenin. s pohankou",
+      "after": "Polévka zelenin. s pohankou"
+    },
+    {
+      "week": "2025-12-01",
+      "day": 2,
+      "field": "soup",
+      "before": "zeleninová se sýrovým kapáním",
+      "after": "Polévka zeleninová se sýrovým kapáním"
+    },
+    {
+      "week": "2025-12-01",
+      "day": 3,
+      "field": "soup",
+      "before": "hrachová s hrachovými krutony",
+      "after": "Polévka hrachová s hrachovými krutony"
+    },
+    {
+      "week": "2025-12-01",
+      "day": 4,
+      "field": "soup",
+      "before": "z fazolových lusků",
+      "after": "Polévka z fazolových lusků"
+    },
+    {
+      "week": "2025-12-01",
+      "day": 5,
+      "field": "soup",
+      "before": "krupicová s vejcem",
+      "after": "Polévka krupicová s vejcem"
+    },
+    {
+      "week": "2025-12-08",
+      "day": 1,
+      "field": "soup",
+      "before": "špenátová",
+      "after": "Polévka špenátová"
+    },
+    {
+      "week": "2025-12-08",
+      "day": 2,
+      "field": "soup",
+      "before": "cizrnová krémová s rajčaty",
+      "after": "Polévka cizrnová krémová s rajčaty"
+    },
+    {
+      "week": "2025-12-08",
+      "day": 3,
+      "field": "soup",
+      "before": "kuřecí s nudlemi",
+      "after": "Polévka kuřecí s nudlemi"
+    },
+    {
+      "week": "2025-12-08",
+      "day": 4,
+      "field": "soup",
+      "before": "luštěninová",
+      "after": "Polévka luštěninová"
+    },
+    {
+      "week": "2025-12-08",
+      "day": 5,
+      "field": "soup",
+      "before": "kapustová s rýží",
+      "after": "Polévka kapustová s rýží"
+    },
+    {
+      "week": "2025-12-15",
+      "day": 1,
+      "field": "soup",
+      "before": "zel. vývar s dýňovým kapáním",
+      "after": "Polévka zel. vývar s dýňovým kapáním"
+    },
+    {
+      "week": "2025-12-15",
+      "day": 2,
+      "field": "soup",
+      "before": "z kysaného zelí",
+      "after": "Polévka z kysaného zelí"
+    },
+    {
+      "week": "2025-12-15",
+      "day": 3,
+      "field": "soup",
+      "before": "ovarová",
+      "after": "Polévka ovarová"
+    },
+    {
+      "week": "2025-12-15",
+      "day": 4,
+      "field": "soup",
+      "before": "z míchaných luštěnin",
+      "after": "Polévka z míchaných luštěnin"
+    },
+    {
+      "week": "2025-12-15",
+      "day": 5,
+      "field": "soup",
+      "before": "hovězí s těstovinami",
+      "after": "Polévka hovězí s těstovinami"
+    },
+    {
+      "week": "2026-01-05",
+      "day": 1,
+      "field": "soup",
+      "before": "rajčatová s těstovinou",
+      "after": "Polévka rajčatová s těstovinou"
+    },
+    {
+      "week": "2026-01-05",
+      "day": 2,
+      "field": "soup",
+      "before": "hovězí s vaječnou jíškou",
+      "after": "Polévka hovězí s vaječnou jíškou"
+    },
+    {
+      "week": "2026-01-05",
+      "day": 3,
+      "field": "soup",
+      "before": "květáková",
+      "after": "Polévka květáková"
+    },
+    {
+      "week": "2026-01-05",
+      "day": 4,
+      "field": "soup",
+      "before": "zelenin. s kroupami",
+      "after": "Polévka zelenin. s kroupami"
+    },
+    {
+      "week": "2026-01-05",
+      "day": 5,
+      "field": "soup",
+      "before": "koprová (kulajda)",
+      "after": "Polévka koprová (kulajda)"
+    },
+    {
+      "week": "2026-01-12",
+      "day": 1,
+      "field": "soup",
+      "before": "celerová se smaženým hráškem",
+      "after": "Polévka celerová se smaženým hráškem"
+    },
+    {
+      "week": "2026-01-12",
+      "day": 2,
+      "field": "soup",
+      "before": "zelenin. s fridátovými nudlemi",
+      "after": "Polévka zelenin. s fridátovými nudlemi"
+    },
+    {
+      "week": "2026-01-12",
+      "day": 3,
+      "field": "soup",
+      "before": "brokolicová",
+      "after": "Polévka brokolicová"
+    },
+    {
+      "week": "2026-01-12",
+      "day": 4,
+      "field": "soup",
+      "before": "fazolová",
+      "after": "Polévka fazolová"
+    },
+    {
+      "week": "2026-01-12",
+      "day": 5,
+      "field": "soup",
+      "before": "zeleninová s těstovinami",
+      "after": "Polévka zeleninová s těstovinami"
+    },
+    {
+      "week": "2026-01-19",
+      "day": 1,
+      "field": "soup",
+      "before": "bramborová",
+      "after": "Polévka bramborová"
+    },
+    {
+      "week": "2026-01-19",
+      "day": 2,
+      "field": "soup",
+      "before": "gulášová",
+      "after": "Polévka gulášová"
+    },
+    {
+      "week": "2026-01-19",
+      "day": 3,
+      "field": "soup",
+      "before": "špenátová s vajíčkem",
+      "after": "Polévka špenátová s vajíčkem"
+    },
+    {
+      "week": "2026-01-19",
+      "day": 4,
+      "field": "soup",
+      "before": "zeleninová s celozrnnými knedlíčky",
+      "after": "Polévka zeleninová s celozrnnými knedlíčky"
+    },
+    {
+      "week": "2026-01-19",
+      "day": 5,
+      "field": "soup",
+      "before": "hovězí s masem a vejcem",
+      "after": "Polévka hovězí s masem a vejcem"
+    },
+    {
+      "week": "2026-01-26",
+      "day": 1,
+      "field": "soup",
+      "before": "rajčatová s ovesnými vločkami",
+      "after": "Polévka rajčatová s ovesnými vločkami"
+    },
+    {
+      "week": "2026-01-26",
+      "day": 2,
+      "field": "soup",
+      "before": "zeleninová s těstovinovou rýží",
+      "after": "Polévka zeleninová s těstovinovou rýží"
+    },
+    {
+      "week": "2026-01-26",
+      "day": 3,
+      "field": "soup",
+      "before": "květáková s červenou čočkou",
+      "after": "Polévka květáková s červenou čočkou"
+    },
+    {
+      "week": "2026-01-26",
+      "day": 4,
+      "field": "soup",
+      "before": "zelenin. s bulgurem",
+      "after": "Polévka zelenin. s bulgurem"
+    },
+    {
+      "week": "2026-02-02",
+      "day": 1,
+      "field": "soup",
+      "before": "zelenin. s drožďovými knedlíčky",
+      "after": "Polévka zelenin. s drožďovými knedlíčky"
+    },
+    {
+      "week": "2026-02-02",
+      "day": 2,
+      "field": "soup",
+      "before": "česneková s osmaženou hostičkou",
+      "after": "Polévka česneková s osmaženou hostičkou"
+    },
+    {
+      "week": "2026-02-02",
+      "day": 3,
+      "field": "soup",
+      "before": "drůbková s nudlemi",
+      "after": "Polévka drůbková s nudlemi"
+    },
+    {
+      "week": "2026-02-02",
+      "day": 4,
+      "field": "soup",
+      "before": "z míchaných luštěnin",
+      "after": "Polévka z míchaných luštěnin"
+    },
+    {
+      "week": "2026-02-02",
+      "day": 5,
+      "field": "soup",
+      "before": "hovězí s kuskusem",
+      "after": "Polévka hovězí s kuskusem"
+    },
+    {
+      "week": "2026-02-09",
+      "day": 1,
+      "field": "soup",
+      "before": "dýňový krém",
+      "after": "Polévka dýňový krém"
+    },
+    {
+      "week": "2026-02-09",
+      "day": 2,
+      "field": "soup",
+      "before": "hráškový krém",
+      "after": "Polévka hráškový krém"
+    },
+    {
+      "week": "2026-02-09",
+      "day": 3,
+      "field": "soup",
+      "before": "zelenin. s pohankou",
+      "after": "Polévka zelenin. s pohankou"
+    },
+    {
+      "week": "2026-02-09",
+      "day": 4,
+      "field": "soup",
+      "before": "hovězí s těstovinou",
+      "after": "Polévka hovězí s těstovinou"
+    },
+    {
+      "week": "2026-02-09",
+      "day": 5,
+      "field": "soup",
+      "before": "pórková",
+      "after": "Polévka pórková"
+    },
+    {
+      "week": "2026-02-16",
+      "day": 1,
+      "field": "soup",
+      "before": "zeleninová s tarhoňou",
+      "after": "Polévka zeleninová s tarhoňou"
+    },
+    {
+      "week": "2026-02-16",
+      "day": 2,
+      "field": "soup",
+      "before": "zimní zeleninová s ovesnými vločkami",
+      "after": "Polévka zimní zeleninová s ovesnými vločkami"
+    },
+    {
+      "week": "2026-02-16",
+      "day": 3,
+      "field": "soup",
+      "before": "selská ii.",
+      "after": "Polévka selská ii."
+    },
+    {
+      "week": "2026-02-16",
+      "day": 4,
+      "field": "soup",
+      "before": "bramboračka nezahuštěná",
+      "after": "Polévka bramboračka nezahuštěná"
+    },
+    {
+      "week": "2026-02-16",
+      "day": 5,
+      "field": "soup",
+      "before": "krupicová s vejcem",
+      "after": "Polévka krupicová s vejcem"
+    },
+    {
+      "week": "2026-03-02",
+      "day": 1,
+      "field": "soup",
+      "before": "hovězí s játrovými noky",
+      "after": "Polévka hovězí s játrovými noky"
+    },
+    {
+      "week": "2026-03-02",
+      "day": 2,
+      "field": "soup",
+      "before": "frankfurtská s bramborem",
+      "after": "Polévka frankfurtská s bramborem"
+    },
+    {
+      "week": "2026-03-02",
+      "day": 3,
+      "field": "soup",
+      "before": "zeleninová s quinoou",
+      "after": "Polévka zeleninová s quinoou"
+    },
+    {
+      "week": "2026-03-02",
+      "day": 4,
+      "field": "soup",
+      "before": "hovězí s vaječnou jíškou",
+      "after": "Polévka hovězí s vaječnou jíškou"
+    },
+    {
+      "week": "2026-03-02",
+      "day": 5,
+      "field": "soup",
+      "before": "kmínová s vejcem",
+      "after": "Polévka kmínová s vejcem"
+    },
+    {
+      "week": "2026-03-09",
+      "day": 1,
+      "field": "soup",
+      "before": "zelenin. s bulgurem",
+      "after": "Polévka zelenin. s bulgurem"
+    },
+    {
+      "week": "2026-03-09",
+      "day": 2,
+      "field": "soup",
+      "before": "květáková",
+      "after": "Polévka květáková"
+    },
+    {
+      "week": "2026-03-09",
+      "day": 3,
+      "field": "soup",
+      "before": "hovězí s česnekovými krutony",
+      "after": "Polévka hovězí s česnekovými krutony"
+    },
+    {
+      "week": "2026-03-09",
+      "day": 4,
+      "field": "soup",
+      "before": "čočková",
+      "after": "Polévka čočková"
+    },
+    {
+      "week": "2026-03-09",
+      "day": 5,
+      "field": "soup",
+      "before": "zelenin. s ovesnými vločkami",
+      "after": "Polévka zelenin. s ovesnými vločkami"
+    },
+    {
+      "week": "2026-03-16",
+      "day": 1,
+      "field": "soup",
+      "before": "gulášová",
+      "after": "Polévka gulášová"
+    },
+    {
+      "week": "2026-03-16",
+      "day": 2,
+      "field": "soup",
+      "before": "hovězí s jáhly",
+      "after": "Polévka hovězí s jáhly"
+    },
+    {
+      "week": "2026-03-16",
+      "day": 3,
+      "field": "soup",
+      "before": "brokolicová",
+      "after": "Polévka brokolicová"
+    },
+    {
+      "week": "2026-03-16",
+      "day": 4,
+      "field": "soup",
+      "before": "zeleninová se sýrovým kapáním",
+      "after": "Polévka zeleninová se sýrovým kapáním"
+    },
+    {
+      "week": "2026-03-16",
+      "day": 5,
+      "field": "soup",
+      "before": "cizrnová",
+      "after": "Polévka cizrnová"
+    },
+    {
+      "week": "2026-03-23",
+      "day": 1,
+      "field": "soup",
+      "before": "ovarová",
+      "after": "Polévka ovarová"
+    },
+    {
+      "week": "2026-03-23",
+      "day": 2,
+      "field": "soup",
+      "before": "drožďová",
+      "after": "Polévka drožďová"
+    },
+    {
+      "week": "2026-03-23",
+      "day": 3,
+      "field": "soup",
+      "before": "zelenin. s fridátovými nudlemi",
+      "after": "Polévka zelenin. s fridátovými nudlemi"
+    },
+    {
+      "week": "2026-03-23",
+      "day": 4,
+      "field": "soup",
+      "before": "hrachová",
+      "after": "Polévka hrachová"
+    },
+    {
+      "week": "2026-03-23",
+      "day": 5,
+      "field": "soup",
+      "before": "hovězí se strouháním",
+      "after": "Polévka hovězí se strouháním"
+    },
+    {
+      "week": "2026-03-30",
+      "day": 1,
+      "field": "soup",
+      "before": "zelenin. s rýží",
+      "after": "Polévka zelenin. s rýží"
+    },
+    {
+      "week": "2026-03-30",
+      "day": 2,
+      "field": "soup",
+      "before": "rajčatová s těstovinou",
+      "after": "Polévka rajčatová s těstovinou"
+    },
+    {
+      "week": "2026-03-30",
+      "day": 3,
+      "field": "soup",
+      "before": "špenátová s vajíčkem",
+      "after": "Polévka špenátová s vajíčkem"
+    },
+    {
+      "week": "2026-04-06",
+      "day": 2,
+      "field": "soup",
+      "before": "zeleninová s těstovinami",
+      "after": "Polévka zeleninová s těstovinami"
+    },
+    {
+      "week": "2026-04-06",
+      "day": 3,
+      "field": "soup",
+      "before": "zelenin. s pohankou",
+      "after": "Polévka zelenin. s pohankou"
+    },
+    {
+      "week": "2026-04-06",
+      "day": 4,
+      "field": "soup",
+      "before": "květáková",
+      "after": "Polévka květáková"
+    },
+    {
+      "week": "2026-04-06",
+      "day": 5,
+      "field": "soup",
+      "before": "hovězí s játrovými knedlíčky",
+      "after": "Polévka hovězí s játrovými knedlíčky"
+    },
+    {
+      "week": "2026-04-13",
+      "day": 1,
+      "field": "soup",
+      "before": "bramborová",
+      "after": "Polévka bramborová"
+    },
+    {
+      "week": "2026-04-13",
+      "day": 2,
+      "field": "soup",
+      "before": "frankfurtská s bramborem",
+      "after": "Polévka frankfurtská s bramborem"
+    },
+    {
+      "week": "2026-04-13",
+      "day": 3,
+      "field": "soup",
+      "before": "fazolová se zeleninou",
+      "after": "Polévka fazolová se zeleninou"
+    },
+    {
+      "week": "2026-04-13",
+      "day": 4,
+      "field": "soup",
+      "before": "hovězí s vaječnou jíškou",
+      "after": "Polévka hovězí s vaječnou jíškou"
+    },
+    {
+      "week": "2026-04-13",
+      "day": 5,
+      "field": "soup",
+      "before": "zeleninová s hrachovými nudlemi",
+      "after": "Polévka zeleninová s hrachovými nudlemi"
+    },
+    {
+      "week": "2026-04-20",
+      "day": 1,
+      "field": "soup",
+      "before": "rychlá s vejcem",
+      "after": "Polévka rychlá s vejcem"
+    },
+    {
+      "week": "2026-04-20",
+      "day": 2,
+      "field": "soup",
+      "before": "koprová (kulajda)",
+      "after": "Polévka koprová (kulajda)"
+    },
+    {
+      "week": "2026-04-20",
+      "day": 3,
+      "field": "soup",
+      "before": "čočková",
+      "after": "Polévka čočková"
+    },
+    {
+      "week": "2026-04-20",
+      "day": 4,
+      "field": "soup",
+      "before": "z batátových brambor",
+      "after": "Polévka z batátových brambor"
+    },
+    {
+      "week": "2026-04-20",
+      "day": 5,
+      "field": "soup",
+      "before": "zeleninová s kuskusem",
+      "after": "Polévka zeleninová s kuskusem"
+    },
+    {
+      "week": "2026-04-27",
+      "day": 1,
+      "field": "soup",
+      "before": "z kysaného zelí s klobásou",
+      "after": "Polévka z kysaného zelí s klobásou"
+    },
+    {
+      "week": "2026-04-27",
+      "day": 2,
+      "field": "soup",
+      "before": "zeleninová zahuštěná červenou čočkou",
+      "after": "Polévka zeleninová zahuštěná červenou čočkou"
+    },
+    {
+      "week": "2026-04-27",
+      "day": 3,
+      "field": "soup",
+      "before": "hráškový krém",
+      "after": "Polévka hráškový krém"
+    },
+    {
+      "week": "2026-04-27",
+      "day": 4,
+      "field": "soup",
+      "before": "krupicová s vejcem",
+      "after": "Polévka krupicová s vejcem"
+    },
+    {
+      "week": "2026-05-04",
+      "day": 1,
+      "field": "soup",
+      "before": "kuřecí s nudlemi",
+      "after": "Polévka kuřecí s nudlemi"
+    },
+    {
+      "week": "2026-05-04",
+      "day": 2,
+      "field": "soup",
+      "before": "zelenin. s ovesnými vločkami",
+      "after": "Polévka zelenin. s ovesnými vločkami"
+    },
+    {
+      "week": "2026-05-04",
+      "day": 3,
+      "field": "soup",
+      "before": "z míchaných luštěnin",
+      "after": "Polévka z míchaných luštěnin"
+    },
+    {
+      "week": "2026-05-04",
+      "day": 4,
+      "field": "soup",
+      "before": "česneková s osmaženou hostičkou",
+      "after": "Polévka česneková s osmaženou hostičkou"
+    },
+    {
+      "week": "2026-05-11",
+      "day": 1,
+      "field": "soup",
+      "before": "z batátových brambor",
+      "after": "Polévka z batátových brambor"
+    },
+    {
+      "week": "2026-05-11",
+      "day": 2,
+      "field": "soup",
+      "before": "zelenin. s drožďovými knedlíčky",
+      "after": "Polévka zelenin. s drožďovými knedlíčky"
+    },
+    {
+      "week": "2026-05-11",
+      "day": 3,
+      "field": "soup",
+      "before": "květáková s červenou čočkou",
+      "after": "Polévka květáková s červenou čočkou"
+    },
+    {
+      "week": "2026-05-11",
+      "day": 4,
+      "field": "soup",
+      "before": "hovězí s kapáním",
+      "after": "Polévka hovězí s kapáním"
+    },
+    {
+      "week": "2026-05-11",
+      "day": 5,
+      "field": "soup",
+      "before": "brokolicová",
+      "after": "Polévka brokolicová"
+    },
+    {
+      "week": "2026-05-18",
+      "day": 1,
+      "field": "soup",
+      "before": "zeleninová s těstovinovou rýží",
+      "after": "Polévka zeleninová s těstovinovou rýží"
+    },
+    {
+      "week": "2026-05-18",
+      "day": 2,
+      "field": "soup",
+      "before": "celerová se smaženým hráškem",
+      "after": "Polévka celerová se smaženým hráškem"
+    },
+    {
+      "week": "2026-05-18",
+      "day": 3,
+      "field": "soup",
+      "before": "hrachová",
+      "after": "Polévka hrachová"
+    },
+    {
+      "week": "2026-05-18",
+      "day": 4,
+      "field": "soup",
+      "before": "hovězí se strouháním",
+      "after": "Polévka hovězí se strouháním"
+    },
+    {
+      "week": "2026-05-18",
+      "day": 5,
+      "field": "soup",
+      "before": "špenátová",
+      "after": "Polévka špenátová"
+    },
+    {
+      "week": "2026-05-25",
+      "day": 1,
+      "field": "soup",
+      "before": "rajčatová s ovesnými vločkami",
+      "after": "Polévka rajčatová s ovesnými vločkami"
+    },
+    {
+      "week": "2026-05-25",
+      "day": 2,
+      "field": "soup",
+      "before": "zeleninová s tarhoňou",
+      "after": "Polévka zeleninová s tarhoňou"
+    },
+    {
+      "week": "2026-05-25",
+      "day": 3,
+      "field": "soup",
+      "before": "gulášová",
+      "after": "Polévka gulášová"
+    },
+    {
+      "week": "2026-05-25",
+      "day": 4,
+      "field": "soup",
+      "before": "bramborová",
+      "after": "Polévka bramborová"
+    },
+    {
+      "week": "2026-05-25",
+      "day": 5,
+      "field": "soup",
+      "before": "zelenin. s rýží",
+      "after": "Polévka zelenin. s rýží"
+    },
+    {
+      "week": "2026-06-01",
+      "day": 1,
+      "field": "soup",
+      "before": "kuřecí s nudlemi",
+      "after": "Polévka kuřecí s nudlemi"
+    },
+    {
+      "week": "2026-06-01",
+      "day": 2,
+      "field": "soup",
+      "before": "zeleninová se sýrovým kapáním",
+      "after": "Polévka zeleninová se sýrovým kapáním"
+    },
+    {
+      "week": "2026-06-01",
+      "day": 3,
+      "field": "soup",
+      "before": "cibulová se sýrem",
+      "after": "Polévka cibulová se sýrem"
+    },
+    {
+      "week": "2026-06-01",
+      "day": 4,
+      "field": "soup",
+      "before": "čočková se zeleninou",
+      "after": "Polévka čočková se zeleninou"
+    },
+    {
+      "week": "2026-06-01",
+      "day": 5,
+      "field": "soup",
+      "before": "pórková s vejci",
+      "after": "Polévka pórková s vejci"
+    },
+    {
+      "week": "2026-06-08",
+      "day": 1,
+      "field": "soup",
+      "before": "krupicová s vejcem",
+      "after": "Polévka krupicová s vejcem"
+    },
+    {
+      "week": "2026-06-08",
+      "day": 2,
+      "field": "soup",
+      "before": "zeleninová s celozrnnými knedlíčky",
+      "after": "Polévka zeleninová s celozrnnými knedlíčky"
+    },
+    {
+      "week": "2026-06-08",
+      "day": 3,
+      "field": "soup",
+      "before": "ze zahradních jahod",
+      "after": "Polévka ze zahradních jahod"
+    },
+    {
+      "week": "2026-06-08",
+      "day": 4,
+      "field": "soup",
+      "before": "mrkvová",
+      "after": "Polévka mrkvová"
+    },
+    {
+      "week": "2026-06-08",
+      "day": 5,
+      "field": "soup",
+      "before": "hovězí s těstovinami",
+      "after": "Polévka hovězí s těstovinami"
+    },
+    {
+      "week": "2026-06-15",
+      "day": 1,
+      "field": "soup",
+      "before": "bramboračka nezahuštěná",
+      "after": "Polévka bramboračka nezahuštěná"
+    },
+    {
+      "week": "2026-06-15",
+      "day": 2,
+      "field": "soup",
+      "before": "ovarová",
+      "after": "Polévka ovarová"
+    },
+    {
+      "week": "2026-06-15",
+      "day": 3,
+      "field": "soup",
+      "before": "zeleninová s quinoou",
+      "after": "Polévka zeleninová s quinoou"
+    },
+    {
+      "week": "2026-06-15",
+      "day": 4,
+      "field": "soup",
+      "before": "cizrnová krémová s rajčaty",
+      "after": "Polévka cizrnová krémová s rajčaty"
+    },
+    {
+      "week": "2026-06-15",
+      "day": 5,
+      "field": "soup",
+      "before": "zeleninová zahuštěná červenou čočkou",
+      "after": "Polévka zeleninová zahuštěná červenou čočkou"
+    },
+    {
+      "week": "2026-06-22",
+      "day": 1,
+      "field": "soup",
+      "before": "drožďová",
+      "after": "Polévka drožďová"
+    },
+    {
+      "week": "2026-06-22",
+      "day": 2,
+      "field": "soup",
+      "before": "hovězí s kapustou a rýží",
+      "after": "Polévka hovězí s kapustou a rýží"
+    },
+    {
+      "week": "2026-06-22",
+      "day": 3,
+      "field": "soup",
+      "before": "fazolová se zeleninou",
+      "after": "Polévka fazolová se zeleninou"
+    },
+    {
+      "week": "2026-06-22",
+      "day": 4,
+      "field": "soup",
+      "before": "špenátová s vajíčkem",
+      "after": "Polévka špenátová s vajíčkem"
+    },
+    {
+      "week": "2026-06-22",
+      "day": 5,
+      "field": "soup",
+      "before": "zeleninová s těstovinami",
+      "after": "Polévka zeleninová s těstovinami"
+    },
+    {
+      "week": "2026-08-31",
+      "day": 2,
+      "field": "soup",
+      "before": "květáková",
+      "after": "Polévka květáková"
+    },
+    {
+      "week": "2026-08-31",
+      "day": 3,
+      "field": "soup",
+      "before": "celerová se smaženým hráškem",
+      "after": "Polévka celerová se smaženým hráškem"
+    },
+    {
+      "week": "2026-08-31",
+      "day": 4,
+      "field": "soup",
+      "before": "zeleninová s těstovinami",
+      "after": "Polévka zeleninová s těstovinami"
+    },
+    {
+      "week": "2026-08-31",
+      "day": 5,
+      "field": "soup",
+      "before": "špenátová s vajíčkem",
+      "after": "Polévka špenátová s vajíčkem"
+    },
+    {
+      "week": "2026-09-07",
+      "day": 1,
+      "field": "soup",
+      "before": "zeleninová se sýrovým kapáním",
+      "after": "Polévka zeleninová se sýrovým kapáním"
+    },
+    {
+      "week": "2026-09-07",
+      "day": 2,
+      "field": "soup",
+      "before": "brokolicová",
+      "after": "Polévka brokolicová"
+    },
+    {
+      "week": "2026-09-07",
+      "day": 3,
+      "field": "soup",
+      "before": "bramborová",
+      "after": "Polévka bramborová"
+    },
+    {
+      "week": "2026-09-07",
+      "day": 4,
+      "field": "soup",
+      "before": "kapustová s rýží",
+      "after": "Polévka kapustová s rýží"
+    },
+    {
+      "week": "2026-09-07",
+      "day": 5,
+      "field": "soup",
+      "before": "zelenin. s pohankou",
+      "after": "Polévka zelenin. s pohankou"
+    },
+    {
+      "week": "2026-09-14",
+      "day": 1,
+      "field": "soup",
+      "before": "rajčatová s těstovinou",
+      "after": "Polévka rajčatová s těstovinou"
+    },
+    {
+      "week": "2026-09-14",
+      "day": 2,
+      "field": "soup",
+      "before": "zeleninová zahuštěná červenou čočkou",
+      "after": "Polévka zeleninová zahuštěná červenou čočkou"
+    },
+    {
+      "week": "2026-09-14",
+      "day": 3,
+      "field": "soup",
+      "before": "krupicová s vejcem",
+      "after": "Polévka krupicová s vejcem"
+    },
+    {
+      "week": "2026-09-14",
+      "day": 4,
+      "field": "soup",
+      "before": "gulášová",
+      "after": "Polévka gulášová"
+    },
+    {
+      "week": "2026-09-14",
+      "day": 5,
+      "field": "soup",
+      "before": "zeleninová s kuskusem",
+      "after": "Polévka zeleninová s kuskusem"
+    },
+    {
+      "week": "2026-09-21",
+      "day": 1,
+      "field": "soup",
+      "before": "hovězí s vaječnou jíškou",
+      "after": "Polévka hovězí s vaječnou jíškou"
+    },
+    {
+      "week": "2026-09-21",
+      "day": 2,
+      "field": "soup",
+      "before": "dýňový krém",
+      "after": "Polévka dýňový krém"
+    },
+    {
+      "week": "2026-09-21",
+      "day": 3,
+      "field": "soup",
+      "before": "hrachová",
+      "after": "Polévka hrachová"
+    },
+    {
+      "week": "2026-09-21",
+      "day": 4,
+      "field": "soup",
+      "before": "z rybího filé",
+      "after": "Polévka z rybího filé"
+    },
+    {
+      "week": "2026-09-21",
+      "day": 5,
+      "field": "soup",
+      "before": "pórková s vejci",
+      "after": "Polévka pórková s vejci"
+    },
+    {
+      "week": "2026-09-28",
+      "day": 2,
+      "field": "soup",
+      "before": "zeleninová s tarhoňou",
+      "after": "Polévka zeleninová s tarhoňou"
+    },
+    {
+      "week": "2026-09-28",
+      "day": 3,
+      "field": "soup",
+      "before": "hovězí s játrovými noky",
+      "after": "Polévka hovězí s játrovými noky"
+    },
+    {
+      "week": "2026-09-28",
+      "day": 4,
+      "field": "soup",
+      "before": "hovězí se strouháním",
+      "after": "Polévka hovězí se strouháním"
+    },
+    {
+      "week": "2026-09-28",
+      "day": 5,
+      "field": "soup",
+      "before": "mrkvová",
+      "after": "Polévka mrkvová"
+    },
+    {
+      "week": "2026-10-05",
+      "day": 1,
+      "field": "soup",
+      "before": "kuřecí s nudlemi",
+      "after": "Polévka kuřecí s nudlemi"
+    },
+    {
+      "week": "2026-10-05",
+      "day": 2,
+      "field": "soup",
+      "before": "zelenin. s drožďovými knedlíčky",
+      "after": "Polévka zelenin. s drožďovými knedlíčky"
+    },
+    {
+      "week": "2026-10-05",
+      "day": 2,
+      "field": "main",
+      "before": "Těstoviny po Lotrinsku",
+      "after": "Těstoviny  po Lotrinsku"
+    },
+    {
+      "week": "2026-10-05",
+      "day": 3,
+      "field": "soup",
+      "before": "z míchaných luštěnin",
+      "after": "Polévka z míchaných luštěnin"
+    },
+    {
+      "week": "2026-10-05",
+      "day": 4,
+      "field": "soup",
+      "before": "zelenin. s bulgurem",
+      "after": "Polévka zelenin. s bulgurem"
+    },
+    {
+      "week": "2026-10-05",
+      "day": 5,
+      "field": "soup",
+      "before": " zeleninová s ovesnými vločkami",
+      "after": "Polévka  zeleninová s ovesnými vločkami"
+    },
+    {
+      "week": "2026-10-12",
+      "day": 1,
+      "field": "soup",
+      "before": "čočková",
+      "after": "Polévka čočková"
+    },
+    {
+      "week": "2026-10-12",
+      "day": 2,
+      "field": "soup",
+      "before": "frankfurtská s bramborem",
+      "after": "Polévka frankfurtská s bramborem"
+    },
+    {
+      "week": "2026-10-12",
+      "day": 3,
+      "field": "soup",
+      "before": "hovězí s jáhly",
+      "after": "Polévka hovězí s jáhly"
+    },
+    {
+      "week": "2026-10-12",
+      "day": 4,
+      "field": "soup",
+      "before": "fazolová",
+      "after": "Polévka fazolová"
+    },
+    {
+      "week": "2026-10-12",
+      "day": 5,
+      "field": "soup",
+      "before": "zelenin. s fridátovými nudlemi",
+      "after": "Polévka zelenin. s fridátovými nudlemi"
+    },
+    {
+      "week": "2026-10-19",
+      "day": 1,
+      "field": "soup",
+      "before": "hovězí s masem a vejcem",
+      "after": "Polévka hovězí s masem a vejcem"
+    },
+    {
+      "week": "2026-10-19",
+      "day": 2,
+      "field": "soup",
+      "before": "bramboračka nezahuštěná",
+      "after": "Polévka bramboračka nezahuštěná"
+    },
+    {
+      "week": "2026-10-19",
+      "day": 3,
+      "field": "soup",
+      "before": "celerová se smaženým hráškem",
+      "after": "Polévka celerová se smaženým hráškem"
+    },
+    {
+      "week": "2026-10-19",
+      "day": 4,
+      "field": "soup",
+      "before": "z kysaného zelí",
+      "after": "Polévka z kysaného zelí"
+    },
+    {
+      "week": "2026-10-19",
+      "day": 5,
+      "field": "soup",
+      "before": "zeleninová s kuskusem",
+      "after": "Polévka zeleninová s kuskusem"
+    },
+    {
+      "week": "2026-11-02",
+      "day": 1,
+      "field": "soup",
+      "before": "rajčatová s tarhoňou",
+      "after": "Polévka rajčatová s tarhoňou"
+    },
+    {
+      "week": "2026-11-02",
+      "day": 2,
+      "field": "soup",
+      "before": "zeleninová s celozrnnými nudlemi",
+      "after": "Polévka zeleninová s celozrnnými nudlemi"
+    },
+    {
+      "week": "2026-11-02",
+      "day": 3,
+      "field": "soup",
+      "before": "zelenin. s fridátovými nudlemi",
+      "after": "Polévka zelenin. s fridátovými nudlemi"
+    },
+    {
+      "week": "2026-11-02",
+      "day": 4,
+      "field": "soup",
+      "before": "ovarová",
+      "after": "Polévka ovarová"
+    },
+    {
+      "week": "2026-11-02",
+      "day": 5,
+      "field": "soup",
+      "before": "hovězí se sýrovým kapáním",
+      "after": "Polévka hovězí se sýrovým kapáním"
+    },
+    {
+      "week": "2026-11-09",
+      "day": 1,
+      "field": "soup",
+      "before": "zeleninová s quinoou",
+      "after": "Polévka zeleninová s quinoou"
+    },
+    {
+      "week": "2026-11-09",
+      "day": 2,
+      "field": "soup",
+      "before": "krupicová s vejcem",
+      "after": "Polévka krupicová s vejcem"
+    },
+    {
+      "week": "2026-11-09",
+      "day": 4,
+      "field": "soup",
+      "before": "květáková s červenou čočkou",
+      "after": "Polévka květáková s červenou čočkou"
+    }
+  ],
+  "catalogChanges": {
+    "full": {
+      "verified": 38,
+      "unverified": 12,
+      "pruned": false,
+      "added": {
+        "soup": [
+          "Polévka kuřecí s nudlemi",
+          "Polévka koprová (kulajda)",
+          "Polévka zelenin. s drožďovými knedlíčky",
+          "Polévka z rybího filé",
+          "Polévka zelenin. s fridátovými nudlemi",
+          "Polévka zeleninová s quinoou",
+          "Polévka gulášová",
+          "Polévka hovězí se strouháním",
+          "Polévka květáková s červenou čočkou",
+          "Polévka z kysaného zelí",
+          "Polévka špenátová s vajíčkem",
+          "Polévka zelenin. s bulgurem",
+          "Polévka celerová se smaženým hráškem",
+          "Polévka rychlá s vejcem",
+          "Polévka selská ii.",
+          "Polévka rajčatová s těstovinou",
+          "Polévka zeleninová s celozrnnými knedlíčky",
+          "Polévka  zeleninová s ovesnými vločkami",
+          "Polévka zeleninová s tarhoňou",
+          "Polévka čočková",
+          "Polévka brokolicová",
+          "Polévka zeleninová s kuskusem",
+          "Polévka bramborová",
+          "Polévka hrachová se smaženým hráškem",
+          "Polévka hovězí s vaječnou jíškou",
+          "Polévka zeleninová zahuštěná červenou čočkou",
+          "Polévka hovězí s kapáním",
+          "Polévka česneková s bramborem a vejcem",
+          "Polévka květáková",
+          "Polévka fazolová se zeleninou",
+          "Polévka zeleninová s drožďovými knedlíčky",
+          "Polévka krupicová maďarská",
+          "Polévka čočková se zeleninou",
+          "Polévka zelenin. s pohankou",
+          "Polévka zeleninová se sýrovým kapáním",
+          "Polévka hrachová s hrachovými krutony",
+          "Polévka z fazolových lusků",
+          "Polévka krupicová s vejcem",
+          "Polévka špenátová",
+          "Polévka cizrnová krémová s rajčaty",
+          "Polévka luštěninová",
+          "Polévka kapustová s rýží",
+          "Polévka zel. vývar s dýňovým kapáním",
+          "Polévka ovarová",
+          "Polévka z míchaných luštěnin",
+          "Polévka hovězí s těstovinami",
+          "Polévka zelenin. s kroupami",
+          "Polévka fazolová",
+          "Polévka zeleninová s těstovinami",
+          "Polévka hovězí s masem a vejcem",
+          "Polévka rajčatová s ovesnými vločkami",
+          "Polévka zeleninová s těstovinovou rýží",
+          "Polévka česneková s osmaženou hostičkou",
+          "Polévka drůbková s nudlemi",
+          "Polévka hovězí s kuskusem",
+          "Polévka dýňový krém",
+          "Polévka hráškový krém",
+          "Polévka hovězí s těstovinou",
+          "Polévka pórková",
+          "Polévka zimní zeleninová s ovesnými vločkami",
+          "Polévka bramboračka nezahuštěná",
+          "Polévka hovězí s játrovými noky",
+          "Polévka frankfurtská s bramborem",
+          "Polévka kmínová s vejcem",
+          "Polévka hovězí s česnekovými krutony",
+          "Polévka zelenin. s ovesnými vločkami",
+          "Polévka hovězí s jáhly",
+          "Polévka cizrnová",
+          "Polévka drožďová",
+          "Polévka hrachová",
+          "Polévka zeleninová s hrachovými nudlemi",
+          "Polévka z batátových brambor",
+          "Polévka zelenin. s rýží",
+          "Polévka cibulová se sýrem",
+          "Polévka pórková s vejci",
+          "Polévka ze zahradních jahod",
+          "Polévka mrkvová",
+          "Polévka hovězí s kapustou a rýží",
+          "Polévka rajčatová s tarhoňou",
+          "Polévka zeleninová s celozrnnými nudlemi",
+          "Polévka hovězí se sýrovým kapáním"
+        ],
+        "main": [
+          "Holandský řízek, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
+          "Těstoviny  po Lotrinsku"
+        ]
+      },
+      "removed": {
+        "soup": [],
+        "main": []
+      },
+      "movedToLegacy": {
+        "soup": [
+          "hovězí rychlá s vejcem",
+          "hovězí s jáhly",
+          "hovězí s játrovými knedlíčky",
+          "hovězí s játrovými noky",
+          "hovězí s kapustou a rýží",
+          "hovězí s kapáním",
+          "hovězí s kuskusem",
+          "hovězí s masem a vejcem",
+          "hovězí s těstovinami",
+          "hovězí s těstovinou",
+          "hovězí s vaječnou jíškou",
+          "hovězí s česnekovými krutony",
+          "hovězí se strouháním",
+          "kuřecí s nudlemi",
+          "ovarová",
+          "hovězí se sýrovým kapáním",
+          "vývar s drobením",
+          "z rybího filé",
+          "zel. vývar s dýňovým kapáním",
+          " zeleninová s ovesnými vločkami",
+          "bramboračka nezahuštěná",
+          "bramborová",
+          "brokolicová",
+          "celerová se smaženým hráškem",
+          "cibulová se sýrem",
+          "drožďová",
+          "drůbková s nudlemi",
+          "dýňový krém",
+          "hráškový krém",
+          "kapustová s rýží",
+          "kmínová s vejcem",
+          "koprová (kulajda)",
+          "krupicová maďarská",
+          "krupicová s vejcem",
+          "květáková",
+          "mrkvová",
+          "pórková",
+          "pórková s vejci",
+          "rajčatová s ovesnými vločkami",
+          "rajčatová s tarhoňou",
+          "rajčatová s těstovinami",
+          "rajčatová s těstovinou",
+          "rychlá s vejcem",
+          "selská ii.",
+          "z batátových brambor",
+          "z kysaného zelí",
+          "z kysaného zelí s klobásou",
+          "ze zahradních jahod",
+          "zelenin. s bulgurem",
+          "zelenin. s drožďovými knedlíčky",
+          "zelenin. s fridátovými nudlemi",
+          "zelenin. s kroupami",
+          "zelenin. s ovesnými vločkami",
+          "zelenin. s pohankou",
+          "zelenin. s rýží",
+          "zeleninová s celozrnnými knedlíčky",
+          "zeleninová s celozrnnými nudlemi",
+          "zeleninová s drožďovými knedlíčky",
+          "zeleninová s kuskusem",
+          "zeleninová s ovesnými vločkami",
+          "zeleninová s quinoou",
+          "zeleninová s tarhoňou",
+          "zeleninová s těstovinami",
+          "zeleninová s těstovinovou",
+          "zeleninová s těstovinovou rýží",
+          "zeleninová se sýrovým kapáním",
+          "zeleninový vývar s ovesnými vločkami",
+          "zimní zeleninová s ovesnými vločkami",
+          "česneková s bramborem a vejcem",
+          "česneková s osmaženou hostičkou",
+          "špenátová",
+          "Špenátová s vajíčkem",
+          "špenátová s vajíčkem",
+          "cizrnová",
+          "cizrnová krémová s rajčaty",
+          "fazolová",
+          "fazolová se zeleninou",
+          "frankfurtská s bramborem",
+          "gulášová",
+          "hrachová",
+          "hrachová s hrachovými krutony",
+          "hrachová s opečenou houskou",
+          "hrachová se smaženým hráškem",
+          "květáková s červenou čočkou",
+          "luštěninová",
+          "z fazolových lusků",
+          "z míchaných luštěnin",
+          "zeleninová s hrachovými nudlemi",
+          "zeleninová zahuštěná červenou čočkou",
+          "čočková",
+          "čočková se zeleninou"
+        ],
+        "main": [
+          "Guláš maďarský, Houskové knedlíky (kynuté)",
+          "hovězí maso stroganoff, dušená rýže",
+          "Španělský plátek, Rýže dušená",
+          "španělský ptáček, rýže",
+          "štěpánská hovězí pečeně, houskové knedlíky, čistá voda",
+          "domažlické vepřové ragů, těstoviny",
+          "Masová směs \"lamendr\", Rýže dušená",
+          "Rizoto srbské",
+          "Rizoto z vepřového masa",
+          "Vepřová kýta po cikánsku, Rýže dušená",
+          "vepřová pečeně selská, bramborové knedlíky",
+          "Vepřová pečeně selská, Bramborové knedlíky (směs)",
+          "Vepřová pečeně selská, Karlovarský knedlík",
+          "Vepřová pečeně selská, Nastavovaná kaše s cibulkou",
+          "Vepřová roláda (karlovarský kotouč), Bramborová kaše",
+          "Vepřové v kapustě, Brambory",
+          "vepřové v mrkvi, brambor",
+          "vepřový guláš, vřetena, čistá voda",
+          "Vepřový řízek přírodní, Brambory",
+          "Šoulet, Vepřová pečeně",
+          "Špagety s vepřovým masem a rajčaty",
+          "bulgur se zeleninou a kuřecím masem",
+          "Králík pečený, Bramborové knedlíky (směs)",
+          "Králík pečený, Brambory",
+          "krůtí maso na pórku, rýže",
+          "krůtí sekaná se sýrem, brambory, zeleninový salát míchaný, čistá voda",
+          "Kuskus s kuřecím masem, Míchaná zelenina grilovaná",
+          "kuřecí maso po provensálsku, farfalle",
+          "kuřecí maso po čínsku, dušená rýže, ovoce",
+          "kuřecí paličky na medu, bramborová kaše, čistá voda",
+          "Kuřecí prsa  na kari koření, Rýže dušená",
+          "Kuřecí prsa na kari koření, Rýže dušená",
+          "Kuřecí řízek smažený, Bramborová kaše",
+          "Holandský řízek, Bramborová kaše",
+          "Kapustové karbanátky, Bramborová kaše",
+          "Karbanátky pečené, Bramborová kaše",
+          "Sekaná pečeně, Bramborová kaše",
+          "Sekaná pečeně, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
+          "Sekaná pečeně, Brambory",
+          "Sekaná pečeně, Brambory, Okurka sterilovaná - příloha",
+          "Sekaná zahradnická, Brambory",
+          "Těstoviny po Lotrinsku",
+          "Zapečené těstoviny s uzeninou",
+          "Zapečené těstoviny s uzeným masem",
+          "Zapečené těstoviny s uzeným masem, Zelný salát - příloha",
+          "Karbanátek z rybího file - pečený, Brambory",
+          "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha",
+          "Losos přírodní, Brambory",
+          "Obalované filé s brokolicí a sýrem, Brambory",
+          "Rybí file pečené na másle, Bramborová kaše",
+          "Rybí filé obalované, Bramborová kaše",
+          "Rybí filé obalované, Brambory",
+          "Rybí filé pečené na másle, Brambory",
+          "rybí filé s rajčaty, bazalkou, brambory",
+          "Rybí filé smažené, Bramborová kaše",
+          "Rybí stripsy, Brambory",
+          "Tilápie s rajčaty a sýrem, Brambory",
+          "těstoviny s lososem ve smetanové omáčce",
+          "Hrachová kaše s cibulkou, Párky",
+          "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
+          "Hrachová kaše s cibulkou, Vejce vařené",
+          "Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha",
+          "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
+          "Čočka na kyselo, Vejce vařené",
+          "Bramborový guláš, Rohlík",
+          "Omáčka koprová, Vejce vařené, Brambory",
+          "Zeleninové placičky se sýrem, Brambory",
+          "zeleninové rizoto sypané sýrem a parmazánem, ovocný sirup, čistá voda",
+          "řecký salát, vícezrnný rohlík",
+          "Dukátové buchtičky s krémem, Mléko",
+          "dukátové buchtičky se šódo",
+          "Livance",
+          "Nudle s mákom"
+        ]
+      }
+    },
+    "afterPartial": {
+      "verified": 38,
+      "unverified": 12,
+      "mode": "partitioned",
+      "legacyPending": false,
+      "mealsVerified": 7,
+      "noPublishedMenu": 5,
+      "unchecked": 0
+    }
+  },
+  "unusedInOriginalHistory": {
+    "soup": [
+      "hovězí rychlá s vejcem",
+      "hrachová s opečenou houskou",
+      "zeleninová s ovesnými vločkami",
+      "zeleninová s těstovinovou",
+      "zeleninový vývar s ovesnými vločkami",
+      "Špenátová s vajíčkem"
+    ],
+    "main": [
+      "Hrachová kaše s cibulkou, Párky",
+      "Kapustové karbanátky, Bramborová kaše",
+      "Karbanátek z rybího file - pečený, Brambory",
+      "Karbanátky pečené, Bramborová kaše",
+      "Králík pečený, Bramborové knedlíky (směs)",
+      "Králík pečený, Brambory",
+      "Kuřecí prsa na kari koření, Rýže dušená",
+      "Kuřecí řízek smažený, Bramborová kaše",
+      "Livance",
+      "Losos přírodní, Brambory",
+      "Masová směs \"lamendr\", Rýže dušená",
+      "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
+      "Nudle s mákom",
+      "Obalované filé s brokolicí a sýrem, Brambory",
+      "Rizoto z vepřového masa",
+      "Rybí file pečené na másle, Bramborová kaše",
+      "Rybí filé obalované, Bramborová kaše",
+      "Rybí filé obalované, Brambory",
+      "Rybí filé smažené, Bramborová kaše",
+      "Rybí stripsy, Brambory",
+      "Sekaná pečeně, Bramborová kaše",
+      "Sekaná pečeně, Brambory",
+      "Sekaná zahradnická, Brambory",
+      "Tilápie s rajčaty a sýrem, Brambory",
+      "Vepřová pečeně selská, Bramborové knedlíky (směs)",
+      "Vepřová pečeně selská, Karlovarský knedlík",
+      "Vepřová pečeně selská, Nastavovaná kaše s cibulkou",
+      "Vepřová roláda (karlovarský kotouč), Bramborová kaše",
+      "Vepřový řízek přírodní, Brambory",
+      "Zapečené těstoviny s uzeninou",
+      "Zapečené těstoviny s uzeným masem",
+      "Zapečené těstoviny s uzeným masem, Zelný salát - příloha",
+      "Zeleninové placičky se sýrem, Brambory",
+      "bulgur se zeleninou a kuřecím masem",
+      "domažlické vepřové ragů, těstoviny",
+      "dukátové buchtičky se šódo",
+      "hovězí maso stroganoff, dušená rýže",
+      "krůtí maso na pórku, rýže",
+      "krůtí sekaná se sýrem, brambory, zeleninový salát míchaný, čistá voda",
+      "kuřecí maso po provensálsku, farfalle",
+      "kuřecí maso po čínsku, dušená rýže, ovoce",
+      "kuřecí paličky na medu, bramborová kaše, čistá voda",
+      "rybí filé s rajčaty, bazalkou, brambory",
+      "těstoviny s lososem ve smetanové omáčce",
+      "vepřová pečeně selská, bramborové knedlíky",
+      "vepřové v mrkvi, brambor",
+      "vepřový guláš, vřetena, čistá voda",
+      "zeleninové rizoto sypané sýrem a parmazánem, ovocný sirup, čistá voda",
+      "Čočka na kyselo, Vejce vařené",
+      "řecký salát, vícezrnný rohlík",
+      "Šoulet, Vepřová pečeně",
+      "španělský ptáček, rýže",
+      "štěpánská hovězí pečeně, houskové knedlíky, čistá voda"
+    ]
+  },
+  "removedOriginalNames": {
+    "soup": [
+      " zeleninová s ovesnými vločkami",
+      "bramboračka nezahuštěná",
+      "bramborová",
+      "brokolicová",
+      "celerová se smaženým hráškem",
+      "cibulová se sýrem",
+      "cizrnová",
+      "cizrnová krémová s rajčaty",
+      "drožďová",
+      "drůbková s nudlemi",
+      "dýňový krém",
+      "fazolová",
+      "fazolová se zeleninou",
+      "frankfurtská s bramborem",
+      "gulášová",
+      "hovězí rychlá s vejcem",
+      "hovězí s jáhly",
+      "hovězí s játrovými knedlíčky",
+      "hovězí s játrovými noky",
+      "hovězí s kapustou a rýží",
+      "hovězí s kapáním",
+      "hovězí s kuskusem",
+      "hovězí s masem a vejcem",
+      "hovězí s těstovinami",
+      "hovězí s těstovinou",
+      "hovězí s vaječnou jíškou",
+      "hovězí s česnekovými krutony",
+      "hovězí se strouháním",
+      "hovězí se sýrovým kapáním",
+      "hrachová",
+      "hrachová s hrachovými krutony",
+      "hrachová s opečenou houskou",
+      "hrachová se smaženým hráškem",
+      "hráškový krém",
+      "kapustová s rýží",
+      "kmínová s vejcem",
+      "koprová (kulajda)",
+      "krupicová maďarská",
+      "krupicová s vejcem",
+      "kuřecí s nudlemi",
+      "květáková",
+      "květáková s červenou čočkou",
+      "luštěninová",
+      "mrkvová",
+      "ovarová",
+      "pórková",
+      "pórková s vejci",
+      "rajčatová s ovesnými vločkami",
+      "rajčatová s tarhoňou",
+      "rajčatová s těstovinami",
+      "rajčatová s těstovinou",
+      "rychlá s vejcem",
+      "selská ii.",
+      "vývar s drobením",
+      "z batátových brambor",
+      "z fazolových lusků",
+      "z kysaného zelí",
+      "z kysaného zelí s klobásou",
+      "z míchaných luštěnin",
+      "z rybího filé",
+      "ze zahradních jahod",
+      "zel. vývar s dýňovým kapáním",
+      "zelenin. s bulgurem",
+      "zelenin. s drožďovými knedlíčky",
+      "zelenin. s fridátovými nudlemi",
+      "zelenin. s kroupami",
+      "zelenin. s ovesnými vločkami",
+      "zelenin. s pohankou",
+      "zelenin. s rýží",
+      "zeleninová s celozrnnými knedlíčky",
+      "zeleninová s celozrnnými nudlemi",
+      "zeleninová s drožďovými knedlíčky",
+      "zeleninová s hrachovými nudlemi",
+      "zeleninová s kuskusem",
+      "zeleninová s ovesnými vločkami",
+      "zeleninová s quinoou",
+      "zeleninová s tarhoňou",
+      "zeleninová s těstovinami",
+      "zeleninová s těstovinovou",
+      "zeleninová s těstovinovou rýží",
+      "zeleninová se sýrovým kapáním",
+      "zeleninová zahuštěná červenou čočkou",
+      "zeleninový vývar s ovesnými vločkami",
+      "zimní zeleninová s ovesnými vločkami",
+      "česneková s bramborem a vejcem",
+      "česneková s osmaženou hostičkou",
+      "čočková",
+      "čočková se zeleninou",
+      "Špenátová s vajíčkem",
+      "špenátová",
+      "špenátová s vajíčkem"
+    ],
+    "main": [
+      "Holandský řízek, Bramborová kaše",
+      "Hrachová kaše s cibulkou, Párky",
+      "Kapustové karbanátky, Bramborová kaše",
+      "Karbanátek z rybího file - pečený, Brambory",
+      "Karbanátky pečené, Bramborová kaše",
+      "Králík pečený, Bramborové knedlíky (směs)",
+      "Králík pečený, Brambory",
+      "Kuřecí prsa na kari koření, Rýže dušená",
+      "Kuřecí řízek smažený, Bramborová kaše",
+      "Livance",
+      "Losos přírodní, Brambory",
+      "Masová směs \"lamendr\", Rýže dušená",
+      "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
+      "Nudle s mákom",
+      "Obalované filé s brokolicí a sýrem, Brambory",
+      "Rizoto z vepřového masa",
+      "Rybí file pečené na másle, Bramborová kaše",
+      "Rybí filé obalované, Bramborová kaše",
+      "Rybí filé obalované, Brambory",
+      "Rybí filé smažené, Bramborová kaše",
+      "Rybí stripsy, Brambory",
+      "Sekaná pečeně, Bramborová kaše",
+      "Sekaná pečeně, Brambory",
+      "Sekaná zahradnická, Brambory",
+      "Tilápie s rajčaty a sýrem, Brambory",
+      "Těstoviny po Lotrinsku",
+      "Vepřová pečeně selská, Bramborové knedlíky (směs)",
+      "Vepřová pečeně selská, Karlovarský knedlík",
+      "Vepřová pečeně selská, Nastavovaná kaše s cibulkou",
+      "Vepřová roláda (karlovarský kotouč), Bramborová kaše",
+      "Vepřový řízek přírodní, Brambory",
+      "Zapečené těstoviny s uzeninou",
+      "Zapečené těstoviny s uzeným masem",
+      "Zapečené těstoviny s uzeným masem, Zelný salát - příloha",
+      "Zeleninové placičky se sýrem, Brambory",
+      "bulgur se zeleninou a kuřecím masem",
+      "domažlické vepřové ragů, těstoviny",
+      "dukátové buchtičky se šódo",
+      "hovězí maso stroganoff, dušená rýže",
+      "krůtí maso na pórku, rýže",
+      "krůtí sekaná se sýrem, brambory, zeleninový salát míchaný, čistá voda",
+      "kuřecí maso po provensálsku, farfalle",
+      "kuřecí maso po čínsku, dušená rýže, ovoce",
+      "kuřecí paličky na medu, bramborová kaše, čistá voda",
+      "rybí filé s rajčaty, bazalkou, brambory",
+      "těstoviny s lososem ve smetanové omáčce",
+      "vepřová pečeně selská, bramborové knedlíky",
+      "vepřové v mrkvi, brambor",
+      "vepřový guláš, vřetena, čistá voda",
+      "zeleninové rizoto sypané sýrem a parmazánem, ovocný sirup, čistá voda",
+      "Čočka na kyselo, Vejce vařené",
+      "řecký salát, vícezrnný rohlík",
+      "Šoulet, Vepřová pečeně",
+      "španělský ptáček, rýže",
+      "štěpánská hovězí pečeně, houskové knedlíky, čistá voda"
+    ]
+  },
+  "definitiveNames": {
+    "soup": [
+      "Polévka  zeleninová s ovesnými vločkami",
+      "Polévka bramboračka nezahuštěná",
+      "Polévka bramborová",
+      "Polévka brokolicová",
+      "Polévka celerová se smaženým hráškem",
+      "Polévka cibulová",
+      "Polévka cibulová se sýrem",
+      "Polévka cizrnová",
+      "Polévka cizrnová krémová s rajčaty",
+      "Polévka drožďová",
+      "Polévka drůbková s nudlemi",
+      "Polévka dýňový krém",
+      "Polévka fazolová",
+      "Polévka fazolová se zeleninou",
+      "Polévka frankfurtská s bramborem",
+      "Polévka gulášová",
+      "Polévka hovězí s jáhly",
+      "Polévka hovězí s játrovými knedlíčky",
+      "Polévka hovězí s játrovými noky",
+      "Polévka hovězí s kapustou a rýží",
+      "Polévka hovězí s kapáním",
+      "Polévka hovězí s krupkami",
+      "Polévka hovězí s kuskusem",
+      "Polévka hovězí s masem a vejcem",
+      "Polévka hovězí s těstovinami",
+      "Polévka hovězí s těstovinou",
+      "Polévka hovězí s vaječnou jíškou",
+      "Polévka hovězí s česnekovými krutony",
+      "Polévka hovězí se strouháním",
+      "Polévka hovězí se sýrovým kapáním",
+      "Polévka hrachová",
+      "Polévka hrachová s hrachovými krutony",
+      "Polévka hrachová se smaženým hráškem",
+      "Polévka hráškový krém",
+      "Polévka kapustová s rýží",
+      "Polévka kmínová s vejcem",
+      "Polévka koprová (kulajda)",
+      "Polévka krupicová maďarská",
+      "Polévka krupicová s vejcem",
+      "Polévka kuřecí s nudlemi",
+      "Polévka květáková",
+      "Polévka květáková s červenou čočkou",
+      "Polévka luštěninová",
+      "Polévka mrkvová",
+      "Polévka ovarová",
+      "Polévka pórková",
+      "Polévka pórková s vejci",
+      "Polévka rajčatová s ovesnými vločkami",
+      "Polévka rajčatová s tarhoňou",
+      "Polévka rajčatová s těstovinami",
+      "Polévka rajčatová s těstovinou",
+      "Polévka rychlá s vejcem",
+      "Polévka selská ii.",
+      "Polévka vývar s drobením",
+      "Polévka z batátových brambor",
+      "Polévka z fazolových lusků",
+      "Polévka z kysaného zelí",
+      "Polévka z kysaného zelí s klobásou",
+      "Polévka z míchaných luštěnin",
+      "Polévka z rybího filé",
+      "Polévka ze zahradních jahod",
+      "Polévka zel. vývar s dýňovým kapáním",
+      "Polévka zelenin. s bulgurem",
+      "Polévka zelenin. s drožďovými knedlíčky",
+      "Polévka zelenin. s fridátovými nudlemi",
+      "Polévka zelenin. s kroupami",
+      "Polévka zelenin. s ovesnými vločkami",
+      "Polévka zelenin. s pohankou",
+      "Polévka zelenin. s rýží",
+      "Polévka zeleninová s celozrnnými knedlíčky",
+      "Polévka zeleninová s celozrnnými nudlemi",
+      "Polévka zeleninová s drožďovými knedlíčky",
+      "Polévka zeleninová s hrachovými nudlemi",
+      "Polévka zeleninová s kuskusem",
+      "Polévka zeleninová s quinoou",
+      "Polévka zeleninová s tarhoňou",
+      "Polévka zeleninová s těstovinami",
+      "Polévka zeleninová s těstovinovou rýží",
+      "Polévka zeleninová se sýrovým kapáním",
+      "Polévka zeleninová zahuštěná červenou čočkou",
+      "Polévka zimní zeleninová s ovesnými vločkami",
+      "Polévka česneková s bramborem a vejcem",
+      "Polévka česneková s osmaženou hostičkou",
+      "Polévka čočková",
+      "Polévka čočková se zeleninou",
+      "Polévka špenátová",
+      "Polévka špenátová s vajíčkem"
+    ],
+    "main": [
+      "Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané",
+      "Bramborové šišky s mákem (strouhankou)",
+      "Bramborový guláš, Rohlík",
+      "Bramborák",
+      "Bratislavské vepřové plecko, Těstoviny",
+      "Brokolicová poezie (květák, niva)",
+      "Bulgur s kuřecím masem a zeleninou",
+      "Debrecínský guláš, Těstoviny",
+      "Domácí buchty plněné mákem, povidly, tvarohem",
+      "Dukátové buchtičky s krémem",
+      "Dukátové buchtičky s krémem, Kakao",
+      "Dukátové buchtičky s krémem, Mléko",
+      "Džuveč, Chléb",
+      "Fazole a la Katův šleh, Chléb",
+      "Francouzské brambory",
+      "Francouzské brambory, Okurka sterilovaná - příloha",
+      "Gnocchi s kuřecím masem, smetanou a špenátem",
+      "Guláš maďarský, Houskové knedlíky (kynuté)",
+      "Guláš maďarský, Rýže dušená",
+      "Hejk pečený na bylinkovém másle, Brambory",
+      "Holandský řízek, Bramborová kaše - příloha",
+      "Holandský řízek, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
+      "Horňácký guláš (maso, fazole), Chléb",
+      "Hovězí guláš, Rýže dušená",
+      "Hovězí pečeně frankfurtská, Těstoviny",
+      "Hovězí pečeně na houbách, Těstoviny",
+      "Hovězí pečeně na paprice, Vícezrnný knedlík (směs)",
+      "Hovězí pečeně pražská, Rýže dušená",
+      "Hovězí pečeně znojemská, Rýže dušená",
+      "Hovězí pečeně štěpánská, Rýže dušená",
+      "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
+      "Hrachová kaše s cibulkou, Vejce vařené",
+      "Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha",
+      "Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
+      "Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha",
+      "Italský guláš (zbruf se sýrem), Těstoviny",
+      "Italský guláš (zbruf se sýrem), Špagety",
+      "Kapustové karbanátky s masem, Brambory",
+      "Kapustové karbanátky, Bramborová kaše - příloha",
+      "Karbanátek z rybího file - pečený, Brambory m.m.",
+      "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha",
+      "Karbanátky pečené, Bramborová kaše - příloha",
+      "Kaše krupicová",
+      "Knedlíky švestkové (bramborové) s mákem",
+      "Kovbojská pánev, Chléb",
+      "Králík pečený, Bramborové knedlíky (směs), Špenát dušený",
+      "Králík pečený, Brambory m.m.",
+      "Krůtí nudličky s pórkem, Rýže dušená",
+      "Kuskus s kuřecím masem",
+      "Kuskus s kuřecím masem, Míchaná zelenina grilovaná",
+      "Kuskus s kuřecím masem, brokolicí a suš.rajčaty",
+      "Kuskus s ovocem",
+      "Kuře na paprice, Houskové knedlíky (kynuté)",
+      "Kuře na paprice, Těstoviny",
+      "Kuře pečené, Brambory",
+      "Kuře pečené, Brambory m.m.",
+      "Kuře pečené, Bulgur",
+      "Kuře pečené, Šťouchané brambory s cibulkou",
+      "Kuře Šanghaj s jasmínovou rýží",
+      "Kuře Šanghaj s rýží",
+      "Kuřecí nudličky se sýrovou omáčkou, Těstoviny",
+      "Kuřecí prsa  na kari koření, Rýže dušená",
+      "Kuřecí rizoto",
+      "Kuřecí rizoto, Salát z červené řepy - příloha",
+      "Kuřecí roláda, Rýže dušená",
+      "Kuřecí stehna pečená se zel.fazolkami a kroupami",
+      "Kuřecí stripsy, Brambory",
+      "Kuřecí čína, Rýže dušená",
+      "Kuřecí řízek smažený, Bramborová kaše - příloha",
+      "Losos přírodní, Brambory m.m.",
+      "Lotrinské tagliatelle se sýrem",
+      "Lívance, Káva bílá",
+      "Masová směs \"flamendr\", Rýže dušená",
+      "Masové koule v rajčatové omáčce, Těstoviny",
+      "Mexická pánev (vepř.maso, fazole)) se sýrem",
+      "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
+      "Moravský vrabec, Bramborové knedlíky (směs), Zelí kysané",
+      "Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)",
+      "Nudle s mákem",
+      "Nákyp rýžový s meruňkami",
+      "Nákyp rýžový se švestkami",
+      "Obalované filé s brokolicí a sýrem, Brambory m.m.",
+      "Omáčka koprová, Brambory, Vejce vařené",
+      "Omáčka koprová, Vejce vařené, Brambory",
+      "Omáčka rajčatová, Hovězí maso vařené, Houskové knedlíky (kynuté)",
+      "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
+      "Pekingská směs, Rýže dušená",
+      "Perkelt z kuřecího masa, Těstoviny",
+      "Pizza se šunkou",
+      "Rizoto s kuřecím masem",
+      "Rizoto srbské",
+      "Rizoto srbské, Okurka sterilovaná - příloha",
+      "Rizoto z vepřového masa, Okurka sterilovaná - příloha",
+      "Rožnovské halušky (střapačky) s uzeným masem",
+      "Rybí file pečené na másle, Bramborová kaše - příloha",
+      "Rybí filé obalované, Bramborová kaše - příloha",
+      "Rybí filé obalované, Brambory m.m.",
+      "Rybí filé pečené na másle, Bramborová kaše - příloha",
+      "Rybí filé pečené na másle, Brambory",
+      "Rybí filé po mlynářsku, Brambory",
+      "Rybí filé po mlynářsku, Brambory m.m.",
+      "Rybí filé smažené, Bramborová kaše - příloha",
+      "Rybí filé zapečené se špenátem, Brambory",
+      "Rybí stripsy, Brambory m.m.",
+      "Segedínský guláš, Houskové knedlíky (kynuté)",
+      "Sekaná pečeně, Bramborová kaše - příloha",
+      "Sekaná pečeně, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
+      "Sekaná pečeně, Brambory, Okurka sterilovaná - příloha",
+      "Sekaná zahradnická, Brambory m.m.",
+      "Sicilské špagety (boloňské)",
+      "Smažené rybí prsty, Brambory m.m.",
+      "Smažené točenky s rozinkami",
+      "Srbská čočka, Chléb",
+      "Svíčková na smetaně, Houskové knedlíky (kynuté)",
+      "Tilápie s rajčaty a sýrem, Brambory m.m.",
+      "Těstovinový salát s cizrnou a sušenými rajčaty",
+      "Těstovinový salát s kuřecím masem",
+      "Těstovinový salát s marinovaným tofu",
+      "Těstovinový salát se zeleninou a šunkou",
+      "Těstoviny  po Lotrinsku",
+      "Těstoviny penne s tuňákem a chery rajčaty",
+      "Těstoviny s brokolicí",
+      "Těstoviny s brokolicí a sýrovou omáčkou",
+      "Těstoviny se sýrovou omáčkou",
+      "Těstoviny se zeleninou, zapečené",
+      "Vepřová kotleta na houbách, Těstoviny",
+      "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
+      "Vepřová kýta po cikánsku, Rýže dušená",
+      "Vepřová pečeně selská, Bramborové knedlíky (směs), Červené zelí",
+      "Vepřová pečeně selská, Bramborové knedlíky (směs), Špenát dušený",
+      "Vepřová pečeně selská, Nastavovaná kaše s cibulkou, Okurka sterilovaná - příloha",
+      "Vepřová pečeně selská, Špenát dušený, Karlovarský knedlík",
+      "Vepřová pečeně, Fazolové lusky na slanině, Brambory",
+      "Vepřová roláda (karlovarský kotouč), Bramborová kaše - příloha",
+      "Vepřová roláda (karlovarský kotouč), Kaše bramborová",
+      "Vepřové na houbách se smetanou, Houskové knedlíky (kynuté)",
+      "Vepřové na houbách, Brambory",
+      "Vepřové na houbách, Těstoviny",
+      "Vepřové na paprice, Těstoviny",
+      "Vepřové v kapustě, Brambory",
+      "Vepřové v mrkvi, Brambory",
+      "Vepřové v mrkvi, Brambory m.m.",
+      "Vepřový guláš, Rýže dušená",
+      "Vepřový řízek přírodní, Brambory m.m.",
+      "Vepřový řízek přírodní, Kuskus - příloha",
+      "Vepřový řízek smažený, Brambory",
+      "Vinná klobása smažená přírodní, Bramborová kaše - příloha",
+      "Zapečené těstoviny s kuřecím masem a zeleninou",
+      "Zapečené těstoviny s uzeninou, Salát z červené řepy - příloha",
+      "Zapečené těstoviny s uzeným masem, Okurka sterilovaná - příloha",
+      "Zapečené těstoviny s uzeným masem, Zelný salát  - příloha",
+      "Zeleninové placičky se sýrem, Brambory m.m.",
+      "Zeleninové rizoto",
+      "Zeleninový salát, Kuřecí stripsy",
+      "Znojemský guláš, Rýže dušená",
+      "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
+      "Čočkový kotlík, Chléb",
+      "Šoulet, Vepřová pečeně, Okurka sterilovaná - příloha",
+      "Špagety celozrnné s boloňskou omáčkou",
+      "Špagety po uhlířsku (vejce, sýr)",
+      "Špagety s vepřovým masem a rajčaty",
+      "Španělská čočka s mletým masem, Chléb",
+      "Španělský plátek, Rýže dušená",
+      "Španělský ptáček rozházený, Rýže dušená",
+      "Špekové knedlíky, Zelí kysané",
+      "Žebrácké maso, Brambory",
+      "Žebrácké maso, Brambory opékané",
+      "Žemlovka s jablky a tvarohem"
+    ]
+  },
+  "organizationalEntries": [
+    {
+      "week": "2026-01-26",
+      "day": 5,
+      "field": "soup",
+      "text": "P R Á Z D N I N Y"
+    }
+  ],
+  "sourceIssues": [],
+  "consistency": {
+    "all50WeeksPreserved": true,
+    "allPublishedMealDaysVerified": true,
+    "everyWeekInspected": true,
+    "noMenuDatesNotCalledVerifiedClosures": true,
+    "noMenuDatesUnchanged": true,
+    "catalogEqualsVerifiedServedMeals": true,
+    "noOrganizationalCatalogEntries": true,
+    "noExactDuplicates": true,
+    "stableSecondImport": true
+  }
+}

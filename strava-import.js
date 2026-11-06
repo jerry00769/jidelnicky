@@ -1,54 +1,5 @@
-/* Strava 5948 – inteligentní, bezpečný import. Bez přímého CORS volání Strava.cz. */
+/* Strava.cz 5948 – complete weeks only, transactional import. */
 (()=>{'use strict';
-const test=new URLSearchParams(location.search).get('strava_test')==='1';
-let previewOnly=false;
-let changedWeeks=[];
-let changedDetails=[];
-const PREF_KEY='jidelnicky2:strava-auto-check-enabled';
-// Import nesmí vycházet z místního katalogu před prvním dokončeným GitHub syncem.
-let githubReady=false;
-let githubWaiters=[];
-function notifyGithubReady(){
- githubReady=true;
- for(const resolve of githubWaiters.splice(0))resolve(true);
-}
-window.addEventListener('jidelnicky:github-status',event=>{
- const detail=event.detail||{};
- if(detail.kind==='ok'&&/data synchronizov[aá]na|spole[cč]n[aá] data vytvo[rř]ena/i.test(detail.text||''))notifyGithubReady();
-});
-function waitForGithub(ms=16000){
- if(githubReady)return Promise.resolve(true);
- // Důležitá pojistka: místní katalog se bez synchronizace nepovažuje za aktuální.
- return new Promise(resolve=>{
-  let finished=false;
-  const done=value=>{if(finished)return;finished=true;resolve(value)};
-  githubWaiters.push(done);
-  setTimeout(()=>done(false),ms);
- });
-}
-
-let enabled=true;
-try{enabled=localStorage.getItem(PREF_KEY)!=='false'}catch(_e){}
-const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('cs').replace(/\bpol[eé]vka\b/g,'').replace(/\bm\.m\.\b/g,'').replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');
-// Shoda uloženého jídla a Strava.cz: nejprve text, pak jednoznačná
-// katalogová identita. Pouhá stejná kategorie NENÍ důkazem shody.
-function sameMeal(saved,incoming,kind){
- if(norm(saved)===norm(incoming))return true;
- if(!String(saved||'').trim()||!String(incoming||'').trim())return false;
- const a=match(saved,kind),b=match(incoming,kind);
- if(a&&b&&norm(a.name)===norm(b.name))return true;
- // Jen výslovně ověřená varianta z historie 2. 11. 2026.
- // Nepovažovat obecně jídla stejné kategorie za totožná.
- if(kind==='soup'){
-  const variants=new Set(['hovezi s kapanim','hovezi se syrovym kapanim']);
-  if(variants.has(norm(saved))&&variants.has(norm(incoming)))return true;
- }
- return false;
-}
-const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const monday=s=>{if(!/^\d{4}-\d{2}-\d{2}$/.test(s))throw Error('Neplatné datum týdne');const d=new Date(s+'T12:00:00');if(isNaN(d)||d.toISOString().slice(0,10)!==s)throw Error('Neplatné datum týdne');d.setDate(d.getDate()-(d.getDay()+6)%7);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
-const currentMonday=()=>{const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()-(d.getDay()+6)%7);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
-const dayNames=['Pondělí','Úterý','Středa','Čtvrtek','Pátek'];
 const style=document.createElement('style');style.textContent=`
 #stravaSmart:not([open]){display:none!important}
 #stravaSmart[open]{display:flex;flex-direction:column;overflow:hidden;margin:auto;position:fixed;inset:0;box-sizing:border-box;width:min(900px,calc(100vw - 20px));max-height:calc(100dvh - 24px);border:1px solid #d8e0e8;border-radius:16px;padding:0;color:#172d42;background:#fff;box-shadow:0 20px 70px #0004}
@@ -68,225 +19,96 @@ const style=document.createElement('style');style.textContent=`
 }
 
 `;document.head.append(style);
-const dlg=document.createElement('dialog');dlg.id='stravaSmart';dlg.innerHTML=`<div class="ss-head"><h2>Jídelníčky ze Strava.cz</h2><p id="ssInfo"></p></div><div id="ssBody" class="ss-body"></div><div class="ss-foot" id="ssFoot"></div>`;document.body.append(dlg);
-const $=id=>document.getElementById(id);
-const toggle=document.createElement('button');toggle.id='stravaToggle';toggle.type='button';toggle.title='Zapnout nebo vypnout automatickou kontrolu nových jídelníčků ze Strava.cz';
-function refreshToggle(){toggle.textContent=enabled?'Strava.cz: zapnuto ✓':'Strava.cz: vypnuto';toggle.dataset.off=String(!enabled);toggle.setAttribute('aria-pressed',String(enabled))}
-refreshToggle();document.body.append(toggle);
-toggle.title='Kliknutím zapnout/vypnout Strava.cz; při zapnutí zobrazit přehled';
-toggle.addEventListener('click',()=>{
- enabled=!enabled;
- try{localStorage.setItem(PREF_KEY,String(enabled))}catch(_e){}
- refreshToggle();
- if(!enabled){controller?.abort();if(dlg.open)close();report('Strava.cz: automatická kontrola vypnuta.');return}
- check(true);
-});
-let corrections=new Map();
-let weeks=[],catalog=null,sourceStamp='',stage='choice',skipped=0,checking=false,controller=null;
-const report=(text,error=false)=>window.dispatchEvent(new CustomEvent('jidelnicky:strava-status',{detail:{text,kind:error?'error':/probíhá/i.test(text)?'info':'ok'}}));
-function items(kind){return Object.entries(catalog[kind]).flatMap(([category,names])=>names.map(name=>({name,category,key:norm(name)})))}
-// Bezpečné rozpoznávání: automaticky pouze přesná normalizovaná shoda.
-// Podobnost slov není důkazem totožnosti jídla.
-function match(raw,kind){const found=items(kind).filter(x=>x.key===norm(raw));return found.length===1?found[0]:null}
-// Kategorie: nejdříve již zatříděný katalog, pak jednoznačná pravidla.
-// Neznámou kategorii nikdy nenahrazujeme první položkou seznamu.
-function suggestCategory(raw,kind){
- const n=norm(raw), categories=Object.keys(catalog[kind]||{});
- const pick=pattern=>categories.find(c=>pattern.test(norm(c)))||'';
- const tokens=n.split(' ').filter(t=>t.length>=4&&!/^(smazene|pecene|varene|dusene|omackou|brambory|ryze|testoviny|masem|polevka)$/.test(t));
- const scores=new Map();
- for(const item of items(kind)){
-  const words=new Set(item.key.split(' ').filter(t=>t.length>=4));
-  const shared=tokens.filter(t=>words.has(t)).length;
-  if(shared>=2){const score=shared/Math.max(tokens.length,words.size);
-   const prev=scores.get(item.category)||{score:0,count:0};
-   scores.set(item.category,{score:prev.score+score,count:prev.count+1});
-  }
+const Data=window.JidelnickyData,$=id=>document.getElementById(id);
+const PREF=window.JIDELNICKY_CONFIG?.preferenceKey||'jidelnicky2:strava-auto-check-enabled';
+let enabled=true;try{enabled=localStorage.getItem(PREF)!=='false'}catch{}
+let sourceWeeks=[],issues=[],lastSummary='',checking=false,controller=null,lastCheck=0,openAfterCheck=false,sourceInfo='';
+const dlg=document.createElement('dialog');dlg.id='stravaSmart';dlg.setAttribute('aria-labelledby','ssTitle');
+dlg.innerHTML='<div class="ss-head"><h2 id="ssTitle">Kontrola Strava.cz</h2><p id="ssInfo"></p><label><input id="ssAuto" type="checkbox"> Automatická kontrola po otevření</label></div><div id="ssBody" class="ss-body"></div><div class="ss-foot"><button id="ssClose" type="button">Zavřít</button></div>';
+document.body.append(dlg);
+const toggle=document.createElement('button');toggle.id='stravaToggle';toggle.type='button';toggle.title='Otevřít kontrolu Strava.cz a nastavení automatiky';document.body.append(toggle);
+function refreshToggle(){toggle.textContent=enabled?'Strava.cz: zapnuto '+(checking?'…':toggle.dataset.error==='true'?'⚠':'✓'):'Strava.cz: vypnuto';toggle.dataset.off=String(!enabled);$('ssAuto').checked=enabled}
+function close(){dlg.close()}
+$('ssClose').onclick=close;
+dlg.addEventListener('click',e=>{if(e.target!==dlg)return;const r=dlg.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)close()});
+$('ssAuto').onchange=()=>{
+ enabled=$('ssAuto').checked;try{localStorage.setItem(PREF,String(enabled))}catch{}
+ refreshToggle();if(!enabled){controller?.abort();lastSummary='Automatika je vypnutá. Uložená data zůstávají zachována.';showPreview()}
+ else{close();check(true)}
+};
+refreshToggle();
+function report(message,error=false){
+ toggle.dataset.error=String(error);toggle.style.borderColor=error?'#d79034':'';
+ refreshToggle();toggle.title=message||'Otevřít kontrolu Strava.cz';
+ window.dispatchEvent(new CustomEvent('jidelnicky:strava-status',{detail:{text:message,kind:error?'error':'ok'}}));
+}
+function showPreview(){
+ $('ssInfo').textContent=sourceInfo||'Jídelna 5948 · ZŠ a MŠ Březová Děčín';
+ const body=$('ssBody');body.replaceChildren();
+ for(const w of [...sourceWeeks].sort((a,b)=>b.week.localeCompare(a.week)).slice(0,2)){
+  const sec=document.createElement('section');sec.className='ss-week';
+  const h=document.createElement('h3');h.textContent='Týden od '+new Date(w.week+'T12:00:00').toLocaleDateString('cs-CZ');sec.append(h);
+  w.days.forEach((d,i)=>{
+   const box=document.createElement('div');box.className='ss-day';const title=document.createElement('strong');title.textContent=['Pondělí','Úterý','Středa','Čtvrtek','Pátek'][i];box.append(title);
+   for(const [f,label] of [['soup','Polévka'],['main','Oběd 1'],['main2','Oběd 2']])if(d[f]){const line=document.createElement('p');line.textContent=(Data.organization(d[f])||(f==='soup'&&/^Polévka\s/i.test(d[f]))?'':label+': ')+d[f];box.append(line)}
+   if(d.closed&&!Data.organization(d.soup)){const line=document.createElement('p');line.textContent='Nevaří se';box.append(line)}
+   sec.append(box);
+  });body.append(sec);
  }
- const ranked=[...scores].sort((a,b)=>b[1].score-a[1].score);
- const inferred=ranked.length&&ranked[0][1].score>=2.0&&ranked[0][1].count>=3&&
-   (!ranked[1]||ranked[0][1].score>=ranked[1][1].score*2)
-   ?ranked[0][0]:'';
- // Vývary mají přednost před obecnými slovy jako zelenina nebo kapání.
- let rule='';
- if(kind==='soup'){
-  if(/\b(vyvar|hovezi|kureci|slepi|kruti)\b/.test(n)&&
-    !/\b(krem|kremova|gulasova|drstkova)\b/.test(n))rule=pick(/vyvary|vyvar/);
-  else if(/\b(cockova|fazolova|hrachova|cizrnova)\b/.test(n))rule=pick(/lustenin/);
-  else if(/\b(zeleninova|rajcatova|brokolicova|kvetakova|bramborova|kremova)\b/.test(n))rule=pick(/zelenin/);
- }else{
-  const rules=[
-   [/\b(rybi|ryba|file|losos|treska|kapr)\b/,/ryby|rybi/],
-   [/\b(kureci|kruti|kachni|slepici)\b/,/drubez/],
-   [/\b(veprove|veprovy|plecko|krkovice|kotleta)\b/,/veprove/],
-   [/\b(hovezi|teleci)\b/,/hovezi/],
-   [/\b(buchticky|palacinky|livance|zemlovka)\b/,/sladka/],
-   [/\b(cocka|fazole|hrachem|cizrna)\b/,/lustenin/]
-  ];
-  for(const [word,category] of rules)if(word.test(n)){rule=pick(category);break}
- }
- // Pokud katalog a pravidlo odporují, vyžádáme ruční výběr.
- const category=rule&&inferred&&rule!==inferred?'':rule||inferred;
- return {category,confident:!!category,source:rule?'pravidla a katalog':'katalog'};
+ if(!sourceWeeks.length){const p=document.createElement('p');p.textContent='Není dostupný žádný úplný zdrojový týden.';body.append(p)}
+ const summary=document.createElement('p');summary.id='ssSummary';summary.className='ss-muted';summary.textContent=lastSummary;body.append(summary);
+ if(issues.length){const p=document.createElement('p');p.className='ss-error';p.textContent='Nepřevzaté údaje: '+issues.join('; ');body.append(p)}
+ if(!dlg.open)dlg.showModal();
 }
-function setFooter(buttons){$('ssFoot').replaceChildren();for(const b of buttons){const el=document.createElement('button');el.type='button';el.textContent=b.text;el.className=b.primary?'ss-primary':'';el.disabled=!!b.disabled;el.onclick=b.action;$('ssFoot').append(el)}}
-function close(){dlg.close();weeks=[];previewOnly=false;corrections.clear()}
-// Kliknutí na ztmavené pozadí zavře přehled stejně jako tlačítko Zavřít.
-// Kontrolujeme skutečné souřadnice, aby kliknutí uvnitř dialogu nic nezavíralo.
-dlg.addEventListener('click',event=>{
- if(!dlg.open||event.target!==dlg)return;
- const r=dlg.getBoundingClientRect();
- if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)close();
-});
-function previewFooter(){
- const buttons=[];
- // Automatika se ovládá pouze hlavním přepínačem Strava.cz mimo dialog.
- buttons.push({text:'Zavřít',action:close});setFooter(buttons);
-}
-function correctionKey(w,e){return w.week+'|'+e.day+'|'+e.field}
-function saveCorrections(){
- if(!previewOnly||test){window.alert('Ukládání je dostupné pouze v běžném přehledu, nikoli v testu.');return;}if(!corrections.size)return;
- try{
-  const state=structuredClone(window.JidelnickyApp.getState());
-  let count=0;
-  const planned=new Map();
-  for(const entry of corrections.values()){const k=entry.kind+'|'+norm(entry.raw);if(planned.has(k)&&planned.get(k)!==entry.category)throw Error('Stejné jídlo má dvě různé kategorie: '+entry.raw);planned.set(k,entry.category);}
-  const processed=new Set();
-  for(const {week,day,field,kind,raw,category} of corrections.values()){
-   if(!state.catalog?.[kind]?.[category])throw Error('Kategorie v katalogu již neexistuje: '+category);
-   const nameKey=norm(raw);
-   const uniqueKey=kind+'|'+nameKey;
-   if(processed.has(uniqueKey))continue;
-   processed.add(uniqueKey);
-   // Přesunout pouze toto konkrétní jídlo, ne podobné názvy.
-   for(const names of Object.values(state.catalog[kind])){
-    for(let i=names.length-1;i>=0;i--)if(norm(names[i])===nameKey)names.splice(i,1);
-   }
-   if(!state.catalog[kind][category].some(n=>norm(n)===nameKey))state.catalog[kind][category].push(raw);
-   // U již uloženého týdne měnit jen kategorii, pokud je v daném poli přesně stejné jídlo.
-   const saved=state.history.find(h=>h.week===week);
-   if(saved?.days?.[day]&&norm(saved.days[day][field])===nameKey){
-    const catField=field==='main'?'category':field==='main2'?'category2':null;
-    if(catField)saved.days[day][catField]=category;
-   }
-   count++;
-  }
-  window.JidelnickyApp.applyState(state);window.GitHubSync?.changed?.();
-  corrections.clear();
-  // Přepočítat rozpoznávání z právě uloženého katalogu a ihned ukázat zelený stav.
-  catalog=window.JidelnickyApp.getState().catalog;
-  for(const w of weeks)for(const e of w.entries){const found=match(e.raw,e.kind);if(found){e.matched=found;e.mode='auto';e.categorySuggestion=found.category;e.categoryConfident=true;}}
-  review();previewFooter();
-  report('Strava.cz: '+count+' položek potvrzeno/opraveno v katalogu; synchronizace na GitHub čeká na dokončení.');
- }catch(err){window.alert('Opravy se nepodařilo uložit: '+err.message)}
-}
-
-function showPreview(message){previewOnly=true;corrections.clear();review();$('ssInfo').textContent=message;if(changedWeeks.length){const p=document.createElement('p');p.className='ss-issue';p.textContent='Skutečné rozdíly v uložených týdnech (nic nebylo přepsáno): '+changedDetails.join(' | ');$('ssBody').prepend(p)}previewFooter();if(!dlg.open)dlg.showModal()}
-function choice(){stage='choice';$('ssInfo').textContent=`Nalezeno ${weeks.length} nových týdnů. Co chceš udělat?`;const body=$('ssBody');body.replaceChildren();const p=document.createElement('p');p.textContent='Program už porovnal všechna jídla s katalogem. Převzetí ze Strava.cz vyžaduje jen kontrolu případných nejasností.';body.append(p);for(const w of weeks){const p=document.createElement('p');const auto=w.entries.filter(e=>e.mode==='auto').length,all=w.entries.length;p.textContent=`Týden ${w.week}: automaticky rozpoznáno ${auto} z ${all} jídel.`;body.append(p)}if(test){const p=document.createElement('p');p.className='ss-muted';p.textContent='TEST NANEČISTO – ukládání je vypnuté.';body.append(p)}setFooter([{text:'Použít Strava.cz',primary:true,action:review},{text:'Vytvořit vlastní',action:()=>{close();report('Strava.cz: zvolena vlastní tvorba; nic nebylo změněno.')}},{text:'Připomenout později',action:close}])}
-function decisionLabel(e){return e.kind==='soup'?'Polévka':e.field==='main2'?'Oběd 2':'Oběd 1'}
-function buildIssue(e,w){
- const box=document.createElement('div');box.className='ss-issue';
- box.textContent=dayNames[e.day]+' · '+decisionLabel(e)+' · '+e.raw+' (nový název, bez kategorizace)';return box;
-}
-function review(){
- stage='review';const body=$('ssBody');body.replaceChildren();
- $('ssInfo').textContent='Přehled jídel ze Strava.cz – bez kategorií';
- for(const w of weeks){const sec=document.createElement('section');sec.className='ss-week';const h=document.createElement('h3');h.textContent='Týden '+w.week;sec.append(h);
- for(const e of w.entries){const line=document.createElement('p');line.textContent=dayNames[e.day]+' · '+decisionLabel(e)+' · '+(e.matched?.name||e.raw);sec.append(line)}body.append(sec)}
- updateReady();
-}
-function updateReady(){if(stage!=='review')return;if(previewOnly||test){previewFooter();return;}setFooter([{text:'Uložit chybějící týdny',primary:true,action:commit},{text:'Zavřít',action:close}]);}
-function parseWeeks(data){const state=window.JidelnickyApp.getState();catalog=state.catalog;const existing=new Set(test||previewOnly?[]:state.history.map(x=>x.week));changedWeeks=[];changedDetails=[];const seen=new Set();skipped=0;weeks=[];for(const w of data.weeks){if(!w||typeof w.week!=='string'||!Array.isArray(w.days)||w.days.length!==5)throw Error('Neplatný formát týdne');const week=monday(w.week);const isPast=week<currentMonday();if(existing.has(week)||seen.has(week)){
-  skipped++;
-  if(existing.has(week)&&!isPast){
-   const saved=state.history.find(x=>x.week===week);
-   if(saved?.days?.length===5){
-    const differences=[];
-    w.days.forEach((d,i)=>{
-     if(d.closed)return;
-     for(const f of ['soup','main','main2']){
-      const before=saved.days[i]?.[f]||'',after=d[f]||'';
-      if(!sameMeal(before,after,f==='soup'?'soup':'main'))
-       differences.push(dayNames[i]+' / '+(f==='soup'?'Polévka':f==='main'?'Oběd 1':'Oběd 2')+': „'+before+'“ → „'+after+'“');
-     }
-    });
-    if(differences.length){changedWeeks.push(week);changedDetails.push(...differences.map(t=>week+' – '+t));}
-   }
-  }
-  continue
- }seen.add(week);const entries=[],days=[];for(let i=0;i<5;i++){const day=w.days[i];if(!day||typeof day!=='object')throw Error('Neplatný den');const closed=!!day.closed;const result={closed,soup:'',main:'',category:'',main2:'',category2:''};for(const [field,kind,cat] of [['soup','soup',null],['main','main','category'],['main2','main','category2']]){const raw=String(day[field]||'').trim();if(!raw)continue;const matched=match(raw,kind);entries.push({day:i,field,kind,cat,raw,matched,mode:'auto',choice:null,categorySuggestion:'',categoryConfident:true});}if(!closed&&(!day.soup||!day.main))throw Error(`Týden ${week}, ${dayNames[i]}: chybí polévka nebo oběd 1. Import byl bezpečně zastaven.`);days.push(result)}weeks.push({week,days,entries})}}
-function commit(){
- if(test||previewOnly)return;
- try{
-  const state=structuredClone(window.JidelnickyApp.getState());
-  const existing=new Set(state.history.map(x=>x.week));
-  if(weeks.some(w=>existing.has(w.week)))throw Error('Historie se mezitím změnila; import bezpečně zastaven.');
-  const chooseName=(kind,raw)=>{
-   const existing=Object.values(state.catalog[kind]).flat().find(name=>norm(name)===norm(raw));
-   if(existing)return existing;
-   const bucket=kind==='soup'?'__POLEVKY__':'__HLAVNI__';
-   if(!state.catalog[kind][bucket])state.catalog[kind][bucket]=[];
-   state.catalog[kind][bucket].push(raw);return raw;
-  };
-  for(const w of weeks){
-   const days=w.days.map(x=>({...x}));
-   for(const e of w.entries){
-    days[e.day][e.field]=e.matched?.name||chooseName(e.kind,e.raw);
-   }
-   state.history.push({week:w.week,days});
-  }
-  window.JidelnickyApp.applyState(state);
-  window.GitHubSync?.changed?.();
-  const n=weeks.length;close();report('Strava.cz: '+n+' nových týdnů doplněno; původní týdny zachovány.');
- }catch(err){window.alert('Import nebyl dokončen: '+err.message)}
-}
-
 async function check(manual=false){
- if(checking||dlg.open||(!enabled&&!manual))return;
- checking=true;previewOnly=false;controller=new AbortController();
- const timeout=setTimeout(()=>controller.abort(),12000);
- report('Strava.cz 5948: probíhá kontrola…');
+ if(checking){openAfterCheck||=manual;return}
+ if(!enabled&&!manual)return;
+ checking=true;openAfterCheck=manual;lastSummary='Probíhá kontrola dostupných týdnů Strava.cz…';report(lastSummary);
+ await window.JidelnickyReady;
+ const archive=window.JIDELNICKY_ARCHIVE;let archiveError;
+ try{if(archive){
+  const cached=Data.parseFeed(archive);sourceWeeks=cached.weeks;
+  if(enabled&&sourceWeeks.length){const current=window.JidelnickyApp.getState();const eligible=sourceWeeks.filter(w=>{const old=current.history.find(h=>h.week===w.week),proof=current.stravaVerifiedWeeks?.[w.week];return !Data.isVerified(current,old)||Date.parse(proof?.retrievedAt||'')<=Date.parse(archive.retrievedAt||'')});const initial=Data.planImport(current,eligible,{retrievedAt:archive.retrievedAt,evidenceByWeek:archive.weekEvidence});const historical=Data.planHistoricalAudit(initial.state,archive.historicalAudit);if(initial.needsWrite||historical.needsWrite){window.JidelnickyApp.applyState(historical.state);window.GitHubSync?.changed()}}
+ }}catch(error){archiveError=error}
+ controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),15000);
  try{
-  const r=await fetch('./strava_5948.json?ts='+Date.now(),{cache:'no-store',signal:controller.signal});
-  if(!r.ok)throw Error('JSON nedostupný (HTTP '+r.status+')');
-  const data=await r.json();
-  if(data.cafeteria!=='5948'||data.status!=='received'||!Array.isArray(data.weeks))throw Error('Neplatná odpověď');
-  if(!window.JidelnickyApp?.getState)throw Error('Generátor ještě není připraven');
-  if(!enabled&&!manual)return;
-  sourceStamp=data.checked_at_utc||'';
-  previewOnly=manual&&!test;
-  // Vyčkej na skutečné převzetí společných dat; badge se může zobrazit později.
-  const synced=await waitForGithub();
-  if(!synced){
-   report('Strava.cz: společný katalog z GitHubu ještě není synchronizovaný. Import pozastaven, nic se neuložilo.',true);
-   return;
+  if(archiveError)throw archiveError;
+  const r=await fetch((window.JIDELNICKY_CONFIG?.stravaUrl||'./strava_5948.json')+'?ts='+Date.now(),{cache:'no-store',signal:controller.signal});
+  if(!r.ok)throw Error('Zdroj není dostupný (HTTP '+r.status+')');
+  const feed=await r.json();
+  const live=Data.parseFeed(feed),combined=new Map(sourceWeeks.map(w=>[w.week,w]));
+  const currentProofs=window.JidelnickyApp.getState();
+  for(const w of currentProofs.history)if(Data.isVerified(currentProofs,w)&&Date.parse(currentProofs.stravaVerifiedWeeks[w.week].retrievedAt||'')>Date.parse(archive?.retrievedAt||''))combined.set(w.week,w);
+  for(const w of live.weeks)combined.set(w.week,w);
+  sourceWeeks=[...combined.values()];issues=live.issues;
+  sourceInfo='Jídelna 5948 · automaticky aktualizovaný archiv Strava.cz · načten '+new Date(feed.retrievedAt||Date.now()).toLocaleString('cs-CZ');
+  let result;
+  if(enabled&&sourceWeeks.length){
+   result=Data.planImport(window.JidelnickyApp.getState(),sourceWeeks,{retrievedAt:feed.retrievedAt,sourceUpdatedAt:feed.sourceUpdatedAt});
+   if(result.needsWrite){window.JidelnickyApp.applyState(result.state);window.GitHubSync?.changed()}
   }
-  if(!enabled&&!manual)return;
-  parseWeeks(data);
-  if(!weeks.length){
-   if(manual){showPreview('Strava.cz: dostupný přehled je prázdný.');return}
-   if(changedWeeks.length){showPreview('Strava.cz: zjištěny změny v aktuálním nebo budoucím období.');return}
-   report('Strava.cz 5948: aktuální, žádné nové týdny.');
-   return;
-  }
-  if(test||manual){
-   report('Strava.cz: náhled bez ukládání.');
-   showPreview('Strava.cz: přehled dostupných jídel, bez ukládání.');
-  }else{
-   // Varianta A: neznámá kategorie nikdy nezastaví automatický import.
-   // Ochrana: jen dosud neexistující týdny, pouze po dokončeném GitHub syncu.
-   const ready=weeks.slice();
-   weeks=ready;
-   if(ready.length)commit();
-   if(changedWeeks.length)report('Strava.cz: existující týdny '+changedWeeks.join(', ')+' nebyly přepsány.');
-
-  }
- }catch(err){
-  if(err.name==='AbortError'&&!enabled)return;
-  console.warn('Strava.cz import',err);
-  report('Strava.cz 5948: kontrola se nezdařila ('+(err.name==='AbortError'?'časový limit 12 s':err.message)+'). Data beze změny.',true);
- }finally{clearTimeout(timeout);checking=false;controller=null}
+  const current=window.JidelnickyApp.getState(),available=new Set(sourceWeeks.map(w=>w.week));
+  const remaining=sourceWeeks.filter(w=>!Data.sameWeek(current.history.find(h=>h.week===w.week),w)).length;
+  const unverified=current.history.filter(w=>!Data.isVerified(current,w)).length;
+  const changed=result?.changed.length||0;
+  if(!enabled)lastSummary='Automatika je vypnutá; přehled je pouze ke čtení.';
+  else if(issues.length||remaining)lastSummary='Některé týdny nebylo možné bezpečně převzít. Dosavadní úplné týdny a návrhy zůstávají zachované.';
+  else if(!sourceWeeks.length)lastSummary='Zdroj nyní neobsahuje úplné týdny. Uložené jídelníčky zůstávají v Historii.';
+  else lastSummary='Ověřeno '+sourceWeeks.length+' dostupných týdnů'+(changed?', aktualizováno '+changed:'')+'. '+(current.catalogAudit?.mealsVerified||current.catalogAudit?.noPublishedMenu?'Dalších '+current.catalogAudit.mealsVerified+' týdnů má ověřena všechna jídla a dny bez menu; '+current.catalogAudit.noPublishedMenu+' týdnů je ve zdroji zcela bez menu. Absence menu nepotvrzuje uzavření jídelny.':unverified?'Dalších '+unverified+' historických týdnů není úplně ověřeno.':'Ostatní dostupné týdny jsou v souladu se Strava.cz.')+' Starší jídelníčky najdete v Historii.';
+  lastCheck=Date.now();report(lastSummary,!!issues.length||!!remaining||!sourceWeeks.length);
+ }catch(e){
+  if(e.name==='AbortError'&&!enabled)return;
+  lastSummary='Kontrolu Strava.cz se nyní nepodařilo dokončit. Uložené jídelníčky a návrhy zůstaly zachované.';
+  sourceInfo=sourceWeeks.length?'Poslední načtený přehled · nyní bez nového ověření':'Jídelna 5948 · zdroj nyní není dostupný';
+  report(lastSummary,true);
+ }finally{
+  clearTimeout(timeout);controller=null;checking=false;refreshToggle();
+  if(openAfterCheck)showPreview();openAfterCheck=false;
+ }
 }
-window.addEventListener('load',()=>setTimeout(()=>{if(enabled)check(false)},1800));
+toggle.onclick=()=>check(true);
+window.addEventListener('load',()=>check(false));
+window.addEventListener('online',()=>check(false));
+window.addEventListener('focus',()=>{if(Date.now()-lastCheck>60000&&!dlg.open)check(false)});
+setInterval(()=>{if(!document.hidden&&!dlg.open&&Date.now()-lastCheck>900000)check(false)},60000);
 })();
-// Kontrolni nasazeni GitHub Pages 2026-11-01

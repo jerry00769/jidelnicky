@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-06T21:05:27.995407+00:00",
+  "repository": "jerry00769/jidelnicky",
+  "files": [
+    {
+      "file": "app.js",
+      "url": "https://raw.githubusercontent.com/jerry00769/jidelnicky/main/app.js",
+      "sha256": "25e52ef29d33a836827af669d98c17980823e331d144b49b487be6fb5f5dea21",
+      "matchesUserZip": true
+    },
+    {
+      "file": "github-sync.js",
+      "url": "https://raw.githubusercontent.com/jerry00769/jidelnicky/main/github-sync.js",
+      "sha256": "a30c06648b51ddbcb4b01202cb66ffc487c59a59bc504ba1b8a30185bacb1fdc",
+      "matchesUserZip": true
+    },
+    {
+      "file": "index.html",
+      "url": "https://raw.githubusercontent.com/jerry00769/jidelnicky/main/index.html",
+      "sha256": "5d2acc11d3ed616258530e5f6289c1f0b545a55a0c5694f441416dab3e9f0c78",
+      "matchesUserZip": true
+    },
+    {
+      "file": "strava_5948.json",
+      "url": "https://raw.githubusercontent.com/jerry00769/jidelnicky/main/strava_5948.json",
+      "sha256": "011502dbee2cf320d990fef651a940b16b1103c3315edba0e00d552543d76b49",
+      "matchesUserZip": true
+    }
+  ]
+}

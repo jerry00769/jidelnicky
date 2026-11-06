@@ -1,0 +1,4359 @@
+{
+  "table0": [
+    {
+      "datum": "01.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hrachová"
+    },
+    {
+      "datum": "01.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Zeleninové rizoto, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "01.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "02.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka brokolicová"
+    },
+    {
+      "datum": "02.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Sekaná pečeně, Bramborová kaše - příloha"
+    },
+    {
+      "datum": "02.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Okurkový salát - příloha, Sirup"
+    },
+    {
+      "datum": "03.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka  zeleninová s ovesnými vločkami"
+    },
+    {
+      "datum": "03.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Omáčka rajčatová, Těstoviny, Hovězí maso vařené"
+    },
+    {
+      "datum": "03.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "04.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s játrovými noky"
+    },
+    {
+      "datum": "04.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Čočka na kyselo, Vejce vařené, Salát z červené řepy - příloha"
+    },
+    {
+      "datum": "04.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "05.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka krupicová s vejcem"
+    },
+    {
+      "datum": "05.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře na paprice, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "05.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup"
+    },
+    {
+      "datum": "08.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová se sýrovým kapáním"
+    },
+    {
+      "datum": "08.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Sicilské špagety (boloňské)"
+    },
+    {
+      "datum": "08.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "09.09.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Květák s vejci jako mozeček, Brambory m.m."
+    },
+    {
+      "datum": "09.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka rajčatová s tarhoňou"
+    },
+    {
+      "datum": "09.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rybí filé smažené, Brambory m.m."
+    },
+    {
+      "datum": "09.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Krém smetanový"
+    },
+    {
+      "datum": "10.09.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Kuskus po staročesku (žampióny)"
+    },
+    {
+      "datum": "10.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s ovesnými vločkami"
+    },
+    {
+      "datum": "10.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Španělský plátek, Rýže dušená"
+    },
+    {
+      "datum": "10.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "11.09.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Bezmasá čína, Rýže dušená"
+    },
+    {
+      "datum": "11.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka špenátová"
+    },
+    {
+      "datum": "11.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Těstovinový salát s kuřecím masem"
+    },
+    {
+      "datum": "11.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "12.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hrachová"
+    },
+    {
+      "datum": "12.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Francouzské brambory"
+    },
+    {
+      "datum": "12.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Salát z červené řepy - příloha"
+    },
+    {
+      "datum": "15.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová zahuštěná červenou čočkou"
+    },
+    {
+      "datum": "15.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová kýta na divoko, Rýže dušená"
+    },
+    {
+      "datum": "15.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup"
+    },
+    {
+      "datum": "16.09.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Čočkový salát se zeleninou"
+    },
+    {
+      "datum": "16.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka bramborová"
+    },
+    {
+      "datum": "16.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Dukátové buchtičky s krémem"
+    },
+    {
+      "datum": "16.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "17.09.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Gnocchi v rajčatové omáčce"
+    },
+    {
+      "datum": "17.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s vaječnou jíškou"
+    },
+    {
+      "datum": "17.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hrachová kaše s cibulkou, Okurka sterilovaná - příloha, Vejce vařené"
+    },
+    {
+      "datum": "17.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "18.09.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Zapečené flíčky s brambory (grenadýrský)"
+    },
+    {
+      "datum": "18.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka květáková"
+    },
+    {
+      "datum": "18.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Žebrácké maso, Brambory"
+    },
+    {
+      "datum": "18.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Rajčatový salát - příloha, Sirup"
+    },
+    {
+      "datum": "19.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka krupková jemná"
+    },
+    {
+      "datum": "19.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Guláš maďarský, Těstoviny"
+    },
+    {
+      "datum": "19.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "22.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka dýňový krém"
+    },
+    {
+      "datum": "22.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rožnovské halušky (střapačky) s uzeným masem"
+    },
+    {
+      "datum": "22.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "23.09.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Kuřecí stehna pečená se zel.fazolkami, Brambory"
+    },
+    {
+      "datum": "23.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka cizrnová"
+    },
+    {
+      "datum": "23.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rizoto srbské"
+    },
+    {
+      "datum": "23.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "24.09.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Špenátové flíčky"
+    },
+    {
+      "datum": "24.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka frankfurtská s bramborem"
+    },
+    {
+      "datum": "24.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Tilápie s rajčaty a sýrem, Brambory m.m."
+    },
+    {
+      "datum": "24.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "25.09.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Zbojnická játra (s uzeným masem, protlakem), Rýže dušená"
+    },
+    {
+      "datum": "25.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s kuskusem"
+    },
+    {
+      "datum": "25.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí nudličky se sýrovou omáčkou, Těstoviny"
+    },
+    {
+      "datum": "25.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup"
+    },
+    {
+      "datum": "26.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka cibulová"
+    },
+    {
+      "datum": "26.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)"
+    },
+    {
+      "datum": "26.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "29.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka kuřecí s nudlemi"
+    },
+    {
+      "datum": "29.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kovbojská pánev, Chléb"
+    },
+    {
+      "datum": "29.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "30.09.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Špagety po uhlířsku (vejce, sýr)"
+    },
+    {
+      "datum": "30.09.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka koprová (kulajda)"
+    },
+    {
+      "datum": "30.09.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Holandský řízek, Bramborová kaše - příloha, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "30.09.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Mléko ochucené"
+    },
+    {
+      "datum": "01.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s drožďovými knedlíčky"
+    },
+    {
+      "datum": "01.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Lotrinské tagliatelle se sýrem"
+    },
+    {
+      "datum": "01.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "02.10.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Kuskus s ovocem"
+    },
+    {
+      "datum": "02.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z rybího filé"
+    },
+    {
+      "datum": "02.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře pečené, Brambory"
+    },
+    {
+      "datum": "02.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Mléko"
+    },
+    {
+      "datum": "03.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s fridátovými nudlemi"
+    },
+    {
+      "datum": "03.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Svíčková na smetaně, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "03.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "06.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s quinoou"
+    },
+    {
+      "datum": "06.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Debrecínský guláš, Těstoviny"
+    },
+    {
+      "datum": "06.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "07.10.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Kuskus s kuřecím masem"
+    },
+    {
+      "datum": "07.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka gulášová"
+    },
+    {
+      "datum": "07.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Karbanátek z rybího file - pečený, Brambory m.m."
+    },
+    {
+      "datum": "07.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Mrkvový salát - příloha, Sirup"
+    },
+    {
+      "datum": "08.10.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Brokolicová poezie (květák, niva)"
+    },
+    {
+      "datum": "08.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí se strouháním"
+    },
+    {
+      "datum": "08.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí čína, Rýže dušená"
+    },
+    {
+      "datum": "08.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "09.10.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Pizza se šunkou"
+    },
+    {
+      "datum": "09.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka květáková s červenou čočkou"
+    },
+    {
+      "datum": "09.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Knedlíky švestkové (bramborové) s mákem"
+    },
+    {
+      "datum": "09.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Mléko"
+    },
+    {
+      "datum": "10.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z kysaného zelí"
+    },
+    {
+      "datum": "10.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová roláda (karlovarský kotouč), Kaše bramborová"
+    },
+    {
+      "datum": "10.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Okurkový salát - příloha, Sirup"
+    },
+    {
+      "datum": "13.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka špenátová s vajíčkem"
+    },
+    {
+      "datum": "13.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Džuveč, Chléb"
+    },
+    {
+      "datum": "13.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "14.10.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Zeleninové placičky se sýrem, Brambory m.m."
+    },
+    {
+      "datum": "14.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s bulgurem"
+    },
+    {
+      "datum": "14.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře na paprice, Těstoviny"
+    },
+    {
+      "datum": "14.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Mléko"
+    },
+    {
+      "datum": "15.10.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Kaše krupicová"
+    },
+    {
+      "datum": "15.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka celerová se smaženým hráškem"
+    },
+    {
+      "datum": "15.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Šoulet, Vepřová pečeně, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "15.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "16.10.2025",
+      "druh_popis": "Oběd 2",
+      "nazev": "Těstovinový salát s cizrnou a sušenými rajčaty"
+    },
+    {
+      "datum": "16.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka rychlá s vejcem"
+    },
+    {
+      "datum": "16.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřové v mrkvi, Brambory"
+    },
+    {
+      "datum": "16.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "17.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka selská ii."
+    },
+    {
+      "datum": "17.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí řízek smažený, Bramborová kaše - příloha"
+    },
+    {
+      "datum": "17.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Zeleninový salát, Sirup"
+    },
+    {
+      "datum": "20.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka rajčatová s těstovinou"
+    },
+    {
+      "datum": "20.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Fazole a la Katův šleh, Chléb"
+    },
+    {
+      "datum": "20.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Čaj"
+    },
+    {
+      "datum": "21.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s celozrnnými knedlíčky"
+    },
+    {
+      "datum": "21.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hovězí pečeně štěpánská, Rýže dušená"
+    },
+    {
+      "datum": "21.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Čaj"
+    },
+    {
+      "datum": "22.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka  zeleninová s ovesnými vločkami"
+    },
+    {
+      "datum": "22.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Žemlovka s jablky a tvarohem"
+    },
+    {
+      "datum": "22.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Mléko"
+    },
+    {
+      "datum": "23.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s tarhoňou"
+    },
+    {
+      "datum": "23.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Segedínský guláš, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "23.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "24.10.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka čočková"
+    },
+    {
+      "datum": "24.10.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Zapečené těstoviny s kuřecím masem a zeleninou"
+    },
+    {
+      "datum": "24.10.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Mléko"
+    },
+    {
+      "datum": "03.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka brokolicová"
+    },
+    {
+      "datum": "03.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "03.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "04.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s kuskusem"
+    },
+    {
+      "datum": "04.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Sicilské špagety (boloňské)"
+    },
+    {
+      "datum": "04.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "05.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka bramborová"
+    },
+    {
+      "datum": "05.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře pečené, Bulgur"
+    },
+    {
+      "datum": "05.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Krém smetanový"
+    },
+    {
+      "datum": "06.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hrachová se smaženým hráškem"
+    },
+    {
+      "datum": "06.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Sekaná pečeně, Bramborová kaše - příloha"
+    },
+    {
+      "datum": "06.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Okurkový salát - příloha, Sirup"
+    },
+    {
+      "datum": "07.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s vaječnou jíškou"
+    },
+    {
+      "datum": "07.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "07.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup, Ovoce"
+    },
+    {
+      "datum": "10.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová zahuštěná červenou čočkou"
+    },
+    {
+      "datum": "10.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rybí filé obalované, Brambory m.m."
+    },
+    {
+      "datum": "10.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Zelný salát  - příloha"
+    },
+    {
+      "datum": "11.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s kapáním"
+    },
+    {
+      "datum": "11.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřový guláš, Rýže dušená"
+    },
+    {
+      "datum": "11.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Termix"
+    },
+    {
+      "datum": "12.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka česneková s bramborem a vejcem"
+    },
+    {
+      "datum": "12.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Nudle s mákem"
+    },
+    {
+      "datum": "12.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Káva bílá"
+    },
+    {
+      "datum": "13.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka květáková"
+    },
+    {
+      "datum": "13.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hovězí pečeně frankfurtská, Těstoviny"
+    },
+    {
+      "datum": "13.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "14.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka fazolová se zeleninou"
+    },
+    {
+      "datum": "14.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Gnocchi s kuřecím masem, smetanou a špenátem"
+    },
+    {
+      "datum": "14.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "18.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s játrovými noky"
+    },
+    {
+      "datum": "18.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Omáčka koprová, Vejce vařené, Brambory"
+    },
+    {
+      "datum": "18.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "19.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka vývar s drobením"
+    },
+    {
+      "datum": "19.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha"
+    },
+    {
+      "datum": "19.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "20.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka rajčatová s těstovinami"
+    },
+    {
+      "datum": "20.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuskus s kuřecím masem, Míchaná zelenina grilovaná"
+    },
+    {
+      "datum": "20.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "21.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s kroupami"
+    },
+    {
+      "datum": "21.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hovězí pečeně pražská, Rýže dušená"
+    },
+    {
+      "datum": "21.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Čaj"
+    },
+    {
+      "datum": "24.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka gulášová"
+    },
+    {
+      "datum": "24.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rybí file pečené na másle, Bramborová kaše - příloha"
+    },
+    {
+      "datum": "24.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "25.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s fridátovými nudlemi"
+    },
+    {
+      "datum": "25.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí rizoto, Salát z červené řepy - příloha"
+    },
+    {
+      "datum": "25.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "26.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s drožďovými knedlíčky"
+    },
+    {
+      "datum": "26.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová kotleta na houbách, Těstoviny"
+    },
+    {
+      "datum": "26.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Přesnídávka ovocná"
+    },
+    {
+      "datum": "27.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka krupicová maďarská"
+    },
+    {
+      "datum": "27.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Francouzské brambory, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "27.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "28.11.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka čočková se zeleninou"
+    },
+    {
+      "datum": "28.11.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Španělský ptáček rozházený, Rýže dušená"
+    },
+    {
+      "datum": "28.11.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "01.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s pohankou"
+    },
+    {
+      "datum": "01.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kovbojská pánev, Chléb"
+    },
+    {
+      "datum": "01.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Banány - příloha"
+    },
+    {
+      "datum": "02.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová se sýrovým kapáním"
+    },
+    {
+      "datum": "02.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře Šanghaj s rýží"
+    },
+    {
+      "datum": "02.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Krém smetanový"
+    },
+    {
+      "datum": "03.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hrachová s hrachovými krutony"
+    },
+    {
+      "datum": "03.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Nákyp rýžový se švestkami"
+    },
+    {
+      "datum": "03.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Káva bílá"
+    },
+    {
+      "datum": "04.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z fazolových lusků"
+    },
+    {
+      "datum": "04.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Omáčka rajčatová, Hovězí maso vařené, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "04.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Jablka - příloha"
+    },
+    {
+      "datum": "05.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka krupicová s vejcem"
+    },
+    {
+      "datum": "05.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kapustové karbanátky, Bramborová kaše - příloha"
+    },
+    {
+      "datum": "05.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Okurkový salát - příloha, Perník"
+    },
+    {
+      "datum": "08.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka špenátová"
+    },
+    {
+      "datum": "08.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rybí filé po mlynářsku, Brambory m.m."
+    },
+    {
+      "datum": "08.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "09.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka cizrnová krémová s rajčaty"
+    },
+    {
+      "datum": "09.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Pekingská směs, Rýže dušená"
+    },
+    {
+      "datum": "09.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "10.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka kuřecí s nudlemi"
+    },
+    {
+      "datum": "10.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vinná klobása smažená přírodní, Bramborová kaše - příloha"
+    },
+    {
+      "datum": "10.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "11.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka luštěninová"
+    },
+    {
+      "datum": "11.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Perkelt z kuřecího masa, Těstoviny"
+    },
+    {
+      "datum": "11.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "12.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka kapustová s rýží"
+    },
+    {
+      "datum": "12.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané"
+    },
+    {
+      "datum": "12.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "15.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zel. vývar s dýňovým kapáním"
+    },
+    {
+      "datum": "15.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Italský guláš (zbruf se sýrem), Špagety"
+    },
+    {
+      "datum": "15.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "16.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z kysaného zelí"
+    },
+    {
+      "datum": "16.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřový řízek přírodní, Brambory m.m."
+    },
+    {
+      "datum": "16.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Rajčatový salát - příloha, Sirup"
+    },
+    {
+      "datum": "17.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka ovarová"
+    },
+    {
+      "datum": "17.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Dukátové buchtičky s krémem"
+    },
+    {
+      "datum": "17.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Kakao, Sirup"
+    },
+    {
+      "datum": "18.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z míchaných luštěnin"
+    },
+    {
+      "datum": "18.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí roláda, Rýže dušená"
+    },
+    {
+      "datum": "18.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "19.12.2025",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s těstovinami"
+    },
+    {
+      "datum": "19.12.2025",
+      "druh_popis": "Oběd 1",
+      "nazev": "Zapečené těstoviny s uzeným masem, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "19.12.2025",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "01.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "02.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "05.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "05.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka rajčatová s těstovinou"
+    },
+    {
+      "datum": "05.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Srbská čočka, Chléb"
+    },
+    {
+      "datum": "05.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "06.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "06.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s vaječnou jíškou"
+    },
+    {
+      "datum": "06.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Guláš maďarský, Rýže dušená"
+    },
+    {
+      "datum": "06.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Termix"
+    },
+    {
+      "datum": "07.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "07.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka květáková"
+    },
+    {
+      "datum": "07.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rožnovské halušky (střapačky) s uzeným masem"
+    },
+    {
+      "datum": "07.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "08.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "08.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s kroupami"
+    },
+    {
+      "datum": "08.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře na paprice, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "08.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup, Ovoce"
+    },
+    {
+      "datum": "09.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "09.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka koprová (kulajda)"
+    },
+    {
+      "datum": "09.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Holandský řízek, Bramborová kaše - příloha"
+    },
+    {
+      "datum": "09.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Okurkový salát - příloha, Sirup"
+    },
+    {
+      "datum": "12.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "12.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka celerová se smaženým hráškem"
+    },
+    {
+      "datum": "12.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Losos přírodní, Brambory m.m."
+    },
+    {
+      "datum": "12.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "13.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "13.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s fridátovými nudlemi"
+    },
+    {
+      "datum": "13.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí nudličky se sýrovou omáčkou, Těstoviny"
+    },
+    {
+      "datum": "13.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko ochucené, Čaj"
+    },
+    {
+      "datum": "14.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "14.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka brokolicová"
+    },
+    {
+      "datum": "14.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Španělský ptáček rozházený, Rýže dušená"
+    },
+    {
+      "datum": "14.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "15.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "15.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka fazolová"
+    },
+    {
+      "datum": "15.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Lotrinské tagliatelle se sýrem"
+    },
+    {
+      "datum": "15.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "16.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "16.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s těstovinami"
+    },
+    {
+      "datum": "16.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová pečeně selská, Bramborové knedlíky (směs), Špenát dušený"
+    },
+    {
+      "datum": "16.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "19.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "19.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka bramborová"
+    },
+    {
+      "datum": "19.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha"
+    },
+    {
+      "datum": "19.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup"
+    },
+    {
+      "datum": "20.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "20.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka gulášová"
+    },
+    {
+      "datum": "20.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Zeleninový salát, Kuřecí stripsy"
+    },
+    {
+      "datum": "20.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Krém smetanový"
+    },
+    {
+      "datum": "21.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "21.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka špenátová s vajíčkem"
+    },
+    {
+      "datum": "21.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Bramborové šišky s mákem (strouhankou)"
+    },
+    {
+      "datum": "21.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup, Ovoce"
+    },
+    {
+      "datum": "22.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "22.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s celozrnnými knedlíčky"
+    },
+    {
+      "datum": "22.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřové na houbách, Brambory"
+    },
+    {
+      "datum": "22.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "23.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "23.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s masem a vejcem"
+    },
+    {
+      "datum": "23.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře Šanghaj s jasmínovou rýží"
+    },
+    {
+      "datum": "23.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "26.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "26.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka rajčatová s ovesnými vločkami"
+    },
+    {
+      "datum": "26.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Tilápie s rajčaty a sýrem, Brambory m.m."
+    },
+    {
+      "datum": "26.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "27.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "27.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s těstovinovou rýží"
+    },
+    {
+      "datum": "27.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hovězí pečeně štěpánská, Rýže dušená"
+    },
+    {
+      "datum": "27.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "28.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "28.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka květáková s červenou čočkou"
+    },
+    {
+      "datum": "28.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Králík pečený, Brambory m.m."
+    },
+    {
+      "datum": "28.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Zelný salát  - příloha, Sirup"
+    },
+    {
+      "datum": "29.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "29.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s bulgurem"
+    },
+    {
+      "datum": "29.01.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "29.01.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko ochucené, Sirup"
+    },
+    {
+      "datum": "30.01.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "30.01.2026",
+      "druh_popis": "Polévka",
+      "nazev": "P R Á Z D N I N Y"
+    },
+    {
+      "datum": "02.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "02.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s drožďovými knedlíčky"
+    },
+    {
+      "datum": "02.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Španělská čočka s mletým masem, Chléb"
+    },
+    {
+      "datum": "02.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "03.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "03.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka česneková s osmaženou hostičkou"
+    },
+    {
+      "datum": "03.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřové v mrkvi, Brambory m.m."
+    },
+    {
+      "datum": "03.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Jogurt - příloha"
+    },
+    {
+      "datum": "04.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "04.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka drůbková s nudlemi"
+    },
+    {
+      "datum": "04.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Těstovinový salát s marinovaným tofu"
+    },
+    {
+      "datum": "04.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "05.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "05.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z míchaných luštěnin"
+    },
+    {
+      "datum": "05.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hovězí guláš, Rýže dušená"
+    },
+    {
+      "datum": "05.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "06.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "06.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s kuskusem"
+    },
+    {
+      "datum": "06.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí stehna pečená se zel.fazolkami a kroupami"
+    },
+    {
+      "datum": "06.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "09.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "09.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka dýňový krém"
+    },
+    {
+      "datum": "09.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rybí filé po mlynářsku, Brambory"
+    },
+    {
+      "datum": "09.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Banány - příloha"
+    },
+    {
+      "datum": "10.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "10.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hráškový krém"
+    },
+    {
+      "datum": "10.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Sicilské špagety (boloňské)"
+    },
+    {
+      "datum": "10.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Tvarohový krém"
+    },
+    {
+      "datum": "11.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "11.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s pohankou"
+    },
+    {
+      "datum": "11.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Domácí buchty plněné mákem, povidly, tvarohem"
+    },
+    {
+      "datum": "11.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Kakao granko, Sirup"
+    },
+    {
+      "datum": "12.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "12.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s těstovinou"
+    },
+    {
+      "datum": "12.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Segedínský guláš, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "12.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "13.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "13.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka pórková"
+    },
+    {
+      "datum": "13.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Sekaná zahradnická, Brambory m.m."
+    },
+    {
+      "datum": "13.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "16.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "16.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s tarhoňou"
+    },
+    {
+      "datum": "16.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Mexická pánev (vepř.maso, fazole)) se sýrem"
+    },
+    {
+      "datum": "16.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "17.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "17.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zimní zeleninová s ovesnými vločkami"
+    },
+    {
+      "datum": "17.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Omáčka koprová, Brambory, Vejce vařené"
+    },
+    {
+      "datum": "17.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup"
+    },
+    {
+      "datum": "18.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "18.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka selská ii."
+    },
+    {
+      "datum": "18.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rizoto z vepřového masa, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "18.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "19.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "19.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka bramboračka nezahuštěná"
+    },
+    {
+      "datum": "19.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kapustové karbanátky s masem, Brambory"
+    },
+    {
+      "datum": "19.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "20.02.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "20.02.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka krupicová s vejcem"
+    },
+    {
+      "datum": "20.02.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Zapečené těstoviny s kuřecím masem a zeleninou"
+    },
+    {
+      "datum": "20.02.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "02.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "02.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s játrovými noky"
+    },
+    {
+      "datum": "02.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rybí stripsy, Brambory m.m."
+    },
+    {
+      "datum": "02.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "03.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "03.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka frankfurtská s bramborem"
+    },
+    {
+      "datum": "03.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Žemlovka s jablky a tvarohem"
+    },
+    {
+      "datum": "03.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup"
+    },
+    {
+      "datum": "04.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "04.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s quinoou"
+    },
+    {
+      "datum": "04.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře pečené, Brambory"
+    },
+    {
+      "datum": "04.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "05.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "05.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s vaječnou jíškou"
+    },
+    {
+      "datum": "05.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Masové koule v rajčatové omáčce, Těstoviny"
+    },
+    {
+      "datum": "05.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "06.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "06.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka kmínová s vejcem"
+    },
+    {
+      "datum": "06.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová pečeně selská, Špenát dušený, Karlovarský knedlík"
+    },
+    {
+      "datum": "06.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "09.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "09.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s bulgurem"
+    },
+    {
+      "datum": "09.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kovbojská pánev, Chléb"
+    },
+    {
+      "datum": "09.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "10.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "10.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka květáková"
+    },
+    {
+      "datum": "10.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Karbanátky pečené, Bramborová kaše - příloha"
+    },
+    {
+      "datum": "10.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Salát z bílého zelí s kapií, Sirup"
+    },
+    {
+      "datum": "11.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "11.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s česnekovými krutony"
+    },
+    {
+      "datum": "11.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Těstoviny se sýrovou omáčkou"
+    },
+    {
+      "datum": "11.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko ochucené, Sirup"
+    },
+    {
+      "datum": "12.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "12.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka čočková"
+    },
+    {
+      "datum": "12.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rizoto srbské, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "12.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Krém smetanový"
+    },
+    {
+      "datum": "13.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "13.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s ovesnými vločkami"
+    },
+    {
+      "datum": "13.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Svíčková na smetaně, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "13.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup"
+    },
+    {
+      "datum": "16.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "16.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka gulášová"
+    },
+    {
+      "datum": "16.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hejk pečený na bylinkovém másle, Brambory"
+    },
+    {
+      "datum": "16.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "17.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "17.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s jáhly"
+    },
+    {
+      "datum": "17.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Bramborák"
+    },
+    {
+      "datum": "17.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Káva bílá, Sirup"
+    },
+    {
+      "datum": "18.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "18.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka brokolicová"
+    },
+    {
+      "datum": "18.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřový řízek přírodní, Kuskus - příloha"
+    },
+    {
+      "datum": "18.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Čaj"
+    },
+    {
+      "datum": "19.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "19.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová se sýrovým kapáním"
+    },
+    {
+      "datum": "19.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hovězí pečeně na paprice, Vícezrnný knedlík (směs)"
+    },
+    {
+      "datum": "19.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup"
+    },
+    {
+      "datum": "20.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "20.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka cizrnová"
+    },
+    {
+      "datum": "20.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí řízek smažený, Bramborová kaše - příloha"
+    },
+    {
+      "datum": "20.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Okurkový salát - příloha"
+    },
+    {
+      "datum": "23.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "23.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka ovarová"
+    },
+    {
+      "datum": "23.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Čočkový kotlík, Chléb"
+    },
+    {
+      "datum": "23.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "24.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "24.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka drožďová"
+    },
+    {
+      "datum": "24.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová roláda (karlovarský kotouč), Bramborová kaše - příloha"
+    },
+    {
+      "datum": "24.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Zelný salát  - příloha, Sirup"
+    },
+    {
+      "datum": "25.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "25.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s fridátovými nudlemi"
+    },
+    {
+      "datum": "25.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí čína, Rýže dušená"
+    },
+    {
+      "datum": "25.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Přesnídávka ovocná"
+    },
+    {
+      "datum": "26.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "26.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hrachová"
+    },
+    {
+      "datum": "26.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Smažené točenky s rozinkami"
+    },
+    {
+      "datum": "26.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Káva bílá, Sirup"
+    },
+    {
+      "datum": "27.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "27.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí se strouháním"
+    },
+    {
+      "datum": "27.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Italský guláš (zbruf se sýrem), Těstoviny"
+    },
+    {
+      "datum": "27.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "30.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "30.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s rýží"
+    },
+    {
+      "datum": "30.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Bramborový guláš, Rohlík"
+    },
+    {
+      "datum": "30.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovocné smoothie"
+    },
+    {
+      "datum": "31.03.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "31.03.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka rajčatová s těstovinou"
+    },
+    {
+      "datum": "31.03.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha"
+    },
+    {
+      "datum": "31.03.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup"
+    },
+    {
+      "datum": "01.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "01.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka špenátová s vajíčkem"
+    },
+    {
+      "datum": "01.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Španělský plátek, Rýže dušená"
+    },
+    {
+      "datum": "01.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Perník"
+    },
+    {
+      "datum": "07.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "07.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s těstovinami"
+    },
+    {
+      "datum": "07.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "07.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "08.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "08.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s pohankou"
+    },
+    {
+      "datum": "08.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Bratislavské vepřové plecko, Těstoviny"
+    },
+    {
+      "datum": "08.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Mléko"
+    },
+    {
+      "datum": "09.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "09.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka květáková"
+    },
+    {
+      "datum": "09.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Francouzské brambory"
+    },
+    {
+      "datum": "09.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Rajčatový salát - příloha, Sirup"
+    },
+    {
+      "datum": "10.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "10.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s játrovými knedlíčky"
+    },
+    {
+      "datum": "10.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Guláš maďarský, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "10.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "13.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "13.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka bramborová"
+    },
+    {
+      "datum": "13.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rybí filé smažené, Bramborová kaše - příloha"
+    },
+    {
+      "datum": "13.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Salát z čínského zelí - příloha, Sirup, Ovoce"
+    },
+    {
+      "datum": "14.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "14.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka frankfurtská s bramborem"
+    },
+    {
+      "datum": "14.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Nákyp rýžový s meruňkami"
+    },
+    {
+      "datum": "14.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup"
+    },
+    {
+      "datum": "15.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "15.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka fazolová se zeleninou"
+    },
+    {
+      "datum": "15.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře pečené, Šťouchané brambory s cibulkou"
+    },
+    {
+      "datum": "15.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Kompot ovocný - příloha, Sirup"
+    },
+    {
+      "datum": "16.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "16.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s vaječnou jíškou"
+    },
+    {
+      "datum": "16.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hovězí pečeně na houbách, Těstoviny"
+    },
+    {
+      "datum": "16.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "17.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "17.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s hrachovými nudlemi"
+    },
+    {
+      "datum": "17.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Moravský vrabec, Bramborové knedlíky (směs), Zelí kysané"
+    },
+    {
+      "datum": "17.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Jogurt - příloha, Čaj, Sirup"
+    },
+    {
+      "datum": "20.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "20.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka rychlá s vejcem"
+    },
+    {
+      "datum": "20.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb"
+    },
+    {
+      "datum": "20.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "21.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "21.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka koprová (kulajda)"
+    },
+    {
+      "datum": "21.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Zapečené těstoviny s kuřecím masem a zeleninou"
+    },
+    {
+      "datum": "21.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko ochucené, Sirup"
+    },
+    {
+      "datum": "22.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "22.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka čočková"
+    },
+    {
+      "datum": "22.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Žebrácké maso, Brambory opékané"
+    },
+    {
+      "datum": "22.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Okurkový salát - příloha, Sirup"
+    },
+    {
+      "datum": "23.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "23.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z batátových brambor"
+    },
+    {
+      "datum": "23.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rizoto z vepřového masa, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "23.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "24.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "24.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s kuskusem"
+    },
+    {
+      "datum": "24.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny"
+    },
+    {
+      "datum": "24.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "27.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "27.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z kysaného zelí s klobásou"
+    },
+    {
+      "datum": "27.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rybí filé pečené na másle, Brambory"
+    },
+    {
+      "datum": "27.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "28.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "28.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová zahuštěná červenou čočkou"
+    },
+    {
+      "datum": "28.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Špagety s vepřovým masem a rajčaty"
+    },
+    {
+      "datum": "28.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "29.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "29.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hráškový krém"
+    },
+    {
+      "datum": "29.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Sekaná pečeně, Bramborová kaše - příloha, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "29.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "30.04.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "30.04.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka krupicová s vejcem"
+    },
+    {
+      "datum": "30.04.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře na paprice, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "30.04.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup"
+    },
+    {
+      "datum": "04.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "04.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka kuřecí s nudlemi"
+    },
+    {
+      "datum": "04.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hrachová kaše s cibulkou, Vejce vařené"
+    },
+    {
+      "datum": "04.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Salát z červené řepy - příloha, Sirup"
+    },
+    {
+      "datum": "05.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "05.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s ovesnými vločkami"
+    },
+    {
+      "datum": "05.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřové v kapustě, Brambory"
+    },
+    {
+      "datum": "05.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Tvarohový krém"
+    },
+    {
+      "datum": "06.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "06.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z míchaných luštěnin"
+    },
+    {
+      "datum": "06.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Dukátové buchtičky s krémem, Mléko"
+    },
+    {
+      "datum": "06.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Ovoce"
+    },
+    {
+      "datum": "07.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "07.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka česneková s osmaženou hostičkou"
+    },
+    {
+      "datum": "07.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová kýta po cikánsku, Rýže dušená"
+    },
+    {
+      "datum": "07.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "11.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "11.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z batátových brambor"
+    },
+    {
+      "datum": "11.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rybí filé po mlynářsku, Brambory"
+    },
+    {
+      "datum": "11.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "12.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "12.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s drožďovými knedlíčky"
+    },
+    {
+      "datum": "12.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hovězí guláš, Rýže dušená"
+    },
+    {
+      "datum": "12.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "13.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "13.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka květáková s červenou čočkou"
+    },
+    {
+      "datum": "13.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Těstoviny penne s tuňákem a chery rajčaty"
+    },
+    {
+      "datum": "13.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "14.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "14.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s kapáním"
+    },
+    {
+      "datum": "14.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová pečeně, Fazolové lusky na slanině, Brambory"
+    },
+    {
+      "datum": "14.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "15.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "15.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka brokolicová"
+    },
+    {
+      "datum": "15.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Špekové knedlíky, Zelí kysané"
+    },
+    {
+      "datum": "15.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "18.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "18.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s těstovinovou rýží"
+    },
+    {
+      "datum": "18.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Srbská čočka, Chléb"
+    },
+    {
+      "datum": "19.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "19.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka celerová se smaženým hráškem"
+    },
+    {
+      "datum": "19.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová pečeně selská, Nastavovaná kaše s cibulkou, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "20.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "20.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hrachová"
+    },
+    {
+      "datum": "20.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí čína, Rýže dušená"
+    },
+    {
+      "datum": "21.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "21.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí se strouháním"
+    },
+    {
+      "datum": "21.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřové v mrkvi, Brambory"
+    },
+    {
+      "datum": "22.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "22.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka špenátová"
+    },
+    {
+      "datum": "22.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Zapečené těstoviny s uzeným masem, Zelný salát  - příloha"
+    },
+    {
+      "datum": "25.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "25.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka rajčatová s ovesnými vločkami"
+    },
+    {
+      "datum": "25.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rybí filé zapečené se špenátem, Brambory"
+    },
+    {
+      "datum": "25.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Jogurt - příloha"
+    },
+    {
+      "datum": "26.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "26.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s tarhoňou"
+    },
+    {
+      "datum": "26.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hovězí pečeně znojemská, Rýže dušená"
+    },
+    {
+      "datum": "26.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "27.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "27.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka gulášová"
+    },
+    {
+      "datum": "27.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Těstoviny s brokolicí"
+    },
+    {
+      "datum": "27.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Mléko ochucené"
+    },
+    {
+      "datum": "28.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "28.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka bramborová"
+    },
+    {
+      "datum": "28.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí rizoto"
+    },
+    {
+      "datum": "28.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "29.05.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "29.05.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s rýží"
+    },
+    {
+      "datum": "29.05.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Segedínský guláš, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "29.05.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "01.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "01.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka kuřecí s nudlemi"
+    },
+    {
+      "datum": "01.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb"
+    },
+    {
+      "datum": "01.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "02.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "02.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová se sýrovým kapáním"
+    },
+    {
+      "datum": "02.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí nudličky se sýrovou omáčkou, Těstoviny"
+    },
+    {
+      "datum": "02.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Ovoce, Mléko"
+    },
+    {
+      "datum": "03.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "03.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka cibulová se sýrem"
+    },
+    {
+      "datum": "03.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Masová směs \"flamendr\", Rýže dušená"
+    },
+    {
+      "datum": "03.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "04.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "04.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka čočková se zeleninou"
+    },
+    {
+      "datum": "04.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Bramborové šišky s mákem (strouhankou)"
+    },
+    {
+      "datum": "04.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Kakao, Sirup"
+    },
+    {
+      "datum": "05.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "05.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka pórková s vejci"
+    },
+    {
+      "datum": "05.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí stripsy, Brambory"
+    },
+    {
+      "datum": "05.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Okurkový salát - příloha, Sirup"
+    },
+    {
+      "datum": "08.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "08.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka krupicová s vejcem"
+    },
+    {
+      "datum": "08.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuskus s kuřecím masem, brokolicí a suš.rajčaty"
+    },
+    {
+      "datum": "08.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "09.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "09.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s celozrnnými knedlíčky"
+    },
+    {
+      "datum": "09.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Španělský ptáček rozházený, Rýže dušená"
+    },
+    {
+      "datum": "09.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "10.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "10.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka ze zahradních jahod"
+    },
+    {
+      "datum": "10.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Obalované filé s brokolicí a sýrem, Brambory m.m."
+    },
+    {
+      "datum": "10.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "11.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "11.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka mrkvová"
+    },
+    {
+      "datum": "11.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Těstovinový salát se zeleninou a šunkou"
+    },
+    {
+      "datum": "11.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Mléko ochucené"
+    },
+    {
+      "datum": "12.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "12.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s těstovinami"
+    },
+    {
+      "datum": "12.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Králík pečený, Bramborové knedlíky (směs), Špenát dušený"
+    },
+    {
+      "datum": "12.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "15.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "15.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka bramboračka nezahuštěná"
+    },
+    {
+      "datum": "15.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Horňácký guláš (maso, fazole), Chléb"
+    },
+    {
+      "datum": "15.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "16.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "16.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka ovarová"
+    },
+    {
+      "datum": "16.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Lívance, Káva bílá"
+    },
+    {
+      "datum": "16.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Ovoce"
+    },
+    {
+      "datum": "17.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "17.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s quinoou"
+    },
+    {
+      "datum": "17.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny"
+    },
+    {
+      "datum": "17.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "18.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "18.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka cizrnová krémová s rajčaty"
+    },
+    {
+      "datum": "18.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře pečené, Brambory m.m."
+    },
+    {
+      "datum": "18.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Mrkvový salát - příloha"
+    },
+    {
+      "datum": "19.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "19.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová zahuštěná červenou čočkou"
+    },
+    {
+      "datum": "19.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřové na houbách se smetanou, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "19.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "22.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "22.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka drožďová"
+    },
+    {
+      "datum": "22.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Zeleninové rizoto"
+    },
+    {
+      "datum": "22.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Salát z červené řepy - příloha, Sirup"
+    },
+    {
+      "datum": "23.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "23.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s kapustou a rýží"
+    },
+    {
+      "datum": "23.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřové na paprice, Těstoviny"
+    },
+    {
+      "datum": "23.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Mléko ochucené"
+    },
+    {
+      "datum": "24.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "24.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka fazolová se zeleninou"
+    },
+    {
+      "datum": "24.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Nudle s mákem"
+    },
+    {
+      "datum": "24.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "25.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "25.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka špenátová s vajíčkem"
+    },
+    {
+      "datum": "25.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Francouzské brambory"
+    },
+    {
+      "datum": "25.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "26.06.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "26.06.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s těstovinami"
+    },
+    {
+      "datum": "26.06.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Sicilské špagety (boloňské)"
+    },
+    {
+      "datum": "26.06.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup"
+    },
+    {
+      "datum": "07.07.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "07.07.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "08.07.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "08.07.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "20.07.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "20.07.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "20.07.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "20.07.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "01.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "01.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka květáková"
+    },
+    {
+      "datum": "01.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Nudle s mákem"
+    },
+    {
+      "datum": "01.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Mléko"
+    },
+    {
+      "datum": "02.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "02.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka celerová se smaženým hráškem"
+    },
+    {
+      "datum": "02.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Sekaná pečeně, Brambory, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "02.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "03.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "03.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s těstovinami"
+    },
+    {
+      "datum": "03.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny"
+    },
+    {
+      "datum": "03.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "04.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "04.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka špenátová s vajíčkem"
+    },
+    {
+      "datum": "04.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rizoto srbské"
+    },
+    {
+      "datum": "04.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Krém smetanový"
+    },
+    {
+      "datum": "07.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "07.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová se sýrovým kapáním"
+    },
+    {
+      "datum": "07.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "07.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "08.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "08.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka brokolicová"
+    },
+    {
+      "datum": "08.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hovězí guláš, Rýže dušená"
+    },
+    {
+      "datum": "08.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "09.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "09.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka bramborová"
+    },
+    {
+      "datum": "09.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Zapečené těstoviny s uzeninou, Salát z červené řepy - příloha"
+    },
+    {
+      "datum": "09.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "10.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "10.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka kapustová s rýží"
+    },
+    {
+      "datum": "10.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře pečené, Brambory"
+    },
+    {
+      "datum": "10.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Zelný salát  - příloha, Sirup"
+    },
+    {
+      "datum": "11.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "11.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s pohankou"
+    },
+    {
+      "datum": "11.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Sicilské špagety (boloňské)"
+    },
+    {
+      "datum": "11.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "14.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "14.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka rajčatová s těstovinou"
+    },
+    {
+      "datum": "14.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rybí filé pečené na másle, Bramborová kaše - příloha"
+    },
+    {
+      "datum": "14.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "15.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "15.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová zahuštěná červenou čočkou"
+    },
+    {
+      "datum": "15.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí čína, Rýže dušená"
+    },
+    {
+      "datum": "15.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "16.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "16.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka krupicová s vejcem"
+    },
+    {
+      "datum": "16.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřové na houbách, Těstoviny"
+    },
+    {
+      "datum": "16.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Jogurt - příloha, Sirup"
+    },
+    {
+      "datum": "17.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "17.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka gulášová"
+    },
+    {
+      "datum": "17.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Žemlovka s jablky a tvarohem"
+    },
+    {
+      "datum": "17.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup"
+    },
+    {
+      "datum": "18.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "18.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s kuskusem"
+    },
+    {
+      "datum": "18.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "18.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "21.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "21.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s vaječnou jíškou"
+    },
+    {
+      "datum": "21.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kovbojská pánev, Chléb"
+    },
+    {
+      "datum": "21.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "22.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "22.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka dýňový krém"
+    },
+    {
+      "datum": "22.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hovězí pečeně štěpánská, Rýže dušená"
+    },
+    {
+      "datum": "22.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "23.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "23.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hrachová"
+    },
+    {
+      "datum": "23.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Francouzské brambory, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "23.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "24.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "24.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z rybího filé"
+    },
+    {
+      "datum": "24.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuře na paprice, Těstoviny"
+    },
+    {
+      "datum": "24.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup"
+    },
+    {
+      "datum": "25.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "25.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka pórková s vejci"
+    },
+    {
+      "datum": "25.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)"
+    },
+    {
+      "datum": "25.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "29.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "29.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s tarhoňou"
+    },
+    {
+      "datum": "29.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Omáčka koprová, Brambory, Vejce vařené"
+    },
+    {
+      "datum": "29.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Mléko, Sirup"
+    },
+    {
+      "datum": "30.09.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "30.09.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s játrovými noky"
+    },
+    {
+      "datum": "30.09.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Kuřecí prsa  na kari koření, Rýže dušená"
+    },
+    {
+      "datum": "30.09.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "01.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "01.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí se strouháním"
+    },
+    {
+      "datum": "01.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Karbanátek z rybího file - pečený, Brambory m.m."
+    },
+    {
+      "datum": "01.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Banány - příloha"
+    },
+    {
+      "datum": "02.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "02.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka mrkvová"
+    },
+    {
+      "datum": "02.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rožnovské halušky (střapačky) s uzeným masem"
+    },
+    {
+      "datum": "02.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "05.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "05.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka kuřecí s nudlemi"
+    },
+    {
+      "datum": "05.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha"
+    },
+    {
+      "datum": "05.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "06.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "06.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s drožďovými knedlíčky"
+    },
+    {
+      "datum": "06.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Těstoviny  po Lotrinsku"
+    },
+    {
+      "datum": "06.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Mléko ochucené"
+    },
+    {
+      "datum": "07.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "07.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z míchaných luštěnin"
+    },
+    {
+      "datum": "07.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Znojemský guláš, Rýže dušená"
+    },
+    {
+      "datum": "07.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Jogurt - příloha, Sirup"
+    },
+    {
+      "datum": "08.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "08.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s bulgurem"
+    },
+    {
+      "datum": "08.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Těstoviny s brokolicí a sýrovou omáčkou"
+    },
+    {
+      "datum": "08.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "09.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "09.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka  zeleninová s ovesnými vločkami"
+    },
+    {
+      "datum": "09.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Žebrácké maso, Brambory"
+    },
+    {
+      "datum": "09.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Přesnídávka ovocná"
+    },
+    {
+      "datum": "12.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "12.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka čočková"
+    },
+    {
+      "datum": "12.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rybí filé obalované, Bramborová kaše - příloha"
+    },
+    {
+      "datum": "12.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "13.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "13.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka frankfurtská s bramborem"
+    },
+    {
+      "datum": "13.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Rizoto s kuřecím masem"
+    },
+    {
+      "datum": "13.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Okurkový salát - příloha"
+    },
+    {
+      "datum": "14.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "14.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s jáhly"
+    },
+    {
+      "datum": "14.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Masové koule v rajčatové omáčce, Těstoviny"
+    },
+    {
+      "datum": "14.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "15.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "15.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka fazolová"
+    },
+    {
+      "datum": "15.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Bramborové šišky s mákem (strouhankou)"
+    },
+    {
+      "datum": "15.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Actimel, Mléko, Sirup"
+    },
+    {
+      "datum": "16.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "16.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s fridátovými nudlemi"
+    },
+    {
+      "datum": "16.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Segedínský guláš, Houskové knedlíky (kynuté)"
+    },
+    {
+      "datum": "16.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "19.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "19.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka hovězí s masem a vejcem"
+    },
+    {
+      "datum": "19.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Srbská čočka, Chléb"
+    },
+    {
+      "datum": "19.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "20.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "20.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka bramboračka nezahuštěná"
+    },
+    {
+      "datum": "20.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Španělský ptáček rozházený, Rýže dušená"
+    },
+    {
+      "datum": "20.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Mléko"
+    },
+    {
+      "datum": "21.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "21.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka celerová se smaženým hráškem"
+    },
+    {
+      "datum": "21.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Těstovinový salát s kuřecím masem"
+    },
+    {
+      "datum": "21.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Ovoce"
+    },
+    {
+      "datum": "22.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "22.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka z kysaného zelí"
+    },
+    {
+      "datum": "22.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřové v mrkvi, Brambory"
+    },
+    {
+      "datum": "22.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Jogurt - příloha"
+    },
+    {
+      "datum": "23.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "23.10.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s kuskusem"
+    },
+    {
+      "datum": "23.10.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Vepřová pečeně selská, Bramborové knedlíky (směs), Červené zelí"
+    },
+    {
+      "datum": "23.10.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup"
+    },
+    {
+      "datum": "26.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "27.10.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "02.11.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "02.11.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka rajčatová s tarhoňou"
+    },
+    {
+      "datum": "02.11.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Smažené rybí prsty, Brambory m.m."
+    },
+    {
+      "datum": "02.11.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Sirup, Čaj"
+    },
+    {
+      "datum": "03.11.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "03.11.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zeleninová s celozrnnými nudlemi"
+    },
+    {
+      "datum": "03.11.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Krůtí nudličky s pórkem, Rýže dušená"
+    },
+    {
+      "datum": "03.11.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Banány - ovoce"
+    },
+    {
+      "datum": "04.11.2026",
+      "druh_popis": "Přesnídávk",
+      "nazev": "Přesnídávka"
+    },
+    {
+      "datum": "04.11.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka zelenin. s fridátovými nudlemi"
+    },
+    {
+      "datum": "04.11.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Bulgur s kuřecím masem a zeleninou"
+    },
+    {
+      "datum": "04.11.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Čaj, Sirup, Jogurt - příloha"
+    },
+    {
+      "datum": "05.11.2026",
+      "druh_popis": "Polévka",
+      "nazev": "Polévka ovarová"
+    },
+    {
+      "datum": "05.11.2026",
+      "druh_popis": "Oběd 1",
+      "nazev": "Dukátové buchtičky s krémem, Kakao"
+    },
+    {
+      "datum": "05.11.2026",
+      "druh_popis": "Doplněk",
+      "nazev": "Kakao, Sirup"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "month": "202509",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202509",
+    "status": 200,
+    "chyba": false,
+    "sha256": "174ac3083c6bc9f36a17a7a70614c0f922e6d9db3f3419072190a665dcd708ac",
+    "retrievedAt": "2026-11-06T15:52:18.994444+00:00",
+    "bytes": 114712
+  },
+  {
+    "month": "202510",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+    "status": 200,
+    "chyba": false,
+    "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+    "retrievedAt": "2026-11-06T15:52:18.981686+00:00",
+    "bytes": 103717
+  },
+  {
+    "month": "202511",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202511",
+    "status": 200,
+    "chyba": false,
+    "sha256": "c75ba42284da90bb5b959fba610fa35dca5481d1d6b53c8e84333ac864a443ce",
+    "retrievedAt": "2026-11-06T15:52:18.989442+00:00",
+    "bytes": 95485
+  },
+  {
+    "month": "202512",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+    "status": 200,
+    "chyba": false,
+    "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+    "retrievedAt": "2026-11-06T15:52:24.457888+00:00",
+    "bytes": 75225
+  },
+  {
+    "month": "202601",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+    "status": 200,
+    "chyba": false,
+    "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+    "retrievedAt": "2026-11-06T15:52:24.465181+00:00",
+    "bytes": 140159
+  },
+  {
+    "month": "202602",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202602",
+    "status": 200,
+    "chyba": false,
+    "sha256": "8eb80d907b4f7de4294fa39b9268c61db508ab495ed138158ec6ff07cb40cf02",
+    "retrievedAt": "2026-11-06T15:52:24.415948+00:00",
+    "bytes": 98265
+  },
+  {
+    "month": "202603",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+    "status": 200,
+    "chyba": false,
+    "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+    "retrievedAt": "2026-11-06T15:52:30.084678+00:00",
+    "bytes": 143651
+  },
+  {
+    "month": "202604",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+    "status": 200,
+    "chyba": false,
+    "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+    "retrievedAt": "2026-11-06T15:52:29.939414+00:00",
+    "bytes": 124922
+  },
+  {
+    "month": "202605",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+    "status": 200,
+    "chyba": false,
+    "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+    "retrievedAt": "2026-11-06T15:52:29.896585+00:00",
+    "bytes": 122822
+  },
+  {
+    "month": "202606",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202606",
+    "status": 200,
+    "chyba": false,
+    "sha256": "e2ed8a58240bbe7965f621a8122f8074e3addff29237f2a530168b05a1b6ad71",
+    "retrievedAt": "2026-11-06T15:52:35.612157+00:00",
+    "bytes": 129575
+  },
+  {
+    "month": "202607",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+    "status": 200,
+    "chyba": false,
+    "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+    "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+    "bytes": 41738
+  },
+  {
+    "month": "202608",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202608",
+    "status": 200,
+    "chyba": false,
+    "sha256": "4abebddb32d6dbaa3e086bccb958f51841534c9197e2a65230393c55f8e0edfa",
+    "retrievedAt": "2026-11-06T15:52:35.384703+00:00",
+    "bytes": 25
+  },
+  {
+    "month": "202609",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+    "status": 200,
+    "chyba": false,
+    "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+    "retrievedAt": "2026-11-06T15:52:41.002020+00:00",
+    "bytes": 137425
+  },
+  {
+    "month": "202610",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+    "status": 200,
+    "chyba": false,
+    "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+    "retrievedAt": "2026-11-06T15:52:40.999598+00:00",
+    "bytes": 108553
+  },
+  {
+    "month": "202611",
+    "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202611",
+    "status": 200,
+    "chyba": false,
+    "sha256": "3dbb15c2da40e0c0c5ec6175bb9e45f25e7343f309169e2225752f84a76a18f8",
+    "retrievedAt": "2026-11-06T15:52:40.971481+00:00",
+    "bytes": 21566
+  }
+]

@@ -1,0 +1,1146 @@
+{
+  "cafeteria": "5948",
+  "status": "received",
+  "weeks": [
+    {
+      "week": "2025-09-29",
+      "days": [
+        {
+          "soup": "Polévka kuřecí s nudlemi",
+          "main": "Kovbojská pánev, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka koprová (kulajda)",
+          "main": "Holandský řízek, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
+          "main2": "Špagety po uhlířsku (vejce, sýr)"
+        },
+        {
+          "soup": "Polévka zelenin. s drožďovými knedlíčky",
+          "main": "Lotrinské tagliatelle se sýrem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka z rybího filé",
+          "main": "Kuře pečené, Brambory",
+          "main2": "Kuskus s ovocem"
+        },
+        {
+          "soup": "Polévka zelenin. s fridátovými nudlemi",
+          "main": "Svíčková na smetaně, Houskové knedlíky (kynuté)",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2025-10-06",
+      "days": [
+        {
+          "soup": "Polévka zeleninová s quinoou",
+          "main": "Debrecínský guláš, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka gulášová",
+          "main": "Karbanátek z rybího file - pečený, Brambory m.m.",
+          "main2": "Kuskus s kuřecím masem"
+        },
+        {
+          "soup": "Polévka hovězí se strouháním",
+          "main": "Kuřecí čína, Rýže dušená",
+          "main2": "Brokolicová poezie (květák, niva)"
+        },
+        {
+          "soup": "Polévka květáková s červenou čočkou",
+          "main": "Knedlíky švestkové (bramborové) s mákem",
+          "main2": "Pizza se šunkou"
+        },
+        {
+          "soup": "Polévka z kysaného zelí",
+          "main": "Vepřová roláda (karlovarský kotouč), Kaše bramborová",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2025-10-13",
+      "days": [
+        {
+          "soup": "Polévka špenátová s vajíčkem",
+          "main": "Džuveč, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s bulgurem",
+          "main": "Kuře na paprice, Těstoviny",
+          "main2": "Zeleninové placičky se sýrem, Brambory m.m."
+        },
+        {
+          "soup": "Polévka celerová se smaženým hráškem",
+          "main": "Šoulet, Vepřová pečeně, Okurka sterilovaná - příloha",
+          "main2": "Kaše krupicová"
+        },
+        {
+          "soup": "Polévka rychlá s vejcem",
+          "main": "Vepřové v mrkvi, Brambory",
+          "main2": "Těstovinový salát s cizrnou a sušenými rajčaty"
+        },
+        {
+          "soup": "Polévka selská ii.",
+          "main": "Kuřecí řízek smažený, Bramborová kaše - příloha",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2025-10-20",
+      "days": [
+        {
+          "soup": "Polévka rajčatová s těstovinou",
+          "main": "Fazole a la Katův šleh, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s celozrnnými knedlíčky",
+          "main": "Hovězí pečeně štěpánská, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka  zeleninová s ovesnými vločkami",
+          "main": "Žemlovka s jablky a tvarohem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s tarhoňou",
+          "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka čočková",
+          "main": "Zapečené těstoviny s kuřecím masem a zeleninou",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2025-11-03",
+      "days": [
+        {
+          "soup": "Polévka brokolicová",
+          "main": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s kuskusem",
+          "main": "Sicilské špagety (boloňské)",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka bramborová",
+          "main": "Kuře pečené, Bulgur",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hrachová se smaženým hráškem",
+          "main": "Sekaná pečeně, Bramborová kaše - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s vaječnou jíškou",
+          "main": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2025-11-10",
+      "days": [
+        {
+          "soup": "Polévka zeleninová zahuštěná červenou čočkou",
+          "main": "Rybí filé obalované, Brambory m.m.",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s kapáním",
+          "main": "Vepřový guláš, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka česneková s bramborem a vejcem",
+          "main": "Nudle s mákem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka květáková",
+          "main": "Hovězí pečeně frankfurtská, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka fazolová se zeleninou",
+          "main": "Gnocchi s kuřecím masem, smetanou a špenátem",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2025-11-24",
+      "days": [
+        {
+          "soup": "Polévka gulášová",
+          "main": "Rybí file pečené na másle, Bramborová kaše - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s fridátovými nudlemi",
+          "main": "Kuřecí rizoto, Salát z červené řepy - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s drožďovými knedlíčky",
+          "main": "Vepřová kotleta na houbách, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka krupicová maďarská",
+          "main": "Francouzské brambory, Okurka sterilovaná - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka čočková se zeleninou",
+          "main": "Španělský ptáček rozházený, Rýže dušená",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2025-12-01",
+      "days": [
+        {
+          "soup": "Polévka zelenin. s pohankou",
+          "main": "Kovbojská pánev, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová se sýrovým kapáním",
+          "main": "Kuře Šanghaj s rýží",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hrachová s hrachovými krutony",
+          "main": "Nákyp rýžový se švestkami",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka z fazolových lusků",
+          "main": "Omáčka rajčatová, Hovězí maso vařené, Houskové knedlíky (kynuté)",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka krupicová s vejcem",
+          "main": "Kapustové karbanátky, Bramborová kaše - příloha",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2025-12-08",
+      "days": [
+        {
+          "soup": "Polévka špenátová",
+          "main": "Rybí filé po mlynářsku, Brambory m.m.",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka cizrnová krémová s rajčaty",
+          "main": "Pekingská směs, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka kuřecí s nudlemi",
+          "main": "Vinná klobása smažená přírodní, Bramborová kaše - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka luštěninová",
+          "main": "Perkelt z kuřecího masa, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka kapustová s rýží",
+          "main": "Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2025-12-15",
+      "days": [
+        {
+          "soup": "Polévka zel. vývar s dýňovým kapáním",
+          "main": "Italský guláš (zbruf se sýrem), Špagety",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka z kysaného zelí",
+          "main": "Vepřový řízek přírodní, Brambory m.m.",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka ovarová",
+          "main": "Dukátové buchtičky s krémem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka z míchaných luštěnin",
+          "main": "Kuřecí roláda, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s těstovinami",
+          "main": "Zapečené těstoviny s uzeným masem, Okurka sterilovaná - příloha",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-01-05",
+      "days": [
+        {
+          "soup": "Polévka rajčatová s těstovinou",
+          "main": "Srbská čočka, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s vaječnou jíškou",
+          "main": "Guláš maďarský, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka květáková",
+          "main": "Rožnovské halušky (střapačky) s uzeným masem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s kroupami",
+          "main": "Kuře na paprice, Houskové knedlíky (kynuté)",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka koprová (kulajda)",
+          "main": "Holandský řízek, Bramborová kaše - příloha",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-01-12",
+      "days": [
+        {
+          "soup": "Polévka celerová se smaženým hráškem",
+          "main": "Losos přírodní, Brambory m.m.",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s fridátovými nudlemi",
+          "main": "Kuřecí nudličky se sýrovou omáčkou, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka brokolicová",
+          "main": "Španělský ptáček rozházený, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka fazolová",
+          "main": "Lotrinské tagliatelle se sýrem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s těstovinami",
+          "main": "Vepřová pečeně selská, Bramborové knedlíky (směs), Špenát dušený",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-01-19",
+      "days": [
+        {
+          "soup": "Polévka bramborová",
+          "main": "Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka gulášová",
+          "main": "Zeleninový salát, Kuřecí stripsy",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka špenátová s vajíčkem",
+          "main": "Bramborové šišky s mákem (strouhankou)",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s celozrnnými knedlíčky",
+          "main": "Vepřové na houbách, Brambory",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s masem a vejcem",
+          "main": "Kuře Šanghaj s jasmínovou rýží",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-01-26",
+      "days": [
+        {
+          "soup": "Polévka rajčatová s ovesnými vločkami",
+          "main": "Tilápie s rajčaty a sýrem, Brambory m.m.",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s těstovinovou rýží",
+          "main": "Hovězí pečeně štěpánská, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka květáková s červenou čočkou",
+          "main": "Králík pečený, Brambory m.m.",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s bulgurem",
+          "main": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
+          "main2": ""
+        },
+        {
+          "soup": "P R Á Z D N I N Y",
+          "main": "",
+          "main2": "",
+          "closed": true
+        }
+      ]
+    },
+    {
+      "week": "2026-02-02",
+      "days": [
+        {
+          "soup": "Polévka zelenin. s drožďovými knedlíčky",
+          "main": "Španělská čočka s mletým masem, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka česneková s osmaženou hostičkou",
+          "main": "Vepřové v mrkvi, Brambory m.m.",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka drůbková s nudlemi",
+          "main": "Těstovinový salát s marinovaným tofu",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka z míchaných luštěnin",
+          "main": "Hovězí guláš, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s kuskusem",
+          "main": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-02-09",
+      "days": [
+        {
+          "soup": "Polévka dýňový krém",
+          "main": "Rybí filé po mlynářsku, Brambory",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hráškový krém",
+          "main": "Sicilské špagety (boloňské)",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s pohankou",
+          "main": "Domácí buchty plněné mákem, povidly, tvarohem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s těstovinou",
+          "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka pórková",
+          "main": "Sekaná zahradnická, Brambory m.m.",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-02-16",
+      "days": [
+        {
+          "soup": "Polévka zeleninová s tarhoňou",
+          "main": "Mexická pánev (vepř.maso, fazole)) se sýrem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zimní zeleninová s ovesnými vločkami",
+          "main": "Omáčka koprová, Brambory, Vejce vařené",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka selská ii.",
+          "main": "Rizoto z vepřového masa, Okurka sterilovaná - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka bramboračka nezahuštěná",
+          "main": "Kapustové karbanátky s masem, Brambory",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka krupicová s vejcem",
+          "main": "Zapečené těstoviny s kuřecím masem a zeleninou",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-03-02",
+      "days": [
+        {
+          "soup": "Polévka hovězí s játrovými noky",
+          "main": "Rybí stripsy, Brambory m.m.",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka frankfurtská s bramborem",
+          "main": "Žemlovka s jablky a tvarohem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s quinoou",
+          "main": "Kuře pečené, Brambory",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s vaječnou jíškou",
+          "main": "Masové koule v rajčatové omáčce, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka kmínová s vejcem",
+          "main": "Vepřová pečeně selská, Špenát dušený, Karlovarský knedlík",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-03-09",
+      "days": [
+        {
+          "soup": "Polévka zelenin. s bulgurem",
+          "main": "Kovbojská pánev, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka květáková",
+          "main": "Karbanátky pečené, Bramborová kaše - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s česnekovými krutony",
+          "main": "Těstoviny se sýrovou omáčkou",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka čočková",
+          "main": "Rizoto srbské, Okurka sterilovaná - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s ovesnými vločkami",
+          "main": "Svíčková na smetaně, Houskové knedlíky (kynuté)",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-03-16",
+      "days": [
+        {
+          "soup": "Polévka gulášová",
+          "main": "Hejk pečený na bylinkovém másle, Brambory",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s jáhly",
+          "main": "Bramborák",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka brokolicová",
+          "main": "Vepřový řízek přírodní, Kuskus - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová se sýrovým kapáním",
+          "main": "Hovězí pečeně na paprice, Vícezrnný knedlík (směs)",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka cizrnová",
+          "main": "Kuřecí řízek smažený, Bramborová kaše - příloha",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-03-23",
+      "days": [
+        {
+          "soup": "Polévka ovarová",
+          "main": "Čočkový kotlík, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka drožďová",
+          "main": "Vepřová roláda (karlovarský kotouč), Bramborová kaše - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s fridátovými nudlemi",
+          "main": "Kuřecí čína, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hrachová",
+          "main": "Smažené točenky s rozinkami",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí se strouháním",
+          "main": "Italský guláš (zbruf se sýrem), Těstoviny",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-04-13",
+      "days": [
+        {
+          "soup": "Polévka bramborová",
+          "main": "Rybí filé smažené, Bramborová kaše - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka frankfurtská s bramborem",
+          "main": "Nákyp rýžový s meruňkami",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka fazolová se zeleninou",
+          "main": "Kuře pečené, Šťouchané brambory s cibulkou",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s vaječnou jíškou",
+          "main": "Hovězí pečeně na houbách, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s hrachovými nudlemi",
+          "main": "Moravský vrabec, Bramborové knedlíky (směs), Zelí kysané",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-04-20",
+      "days": [
+        {
+          "soup": "Polévka rychlá s vejcem",
+          "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka koprová (kulajda)",
+          "main": "Zapečené těstoviny s kuřecím masem a zeleninou",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka čočková",
+          "main": "Žebrácké maso, Brambory opékané",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka z batátových brambor",
+          "main": "Rizoto z vepřového masa, Okurka sterilovaná - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s kuskusem",
+          "main": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-05-11",
+      "days": [
+        {
+          "soup": "Polévka z batátových brambor",
+          "main": "Rybí filé po mlynářsku, Brambory",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s drožďovými knedlíčky",
+          "main": "Hovězí guláš, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka květáková s červenou čočkou",
+          "main": "Těstoviny penne s tuňákem a chery rajčaty",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s kapáním",
+          "main": "Vepřová pečeně, Fazolové lusky na slanině, Brambory",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka brokolicová",
+          "main": "Špekové knedlíky, Zelí kysané",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-05-18",
+      "days": [
+        {
+          "soup": "Polévka zeleninová s těstovinovou rýží",
+          "main": "Srbská čočka, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka celerová se smaženým hráškem",
+          "main": "Vepřová pečeně selská, Nastavovaná kaše s cibulkou, Okurka sterilovaná - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hrachová",
+          "main": "Kuřecí čína, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí se strouháním",
+          "main": "Vepřové v mrkvi, Brambory",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka špenátová",
+          "main": "Zapečené těstoviny s uzeným masem, Zelný salát  - příloha",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-05-25",
+      "days": [
+        {
+          "soup": "Polévka rajčatová s ovesnými vločkami",
+          "main": "Rybí filé zapečené se špenátem, Brambory",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s tarhoňou",
+          "main": "Hovězí pečeně znojemská, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka gulášová",
+          "main": "Těstoviny s brokolicí",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka bramborová",
+          "main": "Kuřecí rizoto",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s rýží",
+          "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-06-01",
+      "days": [
+        {
+          "soup": "Polévka kuřecí s nudlemi",
+          "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová se sýrovým kapáním",
+          "main": "Kuřecí nudličky se sýrovou omáčkou, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka cibulová se sýrem",
+          "main": "Masová směs \"flamendr\", Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka čočková se zeleninou",
+          "main": "Bramborové šišky s mákem (strouhankou)",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka pórková s vejci",
+          "main": "Kuřecí stripsy, Brambory",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-06-08",
+      "days": [
+        {
+          "soup": "Polévka krupicová s vejcem",
+          "main": "Kuskus s kuřecím masem, brokolicí a suš.rajčaty",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s celozrnnými knedlíčky",
+          "main": "Španělský ptáček rozházený, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka ze zahradních jahod",
+          "main": "Obalované filé s brokolicí a sýrem, Brambory m.m.",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka mrkvová",
+          "main": "Těstovinový salát se zeleninou a šunkou",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s těstovinami",
+          "main": "Králík pečený, Bramborové knedlíky (směs), Špenát dušený",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-06-15",
+      "days": [
+        {
+          "soup": "Polévka bramboračka nezahuštěná",
+          "main": "Horňácký guláš (maso, fazole), Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka ovarová",
+          "main": "Lívance, Káva bílá",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s quinoou",
+          "main": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka cizrnová krémová s rajčaty",
+          "main": "Kuře pečené, Brambory m.m.",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová zahuštěná červenou čočkou",
+          "main": "Vepřové na houbách se smetanou, Houskové knedlíky (kynuté)",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-06-22",
+      "days": [
+        {
+          "soup": "Polévka drožďová",
+          "main": "Zeleninové rizoto",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s kapustou a rýží",
+          "main": "Vepřové na paprice, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka fazolová se zeleninou",
+          "main": "Nudle s mákem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka špenátová s vajíčkem",
+          "main": "Francouzské brambory",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s těstovinami",
+          "main": "Sicilské špagety (boloňské)",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-09-07",
+      "days": [
+        {
+          "soup": "Polévka zeleninová se sýrovým kapáním",
+          "main": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka brokolicová",
+          "main": "Hovězí guláš, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka bramborová",
+          "main": "Zapečené těstoviny s uzeninou, Salát z červené řepy - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka kapustová s rýží",
+          "main": "Kuře pečené, Brambory",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s pohankou",
+          "main": "Sicilské špagety (boloňské)",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-09-14",
+      "days": [
+        {
+          "soup": "Polévka rajčatová s těstovinou",
+          "main": "Rybí filé pečené na másle, Bramborová kaše - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová zahuštěná červenou čočkou",
+          "main": "Kuřecí čína, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka krupicová s vejcem",
+          "main": "Vepřové na houbách, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka gulášová",
+          "main": "Žemlovka s jablky a tvarohem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s kuskusem",
+          "main": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-09-21",
+      "days": [
+        {
+          "soup": "Polévka hovězí s vaječnou jíškou",
+          "main": "Kovbojská pánev, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka dýňový krém",
+          "main": "Hovězí pečeně štěpánská, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hrachová",
+          "main": "Francouzské brambory, Okurka sterilovaná - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka z rybího filé",
+          "main": "Kuře na paprice, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka pórková s vejci",
+          "main": "Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-10-05",
+      "days": [
+        {
+          "soup": "Polévka kuřecí s nudlemi",
+          "main": "Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s drožďovými knedlíčky",
+          "main": "Těstoviny  po Lotrinsku",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka z míchaných luštěnin",
+          "main": "Znojemský guláš, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s bulgurem",
+          "main": "Těstoviny s brokolicí a sýrovou omáčkou",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka  zeleninová s ovesnými vločkami",
+          "main": "Žebrácké maso, Brambory",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-10-12",
+      "days": [
+        {
+          "soup": "Polévka čočková",
+          "main": "Rybí filé obalované, Bramborová kaše - příloha",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka frankfurtská s bramborem",
+          "main": "Rizoto s kuřecím masem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka hovězí s jáhly",
+          "main": "Masové koule v rajčatové omáčce, Těstoviny",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka fazolová",
+          "main": "Bramborové šišky s mákem (strouhankou)",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zelenin. s fridátovými nudlemi",
+          "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
+          "main2": ""
+        }
+      ]
+    },
+    {
+      "week": "2026-10-19",
+      "days": [
+        {
+          "soup": "Polévka hovězí s masem a vejcem",
+          "main": "Srbská čočka, Chléb",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka bramboračka nezahuštěná",
+          "main": "Španělský ptáček rozházený, Rýže dušená",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka celerová se smaženým hráškem",
+          "main": "Těstovinový salát s kuřecím masem",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka z kysaného zelí",
+          "main": "Vepřové v mrkvi, Brambory",
+          "main2": ""
+        },
+        {
+          "soup": "Polévka zeleninová s kuskusem",
+          "main": "Vepřová pečeně selská, Bramborové knedlíky (směs), Červené zelí",
+          "main2": ""
+        }
+      ]
+    }
+  ],
+  "skipped_incomplete_weeks": [
+    {
+      "week": "2025-11-17",
+      "complete_days": 4,
+      "reasons": [
+        "missing_days_or_meals"
+      ]
+    },
+    {
+      "week": "2026-03-30",
+      "complete_days": 3,
+      "reasons": [
+        "missing_days_or_meals"
+      ]
+    },
+    {
+      "week": "2026-04-06",
+      "complete_days": 4,
+      "reasons": [
+        "missing_days_or_meals"
+      ]
+    },
+    {
+      "week": "2026-04-27",
+      "complete_days": 4,
+      "reasons": [
+        "missing_days_or_meals"
+      ]
+    },
+    {
+      "week": "2026-05-04",
+      "complete_days": 4,
+      "reasons": [
+        "missing_days_or_meals"
+      ]
+    },
+    {
+      "week": "2026-08-31",
+      "complete_days": 4,
+      "reasons": [
+        "missing_days_or_meals"
+      ]
+    },
+    {
+      "week": "2026-09-28",
+      "complete_days": 4,
+      "reasons": [
+        "missing_days_or_meals"
+      ]
+    },
+    {
+      "week": "2026-11-02",
+      "complete_days": 4,
+      "reasons": [
+        "missing_days_or_meals"
+      ]
+    }
+  ],
+  "source": "Strava.cz public monthly history"
+}

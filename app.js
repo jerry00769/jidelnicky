@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const $=id=>document.getElementById(id),clone=x=>structuredClone(x),storeKey='jidelnicky2_static_v1';
+const $=id=>document.getElementById(id),clone=x=>structuredClone(x),storeKey=window.JIDELNICKY_CONFIG?.storageKey||'jidelnicky2_static_v1';
 const defaults={fish:1,legumes:1,meatless:1,sweetMax:1,avoidLegumePair:true,avoidFishPair:true};
 const weekdays=['Pondělí','Úterý','Středa','Čtvrtek','Pátek'];
 const today=new Date(),iso=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
@@ -12,36 +12,19 @@ const format=d=>d.toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year
 const freshDay=()=>({closed:false,soup:'',main:'',category:'',main2:'',category2:''});
 const freshWeek=s=>({week:monday(s),days:Array.from({length:5},freshDay)});
 
+const Data=window.JidelnickyData;
+let finishReady;window.JidelnickyReady=new Promise(resolve=>finishReady=resolve);
 let state;try{state=JSON.parse(localStorage.getItem(storeKey)||'null')}catch{};
 const hasSavedState=!!(state?.catalog?.main&&state?.catalog?.soup&&state?.week?.days?.length===5);
+if(!hasSavedState&&window.JIDELNICKY_SEED){state=clone(window.JIDELNICKY_SEED);state.week=freshWeek(preparationWeek(today));}
 if(!state||!state.catalog||!state.week||!Array.isArray(state.week.days)||state.week.days.length!==5)state={catalog:clone(window.INITIAL_CATALOG),week:freshWeek(preparationWeek(today)),history:[],rules:clone(defaults),txt:'',count:1,lockMain:8,lockSoup:3};
-// Bezpecne doplneni POUZE historicky pouzitych nazvu do katalogu.
-// Neodstranuje zadne zaznamy ani neprepise historii; respektuje ulozene uzivatelske nazvy.
-function reconcileCatalogWithHistory(target){
- if(!target?.catalog?.soup||!target?.catalog?.main||!Array.isArray(target.history))return 0;
- const normName=x=>String(x||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim().replace(/\s+/g,' ').toLocaleLowerCase('cs');
- let added=0;
- for(const kind of ['soup','main']){
-  const groups=target.catalog[kind];
-  const known=new Set(Object.values(groups).flat().map(normName));
-  const baseline=window.INITIAL_CATALOG?.[kind]||{};
-  const baselineGroup=new Map();
-  for(const [cat,items] of Object.entries(baseline))for(const name of items)baselineGroup.set(normName(name),cat);
-  for(const week of target.history)for(const day of week.days||[]){
-   if(day.closed)continue;
-   for(const field of kind==='soup'?['soup']:['main','main2']){
-    const name=String(day[field]||'').trim(),key=normName(name);
-    if(!key||known.has(key)||(kind==='soup'&&key==='prazdniny'))continue;
-    const cat=baselineGroup.get(key)||Object.keys(groups)[0]||'OSTATNI';
-    (groups[cat]??=[]).push(name);known.add(key);added++;
-   }
-  }
- }
- return added;
-}
+// Katalog lze destruktivně přepočítat jen z PROKAZATELNĚ definitivní historie.
+// U starších neověřených týdnů nesmíme tvrdit původ ani mazat názvy.
+function reconcileCatalogWithHistory(target){return Data.reconcile(target)}
+state=Data.normalizeState(state);
+
 state.history??=[];state.learning=cleanLearning(state.learning);state.rules={...defaults,...state.rules};state.txt??='';state.count=[1,2].includes(+state.count)?+state.count:1;
-const repairedOnLoad=reconcileCatalogWithHistory(state);
-if(repairedOnLoad){try{localStorage.setItem(storeKey,JSON.stringify(state))}catch(e){console.warn("Katalog se nepodařilo uložit",e)}}
+
 
 // Preference z ručních úprav; omezené skóre zabraňuje zacyklení výběru.
 function cleanLearning(value){
@@ -74,23 +57,23 @@ function weightedOrder(items,kind,getKey=x=>x){
     return result;
 }
 
-const undo=[],redo=[];let lastSaved=JSON.stringify(state),printingHistory=false;
-const save=()=>{if(printingHistory)return;const json=JSON.stringify(state);if(json===lastSaved)return;try{localStorage.setItem(storeKey,json);lastSaved=json;window.GitHubSync?.changed()}catch(e){notice('Uložení do prohlížeče selhalo.',true)}};
+const undo=[],redo=[];let lastSaved=localStorage.getItem(storeKey)||'',printingHistory=false;
+const save=()=>{if(printingHistory)return;try{const next=Data.normalizeState(state);Data.reconcile(next);const json=JSON.stringify(next);if(json===lastSaved)return;window.LocalBackups.commit(next);state=next;lastSaved=json;window.GitHubSync?.changed()}catch(e){notice('Uložení do prohlížeče selhalo. Použij Export JSON. '+e.message,true)}};
 function download(name,content,type){const b=new Blob([content],{type});const u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),2000)}
-window.JidelnickyApp={getState:()=>clone(state),applyState(next){if(!next?.catalog?.main||!next?.catalog?.soup||!Array.isArray(next.history)||next?.week?.days?.length!==5)throw Error('Neplatná společná data');state=clone(next);reconcileCatalogWithHistory(state);state.learning=cleanLearning(state.learning);state.rules={...defaults,...state.rules};state.txt??='';state.count=[1,2].includes(+state.count)?+state.count:1;undo.length=0;redo.length=0;lastSaved=JSON.stringify(state);localStorage.setItem(storeKey,lastSaved);if(typeof selectedHistory!=='undefined'&&selectedHistory&&!state.history.some(h=>h.week===selectedHistory))selectedHistory=[...state.history].sort((a,b)=>b.week.localeCompare(a.week))[0]?.week||null;render();if($('historyDialog')?.open){historyRows();historyDetail()}},notice};
+window.JidelnickyApp={getState:()=>clone(state),applyState(next){const prepared=Data.normalizeState(next);Data.reconcile(prepared);prepared.learning=cleanLearning(prepared.learning);prepared.rules={...defaults,...prepared.rules};prepared.txt??='';prepared.count=[1,2].includes(+prepared.count)?+prepared.count:1;window.LocalBackups.commit(prepared);state=prepared;undo.length=0;redo.length=0;lastSaved=JSON.stringify(state);if(selectedHistory&&!savedWeek(selectedHistory))selectedHistory=null;render();if($('historyDialog')?.open){historyRows();historyDetail()}},notice};
 const snapshot=()=>{undo.push(clone(state));if(undo.length>60)undo.shift();redo.length=0};
 
-// Kontrola je pouze čtecí; GitHub se nemění bez výslovného souhlasu.
+// Kontrola doplní katalog z ověřené historie; zdrojové týdny nepřepisuje.
 function auditCatalogHistory(){
- const key=v=>String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim().replace(/\s+/g,' ').toLocaleLowerCase('cs');
+ const key=v=>String(v||'').trim();
  const known={soup:new Set(),main:new Set()};
  for(const kind of ['soup','main'])for(const names of Object.values(state.catalog[kind]||{}))for(const name of names)known[kind].add(key(name));
  const missing={soup:new Map(),main:new Map()};
- for(const week of state.history||[])for(const day of week.days||[]){
-  if(day.closed)continue;
+ for(const week of state.history||[])for(const [i,day] of (week.days||[]).entries()){
+  if(day.closed||!Data.isDayVerified(state,week,i))continue;
   for(const [kind,field] of [['soup','soup'],['main','main'],['main','main2']]){
    const name=String(day[field]||'').trim(),k=key(name);
-   if(!k||(kind==='soup'&&k==='prazdniny'))continue;
+   if(!k||Data.organization(name))continue;
    if(!known[kind].has(k)&&!missing[kind].has(k))missing[kind].set(k,{name});
   }
  }
@@ -98,18 +81,39 @@ function auditCatalogHistory(){
 }
 async function runCatalogAudit(){
  // Jídelníčky 2: jen kontrola názvů. Historie se nikdy automaticky nepřepisuje.
- const repaired=reconcileCatalogWithHistory(state);
- if(repaired)save();
+ const report=reconcileCatalogWithHistory(state);
+ const added=Object.values(report.added).reduce((n,a)=>n+a.length,0);
+ const removed=Object.values(report.removed).reduce((n,a)=>n+a.length,0);
+ const moved=Object.values(report.movedToLegacy).reduce((n,a)=>n+a.length,0);
+ if(added||removed||moved)save();
  const audit=auditCatalogHistory();
  const missing=[...audit.missing.soup.values()].map(x=>'Polévka: '+x.name).concat([...audit.missing.main.values()].map(x=>'Hlavní jídlo: '+x.name));
- alert('Kontrola databáze (bez kategorizace)\n\nHistorie: '+state.history.length+' týdnů.\nChybějící názvy v katalogu: '+missing.length+'\n\n'+(missing.join('\n')||'Žádné chybějící názvy.')+'\n\nDoplněno z historie do katalogu: '+repaired+' názvů. Historie zůstala beze změny.');
+ showCheckResult('Kontrola databáze',missing.length?'Chybějící názvy v katalogu: '+missing.length:'Všechna jídla z ověřené historie jsou v definitivním katalogu.',[
+  'Historie: '+state.history.length+' týdnů. Úplný zdroj: '+report.verified+'; jídla ověřena s dalšími dny bez menu: '+state.catalogAudit.mealsVerified+'; celé týdny bez menu: '+state.catalogAudit.noPublishedMenu+'; dosud neprověřeno: '+state.catalogAudit.unchecked+'.',
+  'Doplněno z ověřené historie: '+added+' názvů. Odstraněno při sjednocení katalogu: '+removed+' názvů.',
+  'Definitivní katalog: '+Object.values(state.catalog.soup).flat().length+' polévek a '+Object.values(state.catalog.main).flat().length+' hlavních jídel.',
+  'Starší neověřený seznam zachovaný pro plánování: '+Object.values(state.legacyCatalog.soup).flat().length+' polévek a '+Object.values(state.legacyCatalog.main).flat().length+' hlavních jídel. Přesunuto při této kontrole: '+moved+'.',
+  'Historie zůstala beze změny.',
+  ...missing
+ ],!!missing.length);
 }
-$('auditCatalog')?.addEventListener('click',()=>runCatalogAudit().catch(e=>notice('Kontrola databáze selhala: '+e.message,true)));
+$('auditCatalog')?.addEventListener('click',()=>runCatalogAudit().catch(e=>showCheckResult('Kontrola databáze','Kontrolu se nepodařilo dokončit.',[e.message],true)));
+
+// Výsledek ručně spuštěné kontroly musí zůstat čitelný i v hostovaném náhledu.
+function showCheckResult(title,summary,messages=[],error=false){
+ $('checkTitle').textContent=title;
+ $('checkSummary').textContent=summary;
+ $('checkSummary').className=error?'check-summary error':'check-summary success';
+ $('checkMessages').replaceChildren(...messages.map(message=>{const item=document.createElement('li');item.textContent=message;return item}));
+ if(!$('checkDialog').open)$('checkDialog').showModal();
+}
+$('closeCheck').onclick=()=>$('checkDialog').close();
 
 let statusTimer;function notice(message,error=false){const el=$('status');if(!el)return;clearTimeout(statusTimer);el.textContent=message;el.className=error?'error':'success';el.style.display='block';statusTimer=setTimeout(()=>el.style.display='none',6500)}
 const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const starts=(cat,p)=>cat.startsWith(p);
-const all=(kind)=>Object.entries(state.catalog[kind]||{}).flatMap(([cat,items])=>items.map(name=>({cat,name})));
+const all=(kind)=>{const seen=new Set();return [state.catalog[kind],state.legacyCatalog?.[kind],state.proposalCatalog?.[kind]].flatMap(groups=>Object.entries(groups||{}).flatMap(([cat,items])=>items.map(name=>({cat,name})))).filter(x=>{if(seen.has(x.name))return false;seen.add(x.name);return true})};
+function mealStore(kind,name,cat){return [state.catalog[kind],state.legacyCatalog[kind],state.proposalCatalog[kind]].map(groups=>groups?.[cat]).find(names=>names?.includes(name))}
 // Pomocné kategorie zůstávají v datech pro automatický import, nikoli v ručním výběru.
 const isInternalCategory=cat=>/^(K ZAŘAZENÍ|K OVĚŘENÍ)$/i.test(String(cat||'').trim());
 
@@ -246,12 +250,16 @@ function render(){
 }
 
 let selectedHistory=null;
+const savedWeeks=()=>[...state.history,...(state.drafts||[]).filter(d=>!state.history.some(h=>h.week===d.week))];
+const savedWeek=key=>state.history.find(h=>h.week===key)||state.drafts?.find(h=>h.week===key);
+function historySourceLabel(h){return h.status==='draft'?'Návrh':({'definitive':'Strava.cz','meals-verified':'Jídla Strava.cz · dny bez menu','no-published-menu':'Bez menu ve zdroji','unverified':'Neověřeno'})[Data.auditStatus(state,h)]}
+const protectedHistory=h=>!!h&&h.days.some((_,i)=>Data.isDayVerified(state,h,i));
 function historyRows(){
     const target=$('historyList');target.replaceChildren();
-    const items=[...state.history].sort((a,b)=>b.week.localeCompare(a.week));
+    const items=savedWeeks().sort((a,b)=>b.week.localeCompare(a.week));
     for(const h of items){
         const b=document.createElement('button');b.className='history-item'+(selectedHistory===h.week?' selected':'');
-        b.textContent=`${format(dateAt(h.week,0))} – ${format(dateAt(h.week,4))}`;
+        b.textContent=`${format(dateAt(h.week,0))} – ${format(dateAt(h.week,4))} · ${historySourceLabel(h)}`;
         b.onclick=()=>{selectedHistory=h.week;historyRows();historyDetail()};
         target.append(b)
     }
@@ -259,41 +267,38 @@ function historyRows(){
 }
 
 function historyDetail(){
- const h=state.history.find(x=>x.week===selectedHistory),el=$('historyPreview');el.replaceChildren();
+ const h=savedWeek(selectedHistory),el=$('historyPreview');el.replaceChildren();
  $('historyTitle').textContent=h?`Jídelníček ${format(dateAt(h.week,0))} – ${format(dateAt(h.week,4))}`:'Vyber uložený týden';
  for(const id of ['historyLoad','historyCopy','historyPrint','historyDelete'])$(id).disabled=!h;
+ if(protectedHistory(h))$('historyDelete').disabled=true;
+ if(h)$('historyTitle').textContent+=' · '+(historySourceLabel(h));
  if(!h)return;
+ const sourceNote=document.createElement('p');sourceNote.className='muted';sourceNote.textContent=Data.isVerified(state,h)?'Ověřený týden Strava.cz 5948. Pro vlastní plán použij Kopírovat do jiného týdne.':h.status==='draft'?'Pracovní návrh čeká na zveřejnění jídelnou.':Data.auditStatus(state,h)==='meals-verified'?'Všechna uvedená jídla jsou ověřena podle Strava.cz 5948 a chráněna proti úpravě. Pro ostatní dny zdroj neobsahuje menu; původní stav zavřeno je zachován, ale není tím nezávisle potvrzen.':Data.auditStatus(state,h)==='no-published-menu'?'Pro všech pět dnů měsíční zdroj neobsahuje menu. Původní stav zavřeno je zachován; absence menu sama nepotvrzuje uzavření jídelny.':'Původ tohoto staršího týdne zatím není doložen zdrojem Strava.cz; zůstává neověřený.';el.append(sourceNote);
  for(let i=0;i<5;i++){
   const d=h.days[i]||{},day=document.createElement('section');day.className='history-day';
   const header=document.createElement('div');header.className='history-day-head';
   const name=document.createElement('strong');name.textContent=`${weekdays[i]} ${format(dateAt(h.week,i))}`;
   const closed=document.createElement('button');closed.type='button';closed.className='history-closed-toggle alt';closed.textContent=d.closed?(dateAt(h.week,i)<parseDate(iso(new Date()))?'Nevařilo se':'Nevaří se'):(dateAt(h.week,i)<parseDate(iso(new Date()))?'Vařilo se':'Vaří se');
-  closed.onclick=()=>{snapshot();d.closed=!d.closed;render();historyDetail();notice('Stav vaření uložen do historie.');};
+  const noMenu=state.stravaMealWeeks?.[h.week]?.noMenuDates?.includes(iso(dateAt(h.week,i)));
+  if(d.closed&&noMenu){closed.textContent='Bez menu ve zdroji';closed.title='Původní stav: zavřeno. Uzavření není nezávisle potvrzeno.'}
+  closed.disabled=Data.isDayVerified(state,h,i);
+  closed.onclick=()=>{if(Data.isDayVerified(state,h,i))return;snapshot();d.closed=!d.closed;render();historyDetail();notice('Stav vaření uložen do historie.');};
   header.append(name,closed);day.append(header);
   // Stejně jako v Pythonu: při Nevaří se skrýt VŠECHNA jídla,
   // ale ponechat je beze změny v datech pro případné opětovné zapnutí.
-  if(!d.closed)for(const [key,label] of [['soup','Polévka'],['main','Oběd 1'],['main2','Oběd 2']]){
+  if(!d.closed||Data.organization(d.soup))for(const [key,label] of [['soup','Polévka'],['main','Oběd 1'],['main2','Oběd 2']]){
    if(key==='main2'&&!d.main2&&!d.category2&&!h.days.some(x=>x.main2))continue;
    const b=document.createElement('button');b.type='button';b.className='history-meal-edit';
-   b.textContent=`${label}: ${d[key]||(key==='soup'?'[Vybrat polévku]':'[Vybrat jídlo]')}`;b.title='Kliknutím upravit přímo v historii';
+   b.textContent=`${label}: ${d[key]||(key==='soup'?'[Vybrat polévku]':'[Vybrat jídlo]')}`;b.disabled=Data.isDayVerified(state,h,i);b.title=b.disabled?'Definitivní text Strava.cz':'Kliknutím upravit přímo v historii';
    b.onclick=()=>openHistoryPicker(h.week,i,key);day.append(b);
   }
   el.append(day);
  }
 }
-function bestCatalogMatch(kind,name,cat=''){
- if(!name)return null;
- const items=all(kind),needle=norm(name).trim();
- const exact=items.find(x=>norm(x.name)===needle&&(!cat||x.cat===cat))||items.find(x=>norm(x.name)===needle);
- if(exact)return exact;
- const partial=items.filter(x=>norm(x.name).includes(needle)||needle.includes(norm(x.name)));
- if(partial.length)return partial.sort((a,b)=>Number(b.cat===cat)-Number(a.cat===cat)||Math.abs(a.name.length-name.length)-Math.abs(b.name.length-name.length))[0];
- const words=needle.split(/[^a-z0-9]+/).filter(w=>w.length>=4);
- const ranked=items.map(x=>({item:x,score:words.filter(w=>norm(x.name).includes(w)).length})).sort((a,b)=>b.score-a.score);
- return ranked[0]?.score>=2?ranked[0].item:null;
-}
+function bestCatalogMatch(kind,name,cat=''){const exact=all(kind).filter(x=>x.name===name);return exact.find(x=>x.cat===cat)||(exact.length===1?exact[0]:null)}
 function openHistoryPicker(week,day,key){
- const h=state.history.find(x=>x.week===week);if(!h)return;
+ const h=savedWeek(week);if(!h)return;
+ if(Data.isDayVerified(state,h,day)){notice('Definitivní Strava.cz se zde neupravuje. Pro plánování použij Kopírovat do jiného týdne.');return}
  const kind=key==='soup'?'soup':'main',d=h.days[day],currentName=d[key]||'',cat=key==='main'?'category':'category2';
  picking={day,key,kind,historyWeek:week};
  $('pickerTitle').textContent=`Historie – ${weekdays[day]} – ${key==='soup'?'Polévka':key==='main'?'Oběd 1':'Oběd 2'}`;
@@ -305,17 +310,17 @@ function openHistoryPicker(week,day,key){
  renderChoices();$('picker').showModal();$('search').focus({preventScroll:true});requestAnimationFrame(()=>requestAnimationFrame(centerPickerSelection));
 }
 function historyMutation(fn,message){
- const h=state.history.find(x=>x.week===picking?.historyWeek);if(!h)throw Error('Historický týden již neexistuje.');
+ const h=savedWeek(picking?.historyWeek);if(!h)throw Error('Historický týden již neexistuje.');if(Data.isDayVerified(state,h,picking.day))throw Error('Tento den už byl ověřen podle Strava.cz. Definitivní historii nelze ručně přepsat.');
  snapshot();fn(h.days[picking.day]);render();historyDetail();notice(message);
 }
 
 function showHistory(week){
-    selectedHistory=week||[...state.history].sort((a,b)=>b.week.localeCompare(a.week))[0]?.week||null;
+    selectedHistory=week||savedWeeks().sort((a,b)=>b.week.localeCompare(a.week))[0]?.week||null;
     historyRows();historyDetail();
     $('historyDialog').showModal(); $('historyDialog').scrollTop=0
 }
 
-function chosenHistory(){return state.history.find(h=>h.week===selectedHistory)}
+function chosenHistory(){return savedWeek(selectedHistory)}
 
 $('openHistory').onclick=()=>showHistory();
 $('closeHistory').onclick=()=>$('historyDialog').close();
@@ -362,7 +367,7 @@ $('copyConfirm').onclick=()=>safe(()=>{
   $('changeWeekMessage').textContent='Přechod z týdne '+format(parseDate(state.week.week))+' na '+format(parseDate(target))+'. Co se má stát s aktuálně zobrazenými jídly?';
   copyDlg.close();$('changeWeekDialog').showModal();return;
  }
- const h=state.history.find(x=>x.week===copySource);if(!h)throw Error('Původní týden už není v historii.');
+ const h=savedWeek(copySource);if(!h)throw Error('Původní týden už není v historii.');
  snapshot();state.week=clone(h);state.week.week=target;state.count=h.days.some(d=>d.main2)?2:1;
  copyDlg.close();$('historyDialog').close();render();notice('Týden zkopírován jako pracovní návrh. Historie se nezměnila.');
 });
@@ -384,7 +389,7 @@ $('historyCopy').onclick=()=>safe(()=>{
  const h=chosenHistory();if(!h)return;calendarMode='history';copySource=h.week;copyDate=new Date();copyMonth=new Date(copyDate.getFullYear(),copyDate.getMonth(),1);$('copyWeekTitle').textContent='Kopírovat do jiného týdne';$('copyConfirm').textContent='Kopírovat';
  drawCopyCalendar();copyDlg.showModal();
 });
-$('historyDelete').onclick=()=>safe(()=>{const h=chosenHistory();if(!h)return;if(!confirm('Opravdu smazat schválený týden '+format(dateAt(h.week,0))+'? Změnu lze vrátit tlačítkem Zpět.'))return;snapshot();state.history=state.history.filter(x=>x.week!==h.week);selectedHistory=[...state.history].sort((a,b)=>b.week.localeCompare(a.week))[0]?.week||null;render();historyRows();historyDetail();notice('Týden smazán z historie. '+(selectedHistory?'Vybrán nejnovější zbývající týden. ':'Historie je prázdná. ')+'Lze vrátit tlačítkem Zpět.')});
+$('historyDelete').onclick=()=>safe(()=>{const h=chosenHistory();if(!h)return;if(protectedHistory(h))throw Error('Historii s jídly doloženými Strava.cz nelze smazat.');if(!confirm('Opravdu smazat schválený týden '+format(dateAt(h.week,0))+'? Změnu lze vrátit tlačítkem Zpět.'))return;snapshot();state.history=state.history.filter(x=>x.week!==h.week);state.drafts=state.drafts.filter(x=>x.week!==h.week);selectedHistory=[...state.history].sort((a,b)=>b.week.localeCompare(a.week))[0]?.week||null;render();historyRows();historyDetail();notice('Týden smazán z historie. '+(selectedHistory?'Vybrán nejnovější zbývající týden. ':'Historie je prázdná. ')+'Lze vrátit tlačítkem Zpět.')});
 $('historyPrint').onclick=()=>safe(()=>{const h=chosenHistory();if(!h)return;const previous=clone(state.week),count=state.count;printingHistory=true;try{state.week=clone(h);state.count=h.days.some(d=>d.main2)?2:1;render();$('historyDialog').close();window.print()}finally{state.week=previous;state.count=count;render();printingHistory=false}notice('Připraven tisk vybraného týdne.')});
 
 // Samostatný přenos historie mezi WEBem a Pythonem (pole týdnů JSON).
@@ -469,7 +474,7 @@ function renderChoices(){
     const kind=picking.kind,q=norm($('search').value.trim()),catFilter=$('pickerCategory').value,el=$('choices');el.replaceChildren();
     const cats=[];const categorySelect=$('pickerCategory');
     if(categorySelect.options.length!==cats.length+1||cats.some((c,i)=>categorySelect.options[i+1]?.value!==c)){categorySelect.replaceChildren();categorySelect.add(new Option('VŠECHNY',''));for(const cat of cats)categorySelect.add(new Option(cat,cat));categorySelect.value=cats.includes(catFilter)?catFilter:'';}
-    const current=picking.day===null?null:(picking.historyWeek?state.history.find(h=>h.week===picking.historyWeek)?.days[picking.day]:state.week.days[picking.day]);
+    const current=picking.day===null?null:(picking.historyWeek?savedWeek(picking.historyWeek)?.days[picking.day]:state.week.days[picking.day]);
     // Presny podretezec nazvu NEBO kategorie, bez diakritiky; bez fuzzy shod a aliasu.
     const options=all(kind).filter(x=>(!categorySelect.value||x.cat===categorySelect.value)&&contains(x.name,q)).filter(x=>!current||picking.key==='soup'||(picking.key==='main'?norm(x.name)!==norm(current.main2):norm(x.name)!==norm(current.main)));
     options.sort((a,b)=>a.name.localeCompare(b.name,'cs')||a.cat.localeCompare(b.cat,'cs'));
@@ -505,8 +510,9 @@ function suggestMealCategory(kind,name){
  return scored[0]?.score>0?scored[0].cat:'';
 }
 function confirmNewMealCategory(kind,name){
+ if(Data.organization(name))throw Error('Organizační označení není pokrm a nepatří do katalogu.');
  const cat=kind==='soup'?'__POLEVKY__':'__HLAVNI__';
- if(!state.catalog[kind][cat])state.catalog[kind][cat]=[];
+ (state.proposalCatalog[kind][cat]??=[]);
  const value=String(name||'').trim();
  return Promise.resolve(value.length>=2?{cat,name:value}:null);
 }
@@ -515,9 +521,11 @@ function confirmNewMealCategory(kind,name){
 async function pickerCatalogEdit(operation){
  try {
  const kind=picking.kind,name=$('pickerMealName').value.trim();
+ if(operation!=='add'&&pickerSelected&&state.history.some(w=>w.days.some((d,i)=>Data.isDayVerified(state,w,i)&&(kind==='soup'?[d.soup]:[d.main,d.main2]).includes(pickerSelected.name))))throw Error('Název doložený Strava.cz se zachovává přesně podle zdroje.');
  if(picking.historyWeek){
+  if(Data.isDayVerified(state,savedWeek(picking.historyWeek),picking.day))throw Error('Tento týden už byl ověřen podle Strava.cz.');
   const field=picking.key,categoryField=field==='main'?'category':'category2';
-  const old=state.history.find(h=>h.week===picking.historyWeek)?.days[picking.day]?.[field]||'';
+  const old=savedWeek(picking.historyWeek)?.days[picking.day]?.[field]||'';
   if(operation==='remove'){
    if(!old)return notice('Jídlo je již prázdné.');
    if(!confirm(`Opravdu smazat „${old}“ z tohoto dne historie?`))return;
@@ -529,12 +537,12 @@ async function pickerCatalogEdit(operation){
    // Přejmenování katalogové položky je transakční: katalog, všechny přesné
    // výskyty v historii a pracovní týden se mění v jednom snapshotu.
    const chosen=pickerSelected;
-   const items=chosen&&state.catalog[kind]?.[chosen.cat];
+   const items=chosen&&mealStore(kind,chosen.name,chosen.cat);
    if(!chosen||!items?.includes(chosen.name))throw Error('Přejmenování v databázi vyžaduje označené existující jídlo. Pokud chybí, nejprve ho přidej.');
-   if(items.some(x=>x!==chosen.name&&norm(x)===norm(name)))throw Error('Nový název už existuje.');
+   if(items.some(x=>x!==chosen.name&&x===name))throw Error('Nový název už existuje.');
    const original=chosen.name,category=chosen.cat;
    if(original===name&&old===name)return notice('Název se nezměnil.');
-   const targetWeek=state.history.find(h=>h.week===picking.historyWeek);
+   const targetWeek=savedWeek(picking.historyWeek);
    if(!targetWeek)throw Error('Historický týden již neexistuje.');
    snapshot();
    items[items.indexOf(original)]=name;
@@ -546,7 +554,7 @@ async function pickerCatalogEdit(operation){
      if(d.main2===original&&d.category2===category)d.main2=name;
     }
    };
-   for(const week of state.history)for(const day of week.days)changeDay(day);
+   for(const week of [...state.history.filter(w=>!Data.isVerified(state,w)),...state.drafts])for(const day of week.days)changeDay(day);
    for(const day of state.week.days)changeDay(day);
    // U kliknutého historického záznamu oprav také odlišný starý název.
    const target=targetWeek.days[picking.day];target[field]=name;
@@ -560,10 +568,9 @@ async function pickerCatalogEdit(operation){
    const entry=await confirmNewMealCategory(kind,name);
    if(!entry)return;
    const {cat,name:newName}=entry;
-   if(!state.catalog[kind]?.[cat])throw Error('Nelze uložit jídlo.');
-   const existing=state.catalog[kind][cat].find(x=>norm(x)===norm(newName));
+   const existing=all(kind).find(x=>x.name===newName)?.name;
    historyMutation(d=>{
-    if(!existing){state.catalog[kind][cat].push(newName);state.catalog[kind][cat].sort((a,b)=>a.localeCompare(b,'cs'));}
+    if(!existing){(state.legacyCatalog[kind][cat]??=[]).push(newName);state.legacyCatalog[kind][cat].sort((a,b)=>a.localeCompare(b,'cs'));}
     d[field]=existing||newName;if(kind==='main')d[categoryField]='';
    },existing?'Existující jídlo přiřazeno do historie.':'Jídlo přidáno do historie i katalogu.');
    $('picker').close();return;
@@ -577,19 +584,18 @@ async function pickerCatalogEdit(operation){
   if(!entry)return;
   cat=entry.cat;
   const newName=entry.name;
-  if(!state.catalog[kind]?.[cat])throw Error('Nelze uložit jídlo.');
-  if(all(kind).some(x=>norm(x.name)===norm(newName)))throw Error('Jídlo už existuje.');
-  snapshot();state.catalog[kind][cat].push(newName);state.catalog[kind][cat].sort((a,b)=>a.localeCompare(b,'cs'));pickerSelected={name:newName,cat};
+  if(all(kind).some(x=>x.name===newName))throw Error('Jídlo už existuje.');
+  snapshot();((state.proposalCatalog[kind]??={})[cat]??=[]).push(newName);pickerSelected={name:newName,cat};
  }else{
   if(!pickerSelected)throw Error('Nejdříve označ jídlo v seznamu.');
-  const {name:oldName,cat:oldCat}=pickerSelected,items=state.catalog[kind]?.[oldCat];
+  const {name:oldName,cat:oldCat}=pickerSelected,items=mealStore(kind,oldName,oldCat);
   if(!items?.includes(oldName))throw Error('Vybrané jídlo už není v databázi.');
   if(operation==='rename'){
    if(name.length<2)throw Error('Zadej nový název.');
-   if(items.some(x=>x!==oldName&&norm(x)===norm(name)))throw Error('Jídlo už existuje.');
+   if(items.some(x=>x!==oldName&&x===name))throw Error('Jídlo už existuje.');
    if(name===oldName)return notice('Název se nezměnil.');
    snapshot();items[items.indexOf(oldName)]=name;
-   for(const week of state.history)for(const day of week.days){
+   for(const week of [...state.history.filter(w=>!Data.isVerified(state,w)),...state.drafts])for(const day of week.days){
     if(kind==='soup'&&day.soup===oldName)day.soup=name;
     if(kind==='main'){
      if(day.main===oldName&&day.category===oldCat)day.main=name;
@@ -617,21 +623,18 @@ $('pickerChoose').onclick=()=>safe(()=>{
   $('picker').close();return;
  }
 
- if(!state.catalog[kind]?.[item.cat]?.includes(item.name))throw Error('Vybrané jídlo již není v databázi.');
- if(picking.day===0&&picking.key==='main'&&!state.week.days[0].closed&&!starts(item.cat,mondayCat(state.week.week))){
-  const expected=mondayCat(state.week.week)==='RYBY'?'rybí':'luštěninové';
+ if(!all(kind).some(x=>x.name===item.name))throw Error('Vybrané jídlo již není v databázi.');
+ if(picking.day===0&&picking.key==='main'&&!state.week.days[0].closed&&mealType(item.name)!==mondayCat(state.week.week)){
+  const expected=mondayCat(state.week.week)==='fish'?'rybí':'luštěninové';
   if(!confirm(`Pondělní Oběd 1 by měl být podle posledního schváleného pondělí ${expected}.\n\nOpravdu chcete vědomě povolit výjimku a vybrat „${item.name}“?`))return;
  }
  const d=state.week.days[picking.day],oldName=d[picking.key];
  if(oldName===item.name){$('picker').close();return}
  snapshot();const beforeSoup=d.soup,beforeMain=d.main;
- if(oldName)learn(kind,oldName,-1);
- learn(kind,item.name,1);
- if(beforeSoup&&beforeMain)learn('pair',pairKey(beforeSoup,beforeMain),-1);
  d[picking.key]=item.name;
  if(kind==='main')d[picking.key==='main'?'category':'category2']='';
- if(d.soup&&d.main)learn('pair',pairKey(d.soup,d.main),1);
- $('picker').close();render();notice('Jídlo upraveno; preference se učí z ručních výměn.');
+ // Draft substitutions do not train the definitive history.
+ $('picker').close();render();notice('Jídlo upraveno v pracovním návrhu.');
 });
 $('pickerAdd').onclick=()=>pickerCatalogEdit('add');
 $('pickerRename').onclick=()=>pickerCatalogEdit('rename');
@@ -652,10 +655,13 @@ $('approve').onclick=()=>safe(()=>{
     if(active.some(d=>!d.soup||!d.main||(state.count===2&&!d.main2)))throw Error('Nelze schválit: některému dni chybí polévka nebo oběd.');
     const errors=validate(state.week);
     if(errors.length&&!confirm('Kontrola zjistila následující rozpory:\n\n• '+errors.join('\n• ')+'\n\nOK = přesto schválit a uložit\nZrušit = vrátit se k úpravám'))return;
-    if(state.history.some(h=>h.week===state.week.week)&&!confirm('Tento týden už je v historii. Opravdu přepsat schválenou verzi?'))return;
-    snapshot();state.history=state.history.filter(h=>h.week!==state.week.week);state.history.push(clone(state.week));render();notice(errors.length?'Jídelníček schválen s vědomou výjimkou a uložen do historie.':'Jídelníček schválen a uložen do historie.');
+    if(state.history.some(h=>h.week===state.week.week&&Data.isVerified(state,h)))throw Error('Tento týden už je zveřejněn na Strava.cz. Pro návrh vyber budoucí týden.');
+    snapshot();const draft={...clone(state.week),status:'draft',source:'manual'};state.drafts=state.drafts.filter(h=>h.week!==draft.week);state.drafts.push(draft);render();notice('Pracovní návrh uložen. Po zveřejnění jej nahradí definitivní Strava.cz.');
 });
-$('validate').onclick=()=>safe(()=>{const e=validate();notice(e.length?e.join(' · '):'Jídelníček splňuje nastavená pravidla.',!!e.length)});
+$('validate').onclick=()=>{try{
+ const errors=validate();
+ showCheckResult('Kontrola pravidel',errors.length?'Nalezené rozpory: '+errors.length:'Jídelníček splňuje nastavená pravidla.',errors,!!errors.length);
+}catch(e){showCheckResult('Kontrola pravidel','Kontrolu se nepodařilo dokončit.',[e.message],true)}};
 
 $('undo').onclick=()=>{if(!undo.length)return notice('Není co vrátit.');redo.push(clone(state));state=undo.pop();render();notice('Změna vrácena.')};
 $('redo').onclick=()=>{~redo.length||notice('Není co zopakovat.');if(!redo.length)return;undo.push(clone(state));state=redo.pop();render();notice('Změna zopakována.')};
@@ -678,9 +684,11 @@ $('restore').onchange=async e=>{
         const imported=JSON.parse(await file.text());const next=imported.state;
         if(imported.format!=='jidelnicky-static-v1'||!next?.catalog?.main||!next?.catalog?.soup||!Array.isArray(next?.history)||next?.week?.days?.length!==5)throw Error('Neplatná záloha jídelníčků.');
         if(!confirm('Import přepíše aktuální data v tomto prohlížeči. Pokračovat?'))return;
-        snapshot();state=next;state.learning=cleanLearning(state.learning);state.rules={...defaults,...state.rules};render();notice('Záloha načtena.')
+        window.JidelnickyApp.applyState(next);window.GitHubSync?.changed();notice('Záloha načtena.')
     }catch(err){notice(err.message,true)}finally{e.target.value=''}
 };
+
+$('restoreAutomaticBackup')?.addEventListener('click',()=>safe(()=>{const backup=window.LocalBackups.latest();if(!backup)throw Error('Zatím není dostupná automatická záloha.');if(!confirm('Obnovit předchozí stav z automatické zálohy? Aktuální stav se také zálohuje.'))return;window.JidelnickyApp.applyState(backup.state);window.GitHubSync?.changed();notice('Obnovena automatická záloha.');}));
 
 // Funkce pro parsování TXT katalogu (skolni_obedy.txt) do struktury state.catalog
 async function loadTxtCatalogIntoState() {
@@ -720,7 +728,7 @@ async function loadTxtCatalogIntoState() {
 
 // Spuštění aplikace – načtení katalogu, historie a prvního jídelníčku
 window.addEventListener('DOMContentLoaded', async () => {
-    if(!hasSavedState){
+    if(!hasSavedState&&!window.JIDELNICKY_SEED){
     await loadTxtCatalogIntoState();
 
     try {
@@ -756,16 +764,9 @@ window.addEventListener('DOMContentLoaded', async () => {
         console.error('Počáteční synchronizace selhala:', e);
         notice('Synchronizace se nezdařila; místní data zůstala zachována.', true);
     }
-    // Po dokončení synchronizace nabídnout nejbližší budoucí pondělí bez dotazu.
-    // Uložená historie se nemění; předchozí pracovní stav je v relaci
-    // dostupný přes tlačítko Zpět.
-    const current = preparationWeek();
-    if (state.week.week !== current) {
-        snapshot();
-        state.week = freshWeek(current);
-        render();
-        save();
-    }
+    if(!hasSavedState&&!state.week.days.some(d=>d.soup||d.main||d.main2)){state.week=freshWeek(preparationWeek());render();}
+    finishReady(true);
+    window.dispatchEvent(new CustomEvent('jidelnicky:ready'));
 });
 })();
 
