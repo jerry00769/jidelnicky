@@ -287,7 +287,7 @@
       "days": [
         {
           "closed": false,
-          "soup": "Polévka špenátová s vajíčkem",
+          "soup": "Polévka zeleninová s těstovinami",
           "main": "Rybí filé obalované, Brambory m.m.",
           "category": "",
           "main2": "",
@@ -295,32 +295,32 @@
         },
         {
           "closed": false,
-          "soup": "Polévka rychlá s vejcem",
-          "main": "Těstovinový salát s cizrnou a sušenými rajčaty",
+          "soup": "Polévka zel. vývar s dýňovým kapáním",
+          "main": "Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha",
           "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka hovězí s kapustou a rýží",
-          "main": "Těstoviny se sýrovou omáčkou",
+          "soup": "Polévka hovězí s těstovinami",
+          "main": "Rizoto srbské",
           "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka celerová se smaženým hráškem",
-          "main": "Kuře pečené, Bulgur",
+          "soup": "Polévka zelenin. s kroupami",
+          "main": "Kuře pečené, Brambory m.m.",
           "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka rajčatová s těstovinami",
-          "main": "Masová směs \"flamendr\", Rýže dušená",
+          "soup": "Polévka fazolová se zeleninou",
+          "main": "Domácí buchty plněné mákem, povidly, tvarohem",
           "category": "",
           "main2": "",
           "category2": ""
