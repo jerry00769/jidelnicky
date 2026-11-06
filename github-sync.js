@@ -31,9 +31,27 @@ const status=(msg,err=false)=>{
 function markPending(v){dirty=v;if(v)localStorage.setItem(pendingKey,'1');else localStorage.removeItem(pendingKey)}
 function setBaseline(s){baseline=json(s);localStorage.setItem(baselineKey,baseline)}
 function backup(s){const blob=new Blob([JSON.stringify(s,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='jidelnicky_zaloha_konflikt_'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000)}
-function controls(){ $('ghConnect').hidden=connected||conflicted;$('ghRefresh').hidden=!connected;$('ghDisconnect').hidden=!connected;const resolve=$('ghResolve');if(resolve)resolve.hidden=!conflicted }
+function controls(){ $('ghConnect').hidden=!!token&&(connected||conflicted);$('ghRefresh').hidden=!connected;$('ghDisconnect').hidden=!token;const resolve=$('ghResolve');if(resolve)resolve.hidden=!conflicted||!token }
 const endpoint=`https://api.github.com/repos/${owner}/${repo}/contents/${file}`;
-async function request(method,body){const r=await fetch(endpoint+(method==='GET'?'?t='+Date.now():''),{method,headers:{'Accept':'application/vnd.github+json','Authorization':'Bearer '+token,'X-GitHub-Api-Version':'2022-11-28',...(body?{'Content-Type':'application/json'}:{})},cache:'no-store',body:body?JSON.stringify(body):undefined});if(r.status===404&&method==='GET'&&!token)return null;let data;try{data=await r.json()}catch{data={}}if(!r.ok){const e=new Error(`GitHub ${r.status}: ${data.message||'chyba přístupu'}`);e.status=r.status;throw e}return data}
+
+function checkedToken(value){
+ const clean=String(value||'').trim();
+ if(!/^[A-Za-z0-9_]+$/.test(clean)){
+  const error=new Error('Klíč obsahuje nepovolené znaky nebo je prázdný. Vlož pouze samotný GitHub token na jednom řádku, bez uvozovek a bez slova Bearer.');
+  error.code='invalid-token';throw error;
+ }
+ return clean;
+}
+function forgetRejectedToken(error){
+ if(error.code!=='invalid-token'&&error.status!==401)return false;
+ token='';localStorage.removeItem(tokenKey);connected=false;controls();
+ return true;
+}
+function connectionError(error){
+ const rejected=forgetRejectedToken(error);
+ return rejected&&error.status===401?'GitHub odmítl uložený klíč (401). Klikni na Připojit GitHub a vlož platný token. Místní data zůstala zachována.':error.message;
+}
+async function request(method,body){if(token)token=checkedToken(token);const r=await fetch(endpoint+(method==='GET'?'?t='+Date.now():''),{method,headers:{'Accept':'application/vnd.github+json','Authorization':'Bearer '+token,'X-GitHub-Api-Version':'2022-11-28',...(body?{'Content-Type':'application/json'}:{})},cache:'no-store',body:body?JSON.stringify(body):undefined});if(r.status===404&&method==='GET'&&!token)return null;let data;try{data=await r.json()}catch{data={}}if(!r.ok){const e=new Error(`GitHub ${r.status}: ${data.message||'chyba přístupu'}`);e.status=r.status;throw e}return data}
 function decode(s){const bin=atob(s.replace(/\s/g,''));return new TextDecoder().decode(Uint8Array.from(bin,c=>c.charCodeAt(0)))}
 function encode(s){const bytes=new TextEncoder().encode(s);let bin='';for(let i=0;i<bytes.length;i+=8192)bin+=String.fromCharCode(...bytes.subarray(i,i+8192));return btoa(bin)}
 function valid(s){return !!(s?.catalog?.main&&s?.catalog?.soup&&Array.isArray(s?.history)&&s?.week?.days?.length===5)}
@@ -81,7 +99,7 @@ async function connect(){
    app.applyState(r.state);
   }
   sha=r.sha;setBaseline(app.getState());markPending(false);connected=true;conflicted=false;controls();status('GitHub: data synchronizována');
- }catch(e){connected=false;controls();status('GitHub: '+e.message,true)}finally{busy=false}
+ }catch(e){connected=false;const message=connectionError(e);controls();status('GitHub: '+message,true)}finally{busy=false}
 }
 async function resolveConflict(){
  if(busy||!conflicted)return;
@@ -91,7 +109,7 @@ async function resolveConflict(){
  try{
   const r=await remote();if(!r)throw Error('Na GitHubu chybí společná data.');
   app.applyState(r.state);sha=r.sha;setBaseline(app.getState());markPending(false);conflicted=false;connected=true;controls();status('GitHub: konflikt vyřešen převzetím serverových dat');
- }catch(e){status('GitHub: konflikt nevyřešen ('+e.message+')',true)}finally{busy=false}
+ }catch(e){status('GitHub: konflikt nevyřešen ('+connectionError(e)+')',true)}finally{busy=false}
 }
 // Konzervativní třícestné sloučení: jen přidání jídel do existujících kategorií.
 // Ostatní změny (mazání, přejmenování, historie, pravidla, návrh týdne) vyžadují rozhodnutí.
@@ -156,6 +174,7 @@ async function flush(){
   else{markPending(true);status('GitHub: čeká na synchronizaci dalších změn…');clearTimeout(timer);timer=setTimeout(flush,1200)}
  }catch(e){
   if(e.status===409||e.status===422){conflicted=true;connected=false;controls();status('GitHub: konflikt souběžných změn! Místní data zachována.',true)}
+  else if(e.code==='invalid-token'||e.status===401)status('GitHub: '+connectionError(e),true);
   else status('GitHub: offline nebo chyba zápisu. Změny zůstaly v zařízení a čekají na odeslání.',true)
  }finally{busy=false;if(connected&&dirty&&!conflicted){clearTimeout(timer);timer=setTimeout(flush,1200)}}
 }
@@ -196,7 +215,7 @@ async function refresh(manual=false){
    app.applyState(r.state);sha=r.sha;setBaseline(r.state);syncOk();
   }else if(json(app.getState())!==baseline){markPending(true);status('GitHub: místní změny čekají na odeslání…');clearTimeout(timer);timer=setTimeout(flush,1200)}
   else syncOk();
- }catch(e){status('GitHub: nelze zkontrolovat spojení; místní data zachována ('+e.message+')',true)}
+ }catch(e){status('GitHub: nelze zkontrolovat spojení; místní data zachována ('+connectionError(e)+')',true)}
  finally{busy=false}
 }
 function disconnect(){
@@ -206,8 +225,8 @@ function disconnect(){
 function start(a){
  app=a;
  $('ghConnect').onclick=()=>{
-  if(!token){const t=prompt('Vlož GitHub fine-grained token pro testovací repozitář jerry00769/jidelnicky2.\nToken nikomu neposílej.');if(!t)return;token=t.trim();localStorage.setItem(tokenKey,token)}
-  connect()
+  if(!token){const t=prompt('Vlož GitHub token pro repozitář jerry00769/jidelnicky.\nPouze samotný token, bez uvozovek a bez slova Bearer. Token nikomu neposílej.');if(!t)return;try{token=checkedToken(t);localStorage.setItem(tokenKey,token)}catch(e){status('GitHub: '+e.message,true);return}}
+  return connect()
  };
  $('ghRefresh').onclick=()=>refresh(true);$('ghDisconnect').onclick=disconnect;const resolver=$('ghResolve');if(resolver)resolver.onclick=resolveConflict;
  controls();const initialSync=token?connect():Promise.resolve();
