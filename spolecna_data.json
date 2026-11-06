@@ -287,45 +287,47 @@
       "days": [
         {
           "closed": false,
-          "soup": "Polévka zeleninová s těstovinami",
-          "main": "Rybí filé obalované, Brambory m.m.",
-          "category": "",
+          "soup": "Polévka rajčatová s tarhoňou",
+          "main": "Smažené rybí prsty, Brambory m.m.",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka zel. vývar s dýňovým kapáním",
-          "main": "Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha",
-          "category": "",
+          "soup": "Polévka zeleninová s celozrnnými nudlemi",
+          "main": "Krůtí nudličky s pórkem, Rýže dušená",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka hovězí s těstovinami",
-          "main": "Rizoto srbské",
-          "category": "",
+          "soup": "Polévka zelenin. s fridátovými nudlemi",
+          "main": "Bulgur s kuřecím masem a zeleninou",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka zelenin. s kroupami",
-          "main": "Kuře pečené, Brambory m.m.",
-          "category": "",
+          "soup": "Polévka ovarová",
+          "main": "Dukátové buchtičky s krémem, Kakao",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka fazolová se zeleninou",
-          "main": "Domácí buchty plněné mákem, povidly, tvarohem",
-          "category": "",
+          "soup": "Polévka hovězí se sýrovým kapáním",
+          "main": "Bratislavské vepřové plecko, Těstoviny",
           "main2": "",
+          "category": "",
           "category2": ""
         }
-      ]
+      ],
+      "status": "definitive",
+      "source": "strava-5948"
     },
     "history": [
       {
