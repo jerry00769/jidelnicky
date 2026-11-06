@@ -287,47 +287,45 @@
       "days": [
         {
           "closed": false,
-          "soup": "Polévka zeleninová s quinoou",
+          "soup": "Polévka gulášová",
+          "main": "Vepřová pečeně, Fazolové lusky na slanině, Brambory",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "Polévka koprová (kulajda)",
+          "main": "Rybí filé obalované, Brambory m.m.",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "Polévka zeleninová s těstovinami",
+          "main": "Rizoto srbské",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "Polévka cizrnová krémová s rajčaty",
+          "main": "Dukátové buchtičky s krémem, Mléko",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "Polévka bramborová",
           "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
-          "main2": "",
           "category": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "Polévka krupicová s vejcem",
-          "main": "Těstoviny se zeleninou, zapečené",
           "main2": "",
-          "category": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "Polévka cibulová",
-          "main": "Hovězí pečeně pražská, Rýže dušená",
-          "main2": "",
-          "category": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "Polévka květáková s červenou čočkou",
-          "main": "Špagety celozrnné s boloňskou omáčkou",
-          "main2": "",
-          "category": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "Polévka hovězí s krupkami",
-          "main": "Vepřový řízek smažený, Brambory",
-          "main2": "",
-          "category": "",
           "category2": ""
         }
-      ],
-      "status": "definitive",
-      "source": "strava-5948"
+      ]
     },
     "history": [
       {
