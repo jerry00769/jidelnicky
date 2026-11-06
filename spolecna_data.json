@@ -3128,7 +3128,55 @@
         "Polévka hovězí s krupkami ||| Vepřový řízek smažený, Brambory": 1
       }
     },
-    "drafts": [],
+    "drafts": [
+      {
+        "week": "2026-11-16",
+        "days": [
+          {
+            "closed": false,
+            "soup": "Polévka špenátová s vajíčkem",
+            "main": "Rybí filé obalované, Brambory m.m.",
+            "category": "",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka rychlá s vejcem",
+            "main": "Těstovinový salát s cizrnou a sušenými rajčaty",
+            "category": "",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka hovězí s kapustou a rýží",
+            "main": "Těstoviny se sýrovou omáčkou",
+            "category": "",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka celerová se smaženým hráškem",
+            "main": "Kuře pečené, Bulgur",
+            "category": "",
+            "main2": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka rajčatová s těstovinami",
+            "main": "Masová směs \"flamendr\", Rýže dušená",
+            "category": "",
+            "main2": "",
+            "category2": ""
+          }
+        ],
+        "status": "draft",
+        "source": "manual"
+      }
+    ],
     "stravaVerifiedWeeks": {
       "2025-09-29": {
         "source": "strava-5948",
