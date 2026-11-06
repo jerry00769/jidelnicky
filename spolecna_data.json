@@ -4028,7 +4028,9 @@
       }
     },
     "proposalCatalog": {
-      "soup": {},
+      "soup": {
+        "__POLEVKY__": []
+      },
       "main": {}
     },
     "legacyCatalog": {
