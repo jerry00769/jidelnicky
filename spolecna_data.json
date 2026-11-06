@@ -3,115 +3,100 @@
   "state": {
     "catalog": {
       "soup": {
-        "VÝVARY": [
-          "hovězí rychlá s vejcem",
-          "hovězí s jáhly",
-          "hovězí s játrovými knedlíčky",
-          "hovězí s játrovými noky",
-          "hovězí s kapustou a rýží",
-          "hovězí s kapáním",
-          "hovězí s kuskusem",
-          "hovězí s masem a vejcem",
-          "hovězí s těstovinami",
-          "hovězí s těstovinou",
-          "hovězí s vaječnou jíškou",
-          "hovězí s česnekovými krutony",
-          "hovězí se strouháním",
-          "kuřecí s nudlemi",
-          "ovarová",
-          "hovězí se sýrovým kapáním",
-          "vývar s drobením",
-          "z rybího filé",
-          "zel. vývar s dýňovým kapáním"
-        ],
-        "ZELENINOVÉ A KRÉMOVÉ": [
-          " zeleninová s ovesnými vločkami",
-          "bramboračka nezahuštěná",
-          "bramborová",
-          "brokolicová",
-          "celerová se smaženým hráškem",
-          "cibulová se sýrem",
-          "drožďová",
-          "drůbková s nudlemi",
-          "dýňový krém",
-          "hráškový krém",
-          "kapustová s rýží",
-          "kmínová s vejcem",
-          "koprová (kulajda)",
-          "krupicová maďarská",
-          "krupicová s vejcem",
-          "květáková",
-          "mrkvová",
-          "pórková",
-          "pórková s vejci",
-          "rajčatová s ovesnými vločkami",
-          "rajčatová s tarhoňou",
-          "rajčatová s těstovinami",
-          "rajčatová s těstovinou",
-          "rychlá s vejcem",
-          "selská ii.",
-          "z batátových brambor",
-          "z kysaného zelí",
-          "z kysaného zelí s klobásou",
-          "ze zahradních jahod",
-          "zelenin. s bulgurem",
-          "zelenin. s drožďovými knedlíčky",
-          "zelenin. s fridátovými nudlemi",
-          "zelenin. s kroupami",
-          "zelenin. s ovesnými vločkami",
-          "zelenin. s pohankou",
-          "zelenin. s rýží",
-          "zeleninová s celozrnnými knedlíčky",
-          "zeleninová s celozrnnými nudlemi",
-          "zeleninová s drožďovými knedlíčky",
-          "zeleninová s kuskusem",
-          "zeleninová s ovesnými vločkami",
-          "zeleninová s quinoou",
-          "zeleninová s tarhoňou",
-          "zeleninová s těstovinami",
-          "zeleninová s těstovinovou",
-          "zeleninová s těstovinovou rýží",
-          "zeleninová se sýrovým kapáním",
-          "zeleninový vývar s ovesnými vločkami",
-          "zimní zeleninová s ovesnými vločkami",
-          "česneková s bramborem a vejcem",
-          "česneková s osmaženou hostičkou",
-          "špenátová",
-          "Špenátová s vajíčkem",
-          "špenátová s vajíčkem"
-        ],
-        "LUŠTĚNINOVÉ A MASOVÉ": [
-          "cizrnová",
-          "cizrnová krémová s rajčaty",
-          "fazolová",
-          "fazolová se zeleninou",
-          "frankfurtská s bramborem",
-          "gulášová",
-          "hrachová",
-          "hrachová s hrachovými krutony",
-          "hrachová s opečenou houskou",
-          "hrachová se smaženým hráškem",
-          "květáková s červenou čočkou",
-          "luštěninová",
-          "z fazolových lusků",
-          "z míchaných luštěnin",
-          "zeleninová s hrachovými nudlemi",
-          "zeleninová zahuštěná červenou čočkou",
-          "čočková",
-          "čočková se zeleninou"
-        ],
-        "K OVĚŘENÍ": [],
         "__POLEVKY__": [
           "Polévka cibulová",
-          "Polévka hovězí s krupkami"
+          "Polévka hovězí s krupkami",
+          "Polévka kuřecí s nudlemi",
+          "Polévka koprová (kulajda)",
+          "Polévka zelenin. s drožďovými knedlíčky",
+          "Polévka z rybího filé",
+          "Polévka zelenin. s fridátovými nudlemi",
+          "Polévka zeleninová s quinoou",
+          "Polévka gulášová",
+          "Polévka hovězí se strouháním",
+          "Polévka květáková s červenou čočkou",
+          "Polévka z kysaného zelí",
+          "Polévka špenátová s vajíčkem",
+          "Polévka zelenin. s bulgurem",
+          "Polévka celerová se smaženým hráškem",
+          "Polévka rychlá s vejcem",
+          "Polévka selská ii.",
+          "Polévka rajčatová s těstovinou",
+          "Polévka zeleninová s celozrnnými knedlíčky",
+          "Polévka  zeleninová s ovesnými vločkami",
+          "Polévka zeleninová s tarhoňou",
+          "Polévka čočková",
+          "Polévka brokolicová",
+          "Polévka zeleninová s kuskusem",
+          "Polévka bramborová",
+          "Polévka hrachová se smaženým hráškem",
+          "Polévka hovězí s vaječnou jíškou",
+          "Polévka zeleninová zahuštěná červenou čočkou",
+          "Polévka hovězí s kapáním",
+          "Polévka česneková s bramborem a vejcem",
+          "Polévka květáková",
+          "Polévka fazolová se zeleninou",
+          "Polévka zeleninová s drožďovými knedlíčky",
+          "Polévka krupicová maďarská",
+          "Polévka čočková se zeleninou",
+          "Polévka zelenin. s pohankou",
+          "Polévka zeleninová se sýrovým kapáním",
+          "Polévka hrachová s hrachovými krutony",
+          "Polévka z fazolových lusků",
+          "Polévka krupicová s vejcem",
+          "Polévka špenátová",
+          "Polévka cizrnová krémová s rajčaty",
+          "Polévka luštěninová",
+          "Polévka kapustová s rýží",
+          "Polévka zel. vývar s dýňovým kapáním",
+          "Polévka ovarová",
+          "Polévka z míchaných luštěnin",
+          "Polévka hovězí s těstovinami",
+          "Polévka zelenin. s kroupami",
+          "Polévka fazolová",
+          "Polévka zeleninová s těstovinami",
+          "Polévka hovězí s masem a vejcem",
+          "Polévka rajčatová s ovesnými vločkami",
+          "Polévka zeleninová s těstovinovou rýží",
+          "Polévka česneková s osmaženou hostičkou",
+          "Polévka drůbková s nudlemi",
+          "Polévka hovězí s kuskusem",
+          "Polévka dýňový krém",
+          "Polévka hráškový krém",
+          "Polévka hovězí s těstovinou",
+          "Polévka pórková",
+          "Polévka zimní zeleninová s ovesnými vločkami",
+          "Polévka bramboračka nezahuštěná",
+          "Polévka hovězí s játrovými noky",
+          "Polévka frankfurtská s bramborem",
+          "Polévka kmínová s vejcem",
+          "Polévka hovězí s česnekovými krutony",
+          "Polévka zelenin. s ovesnými vločkami",
+          "Polévka hovězí s jáhly",
+          "Polévka cizrnová",
+          "Polévka drožďová",
+          "Polévka hrachová",
+          "Polévka zeleninová s hrachovými nudlemi",
+          "Polévka z batátových brambor",
+          "Polévka zelenin. s rýží",
+          "Polévka cibulová se sýrem",
+          "Polévka pórková s vejci",
+          "Polévka ze zahradních jahod",
+          "Polévka mrkvová",
+          "Polévka hovězí s kapustou a rýží",
+          "Polévka rajčatová s tarhoňou",
+          "Polévka zeleninová s celozrnnými nudlemi",
+          "Polévka hovězí se sýrovým kapáním",
+          "Polévka vývar s drobením",
+          "Polévka rajčatová s těstovinami",
+          "Polévka hovězí s játrovými knedlíčky",
+          "Polévka z kysaného zelí s klobásou"
         ]
       },
       "main": {
         "HOVĚZÍ A TELECÍ": [
-          "Guláš maďarský, Houskové knedlíky (kynuté)",
           "Guláš maďarský, Rýže dušená",
           "Hovězí guláš, Rýže dušená",
-          "hovězí maso stroganoff, dušená rýže",
           "Hovězí pečeně frankfurtská, Těstoviny",
           "Hovězí pečeně na houbách, Těstoviny",
           "Hovězí pečeně na paprice, Vícezrnný knedlík (směs)",
@@ -122,78 +107,59 @@
           "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
           "Svíčková na smetaně, Houskové knedlíky (kynuté)",
           "Znojemský guláš, Rýže dušená",
-          "Španělský plátek, Rýže dušená",
           "Španělský ptáček rozházený, Rýže dušená",
-          "španělský ptáček, rýže",
-          "štěpánská hovězí pečeně, houskové knedlíky, čistá voda"
+          "Guláš maďarský, Houskové knedlíky (kynuté)",
+          "Španělský plátek, Rýže dušená"
         ],
         "VEPŘOVÉ A UZENÉ": [
           "Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané",
           "Bratislavské vepřové plecko, Těstoviny",
           "Debrecínský guláš, Těstoviny",
-          "domažlické vepřové ragů, těstoviny",
           "Italský guláš (zbruf se sýrem), Špagety",
-          "Masová směs \"lamendr\", Rýže dušená",
           "Mexická pánev (vepř.maso, fazole)) se sýrem",
           "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
           "Moravský vrabec, Bramborové knedlíky (směs), Zelí kysané",
           "Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)",
-          "Rizoto srbské",
-          "Rizoto z vepřového masa",
           "Rizoto z vepřového masa, Okurka sterilovaná - příloha",
           "Rožnovské halušky (střapačky) s uzeným masem",
           "Segedínský guláš, Houskové knedlíky (kynuté)",
           "Vepřová kotleta na houbách, Těstoviny",
           "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
-          "Vepřová kýta po cikánsku, Rýže dušená",
-          "vepřová pečeně selská, bramborové knedlíky",
-          "Vepřová pečeně selská, Bramborové knedlíky (směs)",
           "Vepřová pečeně selská, Bramborové knedlíky (směs), Červené zelí",
           "Vepřová pečeně selská, Bramborové knedlíky (směs), Špenát dušený",
-          "Vepřová pečeně selská, Karlovarský knedlík",
-          "Vepřová pečeně selská, Nastavovaná kaše s cibulkou",
           "Vepřová pečeně selská, Nastavovaná kaše s cibulkou, Okurka sterilovaná - příloha",
           "Vepřová pečeně selská, Špenát dušený, Karlovarský knedlík",
-          "Vepřová roláda (karlovarský kotouč), Bramborová kaše",
           "Vepřová roláda (karlovarský kotouč), Bramborová kaše - příloha",
           "Vepřová roláda (karlovarský kotouč), Kaše bramborová",
           "Vepřové na houbách se smetanou, Houskové knedlíky (kynuté)",
           "Vepřové na houbách, Brambory",
           "Vepřové na houbách, Těstoviny",
           "Vepřové na paprice, Těstoviny",
-          "Vepřové v kapustě, Brambory",
-          "vepřové v mrkvi, brambor",
           "Vepřové v mrkvi, Brambory",
           "Vepřové v mrkvi, Brambory m.m.",
           "Vepřový guláš, Rýže dušená",
-          "vepřový guláš, vřetena, čistá voda",
-          "Vepřový řízek přírodní, Brambory",
           "Vepřový řízek přírodní, Brambory m.m.",
           "Vepřový řízek přírodní, Kuskus - příloha",
           "Vinná klobása smažená přírodní, Bramborová kaše - příloha",
-          "Šoulet, Vepřová pečeně",
           "Šoulet, Vepřová pečeně, Okurka sterilovaná - příloha",
-          "Špagety s vepřovým masem a rajčaty",
           "Žebrácké maso, Brambory",
           "Žebrácké maso, Brambory opékané",
           "Těstovinový salát se zeleninou a šunkou",
           "Špekové knedlíky, Zelí kysané",
-          "Masová směs \"flamendr\", Rýže dušená"
+          "Masová směs \"flamendr\", Rýže dušená",
+          "Rizoto srbské",
+          "Vepřová kýta po cikánsku, Rýže dušená",
+          "Vepřové v kapustě, Brambory",
+          "Špagety s vepřovým masem a rajčaty"
         ],
         "DRŮBEŽ A KRÁLÍK": [
           "Bulgur s kuřecím masem a zeleninou",
-          "bulgur se zeleninou a kuřecím masem",
           "Gnocchi s kuřecím masem, smetanou a špenátem",
-          "Králík pečený, Bramborové knedlíky (směs)",
           "Králík pečený, Bramborové knedlíky (směs), Špenát dušený",
-          "Králík pečený, Brambory",
           "Králík pečený, Brambory m.m.",
-          "krůtí maso na pórku, rýže",
           "Krůtí nudličky s pórkem, Rýže dušená",
-          "krůtí sekaná se sýrem, brambory, zeleninový salát míchaný, čistá voda",
           "Kuskus s kuřecím masem",
           "Kuskus s kuřecím masem, brokolicí a suš.rajčaty",
-          "Kuskus s kuřecím masem, Míchaná zelenina grilovaná",
           "Kuře na paprice, Houskové knedlíky (kynuté)",
           "Kuře na paprice, Těstoviny",
           "Kuře pečené, Brambory",
@@ -202,151 +168,117 @@
           "Kuře pečené, Šťouchané brambory s cibulkou",
           "Kuře Šanghaj s jasmínovou rýží",
           "Kuře Šanghaj s rýží",
-          "kuřecí maso po provensálsku, farfalle",
-          "kuřecí maso po čínsku, dušená rýže, ovoce",
           "Kuřecí nudličky se sýrovou omáčkou, Těstoviny",
-          "kuřecí paličky na medu, bramborová kaše, čistá voda",
-          "Kuřecí prsa  na kari koření, Rýže dušená",
-          "Kuřecí prsa na kari koření, Rýže dušená",
           "Kuřecí rizoto",
           "Kuřecí rizoto, Salát z červené řepy - příloha",
           "Kuřecí roláda, Rýže dušená",
           "Kuřecí stripsy, Brambory",
           "Kuřecí čína, Rýže dušená",
-          "Kuřecí řízek smažený, Bramborová kaše",
           "Kuřecí řízek smažený, Bramborová kaše - příloha",
           "Pekingská směs, Rýže dušená",
           "Perkelt z kuřecího masa, Těstoviny",
           "Rizoto s kuřecím masem",
           "Těstovinový salát s kuřecím masem",
           "Zapečené těstoviny s kuřecím masem a zeleninou",
-          "Zeleninový salát, Kuřecí stripsy"
+          "Zeleninový salát, Kuřecí stripsy",
+          "Kuskus s kuřecím masem, Míchaná zelenina grilovaná",
+          "Kuřecí prsa  na kari koření, Rýže dušená"
         ],
         "MLETÉ MASO A ZAPÉKANÉ": [
           "Džuveč, Chléb",
           "Francouzské brambory",
           "Francouzské brambory, Okurka sterilovaná - příloha",
-          "Holandský řízek, Bramborová kaše",
           "Holandský řízek, Bramborová kaše - příloha",
           "Italský guláš (zbruf se sýrem), Těstoviny",
           "Kapustové karbanátky s masem, Brambory",
-          "Kapustové karbanátky, Bramborová kaše",
-          "Karbanátky pečené, Bramborová kaše",
           "Karbanátky pečené, Bramborová kaše - příloha",
           "Masové koule v rajčatové omáčce, Těstoviny",
           "Pizza se šunkou",
           "Rizoto srbské, Okurka sterilovaná - příloha",
-          "Sekaná pečeně, Bramborová kaše",
           "Sekaná pečeně, Bramborová kaše - příloha",
-          "Sekaná pečeně, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
-          "Sekaná pečeně, Brambory",
-          "Sekaná pečeně, Brambory, Okurka sterilovaná - příloha",
-          "Sekaná zahradnická, Brambory",
           "Sekaná zahradnická, Brambory m.m.",
           "Sicilské špagety (boloňské)",
-          "Těstoviny po Lotrinsku",
-          "Zapečené těstoviny s uzeninou",
           "Zapečené těstoviny s uzeninou, Salát z červené řepy - příloha",
-          "Zapečené těstoviny s uzeným masem",
           "Zapečené těstoviny s uzeným masem, Okurka sterilovaná - příloha",
           "Zapečené těstoviny s uzeným masem, Zelný salát  - příloha",
-          "Zapečené těstoviny s uzeným masem, Zelný salát - příloha"
+          "Sekaná pečeně, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
+          "Sekaná pečeně, Brambory, Okurka sterilovaná - příloha"
         ],
         "RYBY": [
           "Hejk pečený na bylinkovém másle, Brambory",
-          "Karbanátek z rybího file - pečený, Brambory",
           "Karbanátek z rybího file - pečený, Brambory m.m.",
-          "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha",
-          "Losos přírodní, Brambory",
           "Losos přírodní, Brambory m.m.",
-          "Obalované filé s brokolicí a sýrem, Brambory",
           "Obalované filé s brokolicí a sýrem, Brambory m.m.",
-          "Rybí file pečené na másle, Bramborová kaše",
           "Rybí file pečené na másle, Bramborová kaše - příloha",
-          "Rybí filé obalované, Bramborová kaše",
           "Rybí filé obalované, Bramborová kaše - příloha",
-          "Rybí filé obalované, Brambory",
           "Rybí filé obalované, Brambory m.m.",
           "Rybí filé pečené na másle, Bramborová kaše - příloha",
-          "Rybí filé pečené na másle, Brambory",
           "Rybí filé po mlynářsku, Brambory",
           "Rybí filé po mlynářsku, Brambory m.m.",
-          "rybí filé s rajčaty, bazalkou, brambory",
-          "Rybí filé smažené, Bramborová kaše",
           "Rybí filé smažené, Bramborová kaše - příloha",
           "Rybí filé zapečené se špenátem, Brambory",
-          "Rybí stripsy, Brambory",
           "Rybí stripsy, Brambory m.m.",
           "Smažené rybí prsty, Brambory m.m.",
-          "Tilápie s rajčaty a sýrem, Brambory",
           "Tilápie s rajčaty a sýrem, Brambory m.m.",
           "Těstoviny penne s tuňákem a chery rajčaty",
-          "těstoviny s lososem ve smetanové omáčce"
+          "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha",
+          "Rybí filé pečené na másle, Brambory"
         ],
         "LUŠTĚNINOVÁ": [
           "Fazole a la Katův šleh, Chléb",
           "Horňácký guláš (maso, fazole), Chléb",
-          "Hrachová kaše s cibulkou, Párky",
-          "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
-          "Hrachová kaše s cibulkou, Vejce vařené",
           "Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha",
           "Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
-          "Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha",
           "Kovbojská pánev, Chléb",
           "Kuřecí stehna pečená se zel.fazolkami a kroupami",
-          "Mexická pánev (vepř.maso, fazole) se sýrem, Chléb",
           "Srbská čočka, Chléb",
           "Těstovinový salát s cizrnou a sušenými rajčaty",
           "Vepřová pečeně, Fazolové lusky na slanině, Brambory",
-          "Čočka na kyselo, Vejce vařené",
           "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
           "Čočkový kotlík, Chléb",
-          "Španělská čočka s mletým masem, Chléb"
+          "Španělská čočka s mletým masem, Chléb",
+          "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
+          "Hrachová kaše s cibulkou, Vejce vařené",
+          "Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha"
         ],
         "BEZMASÁ SLANÁ": [
-          "Bramborový guláš, Rohlík",
           "Bramborák",
           "Brokolicová poezie (květák, niva)",
           "Kapustové karbanátky, Bramborová kaše - příloha",
           "Lotrinské tagliatelle se sýrem",
           "Omáčka koprová, Brambory, Vejce vařené",
-          "Omáčka koprová, Vejce vařené, Brambory",
           "Těstovinový salát s marinovaným tofu",
           "Těstoviny s brokolicí",
           "Těstoviny s brokolicí a sýrovou omáčkou",
           "Těstoviny se sýrovou omáčkou",
-          "Zeleninové placičky se sýrem, Brambory",
           "Zeleninové placičky se sýrem, Brambory m.m.",
           "Zeleninové rizoto",
-          "zeleninové rizoto sypané sýrem a parmazánem, ovocný sirup, čistá voda",
-          "řecký salát, vícezrnný rohlík",
-          "Špagety po uhlířsku (vejce, sýr)"
+          "Špagety po uhlířsku (vejce, sýr)",
+          "Bramborový guláš, Rohlík",
+          "Omáčka koprová, Vejce vařené, Brambory"
         ],
         "SLADKÁ": [
           "Bramborové šišky s mákem (strouhankou)",
           "Domácí buchty plněné mákem, povidly, tvarohem",
           "Dukátové buchtičky s krémem",
           "Dukátové buchtičky s krémem, Kakao",
-          "Dukátové buchtičky s krémem, Mléko",
-          "dukátové buchtičky se šódo",
           "Kaše krupicová",
           "Knedlíky švestkové (bramborové) s mákem",
           "Kuskus s ovocem",
-          "Livance",
           "Lívance, Káva bílá",
           "Nudle s mákem",
-          "Nudle s mákom",
           "Nákyp rýžový s meruňkami",
           "Nákyp rýžový se švestkami",
           "Smažené točenky s rozinkami",
-          "Žemlovka s jablky a tvarohem"
+          "Žemlovka s jablky a tvarohem",
+          "Dukátové buchtičky s krémem, Mléko"
         ],
-        "K ZAŘAZENÍ": [],
-        "K OVĚŘENÍ": [],
         "__HLAVNI__": [
           "Těstoviny se zeleninou, zapečené",
           "Špagety celozrnné s boloňskou omáčkou",
-          "Vepřový řízek smažený, Brambory"
+          "Vepřový řízek smažený, Brambory",
+          "Holandský řízek, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
+          "Těstoviny  po Lotrinsku"
         ]
       }
     },
@@ -355,45 +287,47 @@
       "days": [
         {
           "closed": false,
-          "soup": "krupicová maďarská",
-          "main": "Mexická pánev (vepř.maso, fazole)) se sýrem",
-          "category": "",
+          "soup": "Polévka zeleninová s quinoou",
+          "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "hovězí s masem a vejcem",
-          "main": "Losos přírodní, Brambory m.m.",
-          "category": "",
+          "soup": "Polévka krupicová s vejcem",
+          "main": "Těstoviny se zeleninou, zapečené",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "zeleninová s celozrnnými knedlíčky",
-          "main": "Rizoto srbské",
-          "category": "",
+          "soup": "Polévka cibulová",
+          "main": "Hovězí pečeně pražská, Rýže dušená",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "kapustová s rýží",
-          "main": "Hrachová kaše s cibulkou, Párky",
-          "category": "",
+          "soup": "Polévka květáková s červenou čočkou",
+          "main": "Špagety celozrnné s boloňskou omáčkou",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "dýňový krém",
-          "main": "Hovězí guláš, Rýže dušená",
-          "category": "",
+          "soup": "Polévka hovězí s krupkami",
+          "main": "Vepřový řízek smažený, Brambory",
           "main2": "",
+          "category": "",
           "category2": ""
         }
-      ]
+      ],
+      "status": "definitive",
+      "source": "strava-5948"
     },
     "history": [
       {
@@ -401,180 +335,188 @@
         "days": [
           {
             "closed": false,
-            "soup": "kuřecí s nudlemi",
+            "soup": "Polévka kuřecí s nudlemi",
             "main": "Kovbojská pánev, Chléb",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "koprová (kulajda)",
-            "main": "Holandský řízek, Bramborová kaše",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
+            "soup": "Polévka koprová (kulajda)",
+            "main": "Holandský řízek, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
             "main2": "Špagety po uhlířsku (vejce, sýr)",
-            "category2": "BEZMASÁ SLANÁ"
-          },
-          {
-            "closed": false,
-            "soup": "zelenin. s drožďovými knedlíčky",
-            "main": "Lotrinské tagliatelle se sýrem",
-            "category": "BEZMASÁ SLANÁ",
-            "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "z rybího filé",
-            "main": "Kuře pečené, Brambory",
-            "category": "DRŮBEŽ A KRÁLÍK",
-            "main2": "Kuskus s ovocem",
-            "category2": "SLADKÁ"
+            "soup": "Polévka zelenin. s drožďovými knedlíčky",
+            "main": "Lotrinské tagliatelle se sýrem",
+            "main2": "",
+            "category": "",
+            "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s fridátovými nudlemi",
+            "soup": "Polévka z rybího filé",
+            "main": "Kuře pečené, Brambory",
+            "main2": "Kuskus s ovocem",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka zelenin. s fridátovými nudlemi",
             "main": "Svíčková na smetaně, Houskové knedlíky (kynuté)",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2025-10-06",
         "days": [
           {
             "closed": false,
-            "soup": "zeleninová s quinoou",
+            "soup": "Polévka zeleninová s quinoou",
             "main": "Debrecínský guláš, Těstoviny",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "gulášová",
+            "soup": "Polévka gulášová",
             "main": "Karbanátek z rybího file - pečený, Brambory m.m.",
-            "category": "RYBY",
             "main2": "Kuskus s kuřecím masem",
-            "category2": "DRŮBEŽ A KRÁLÍK"
+            "category": "",
+            "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí se strouháním",
+            "soup": "Polévka hovězí se strouháním",
             "main": "Kuřecí čína, Rýže dušená",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "Brokolicová poezie (květák, niva)",
-            "category2": "BEZMASÁ SLANÁ"
+            "category": "",
+            "category2": ""
           },
           {
             "closed": false,
-            "soup": "květáková s červenou čočkou",
+            "soup": "Polévka květáková s červenou čočkou",
             "main": "Knedlíky švestkové (bramborové) s mákem",
-            "category": "SLADKÁ",
             "main2": "Pizza se šunkou",
-            "category2": "MLETÉ MASO A ZAPÉKANÉ"
+            "category": "",
+            "category2": ""
           },
           {
             "closed": false,
-            "soup": "z kysaného zelí",
+            "soup": "Polévka z kysaného zelí",
             "main": "Vepřová roláda (karlovarský kotouč), Kaše bramborová",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2025-10-13",
         "days": [
           {
             "closed": false,
-            "soup": "špenátová s vajíčkem",
+            "soup": "Polévka špenátová s vajíčkem",
             "main": "Džuveč, Chléb",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s bulgurem",
+            "soup": "Polévka zelenin. s bulgurem",
             "main": "Kuře na paprice, Těstoviny",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "Zeleninové placičky se sýrem, Brambory m.m.",
-            "category2": "BEZMASÁ SLANÁ"
+            "category": "",
+            "category2": ""
           },
           {
             "closed": false,
-            "soup": "celerová se smaženým hráškem",
+            "soup": "Polévka celerová se smaženým hráškem",
             "main": "Šoulet, Vepřová pečeně, Okurka sterilovaná - příloha",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "Kaše krupicová",
-            "category2": "SLADKÁ"
+            "category": "",
+            "category2": ""
           },
           {
             "closed": false,
-            "soup": "rychlá s vejcem",
+            "soup": "Polévka rychlá s vejcem",
             "main": "Vepřové v mrkvi, Brambory",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "Těstovinový salát s cizrnou a sušenými rajčaty",
-            "category2": "LUŠTĚNINOVÁ"
+            "category": "",
+            "category2": ""
           },
           {
             "closed": false,
-            "soup": "selská ii.",
+            "soup": "Polévka selská ii.",
             "main": "Kuřecí řízek smažený, Bramborová kaše - příloha",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2025-10-20",
         "days": [
           {
             "closed": false,
-            "soup": "rajčatová s těstovinou",
+            "soup": "Polévka rajčatová s těstovinou",
             "main": "Fazole a la Katův šleh, Chléb",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s celozrnnými knedlíčky",
+            "soup": "Polévka zeleninová s celozrnnými knedlíčky",
             "main": "Hovězí pečeně štěpánská, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": " zeleninová s ovesnými vločkami",
+            "soup": "Polévka  zeleninová s ovesnými vločkami",
             "main": "Žemlovka s jablky a tvarohem",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s tarhoňou",
+            "soup": "Polévka zeleninová s tarhoňou",
             "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "čočková",
+            "soup": "Polévka čočková",
             "main": "Zapečené těstoviny s kuřecím masem a zeleninou",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2025-10-27",
@@ -609,97 +551,103 @@
             "category": "",
             "closed": true
           }
-        ]
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       },
       {
         "week": "2025-11-03",
         "days": [
           {
             "closed": false,
-            "soup": "brokolicová",
+            "soup": "Polévka brokolicová",
             "main": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s kuskusem",
+            "soup": "Polévka zeleninová s kuskusem",
             "main": "Sicilské špagety (boloňské)",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "bramborová",
+            "soup": "Polévka bramborová",
             "main": "Kuře pečené, Bulgur",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hrachová se smaženým hráškem",
+            "soup": "Polévka hrachová se smaženým hráškem",
             "main": "Sekaná pečeně, Bramborová kaše - příloha",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s vaječnou jíškou",
+            "soup": "Polévka hovězí s vaječnou jíškou",
             "main": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2025-11-10",
         "days": [
           {
             "closed": false,
-            "soup": "zeleninová zahuštěná červenou čočkou",
+            "soup": "Polévka zeleninová zahuštěná červenou čočkou",
             "main": "Rybí filé obalované, Brambory m.m.",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s kapáním",
+            "soup": "Polévka hovězí s kapáním",
             "main": "Vepřový guláš, Rýže dušená",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "česneková s bramborem a vejcem",
+            "soup": "Polévka česneková s bramborem a vejcem",
             "main": "Nudle s mákem",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "květáková",
+            "soup": "Polévka květáková",
             "main": "Hovězí pečeně frankfurtská, Těstoviny",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "fazolová se zeleninou",
+            "soup": "Polévka fazolová se zeleninou",
             "main": "Gnocchi s kuřecím masem, smetanou a špenátem",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2025-11-17",
@@ -714,217 +662,227 @@
           },
           {
             "closed": false,
-            "soup": "hovězí s játrovými noky",
+            "soup": "Polévka hovězí s játrovými noky",
             "main": "Omáčka koprová, Vejce vařené, Brambory",
+            "main2": "",
             "category": "BEZMASÁ SLANÁ",
-            "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "vývar s drobením",
+            "soup": "Polévka vývar s drobením",
             "main": "Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha",
+            "main2": "",
             "category": "LUŠTĚNINOVÁ",
-            "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "rajčatová s těstovinami",
+            "soup": "Polévka rajčatová s těstovinami",
             "main": "Kuskus s kuřecím masem, Míchaná zelenina grilovaná",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "DRŮBEŽ A KRÁLÍK",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s kroupami",
+            "soup": "Polévka zelenin. s kroupami",
             "main": "Hovězí pečeně pražská, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "HOVĚZÍ A TELECÍ",
             "category2": ""
           }
-        ]
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       },
       {
         "week": "2025-11-24",
         "days": [
           {
             "closed": false,
-            "soup": "gulášová",
+            "soup": "Polévka gulášová",
             "main": "Rybí file pečené na másle, Bramborová kaše - příloha",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s fridátovými nudlemi",
+            "soup": "Polévka zelenin. s fridátovými nudlemi",
             "main": "Kuřecí rizoto, Salát z červené řepy - příloha",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s drožďovými knedlíčky",
+            "soup": "Polévka zeleninová s drožďovými knedlíčky",
             "main": "Vepřová kotleta na houbách, Těstoviny",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "krupicová maďarská",
+            "soup": "Polévka krupicová maďarská",
             "main": "Francouzské brambory, Okurka sterilovaná - příloha",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "čočková se zeleninou",
+            "soup": "Polévka čočková se zeleninou",
             "main": "Španělský ptáček rozházený, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2025-12-01",
         "days": [
           {
             "closed": false,
-            "soup": "zelenin. s pohankou",
+            "soup": "Polévka zelenin. s pohankou",
             "main": "Kovbojská pánev, Chléb",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová se sýrovým kapáním",
+            "soup": "Polévka zeleninová se sýrovým kapáním",
             "main": "Kuře Šanghaj s rýží",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hrachová s hrachovými krutony",
+            "soup": "Polévka hrachová s hrachovými krutony",
             "main": "Nákyp rýžový se švestkami",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "z fazolových lusků",
+            "soup": "Polévka z fazolových lusků",
             "main": "Omáčka rajčatová, Hovězí maso vařené, Houskové knedlíky (kynuté)",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "krupicová s vejcem",
+            "soup": "Polévka krupicová s vejcem",
             "main": "Kapustové karbanátky, Bramborová kaše - příloha",
-            "category": "BEZMASÁ SLANÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2025-12-08",
         "days": [
           {
             "closed": false,
-            "soup": "špenátová",
+            "soup": "Polévka špenátová",
             "main": "Rybí filé po mlynářsku, Brambory m.m.",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "cizrnová krémová s rajčaty",
+            "soup": "Polévka cizrnová krémová s rajčaty",
             "main": "Pekingská směs, Rýže dušená",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "kuřecí s nudlemi",
+            "soup": "Polévka kuřecí s nudlemi",
             "main": "Vinná klobása smažená přírodní, Bramborová kaše - příloha",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "luštěninová",
+            "soup": "Polévka luštěninová",
             "main": "Perkelt z kuřecího masa, Těstoviny",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "kapustová s rýží",
+            "soup": "Polévka kapustová s rýží",
             "main": "Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2025-12-15",
         "days": [
           {
             "closed": false,
-            "soup": "zel. vývar s dýňovým kapáním",
+            "soup": "Polévka zel. vývar s dýňovým kapáním",
             "main": "Italský guláš (zbruf se sýrem), Špagety",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "z kysaného zelí",
+            "soup": "Polévka z kysaného zelí",
             "main": "Vepřový řízek přírodní, Brambory m.m.",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "ovarová",
+            "soup": "Polévka ovarová",
             "main": "Dukátové buchtičky s krémem",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "z míchaných luštěnin",
+            "soup": "Polévka z míchaných luštěnin",
             "main": "Kuřecí roláda, Rýže dušená",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s těstovinami",
+            "soup": "Polévka hovězí s těstovinami",
             "main": "Zapečené těstoviny s uzeným masem, Okurka sterilovaná - příloha",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2025-12-29",
@@ -959,528 +917,552 @@
             "category": "",
             "closed": true
           }
-        ]
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       },
       {
         "week": "2026-01-05",
         "days": [
           {
             "closed": false,
-            "soup": "rajčatová s těstovinou",
+            "soup": "Polévka rajčatová s těstovinou",
             "main": "Srbská čočka, Chléb",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s vaječnou jíškou",
+            "soup": "Polévka hovězí s vaječnou jíškou",
             "main": "Guláš maďarský, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "květáková",
+            "soup": "Polévka květáková",
             "main": "Rožnovské halušky (střapačky) s uzeným masem",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s kroupami",
+            "soup": "Polévka zelenin. s kroupami",
             "main": "Kuře na paprice, Houskové knedlíky (kynuté)",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "koprová (kulajda)",
+            "soup": "Polévka koprová (kulajda)",
             "main": "Holandský řízek, Bramborová kaše - příloha",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-01-12",
         "days": [
           {
             "closed": false,
-            "soup": "celerová se smaženým hráškem",
+            "soup": "Polévka celerová se smaženým hráškem",
             "main": "Losos přírodní, Brambory m.m.",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s fridátovými nudlemi",
+            "soup": "Polévka zelenin. s fridátovými nudlemi",
             "main": "Kuřecí nudličky se sýrovou omáčkou, Těstoviny",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "brokolicová",
+            "soup": "Polévka brokolicová",
             "main": "Španělský ptáček rozházený, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "fazolová",
+            "soup": "Polévka fazolová",
             "main": "Lotrinské tagliatelle se sýrem",
-            "category": "BEZMASÁ SLANÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s těstovinami",
+            "soup": "Polévka zeleninová s těstovinami",
             "main": "Vepřová pečeně selská, Bramborové knedlíky (směs), Špenát dušený",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-01-19",
         "days": [
           {
             "closed": false,
-            "soup": "bramborová",
+            "soup": "Polévka bramborová",
             "main": "Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "gulášová",
+            "soup": "Polévka gulášová",
             "main": "Zeleninový salát, Kuřecí stripsy",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "špenátová s vajíčkem",
+            "soup": "Polévka špenátová s vajíčkem",
             "main": "Bramborové šišky s mákem (strouhankou)",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s celozrnnými knedlíčky",
+            "soup": "Polévka zeleninová s celozrnnými knedlíčky",
             "main": "Vepřové na houbách, Brambory",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s masem a vejcem",
+            "soup": "Polévka hovězí s masem a vejcem",
             "main": "Kuře Šanghaj s jasmínovou rýží",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-01-26",
         "days": [
           {
             "closed": false,
-            "soup": "rajčatová s ovesnými vločkami",
+            "soup": "Polévka rajčatová s ovesnými vločkami",
             "main": "Tilápie s rajčaty a sýrem, Brambory m.m.",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s těstovinovou rýží",
+            "soup": "Polévka zeleninová s těstovinovou rýží",
             "main": "Hovězí pečeně štěpánská, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "květáková s červenou čočkou",
+            "soup": "Polévka květáková s červenou čočkou",
             "main": "Králík pečený, Brambory m.m.",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s bulgurem",
+            "soup": "Polévka zelenin. s bulgurem",
             "main": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": true,
             "soup": "P R Á Z D N I N Y",
             "main": "",
-            "category": "",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-02-02",
         "days": [
           {
             "closed": false,
-            "soup": "zelenin. s drožďovými knedlíčky",
+            "soup": "Polévka zelenin. s drožďovými knedlíčky",
             "main": "Španělská čočka s mletým masem, Chléb",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "česneková s osmaženou hostičkou",
+            "soup": "Polévka česneková s osmaženou hostičkou",
             "main": "Vepřové v mrkvi, Brambory m.m.",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "drůbková s nudlemi",
+            "soup": "Polévka drůbková s nudlemi",
             "main": "Těstovinový salát s marinovaným tofu",
-            "category": "BEZMASÁ SLANÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "z míchaných luštěnin",
+            "soup": "Polévka z míchaných luštěnin",
             "main": "Hovězí guláš, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s kuskusem",
+            "soup": "Polévka hovězí s kuskusem",
             "main": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-02-09",
         "days": [
           {
             "closed": false,
-            "soup": "dýňový krém",
+            "soup": "Polévka dýňový krém",
             "main": "Rybí filé po mlynářsku, Brambory",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hráškový krém",
+            "soup": "Polévka hráškový krém",
             "main": "Sicilské špagety (boloňské)",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s pohankou",
+            "soup": "Polévka zelenin. s pohankou",
             "main": "Domácí buchty plněné mákem, povidly, tvarohem",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s těstovinou",
+            "soup": "Polévka hovězí s těstovinou",
             "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "pórková",
+            "soup": "Polévka pórková",
             "main": "Sekaná zahradnická, Brambory m.m.",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-02-16",
         "days": [
           {
             "closed": false,
-            "soup": "zeleninová s tarhoňou",
+            "soup": "Polévka zeleninová s tarhoňou",
             "main": "Mexická pánev (vepř.maso, fazole)) se sýrem",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zimní zeleninová s ovesnými vločkami",
+            "soup": "Polévka zimní zeleninová s ovesnými vločkami",
             "main": "Omáčka koprová, Brambory, Vejce vařené",
-            "category": "BEZMASÁ SLANÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "selská ii.",
+            "soup": "Polévka selská ii.",
             "main": "Rizoto z vepřového masa, Okurka sterilovaná - příloha",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "bramboračka nezahuštěná",
+            "soup": "Polévka bramboračka nezahuštěná",
             "main": "Kapustové karbanátky s masem, Brambory",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "krupicová s vejcem",
+            "soup": "Polévka krupicová s vejcem",
             "main": "Zapečené těstoviny s kuřecím masem a zeleninou",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-03-02",
         "days": [
           {
             "closed": false,
-            "soup": "hovězí s játrovými noky",
+            "soup": "Polévka hovězí s játrovými noky",
             "main": "Rybí stripsy, Brambory m.m.",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "frankfurtská s bramborem",
+            "soup": "Polévka frankfurtská s bramborem",
             "main": "Žemlovka s jablky a tvarohem",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s quinoou",
+            "soup": "Polévka zeleninová s quinoou",
             "main": "Kuře pečené, Brambory",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s vaječnou jíškou",
+            "soup": "Polévka hovězí s vaječnou jíškou",
             "main": "Masové koule v rajčatové omáčce, Těstoviny",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "kmínová s vejcem",
+            "soup": "Polévka kmínová s vejcem",
             "main": "Vepřová pečeně selská, Špenát dušený, Karlovarský knedlík",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-03-09",
         "days": [
           {
             "closed": false,
-            "soup": "zelenin. s bulgurem",
+            "soup": "Polévka zelenin. s bulgurem",
             "main": "Kovbojská pánev, Chléb",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "květáková",
+            "soup": "Polévka květáková",
             "main": "Karbanátky pečené, Bramborová kaše - příloha",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s česnekovými krutony",
+            "soup": "Polévka hovězí s česnekovými krutony",
             "main": "Těstoviny se sýrovou omáčkou",
-            "category": "BEZMASÁ SLANÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "čočková",
+            "soup": "Polévka čočková",
             "main": "Rizoto srbské, Okurka sterilovaná - příloha",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s ovesnými vločkami",
+            "soup": "Polévka zelenin. s ovesnými vločkami",
             "main": "Svíčková na smetaně, Houskové knedlíky (kynuté)",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-03-16",
         "days": [
           {
             "closed": false,
-            "soup": "gulášová",
+            "soup": "Polévka gulášová",
             "main": "Hejk pečený na bylinkovém másle, Brambory",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s jáhly",
+            "soup": "Polévka hovězí s jáhly",
             "main": "Bramborák",
-            "category": "BEZMASÁ SLANÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "brokolicová",
+            "soup": "Polévka brokolicová",
             "main": "Vepřový řízek přírodní, Kuskus - příloha",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová se sýrovým kapáním",
+            "soup": "Polévka zeleninová se sýrovým kapáním",
             "main": "Hovězí pečeně na paprice, Vícezrnný knedlík (směs)",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "cizrnová",
+            "soup": "Polévka cizrnová",
             "main": "Kuřecí řízek smažený, Bramborová kaše - příloha",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-03-23",
         "days": [
           {
             "closed": false,
-            "soup": "ovarová",
+            "soup": "Polévka ovarová",
             "main": "Čočkový kotlík, Chléb",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "drožďová",
+            "soup": "Polévka drožďová",
             "main": "Vepřová roláda (karlovarský kotouč), Bramborová kaše - příloha",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s fridátovými nudlemi",
+            "soup": "Polévka zelenin. s fridátovými nudlemi",
             "main": "Kuřecí čína, Rýže dušená",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hrachová",
+            "soup": "Polévka hrachová",
             "main": "Smažené točenky s rozinkami",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí se strouháním",
+            "soup": "Polévka hovězí se strouháním",
             "main": "Italský guláš (zbruf se sýrem), Těstoviny",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-03-30",
         "days": [
           {
             "closed": false,
-            "soup": "zelenin. s rýží",
+            "soup": "Polévka zelenin. s rýží",
             "main": "Bramborový guláš, Rohlík",
+            "main2": "",
             "category": "BEZMASÁ SLANÁ",
-            "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "rajčatová s těstovinou",
+            "soup": "Polévka rajčatová s těstovinou",
             "main": "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha",
-            "category": "RYBY",
             "main2": "",
+            "category": "RYBY",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "špenátová s vajíčkem",
+            "soup": "Polévka špenátová s vajíčkem",
             "main": "Španělský plátek, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "HOVĚZÍ A TELECÍ",
             "category2": ""
           },
           {
@@ -1499,7 +1481,9 @@
             "main2": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       },
       {
         "week": "2026-04-06",
@@ -1514,161 +1498,167 @@
           },
           {
             "closed": false,
-            "soup": "zeleninová s těstovinami",
+            "soup": "Polévka zeleninová s těstovinami",
             "main": "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha",
+            "main2": "",
             "category": "LUŠTĚNINOVÁ",
-            "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s pohankou",
+            "soup": "Polévka zelenin. s pohankou",
             "main": "Bratislavské vepřové plecko, Těstoviny",
+            "main2": "",
             "category": "VEPŘOVÉ A UZENÉ",
-            "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "květáková",
+            "soup": "Polévka květáková",
             "main": "Francouzské brambory",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s játrovými knedlíčky",
+            "soup": "Polévka hovězí s játrovými knedlíčky",
             "main": "Guláš maďarský, Houskové knedlíky (kynuté)",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "HOVĚZÍ A TELECÍ",
             "category2": ""
           }
-        ]
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       },
       {
         "week": "2026-04-13",
         "days": [
           {
             "closed": false,
-            "soup": "bramborová",
+            "soup": "Polévka bramborová",
             "main": "Rybí filé smažené, Bramborová kaše - příloha",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "frankfurtská s bramborem",
+            "soup": "Polévka frankfurtská s bramborem",
             "main": "Nákyp rýžový s meruňkami",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "fazolová se zeleninou",
+            "soup": "Polévka fazolová se zeleninou",
             "main": "Kuře pečené, Šťouchané brambory s cibulkou",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s vaječnou jíškou",
+            "soup": "Polévka hovězí s vaječnou jíškou",
             "main": "Hovězí pečeně na houbách, Těstoviny",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s hrachovými nudlemi",
+            "soup": "Polévka zeleninová s hrachovými nudlemi",
             "main": "Moravský vrabec, Bramborové knedlíky (směs), Zelí kysané",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-04-20",
         "days": [
           {
             "closed": false,
-            "soup": "rychlá s vejcem",
+            "soup": "Polévka rychlá s vejcem",
             "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "koprová (kulajda)",
+            "soup": "Polévka koprová (kulajda)",
             "main": "Zapečené těstoviny s kuřecím masem a zeleninou",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "čočková",
+            "soup": "Polévka čočková",
             "main": "Žebrácké maso, Brambory opékané",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "z batátových brambor",
+            "soup": "Polévka z batátových brambor",
             "main": "Rizoto z vepřového masa, Okurka sterilovaná - příloha",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s kuskusem",
+            "soup": "Polévka zeleninová s kuskusem",
             "main": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-04-27",
         "days": [
           {
             "closed": false,
-            "soup": "z kysaného zelí s klobásou",
+            "soup": "Polévka z kysaného zelí s klobásou",
             "main": "Rybí filé pečené na másle, Brambory",
+            "main2": "",
             "category": "RYBY",
-            "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová zahuštěná červenou čočkou",
+            "soup": "Polévka zeleninová zahuštěná červenou čočkou",
             "main": "Špagety s vepřovým masem a rajčaty",
+            "main2": "",
             "category": "VEPŘOVÉ A UZENÉ",
-            "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hráškový krém",
+            "soup": "Polévka hráškový krém",
             "main": "Sekaná pečeně, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "krupicová s vejcem",
+            "soup": "Polévka krupicová s vejcem",
             "main": "Kuře na paprice, Houskové knedlíky (kynuté)",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "DRŮBEŽ A KRÁLÍK",
             "category2": ""
           },
           {
@@ -1679,41 +1669,43 @@
             "main2": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       },
       {
         "week": "2026-05-04",
         "days": [
           {
             "closed": false,
-            "soup": "kuřecí s nudlemi",
+            "soup": "Polévka kuřecí s nudlemi",
             "main": "Hrachová kaše s cibulkou, Vejce vařené",
+            "main2": "",
             "category": "LUŠTĚNINOVÁ",
-            "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s ovesnými vločkami",
+            "soup": "Polévka zelenin. s ovesnými vločkami",
             "main": "Vepřové v kapustě, Brambory",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "VEPŘOVÉ A UZENÉ",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "z míchaných luštěnin",
+            "soup": "Polévka z míchaných luštěnin",
             "main": "Dukátové buchtičky s krémem, Mléko",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "SLADKÁ",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "česneková s osmaženou hostičkou",
+            "soup": "Polévka česneková s osmaženou hostičkou",
             "main": "Vepřová kýta po cikánsku, Rýže dušená",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "VEPŘOVÉ A UZENÉ",
             "category2": ""
           },
           {
@@ -1724,322 +1716,338 @@
             "main2": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       },
       {
         "week": "2026-05-11",
         "days": [
           {
             "closed": false,
-            "soup": "z batátových brambor",
+            "soup": "Polévka z batátových brambor",
             "main": "Rybí filé po mlynářsku, Brambory",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s drožďovými knedlíčky",
+            "soup": "Polévka zelenin. s drožďovými knedlíčky",
             "main": "Hovězí guláš, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "květáková s červenou čočkou",
+            "soup": "Polévka květáková s červenou čočkou",
             "main": "Těstoviny penne s tuňákem a chery rajčaty",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s kapáním",
+            "soup": "Polévka hovězí s kapáním",
             "main": "Vepřová pečeně, Fazolové lusky na slanině, Brambory",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "brokolicová",
+            "soup": "Polévka brokolicová",
             "main": "Špekové knedlíky, Zelí kysané",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-05-18",
         "days": [
           {
             "closed": false,
-            "soup": "zeleninová s těstovinovou rýží",
+            "soup": "Polévka zeleninová s těstovinovou rýží",
             "main": "Srbská čočka, Chléb",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "celerová se smaženým hráškem",
+            "soup": "Polévka celerová se smaženým hráškem",
             "main": "Vepřová pečeně selská, Nastavovaná kaše s cibulkou, Okurka sterilovaná - příloha",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hrachová",
+            "soup": "Polévka hrachová",
             "main": "Kuřecí čína, Rýže dušená",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí se strouháním",
+            "soup": "Polévka hovězí se strouháním",
             "main": "Vepřové v mrkvi, Brambory",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "špenátová",
+            "soup": "Polévka špenátová",
             "main": "Zapečené těstoviny s uzeným masem, Zelný salát  - příloha",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-05-25",
         "days": [
           {
             "closed": false,
-            "soup": "rajčatová s ovesnými vločkami",
+            "soup": "Polévka rajčatová s ovesnými vločkami",
             "main": "Rybí filé zapečené se špenátem, Brambory",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s tarhoňou",
+            "soup": "Polévka zeleninová s tarhoňou",
             "main": "Hovězí pečeně znojemská, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "gulášová",
+            "soup": "Polévka gulášová",
             "main": "Těstoviny s brokolicí",
-            "category": "BEZMASÁ SLANÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "bramborová",
+            "soup": "Polévka bramborová",
             "main": "Kuřecí rizoto",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s rýží",
+            "soup": "Polévka zelenin. s rýží",
             "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-06-01",
         "days": [
           {
             "closed": false,
-            "soup": "kuřecí s nudlemi",
+            "soup": "Polévka kuřecí s nudlemi",
             "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová se sýrovým kapáním",
+            "soup": "Polévka zeleninová se sýrovým kapáním",
             "main": "Kuřecí nudličky se sýrovou omáčkou, Těstoviny",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "cibulová se sýrem",
+            "soup": "Polévka cibulová se sýrem",
             "main": "Masová směs \"flamendr\", Rýže dušená",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "čočková se zeleninou",
+            "soup": "Polévka čočková se zeleninou",
             "main": "Bramborové šišky s mákem (strouhankou)",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "pórková s vejci",
+            "soup": "Polévka pórková s vejci",
             "main": "Kuřecí stripsy, Brambory",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-06-08",
         "days": [
           {
             "closed": false,
-            "soup": "krupicová s vejcem",
+            "soup": "Polévka krupicová s vejcem",
             "main": "Kuskus s kuřecím masem, brokolicí a suš.rajčaty",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s celozrnnými knedlíčky",
+            "soup": "Polévka zeleninová s celozrnnými knedlíčky",
             "main": "Španělský ptáček rozházený, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "ze zahradních jahod",
+            "soup": "Polévka ze zahradních jahod",
             "main": "Obalované filé s brokolicí a sýrem, Brambory m.m.",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "mrkvová",
+            "soup": "Polévka mrkvová",
             "main": "Těstovinový salát se zeleninou a šunkou",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s těstovinami",
+            "soup": "Polévka hovězí s těstovinami",
             "main": "Králík pečený, Bramborové knedlíky (směs), Špenát dušený",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-06-15",
         "days": [
           {
             "closed": false,
-            "soup": "bramboračka nezahuštěná",
+            "soup": "Polévka bramboračka nezahuštěná",
             "main": "Horňácký guláš (maso, fazole), Chléb",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "ovarová",
+            "soup": "Polévka ovarová",
             "main": "Lívance, Káva bílá",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s quinoou",
+            "soup": "Polévka zeleninová s quinoou",
             "main": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "cizrnová krémová s rajčaty",
+            "soup": "Polévka cizrnová krémová s rajčaty",
             "main": "Kuře pečené, Brambory m.m.",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová zahuštěná červenou čočkou",
+            "soup": "Polévka zeleninová zahuštěná červenou čočkou",
             "main": "Vepřové na houbách se smetanou, Houskové knedlíky (kynuté)",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-06-22",
         "days": [
           {
             "closed": false,
-            "soup": "drožďová",
+            "soup": "Polévka drožďová",
             "main": "Zeleninové rizoto",
-            "category": "BEZMASÁ SLANÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s kapustou a rýží",
+            "soup": "Polévka hovězí s kapustou a rýží",
             "main": "Vepřové na paprice, Těstoviny",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "fazolová se zeleninou",
+            "soup": "Polévka fazolová se zeleninou",
             "main": "Nudle s mákem",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "špenátová s vajíčkem",
+            "soup": "Polévka špenátová s vajíčkem",
             "main": "Francouzské brambory",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s těstovinami",
+            "soup": "Polévka zeleninová s těstovinami",
             "main": "Sicilské špagety (boloňské)",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-07-06",
@@ -2074,7 +2082,9 @@
             "category": "",
             "closed": true
           }
-        ]
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       },
       {
         "week": "2026-07-20",
@@ -2109,7 +2119,9 @@
             "category": "",
             "closed": true
           }
-        ]
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       },
       {
         "week": "2026-08-31",
@@ -2124,172 +2136,180 @@
           },
           {
             "closed": false,
-            "soup": "květáková",
+            "soup": "Polévka květáková",
             "main": "Nudle s mákem",
+            "main2": "",
             "category": "SLADKÁ",
-            "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "celerová se smaženým hráškem",
+            "soup": "Polévka celerová se smaženým hráškem",
             "main": "Sekaná pečeně, Brambory, Okurka sterilovaná - příloha",
+            "main2": "",
             "category": "MLETÉ MASO A ZAPÉKANÉ",
-            "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s těstovinami",
+            "soup": "Polévka zeleninová s těstovinami",
             "main": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "HOVĚZÍ A TELECÍ",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "špenátová s vajíčkem",
+            "soup": "Polévka špenátová s vajíčkem",
             "main": "Rizoto srbské",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "VEPŘOVÉ A UZENÉ",
             "category2": ""
           }
-        ]
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       },
       {
         "week": "2026-09-07",
         "days": [
           {
             "closed": false,
-            "soup": "zeleninová se sýrovým kapáním",
+            "soup": "Polévka zeleninová se sýrovým kapáním",
             "main": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "brokolicová",
+            "soup": "Polévka brokolicová",
             "main": "Hovězí guláš, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "bramborová",
+            "soup": "Polévka bramborová",
             "main": "Zapečené těstoviny s uzeninou, Salát z červené řepy - příloha",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "kapustová s rýží",
+            "soup": "Polévka kapustová s rýží",
             "main": "Kuře pečené, Brambory",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s pohankou",
+            "soup": "Polévka zelenin. s pohankou",
             "main": "Sicilské špagety (boloňské)",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-09-14",
         "days": [
           {
             "closed": false,
-            "soup": "rajčatová s těstovinou",
+            "soup": "Polévka rajčatová s těstovinou",
             "main": "Rybí filé pečené na másle, Bramborová kaše - příloha",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová zahuštěná červenou čočkou",
+            "soup": "Polévka zeleninová zahuštěná červenou čočkou",
             "main": "Kuřecí čína, Rýže dušená",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "krupicová s vejcem",
+            "soup": "Polévka krupicová s vejcem",
             "main": "Vepřové na houbách, Těstoviny",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "gulášová",
+            "soup": "Polévka gulášová",
             "main": "Žemlovka s jablky a tvarohem",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s kuskusem",
+            "soup": "Polévka zeleninová s kuskusem",
             "main": "Vepřová kýta hamburská, Houskové knedlíky (kynuté)",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-09-21",
         "days": [
           {
             "closed": false,
-            "soup": "hovězí s vaječnou jíškou",
+            "soup": "Polévka hovězí s vaječnou jíškou",
             "main": "Kovbojská pánev, Chléb",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "dýňový krém",
+            "soup": "Polévka dýňový krém",
             "main": "Hovězí pečeně štěpánská, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hrachová",
+            "soup": "Polévka hrachová",
             "main": "Francouzské brambory, Okurka sterilovaná - příloha",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "z rybího filé",
+            "soup": "Polévka z rybího filé",
             "main": "Kuře na paprice, Těstoviny",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "pórková s vejci",
+            "soup": "Polévka pórková s vejci",
             "main": "Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-09-28",
@@ -2304,172 +2324,180 @@
           },
           {
             "closed": false,
-            "soup": "zeleninová s tarhoňou",
+            "soup": "Polévka zeleninová s tarhoňou",
             "main": "Omáčka koprová, Brambory, Vejce vařené",
+            "main2": "",
             "category": "BEZMASÁ SLANÁ",
-            "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s játrovými noky",
+            "soup": "Polévka hovězí s játrovými noky",
             "main": "Kuřecí prsa  na kari koření, Rýže dušená",
+            "main2": "",
             "category": "DRŮBEŽ A KRÁLÍK",
-            "main2": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí se strouháním",
+            "soup": "Polévka hovězí se strouháním",
             "main": "Karbanátek z rybího file - pečený, Brambory m.m.",
-            "category": "RYBY",
             "main2": "",
+            "category": "RYBY",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "mrkvová",
+            "soup": "Polévka mrkvová",
             "main": "Rožnovské halušky (střapačky) s uzeným masem",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "VEPŘOVÉ A UZENÉ",
             "category2": ""
           }
-        ]
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       },
       {
         "week": "2026-10-05",
         "days": [
           {
             "closed": false,
-            "soup": "kuřecí s nudlemi",
+            "soup": "Polévka kuřecí s nudlemi",
             "main": "Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s drožďovými knedlíčky",
-            "main": "Těstoviny po Lotrinsku",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
+            "soup": "Polévka zelenin. s drožďovými knedlíčky",
+            "main": "Těstoviny  po Lotrinsku",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "z míchaných luštěnin",
+            "soup": "Polévka z míchaných luštěnin",
             "main": "Znojemský guláš, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s bulgurem",
+            "soup": "Polévka zelenin. s bulgurem",
             "main": "Těstoviny s brokolicí a sýrovou omáčkou",
-            "category": "BEZMASÁ SLANÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": " zeleninová s ovesnými vločkami",
+            "soup": "Polévka  zeleninová s ovesnými vločkami",
             "main": "Žebrácké maso, Brambory",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-10-12",
         "days": [
           {
             "closed": false,
-            "soup": "čočková",
+            "soup": "Polévka čočková",
             "main": "Rybí filé obalované, Bramborová kaše - příloha",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "frankfurtská s bramborem",
+            "soup": "Polévka frankfurtská s bramborem",
             "main": "Rizoto s kuřecím masem",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí s jáhly",
+            "soup": "Polévka hovězí s jáhly",
             "main": "Masové koule v rajčatové omáčce, Těstoviny",
-            "category": "MLETÉ MASO A ZAPÉKANÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "fazolová",
+            "soup": "Polévka fazolová",
             "main": "Bramborové šišky s mákem (strouhankou)",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s fridátovými nudlemi",
+            "soup": "Polévka zelenin. s fridátovými nudlemi",
             "main": "Segedínský guláš, Houskové knedlíky (kynuté)",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-10-19",
         "days": [
           {
             "closed": false,
-            "soup": "hovězí s masem a vejcem",
+            "soup": "Polévka hovězí s masem a vejcem",
             "main": "Srbská čočka, Chléb",
-            "category": "LUŠTĚNINOVÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "bramboračka nezahuštěná",
+            "soup": "Polévka bramboračka nezahuštěná",
             "main": "Španělský ptáček rozházený, Rýže dušená",
-            "category": "HOVĚZÍ A TELECÍ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "celerová se smaženým hráškem",
+            "soup": "Polévka celerová se smaženým hráškem",
             "main": "Těstovinový salát s kuřecím masem",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "z kysaného zelí",
+            "soup": "Polévka z kysaného zelí",
             "main": "Vepřové v mrkvi, Brambory",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s kuskusem",
+            "soup": "Polévka zeleninová s kuskusem",
             "main": "Vepřová pečeně selská, Bramborové knedlíky (směs), Červené zelí",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-10-26",
@@ -2504,97 +2532,103 @@
             "category": "",
             "closed": true
           }
-        ]
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       },
       {
         "week": "2026-11-02",
         "days": [
           {
             "closed": false,
-            "soup": "rajčatová s tarhoňou",
+            "soup": "Polévka rajčatová s tarhoňou",
             "main": "Smažené rybí prsty, Brambory m.m.",
-            "category": "RYBY",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zeleninová s celozrnnými nudlemi",
+            "soup": "Polévka zeleninová s celozrnnými nudlemi",
             "main": "Krůtí nudličky s pórkem, Rýže dušená",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "zelenin. s fridátovými nudlemi",
+            "soup": "Polévka zelenin. s fridátovými nudlemi",
             "main": "Bulgur s kuřecím masem a zeleninou",
-            "category": "DRŮBEŽ A KRÁLÍK",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "ovarová",
+            "soup": "Polévka ovarová",
             "main": "Dukátové buchtičky s krémem, Kakao",
-            "category": "SLADKÁ",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "hovězí se sýrovým kapáním",
+            "soup": "Polévka hovězí se sýrovým kapáním",
             "main": "Bratislavské vepřové plecko, Těstoviny",
-            "category": "VEPŘOVÉ A UZENÉ",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       },
       {
         "week": "2026-11-09",
         "days": [
           {
             "closed": false,
-            "soup": "zeleninová s quinoou",
+            "soup": "Polévka zeleninová s quinoou",
             "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
-            "category": "",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "krupicová s vejcem",
+            "soup": "Polévka krupicová s vejcem",
             "main": "Těstoviny se zeleninou, zapečené",
-            "category": "",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
             "soup": "Polévka cibulová",
             "main": "Hovězí pečeně pražská, Rýže dušená",
-            "category": "",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
-            "soup": "květáková s červenou čočkou",
+            "soup": "Polévka květáková s červenou čočkou",
             "main": "Špagety celozrnné s boloňskou omáčkou",
-            "category": "",
             "main2": "",
+            "category": "",
             "category2": ""
           },
           {
             "closed": false,
             "soup": "Polévka hovězí s krupkami",
             "main": "Vepřový řízek smažený, Brambory",
-            "category": "",
             "main2": "",
+            "category": "",
             "category2": ""
           }
-        ]
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       }
     ],
     "rules": {
@@ -2610,6 +2644,1409 @@
     "lockMain": 8,
     "lockSoup": 3,
     "learning": {
+      "main": {
+        "Kovbojská pánev, Chléb": 4,
+        "Holandský řízek, Bramborová kaše - příloha, Okurka sterilovaná - příloha": 1,
+        "Špagety po uhlířsku (vejce, sýr)": 1,
+        "Lotrinské tagliatelle se sýrem": 2,
+        "Kuře pečené, Brambory": 3,
+        "Kuskus s ovocem": 1,
+        "Svíčková na smetaně, Houskové knedlíky (kynuté)": 2,
+        "Debrecínský guláš, Těstoviny": 1,
+        "Karbanátek z rybího file - pečený, Brambory m.m.": 2,
+        "Kuskus s kuřecím masem": 1,
+        "Kuřecí čína, Rýže dušená": 4,
+        "Brokolicová poezie (květák, niva)": 1,
+        "Knedlíky švestkové (bramborové) s mákem": 1,
+        "Pizza se šunkou": 1,
+        "Vepřová roláda (karlovarský kotouč), Kaše bramborová": 1,
+        "Džuveč, Chléb": 1,
+        "Kuře na paprice, Těstoviny": 2,
+        "Zeleninové placičky se sýrem, Brambory m.m.": 1,
+        "Šoulet, Vepřová pečeně, Okurka sterilovaná - příloha": 1,
+        "Kaše krupicová": 1,
+        "Vepřové v mrkvi, Brambory": 3,
+        "Těstovinový salát s cizrnou a sušenými rajčaty": 1,
+        "Kuřecí řízek smažený, Bramborová kaše - příloha": 2,
+        "Fazole a la Katův šleh, Chléb": 1,
+        "Hovězí pečeně štěpánská, Rýže dušená": 3,
+        "Žemlovka s jablky a tvarohem": 3,
+        "Segedínský guláš, Houskové knedlíky (kynuté)": 4,
+        "Zapečené těstoviny s kuřecím masem a zeleninou": 3,
+        "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha": 2,
+        "Sicilské špagety (boloňské)": 4,
+        "Kuře pečené, Bulgur": 1,
+        "Sekaná pečeně, Bramborová kaše - příloha": 1,
+        "Vepřová kýta hamburská, Houskové knedlíky (kynuté)": 3,
+        "Rybí filé obalované, Brambory m.m.": 1,
+        "Vepřový guláš, Rýže dušená": 1,
+        "Nudle s mákem": 3,
+        "Hovězí pečeně frankfurtská, Těstoviny": 1,
+        "Gnocchi s kuřecím masem, smetanou a špenátem": 1,
+        "Omáčka koprová, Vejce vařené, Brambory": 1,
+        "Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha": 1,
+        "Kuskus s kuřecím masem, Míchaná zelenina grilovaná": 1,
+        "Hovězí pečeně pražská, Rýže dušená": 2,
+        "Rybí file pečené na másle, Bramborová kaše - příloha": 1,
+        "Kuřecí rizoto, Salát z červené řepy - příloha": 1,
+        "Vepřová kotleta na houbách, Těstoviny": 1,
+        "Francouzské brambory, Okurka sterilovaná - příloha": 2,
+        "Španělský ptáček rozházený, Rýže dušená": 4,
+        "Kuře Šanghaj s rýží": 1,
+        "Nákyp rýžový se švestkami": 1,
+        "Omáčka rajčatová, Hovězí maso vařené, Houskové knedlíky (kynuté)": 1,
+        "Kapustové karbanátky, Bramborová kaše - příloha": 1,
+        "Rybí filé po mlynářsku, Brambory m.m.": 1,
+        "Pekingská směs, Rýže dušená": 1,
+        "Vinná klobása smažená přírodní, Bramborová kaše - příloha": 1,
+        "Perkelt z kuřecího masa, Těstoviny": 1,
+        "Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané": 1,
+        "Italský guláš (zbruf se sýrem), Špagety": 1,
+        "Vepřový řízek přírodní, Brambory m.m.": 1,
+        "Dukátové buchtičky s krémem": 1,
+        "Kuřecí roláda, Rýže dušená": 1,
+        "Zapečené těstoviny s uzeným masem, Okurka sterilovaná - příloha": 1,
+        "Srbská čočka, Chléb": 3,
+        "Guláš maďarský, Rýže dušená": 1,
+        "Rožnovské halušky (střapačky) s uzeným masem": 2,
+        "Kuře na paprice, Houskové knedlíky (kynuté)": 2,
+        "Holandský řízek, Bramborová kaše - příloha": 1,
+        "Losos přírodní, Brambory m.m.": 1,
+        "Kuřecí nudličky se sýrovou omáčkou, Těstoviny": 2,
+        "Vepřová pečeně selská, Bramborové knedlíky (směs), Špenát dušený": 1,
+        "Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha": 1,
+        "Zeleninový salát, Kuřecí stripsy": 1,
+        "Bramborové šišky s mákem (strouhankou)": 3,
+        "Vepřové na houbách, Brambory": 1,
+        "Kuře Šanghaj s jasmínovou rýží": 1,
+        "Tilápie s rajčaty a sýrem, Brambory m.m.": 1,
+        "Králík pečený, Brambory m.m.": 1,
+        "Španělská čočka s mletým masem, Chléb": 1,
+        "Vepřové v mrkvi, Brambory m.m.": 1,
+        "Těstovinový salát s marinovaným tofu": 1,
+        "Hovězí guláš, Rýže dušená": 3,
+        "Kuřecí stehna pečená se zel.fazolkami a kroupami": 1,
+        "Rybí filé po mlynářsku, Brambory": 2,
+        "Domácí buchty plněné mákem, povidly, tvarohem": 1,
+        "Sekaná zahradnická, Brambory m.m.": 1,
+        "Mexická pánev (vepř.maso, fazole)) se sýrem": 1,
+        "Omáčka koprová, Brambory, Vejce vařené": 2,
+        "Rizoto z vepřového masa, Okurka sterilovaná - příloha": 2,
+        "Kapustové karbanátky s masem, Brambory": 1,
+        "Rybí stripsy, Brambory m.m.": 1,
+        "Masové koule v rajčatové omáčce, Těstoviny": 2,
+        "Vepřová pečeně selská, Špenát dušený, Karlovarský knedlík": 1,
+        "Karbanátky pečené, Bramborová kaše - příloha": 1,
+        "Těstoviny se sýrovou omáčkou": 1,
+        "Rizoto srbské, Okurka sterilovaná - příloha": 1,
+        "Hejk pečený na bylinkovém másle, Brambory": 1,
+        "Bramborák": 1,
+        "Vepřový řízek přírodní, Kuskus - příloha": 1,
+        "Hovězí pečeně na paprice, Vícezrnný knedlík (směs)": 1,
+        "Čočkový kotlík, Chléb": 1,
+        "Vepřová roláda (karlovarský kotouč), Bramborová kaše - příloha": 1,
+        "Smažené točenky s rozinkami": 1,
+        "Italský guláš (zbruf se sýrem), Těstoviny": 1,
+        "Bramborový guláš, Rohlík": 1,
+        "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha": 1,
+        "Španělský plátek, Rýže dušená": 1,
+        "Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha": 1,
+        "Bratislavské vepřové plecko, Těstoviny": 2,
+        "Francouzské brambory": 2,
+        "Guláš maďarský, Houskové knedlíky (kynuté)": 1,
+        "Rybí filé smažené, Bramborová kaše - příloha": 1,
+        "Nákyp rýžový s meruňkami": 1,
+        "Kuře pečené, Šťouchané brambory s cibulkou": 1,
+        "Hovězí pečeně na houbách, Těstoviny": 1,
+        "Moravský vrabec, Bramborové knedlíky (směs), Zelí kysané": 1,
+        "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb": 3,
+        "Žebrácké maso, Brambory opékané": 1,
+        "Omáčka rajčatová, Hovězí maso vařené, Těstoviny": 3,
+        "Rybí filé pečené na másle, Brambory": 1,
+        "Špagety s vepřovým masem a rajčaty": 1,
+        "Sekaná pečeně, Bramborová kaše - příloha, Okurka sterilovaná - příloha": 1,
+        "Hrachová kaše s cibulkou, Vejce vařené": 1,
+        "Vepřové v kapustě, Brambory": 1,
+        "Dukátové buchtičky s krémem, Mléko": 1,
+        "Vepřová kýta po cikánsku, Rýže dušená": 1,
+        "Těstoviny penne s tuňákem a chery rajčaty": 1,
+        "Vepřová pečeně, Fazolové lusky na slanině, Brambory": 1,
+        "Špekové knedlíky, Zelí kysané": 1,
+        "Vepřová pečeně selská, Nastavovaná kaše s cibulkou, Okurka sterilovaná - příloha": 1,
+        "Zapečené těstoviny s uzeným masem, Zelný salát  - příloha": 1,
+        "Rybí filé zapečené se špenátem, Brambory": 1,
+        "Hovězí pečeně znojemská, Rýže dušená": 1,
+        "Těstoviny s brokolicí": 1,
+        "Kuřecí rizoto": 1,
+        "Masová směs \"flamendr\", Rýže dušená": 1,
+        "Kuřecí stripsy, Brambory": 1,
+        "Kuskus s kuřecím masem, brokolicí a suš.rajčaty": 1,
+        "Obalované filé s brokolicí a sýrem, Brambory m.m.": 1,
+        "Těstovinový salát se zeleninou a šunkou": 1,
+        "Králík pečený, Bramborové knedlíky (směs), Špenát dušený": 1,
+        "Horňácký guláš (maso, fazole), Chléb": 1,
+        "Lívance, Káva bílá": 1,
+        "Kuře pečené, Brambory m.m.": 1,
+        "Vepřové na houbách se smetanou, Houskové knedlíky (kynuté)": 1,
+        "Zeleninové rizoto": 1,
+        "Vepřové na paprice, Těstoviny": 1,
+        "Sekaná pečeně, Brambory, Okurka sterilovaná - příloha": 1,
+        "Rizoto srbské": 1,
+        "Zapečené těstoviny s uzeninou, Salát z červené řepy - příloha": 1,
+        "Rybí filé pečené na másle, Bramborová kaše - příloha": 1,
+        "Vepřové na houbách, Těstoviny": 1,
+        "Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)": 1,
+        "Kuřecí prsa  na kari koření, Rýže dušená": 1,
+        "Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha": 1,
+        "Těstoviny  po Lotrinsku": 1,
+        "Znojemský guláš, Rýže dušená": 1,
+        "Těstoviny s brokolicí a sýrovou omáčkou": 1,
+        "Žebrácké maso, Brambory": 1,
+        "Rybí filé obalované, Bramborová kaše - příloha": 1,
+        "Rizoto s kuřecím masem": 1,
+        "Těstovinový salát s kuřecím masem": 1,
+        "Vepřová pečeně selská, Bramborové knedlíky (směs), Červené zelí": 1,
+        "Smažené rybí prsty, Brambory m.m.": 1,
+        "Krůtí nudličky s pórkem, Rýže dušená": 1,
+        "Bulgur s kuřecím masem a zeleninou": 1,
+        "Dukátové buchtičky s krémem, Kakao": 1,
+        "Těstoviny se zeleninou, zapečené": 1,
+        "Špagety celozrnné s boloňskou omáčkou": 1,
+        "Vepřový řízek smažený, Brambory": 1
+      },
+      "soup": {
+        "Polévka kuřecí s nudlemi": 5,
+        "Polévka koprová (kulajda)": 3,
+        "Polévka zelenin. s drožďovými knedlíčky": 4,
+        "Polévka z rybího filé": 2,
+        "Polévka zelenin. s fridátovými nudlemi": 6,
+        "Polévka zeleninová s quinoou": 4,
+        "Polévka gulášová": 6,
+        "Polévka hovězí se strouháním": 4,
+        "Polévka květáková s červenou čočkou": 4,
+        "Polévka z kysaného zelí": 3,
+        "Polévka špenátová s vajíčkem": 5,
+        "Polévka zelenin. s bulgurem": 4,
+        "Polévka celerová se smaženým hráškem": 5,
+        "Polévka rychlá s vejcem": 2,
+        "Polévka selská ii.": 2,
+        "Polévka rajčatová s těstovinou": 4,
+        "Polévka zeleninová s celozrnnými knedlíčky": 3,
+        "Polévka  zeleninová s ovesnými vločkami": 2,
+        "Polévka zeleninová s tarhoňou": 4,
+        "Polévka čočková": 4,
+        "Polévka brokolicová": 5,
+        "Polévka zeleninová s kuskusem": 4,
+        "Polévka bramborová": 5,
+        "Polévka hrachová se smaženým hráškem": 1,
+        "Polévka hovězí s vaječnou jíškou": 5,
+        "Polévka zeleninová zahuštěná červenou čočkou": 4,
+        "Polévka hovězí s kapáním": 2,
+        "Polévka česneková s bramborem a vejcem": 1,
+        "Polévka květáková": 5,
+        "Polévka fazolová se zeleninou": 3,
+        "Polévka hovězí s játrovými noky": 3,
+        "Polévka vývar s drobením": 1,
+        "Polévka rajčatová s těstovinami": 1,
+        "Polévka zelenin. s kroupami": 2,
+        "Polévka zeleninová s drožďovými knedlíčky": 1,
+        "Polévka krupicová maďarská": 1,
+        "Polévka čočková se zeleninou": 2,
+        "Polévka zelenin. s pohankou": 4,
+        "Polévka zeleninová se sýrovým kapáním": 4,
+        "Polévka hrachová s hrachovými krutony": 1,
+        "Polévka z fazolových lusků": 1,
+        "Polévka krupicová s vejcem": 6,
+        "Polévka špenátová": 2,
+        "Polévka cizrnová krémová s rajčaty": 2,
+        "Polévka luštěninová": 1,
+        "Polévka kapustová s rýží": 2,
+        "Polévka zel. vývar s dýňovým kapáním": 1,
+        "Polévka ovarová": 4,
+        "Polévka z míchaných luštěnin": 4,
+        "Polévka hovězí s těstovinami": 2,
+        "Polévka fazolová": 2,
+        "Polévka zeleninová s těstovinami": 4,
+        "Polévka hovězí s masem a vejcem": 2,
+        "Polévka rajčatová s ovesnými vločkami": 2,
+        "Polévka zeleninová s těstovinovou rýží": 2,
+        "Polévka česneková s osmaženou hostičkou": 2,
+        "Polévka drůbková s nudlemi": 1,
+        "Polévka hovězí s kuskusem": 1,
+        "Polévka dýňový krém": 2,
+        "Polévka hráškový krém": 2,
+        "Polévka hovězí s těstovinou": 1,
+        "Polévka pórková": 1,
+        "Polévka zimní zeleninová s ovesnými vločkami": 1,
+        "Polévka bramboračka nezahuštěná": 3,
+        "Polévka frankfurtská s bramborem": 3,
+        "Polévka kmínová s vejcem": 1,
+        "Polévka hovězí s česnekovými krutony": 1,
+        "Polévka zelenin. s ovesnými vločkami": 2,
+        "Polévka hovězí s jáhly": 2,
+        "Polévka cizrnová": 1,
+        "Polévka drožďová": 2,
+        "Polévka hrachová": 3,
+        "Polévka zelenin. s rýží": 2,
+        "Polévka hovězí s játrovými knedlíčky": 1,
+        "Polévka zeleninová s hrachovými nudlemi": 1,
+        "Polévka z batátových brambor": 2,
+        "Polévka z kysaného zelí s klobásou": 1,
+        "Polévka cibulová se sýrem": 1,
+        "Polévka pórková s vejci": 2,
+        "Polévka ze zahradních jahod": 1,
+        "Polévka mrkvová": 2,
+        "Polévka hovězí s kapustou a rýží": 1,
+        "Polévka rajčatová s tarhoňou": 1,
+        "Polévka zeleninová s celozrnnými nudlemi": 1,
+        "Polévka hovězí se sýrovým kapáním": 1,
+        "Polévka cibulová": 1,
+        "Polévka hovězí s krupkami": 1
+      },
+      "pair": {
+        "Polévka kuřecí s nudlemi ||| Kovbojská pánev, Chléb": 1,
+        "Polévka koprová (kulajda) ||| Holandský řízek, Bramborová kaše - příloha, Okurka sterilovaná - příloha": 1,
+        "Polévka koprová (kulajda) ||| Špagety po uhlířsku (vejce, sýr)": 1,
+        "Polévka zelenin. s drožďovými knedlíčky ||| Lotrinské tagliatelle se sýrem": 1,
+        "Polévka z rybího filé ||| Kuře pečené, Brambory": 1,
+        "Polévka z rybího filé ||| Kuskus s ovocem": 1,
+        "Polévka zelenin. s fridátovými nudlemi ||| Svíčková na smetaně, Houskové knedlíky (kynuté)": 1,
+        "Polévka zeleninová s quinoou ||| Debrecínský guláš, Těstoviny": 1,
+        "Polévka gulášová ||| Karbanátek z rybího file - pečený, Brambory m.m.": 1,
+        "Polévka gulášová ||| Kuskus s kuřecím masem": 1,
+        "Polévka hovězí se strouháním ||| Kuřecí čína, Rýže dušená": 1,
+        "Polévka hovězí se strouháním ||| Brokolicová poezie (květák, niva)": 1,
+        "Polévka květáková s červenou čočkou ||| Knedlíky švestkové (bramborové) s mákem": 1,
+        "Polévka květáková s červenou čočkou ||| Pizza se šunkou": 1,
+        "Polévka z kysaného zelí ||| Vepřová roláda (karlovarský kotouč), Kaše bramborová": 1,
+        "Polévka špenátová s vajíčkem ||| Džuveč, Chléb": 1,
+        "Polévka zelenin. s bulgurem ||| Kuře na paprice, Těstoviny": 1,
+        "Polévka zelenin. s bulgurem ||| Zeleninové placičky se sýrem, Brambory m.m.": 1,
+        "Polévka celerová se smaženým hráškem ||| Šoulet, Vepřová pečeně, Okurka sterilovaná - příloha": 1,
+        "Polévka celerová se smaženým hráškem ||| Kaše krupicová": 1,
+        "Polévka rychlá s vejcem ||| Vepřové v mrkvi, Brambory": 1,
+        "Polévka rychlá s vejcem ||| Těstovinový salát s cizrnou a sušenými rajčaty": 1,
+        "Polévka selská ii. ||| Kuřecí řízek smažený, Bramborová kaše - příloha": 1,
+        "Polévka rajčatová s těstovinou ||| Fazole a la Katův šleh, Chléb": 1,
+        "Polévka zeleninová s celozrnnými knedlíčky ||| Hovězí pečeně štěpánská, Rýže dušená": 1,
+        "Polévka  zeleninová s ovesnými vločkami ||| Žemlovka s jablky a tvarohem": 1,
+        "Polévka zeleninová s tarhoňou ||| Segedínský guláš, Houskové knedlíky (kynuté)": 1,
+        "Polévka čočková ||| Zapečené těstoviny s kuřecím masem a zeleninou": 1,
+        "Polévka brokolicová ||| Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha": 1,
+        "Polévka zeleninová s kuskusem ||| Sicilské špagety (boloňské)": 1,
+        "Polévka bramborová ||| Kuře pečené, Bulgur": 1,
+        "Polévka hrachová se smaženým hráškem ||| Sekaná pečeně, Bramborová kaše - příloha": 1,
+        "Polévka hovězí s vaječnou jíškou ||| Vepřová kýta hamburská, Houskové knedlíky (kynuté)": 1,
+        "Polévka zeleninová zahuštěná červenou čočkou ||| Rybí filé obalované, Brambory m.m.": 1,
+        "Polévka hovězí s kapáním ||| Vepřový guláš, Rýže dušená": 1,
+        "Polévka česneková s bramborem a vejcem ||| Nudle s mákem": 1,
+        "Polévka květáková ||| Hovězí pečeně frankfurtská, Těstoviny": 1,
+        "Polévka fazolová se zeleninou ||| Gnocchi s kuřecím masem, smetanou a špenátem": 1,
+        "Polévka hovězí s játrovými noky ||| Omáčka koprová, Vejce vařené, Brambory": 1,
+        "Polévka vývar s drobením ||| Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha": 1,
+        "Polévka rajčatová s těstovinami ||| Kuskus s kuřecím masem, Míchaná zelenina grilovaná": 1,
+        "Polévka zelenin. s kroupami ||| Hovězí pečeně pražská, Rýže dušená": 1,
+        "Polévka gulášová ||| Rybí file pečené na másle, Bramborová kaše - příloha": 1,
+        "Polévka zelenin. s fridátovými nudlemi ||| Kuřecí rizoto, Salát z červené řepy - příloha": 1,
+        "Polévka zeleninová s drožďovými knedlíčky ||| Vepřová kotleta na houbách, Těstoviny": 1,
+        "Polévka krupicová maďarská ||| Francouzské brambory, Okurka sterilovaná - příloha": 1,
+        "Polévka čočková se zeleninou ||| Španělský ptáček rozházený, Rýže dušená": 1,
+        "Polévka zelenin. s pohankou ||| Kovbojská pánev, Chléb": 1,
+        "Polévka zeleninová se sýrovým kapáním ||| Kuře Šanghaj s rýží": 1,
+        "Polévka hrachová s hrachovými krutony ||| Nákyp rýžový se švestkami": 1,
+        "Polévka z fazolových lusků ||| Omáčka rajčatová, Hovězí maso vařené, Houskové knedlíky (kynuté)": 1,
+        "Polévka krupicová s vejcem ||| Kapustové karbanátky, Bramborová kaše - příloha": 1,
+        "Polévka špenátová ||| Rybí filé po mlynářsku, Brambory m.m.": 1,
+        "Polévka cizrnová krémová s rajčaty ||| Pekingská směs, Rýže dušená": 1,
+        "Polévka kuřecí s nudlemi ||| Vinná klobása smažená přírodní, Bramborová kaše - příloha": 1,
+        "Polévka luštěninová ||| Perkelt z kuřecího masa, Těstoviny": 1,
+        "Polévka kapustová s rýží ||| Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané": 1,
+        "Polévka zel. vývar s dýňovým kapáním ||| Italský guláš (zbruf se sýrem), Špagety": 1,
+        "Polévka z kysaného zelí ||| Vepřový řízek přírodní, Brambory m.m.": 1,
+        "Polévka ovarová ||| Dukátové buchtičky s krémem": 1,
+        "Polévka z míchaných luštěnin ||| Kuřecí roláda, Rýže dušená": 1,
+        "Polévka hovězí s těstovinami ||| Zapečené těstoviny s uzeným masem, Okurka sterilovaná - příloha": 1,
+        "Polévka rajčatová s těstovinou ||| Srbská čočka, Chléb": 1,
+        "Polévka hovězí s vaječnou jíškou ||| Guláš maďarský, Rýže dušená": 1,
+        "Polévka květáková ||| Rožnovské halušky (střapačky) s uzeným masem": 1,
+        "Polévka zelenin. s kroupami ||| Kuře na paprice, Houskové knedlíky (kynuté)": 1,
+        "Polévka koprová (kulajda) ||| Holandský řízek, Bramborová kaše - příloha": 1,
+        "Polévka celerová se smaženým hráškem ||| Losos přírodní, Brambory m.m.": 1,
+        "Polévka zelenin. s fridátovými nudlemi ||| Kuřecí nudličky se sýrovou omáčkou, Těstoviny": 1,
+        "Polévka brokolicová ||| Španělský ptáček rozházený, Rýže dušená": 1,
+        "Polévka fazolová ||| Lotrinské tagliatelle se sýrem": 1,
+        "Polévka zeleninová s těstovinami ||| Vepřová pečeně selská, Bramborové knedlíky (směs), Špenát dušený": 1,
+        "Polévka bramborová ||| Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha": 1,
+        "Polévka gulášová ||| Zeleninový salát, Kuřecí stripsy": 1,
+        "Polévka špenátová s vajíčkem ||| Bramborové šišky s mákem (strouhankou)": 1,
+        "Polévka zeleninová s celozrnnými knedlíčky ||| Vepřové na houbách, Brambory": 1,
+        "Polévka hovězí s masem a vejcem ||| Kuře Šanghaj s jasmínovou rýží": 1,
+        "Polévka rajčatová s ovesnými vločkami ||| Tilápie s rajčaty a sýrem, Brambory m.m.": 1,
+        "Polévka zeleninová s těstovinovou rýží ||| Hovězí pečeně štěpánská, Rýže dušená": 1,
+        "Polévka květáková s červenou čočkou ||| Králík pečený, Brambory m.m.": 1,
+        "Polévka zelenin. s bulgurem ||| Vepřová kýta hamburská, Houskové knedlíky (kynuté)": 1,
+        "Polévka zelenin. s drožďovými knedlíčky ||| Španělská čočka s mletým masem, Chléb": 1,
+        "Polévka česneková s osmaženou hostičkou ||| Vepřové v mrkvi, Brambory m.m.": 1,
+        "Polévka drůbková s nudlemi ||| Těstovinový salát s marinovaným tofu": 1,
+        "Polévka z míchaných luštěnin ||| Hovězí guláš, Rýže dušená": 1,
+        "Polévka hovězí s kuskusem ||| Kuřecí stehna pečená se zel.fazolkami a kroupami": 1,
+        "Polévka dýňový krém ||| Rybí filé po mlynářsku, Brambory": 1,
+        "Polévka hráškový krém ||| Sicilské špagety (boloňské)": 1,
+        "Polévka zelenin. s pohankou ||| Domácí buchty plněné mákem, povidly, tvarohem": 1,
+        "Polévka hovězí s těstovinou ||| Segedínský guláš, Houskové knedlíky (kynuté)": 1,
+        "Polévka pórková ||| Sekaná zahradnická, Brambory m.m.": 1,
+        "Polévka zeleninová s tarhoňou ||| Mexická pánev (vepř.maso, fazole)) se sýrem": 1,
+        "Polévka zimní zeleninová s ovesnými vločkami ||| Omáčka koprová, Brambory, Vejce vařené": 1,
+        "Polévka selská ii. ||| Rizoto z vepřového masa, Okurka sterilovaná - příloha": 1,
+        "Polévka bramboračka nezahuštěná ||| Kapustové karbanátky s masem, Brambory": 1,
+        "Polévka krupicová s vejcem ||| Zapečené těstoviny s kuřecím masem a zeleninou": 1,
+        "Polévka hovězí s játrovými noky ||| Rybí stripsy, Brambory m.m.": 1,
+        "Polévka frankfurtská s bramborem ||| Žemlovka s jablky a tvarohem": 1,
+        "Polévka zeleninová s quinoou ||| Kuře pečené, Brambory": 1,
+        "Polévka hovězí s vaječnou jíškou ||| Masové koule v rajčatové omáčce, Těstoviny": 1,
+        "Polévka kmínová s vejcem ||| Vepřová pečeně selská, Špenát dušený, Karlovarský knedlík": 1,
+        "Polévka zelenin. s bulgurem ||| Kovbojská pánev, Chléb": 1,
+        "Polévka květáková ||| Karbanátky pečené, Bramborová kaše - příloha": 1,
+        "Polévka hovězí s česnekovými krutony ||| Těstoviny se sýrovou omáčkou": 1,
+        "Polévka čočková ||| Rizoto srbské, Okurka sterilovaná - příloha": 1,
+        "Polévka zelenin. s ovesnými vločkami ||| Svíčková na smetaně, Houskové knedlíky (kynuté)": 1,
+        "Polévka gulášová ||| Hejk pečený na bylinkovém másle, Brambory": 1,
+        "Polévka hovězí s jáhly ||| Bramborák": 1,
+        "Polévka brokolicová ||| Vepřový řízek přírodní, Kuskus - příloha": 1,
+        "Polévka zeleninová se sýrovým kapáním ||| Hovězí pečeně na paprice, Vícezrnný knedlík (směs)": 1,
+        "Polévka cizrnová ||| Kuřecí řízek smažený, Bramborová kaše - příloha": 1,
+        "Polévka ovarová ||| Čočkový kotlík, Chléb": 1,
+        "Polévka drožďová ||| Vepřová roláda (karlovarský kotouč), Bramborová kaše - příloha": 1,
+        "Polévka zelenin. s fridátovými nudlemi ||| Kuřecí čína, Rýže dušená": 1,
+        "Polévka hrachová ||| Smažené točenky s rozinkami": 1,
+        "Polévka hovězí se strouháním ||| Italský guláš (zbruf se sýrem), Těstoviny": 1,
+        "Polévka zelenin. s rýží ||| Bramborový guláš, Rohlík": 1,
+        "Polévka rajčatová s těstovinou ||| Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha": 1,
+        "Polévka špenátová s vajíčkem ||| Španělský plátek, Rýže dušená": 1,
+        "Polévka zeleninová s těstovinami ||| Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha": 1,
+        "Polévka zelenin. s pohankou ||| Bratislavské vepřové plecko, Těstoviny": 1,
+        "Polévka květáková ||| Francouzské brambory": 1,
+        "Polévka hovězí s játrovými knedlíčky ||| Guláš maďarský, Houskové knedlíky (kynuté)": 1,
+        "Polévka bramborová ||| Rybí filé smažené, Bramborová kaše - příloha": 1,
+        "Polévka frankfurtská s bramborem ||| Nákyp rýžový s meruňkami": 1,
+        "Polévka fazolová se zeleninou ||| Kuře pečené, Šťouchané brambory s cibulkou": 1,
+        "Polévka hovězí s vaječnou jíškou ||| Hovězí pečeně na houbách, Těstoviny": 1,
+        "Polévka zeleninová s hrachovými nudlemi ||| Moravský vrabec, Bramborové knedlíky (směs), Zelí kysané": 1,
+        "Polévka rychlá s vejcem ||| Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb": 1,
+        "Polévka koprová (kulajda) ||| Zapečené těstoviny s kuřecím masem a zeleninou": 1,
+        "Polévka čočková ||| Žebrácké maso, Brambory opékané": 1,
+        "Polévka z batátových brambor ||| Rizoto z vepřového masa, Okurka sterilovaná - příloha": 1,
+        "Polévka zeleninová s kuskusem ||| Omáčka rajčatová, Hovězí maso vařené, Těstoviny": 1,
+        "Polévka z kysaného zelí s klobásou ||| Rybí filé pečené na másle, Brambory": 1,
+        "Polévka zeleninová zahuštěná červenou čočkou ||| Špagety s vepřovým masem a rajčaty": 1,
+        "Polévka hráškový krém ||| Sekaná pečeně, Bramborová kaše - příloha, Okurka sterilovaná - příloha": 1,
+        "Polévka krupicová s vejcem ||| Kuře na paprice, Houskové knedlíky (kynuté)": 1,
+        "Polévka kuřecí s nudlemi ||| Hrachová kaše s cibulkou, Vejce vařené": 1,
+        "Polévka zelenin. s ovesnými vločkami ||| Vepřové v kapustě, Brambory": 1,
+        "Polévka z míchaných luštěnin ||| Dukátové buchtičky s krémem, Mléko": 1,
+        "Polévka česneková s osmaženou hostičkou ||| Vepřová kýta po cikánsku, Rýže dušená": 1,
+        "Polévka z batátových brambor ||| Rybí filé po mlynářsku, Brambory": 1,
+        "Polévka zelenin. s drožďovými knedlíčky ||| Hovězí guláš, Rýže dušená": 1,
+        "Polévka květáková s červenou čočkou ||| Těstoviny penne s tuňákem a chery rajčaty": 1,
+        "Polévka hovězí s kapáním ||| Vepřová pečeně, Fazolové lusky na slanině, Brambory": 1,
+        "Polévka brokolicová ||| Špekové knedlíky, Zelí kysané": 1,
+        "Polévka zeleninová s těstovinovou rýží ||| Srbská čočka, Chléb": 1,
+        "Polévka celerová se smaženým hráškem ||| Vepřová pečeně selská, Nastavovaná kaše s cibulkou, Okurka sterilovaná - příloha": 1,
+        "Polévka hrachová ||| Kuřecí čína, Rýže dušená": 1,
+        "Polévka hovězí se strouháním ||| Vepřové v mrkvi, Brambory": 1,
+        "Polévka špenátová ||| Zapečené těstoviny s uzeným masem, Zelný salát  - příloha": 1,
+        "Polévka rajčatová s ovesnými vločkami ||| Rybí filé zapečené se špenátem, Brambory": 1,
+        "Polévka zeleninová s tarhoňou ||| Hovězí pečeně znojemská, Rýže dušená": 1,
+        "Polévka gulášová ||| Těstoviny s brokolicí": 1,
+        "Polévka bramborová ||| Kuřecí rizoto": 1,
+        "Polévka zelenin. s rýží ||| Segedínský guláš, Houskové knedlíky (kynuté)": 1,
+        "Polévka kuřecí s nudlemi ||| Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb": 1,
+        "Polévka zeleninová se sýrovým kapáním ||| Kuřecí nudličky se sýrovou omáčkou, Těstoviny": 1,
+        "Polévka cibulová se sýrem ||| Masová směs \"flamendr\", Rýže dušená": 1,
+        "Polévka čočková se zeleninou ||| Bramborové šišky s mákem (strouhankou)": 1,
+        "Polévka pórková s vejci ||| Kuřecí stripsy, Brambory": 1,
+        "Polévka krupicová s vejcem ||| Kuskus s kuřecím masem, brokolicí a suš.rajčaty": 1,
+        "Polévka zeleninová s celozrnnými knedlíčky ||| Španělský ptáček rozházený, Rýže dušená": 1,
+        "Polévka ze zahradních jahod ||| Obalované filé s brokolicí a sýrem, Brambory m.m.": 1,
+        "Polévka mrkvová ||| Těstovinový salát se zeleninou a šunkou": 1,
+        "Polévka hovězí s těstovinami ||| Králík pečený, Bramborové knedlíky (směs), Špenát dušený": 1,
+        "Polévka bramboračka nezahuštěná ||| Horňácký guláš (maso, fazole), Chléb": 1,
+        "Polévka ovarová ||| Lívance, Káva bílá": 1,
+        "Polévka zeleninová s quinoou ||| Omáčka rajčatová, Hovězí maso vařené, Těstoviny": 1,
+        "Polévka cizrnová krémová s rajčaty ||| Kuře pečené, Brambory m.m.": 1,
+        "Polévka zeleninová zahuštěná červenou čočkou ||| Vepřové na houbách se smetanou, Houskové knedlíky (kynuté)": 1,
+        "Polévka drožďová ||| Zeleninové rizoto": 1,
+        "Polévka hovězí s kapustou a rýží ||| Vepřové na paprice, Těstoviny": 1,
+        "Polévka fazolová se zeleninou ||| Nudle s mákem": 1,
+        "Polévka špenátová s vajíčkem ||| Francouzské brambory": 1,
+        "Polévka zeleninová s těstovinami ||| Sicilské špagety (boloňské)": 1,
+        "Polévka květáková ||| Nudle s mákem": 1,
+        "Polévka celerová se smaženým hráškem ||| Sekaná pečeně, Brambory, Okurka sterilovaná - příloha": 1,
+        "Polévka zeleninová s těstovinami ||| Omáčka rajčatová, Hovězí maso vařené, Těstoviny": 1,
+        "Polévka špenátová s vajíčkem ||| Rizoto srbské": 1,
+        "Polévka zeleninová se sýrovým kapáním ||| Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha": 1,
+        "Polévka brokolicová ||| Hovězí guláš, Rýže dušená": 1,
+        "Polévka bramborová ||| Zapečené těstoviny s uzeninou, Salát z červené řepy - příloha": 1,
+        "Polévka kapustová s rýží ||| Kuře pečené, Brambory": 1,
+        "Polévka zelenin. s pohankou ||| Sicilské špagety (boloňské)": 1,
+        "Polévka rajčatová s těstovinou ||| Rybí filé pečené na másle, Bramborová kaše - příloha": 1,
+        "Polévka zeleninová zahuštěná červenou čočkou ||| Kuřecí čína, Rýže dušená": 1,
+        "Polévka krupicová s vejcem ||| Vepřové na houbách, Těstoviny": 1,
+        "Polévka gulášová ||| Žemlovka s jablky a tvarohem": 1,
+        "Polévka zeleninová s kuskusem ||| Vepřová kýta hamburská, Houskové knedlíky (kynuté)": 1,
+        "Polévka hovězí s vaječnou jíškou ||| Kovbojská pánev, Chléb": 1,
+        "Polévka dýňový krém ||| Hovězí pečeně štěpánská, Rýže dušená": 1,
+        "Polévka hrachová ||| Francouzské brambory, Okurka sterilovaná - příloha": 1,
+        "Polévka z rybího filé ||| Kuře na paprice, Těstoviny": 1,
+        "Polévka pórková s vejci ||| Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)": 1,
+        "Polévka zeleninová s tarhoňou ||| Omáčka koprová, Brambory, Vejce vařené": 1,
+        "Polévka hovězí s játrovými noky ||| Kuřecí prsa  na kari koření, Rýže dušená": 1,
+        "Polévka hovězí se strouháním ||| Karbanátek z rybího file - pečený, Brambory m.m.": 1,
+        "Polévka mrkvová ||| Rožnovské halušky (střapačky) s uzeným masem": 1,
+        "Polévka kuřecí s nudlemi ||| Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha": 1,
+        "Polévka zelenin. s drožďovými knedlíčky ||| Těstoviny  po Lotrinsku": 1,
+        "Polévka z míchaných luštěnin ||| Znojemský guláš, Rýže dušená": 1,
+        "Polévka zelenin. s bulgurem ||| Těstoviny s brokolicí a sýrovou omáčkou": 1,
+        "Polévka  zeleninová s ovesnými vločkami ||| Žebrácké maso, Brambory": 1,
+        "Polévka čočková ||| Rybí filé obalované, Bramborová kaše - příloha": 1,
+        "Polévka frankfurtská s bramborem ||| Rizoto s kuřecím masem": 1,
+        "Polévka hovězí s jáhly ||| Masové koule v rajčatové omáčce, Těstoviny": 1,
+        "Polévka fazolová ||| Bramborové šišky s mákem (strouhankou)": 1,
+        "Polévka zelenin. s fridátovými nudlemi ||| Segedínský guláš, Houskové knedlíky (kynuté)": 1,
+        "Polévka hovězí s masem a vejcem ||| Srbská čočka, Chléb": 1,
+        "Polévka bramboračka nezahuštěná ||| Španělský ptáček rozházený, Rýže dušená": 1,
+        "Polévka celerová se smaženým hráškem ||| Těstovinový salát s kuřecím masem": 1,
+        "Polévka z kysaného zelí ||| Vepřové v mrkvi, Brambory": 1,
+        "Polévka zeleninová s kuskusem ||| Vepřová pečeně selská, Bramborové knedlíky (směs), Červené zelí": 1,
+        "Polévka rajčatová s tarhoňou ||| Smažené rybí prsty, Brambory m.m.": 1,
+        "Polévka zeleninová s celozrnnými nudlemi ||| Krůtí nudličky s pórkem, Rýže dušená": 1,
+        "Polévka zelenin. s fridátovými nudlemi ||| Bulgur s kuřecím masem a zeleninou": 1,
+        "Polévka ovarová ||| Dukátové buchtičky s krémem, Kakao": 1,
+        "Polévka hovězí se sýrovým kapáním ||| Bratislavské vepřové plecko, Těstoviny": 1,
+        "Polévka zeleninová s quinoou ||| Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb": 1,
+        "Polévka krupicová s vejcem ||| Těstoviny se zeleninou, zapečené": 1,
+        "Polévka cibulová ||| Hovězí pečeně pražská, Rýže dušená": 1,
+        "Polévka květáková s červenou čočkou ||| Špagety celozrnné s boloňskou omáčkou": 1,
+        "Polévka hovězí s krupkami ||| Vepřový řízek smažený, Brambory": 1
+      }
+    },
+    "drafts": [],
+    "stravaVerifiedWeeks": {
+      "2025-09-29": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka kuřecí s nudlemi\",\"Kovbojská pánev, Chléb\",\"\"],[false,\"Polévka koprová (kulajda)\",\"Holandský řízek, Bramborová kaše - příloha, Okurka sterilovaná - příloha\",\"Špagety po uhlířsku (vejce, sýr)\"],[false,\"Polévka zelenin. s drožďovými knedlíčky\",\"Lotrinské tagliatelle se sýrem\",\"\"],[false,\"Polévka z rybího filé\",\"Kuře pečené, Brambory\",\"Kuskus s ovocem\"],[false,\"Polévka zelenin. s fridátovými nudlemi\",\"Svíčková na smetaně, Houskové knedlíky (kynuté)\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202509",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202509",
+            "sha256": "174ac3083c6bc9f36a17a7a70614c0f922e6d9db3f3419072190a665dcd708ac",
+            "retrievedAt": "2026-11-06T15:52:18.994444+00:00"
+          },
+          {
+            "month": "202510",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+            "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+            "retrievedAt": "2026-11-06T15:52:18.981686+00:00"
+          }
+        ]
+      },
+      "2025-10-06": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka zeleninová s quinoou\",\"Debrecínský guláš, Těstoviny\",\"\"],[false,\"Polévka gulášová\",\"Karbanátek z rybího file - pečený, Brambory m.m.\",\"Kuskus s kuřecím masem\"],[false,\"Polévka hovězí se strouháním\",\"Kuřecí čína, Rýže dušená\",\"Brokolicová poezie (květák, niva)\"],[false,\"Polévka květáková s červenou čočkou\",\"Knedlíky švestkové (bramborové) s mákem\",\"Pizza se šunkou\"],[false,\"Polévka z kysaného zelí\",\"Vepřová roláda (karlovarský kotouč), Kaše bramborová\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202510",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+            "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+            "retrievedAt": "2026-11-06T15:52:18.981686+00:00"
+          }
+        ]
+      },
+      "2025-10-13": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka špenátová s vajíčkem\",\"Džuveč, Chléb\",\"\"],[false,\"Polévka zelenin. s bulgurem\",\"Kuře na paprice, Těstoviny\",\"Zeleninové placičky se sýrem, Brambory m.m.\"],[false,\"Polévka celerová se smaženým hráškem\",\"Šoulet, Vepřová pečeně, Okurka sterilovaná - příloha\",\"Kaše krupicová\"],[false,\"Polévka rychlá s vejcem\",\"Vepřové v mrkvi, Brambory\",\"Těstovinový salát s cizrnou a sušenými rajčaty\"],[false,\"Polévka selská ii.\",\"Kuřecí řízek smažený, Bramborová kaše - příloha\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202510",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+            "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+            "retrievedAt": "2026-11-06T15:52:18.981686+00:00"
+          }
+        ]
+      },
+      "2025-10-20": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka rajčatová s těstovinou\",\"Fazole a la Katův šleh, Chléb\",\"\"],[false,\"Polévka zeleninová s celozrnnými knedlíčky\",\"Hovězí pečeně štěpánská, Rýže dušená\",\"\"],[false,\"Polévka  zeleninová s ovesnými vločkami\",\"Žemlovka s jablky a tvarohem\",\"\"],[false,\"Polévka zeleninová s tarhoňou\",\"Segedínský guláš, Houskové knedlíky (kynuté)\",\"\"],[false,\"Polévka čočková\",\"Zapečené těstoviny s kuřecím masem a zeleninou\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202510",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+            "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+            "retrievedAt": "2026-11-06T15:52:18.981686+00:00"
+          }
+        ]
+      },
+      "2025-11-03": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka brokolicová\",\"Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha\",\"\"],[false,\"Polévka zeleninová s kuskusem\",\"Sicilské špagety (boloňské)\",\"\"],[false,\"Polévka bramborová\",\"Kuře pečené, Bulgur\",\"\"],[false,\"Polévka hrachová se smaženým hráškem\",\"Sekaná pečeně, Bramborová kaše - příloha\",\"\"],[false,\"Polévka hovězí s vaječnou jíškou\",\"Vepřová kýta hamburská, Houskové knedlíky (kynuté)\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202511",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202511",
+            "sha256": "c75ba42284da90bb5b959fba610fa35dca5481d1d6b53c8e84333ac864a443ce",
+            "retrievedAt": "2026-11-06T15:52:18.989442+00:00"
+          }
+        ]
+      },
+      "2025-11-10": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka zeleninová zahuštěná červenou čočkou\",\"Rybí filé obalované, Brambory m.m.\",\"\"],[false,\"Polévka hovězí s kapáním\",\"Vepřový guláš, Rýže dušená\",\"\"],[false,\"Polévka česneková s bramborem a vejcem\",\"Nudle s mákem\",\"\"],[false,\"Polévka květáková\",\"Hovězí pečeně frankfurtská, Těstoviny\",\"\"],[false,\"Polévka fazolová se zeleninou\",\"Gnocchi s kuřecím masem, smetanou a špenátem\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202511",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202511",
+            "sha256": "c75ba42284da90bb5b959fba610fa35dca5481d1d6b53c8e84333ac864a443ce",
+            "retrievedAt": "2026-11-06T15:52:18.989442+00:00"
+          }
+        ]
+      },
+      "2025-11-24": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka gulášová\",\"Rybí file pečené na másle, Bramborová kaše - příloha\",\"\"],[false,\"Polévka zelenin. s fridátovými nudlemi\",\"Kuřecí rizoto, Salát z červené řepy - příloha\",\"\"],[false,\"Polévka zeleninová s drožďovými knedlíčky\",\"Vepřová kotleta na houbách, Těstoviny\",\"\"],[false,\"Polévka krupicová maďarská\",\"Francouzské brambory, Okurka sterilovaná - příloha\",\"\"],[false,\"Polévka čočková se zeleninou\",\"Španělský ptáček rozházený, Rýže dušená\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202511",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202511",
+            "sha256": "c75ba42284da90bb5b959fba610fa35dca5481d1d6b53c8e84333ac864a443ce",
+            "retrievedAt": "2026-11-06T15:52:18.989442+00:00"
+          }
+        ]
+      },
+      "2025-12-01": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka zelenin. s pohankou\",\"Kovbojská pánev, Chléb\",\"\"],[false,\"Polévka zeleninová se sýrovým kapáním\",\"Kuře Šanghaj s rýží\",\"\"],[false,\"Polévka hrachová s hrachovými krutony\",\"Nákyp rýžový se švestkami\",\"\"],[false,\"Polévka z fazolových lusků\",\"Omáčka rajčatová, Hovězí maso vařené, Houskové knedlíky (kynuté)\",\"\"],[false,\"Polévka krupicová s vejcem\",\"Kapustové karbanátky, Bramborová kaše - příloha\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202512",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+            "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+            "retrievedAt": "2026-11-06T15:52:24.457888+00:00"
+          }
+        ]
+      },
+      "2025-12-08": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka špenátová\",\"Rybí filé po mlynářsku, Brambory m.m.\",\"\"],[false,\"Polévka cizrnová krémová s rajčaty\",\"Pekingská směs, Rýže dušená\",\"\"],[false,\"Polévka kuřecí s nudlemi\",\"Vinná klobása smažená přírodní, Bramborová kaše - příloha\",\"\"],[false,\"Polévka luštěninová\",\"Perkelt z kuřecího masa, Těstoviny\",\"\"],[false,\"Polévka kapustová s rýží\",\"Bramborové knedlíky plň.uzeným masem (salám), Zelí kysané\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202512",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+            "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+            "retrievedAt": "2026-11-06T15:52:24.457888+00:00"
+          }
+        ]
+      },
+      "2025-12-15": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka zel. vývar s dýňovým kapáním\",\"Italský guláš (zbruf se sýrem), Špagety\",\"\"],[false,\"Polévka z kysaného zelí\",\"Vepřový řízek přírodní, Brambory m.m.\",\"\"],[false,\"Polévka ovarová\",\"Dukátové buchtičky s krémem\",\"\"],[false,\"Polévka z míchaných luštěnin\",\"Kuřecí roláda, Rýže dušená\",\"\"],[false,\"Polévka hovězí s těstovinami\",\"Zapečené těstoviny s uzeným masem, Okurka sterilovaná - příloha\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202512",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+            "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+            "retrievedAt": "2026-11-06T15:52:24.457888+00:00"
+          }
+        ]
+      },
+      "2026-01-05": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka rajčatová s těstovinou\",\"Srbská čočka, Chléb\",\"\"],[false,\"Polévka hovězí s vaječnou jíškou\",\"Guláš maďarský, Rýže dušená\",\"\"],[false,\"Polévka květáková\",\"Rožnovské halušky (střapačky) s uzeným masem\",\"\"],[false,\"Polévka zelenin. s kroupami\",\"Kuře na paprice, Houskové knedlíky (kynuté)\",\"\"],[false,\"Polévka koprová (kulajda)\",\"Holandský řízek, Bramborová kaše - příloha\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202601",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+            "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+            "retrievedAt": "2026-11-06T15:52:24.465181+00:00"
+          }
+        ]
+      },
+      "2026-01-12": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka celerová se smaženým hráškem\",\"Losos přírodní, Brambory m.m.\",\"\"],[false,\"Polévka zelenin. s fridátovými nudlemi\",\"Kuřecí nudličky se sýrovou omáčkou, Těstoviny\",\"\"],[false,\"Polévka brokolicová\",\"Španělský ptáček rozházený, Rýže dušená\",\"\"],[false,\"Polévka fazolová\",\"Lotrinské tagliatelle se sýrem\",\"\"],[false,\"Polévka zeleninová s těstovinami\",\"Vepřová pečeně selská, Bramborové knedlíky (směs), Špenát dušený\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202601",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+            "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+            "retrievedAt": "2026-11-06T15:52:24.465181+00:00"
+          }
+        ]
+      },
+      "2026-01-19": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka bramborová\",\"Hrachová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha\",\"\"],[false,\"Polévka gulášová\",\"Zeleninový salát, Kuřecí stripsy\",\"\"],[false,\"Polévka špenátová s vajíčkem\",\"Bramborové šišky s mákem (strouhankou)\",\"\"],[false,\"Polévka zeleninová s celozrnnými knedlíčky\",\"Vepřové na houbách, Brambory\",\"\"],[false,\"Polévka hovězí s masem a vejcem\",\"Kuře Šanghaj s jasmínovou rýží\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202601",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+            "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+            "retrievedAt": "2026-11-06T15:52:24.465181+00:00"
+          }
+        ]
+      },
+      "2026-01-26": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka rajčatová s ovesnými vločkami\",\"Tilápie s rajčaty a sýrem, Brambory m.m.\",\"\"],[false,\"Polévka zeleninová s těstovinovou rýží\",\"Hovězí pečeně štěpánská, Rýže dušená\",\"\"],[false,\"Polévka květáková s červenou čočkou\",\"Králík pečený, Brambory m.m.\",\"\"],[false,\"Polévka zelenin. s bulgurem\",\"Vepřová kýta hamburská, Houskové knedlíky (kynuté)\",\"\"],[true,\"P R Á Z D N I N Y\",\"\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202601",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+            "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+            "retrievedAt": "2026-11-06T15:52:24.465181+00:00"
+          }
+        ]
+      },
+      "2026-02-02": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka zelenin. s drožďovými knedlíčky\",\"Španělská čočka s mletým masem, Chléb\",\"\"],[false,\"Polévka česneková s osmaženou hostičkou\",\"Vepřové v mrkvi, Brambory m.m.\",\"\"],[false,\"Polévka drůbková s nudlemi\",\"Těstovinový salát s marinovaným tofu\",\"\"],[false,\"Polévka z míchaných luštěnin\",\"Hovězí guláš, Rýže dušená\",\"\"],[false,\"Polévka hovězí s kuskusem\",\"Kuřecí stehna pečená se zel.fazolkami a kroupami\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202602",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202602",
+            "sha256": "8eb80d907b4f7de4294fa39b9268c61db508ab495ed138158ec6ff07cb40cf02",
+            "retrievedAt": "2026-11-06T15:52:24.415948+00:00"
+          }
+        ]
+      },
+      "2026-02-09": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka dýňový krém\",\"Rybí filé po mlynářsku, Brambory\",\"\"],[false,\"Polévka hráškový krém\",\"Sicilské špagety (boloňské)\",\"\"],[false,\"Polévka zelenin. s pohankou\",\"Domácí buchty plněné mákem, povidly, tvarohem\",\"\"],[false,\"Polévka hovězí s těstovinou\",\"Segedínský guláš, Houskové knedlíky (kynuté)\",\"\"],[false,\"Polévka pórková\",\"Sekaná zahradnická, Brambory m.m.\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202602",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202602",
+            "sha256": "8eb80d907b4f7de4294fa39b9268c61db508ab495ed138158ec6ff07cb40cf02",
+            "retrievedAt": "2026-11-06T15:52:24.415948+00:00"
+          }
+        ]
+      },
+      "2026-02-16": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka zeleninová s tarhoňou\",\"Mexická pánev (vepř.maso, fazole)) se sýrem\",\"\"],[false,\"Polévka zimní zeleninová s ovesnými vločkami\",\"Omáčka koprová, Brambory, Vejce vařené\",\"\"],[false,\"Polévka selská ii.\",\"Rizoto z vepřového masa, Okurka sterilovaná - příloha\",\"\"],[false,\"Polévka bramboračka nezahuštěná\",\"Kapustové karbanátky s masem, Brambory\",\"\"],[false,\"Polévka krupicová s vejcem\",\"Zapečené těstoviny s kuřecím masem a zeleninou\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202602",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202602",
+            "sha256": "8eb80d907b4f7de4294fa39b9268c61db508ab495ed138158ec6ff07cb40cf02",
+            "retrievedAt": "2026-11-06T15:52:24.415948+00:00"
+          }
+        ]
+      },
+      "2026-03-02": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka hovězí s játrovými noky\",\"Rybí stripsy, Brambory m.m.\",\"\"],[false,\"Polévka frankfurtská s bramborem\",\"Žemlovka s jablky a tvarohem\",\"\"],[false,\"Polévka zeleninová s quinoou\",\"Kuře pečené, Brambory\",\"\"],[false,\"Polévka hovězí s vaječnou jíškou\",\"Masové koule v rajčatové omáčce, Těstoviny\",\"\"],[false,\"Polévka kmínová s vejcem\",\"Vepřová pečeně selská, Špenát dušený, Karlovarský knedlík\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202603",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+            "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+            "retrievedAt": "2026-11-06T15:52:30.084678+00:00"
+          }
+        ]
+      },
+      "2026-03-09": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka zelenin. s bulgurem\",\"Kovbojská pánev, Chléb\",\"\"],[false,\"Polévka květáková\",\"Karbanátky pečené, Bramborová kaše - příloha\",\"\"],[false,\"Polévka hovězí s česnekovými krutony\",\"Těstoviny se sýrovou omáčkou\",\"\"],[false,\"Polévka čočková\",\"Rizoto srbské, Okurka sterilovaná - příloha\",\"\"],[false,\"Polévka zelenin. s ovesnými vločkami\",\"Svíčková na smetaně, Houskové knedlíky (kynuté)\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202603",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+            "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+            "retrievedAt": "2026-11-06T15:52:30.084678+00:00"
+          }
+        ]
+      },
+      "2026-03-16": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka gulášová\",\"Hejk pečený na bylinkovém másle, Brambory\",\"\"],[false,\"Polévka hovězí s jáhly\",\"Bramborák\",\"\"],[false,\"Polévka brokolicová\",\"Vepřový řízek přírodní, Kuskus - příloha\",\"\"],[false,\"Polévka zeleninová se sýrovým kapáním\",\"Hovězí pečeně na paprice, Vícezrnný knedlík (směs)\",\"\"],[false,\"Polévka cizrnová\",\"Kuřecí řízek smažený, Bramborová kaše - příloha\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202603",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+            "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+            "retrievedAt": "2026-11-06T15:52:30.084678+00:00"
+          }
+        ]
+      },
+      "2026-03-23": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka ovarová\",\"Čočkový kotlík, Chléb\",\"\"],[false,\"Polévka drožďová\",\"Vepřová roláda (karlovarský kotouč), Bramborová kaše - příloha\",\"\"],[false,\"Polévka zelenin. s fridátovými nudlemi\",\"Kuřecí čína, Rýže dušená\",\"\"],[false,\"Polévka hrachová\",\"Smažené točenky s rozinkami\",\"\"],[false,\"Polévka hovězí se strouháním\",\"Italský guláš (zbruf se sýrem), Těstoviny\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202603",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+            "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+            "retrievedAt": "2026-11-06T15:52:30.084678+00:00"
+          }
+        ]
+      },
+      "2026-04-13": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka bramborová\",\"Rybí filé smažené, Bramborová kaše - příloha\",\"\"],[false,\"Polévka frankfurtská s bramborem\",\"Nákyp rýžový s meruňkami\",\"\"],[false,\"Polévka fazolová se zeleninou\",\"Kuře pečené, Šťouchané brambory s cibulkou\",\"\"],[false,\"Polévka hovězí s vaječnou jíškou\",\"Hovězí pečeně na houbách, Těstoviny\",\"\"],[false,\"Polévka zeleninová s hrachovými nudlemi\",\"Moravský vrabec, Bramborové knedlíky (směs), Zelí kysané\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202604",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+            "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+            "retrievedAt": "2026-11-06T15:52:29.939414+00:00"
+          }
+        ]
+      },
+      "2026-04-20": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka rychlá s vejcem\",\"Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb\",\"\"],[false,\"Polévka koprová (kulajda)\",\"Zapečené těstoviny s kuřecím masem a zeleninou\",\"\"],[false,\"Polévka čočková\",\"Žebrácké maso, Brambory opékané\",\"\"],[false,\"Polévka z batátových brambor\",\"Rizoto z vepřového masa, Okurka sterilovaná - příloha\",\"\"],[false,\"Polévka zeleninová s kuskusem\",\"Omáčka rajčatová, Hovězí maso vařené, Těstoviny\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202604",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+            "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+            "retrievedAt": "2026-11-06T15:52:29.939414+00:00"
+          }
+        ]
+      },
+      "2026-05-11": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka z batátových brambor\",\"Rybí filé po mlynářsku, Brambory\",\"\"],[false,\"Polévka zelenin. s drožďovými knedlíčky\",\"Hovězí guláš, Rýže dušená\",\"\"],[false,\"Polévka květáková s červenou čočkou\",\"Těstoviny penne s tuňákem a chery rajčaty\",\"\"],[false,\"Polévka hovězí s kapáním\",\"Vepřová pečeně, Fazolové lusky na slanině, Brambory\",\"\"],[false,\"Polévka brokolicová\",\"Špekové knedlíky, Zelí kysané\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202605",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+            "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+            "retrievedAt": "2026-11-06T15:52:29.896585+00:00"
+          }
+        ]
+      },
+      "2026-05-18": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka zeleninová s těstovinovou rýží\",\"Srbská čočka, Chléb\",\"\"],[false,\"Polévka celerová se smaženým hráškem\",\"Vepřová pečeně selská, Nastavovaná kaše s cibulkou, Okurka sterilovaná - příloha\",\"\"],[false,\"Polévka hrachová\",\"Kuřecí čína, Rýže dušená\",\"\"],[false,\"Polévka hovězí se strouháním\",\"Vepřové v mrkvi, Brambory\",\"\"],[false,\"Polévka špenátová\",\"Zapečené těstoviny s uzeným masem, Zelný salát  - příloha\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202605",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+            "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+            "retrievedAt": "2026-11-06T15:52:29.896585+00:00"
+          }
+        ]
+      },
+      "2026-05-25": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka rajčatová s ovesnými vločkami\",\"Rybí filé zapečené se špenátem, Brambory\",\"\"],[false,\"Polévka zeleninová s tarhoňou\",\"Hovězí pečeně znojemská, Rýže dušená\",\"\"],[false,\"Polévka gulášová\",\"Těstoviny s brokolicí\",\"\"],[false,\"Polévka bramborová\",\"Kuřecí rizoto\",\"\"],[false,\"Polévka zelenin. s rýží\",\"Segedínský guláš, Houskové knedlíky (kynuté)\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202605",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+            "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+            "retrievedAt": "2026-11-06T15:52:29.896585+00:00"
+          }
+        ]
+      },
+      "2026-06-01": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka kuřecí s nudlemi\",\"Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb\",\"\"],[false,\"Polévka zeleninová se sýrovým kapáním\",\"Kuřecí nudličky se sýrovou omáčkou, Těstoviny\",\"\"],[false,\"Polévka cibulová se sýrem\",\"Masová směs \\\"flamendr\\\", Rýže dušená\",\"\"],[false,\"Polévka čočková se zeleninou\",\"Bramborové šišky s mákem (strouhankou)\",\"\"],[false,\"Polévka pórková s vejci\",\"Kuřecí stripsy, Brambory\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202606",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202606",
+            "sha256": "e2ed8a58240bbe7965f621a8122f8074e3addff29237f2a530168b05a1b6ad71",
+            "retrievedAt": "2026-11-06T15:52:35.612157+00:00"
+          }
+        ]
+      },
+      "2026-06-08": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka krupicová s vejcem\",\"Kuskus s kuřecím masem, brokolicí a suš.rajčaty\",\"\"],[false,\"Polévka zeleninová s celozrnnými knedlíčky\",\"Španělský ptáček rozházený, Rýže dušená\",\"\"],[false,\"Polévka ze zahradních jahod\",\"Obalované filé s brokolicí a sýrem, Brambory m.m.\",\"\"],[false,\"Polévka mrkvová\",\"Těstovinový salát se zeleninou a šunkou\",\"\"],[false,\"Polévka hovězí s těstovinami\",\"Králík pečený, Bramborové knedlíky (směs), Špenát dušený\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202606",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202606",
+            "sha256": "e2ed8a58240bbe7965f621a8122f8074e3addff29237f2a530168b05a1b6ad71",
+            "retrievedAt": "2026-11-06T15:52:35.612157+00:00"
+          }
+        ]
+      },
+      "2026-06-15": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka bramboračka nezahuštěná\",\"Horňácký guláš (maso, fazole), Chléb\",\"\"],[false,\"Polévka ovarová\",\"Lívance, Káva bílá\",\"\"],[false,\"Polévka zeleninová s quinoou\",\"Omáčka rajčatová, Hovězí maso vařené, Těstoviny\",\"\"],[false,\"Polévka cizrnová krémová s rajčaty\",\"Kuře pečené, Brambory m.m.\",\"\"],[false,\"Polévka zeleninová zahuštěná červenou čočkou\",\"Vepřové na houbách se smetanou, Houskové knedlíky (kynuté)\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202606",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202606",
+            "sha256": "e2ed8a58240bbe7965f621a8122f8074e3addff29237f2a530168b05a1b6ad71",
+            "retrievedAt": "2026-11-06T15:52:35.612157+00:00"
+          }
+        ]
+      },
+      "2026-06-22": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka drožďová\",\"Zeleninové rizoto\",\"\"],[false,\"Polévka hovězí s kapustou a rýží\",\"Vepřové na paprice, Těstoviny\",\"\"],[false,\"Polévka fazolová se zeleninou\",\"Nudle s mákem\",\"\"],[false,\"Polévka špenátová s vajíčkem\",\"Francouzské brambory\",\"\"],[false,\"Polévka zeleninová s těstovinami\",\"Sicilské špagety (boloňské)\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202606",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202606",
+            "sha256": "e2ed8a58240bbe7965f621a8122f8074e3addff29237f2a530168b05a1b6ad71",
+            "retrievedAt": "2026-11-06T15:52:35.612157+00:00"
+          }
+        ]
+      },
+      "2026-09-07": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka zeleninová se sýrovým kapáním\",\"Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha\",\"\"],[false,\"Polévka brokolicová\",\"Hovězí guláš, Rýže dušená\",\"\"],[false,\"Polévka bramborová\",\"Zapečené těstoviny s uzeninou, Salát z červené řepy - příloha\",\"\"],[false,\"Polévka kapustová s rýží\",\"Kuře pečené, Brambory\",\"\"],[false,\"Polévka zelenin. s pohankou\",\"Sicilské špagety (boloňské)\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202609",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+            "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+            "retrievedAt": "2026-11-06T15:52:41.002020+00:00"
+          }
+        ]
+      },
+      "2026-09-14": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka rajčatová s těstovinou\",\"Rybí filé pečené na másle, Bramborová kaše - příloha\",\"\"],[false,\"Polévka zeleninová zahuštěná červenou čočkou\",\"Kuřecí čína, Rýže dušená\",\"\"],[false,\"Polévka krupicová s vejcem\",\"Vepřové na houbách, Těstoviny\",\"\"],[false,\"Polévka gulášová\",\"Žemlovka s jablky a tvarohem\",\"\"],[false,\"Polévka zeleninová s kuskusem\",\"Vepřová kýta hamburská, Houskové knedlíky (kynuté)\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202609",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+            "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+            "retrievedAt": "2026-11-06T15:52:41.002020+00:00"
+          }
+        ]
+      },
+      "2026-09-21": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka hovězí s vaječnou jíškou\",\"Kovbojská pánev, Chléb\",\"\"],[false,\"Polévka dýňový krém\",\"Hovězí pečeně štěpánská, Rýže dušená\",\"\"],[false,\"Polévka hrachová\",\"Francouzské brambory, Okurka sterilovaná - příloha\",\"\"],[false,\"Polévka z rybího filé\",\"Kuře na paprice, Těstoviny\",\"\"],[false,\"Polévka pórková s vejci\",\"Moravský vrabec, Špenát dušený, Bramborové knedlíky (směs)\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202609",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+            "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+            "retrievedAt": "2026-11-06T15:52:41.002020+00:00"
+          }
+        ]
+      },
+      "2026-10-05": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka kuřecí s nudlemi\",\"Hrachová kaše s cibulkou, Vejce vařené, Okurka sterilovaná - příloha\",\"\"],[false,\"Polévka zelenin. s drožďovými knedlíčky\",\"Těstoviny  po Lotrinsku\",\"\"],[false,\"Polévka z míchaných luštěnin\",\"Znojemský guláš, Rýže dušená\",\"\"],[false,\"Polévka zelenin. s bulgurem\",\"Těstoviny s brokolicí a sýrovou omáčkou\",\"\"],[false,\"Polévka  zeleninová s ovesnými vločkami\",\"Žebrácké maso, Brambory\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202610",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+            "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+            "retrievedAt": "2026-11-06T15:52:40.999598+00:00"
+          }
+        ]
+      },
+      "2026-10-12": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka čočková\",\"Rybí filé obalované, Bramborová kaše - příloha\",\"\"],[false,\"Polévka frankfurtská s bramborem\",\"Rizoto s kuřecím masem\",\"\"],[false,\"Polévka hovězí s jáhly\",\"Masové koule v rajčatové omáčce, Těstoviny\",\"\"],[false,\"Polévka fazolová\",\"Bramborové šišky s mákem (strouhankou)\",\"\"],[false,\"Polévka zelenin. s fridátovými nudlemi\",\"Segedínský guláš, Houskové knedlíky (kynuté)\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202610",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+            "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+            "retrievedAt": "2026-11-06T15:52:40.999598+00:00"
+          }
+        ]
+      },
+      "2026-10-19": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka hovězí s masem a vejcem\",\"Srbská čočka, Chléb\",\"\"],[false,\"Polévka bramboračka nezahuštěná\",\"Španělský ptáček rozházený, Rýže dušená\",\"\"],[false,\"Polévka celerová se smaženým hráškem\",\"Těstovinový salát s kuřecím masem\",\"\"],[false,\"Polévka z kysaného zelí\",\"Vepřové v mrkvi, Brambory\",\"\"],[false,\"Polévka zeleninová s kuskusem\",\"Vepřová pečeně selská, Bramborové knedlíky (směs), Červené zelí\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202610",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+            "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+            "retrievedAt": "2026-11-06T15:52:40.999598+00:00"
+          }
+        ]
+      },
+      "2026-11-02": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka rajčatová s tarhoňou\",\"Smažené rybí prsty, Brambory m.m.\",\"\"],[false,\"Polévka zeleninová s celozrnnými nudlemi\",\"Krůtí nudličky s pórkem, Rýže dušená\",\"\"],[false,\"Polévka zelenin. s fridátovými nudlemi\",\"Bulgur s kuřecím masem a zeleninou\",\"\"],[false,\"Polévka ovarová\",\"Dukátové buchtičky s krémem, Kakao\",\"\"],[false,\"Polévka hovězí se sýrovým kapáním\",\"Bratislavské vepřové plecko, Těstoviny\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202611",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202611",
+            "sha256": "3dbb15c2da40e0c0c5ec6175bb9e45f25e7343f309169e2225752f84a76a18f8",
+            "retrievedAt": "2026-11-06T15:52:40.971481+00:00"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/jerry00769/jidelnicky/main/strava_5948.json",
+            "sha256": "011502dbee2cf320d990fef651a940b16b1103c3315edba0e00d552543d76b49",
+            "note": "Previously archived complete public weeks; visible current Strava.cz meals 6–13 November checked separately."
+          }
+        ]
+      },
+      "2026-11-09": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka zeleninová s quinoou\",\"Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb\",\"\"],[false,\"Polévka krupicová s vejcem\",\"Těstoviny se zeleninou, zapečené\",\"\"],[false,\"Polévka cibulová\",\"Hovězí pečeně pražská, Rýže dušená\",\"\"],[false,\"Polévka květáková s červenou čočkou\",\"Špagety celozrnné s boloňskou omáčkou\",\"\"],[false,\"Polévka hovězí s krupkami\",\"Vepřový řízek smažený, Brambory\",\"\"]]",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "documents": [
+          {
+            "month": "202611",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202611",
+            "sha256": "3dbb15c2da40e0c0c5ec6175bb9e45f25e7343f309169e2225752f84a76a18f8",
+            "retrievedAt": "2026-11-06T15:52:40.971481+00:00"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/jerry00769/jidelnicky/main/strava_5948.json",
+            "sha256": "011502dbee2cf320d990fef651a940b16b1103c3315edba0e00d552543d76b49",
+            "note": "Previously archived complete public weeks; visible current Strava.cz meals 6–13 November checked separately."
+          }
+        ]
+      }
+    },
+    "stravaMealWeeks": {
+      "2025-10-27": {
+        "source": "strava-5948",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "days": {},
+        "noMenuDates": [
+          "2025-10-27",
+          "2025-10-28",
+          "2025-10-29",
+          "2025-10-30",
+          "2025-10-31"
+        ],
+        "documents": [
+          {
+            "month": "202510",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202510",
+            "status": 200,
+            "chyba": false,
+            "sha256": "9e9de8c84010dacfddf32199f6ab7940fe8c0b553ff7de50650407a72bfd8d30",
+            "retrievedAt": "2026-11-06T15:52:18.981686+00:00",
+            "bytes": 103717
+          }
+        ]
+      },
+      "2025-11-17": {
+        "source": "strava-5948",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "days": {
+          "1": {
+            "signature": "[false,\"Polévka hovězí s játrovými noky\",\"Omáčka koprová, Vejce vařené, Brambory\",\"\"]"
+          },
+          "2": {
+            "signature": "[false,\"Polévka vývar s drobením\",\"Hrachová kaše s cibulkou, Vepřové výpečky, Salát z červené řepy - příloha\",\"\"]"
+          },
+          "3": {
+            "signature": "[false,\"Polévka rajčatová s těstovinami\",\"Kuskus s kuřecím masem, Míchaná zelenina grilovaná\",\"\"]"
+          },
+          "4": {
+            "signature": "[false,\"Polévka zelenin. s kroupami\",\"Hovězí pečeně pražská, Rýže dušená\",\"\"]"
+          }
+        },
+        "noMenuDates": [
+          "2025-11-17"
+        ],
+        "documents": [
+          {
+            "month": "202511",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202511",
+            "status": 200,
+            "chyba": false,
+            "sha256": "c75ba42284da90bb5b959fba610fa35dca5481d1d6b53c8e84333ac864a443ce",
+            "retrievedAt": "2026-11-06T15:52:18.989442+00:00",
+            "bytes": 95485
+          }
+        ]
+      },
+      "2025-12-29": {
+        "source": "strava-5948",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "days": {},
+        "noMenuDates": [
+          "2025-12-29",
+          "2025-12-30",
+          "2025-12-31",
+          "2026-01-01",
+          "2026-01-02"
+        ],
+        "documents": [
+          {
+            "month": "202512",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202512",
+            "status": 200,
+            "chyba": false,
+            "sha256": "b8dcf126df8258aa567f6130b6fe97c96192b4f35cf763a7e4bc708fb9d0960b",
+            "retrievedAt": "2026-11-06T15:52:24.457888+00:00",
+            "bytes": 75225
+          },
+          {
+            "month": "202601",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202601",
+            "status": 200,
+            "chyba": false,
+            "sha256": "7e57dc6439b76eec5c0c53159ebf826cb27ec1469bddacbd65f9e60e3db7785e",
+            "retrievedAt": "2026-11-06T15:52:24.465181+00:00",
+            "bytes": 140159
+          }
+        ]
+      },
+      "2026-03-30": {
+        "source": "strava-5948",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "days": {
+          "0": {
+            "signature": "[false,\"Polévka zelenin. s rýží\",\"Bramborový guláš, Rohlík\",\"\"]"
+          },
+          "1": {
+            "signature": "[false,\"Polévka rajčatová s těstovinou\",\"Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha\",\"\"]"
+          },
+          "2": {
+            "signature": "[false,\"Polévka špenátová s vajíčkem\",\"Španělský plátek, Rýže dušená\",\"\"]"
+          }
+        },
+        "noMenuDates": [
+          "2026-04-02",
+          "2026-04-03"
+        ],
+        "documents": [
+          {
+            "month": "202603",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202603",
+            "status": 200,
+            "chyba": false,
+            "sha256": "1c0df33caf0407d0bb2214de669f13ee6d5adf1f5200f00deff374929fb9fbd8",
+            "retrievedAt": "2026-11-06T15:52:30.084678+00:00",
+            "bytes": 143651
+          },
+          {
+            "month": "202604",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+            "status": 200,
+            "chyba": false,
+            "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+            "retrievedAt": "2026-11-06T15:52:29.939414+00:00",
+            "bytes": 124922
+          }
+        ]
+      },
+      "2026-04-06": {
+        "source": "strava-5948",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "days": {
+          "1": {
+            "signature": "[false,\"Polévka zeleninová s těstovinami\",\"Hrachová kaše s cibulkou, Párky, Okurka sterilovaná - příloha\",\"\"]"
+          },
+          "2": {
+            "signature": "[false,\"Polévka zelenin. s pohankou\",\"Bratislavské vepřové plecko, Těstoviny\",\"\"]"
+          },
+          "3": {
+            "signature": "[false,\"Polévka květáková\",\"Francouzské brambory\",\"\"]"
+          },
+          "4": {
+            "signature": "[false,\"Polévka hovězí s játrovými knedlíčky\",\"Guláš maďarský, Houskové knedlíky (kynuté)\",\"\"]"
+          }
+        },
+        "noMenuDates": [
+          "2026-04-06"
+        ],
+        "documents": [
+          {
+            "month": "202604",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+            "status": 200,
+            "chyba": false,
+            "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+            "retrievedAt": "2026-11-06T15:52:29.939414+00:00",
+            "bytes": 124922
+          }
+        ]
+      },
+      "2026-04-27": {
+        "source": "strava-5948",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "days": {
+          "0": {
+            "signature": "[false,\"Polévka z kysaného zelí s klobásou\",\"Rybí filé pečené na másle, Brambory\",\"\"]"
+          },
+          "1": {
+            "signature": "[false,\"Polévka zeleninová zahuštěná červenou čočkou\",\"Špagety s vepřovým masem a rajčaty\",\"\"]"
+          },
+          "2": {
+            "signature": "[false,\"Polévka hráškový krém\",\"Sekaná pečeně, Bramborová kaše - příloha, Okurka sterilovaná - příloha\",\"\"]"
+          },
+          "3": {
+            "signature": "[false,\"Polévka krupicová s vejcem\",\"Kuře na paprice, Houskové knedlíky (kynuté)\",\"\"]"
+          }
+        },
+        "noMenuDates": [
+          "2026-05-01"
+        ],
+        "documents": [
+          {
+            "month": "202604",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202604",
+            "status": 200,
+            "chyba": false,
+            "sha256": "2a9a547d73542457e913840820aed533f2678cc65cc6f44f8bfef89f89710bcb",
+            "retrievedAt": "2026-11-06T15:52:29.939414+00:00",
+            "bytes": 124922
+          },
+          {
+            "month": "202605",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+            "status": 200,
+            "chyba": false,
+            "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+            "retrievedAt": "2026-11-06T15:52:29.896585+00:00",
+            "bytes": 122822
+          }
+        ]
+      },
+      "2026-05-04": {
+        "source": "strava-5948",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "days": {
+          "0": {
+            "signature": "[false,\"Polévka kuřecí s nudlemi\",\"Hrachová kaše s cibulkou, Vejce vařené\",\"\"]"
+          },
+          "1": {
+            "signature": "[false,\"Polévka zelenin. s ovesnými vločkami\",\"Vepřové v kapustě, Brambory\",\"\"]"
+          },
+          "2": {
+            "signature": "[false,\"Polévka z míchaných luštěnin\",\"Dukátové buchtičky s krémem, Mléko\",\"\"]"
+          },
+          "3": {
+            "signature": "[false,\"Polévka česneková s osmaženou hostičkou\",\"Vepřová kýta po cikánsku, Rýže dušená\",\"\"]"
+          }
+        },
+        "noMenuDates": [
+          "2026-05-08"
+        ],
+        "documents": [
+          {
+            "month": "202605",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202605",
+            "status": 200,
+            "chyba": false,
+            "sha256": "5950546fec2e4af0062dfbf88bafc3ec1fd2242a3af083c940c3cae903bc691c",
+            "retrievedAt": "2026-11-06T15:52:29.896585+00:00",
+            "bytes": 122822
+          }
+        ]
+      },
+      "2026-07-06": {
+        "source": "strava-5948",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "days": {},
+        "noMenuDates": [
+          "2026-07-06",
+          "2026-07-07",
+          "2026-07-08",
+          "2026-07-09",
+          "2026-07-10"
+        ],
+        "documents": [
+          {
+            "month": "202607",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+            "status": 200,
+            "chyba": false,
+            "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+            "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+            "bytes": 41738
+          }
+        ]
+      },
+      "2026-07-20": {
+        "source": "strava-5948",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "days": {},
+        "noMenuDates": [
+          "2026-07-20",
+          "2026-07-21",
+          "2026-07-22",
+          "2026-07-23",
+          "2026-07-24"
+        ],
+        "documents": [
+          {
+            "month": "202607",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202607",
+            "status": 200,
+            "chyba": false,
+            "sha256": "971ec78dbcc164f989737725ca8470f3c38dde1d9fd4b553c43f933ec4d791fa",
+            "retrievedAt": "2026-11-06T15:52:35.403526+00:00",
+            "bytes": 41738
+          }
+        ]
+      },
+      "2026-08-31": {
+        "source": "strava-5948",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "days": {
+          "1": {
+            "signature": "[false,\"Polévka květáková\",\"Nudle s mákem\",\"\"]"
+          },
+          "2": {
+            "signature": "[false,\"Polévka celerová se smaženým hráškem\",\"Sekaná pečeně, Brambory, Okurka sterilovaná - příloha\",\"\"]"
+          },
+          "3": {
+            "signature": "[false,\"Polévka zeleninová s těstovinami\",\"Omáčka rajčatová, Hovězí maso vařené, Těstoviny\",\"\"]"
+          },
+          "4": {
+            "signature": "[false,\"Polévka špenátová s vajíčkem\",\"Rizoto srbské\",\"\"]"
+          }
+        },
+        "noMenuDates": [
+          "2026-08-31"
+        ],
+        "documents": [
+          {
+            "month": "202608",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202608",
+            "status": 200,
+            "chyba": false,
+            "sha256": "4abebddb32d6dbaa3e086bccb958f51841534c9197e2a65230393c55f8e0edfa",
+            "retrievedAt": "2026-11-06T15:52:35.384703+00:00",
+            "bytes": 25
+          },
+          {
+            "month": "202609",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+            "status": 200,
+            "chyba": false,
+            "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+            "retrievedAt": "2026-11-06T15:52:41.002020+00:00",
+            "bytes": 137425
+          }
+        ]
+      },
+      "2026-09-28": {
+        "source": "strava-5948",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "days": {
+          "1": {
+            "signature": "[false,\"Polévka zeleninová s tarhoňou\",\"Omáčka koprová, Brambory, Vejce vařené\",\"\"]"
+          },
+          "2": {
+            "signature": "[false,\"Polévka hovězí s játrovými noky\",\"Kuřecí prsa  na kari koření, Rýže dušená\",\"\"]"
+          },
+          "3": {
+            "signature": "[false,\"Polévka hovězí se strouháním\",\"Karbanátek z rybího file - pečený, Brambory m.m.\",\"\"]"
+          },
+          "4": {
+            "signature": "[false,\"Polévka mrkvová\",\"Rožnovské halušky (střapačky) s uzeným masem\",\"\"]"
+          }
+        },
+        "noMenuDates": [
+          "2026-09-28"
+        ],
+        "documents": [
+          {
+            "month": "202609",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202609",
+            "status": 200,
+            "chyba": false,
+            "sha256": "c9ca10e9f1a5ff018fc884d0ae8368789593f8f506b8f0f22039c98c77d623ec",
+            "retrievedAt": "2026-11-06T15:52:41.002020+00:00",
+            "bytes": 137425
+          },
+          {
+            "month": "202610",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+            "status": 200,
+            "chyba": false,
+            "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+            "retrievedAt": "2026-11-06T15:52:40.999598+00:00",
+            "bytes": 108553
+          }
+        ]
+      },
+      "2026-10-26": {
+        "source": "strava-5948",
+        "retrievedAt": "2026-11-06T16:00:01.821891+00:00",
+        "days": {},
+        "noMenuDates": [
+          "2026-10-26",
+          "2026-10-27",
+          "2026-10-28",
+          "2026-10-29",
+          "2026-10-30"
+        ],
+        "documents": [
+          {
+            "month": "202610",
+            "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
+            "status": 200,
+            "chyba": false,
+            "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
+            "retrievedAt": "2026-11-06T15:52:40.999598+00:00",
+            "bytes": 108553
+          }
+        ]
+      }
+    },
+    "proposalCatalog": {
+      "soup": {},
+      "main": {}
+    },
+    "legacyCatalog": {
+      "soup": {},
+      "main": {}
+    },
+    "dataVersion": 2,
+    "catalogPartitionVersion": 1,
+    "catalogAudit": {
+      "verified": 38,
+      "unverified": 12,
+      "mode": "partitioned",
+      "legacyPending": false,
+      "mealsVerified": 7,
+      "noPublishedMenu": 5,
+      "unchecked": 0
+    },
+    "legacyLearning": {
       "main": {
         "Vepřová pečeně, Fazolové lusky na slanině, Brambory": -1,
         "Srbská čočka, Chléb": 1,
@@ -2701,6 +4138,7 @@
         "hovězí s kapáním ||| Domažlické vepřové ragů, těstoviny": 0,
         "hovězí s kapáním ||| Bratislavské vepřové plecko, Těstoviny": 1
       }
-    }
+    },
+    "learningOriginMigrated": true
   }
 }
