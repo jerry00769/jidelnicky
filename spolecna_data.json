@@ -283,51 +283,49 @@
       }
     },
     "week": {
-      "week": "2026-11-09",
+      "week": "2026-11-16",
       "days": [
         {
           "closed": false,
-          "soup": "Polévka zeleninová s quinoou",
-          "main": "Mexická pánev (vepř.maso, fazole)) se sýrem, Chléb",
-          "main2": "",
+          "soup": "Polévka špenátová s vajíčkem",
+          "main": "Rybí filé obalované, Brambory m.m.",
           "category": "",
+          "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka krupicová s vejcem",
-          "main": "Těstoviny se zeleninou, zapečené",
-          "main2": "",
+          "soup": "Polévka rychlá s vejcem",
+          "main": "Těstovinový salát s cizrnou a sušenými rajčaty",
           "category": "",
+          "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka cibulová",
-          "main": "Hovězí pečeně pražská, Rýže dušená",
-          "main2": "",
+          "soup": "Polévka hovězí s kapustou a rýží",
+          "main": "Těstoviny se sýrovou omáčkou",
           "category": "",
+          "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka květáková s červenou čočkou",
-          "main": "Špagety celozrnné s boloňskou omáčkou",
-          "main2": "",
+          "soup": "Polévka celerová se smaženým hráškem",
+          "main": "Kuře pečené, Bulgur",
           "category": "",
+          "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka hovězí s krupkami",
-          "main": "Vepřový řízek smažený, Brambory",
-          "main2": "",
+          "soup": "Polévka rajčatová s těstovinami",
+          "main": "Masová směs \"flamendr\", Rýže dušená",
           "category": "",
+          "main2": "",
           "category2": ""
         }
-      ],
-      "status": "definitive",
-      "source": "strava-5948"
+      ]
     },
     "history": [
       {
