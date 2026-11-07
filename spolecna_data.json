@@ -302,11 +302,11 @@
           "category2": ""
         },
         {
-          "closed": false,
-          "soup": "Polévka kmínová s vejcem",
-          "main": "Zeleninové rizoto",
+          "closed": true,
+          "soup": "",
+          "main": "",
           "category": "",
-          "main2": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
+          "main2": "",
           "category2": ""
         },
         {
