@@ -287,47 +287,45 @@
       "days": [
         {
           "closed": false,
-          "soup": "Polévka rajčatová s tarhoňou",
-          "main": "Smažené rybí prsty, Brambory m.m.",
-          "main2": "",
+          "soup": "Polévka cibulová se sýrem",
+          "main": "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha",
           "category": "",
+          "main2": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka zeleninová s celozrnnými nudlemi",
-          "main": "Krůtí nudličky s pórkem, Rýže dušená",
-          "main2": "",
+          "soup": "Polévka bramborová",
+          "main": "Těstoviny se sýrovou omáčkou",
           "category": "",
+          "main2": "Losos přírodní, Brambory m.m.",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka zelenin. s fridátovými nudlemi",
-          "main": "Bulgur s kuřecím masem a zeleninou",
-          "main2": "",
+          "soup": "Polévka kmínová s vejcem",
+          "main": "Zeleninové rizoto",
           "category": "",
+          "main2": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka ovarová",
-          "main": "Dukátové buchtičky s krémem, Kakao",
-          "main2": "",
+          "soup": "Polévka zeleninová s hrachovými nudlemi",
+          "main": "Bramborák",
           "category": "",
+          "main2": "Vepřový guláš, Rýže dušená",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka hovězí se sýrovým kapáním",
-          "main": "Bratislavské vepřové plecko, Těstoviny",
-          "main2": "",
+          "soup": "Polévka cibulová",
+          "main": "Špagety celozrnné s boloňskou omáčkou",
           "category": "",
+          "main2": "Dukátové buchtičky s krémem, Mléko",
           "category2": ""
         }
-      ],
-      "status": "definitive",
-      "source": "strava-5948"
+      ]
     },
     "history": [
       {
