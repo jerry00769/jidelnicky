@@ -283,7 +283,7 @@
       }
     },
     "week": {
-      "week": "2026-11-02",
+      "week": "2026-11-23",
       "days": [
         {
           "closed": false,
@@ -3128,7 +3128,55 @@
         "Polévka hovězí s krupkami ||| Vepřový řízek smažený, Brambory": 1
       }
     },
-    "drafts": [],
+    "drafts": [
+      {
+        "week": "2026-11-23",
+        "days": [
+          {
+            "closed": false,
+            "soup": "Polévka cibulová se sýrem",
+            "main": "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha",
+            "category": "",
+            "main2": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka bramborová",
+            "main": "Těstoviny se sýrovou omáčkou",
+            "category": "",
+            "main2": "Losos přírodní, Brambory m.m.",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka kmínová s vejcem",
+            "main": "Zeleninové rizoto",
+            "category": "",
+            "main2": "Omáčka rajčatová, Hovězí maso vařené, Těstoviny",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka zeleninová s hrachovými nudlemi",
+            "main": "Bramborák",
+            "category": "",
+            "main2": "Vepřový guláš, Rýže dušená",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka cibulová",
+            "main": "Špagety celozrnné s boloňskou omáčkou",
+            "category": "",
+            "main2": "Dukátové buchtičky s krémem, Mléko",
+            "category2": ""
+          }
+        ],
+        "status": "draft",
+        "source": "manual"
+      }
+    ],
     "stravaVerifiedWeeks": {
       "2025-09-29": {
         "source": "strava-5948",
