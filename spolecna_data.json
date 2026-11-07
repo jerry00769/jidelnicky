@@ -302,7 +302,7 @@
           "category2": ""
         },
         {
-          "closed": true,
+          "closed": false,
           "soup": "",
           "main": "",
           "category": "",
