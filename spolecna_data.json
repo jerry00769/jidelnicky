@@ -287,42 +287,42 @@
       "days": [
         {
           "closed": false,
-          "soup": "Polévka cibulová se sýrem",
-          "main": "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha",
-          "category": "",
-          "main2": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "Polévka bramborová",
-          "main": "Těstoviny se sýrovou omáčkou",
-          "category": "",
-          "main2": "Losos přírodní, Brambory m.m.",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "",
-          "main": "",
+          "soup": "Polévka gulášová",
+          "main": "Rybí filé smažené, Bramborová kaše - příloha",
           "category": "",
           "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka zeleninová s hrachovými nudlemi",
-          "main": "Bramborák",
+          "soup": "Polévka kuřecí s nudlemi",
+          "main": "Čočka na kyselo, Vejce vařené, Okurka sterilovaná - příloha",
           "category": "",
-          "main2": "Vepřový guláš, Rýže dušená",
+          "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka cibulová",
-          "main": "Špagety celozrnné s boloňskou omáčkou",
+          "soup": "Polévka kmínová s vejcem",
+          "main": "Těstoviny se sýrovou omáčkou",
           "category": "",
-          "main2": "Dukátové buchtičky s krémem, Mléko",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "Polévka zelenin. s ovesnými vločkami",
+          "main": "Debrecínský guláš, Těstoviny",
+          "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "Polévka špenátová s vajíčkem",
+          "main": "Losos přírodní, Brambory m.m.",
+          "category": "",
+          "main2": "",
           "category2": ""
         }
       ]
