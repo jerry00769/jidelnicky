@@ -22,7 +22,7 @@ const style=document.createElement('style');style.textContent=`
 const Data=window.JidelnickyData,$=id=>document.getElementById(id);
 const PREF=window.JIDELNICKY_CONFIG?.preferenceKey||'jidelnicky2:strava-auto-check-enabled';
 let enabled=true;try{enabled=localStorage.getItem(PREF)!=='false'}catch{}
-let sourceWeeks=[],issues=[],lastSummary='',checking=false,controller=null,lastCheck=0,openAfterCheck=false,sourceInfo='';
+let sourceWeeks=[],partialWeeks=[],calendarClosures={},issues=[],lastSummary='',checking=false,controller=null,lastCheck=0,openAfterCheck=false,sourceInfo='';
 const dlg=document.createElement('dialog');dlg.id='stravaSmart';dlg.setAttribute('aria-labelledby','ssTitle');
 dlg.innerHTML='<div class="ss-head"><h2 id="ssTitle">Kontrola Strava.cz</h2><p id="ssInfo"></p><label><input id="ssAuto" type="checkbox"> Automatická kontrola po otevření</label></div><div id="ssBody" class="ss-body"></div><div class="ss-foot"><button id="ssClose" type="button">Zavřít</button></div>';
 document.body.append(dlg);
@@ -45,17 +45,19 @@ function report(message,error=false){
 function showPreview(){
  $('ssInfo').textContent=sourceInfo||'Jídelna 5948 · ZŠ a MŠ Březová Děčín';
  const body=$('ssBody');body.replaceChildren();
- for(const w of [...sourceWeeks].sort((a,b)=>b.week.localeCompare(a.week)).slice(0,2)){
+ const display=new Map(partialWeeks.map(w=>[w.week,w]));for(const w of sourceWeeks)display.set(w.week,w);
+ for(const w of [...display.values()].sort((a,b)=>b.week.localeCompare(a.week)).slice(0,2)){
   const sec=document.createElement('section');sec.className='ss-week';
   const h=document.createElement('h3');h.textContent='Týden od '+new Date(w.week+'T12:00:00').toLocaleDateString('cs-CZ');sec.append(h);
   w.days.forEach((d,i)=>{
    const box=document.createElement('div');box.className='ss-day';const title=document.createElement('strong');title.textContent=['Pondělí','Úterý','Středa','Čtvrtek','Pátek'][i];box.append(title);
+   if(!d){const missing=document.createElement('p'),date=new Date(Date.parse(w.week+'T12:00:00Z')+i*86400000).toISOString().slice(0,10),closure=calendarClosures[date];missing.textContent=closure?.closed&&closure.source==='user'?'Nevaří se – '+closure.reason+' (potvrzeno Vámi).':'Menu pro tento den není zveřejněné. Uzavření jídelny tím není potvrzené.';box.append(missing);sec.append(box);return}
    for(const [f,label] of [['soup','Polévka'],['main','Oběd 1'],['main2','Oběd 2']])if(d[f]){const line=document.createElement('p');line.textContent=(Data.organization(d[f])||(f==='soup'&&/^Polévka\s/i.test(d[f]))?'':label+': ')+d[f];box.append(line)}
    if(d.closed&&!Data.organization(d.soup)){const line=document.createElement('p');line.textContent='Nevaří se';box.append(line)}
    sec.append(box);
   });body.append(sec);
  }
- if(!sourceWeeks.length){const p=document.createElement('p');p.textContent='Není dostupný žádný úplný zdrojový týden.';body.append(p)}
+ if(!sourceWeeks.length&&!partialWeeks.length){const p=document.createElement('p');p.textContent='Není dostupný žádný úplný zdrojový týden.';body.append(p)}
  const summary=document.createElement('p');summary.id='ssSummary';summary.className='ss-muted';summary.textContent=lastSummary;body.append(summary);
  if(issues.length){const p=document.createElement('p');p.className='ss-error';p.textContent='Nepřevzaté údaje: '+issues.join('; ');body.append(p)}
  if(!dlg.open)dlg.showModal();
@@ -80,13 +82,16 @@ async function check(manual=false){
   const currentProofs=window.JidelnickyApp.getState();
   for(const w of currentProofs.history)if(Data.isVerified(currentProofs,w)&&Date.parse(currentProofs.stravaVerifiedWeeks[w.week].retrievedAt||'')>Date.parse(archive?.retrievedAt||''))combined.set(w.week,w);
   for(const w of live.weeks)combined.set(w.week,w);
-  sourceWeeks=[...combined.values()];issues=live.issues;
-  sourceInfo='Jídelna 5948 · automaticky aktualizovaný archiv Strava.cz · načten '+new Date(feed.retrievedAt||Date.now()).toLocaleString('cs-CZ');
+  sourceWeeks=[...combined.values()];partialWeeks=Data.parsePartialWeeks(feed).filter(w=>!sourceWeeks.some(full=>full.week===w.week));issues=[...live.issues,...(feed.sourceErrors||[]).map(e=>typeof e==='string'?e:(e.month||'veřejný zdroj')+': '+(e.error||e.current_public_menu||'nedostupný'))];
+  const retrievedAt=feed.retrievedAt||feed.fetched_at_utc;calendarClosures=feed.calendarClosures||{};
+  sourceInfo='Jídelna 5948 · automaticky aktualizovaný archiv Strava.cz · načten '+new Date(retrievedAt||Date.now()).toLocaleString('cs-CZ');
   let result;
   if(enabled&&sourceWeeks.length){
-   result=Data.planImport(window.JidelnickyApp.getState(),sourceWeeks,{retrievedAt:feed.retrievedAt,sourceUpdatedAt:feed.sourceUpdatedAt});
+   result=Data.planImport(window.JidelnickyApp.getState(),sourceWeeks,{retrievedAt,sourceUpdatedAt:feed.sourceUpdatedAt});
    if(result.needsWrite){window.JidelnickyApp.applyState(result.state);window.GitHubSync?.changed()}
   }
+  let partial;
+  if(enabled&&partialWeeks.length){partial=Data.planPartialImport(window.JidelnickyApp.getState(),partialWeeks,{retrievedAt,calendarClosures});if(partial.needsWrite){window.JidelnickyApp.applyState(partial.state);window.GitHubSync?.changed()}}
   const current=window.JidelnickyApp.getState(),available=new Set(sourceWeeks.map(w=>w.week));
   const remaining=sourceWeeks.filter(w=>!Data.sameWeek(current.history.find(h=>h.week===w.week),w)).length;
   const unverified=current.history.filter(w=>!Data.isVerified(current,w)).length;
@@ -95,6 +100,7 @@ async function check(manual=false){
   else if(issues.length||remaining)lastSummary='Některé týdny nebylo možné bezpečně převzít. Dosavadní úplné týdny a návrhy zůstávají zachované.';
   else if(!sourceWeeks.length)lastSummary='Zdroj nyní neobsahuje úplné týdny. Uložené jídelníčky zůstávají v Historii.';
   else lastSummary='Ověřeno '+sourceWeeks.length+' dostupných týdnů'+(changed?', aktualizováno '+changed:'')+'. '+(current.catalogAudit?.mealsVerified||current.catalogAudit?.noPublishedMenu?'Dalších '+current.catalogAudit.mealsVerified+' týdnů má ověřena všechna jídla a dny bez menu; '+current.catalogAudit.noPublishedMenu+' týdnů je ve zdroji zcela bez menu. Absence menu nepotvrzuje uzavření jídelny.':unverified?'Dalších '+unverified+' historických týdnů není úplně ověřeno.':'Ostatní dostupné týdny jsou v souladu se Strava.cz.')+' Starší jídelníčky najdete v Historii.';
+  if(partialWeeks.length){const dates=[...new Set(partialWeeks.flatMap(w=>w.days.map((d,i)=>d||calendarClosures[new Date(Date.parse(w.week+'T12:00:00Z')+i*86400000).toISOString().slice(0,10)]?.closed?null:new Date(Date.parse(w.week+'T12:00:00Z')+i*86400000).toLocaleDateString('cs-CZ')).filter(Boolean)))];lastSummary+=(enabled?' Z neúplných týdnů jsou převzaty zveřejněné dny.':' Zobrazeny jsou také jednotlivé zveřejněné dny.')+(dates.length?' Bez menu ve zdroji: '+dates.join(', ')+'. Dosavadní návrhy těchto dnů zůstaly zachované.':' Potvrzené dny volna jsou označené jako Nevaří se.')}
   lastCheck=Date.now();report(lastSummary,!!issues.length||!!remaining||!sourceWeeks.length);
  }catch(e){
   if(e.name==='AbortError'&&!enabled)return;

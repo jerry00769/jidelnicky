@@ -32,7 +32,9 @@ def valid_day(day):
         return not actual
     return bool(names[0] and names[1])
 
-def parse_menu(raw):
+def parse_menu_details(raw):
+    if isinstance(raw, str):
+        raw = json.loads(raw)
     dates = defaultdict(lambda: {'values': dict.fromkeys(FIELDS, ''), 'expected': set(), 'conflict': False, 'closed': False})
     for group in raw if isinstance(raw, list) else [raw]:
         if not isinstance(group, dict):
@@ -87,16 +89,24 @@ def parse_menu(raw):
             weeks[monday][date.weekday()] = day
         else:
             weeks[monday]  # Explicit incomplete week, never infer a closure.
-    complete, skipped = [], []
+    complete, skipped, partial = [], [], []
     for monday in sorted(set(weeks) | set(reasons)):
         days = weeks[monday]
         if all(days) and not reasons[monday]:
             complete.append({'week': monday, 'days': days})
         else:
             skipped.append({'week': monday, 'complete_days': sum(d is not None for d in days), 'reasons': sorted(reasons[monday]) or ['missing_days_or_meals']})
+            if any(days):
+                start = datetime.fromisoformat(monday)
+                partial.append({'week': monday, 'days': days,
+                                'missingDates': [(start + timedelta(days=i)).date().isoformat() for i, day in enumerate(days) if day is None]})
+    return complete, skipped, partial
+
+def parse_menu(raw):
+    complete, skipped, _ = parse_menu_details(raw)
     return complete, skipped
 
-def merge_archive(old, current, skipped):
+def merge_archive(old, current, skipped, partial=None):
     if old and (old.get('cafeteria') != '5948' or not isinstance(old.get('weeks'), list)):
         raise ValueError('Původní archiv nemá platný původ 5948; nebyl změněn.')
     archived = {}
@@ -109,11 +119,20 @@ def merge_archive(old, current, skipped):
         archived[week['week']] = week
     for week in current:
         archived[week['week']] = week  # A complete published correction wins.
-    if not archived:
+    partial_by_week = {w['week']: w for w in (old or {}).get('partialWeeks', [])}
+    for week in partial or []:
+        prior = partial_by_week.get(week['week'])
+        days = [day or (prior['days'][i] if prior else None) for i, day in enumerate(week['days'])]
+        start = datetime.fromisoformat(week['week'])
+        partial_by_week[week['week']] = {**week, 'days': days,
+            'missingDates': [(start + timedelta(days=i)).date().isoformat() for i, day in enumerate(days) if day is None]}
+    if not archived and not partial_by_week:
         raise ValueError('Zdroj neobsahuje žádný úplný týden. Původní soubor zůstává.')
     return {'cafeteria': '5948', 'status': 'received', 'fetched_at_utc': datetime.now(timezone.utc).isoformat(),
             'weeks': [archived[k] for k in sorted(archived)], 'skipped_incomplete_weeks': skipped,
-            'note': 'Archiv úplných týdnů Strava.cz 5948. Úplné opravy aktualizují archiv; neúplné týdny jej nepřepisují.'}
+            'partialWeeks': [partial_by_week[k] for k in sorted(partial_by_week) if k not in archived],
+            'calendarClosures': (old or {}).get('calendarClosures', {}),
+            'note': 'Úplné týdny a doložené jednotlivé dny Strava.cz 5948. Chybějící menu není potvrzením uzavření.'}
 
 def main():
     parser = argparse.ArgumentParser()
@@ -148,21 +167,35 @@ def main():
         except Exception as exc:
             errors.append({'month': month, 'error': str(exc)})
     groups = [{'table0': rows}]
+    public_ok = False
+    public_document = None
     try:
         # The current public menu adds today and published future days, which
         # the historical endpoint may not yet contain.
         from strava_cz_api import Public
         raw = Public.getJidelnicek('5948')
+        if isinstance(raw, str):
+            raw = json.loads(raw)
         groups.extend(raw if isinstance(raw, list) else [raw])
+        public_ok = True
+        public_document = {'url': 'https://app.strava.cz/api/jidelnicky', 'cafeteria': '5948',
+                           'retrievedAt': now.isoformat(), 'sha256': hashlib.sha256(json.dumps(raw, ensure_ascii=False, sort_keys=True).encode()).hexdigest()}
     except Exception as exc:
         errors.append({'current_public_menu': str(exc)})
-    if not documents:
+    if not documents and not public_ok:
         raise ValueError('Nepodařilo se získat žádný měsíční zdroj; archiv nebyl změněn.')
-    current, skipped = parse_menu(groups)
-    if not current:
+    current, skipped, partial = parse_menu_details(groups)
+    if not args.from_month:
+        first_week = (now.date() - timedelta(days=now.weekday())).isoformat()
+        partial = [w for w in partial if w['week'] >= first_week]
+    if not current and not partial:
         raise ValueError('Nový zdroj neobsahuje úplný týden; archiv nebyl změněn.')
     old = json.loads(OUT.read_text(encoding='utf-8')) if OUT.exists() else None
-    report = merge_archive(old, current, skipped)
+    for week in partial:
+        week['retrievedAt'] = now.isoformat()
+        week['documents'] = [public_document] if public_document else [d for d in documents if d['month'] == week['week'][:7].replace('-', '')]
+    report = merge_archive(old, current, skipped, partial)
+    report['retrievedAt'] = report['fetched_at_utc']
     old_documents = {d['month']: d for d in (old or {}).get('sourceDocuments', []) if 'month' in d}
     old_documents.update({d['month']: d for d in documents})
     report['sourceDocuments'] = list(old_documents.values())

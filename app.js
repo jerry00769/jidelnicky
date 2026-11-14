@@ -227,8 +227,9 @@ function render(){
         const d=w.days[i],section=document.createElement('section');section.className='day';
         const title=document.createElement('div');title.className='daytitle';title.textContent=`${weekdays[i]} ${format(dateAt(w.week,i))}`;
         section.append(title);
+        if(!Data.isVerified(state,w)&&state.stravaMealWeeks?.[w.week]?.pendingDates?.includes(iso(dateAt(w.week,i)))){const pending=document.createElement('p');pending.className='muted';pending.textContent='Strava.cz: menu nezveřejněno; původní návrh zachován.';section.append(pending)}
         if(d.closed){
-            const note=document.createElement('div');note.className='closed';note.textContent='(nevaří se)';section.append(note)
+            const note=document.createElement('div');note.className='closed';note.textContent=state.calendarClosures?.[iso(dateAt(w.week,i))]?.closed?'Nevaří se – '+state.calendarClosures[iso(dateAt(w.week,i))].reason:'(nevaří se)';section.append(note)
         }else{
             const meal=(label,key)=>{
                 const row=document.createElement('div');row.className='meal';
@@ -252,7 +253,7 @@ function render(){
 let selectedHistory=null;
 const savedWeeks=()=>[...state.history,...(state.drafts||[]).filter(d=>!state.history.some(h=>h.week===d.week))];
 const savedWeek=key=>state.history.find(h=>h.week===key)||state.drafts?.find(h=>h.week===key);
-function historySourceLabel(h){return h.status==='draft'?'Návrh':({'definitive':'Strava.cz','meals-verified':'Jídla Strava.cz · dny bez menu','no-published-menu':'Bez menu ve zdroji','unverified':'Neověřeno'})[Data.auditStatus(state,h)]}
+function historySourceLabel(h){if(!Data.isVerified(state,h)&&state.stravaMealWeeks?.[h.week]?.pendingDates?.length)return 'Část jídel ze Strava.cz';return h.status==='draft'?'Návrh':({'definitive':'Strava.cz','meals-verified':'Jídla Strava.cz · dny bez menu','no-published-menu':'Bez menu ve zdroji','unverified':'Neověřeno'})[Data.auditStatus(state,h)]}
 const protectedHistory=h=>!!h&&h.days.some((_,i)=>Data.isDayVerified(state,h,i));
 function historyRows(){
     const target=$('historyList');target.replaceChildren();
@@ -273,14 +274,18 @@ function historyDetail(){
  if(protectedHistory(h))$('historyDelete').disabled=true;
  if(h)$('historyTitle').textContent+=' · '+(historySourceLabel(h));
  if(!h)return;
- const sourceNote=document.createElement('p');sourceNote.className='muted';sourceNote.textContent=Data.isVerified(state,h)?'Ověřený týden Strava.cz 5948. Pro vlastní plán použij Kopírovat do jiného týdne.':h.status==='draft'?'Pracovní návrh čeká na zveřejnění jídelnou.':Data.auditStatus(state,h)==='meals-verified'?'Všechna uvedená jídla jsou ověřena podle Strava.cz 5948 a chráněna proti úpravě. Pro ostatní dny zdroj neobsahuje menu; původní stav zavřeno je zachován, ale není tím nezávisle potvrzen.':Data.auditStatus(state,h)==='no-published-menu'?'Pro všech pět dnů měsíční zdroj neobsahuje menu. Původní stav zavřeno je zachován; absence menu sama nepotvrzuje uzavření jídelny.':'Původ tohoto staršího týdne zatím není doložen zdrojem Strava.cz; zůstává neověřený.';el.append(sourceNote);
+ const sourceNote=document.createElement('p');sourceNote.className='muted';sourceNote.textContent=h.days.some((d,i)=>d.closed&&state.calendarClosures?.[iso(dateAt(h.week,i))]?.closed)?'Zveřejněná jídla jsou převzatá ze Strava.cz. Označené dny volna jste potvrdili Vy.':!Data.isVerified(state,h)&&state.stravaMealWeeks?.[h.week]?.pendingDates?.length?'Zveřejněné dny byly převzaty ze Strava.cz a jsou chráněné. Pro označené zbývající dny zdroj nemá menu; dosavadní návrh zůstává zachován.':Data.isVerified(state,h)?'Ověřený týden Strava.cz 5948. Pro vlastní plán použij Kopírovat do jiného týdne.':h.status==='draft'?'Pracovní návrh čeká na zveřejnění jídelnou.':Data.auditStatus(state,h)==='meals-verified'?'Všechna uvedená jídla jsou ověřena podle Strava.cz 5948 a chráněna proti úpravě. Pro ostatní dny zdroj neobsahuje menu; původní stav zavřeno je zachován, ale není tím nezávisle potvrzen.':Data.auditStatus(state,h)==='no-published-menu'?'Pro všech pět dnů měsíční zdroj neobsahuje menu. Původní stav zavřeno je zachován; absence menu sama nepotvrzuje uzavření jídelny.':'Původ tohoto staršího týdne zatím není doložen zdrojem Strava.cz; zůstává neověřený.';el.append(sourceNote);
  for(let i=0;i<5;i++){
   const d=h.days[i]||{},day=document.createElement('section');day.className='history-day';
   const header=document.createElement('div');header.className='history-day-head';
   const name=document.createElement('strong');name.textContent=`${weekdays[i]} ${format(dateAt(h.week,i))}`;
   const closed=document.createElement('button');closed.type='button';closed.className='history-closed-toggle alt';closed.textContent=d.closed?(dateAt(h.week,i)<parseDate(iso(new Date()))?'Nevařilo se':'Nevaří se'):(dateAt(h.week,i)<parseDate(iso(new Date()))?'Vařilo se':'Vaří se');
   const noMenu=state.stravaMealWeeks?.[h.week]?.noMenuDates?.includes(iso(dateAt(h.week,i)));
-  if(d.closed&&noMenu){closed.textContent='Bez menu ve zdroji';closed.title='Původní stav: zavřeno. Uzavření není nezávisle potvrzeno.'}
+  const pending=!Data.isVerified(state,h)&&state.stravaMealWeeks?.[h.week]?.pendingDates?.includes(iso(dateAt(h.week,i)));
+  if(pending){const note=document.createElement('p');note.className='muted';note.textContent='Strava.cz: menu nezveřejněno. Zobrazený stav je vlastní návrh.';day.append(note)}
+  const closure=d.closed&&state.calendarClosures?.[iso(dateAt(h.week,i))];
+  if(closure?.closed){closed.textContent='Nevaří se – '+closure.reason;closed.title='Den volna potvrzený Vámi.'}
+  if(d.closed&&noMenu&&!closure){closed.textContent='Bez menu ve zdroji';closed.title='Původní stav: zavřeno. Uzavření není nezávisle potvrzeno.'}
   closed.disabled=Data.isDayVerified(state,h,i);
   closed.onclick=()=>{if(Data.isDayVerified(state,h,i))return;snapshot();d.closed=!d.closed;render();historyDetail();notice('Stav vaření uložen do historie.');};
   header.append(name,closed);day.append(header);
@@ -534,30 +539,11 @@ async function pickerCatalogEdit(operation){
   }
   if(name.length<2)throw Error('Zadej název jídla.');
   if(operation==='rename'){
-   // Přejmenování katalogové položky je transakční: katalog, všechny přesné
-   // výskyty v historii a pracovní týden se mění v jednom snapshotu.
    const chosen=pickerSelected;
-   const items=chosen&&mealStore(kind,chosen.name,chosen.cat);
-   if(!chosen||!items?.includes(chosen.name))throw Error('Přejmenování v databázi vyžaduje označené existující jídlo. Pokud chybí, nejprve ho přidej.');
-   if(items.some(x=>x!==chosen.name&&x===name))throw Error('Nový název už existuje.');
-   const original=chosen.name,category=chosen.cat;
-   if(original===name&&old===name)return notice('Název se nezměnil.');
-   const targetWeek=savedWeek(picking.historyWeek);
-   if(!targetWeek)throw Error('Historický týden již neexistuje.');
-   snapshot();
-   items[items.indexOf(original)]=name;
-   items.sort((a,b)=>a.localeCompare(b,'cs'));
-   const changeDay=(d)=>{
-    if(kind==='soup'){if(d.soup===original)d.soup=name;}
-    else {
-     if(d.main===original&&d.category===category)d.main=name;
-     if(d.main2===original&&d.category2===category)d.main2=name;
-    }
-   };
-   for(const week of [...state.history.filter(w=>!Data.isVerified(state,w)),...state.drafts])for(const day of week.days)changeDay(day);
-   for(const day of state.week.days)changeDay(day);
-   // U kliknutého historického záznamu oprav také odlišný starý název.
-   const target=targetWeek.days[picking.day];target[field]=name;
+   if(!chosen)throw Error('Nejdříve označ existující jídlo v katalogu.');
+   if(chosen.name===name&&old===name)return notice('Název se nezměnil.');
+   snapshot();state=Data.renameRecipe(state,kind,chosen.name,name,chosen.cat);
+   const target=savedWeek(picking.historyWeek).days[picking.day];target[field]=name;
    if(kind==='main')target[categoryField]='';
    render();historyDetail();notice('Přejmenováno v katalogu i historii. Změny čekají na synchronizaci GitHubu.');
    $('picker').close();return;
@@ -594,16 +580,7 @@ async function pickerCatalogEdit(operation){
    if(name.length<2)throw Error('Zadej nový název.');
    if(items.some(x=>x!==oldName&&x===name))throw Error('Jídlo už existuje.');
    if(name===oldName)return notice('Název se nezměnil.');
-   snapshot();items[items.indexOf(oldName)]=name;
-   for(const week of [...state.history.filter(w=>!Data.isVerified(state,w)),...state.drafts])for(const day of week.days){
-    if(kind==='soup'&&day.soup===oldName)day.soup=name;
-    if(kind==='main'){
-     if(day.main===oldName&&day.category===oldCat)day.main=name;
-     if(day.main2===oldName&&day.category2===oldCat)day.main2=name;
-    }
-   }
-
-   for(const day of state.week.days){if(kind==='soup'&&day.soup===oldName)day.soup=name;if(kind==='main'){if(day.main===oldName&&day.category===oldCat)day.main=name;if(day.main2===oldName&&day.category2===oldCat)day.main2=name}}
+   snapshot();state=Data.renameRecipe(state,kind,oldName,name,oldCat);
    pickerSelected={name,cat:oldCat};
   }else{
    if(!confirm(`Opravdu smazat jídlo „${oldName}“ z databáze?`))return;

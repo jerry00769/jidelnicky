@@ -158,6 +158,81 @@ function planImport(input,incoming,meta={}){
  }
  return {state:s,changed,marked,removedDrafts,catalog,needsWrite:JSON.stringify(s)!==JSON.stringify(input)};
 }
+function parsePartialWeeks(feed){
+ if(feed?.cafeteria!=='5948'||feed.status!=='received'||!Array.isArray(feed.partialWeeks||[]))throw Error('Neplatný zdroj jednotlivých dnů 5948');
+ return (feed.partialWeeks||[]).map(raw=>{
+  weekKey(raw.week);if(raw.days?.length!==5)throw Error('Neplatné dny '+raw.week);
+  const days=raw.days.map((d,i)=>d==null?null:normalizedWeek({week:raw.week,days:Array.from({length:5},(_,n)=>n===i?d:{closed:true})}).days[i]);
+  if(!days.some(Boolean))throw Error('Týden neobsahuje doložený den '+raw.week);
+  return {...raw,days};
+ });
+}
+function planPartialImport(input,incoming,meta={}){
+ const s=normalizeState(input),changed=[],issues=[],retired={soup:new Set(),main:new Set()};
+ const retire=d=>{retired.soup.add(d?.soup);retired.main.add(d?.main);retired.main.add(d?.main2)};
+ for(const raw of parsePartialWeeks({cafeteria:'5948',status:'received',partialWeeks:incoming})){
+  if(meta.notBefore&&raw.week<meta.notBefore)continue;
+  let w=s.history.find(h=>h.week===raw.week);
+  if(isVerified(s,w))continue;
+  const retrievedAt=raw.retrievedAt||meta.retrievedAt;
+  if(!retrievedAt||!Number.isFinite(Date.parse(retrievedAt)))throw Error('Chybí čas ověření jednotlivých dnů');
+  const previous=s.stravaMealWeeks[raw.week];
+  if(previous&&Date.parse(previous.retrievedAt)>Date.parse(retrievedAt))continue;
+  if(!w){
+   const proposal=s.drafts.find(d=>d.week===raw.week)||(s.week.week===raw.week?s.week:null);
+   w=proposal?copy(proposal):{week:raw.week,days:Array.from({length:5},()=>({closed:false,soup:'',main:'',main2:'',category:'',category2:''}))};
+   w.status='unverified';w.source='legacy-unverified';s.history.push(w);
+  }
+  const proof=copy(previous||{source:'strava-5948',days:{},noMenuDates:[],documents:[]});
+  proof.source='strava-5948';proof.retrievedAt=retrievedAt;
+  proof.pendingDates=[];
+  if(raw.documents?.length)proof.documents=copy(raw.documents);
+  for(let i=0;i<5;i++){
+   const day=raw.days[i];
+   if(!day){
+    const date=dateAt(raw.week,i),closure=meta.calendarClosures?.[date];
+    if(isDayVerified(s,w,i))continue;
+    if(closure?.source==='user'&&closure.closed===true){
+     (s.calendarClosures??={})[date]=copy(closure);
+     for(const target of [w,...s.drafts.filter(d=>d.week===raw.week),...(s.week.week===raw.week?[s.week]:[])]){
+      retire(target.days[i]);target.days[i]={closed:true,soup:'',main:'',main2:'',category:'',category2:''};
+     }
+     if(!proof.noMenuDates.includes(date))proof.noMenuDates.push(date);
+    }else proof.pendingDates.push(date);
+    continue;
+   }
+   for(const target of [w,...s.drafts.filter(d=>d.week===raw.week),...(s.week.week===raw.week?[s.week]:[])]){
+    if(daySignature(target.days[i])!==daySignature(day))retire(target.days[i]);
+    target.days[i]={...copy(day),category:target.days[i]?.main===day.main?text(target.days[i].category):'',category2:target.days[i]?.main2===day.main2?text(target.days[i].category2):''};
+   }
+   proof.days[i]={signature:daySignature(w.days[i])};
+   proof.noMenuDates=proof.noMenuDates.filter(d=>d!==dateAt(raw.week,i));
+   changed.push(dateAt(raw.week,i));
+  }
+  s.stravaMealWeeks[raw.week]=proof;
+ }
+ s.history.sort((a,b)=>a.week.localeCompare(b.week));reconcile(s);
+ for(const kind of ['soup','main']){
+  const used=new Set([...s.history,...s.drafts,s.week].flatMap(w=>w.days.filter(d=>!d.closed).flatMap(d=>kind==='soup'?[d.soup]:[d.main,d.main2])));
+  for(const [cat,names] of Object.entries(s.proposalCatalog[kind]))s.proposalCatalog[kind][cat]=names.filter(n=>!retired[kind].has(n)||used.has(n));
+ }
+ return {state:s,changed,issues,needsWrite:JSON.stringify(s)!==JSON.stringify(input)};
+}
+function renameRecipe(input,kind,original,replacement,category){
+ const s=normalizeState(input),name=text(replacement),fs=kind==='soup'?['soup']:['main','main2'];
+ if(!['soup','main'].includes(kind)||name.length<2||/[\r\n]/.test(name)||organization(name))throw Error('Zadej platný název jídla.');
+ if(s.history.some(w=>w.days.some((d,i)=>isDayVerified(s,w,i)&&fs.some(f=>d[f]===original))))throw Error('Název doložený Strava.cz se zachovává přesně podle zdroje.');
+ const pools=['catalog','legacyCatalog','proposalCatalog'];
+ if(!pools.some(p=>Object.values(s[p][kind]).some(a=>a.includes(original))))throw Error('Vybrané jídlo již není v katalogu.');
+ if(name!==original&&pools.some(p=>Object.values(s[p][kind]).some(a=>a.includes(name))))throw Error('Nový název již existuje.');
+ for(const p of pools)for(const [cat,names] of Object.entries(s[p][kind]))s[p][kind][cat]=names.filter(n=>n!==original);
+ (s.proposalCatalog[kind][category||(kind==='soup'?'__POLEVKY__':'__HLAVNI__')]??=[]).push(name);
+ for(const w of [s.week,...s.drafts,...s.history])for(const [i,d] of w.days.entries()){
+  if(s.history.includes(w)&&isDayVerified(s,w,i))continue;
+  for(const f of fs)if(d[f]===original)d[f]=name;
+ }
+ reconcile(s);return s;
+}
 function mergeStates(baseInput,localInput,serverInput){
  try{
   const base=normalizeState(baseInput),local=normalizeState(localInput),server=normalizeState(serverInput);
@@ -213,7 +288,7 @@ function mergeStates(baseInput,localInput,serverInput){
   out.catalogPartitionVersion=1;reconcile(out);return normalizeState(out);
  }catch{return null}
 }
-const api={organization,weekKey,normalizedWeek,signature,sameWeek,isVerified,isDayVerified,auditStatus,planHistoricalAudit,normalizeState,reconcile,parseFeed,planImport,mergeStates};
+const api={organization,weekKey,normalizedWeek,signature,sameWeek,isVerified,isDayVerified,auditStatus,planHistoricalAudit,normalizeState,reconcile,parseFeed,planImport,parsePartialWeeks,planPartialImport,renameRecipe,mergeStates};
 root.JidelnickyData=api;
 if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
