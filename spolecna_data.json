@@ -278,7 +278,11 @@
           "Špagety celozrnné s boloňskou omáčkou",
           "Vepřový řízek smažený, Brambory",
           "Holandský řízek, Bramborová kaše - příloha, Okurka sterilovaná - příloha",
-          "Těstoviny  po Lotrinsku"
+          "Těstoviny  po Lotrinsku",
+          "Rybí filé zapečené s rajčaty, bazalkou, Brambory",
+          "Tarhoňové zeleninové rizoto, Salát z červené řepy - příloha",
+          "Kuřecí soté (smetana ,pórek, žampióny), Rýže dušená",
+          "Hovězí tokáň, Těstoviny"
         ]
       }
     },
@@ -2627,6 +2631,53 @@
         ],
         "status": "definitive",
         "source": "strava-5948"
+      },
+      {
+        "week": "2026-11-16",
+        "days": [
+          {
+            "closed": false,
+            "soup": "Polévka hráškový krém",
+            "main": "Rybí filé zapečené s rajčaty, bazalkou, Brambory",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": true,
+            "soup": "",
+            "main": "",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka rychlá s vejcem",
+            "main": "Tarhoňové zeleninové rizoto, Salát z červené řepy - příloha",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka česneková s bramborem a vejcem",
+            "main": "Kuřecí soté (smetana ,pórek, žampióny), Rýže dušená",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka brokolicová",
+            "main": "Hovězí tokáň, Těstoviny",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          }
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       }
     ],
     "rules": {
@@ -2810,7 +2861,11 @@
         "Dukátové buchtičky s krémem, Kakao": 1,
         "Těstoviny se zeleninou, zapečené": 1,
         "Špagety celozrnné s boloňskou omáčkou": 1,
-        "Vepřový řízek smažený, Brambory": 1
+        "Vepřový řízek smažený, Brambory": 1,
+        "Rybí filé zapečené s rajčaty, bazalkou, Brambory": 1,
+        "Tarhoňové zeleninové rizoto, Salát z červené řepy - příloha": 1,
+        "Kuřecí soté (smetana ,pórek, žampióny), Rýže dušená": 1,
+        "Hovězí tokáň, Těstoviny": 1
       },
       "soup": {
         "Polévka kuřecí s nudlemi": 5,
@@ -2826,21 +2881,21 @@
         "Polévka špenátová s vajíčkem": 5,
         "Polévka zelenin. s bulgurem": 4,
         "Polévka celerová se smaženým hráškem": 5,
-        "Polévka rychlá s vejcem": 2,
+        "Polévka rychlá s vejcem": 3,
         "Polévka selská ii.": 2,
         "Polévka rajčatová s těstovinou": 4,
         "Polévka zeleninová s celozrnnými knedlíčky": 3,
         "Polévka  zeleninová s ovesnými vločkami": 2,
         "Polévka zeleninová s tarhoňou": 4,
         "Polévka čočková": 4,
-        "Polévka brokolicová": 5,
+        "Polévka brokolicová": 6,
         "Polévka zeleninová s kuskusem": 4,
         "Polévka bramborová": 5,
         "Polévka hrachová se smaženým hráškem": 1,
         "Polévka hovězí s vaječnou jíškou": 5,
         "Polévka zeleninová zahuštěná červenou čočkou": 4,
         "Polévka hovězí s kapáním": 2,
-        "Polévka česneková s bramborem a vejcem": 1,
+        "Polévka česneková s bramborem a vejcem": 2,
         "Polévka květáková": 5,
         "Polévka fazolová se zeleninou": 3,
         "Polévka hovězí s játrovými noky": 3,
@@ -2872,7 +2927,7 @@
         "Polévka drůbková s nudlemi": 1,
         "Polévka hovězí s kuskusem": 1,
         "Polévka dýňový krém": 2,
-        "Polévka hráškový krém": 2,
+        "Polévka hráškový krém": 3,
         "Polévka hovězí s těstovinou": 1,
         "Polévka pórková": 1,
         "Polévka zimní zeleninová s ovesnými vločkami": 1,
@@ -3125,7 +3180,11 @@
         "Polévka krupicová s vejcem ||| Těstoviny se zeleninou, zapečené": 1,
         "Polévka cibulová ||| Hovězí pečeně pražská, Rýže dušená": 1,
         "Polévka květáková s červenou čočkou ||| Špagety celozrnné s boloňskou omáčkou": 1,
-        "Polévka hovězí s krupkami ||| Vepřový řízek smažený, Brambory": 1
+        "Polévka hovězí s krupkami ||| Vepřový řízek smažený, Brambory": 1,
+        "Polévka hráškový krém ||| Rybí filé zapečené s rajčaty, bazalkou, Brambory": 1,
+        "Polévka rychlá s vejcem ||| Tarhoňové zeleninové rizoto, Salát z červené řepy - příloha": 1,
+        "Polévka česneková s bramborem a vejcem ||| Kuřecí soté (smetana ,pórek, žampióny), Rýže dušená": 1,
+        "Polévka brokolicová ||| Hovězí tokáň, Těstoviny": 1
       }
     },
     "drafts": [],
@@ -4023,6 +4082,36 @@
             "bytes": 108553
           }
         ]
+      },
+      "2026-11-16": {
+        "source": "strava-5948",
+        "days": {
+          "0": {
+            "signature": "[false,\"Polévka hráškový krém\",\"Rybí filé zapečené s rajčaty, bazalkou, Brambory\",\"\"]"
+          },
+          "2": {
+            "signature": "[false,\"Polévka rychlá s vejcem\",\"Tarhoňové zeleninové rizoto, Salát z červené řepy - příloha\",\"\"]"
+          },
+          "3": {
+            "signature": "[false,\"Polévka česneková s bramborem a vejcem\",\"Kuřecí soté (smetana ,pórek, žampióny), Rýže dušená\",\"\"]"
+          },
+          "4": {
+            "signature": "[false,\"Polévka brokolicová\",\"Hovězí tokáň, Těstoviny\",\"\"]"
+          }
+        },
+        "noMenuDates": [
+          "2026-11-17"
+        ],
+        "documents": [
+          {
+            "url": "https://app.strava.cz/api/jidelnicky",
+            "cafeteria": "5948",
+            "retrievedAt": "2026-11-14T16:41:14.268386+00:00",
+            "sha256": "78b2321acf08a6ce8604c7b6076ea2525da3e2ba3f130e630200239a7fe6e90a"
+          }
+        ],
+        "retrievedAt": "2026-11-14T16:41:14.268386+00:00",
+        "pendingDates": []
       }
     },
     "proposalCatalog": {
@@ -4039,10 +4128,10 @@
     "catalogPartitionVersion": 1,
     "catalogAudit": {
       "verified": 38,
-      "unverified": 12,
+      "unverified": 13,
       "mode": "partitioned",
       "legacyPending": false,
-      "mealsVerified": 7,
+      "mealsVerified": 8,
       "noPublishedMenu": 5,
       "unchecked": 0
     },
@@ -4139,6 +4228,14 @@
         "hovězí s kapáním ||| Bratislavské vepřové plecko, Těstoviny": 1
       }
     },
-    "learningOriginMigrated": true
+    "learningOriginMigrated": true,
+    "calendarClosures": {
+      "2026-11-17": {
+        "closed": true,
+        "reason": "dovolená",
+        "source": "user",
+        "confirmedAt": "2026-11-14"
+      }
+    }
   }
 }
