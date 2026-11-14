@@ -42,6 +42,7 @@ function report(message,error=false){
  refreshToggle();toggle.title=message||'Otevřít kontrolu Strava.cz';
  window.dispatchEvent(new CustomEvent('jidelnicky:strava-status',{detail:{text:message,kind:error?'error':'ok'}}));
 }
+function closedDayLabel(week,i){const date=new Date(week+'T12:00:00');date.setDate(date.getDate()+i);date.setHours(0,0,0,0);const today=new Date();today.setHours(0,0,0,0);return date<today?'Nevařilo se':'Nevaří se'}
 function showPreview(){
  $('ssInfo').textContent=sourceInfo||'Jídelna 5948 · ZŠ a MŠ Březová Děčín';
  const body=$('ssBody');body.replaceChildren();
@@ -51,9 +52,9 @@ function showPreview(){
   const h=document.createElement('h3');h.textContent='Týden od '+new Date(w.week+'T12:00:00').toLocaleDateString('cs-CZ');sec.append(h);
   w.days.forEach((d,i)=>{
    const box=document.createElement('div');box.className='ss-day';const title=document.createElement('strong');title.textContent=['Pondělí','Úterý','Středa','Čtvrtek','Pátek'][i];box.append(title);
-   if(!d){const missing=document.createElement('p'),date=new Date(Date.parse(w.week+'T12:00:00Z')+i*86400000).toISOString().slice(0,10),closure=calendarClosures[date];missing.textContent=closure?.closed&&closure.source==='user'?'Nevaří se – '+closure.reason+' (potvrzeno Vámi).':'Menu pro tento den není zveřejněné. Uzavření jídelny tím není potvrzené.';box.append(missing);sec.append(box);return}
+   if(!d){const missing=document.createElement('p'),date=new Date(Date.parse(w.week+'T12:00:00Z')+i*86400000).toISOString().slice(0,10),closure=calendarClosures[date];missing.textContent=closure?.closed&&closure.source==='user'?closedDayLabel(w.week,i):'Menu pro tento den není zveřejněné. Uzavření jídelny tím není potvrzené.';box.append(missing);sec.append(box);return}
    for(const [f,label] of [['soup','Polévka'],['main','Oběd 1'],['main2','Oběd 2']])if(d[f]){const line=document.createElement('p');line.textContent=(Data.organization(d[f])||(f==='soup'&&/^Polévka\s/i.test(d[f]))?'':label+': ')+d[f];box.append(line)}
-   if(d.closed&&!Data.organization(d.soup)){const line=document.createElement('p');line.textContent='Nevaří se';box.append(line)}
+   if(d.closed&&!Data.organization(d.soup)){const line=document.createElement('p');line.textContent=closedDayLabel(w.week,i);box.append(line)}
    sec.append(box);
   });body.append(sec);
  }

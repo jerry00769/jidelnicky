@@ -9,6 +9,7 @@ const monday=s=>{let d=parseDate(s);if(Number.isNaN(d.getTime()))throw Error('Ne
 const preparationWeek=(date=new Date())=>{const d=new Date(date.getFullYear(),date.getMonth(),date.getDate(),12);const days=(8-d.getDay())%7||7;d.setDate(d.getDate()+days);return iso(d)};
 const dateAt=(s,i)=>{let d=parseDate(s);d.setDate(d.getDate()+i);return d};
 const format=d=>d.toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year:'numeric'});
+const cookingLabel=(week,i,closed)=>{const past=iso(dateAt(week,i))<iso(new Date());return closed?(past?'Nevařilo se':'Nevaří se'):(past?'Vařilo se':'Vaří se')};
 const freshDay=()=>({closed:false,soup:'',main:'',category:'',main2:'',category2:''});
 const freshWeek=s=>({week:monday(s),days:Array.from({length:5},freshDay)});
 
@@ -229,7 +230,7 @@ function render(){
         section.append(title);
         if(!Data.isVerified(state,w)&&state.stravaMealWeeks?.[w.week]?.pendingDates?.includes(iso(dateAt(w.week,i)))){const pending=document.createElement('p');pending.className='muted';pending.textContent='Strava.cz: menu nezveřejněno; původní návrh zachován.';section.append(pending)}
         if(d.closed){
-            const note=document.createElement('div');note.className='closed';note.textContent=state.calendarClosures?.[iso(dateAt(w.week,i))]?.closed?'Nevaří se – '+state.calendarClosures[iso(dateAt(w.week,i))].reason:'(nevaří se)';section.append(note)
+            const note=document.createElement('div');note.className='closed';note.textContent=cookingLabel(w.week,i,true);section.append(note)
         }else{
             const meal=(label,key)=>{
                 const row=document.createElement('div');row.className='meal';
@@ -274,17 +275,17 @@ function historyDetail(){
  if(protectedHistory(h))$('historyDelete').disabled=true;
  if(h)$('historyTitle').textContent+=' · '+(historySourceLabel(h));
  if(!h)return;
- const sourceNote=document.createElement('p');sourceNote.className='muted';sourceNote.textContent=h.days.some((d,i)=>d.closed&&state.calendarClosures?.[iso(dateAt(h.week,i))]?.closed)?'Zveřejněná jídla jsou převzatá ze Strava.cz. Označené dny volna jste potvrdili Vy.':!Data.isVerified(state,h)&&state.stravaMealWeeks?.[h.week]?.pendingDates?.length?'Zveřejněné dny byly převzaty ze Strava.cz a jsou chráněné. Pro označené zbývající dny zdroj nemá menu; dosavadní návrh zůstává zachován.':Data.isVerified(state,h)?'Ověřený týden Strava.cz 5948. Pro vlastní plán použij Kopírovat do jiného týdne.':h.status==='draft'?'Pracovní návrh čeká na zveřejnění jídelnou.':Data.auditStatus(state,h)==='meals-verified'?'Všechna uvedená jídla jsou ověřena podle Strava.cz 5948 a chráněna proti úpravě. Pro ostatní dny zdroj neobsahuje menu; původní stav zavřeno je zachován, ale není tím nezávisle potvrzen.':Data.auditStatus(state,h)==='no-published-menu'?'Pro všech pět dnů měsíční zdroj neobsahuje menu. Původní stav zavřeno je zachován; absence menu sama nepotvrzuje uzavření jídelny.':'Původ tohoto staršího týdne zatím není doložen zdrojem Strava.cz; zůstává neověřený.';el.append(sourceNote);
+ const sourceNote=document.createElement('p');sourceNote.className='muted';sourceNote.textContent=h.days.some((d,i)=>d.closed&&state.calendarClosures?.[iso(dateAt(h.week,i))]?.closed)?'Zveřejněná jídla jsou převzatá ze Strava.cz.':!Data.isVerified(state,h)&&state.stravaMealWeeks?.[h.week]?.pendingDates?.length?'Zveřejněné dny byly převzaty ze Strava.cz a jsou chráněné. Pro označené zbývající dny zdroj nemá menu; dosavadní návrh zůstává zachován.':Data.isVerified(state,h)?'Ověřený týden Strava.cz 5948. Pro vlastní plán použij Kopírovat do jiného týdne.':h.status==='draft'?'Pracovní návrh čeká na zveřejnění jídelnou.':Data.auditStatus(state,h)==='meals-verified'?'Všechna uvedená jídla jsou ověřena podle Strava.cz 5948 a chráněna proti úpravě. Pro ostatní dny zdroj neobsahuje menu; původní stav zavřeno je zachován, ale není tím nezávisle potvrzen.':Data.auditStatus(state,h)==='no-published-menu'?'Pro všech pět dnů měsíční zdroj neobsahuje menu. Původní stav zavřeno je zachován; absence menu sama nepotvrzuje uzavření jídelny.':'Původ tohoto staršího týdne zatím není doložen zdrojem Strava.cz; zůstává neověřený.';el.append(sourceNote);
  for(let i=0;i<5;i++){
   const d=h.days[i]||{},day=document.createElement('section');day.className='history-day';
   const header=document.createElement('div');header.className='history-day-head';
   const name=document.createElement('strong');name.textContent=`${weekdays[i]} ${format(dateAt(h.week,i))}`;
-  const closed=document.createElement('button');closed.type='button';closed.className='history-closed-toggle alt';closed.textContent=d.closed?(dateAt(h.week,i)<parseDate(iso(new Date()))?'Nevařilo se':'Nevaří se'):(dateAt(h.week,i)<parseDate(iso(new Date()))?'Vařilo se':'Vaří se');
+  const closed=document.createElement('button');closed.type='button';closed.className='history-closed-toggle alt';closed.textContent=cookingLabel(h.week,i,!!d.closed);
   const noMenu=state.stravaMealWeeks?.[h.week]?.noMenuDates?.includes(iso(dateAt(h.week,i)));
   const pending=!Data.isVerified(state,h)&&state.stravaMealWeeks?.[h.week]?.pendingDates?.includes(iso(dateAt(h.week,i)));
   if(pending){const note=document.createElement('p');note.className='muted';note.textContent='Strava.cz: menu nezveřejněno. Zobrazený stav je vlastní návrh.';day.append(note)}
   const closure=d.closed&&state.calendarClosures?.[iso(dateAt(h.week,i))];
-  if(closure?.closed){closed.textContent='Nevaří se – '+closure.reason;closed.title='Den volna potvrzený Vámi.'}
+  if(closure?.closed){closed.textContent=cookingLabel(h.week,i,true);closed.title=closed.textContent}
   if(d.closed&&noMenu&&!closure){closed.textContent='Bez menu ve zdroji';closed.title='Původní stav: zavřeno. Uzavření není nezávisle potvrzeno.'}
   closed.disabled=Data.isDayVerified(state,h,i);
   closed.onclick=()=>{if(Data.isDayVerified(state,h,i))return;snapshot();d.closed=!d.closed;render();historyDetail();notice('Stav vaření uložen do historie.');};
@@ -618,7 +619,7 @@ $('pickerRename').onclick=()=>pickerCatalogEdit('rename');
 $('pickerRemove').onclick=()=>pickerCatalogEdit('remove');
 function csv(){
     const rows=[['Den','Datum','Polévka','Oběd 1','Oběd 2']];
-    state.week.days.forEach((d,i)=>rows.push([weekdays[i],format(dateAt(state.week.week,i)),d.closed?'(nevaří se)':d.soup,d.closed?'':d.main,d.closed?'':state.count===2?d.main2:'']));
+    state.week.days.forEach((d,i)=>rows.push([weekdays[i],format(dateAt(state.week.week,i)),d.closed?cookingLabel(state.week.week,i,true):d.soup,d.closed?'':d.main,d.closed?'':state.count===2?d.main2:'']));
     const quote=x=>'"'+String(x??'').replaceAll('"','""')+'"';
     download('jidelnicek_'+state.week.week+'.csv','\ufeff'+rows.map(r=>r.map(quote).join(';')).join('\r\n'),'text/csv;charset=utf-8')
 }
