@@ -2508,7 +2508,7 @@
             "soup": "",
             "main": "",
             "category": "",
-            "closed": false
+            "closed": true
           },
           {
             "soup": "",
@@ -4129,7 +4129,7 @@
       "verified": 38,
       "unverified": 13,
       "mode": "partitioned",
-      "legacyPending": true,
+      "legacyPending": false,
       "mealsVerified": 8,
       "noPublishedMenu": 4,
       "unchecked": 1
