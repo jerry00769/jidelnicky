@@ -3187,55 +3187,7 @@
         "Polévka brokolicová ||| Hovězí tokáň, Těstoviny": 1
       }
     },
-    "drafts": [
-      {
-        "week": "2026-11-23",
-        "days": [
-          {
-            "closed": false,
-            "soup": "Polévka hovězí se strouháním",
-            "main": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
-            "category": "",
-            "main2": "",
-            "category2": ""
-          },
-          {
-            "closed": false,
-            "soup": "Polévka drožďová",
-            "main": "Obalované filé s brokolicí a sýrem, Brambory m.m.",
-            "category": "",
-            "main2": "",
-            "category2": ""
-          },
-          {
-            "closed": false,
-            "soup": "Polévka zelenin. s fridátovými nudlemi",
-            "main": "Brokolicová poezie (květák, niva)",
-            "category": "",
-            "main2": "",
-            "category2": ""
-          },
-          {
-            "closed": false,
-            "soup": "Polévka pórková",
-            "main": "Holandský řízek, Bramborová kaše - příloha",
-            "category": "",
-            "main2": "",
-            "category2": ""
-          },
-          {
-            "closed": false,
-            "soup": "Polévka  zeleninová s ovesnými vločkami",
-            "main": "Knedlíky švestkové (bramborové) s mákem",
-            "category": "",
-            "main2": "",
-            "category2": ""
-          }
-        ],
-        "status": "draft",
-        "source": "manual"
-      }
-    ],
+    "drafts": [],
     "stravaVerifiedWeeks": {
       "2025-09-29": {
         "source": "strava-5948",
