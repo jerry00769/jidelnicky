@@ -1,4 +1,4 @@
-<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jídelníčky · Březová Děčín</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="favicon.ico?v=1" sizes="any"><meta name="theme-color" content="#ffb43d"><link rel="stylesheet" href="style.css?v=20261106-audit31"><link rel="stylesheet" href="meal-history-search.css?v=20261115-1"><style id="tablet-picker-stable-height">
+<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jídelníčky · Březová Děčín</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="favicon.ico?v=1" sizes="any"><meta name="theme-color" content="#ffb43d"><link rel="stylesheet" href="style.css?v=20261106-audit31"><link rel="stylesheet" href="meal-history-search.css?v=20261115-3"><style id="tablet-picker-stable-height">
 /* Tablet: vyska dialogu nezavisi na poctu vysledku vyhledavani. */
 @media (min-width: 601px) and (max-width: 1100px) {
   dialog#picker[open] {
@@ -64,9 +64,9 @@
 <div class="copy-cal-legend"><span>🟩 Dnes</span><span>🟦 Vybraný den</span><span>▫️ Cílový týden</span></div>
 <p id="copyWeekRange" aria-live="polite"></p><p id="copyWeekWarning" class="copy-cal-warning" aria-live="polite"></p>
 <div class="copy-cal-actions"><button type="button" id="copyToday" class="alt">Dnes</button><button type="button" id="copyConfirm">Kopírovat</button></div></dialog>
-<dialog id="mealHistorySearch" aria-labelledby="mealHistorySearchTitle" aria-describedby="mealHistorySearchHint">
+<dialog id="mealHistorySearch" aria-labelledby="mealHistorySearchTitle" >
  <div class="mhs-head"><h2 id="mealHistorySearchTitle">Hledat poslední výskyt</h2><button type="button" id="closeMealHistorySearch" class="alt">Zavřít</button></div>
- <div class="mhs-controls"><label for="mealHistoryQuery">Název polévky nebo hlavního jídla</label><div class="mhs-search-row"><input type="search" id="mealHistoryQuery" placeholder="Např. koprová, rizoto, řízek…" autocomplete="off" spellcheck="false" aria-describedby="mealHistorySearchHint" autofocus><select id="mealHistoryKind" aria-label="Druh jídla"><option value="all">Všechna jídla</option><option value="soup">Polévky</option><option value="main">Hlavní jídla</option></select></div><p id="mealHistorySearchHint">Hledá i bez háčků a čárek, podle části názvu nebo více slov. Počítá pouze historii do dneška, bez návrhů.</p><p id="mealHistoryCoverage" class="mhs-coverage"></p><p id="mealHistorySearchStatus" role="status" aria-live="polite" aria-atomic="true"></p></div>
+ <div class="mhs-controls"><label for="mealHistoryQuery">Název polévky nebo hlavního jídla</label><div class="mhs-search-row"><input type="search" id="mealHistoryQuery" placeholder="Např. koprová, rizoto, řízek…" autocomplete="off" spellcheck="false"  autofocus></div><p id="mealHistorySearchHint">Hledá i bez háčků a čárek, podle části názvu nebo více slov. Počítá pouze historii do dneška, bez návrhů.</p><p id="mealHistoryCoverage" class="mhs-coverage"></p><p id="mealHistorySearchStatus" role="status" aria-live="polite" aria-atomic="true"></p></div>
  <div id="mealHistoryResults" class="mhs-results" aria-label="Nalezená jídla a data posledního výskytu"></div>
 </dialog>
 <dialog id="changeWeekDialog" class="copy-week-dialog" aria-labelledby="changeWeekTitle">
@@ -185,4 +185,4 @@ document.addEventListener('pointerdown',e=>{if(active&&!e.target.closest('.toolb
   settings.querySelectorAll('.github-controls button').forEach(button=>button.addEventListener('click',()=>{settings.open=false}));
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&settings.open)settings.open=false});
   window.addEventListener('resize',()=>{if(settings.open)update()});
-})();</script><script src="meal-history-search.js?v=20261115-1"></script><script src="strava-import.js?v=20261114-source-days"></script><script>if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));</script></body></html>
+})();</script><script src="meal-history-search.js?v=20261115-2"></script><script src="strava-import.js?v=20261114-source-days"></script><script>if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));</script></body></html>

@@ -64,3 +64,62 @@
  #mealHistorySearch .mhs-result-meta button {margin-left:0;}
 }
 @media print {#mealHistorySearch,#openMealHistorySearch {display:none!important;}}
+
+/* Compact mobile history search: keep matches visible above the keyboard. */
+@media(max-width:600px) {
+ #mealHistorySearch .mhs-head {padding:9px 11px 6px;gap:8px;}
+ #mealHistorySearch h2 {font-size:1rem;line-height:1.2;}
+ #mealHistorySearch .mhs-head button {min-height:34px;padding:5px 9px;font-size:13px;}
+ #mealHistorySearch .mhs-controls {padding:0 11px 6px;}
+ #mealHistorySearch label {font-size:13px;margin-bottom:4px;}
+ #mealHistorySearch input {min-height:38px;padding:6px 10px;font-size:16px;}
+ #mealHistorySearchHint {font-size:11px;line-height:1.25;margin:5px 0 3px;}
+ #mealHistorySearch .mhs-coverage {font-size:11px;margin:3px 0;}
+ #mealHistorySearchStatus {font-size:12px;line-height:1.3;margin:4px 0 0;}
+ #mealHistorySearch .mhs-results {padding:7px 11px 12px;}
+ #mealHistorySearch .mhs-result {padding:9px 11px;margin-bottom:7px;}
+ #mealHistorySearch .mhs-result h3 {margin-bottom:5px;font-size:14px;line-height:1.3;}
+ #mealHistorySearch .mhs-date {font-size:15px;}
+ #mealHistorySearch .mhs-result-meta button {min-height:34px;padding:5px 8px;font-size:12px;}
+ #mealHistorySearch .mhs-kind {margin-top:4px;font-size:11px;}
+}
+
+/* Search dialog aligned with the compact soup/main picker on all screen sizes.
+   Keep accessibility announcements in the DOM, but do not consume results space. */
+#mealHistorySearchHint,
+#mealHistorySearch .mhs-coverage,
+#mealHistorySearchStatus {
+ position:absolute!important;width:1px!important;height:1px!important;
+ padding:0!important;margin:-1px!important;overflow:hidden!important;
+ clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important;
+}
+#mealHistorySearch .mhs-head {padding:12px 16px 7px;}
+#mealHistorySearch h2 {font-size:1.2rem;}
+#mealHistorySearch .mhs-head button {min-height:34px;padding:6px 10px;}
+#mealHistorySearch .mhs-controls {padding:0 16px 8px;}
+#mealHistorySearch label {font-size:13px;margin-bottom:5px;}
+#mealHistorySearch input {box-sizing:border-box;height:38px;min-height:38px;padding:6px 10px;font-size:16px;}
+#mealHistorySearch .mhs-results {padding-top:8px;}
+@media(max-width:600px) {
+ #mealHistorySearch .mhs-head {padding:9px 11px 6px;}
+ #mealHistorySearch .mhs-controls {padding:0 11px 7px;}
+ #mealHistorySearch label {margin-bottom:4px;}
+ #mealHistorySearch input {height:36px;min-height:36px;padding:5px 9px;}
+ #mealHistorySearch .mhs-results {padding-top:7px;}
+}
+
+/* Same input appearance as the soup/main picker, including after clicking/focusing. */
+#mealHistorySearch #mealHistoryQuery {
+  appearance:none; -webkit-appearance:none;
+  border:1px solid #b7c8db; border-radius:7px;
+  background:#fff; color:#1c314c;
+  box-shadow:none; outline:none;
+  height:38px; min-height:38px; padding:9px;
+}
+#mealHistorySearch #mealHistoryQuery:focus,
+#mealHistorySearch #mealHistoryQuery:focus-visible {
+  border:2px solid #111; outline:none; box-shadow:none;
+}
+@media(max-width:600px){
+  #mealHistorySearch #mealHistoryQuery {height:36px;min-height:36px;padding:7px 9px;}
+}

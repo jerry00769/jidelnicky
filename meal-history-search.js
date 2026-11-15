@@ -106,7 +106,7 @@ if(typeof module!=='undefined')module.exports=api;
 if(!root.document)return;
 const $=id=>document.getElementById(id),dialog=$('mealHistorySearch'),open=$('openMealHistorySearch');
 if(!dialog||!open)return;
-const query=$('mealHistoryQuery'),kind=$('mealHistoryKind'),results=$('mealHistoryResults'),status=$('mealHistorySearchStatus');
+const query=$('mealHistoryQuery'),results=$('mealHistoryResults'),status=$('mealHistorySearchStatus');
 const fullDate=new Intl.DateTimeFormat('cs-CZ',{weekday:'long',day:'numeric',month:'numeric',year:'numeric',timeZone:'UTC'});
 const shortDate=new Intl.DateTimeFormat('cs-CZ',{day:'numeric',month:'numeric',year:'numeric',timeZone:'UTC'});
 const format=date=>fullDate.format(new Date(date+'T12:00:00Z'));
@@ -128,7 +128,7 @@ function relative(date,today){
 function card(item,today){
  const hit=item.last,box=element('article','mhs-result'),heading=element('h3'),pick=element('button','mhs-pick-name',item.name);
  pick.type='button';pick.setAttribute('aria-label','Vybrat název: '+item.name);pick.title='Vybrat tento název do hledání';
- pick.onclick=()=>{query.value=item.name;kind.value=item.kind;shown=30;render();query.focus({preventScroll:true});query.select()};
+ pick.onclick=()=>{query.value=item.name;shown=30;render();query.focus({preventScroll:true});query.select()};
  heading.append(pick);box.append(heading);
  const row=element('div','mhs-result-meta'),date=element('div');
  date.append(element('p','mhs-last-label','Poslední výskyt'),element('time','mhs-date',format(hit.date)),element('span','mhs-relative',relative(hit.date,today)));
@@ -144,11 +144,11 @@ function card(item,today){
 }
 function render(){
  const app=root.JidelnickyApp;if(!app)return;
- const index=buildIndex(app.getState()),found=search(index,query.value,kind.value);
+ const index=buildIndex(app.getState()),found=search(index,query.value,'all');
  const coverage=$('mealHistoryCoverage');coverage.textContent=index.first?`Uložená historie: ${shortDate.format(new Date(index.first+'T12:00:00Z'))} – ${shortDate.format(new Date(index.last+'T12:00:00Z'))}.`:'V historii zatím nejsou žádná jídla s minulým nebo dnešním datem.';
  status.textContent=found.approximate?'Podobné názvy – možný překlep. Ověřte název jídla.':query.value.trim()?`Nalezené názvy: ${found.items.length}.${found.expanded?' Zahrnuty podobné výrazy a české tvary.':''} Vyberte název nebo se podívejte na poslední datum.`:'Začněte psát. Nabídnou se jídla z historie i s posledním datem.';
  results.replaceChildren();
- if(!found.items.length){results.append(element('p','mhs-empty',query.value.trim()?'V uložené historii nenalezeno. Zkuste kratší část názvu nebo přepněte na všechna jídla.':'Pro vybraný druh zatím není žádný výskyt v historii.'));return}
+ if(!found.items.length){results.append(element('p','mhs-empty',query.value.trim()?'V uložené historii nenalezeno. Zkuste kratší část názvu.':'V historii zatím není žádný výskyt.'));return}
  const fragment=document.createDocumentFragment();for(const item of found.items.slice(0,shown))fragment.append(card(item,index.today));results.append(fragment);
  if(found.items.length>shown){const more=element('button','alt mhs-more',`Zobrazit další (${found.items.length-shown})`);more.type='button';more.onclick=()=>{shown+=30;render()};results.append(more)}
 }
@@ -157,7 +157,6 @@ $('closeMealHistorySearch').addEventListener('click',()=>dialog.close());
 query.addEventListener('compositionstart',()=>composing=true);
 query.addEventListener('compositionend',()=>{composing=false;shown=30;render()});
 query.addEventListener('input',()=>{if(!composing){shown=30;render()}});
-kind.addEventListener('change',()=>{shown=30;render()});
 dialog.addEventListener('close',()=>open.focus({preventScroll:true}));
 dialog.addEventListener('pointerdown',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close()});
 const hint=$('mealHistorySearchHint');
