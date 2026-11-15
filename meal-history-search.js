@@ -2,6 +2,48 @@
 (function(root){
 'use strict';
 const normalize=value=>String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('cs-CZ').replace(/[^a-z0-9]+/g,' ').trim();
+// Search-only vocabulary: original recipe names and dates are never rewritten.
+const wordFamilies={
+ zeli:'zeli zelim',klobasa:'klobasa klobasu klobasy klobasou klobas klobasam klobasami',
+ brambora:'brambora brambory brambor bramborem bramboram bramborami bramborech bramboru',
+ maso:'maso masa masem masu',kase:'kase kasi kasemi',ryze:'ryze ryzi',
+ kure:'kure kurete kuretem kureta kureci kurecim kurecich kurecimi kureciho kurecimu',
+ hovezi:'hovezi hovezim hovezich hovezimi hoveziho hovezimu',
+ kruta:'kruta kruty krutim kruti krutich krutimi krutiho krutimu',
+ cesnek:'cesnek cesneku cesnekem',cibule:'cibule cibuli cibulky cibulkou cibulka',
+ rajce:'rajce rajcata rajcat rajcaty rajcatem rajcatova rajcatove rajcatovy rajcatovou',
+ mrkev:'mrkev mrkve mrkvi',hrach:'hrach hrachu hrachem hrasek hrasku hraskem',
+ cocka:'cocka cocky cockou cocce',fazole:'fazole fazoli fazolemi',
+ houba:'houba houby hub houbami houbou',zampion:'zampion zampiony zampionu zampionech zampionem',
+ kopr:'kopr kopru koprem',spenat:'spenat spenatu spenatem',kvetak:'kvetak kvetaku kvetakem',
+ brokolice:'brokolice brokolici',celer:'celer celeru celerem',porek:'porek porku porkem',
+ dyne:'dyne dyni',smetana:'smetana smetany smetanou smetane',
+ vejce:'vejce vajicko vajicka vejci vejcem vejcemi vajickem',
+ syr:'syr syra syrem syry syru',slanina:'slanina slaniny slaninou',parek:'parek parky parku parkem',
+ ryba:'ryba ryby rybou rybami rybi rybim rybich rybimi',
+ knedlik:'knedlik knedliky knedliku knedlikem knedlicky knedlicku knedlickem',
+ rizek:'rizek rizky rizku rizkem rizecky rizecku',
+ testovina:'testovina testoviny testovin testovinami',spageta:'spageta spagety spaget spaghetti',
+ rizoto:'rizoto rizota rizotem risotto',polevka:'polevka polevky polevku polevkou',omacka:'omacka omacky omacku omackou',
+ kapusta:'kapusta kapusty kapustou',
+};
+const adjectiveStems={zeli:'zeln',klobasa:'klobasov',brambora:'bramborov',ryze:'ryzov',cesnek:'cesnekov',cibule:'cibulov',rajce:'rajsk',mrkev:'mrkvov',hrach:'hrachov hraskov',cocka:'cockov',fazole:'fazolov',houba:'houbov',zampion:'zampionov',kopr:'koprov',spenat:'spenatov',kvetak:'kvetakov',brokolice:'brokolicov',celer:'celerov',porek:'porkov',dyne:'dynov',smetana:'smetanov',vejce:'vajecn vajeckov',syr:'syrov',slanina:'slaninov',parek:'parkov',knedlik:'knedlikov',testovina:'testovinov',kapusta:'kapustov',veprove:'veprov',pecene:'pecen',smazene:'smazen',zapecene:'zapecen',varene:'varen',kysane:'kysan',zelenina:'zeleninov'};
+const familyWords=new Map();
+for(const [key,words] of Object.entries(wordFamilies))for(const word of words.split(' '))familyWords.set(word,key);
+for(const [key,stems] of Object.entries(adjectiveStems))for(const stem of stems.split(' '))for(const ending of ['a','e','y','ou','eho','emu','em','ym','ych','ymi'])familyWords.set(stem+ending,key);
+const aliases={zelnacka:['polevka','zeli'],zelnacku:['polevka','zeli'],zelnacky:['polevka','zeli'],cesnecka:['polevka','cesnek'],bramboracka:['polevka','brambora'],hrachovka:['polevka','hrach'],cockovka:['polevka','cocka'],smazak:['smazene','syr'],knedlo:['knedlik'],zelo:['zeli'],vepro:['veprove']};
+const stopWords=new Set(['s','se','z','ze','a','i','na','v','ve','do','k','ke','po','pod','nad','u']);
+function analyze(value,kind){
+ const words=normalize(value).split(' ').filter(Boolean),positive=new Set(),negative=new Set();let negated=false;
+ for(const word of words){
+  if(word==='bez'){negated=true;continue}
+  if(stopWords.has(word))continue;
+  for(const concept of aliases[word]||[familyWords.get(word)||word])(negated?negative:positive).add(concept);
+  negated=false;
+ }
+ if(kind==='soup')positive.add('polevka');
+ return {positive:[...positive],negative:[...negative]};
+}
 const localToday=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
 const dateAt=(week,i)=>new Date(Date.parse(week+'T12:00:00Z')+i*86400000).toISOString().slice(0,10);
 const organization=value=>/^(?:p\s*r\s*a\s*z\s*d\s*n\s*i\s*n\s*y|reditelske volno|nevari se|nevarilo se|statni svatek|dovolena)$/i.test(normalize(value));
@@ -15,7 +57,7 @@ function buildIndex(state,today=localToday(),data=root.JidelnickyData){
    for(const field of ['soup','main','main2']){
     const name=d[field];if(typeof name!=='string'||!name.trim()||organization(name)||data?.organization?.(name))continue;
     const kind=field==='soup'?'soup':'main',key=kind+'\0'+name;
-    if(!groups.has(key))groups.set(key,{key,name,kind,normalized:normalize(name),occurrences:[]});
+    if(!groups.has(key))groups.set(key,{key,name,kind,normalized:normalize(name),meaning:analyze(name,kind),occurrences:[]});
     const group=groups.get(key);let hit=group.occurrences.find(h=>h.date===date);
     if(!hit){hit={date,week:w.week,day:i,slots:[],verified:!!data?.isDayVerified?.(state,w,i)};group.occurrences.push(hit)}
     if(!hit.slots.includes(field))hit.slots.push(field);
@@ -45,15 +87,19 @@ function distance(a,b,limit){
 function search(index,query='',kind='all'){
  const q=normalize(String(query).slice(0,120)),terms=[...new Set(q.split(' ').filter(Boolean))];
  const candidates=index.items.filter(item=>kind==='all'||item.kind===kind);
- const direct=candidates.filter(item=>terms.every(term=>item.normalized.includes(term)));
+ const wanted=analyze(q),meaningful=terms.filter(term=>!stopWords.has(term)),effective=meaningful.length?meaningful:terms;
+ const compatible=item=>wanted.positive.every(term=>!item.meaning.negative.includes(term))&&wanted.negative.every(term=>item.meaning.negative.includes(term));
+ const literal=item=>compatible(item)&&effective.every(term=>item.normalized.includes(term));
+ const semantic=item=>compatible(item)&&wanted.positive.every(term=>item.meaning.positive.some(word=>word===term||word.includes(term)))&&wanted.negative.every(term=>item.meaning.negative.includes(term));
+ const direct=candidates.filter(item=>literal(item)||(wanted.positive.length+wanted.negative.length>0&&semantic(item)));
  const order=(a,b)=>(Number(b.normalized===q)-Number(a.normalized===q))||b.last.date.localeCompare(a.last.date)||a.name.localeCompare(b.name,'cs');
- if(direct.length||!terms.length)return {items:direct.sort(order),approximate:false};
+ if(direct.length||!terms.length)return {items:direct.sort(order),approximate:false,expanded:direct.some(item=>!literal(item))};
  // A typo is only a labelled suggestion, never silently treated as an exact name.
  const similar=candidates.filter(item=>{
-  const words=item.normalized.split(' ');
-  return terms.every(term=>item.normalized.includes(term)||(term.length>=4&&words.some(word=>distance(term,word,term.length>=8?2:1)<=(term.length>=8?2:1))));
+  const words=[...item.normalized.split(' '),...item.meaning.positive];
+  return compatible(item)&&wanted.positive.length>0&&wanted.positive.every(term=>words.some(word=>word.includes(term)||(term.length>=4&&distance(term,word,term.length>=8?2:1)<=(term.length>=8?2:1))));
  });
- return {items:similar.sort(order),approximate:similar.length>0};
+ return {items:similar.sort(order),approximate:similar.length>0,expanded:false};
 }
 const api={normalize,buildIndex,search};root.JidelnickyMealSearch=api;
 if(typeof module!=='undefined')module.exports=api;
@@ -80,7 +126,10 @@ function relative(date,today){
  return days===0?'dnes':days===1?'včera':`před ${days} dny`;
 }
 function card(item,today){
- const hit=item.last,box=element('article','mhs-result');box.append(element('h3','',item.name));
+ const hit=item.last,box=element('article','mhs-result'),heading=element('h3'),pick=element('button','mhs-pick-name',item.name);
+ pick.type='button';pick.setAttribute('aria-label','Vybrat název: '+item.name);pick.title='Vybrat tento název do hledání';
+ pick.onclick=()=>{query.value=item.name;kind.value=item.kind;shown=30;render();query.focus({preventScroll:true});query.select()};
+ heading.append(pick);box.append(heading);
  const row=element('div','mhs-result-meta'),date=element('div');
  date.append(element('p','mhs-last-label','Poslední výskyt'),element('time','mhs-date',format(hit.date)),element('span','mhs-relative',relative(hit.date,today)));
  date.querySelector('time').dateTime=hit.date;
@@ -97,7 +146,7 @@ function render(){
  const app=root.JidelnickyApp;if(!app)return;
  const index=buildIndex(app.getState()),found=search(index,query.value,kind.value);
  const coverage=$('mealHistoryCoverage');coverage.textContent=index.first?`Uložená historie: ${shortDate.format(new Date(index.first+'T12:00:00Z'))} – ${shortDate.format(new Date(index.last+'T12:00:00Z'))}.`:'V historii zatím nejsou žádná jídla s minulým nebo dnešním datem.';
- status.textContent=found.approximate?'Podobné názvy – možný překlep. Ověřte název jídla.':query.value.trim()?`Nalezené názvy: ${found.items.length}. Nejnovější výskyt je uveden u každého jídla.`:'Poslední výskyty v historii. Zadejte hledané jídlo.';
+ status.textContent=found.approximate?'Podobné názvy – možný překlep. Ověřte název jídla.':query.value.trim()?`Nalezené názvy: ${found.items.length}.${found.expanded?' Zahrnuty podobné výrazy a české tvary.':''} Vyberte název nebo se podívejte na poslední datum.`:'Začněte psát. Nabídnou se jídla z historie i s posledním datem.';
  results.replaceChildren();
  if(!found.items.length){results.append(element('p','mhs-empty',query.value.trim()?'V uložené historii nenalezeno. Zkuste kratší část názvu nebo přepněte na všechna jídla.':'Pro vybraný druh zatím není žádný výskyt v historii.'));return}
  const fragment=document.createDocumentFragment();for(const item of found.items.slice(0,shown))fragment.append(card(item,index.today));results.append(fragment);
@@ -111,5 +160,7 @@ query.addEventListener('input',()=>{if(!composing){shown=30;render()}});
 kind.addEventListener('change',()=>{shown=30;render()});
 dialog.addEventListener('close',()=>open.focus({preventScroll:true}));
 dialog.addEventListener('pointerdown',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close()});
+const hint=$('mealHistorySearchHint');
+if(hint)hint.textContent='Napovídá během psaní, rozpozná běžné české tvary i podobné výrazy (např. zelná / z kysaného zelí). Počítá historii do dneška, bez návrhů.';
 root.JidelnickyReady?.then(()=>{if(dialog.open)render()});
 })(typeof window==='undefined'?globalThis:window);

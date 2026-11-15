@@ -1,4 +1,4 @@
-const CACHE='brezova-web-20261115-history-search-v1';
+const CACHE='brezova-web-20261115-history-search-v2';
 const FILES=['./','./index.html','./style.css?v=20261106-audit31','./config.js?v=20261106-audit31','./data-model.js?v=20261114-source-days','./persistence.js','./catalog-data.js?v=jidelnicky2-soulad1','./catalog.js?v=jidelnicky2-soulad1','./github-sync.js?v=20261106-audit31','./app.js?v=20261115-history-search','./meal-history-search.js?v=20261115-1','./meal-history-search.css?v=20261115-1','./strava-import.js?v=20261114-source-days','./napoveda.html?v=22','./favicon.ico?v=1'];
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);for(const path of FILES){const response=await fetch(path,{cache:'reload'});if(response.ok&&!response.redirected)await cache.put(path,response)}await self.skipWaiting()})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const key of await caches.keys())if(key.startsWith('brezova-web-')&&key!==CACHE)await caches.delete(key);await self.clients.claim()})()));
