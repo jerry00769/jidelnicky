@@ -31,7 +31,7 @@ const sameWeek=(a,b)=>!!a&&!!b&&a.week===b.week&&a.days?.length===5&&b.days?.len
 const isVerified=(s,w)=>!!w&&s.stravaVerifiedWeeks?.[w.week]?.source==='strava-5948'&&s.stravaVerifiedWeeks[w.week].signature===signature(w);
 const daySignature=d=>JSON.stringify([!!d?.closed,...fields.map(f=>text(d?.[f]))]);
 const dateAt=(week,i)=>new Date(Date.parse(week+'T12:00:00Z')+i*86400000).toISOString().slice(0,10);
-const isDayVerified=(s,w,i)=>!!w&&(isVerified(s,w)||s.stravaMealWeeks?.[w.week]?.source==='strava-5948'&&s.stravaMealWeeks[w.week].days?.[i]?.signature===daySignature(w.days[i]));
+const isDayVerified=(s,w,i)=>!!w&&(isVerified(s,w)||s.stravaMealWeeks?.[w.week]?.source==='strava-5948'&&(s.stravaMealWeeks[w.week].days?.[i]?.signature===daySignature(w.days[i])||!!w.days?.[i]?.closed&&!fields.some(f=>text(w.days[i][f]))&&s.stravaMealWeeks[w.week].noMenuDates?.includes(dateAt(w.week,i))));
 function auditStatus(s,w){
  if(isVerified(s,w))return 'definitive';
  const proof=s.stravaMealWeeks?.[w?.week];
@@ -58,8 +58,11 @@ function planHistoricalAudit(input,audit){
     if(d.closed||old.closed){issues.push(w.week+'/'+i+': rozpor stavu vaření');continue}
     if(daySignature(old)!==daySignature(d)){w.days[i]={...d,category:old.main===d.main?text(old.category):'',category2:old.main2===d.main2?text(old.category2):''};changed.push(dateAt(w.week,i))}
     proof.days[i]={signature:daySignature(w.days[i])};
-   }else if(raw.noMenuDates.includes(dateAt(w.week,i))&&old.closed&&!fields.some(f=>text(old[f])))proof.noMenuDates.push(dateAt(w.week,i));
-   else issues.push(w.week+'/'+i+': chybějící nebo neúplné menu');
+   }else if(raw.noMenuDates.includes(dateAt(w.week,i))){
+    const date=dateAt(w.week,i);
+    if(!old.closed||fields.some(f=>text(old[f]))){w.days[i]={closed:true,soup:'',main:'',main2:'',category:'',category2:''};changed.push(date)}
+    proof.noMenuDates.push(date);
+   }else issues.push(w.week+'/'+i+': chybějící nebo neúplné menu');
   }
   s.stravaMealWeeks[w.week]=proof;
  }
@@ -190,15 +193,14 @@ function planPartialImport(input,incoming,meta={}){
   for(let i=0;i<5;i++){
    const day=raw.days[i];
    if(!day){
-    const date=dateAt(raw.week,i),closure=meta.calendarClosures?.[date];
+    const date=dateAt(raw.week,i);
     if(isDayVerified(s,w,i))continue;
-    if(closure?.source==='user'&&closure.closed===true){
-     (s.calendarClosures??={})[date]=copy(closure);
-     for(const target of [w,...s.drafts.filter(d=>d.week===raw.week),...(s.week.week===raw.week?[s.week]:[])]){
-      retire(target.days[i]);target.days[i]={closed:true,soup:'',main:'',main2:'',category:'',category2:''};
-     }
-     if(!proof.noMenuDates.includes(date))proof.noMenuDates.push(date);
-    }else proof.pendingDates.push(date);
+    // Den bez menu v publikovaném zdroji Strava je definitivně nevařící den.
+    for(const target of [w,...s.drafts.filter(d=>d.week===raw.week),...(s.week.week===raw.week?[s.week]:[])]){
+     retire(target.days[i]);target.days[i]={closed:true,soup:'',main:'',main2:'',category:'',category2:''};
+    }
+    if(!proof.noMenuDates.includes(date))proof.noMenuDates.push(date);
+    changed.push(date);
     continue;
    }
    for(const target of [w,...s.drafts.filter(d=>d.week===raw.week),...(s.week.week===raw.week?[s.week]:[])]){
@@ -262,6 +264,7 @@ function mergeStates(baseInput,localInput,serverInput){
    if(!candidates.length)continue;
    const proof=copy(candidates[0]);proof.days={};
    for(let i=0;i<5;i++)for(const p of candidates)if(p.days?.[i]?.signature===daySignature(w.days[i])){proof.days[i]=copy(p.days[i]);break}
+   proof.noMenuDates=[...new Set(candidates.flatMap(p=>p.noMenuDates||[]))].filter(date=>{const i=Math.round((Date.parse(date+'T12:00:00Z')-Date.parse(w.week+'T12:00:00Z'))/86400000);return i>=0&&i<5&&w.days[i].closed&&!fields.some(f=>text(w.days[i][f]))});
    out.stravaMealWeeks[w.week]=proof;
   }
   out.drafts=[];
