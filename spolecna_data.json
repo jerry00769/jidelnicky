@@ -2508,7 +2508,7 @@
             "soup": "",
             "main": "",
             "category": "",
-            "closed": true
+            "closed": false
           },
           {
             "soup": "",
@@ -4130,10 +4130,10 @@
       "verified": 38,
       "unverified": 13,
       "mode": "partitioned",
-      "legacyPending": false,
+      "legacyPending": true,
       "mealsVerified": 8,
-      "noPublishedMenu": 5,
-      "unchecked": 0
+      "noPublishedMenu": 4,
+      "unchecked": 1
     },
     "legacyLearning": {
       "main": {
