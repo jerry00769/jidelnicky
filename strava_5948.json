@@ -1,7 +1,7 @@
 {
   "cafeteria": "5948",
   "status": "received",
-  "fetched_at_utc": "2026-11-14T16:41:43.346772+00:00",
+  "fetched_at_utc": "2026-11-15T06:01:41.335802+00:00",
   "weeks": [
     {
       "week": "2025-09-29",
@@ -1211,12 +1211,12 @@
       "missingDates": [
         "2026-11-17"
       ],
-      "retrievedAt": "2026-11-14T16:41:14.268386+00:00",
+      "retrievedAt": "2026-11-15T06:01:38.722962+00:00",
       "documents": [
         {
           "url": "https://app.strava.cz/api/jidelnicky",
           "cafeteria": "5948",
-          "retrievedAt": "2026-11-14T16:41:14.268386+00:00",
+          "retrievedAt": "2026-11-15T06:01:38.722962+00:00",
           "sha256": "78b2321acf08a6ce8604c7b6076ea2525da3e2ba3f130e630200239a7fe6e90a"
         }
       ]
@@ -1231,7 +1231,7 @@
     }
   },
   "note": "Úplné týdny a doložené jednotlivé dny Strava.cz 5948. Chybějící menu není potvrzením uzavření.",
-  "retrievedAt": "2026-11-14T16:41:43.346772+00:00",
+  "retrievedAt": "2026-11-15T06:01:41.335802+00:00",
   "sourceDocuments": [
     {
       "month": "202509",
@@ -1354,21 +1354,21 @@
       "month": "202610",
       "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
       "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
-      "retrievedAt": "2026-11-14T16:41:14.268386+00:00",
+      "retrievedAt": "2026-11-15T06:01:38.722962+00:00",
       "days": 19
     },
     {
       "month": "202611",
       "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202611",
       "sha256": "b9028de0341f2f7acda8688722b5b3a8e374c1db3fae16cf0ae2b9fa886f17e1",
-      "retrievedAt": "2026-11-14T16:41:14.268386+00:00",
+      "retrievedAt": "2026-11-15T06:01:38.722962+00:00",
       "days": 10
     },
     {
       "month": "202612",
       "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202612",
       "sha256": "4abebddb32d6dbaa3e086bccb958f51841534c9197e2a65230393c55f8e0edfa",
-      "retrievedAt": "2026-11-14T16:41:14.268386+00:00",
+      "retrievedAt": "2026-11-15T06:01:38.722962+00:00",
       "days": 0
     }
   ],
@@ -2156,7 +2156,7 @@
         "month": "202610",
         "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
         "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
-        "retrievedAt": "2026-11-14T16:41:14.268386+00:00",
+        "retrievedAt": "2026-11-15T06:01:38.722962+00:00",
         "days": 19
       }
     ],
@@ -2165,7 +2165,7 @@
         "month": "202610",
         "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
         "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
-        "retrievedAt": "2026-11-14T16:41:14.268386+00:00",
+        "retrievedAt": "2026-11-15T06:01:38.722962+00:00",
         "days": 19
       }
     ],
@@ -2174,7 +2174,7 @@
         "month": "202610",
         "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202610",
         "sha256": "44046ec5a9b41544768e181facc9c0bd86a23faa4157f45a1f5170e49f4d14e6",
-        "retrievedAt": "2026-11-14T16:41:14.268386+00:00",
+        "retrievedAt": "2026-11-15T06:01:38.722962+00:00",
         "days": 19
       }
     ],
@@ -2183,7 +2183,7 @@
         "month": "202611",
         "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202611",
         "sha256": "b9028de0341f2f7acda8688722b5b3a8e374c1db3fae16cf0ae2b9fa886f17e1",
-        "retrievedAt": "2026-11-14T16:41:14.268386+00:00",
+        "retrievedAt": "2026-11-15T06:01:38.722962+00:00",
         "days": 10
       }
     ],
@@ -2192,7 +2192,7 @@
         "month": "202611",
         "url": "https://strava.cz/Strava/Stravnik/JidelnickyHistorie?zarizeni=5948&datum=202611",
         "sha256": "b9028de0341f2f7acda8688722b5b3a8e374c1db3fae16cf0ae2b9fa886f17e1",
-        "retrievedAt": "2026-11-14T16:41:14.268386+00:00",
+        "retrievedAt": "2026-11-15T06:01:38.722962+00:00",
         "days": 10
       }
     ]
