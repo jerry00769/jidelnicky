@@ -90,7 +90,9 @@
           "Polévka vývar s drobením",
           "Polévka rajčatová s těstovinami",
           "Polévka hovězí s játrovými knedlíčky",
-          "Polévka z kysaného zelí s klobásou"
+          "Polévka z kysaného zelí s klobásou",
+          "Polévka zelenin. s písmenky",
+          "Polévka zeleninová s rýžovými  vločkami"
         ]
       },
       "main": {
@@ -282,7 +284,11 @@
           "Rybí filé zapečené s rajčaty, bazalkou, Brambory",
           "Tarhoňové zeleninové rizoto, Salát z červené řepy - příloha",
           "Kuřecí soté (smetana ,pórek, žampióny), Rýže dušená",
-          "Hovězí tokáň, Těstoviny"
+          "Hovězí tokáň, Těstoviny",
+          "Cizrnová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
+          "Vepřové maso po mexicku, Rýže dušená",
+          "Těstovinový salát s tuňákem",
+          "Sekaná pečeně, Brambory"
         ]
       }
     },
@@ -291,45 +297,47 @@
       "days": [
         {
           "closed": false,
-          "soup": "Polévka hovězí se strouháním",
-          "main": "Kuřecí stehna pečená se zel.fazolkami a kroupami",
-          "category": "",
+          "soup": "Polévka zelenin. s písmenky",
+          "main": "Cizrnová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka drožďová",
-          "main": "Obalované filé s brokolicí a sýrem, Brambory m.m.",
-          "category": "",
+          "soup": "Polévka koprová (kulajda)",
+          "main": "Vepřové maso po mexicku, Rýže dušená",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka zelenin. s fridátovými nudlemi",
-          "main": "Brokolicová poezie (květák, niva)",
-          "category": "",
+          "soup": "Polévka zeleninová s rýžovými  vločkami",
+          "main": "Těstovinový salát s tuňákem",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka pórková",
-          "main": "Holandský řízek, Bramborová kaše - příloha",
-          "category": "",
+          "soup": "Polévka z kysaného zelí s klobásou",
+          "main": "Nudle s mákem",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka  zeleninová s ovesnými vločkami",
-          "main": "Knedlíky švestkové (bramborové) s mákem",
-          "category": "",
+          "soup": "Polévka zelenin. s pohankou",
+          "main": "Sekaná pečeně, Brambory",
           "main2": "",
+          "category": "",
           "category2": ""
         }
-      ]
+      ],
+      "status": "definitive",
+      "source": "strava-5948"
     },
     "history": [
       {
@@ -2678,6 +2686,53 @@
         ],
         "status": "unverified",
         "source": "legacy-unverified"
+      },
+      {
+        "week": "2026-11-23",
+        "days": [
+          {
+            "closed": false,
+            "soup": "Polévka zelenin. s písmenky",
+            "main": "Cizrnová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka koprová (kulajda)",
+            "main": "Vepřové maso po mexicku, Rýže dušená",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka zeleninová s rýžovými  vločkami",
+            "main": "Těstovinový salát s tuňákem",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka z kysaného zelí s klobásou",
+            "main": "Nudle s mákem",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": false,
+            "soup": "Polévka zelenin. s pohankou",
+            "main": "Sekaná pečeně, Brambory",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          }
+        ],
+        "status": "definitive",
+        "source": "strava-5948"
       }
     ],
     "rules": {
@@ -2729,7 +2784,7 @@
         "Vepřová kýta hamburská, Houskové knedlíky (kynuté)": 3,
         "Rybí filé obalované, Brambory m.m.": 1,
         "Vepřový guláš, Rýže dušená": 1,
-        "Nudle s mákem": 3,
+        "Nudle s mákem": 4,
         "Hovězí pečeně frankfurtská, Těstoviny": 1,
         "Gnocchi s kuřecím masem, smetanou a špenátem": 1,
         "Omáčka koprová, Vejce vařené, Brambory": 1,
@@ -2865,11 +2920,15 @@
         "Rybí filé zapečené s rajčaty, bazalkou, Brambory": 1,
         "Tarhoňové zeleninové rizoto, Salát z červené řepy - příloha": 1,
         "Kuřecí soté (smetana ,pórek, žampióny), Rýže dušená": 1,
-        "Hovězí tokáň, Těstoviny": 1
+        "Hovězí tokáň, Těstoviny": 1,
+        "Cizrnová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha": 1,
+        "Vepřové maso po mexicku, Rýže dušená": 1,
+        "Těstovinový salát s tuňákem": 1,
+        "Sekaná pečeně, Brambory": 1
       },
       "soup": {
         "Polévka kuřecí s nudlemi": 5,
-        "Polévka koprová (kulajda)": 3,
+        "Polévka koprová (kulajda)": 4,
         "Polévka zelenin. s drožďovými knedlíčky": 4,
         "Polévka z rybího filé": 2,
         "Polévka zelenin. s fridátovými nudlemi": 6,
@@ -2905,7 +2964,7 @@
         "Polévka zeleninová s drožďovými knedlíčky": 1,
         "Polévka krupicová maďarská": 1,
         "Polévka čočková se zeleninou": 2,
-        "Polévka zelenin. s pohankou": 4,
+        "Polévka zelenin. s pohankou": 5,
         "Polévka zeleninová se sýrovým kapáním": 4,
         "Polévka hrachová s hrachovými krutony": 1,
         "Polévka z fazolových lusků": 1,
@@ -2944,7 +3003,7 @@
         "Polévka hovězí s játrovými knedlíčky": 1,
         "Polévka zeleninová s hrachovými nudlemi": 1,
         "Polévka z batátových brambor": 2,
-        "Polévka z kysaného zelí s klobásou": 1,
+        "Polévka z kysaného zelí s klobásou": 2,
         "Polévka cibulová se sýrem": 1,
         "Polévka pórková s vejci": 2,
         "Polévka ze zahradních jahod": 1,
@@ -2954,7 +3013,9 @@
         "Polévka zeleninová s celozrnnými nudlemi": 1,
         "Polévka hovězí se sýrovým kapáním": 1,
         "Polévka cibulová": 1,
-        "Polévka hovězí s krupkami": 1
+        "Polévka hovězí s krupkami": 1,
+        "Polévka zelenin. s písmenky": 1,
+        "Polévka zeleninová s rýžovými  vločkami": 1
       },
       "pair": {
         "Polévka kuřecí s nudlemi ||| Kovbojská pánev, Chléb": 1,
@@ -3184,7 +3245,12 @@
         "Polévka hráškový krém ||| Rybí filé zapečené s rajčaty, bazalkou, Brambory": 1,
         "Polévka rychlá s vejcem ||| Tarhoňové zeleninové rizoto, Salát z červené řepy - příloha": 1,
         "Polévka česneková s bramborem a vejcem ||| Kuřecí soté (smetana ,pórek, žampióny), Rýže dušená": 1,
-        "Polévka brokolicová ||| Hovězí tokáň, Těstoviny": 1
+        "Polévka brokolicová ||| Hovězí tokáň, Těstoviny": 1,
+        "Polévka zelenin. s písmenky ||| Cizrnová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha": 1,
+        "Polévka koprová (kulajda) ||| Vepřové maso po mexicku, Rýže dušená": 1,
+        "Polévka zeleninová s rýžovými  vločkami ||| Těstovinový salát s tuňákem": 1,
+        "Polévka z kysaného zelí s klobásou ||| Nudle s mákem": 1,
+        "Polévka zelenin. s pohankou ||| Sekaná pečeně, Brambory": 1
       }
     },
     "drafts": [],
@@ -3698,6 +3764,11 @@
             "note": "Previously archived complete public weeks; visible current Strava.cz meals 6–13 November checked separately."
           }
         ]
+      },
+      "2026-11-23": {
+        "source": "strava-5948",
+        "signature": "[[false,\"Polévka zelenin. s písmenky\",\"Cizrnová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha\",\"\"],[false,\"Polévka koprová (kulajda)\",\"Vepřové maso po mexicku, Rýže dušená\",\"\"],[false,\"Polévka zeleninová s rýžovými  vločkami\",\"Těstovinový salát s tuňákem\",\"\"],[false,\"Polévka z kysaného zelí s klobásou\",\"Nudle s mákem\",\"\"],[false,\"Polévka zelenin. s pohankou\",\"Sekaná pečeně, Brambory\",\"\"]]",
+        "retrievedAt": "2026-11-18T13:27:44.901422+00:00"
       }
     },
     "stravaMealWeeks": {
@@ -4106,11 +4177,11 @@
           {
             "url": "https://app.strava.cz/api/jidelnicky",
             "cafeteria": "5948",
-            "retrievedAt": "2026-11-17T13:24:49.870512+00:00",
-            "sha256": "20e8715d89632c392a4e7de445501ede2fd5fc5fa0d0fa47df45839e320f0382"
+            "retrievedAt": "2026-11-18T13:27:41.132838+00:00",
+            "sha256": "9c98367cd6d3a7e81e954a3766a6c7d44172ba3fe9ab1f42b6f9b61a3ab559dd"
           }
         ],
-        "retrievedAt": "2026-11-17T13:24:49.870512+00:00",
+        "retrievedAt": "2026-11-18T13:27:41.132838+00:00",
         "pendingDates": []
       }
     },
@@ -4127,7 +4198,7 @@
     "dataVersion": 2,
     "catalogPartitionVersion": 1,
     "catalogAudit": {
-      "verified": 38,
+      "verified": 39,
       "unverified": 13,
       "mode": "partitioned",
       "legacyPending": false,
