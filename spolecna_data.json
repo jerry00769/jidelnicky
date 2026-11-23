@@ -4177,11 +4177,11 @@
           {
             "url": "https://app.strava.cz/api/jidelnicky",
             "cafeteria": "5948",
-            "retrievedAt": "2026-11-20T13:26:50.002443+00:00",
-            "sha256": "b93c125bc77e3267371d6edcd8ff6eebbe0010effaf4453c7e24493854e9d3d5"
+            "retrievedAt": "2026-11-22T19:42:22.461576+00:00",
+            "sha256": "db1ee0b98c6dd40c9a4a75290db2761c84fb34c35237d03f806f47aa8736fef4"
           }
         ],
-        "retrievedAt": "2026-11-20T13:26:50.002443+00:00",
+        "retrievedAt": "2026-11-22T19:42:22.461576+00:00",
         "pendingDates": []
       }
     },
