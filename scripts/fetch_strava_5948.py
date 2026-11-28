@@ -32,6 +32,15 @@ def valid_day(day):
         return not actual
     return bool(names[0] and names[1])
 
+def parse_date(value):
+    value = str(value or '').strip()
+    if re.fullmatch(r'\d{1,2}\.\s*\d{1,2}\.\s*\d{4}', value):
+        return datetime.strptime(re.sub(r'\s+', '', value), '%d.%m.%Y').date()
+    if re.fullmatch(r'\d{4}-\d{2}-\d{2}(?:[T ].*)?', value):
+        return datetime.fromisoformat(value.replace('Z', '+00:00')).date()
+    raise ValueError('Unrecognized date')
+
+
 def parse_menu_details(raw):
     if isinstance(raw, str):
         raw = json.loads(raw)
@@ -46,12 +55,12 @@ def parse_menu_details(raw):
                 if not isinstance(row, dict):
                     continue
                 try:
-                    date = datetime.strptime(str(row.get('datum', '')), '%d.%m.%Y').date()
+                    date = parse_date(row.get('datum'))
                 except ValueError:
                     continue
                 if date.weekday() > 4:
                     continue
-                label = folded(str(row.get('druh_popis') or row.get('druh_chod') or ''))
+                label = ' '.join(folded(str(row.get('druh_popis') or row.get('druh_chod') or '')).split())
                 kind = str(row.get('druh') or '')
                 name = str(row.get('nazev') or '').strip()
                 if 'polevka' in label or kind == 'P':
@@ -65,10 +74,10 @@ def parse_menu_details(raw):
                 else:
                     continue
                 slot = dates[date]
-                slot['expected'].add(field)
                 slot['closed'] |= row.get('closed') is True
-                if not name or folded(name) in {'polevka', 'obed 1', 'obed 2'}:
+                if not name or ' '.join(folded(name).split()) in {'polevka', 'obed 1', 'obed 2'}:
                     continue
+                slot['expected'].add(field)
                 if slot['values'][field] and slot['values'][field] != name:
                     slot['conflict'] = True
                 slot['values'][field] = name
@@ -81,14 +90,17 @@ def parse_menu_details(raw):
         marker = any(organization(n) for n in day.values())
         if slot['closed'] or (marker and not actual):
             day['closed'] = True
+        weeks[monday]  # Retain dates even when rejected.
         if slot['conflict'] or (marker and actual):
             reasons[monday].add('conflicting_rows')
+            print(f'::warning::Strava {date}: conflicting_rows; den nepřevzat.', file=sys.stderr)
         elif 'main2' in slot['expected'] and not day['main2'] and not day.get('closed'):
             reasons[monday].add('missing_announced_lunch2')
         elif valid_day(day):
             weeks[monday][date.weekday()] = day
         else:
             weeks[monday]  # Explicit incomplete week, never infer a closure.
+            print(f'Strava {date}: chybí polévka nebo Oběd 1.', file=sys.stderr)
     complete, skipped, partial = [], [], []
     for monday in sorted(set(weeks) | set(reasons)):
         days = weeks[monday]
@@ -105,6 +117,48 @@ def parse_menu_details(raw):
 def parse_menu(raw):
     complete, skipped, _ = parse_menu_details(raw)
     return complete, skipped
+
+def combine_sources(historical, public):
+    """Validate each source separately. Current public menu wins per valid day.
+
+    Never combine individual meal fields across conflicting sources. Missing
+    or invalid rows are not closure evidence; valid history remains fallback.
+    """
+    def by_week(raw):
+        full, skipped, partial = parse_menu_details(raw)
+        return {w['week']: w['days'] for w in [*partial, *full]}, skipped
+    old, old_skipped = by_week(historical)
+    live, live_skipped = by_week(public) if public is not None else ({}, [])
+    print('Historický zdroj:', len(old), 'týdnů; aktuální veřejný zdroj:', len(live), 'týdnů.')
+    if public is not None and not live:
+        print('::warning::Aktuální veřejný zdroj neobsahuje žádný rozpoznaný úplný den; použity pouze doložené historické dny.', file=sys.stderr)
+    for key, days in sorted(live.items()):
+        start = datetime.fromisoformat(key).date()
+        print('Veřejný zdroj', key + ':', ', '.join(f'{start + timedelta(days=i)}={"OK" if day is not None else "CHYBÍ"}' for i,day in enumerate(days)))
+    complete, skipped, partial = [], [], []
+    for key in sorted(set(old) | set(live)):
+        start = datetime.fromisoformat(key).date()
+        days = []
+        for i in range(5):
+            h = old.get(key, [None]*5)[i]
+            p = live.get(key, [None]*5)[i]
+            if p is not None and h is not None and p != h:
+                print(f'Strava {start + timedelta(days=i)}: rozdíl zdrojů, použit aktuální veřejný den.')
+            days.append(p if p is not None else h)
+        if all(d is not None for d in days):
+            complete.append({'week': key, 'days': days})
+        else:
+            missing = [(start + timedelta(days=i)).isoformat() for i,d in enumerate(days) if d is None]
+            skipped.append({'week': key, 'complete_days': 5-len(missing), 'reasons': ['missing_days_or_meals']})
+            partial.append({'week': key, 'days': days, 'missingDates': missing})
+            print(f'Strava týden {key}: chybí {", ".join(missing)}.')
+    # Keep diagnostics for completely rejected weeks, without importing them.
+    represented = set(old) | set(live)
+    for item in old_skipped + live_skipped:
+        if item['week'] not in represented and not any(w['week']==item['week'] for w in skipped):
+            skipped.append(item)
+    return complete, skipped, partial
+
 
 def merge_archive(old, current, skipped, partial=None):
     if old and (old.get('cafeteria') != '5948' or not isinstance(old.get('weeks'), list)):
@@ -166,7 +220,8 @@ def main():
             documents.append({'month': month, 'url': url, 'sha256': hashlib.sha256(body).hexdigest(), 'retrievedAt': now.isoformat(), 'days': len(observed)})
         except Exception as exc:
             errors.append({'month': month, 'error': str(exc)})
-    groups = [{'table0': rows}]
+    historical = {'table0': rows}
+    public = None
     public_ok = False
     public_document = None
     try:
@@ -176,15 +231,22 @@ def main():
         raw = Public.getJidelnicek('5948')
         if isinstance(raw, str):
             raw = json.loads(raw)
-        groups.extend(raw if isinstance(raw, list) else [raw])
+        public = raw
+        if not isinstance(raw, (list, dict)):
+            raise ValueError('Neočekávaný formát veřejného jídelníčku')
         public_ok = True
         public_document = {'url': 'https://app.strava.cz/api/jidelnicky', 'cafeteria': '5948',
                            'retrievedAt': now.isoformat(), 'sha256': hashlib.sha256(json.dumps(raw, ensure_ascii=False, sort_keys=True).encode()).hexdigest()}
     except Exception as exc:
+        public = None
         errors.append({'current_public_menu': str(exc)})
+        print(f'::warning::Aktuální veřejný zdroj Strava.cz: {exc}', file=sys.stderr)
     if not documents and not public_ok:
         raise ValueError('Nepodařilo se získat žádný měsíční zdroj; archiv nebyl změněn.')
-    current, skipped, partial = parse_menu_details(groups)
+    current, skipped, partial = combine_sources(historical, public)
+    for error in errors:
+        if 'month' in error:
+            print(f'::warning::Strava měsíc {error["month"]}: {error["error"]}', file=sys.stderr)
     if not args.from_month:
         first_week = (now.date() - timedelta(days=now.weekday())).isoformat()
         partial = [w for w in partial if w['week'] >= first_week]
@@ -206,7 +268,7 @@ def main():
     for week in current:
         start = datetime.strptime(week['week'], '%Y-%m-%d')
         months = {(start + timedelta(days=i)).strftime('%Y%m') for i in range(5)}
-        evidence[week['week']] = [d for d in documents if d['month'] in months]
+        evidence[week['week']] = [d for d in documents if d['month'] in months] + ([public_document] if public_document else [])
     report['weekEvidence'] = evidence
     temporary = OUT.with_suffix('.tmp')
     temporary.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

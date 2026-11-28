@@ -35,16 +35,52 @@ class FetchTests(unittest.TestCase):
         self.assertFalse(weeks)
         self.assertEqual(skipped[0]['complete_days'], 4)
 
-    def test_announced_but_unfilled_lunch2_blocks_replacement(self):
+    def test_placeholder_lunch2_does_not_block_replacement(self):
         source = rows() + [{'datum': '02.11.2026', 'druh_popis': 'Oběd 2', 'nazev': 'Oběd 2'}]
         weeks, skipped = M.parse_menu({'table0': source})
-        self.assertFalse(weeks)
-        self.assertIn('missing_announced_lunch2', skipped[0]['reasons'])
+        self.assertFalse(skipped)
+        self.assertEqual(len(weeks), 1)
+        self.assertEqual(weeks[0]['days'][0]['main2'], '')
 
     def test_conflicting_rows_block_the_week(self):
         weeks, skipped = M.parse_menu({'table0': rows() + [{'datum': '02.11.2026', 'druh_popis': 'Oběd 1', 'nazev': 'Jiný oběd'}]})
         self.assertFalse(weeks)
         self.assertIn('conflicting_rows', skipped[0]['reasons'])
+
+    def test_cross_month_current_menu_with_placeholders_and_stale_history(self):
+        menu = [('Polévka hovězí s vaječnou jíškou','Špagety se sýrovou omáčkou'),
+                ('Polévka z hlívy ústřičné','Rybí filé smažené, Brambory m.m.'),
+                ('Polévka hovězí se strouháním','Čínské nudle s kuřecím masem a zeleninou'),
+                ('Polévka drožďová','Zbojnická hovězí pečeně, Rýže dušená'),
+                ('Polévka čočková se zeleninou','Smetanové brambory s brokolicí a šunkou')]
+        current, history = [], []
+        for i, (soup, main) in enumerate(menu):
+            d = date(2026, 11, 30) + timedelta(days=i)
+            stamp = d.strftime('%d.%m.%Y')
+            current.extend([{'datum':stamp,'druh_popis':'Polévka','nazev':soup},
+                            {'datum':stamp,'druh_popis':'Oběd 1','nazev':main}])
+            if i:
+                current.append({'datum':stamp,'druh_popis':'Oběd 2','nazev':'Oběd 2'})
+            history.extend([{'datum':stamp,'druh_popis':'Polévka','nazev':soup},
+                            {'datum':stamp,'druh_popis':'Oběd 1','nazev':main if not i else 'Starší údaj'}])
+        weeks, skipped, partial = M.combine_sources({'table0':history}, [{'table0':current}])
+        self.assertEqual(len(weeks),1)
+        self.assertEqual(weeks[0]['week'],'2026-11-30')
+        self.assertEqual([(d['soup'],d['main']) for d in weeks[0]['days']],menu)
+        self.assertTrue(all(not d['main2'] for d in weeks[0]['days']))
+        self.assertFalse(skipped or partial)
+
+    def test_missing_future_day_stays_unknown(self):
+        weeks, skipped, partial = M.combine_sources({'table0':[]}, {'table0':rows()[:2]})
+        self.assertFalse(weeks)
+        self.assertEqual(partial[0]['days'][1:], [None]*4)
+        self.assertEqual(skipped[0]['complete_days'],1)
+
+    def test_current_date_formats(self):
+        source = rows()
+        source[0]['datum'] = '2. 11. 2026'
+        source[1]['datum'] = '2026-11-02T00:00:00'
+        self.assertEqual(len(M.parse_menu({'table0':source})[0]),1)
 
     def test_incomplete_live_data_cannot_erase_archived_complete_week(self):
         complete, _ = M.parse_menu({'table0': rows()})
