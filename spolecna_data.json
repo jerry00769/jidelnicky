@@ -4251,11 +4251,11 @@
           {
             "url": "https://app.strava.cz/api/jidelnicky",
             "cafeteria": "5948",
-            "retrievedAt": "2026-11-27T15:07:24.368731+00:00",
-            "sha256": "09f93a8f6052cd473ceb25e7b73a99f0cc74a4a23c816f3e4ca18292b775ac54"
+            "retrievedAt": "2026-11-28T14:13:24.418039+00:00",
+            "sha256": "9282bc1217b881c8b87a8b0e924f42d081c34cc4a83e088b58469757b8a831b3"
           }
         ],
-        "retrievedAt": "2026-11-27T15:07:24.368731+00:00",
+        "retrievedAt": "2026-11-28T14:13:24.418039+00:00",
         "pendingDates": []
       }
     },
