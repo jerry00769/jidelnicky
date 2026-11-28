@@ -195,7 +195,9 @@ function planPartialImport(input,incoming,meta={}){
    if(!day){
     const date=dateAt(raw.week,i);
     if(isDayVerified(s,w,i))continue;
-    // Den bez menu v publikovaném zdroji Strava je definitivně nevařící den.
+    const closure=meta.calendarClosures?.[date];
+    if(!(closure?.closed===true&&closure.source==='user')){proof.pendingDates.push(date);continue;}
+    s.calendarClosures??={};s.calendarClosures[date]=copy(closure);
     for(const target of [w,...s.drafts.filter(d=>d.week===raw.week),...(s.week.week===raw.week?[s.week]:[])]){
      retire(target.days[i]);target.days[i]={closed:true,soup:'',main:'',main2:'',category:'',category2:''};
     }
