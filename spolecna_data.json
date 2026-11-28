@@ -298,45 +298,47 @@
       "days": [
         {
           "closed": false,
-          "soup": "Polévka zeleninová s drožďovými knedlíčky",
-          "main": "Vepřová pečeně, Fazolové lusky na slanině, Brambory",
-          "category": "",
+          "soup": "Polévka zelenin. s písmenky",
+          "main": "Cizrnová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka zelenin. s ovesnými vločkami",
-          "main": "Rybí filé po mlynářsku, Brambory",
-          "category": "",
+          "soup": "Polévka koprová (kulajda)",
+          "main": "Vepřové maso po mexicku, Rýže dušená",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka zeleninová s těstovinami",
-          "main": "Tilápie s rajčaty a sýrem, Brambory m.m.",
-          "category": "",
+          "soup": "Polévka zeleninová s rýžovými  vločkami",
+          "main": "Těstovinový salát s tuňákem",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka z rybího filé",
-          "main": "Perkelt z kuřecího masa, Těstoviny",
-          "category": "",
+          "soup": "Polévka z kysaného zelí s klobásou",
+          "main": "Nudle s mákem",
           "main2": "",
+          "category": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka z fazolových lusků",
-          "main": "Karbanátek z rybího file - pečený, Brambory m.m., Salát z červené řepy - příloha",
-          "category": "",
+          "soup": "Polévka zelenin. s pohankou",
+          "main": "Sekaná pečeně, Brambory",
           "main2": "",
+          "category": "",
           "category2": ""
         }
-      ]
+      ],
+      "status": "definitive",
+      "source": "strava-5948"
     },
     "history": [
       {
