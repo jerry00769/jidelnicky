@@ -288,7 +288,8 @@
           "Cizrnová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
           "Vepřové maso po mexicku, Rýže dušená",
           "Těstovinový salát s tuňákem",
-          "Sekaná pečeně, Brambory"
+          "Sekaná pečeně, Brambory",
+          "Špagety se sýrovou omáčkou"
         ]
       }
     },
@@ -2733,6 +2734,53 @@
         ],
         "status": "definitive",
         "source": "strava-5948"
+      },
+      {
+        "week": "2026-11-30",
+        "days": [
+          {
+            "closed": false,
+            "soup": "Polévka hovězí s vaječnou jíškou",
+            "main": "Špagety se sýrovou omáčkou",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": true,
+            "soup": "",
+            "main": "",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": true,
+            "soup": "",
+            "main": "",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": true,
+            "soup": "",
+            "main": "",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          },
+          {
+            "closed": true,
+            "soup": "",
+            "main": "",
+            "main2": "",
+            "category": "",
+            "category2": ""
+          }
+        ],
+        "status": "unverified",
+        "source": "legacy-unverified"
       }
     ],
     "rules": {
@@ -2924,7 +2972,8 @@
         "Cizrnová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha": 1,
         "Vepřové maso po mexicku, Rýže dušená": 1,
         "Těstovinový salát s tuňákem": 1,
-        "Sekaná pečeně, Brambory": 1
+        "Sekaná pečeně, Brambory": 1,
+        "Špagety se sýrovou omáčkou": 1
       },
       "soup": {
         "Polévka kuřecí s nudlemi": 5,
@@ -2951,7 +3000,7 @@
         "Polévka zeleninová s kuskusem": 4,
         "Polévka bramborová": 5,
         "Polévka hrachová se smaženým hráškem": 1,
-        "Polévka hovězí s vaječnou jíškou": 5,
+        "Polévka hovězí s vaječnou jíškou": 6,
         "Polévka zeleninová zahuštěná červenou čočkou": 4,
         "Polévka hovězí s kapáním": 2,
         "Polévka česneková s bramborem a vejcem": 2,
@@ -3250,7 +3299,8 @@
         "Polévka koprová (kulajda) ||| Vepřové maso po mexicku, Rýže dušená": 1,
         "Polévka zeleninová s rýžovými  vločkami ||| Těstovinový salát s tuňákem": 1,
         "Polévka z kysaného zelí s klobásou ||| Nudle s mákem": 1,
-        "Polévka zelenin. s pohankou ||| Sekaná pečeně, Brambory": 1
+        "Polévka zelenin. s pohankou ||| Sekaná pečeně, Brambory": 1,
+        "Polévka hovězí s vaječnou jíškou ||| Špagety se sýrovou omáčkou": 1
       }
     },
     "drafts": [],
@@ -4183,6 +4233,30 @@
         ],
         "retrievedAt": "2026-11-22T19:42:22.461576+00:00",
         "pendingDates": []
+      },
+      "2026-11-30": {
+        "source": "strava-5948",
+        "days": {
+          "0": {
+            "signature": "[false,\"Polévka hovězí s vaječnou jíškou\",\"Špagety se sýrovou omáčkou\",\"\"]"
+          }
+        },
+        "noMenuDates": [
+          "2026-12-01",
+          "2026-12-02",
+          "2026-12-03",
+          "2026-12-04"
+        ],
+        "documents": [
+          {
+            "url": "https://app.strava.cz/api/jidelnicky",
+            "cafeteria": "5948",
+            "retrievedAt": "2026-11-27T15:07:24.368731+00:00",
+            "sha256": "09f93a8f6052cd473ceb25e7b73a99f0cc74a4a23c816f3e4ca18292b775ac54"
+          }
+        ],
+        "retrievedAt": "2026-11-27T15:07:24.368731+00:00",
+        "pendingDates": []
       }
     },
     "proposalCatalog": {
@@ -4199,10 +4273,10 @@
     "catalogPartitionVersion": 1,
     "catalogAudit": {
       "verified": 39,
-      "unverified": 13,
+      "unverified": 14,
       "mode": "partitioned",
       "legacyPending": false,
-      "mealsVerified": 8,
+      "mealsVerified": 9,
       "noPublishedMenu": 5,
       "unchecked": 0
     },
