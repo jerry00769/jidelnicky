@@ -298,47 +298,45 @@
       "days": [
         {
           "closed": false,
-          "soup": "Polévka zelenin. s písmenky",
+          "soup": "Polévka zeleninová s těstovinovou rýží",
           "main": "Cizrnová kaše s cibulkou, Vejce vařené, Salát z červené řepy - příloha",
-          "main2": "",
           "category": "",
-          "category2": ""
-        },
-        {
-          "closed": false,
-          "soup": "Polévka koprová (kulajda)",
-          "main": "Vepřové maso po mexicku, Rýže dušená",
           "main2": "",
-          "category": "",
           "category2": ""
         },
         {
           "closed": false,
           "soup": "Polévka zeleninová s rýžovými  vločkami",
           "main": "Těstovinový salát s tuňákem",
-          "main2": "",
           "category": "",
+          "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka z kysaného zelí s klobásou",
-          "main": "Nudle s mákem",
-          "main2": "",
+          "soup": "Polévka zeleninová s celozrnnými knedlíčky",
+          "main": "Bramborák",
           "category": "",
+          "main2": "",
           "category2": ""
         },
         {
           "closed": false,
-          "soup": "Polévka zelenin. s pohankou",
-          "main": "Sekaná pečeně, Brambory",
-          "main2": "",
+          "soup": "Polévka gulášová",
+          "main": "Guláš maďarský, Rýže dušená",
           "category": "",
+          "main2": "",
+          "category2": ""
+        },
+        {
+          "closed": false,
+          "soup": "Polévka kapustová s rýží",
+          "main": "Králík pečený, Brambory m.m.",
+          "category": "",
+          "main2": "",
           "category2": ""
         }
-      ],
-      "status": "definitive",
-      "source": "strava-5948"
+      ]
     },
     "history": [
       {
