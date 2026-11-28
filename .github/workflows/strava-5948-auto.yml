@@ -3,7 +3,7 @@ name: Automaticke nacteni Strava.cz 5948
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 5,12 * * *'
+    - cron: '17 */2 * * *'
 permissions:
   contents: write
 concurrency:
